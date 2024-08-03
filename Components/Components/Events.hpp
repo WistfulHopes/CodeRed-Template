@@ -61,9 +61,6 @@ public: // Pre Hooks
 	void HUDPostRender(PreEvent& event);
 	void GameViewPortPostRender(PreEvent& event);
 	void PlayerControllerTick(PreEvent& event);
-
-public: // Post Hooks
-	void GameViewPortKeyPress(const PostEvent& event);
 };
 
 extern class HooksComponent Hooks;

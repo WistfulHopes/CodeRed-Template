@@ -165,10 +165,20 @@
     <ClCompile Include="Extensions\Extensions\Math.cpp" />
     <ClCompile Include="Extensions\Extensions\Memory.cpp" />
     <ClCompile Include="Extensions\Extensions\Time.cpp" />
+    <ClCompile Include="GGXRD-R2\GameDefines.cpp" />
+    <ClCompile Include="GGXRD-R2\SDK_HEADERS\Core_classes.cpp" />
+    <ClCompile Include="GGXRD-R2\SDK_HEADERS\Engine_classes.cpp" />
+    <ClCompile Include="GGXRD-R2\SDK_HEADERS\GameFramework_classes.cpp" />
+    <ClCompile Include="GGXRD-R2\SDK_HEADERS\GFxUI_classes.cpp" />
+    <ClCompile Include="GGXRD-R2\SDK_HEADERS\IpDrv_classes.cpp" />
+    <ClCompile Include="GGXRD-R2\SDK_HEADERS\OnlineSubsystemSteamworks_classes.cpp" />
+    <ClCompile Include="GGXRD-R2\SDK_HEADERS\REDGameContent_classes.cpp" />
+    <ClCompile Include="GGXRD-R2\SDK_HEADERS\REDGame_classes.cpp" />
+    <ClCompile Include="GGXRD-R2\SDK_HEADERS\WinDrv_classes.cpp" />
+    <ClCompile Include="GGXRD-R2\SDK_HEADERS\XAudio2_classes.cpp" />
     <ClCompile Include="Modules\Mods\Placeholder.cpp" />
     <ClCompile Include="Modules\Module.cpp" />
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="PlaceholderSDK\GameDefines.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Components\Component.hpp" />
@@ -188,12 +198,43 @@
     <ClInclude Include="Extensions\Extensions\Memory.hpp" />
     <ClInclude Include="Extensions\Extensions\Time.hpp" />
     <ClInclude Include="Extensions\Includes.hpp" />
+    <ClInclude Include="GGXRD-R2\GameDefines.hpp" />
+    <ClInclude Include="GGXRD-R2\SdkConstants.hpp" />
+    <ClInclude Include="GGXRD-R2\SdkHeaders.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\Core_classes.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\Core_parameters.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\Core_structs.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\Engine_classes.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\Engine_parameters.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\Engine_structs.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\GameFramework_classes.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\GameFramework_parameters.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\GameFramework_structs.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\GFxUI_classes.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\GFxUI_parameters.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\GFxUI_structs.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\IpDrv_classes.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\IpDrv_parameters.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\IpDrv_structs.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\OnlineSubsystemSteamworks_classes.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\OnlineSubsystemSteamworks_parameters.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\OnlineSubsystemSteamworks_structs.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\REDGameContent_classes.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\REDGameContent_parameters.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\REDGameContent_structs.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\REDGame_classes.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\REDGame_parameters.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\REDGame_structs.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\WinDrv_classes.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\WinDrv_parameters.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\WinDrv_structs.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\XAudio2_classes.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\XAudio2_parameters.hpp" />
+    <ClInclude Include="GGXRD-R2\SDK_HEADERS\XAudio2_structs.hpp" />
     <ClInclude Include="Modules\Includes.hpp" />
     <ClInclude Include="Modules\Mods\Placeholder.hpp" />
     <ClInclude Include="Modules\Module.hpp" />
     <ClInclude Include="pch.hpp" />
-    <ClInclude Include="PlaceholderSDK\GameDefines.hpp" />
-    <ClInclude Include="PlaceholderSDK\SdkHeaders.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="Detours\detours.lib" />
@@ -204,6 +245,11 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="Changelog.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GGXRD-R2\CodeRedGenerator.log" />
+    <Content Include="GGXRD-R2\NameDump.txt" />
+    <Content Include="GGXRD-R2\ObjectDump.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

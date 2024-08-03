@@ -25,5 +25,5 @@
 #include <filesystem>
 #include <detours.h>
 
-#include "PlaceHolderSDK/SdkHeaders.hpp"
-#define WALKTHROUGH
+#include "GGXRD-R2/SdkHeaders.hpp"
+// #define WALKTHROUGH

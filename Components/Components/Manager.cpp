@@ -868,8 +868,8 @@ void ManagerComponent::UnrealCommand(const std::string& unrealCommand, bool bLog
 			{
 				Console.Write(GetNameFormatted() + "Executing unreal command \"" + formattedCommand + "\".");
 			}
-
-			defaultActor->ConsoleCommand(formattedCommand);
+			
+			defaultActor->ConsoleCommand(formattedCommand.c_str(), true);
 		}
 		else
 		{
@@ -878,7 +878,7 @@ void ManagerComponent::UnrealCommand(const std::string& unrealCommand, bool bLog
 				Console.Write(GetNameFormatted() + "Executing unreal command \"" + unrealCommand + "\".");
 			}
 
-			defaultActor->ConsoleCommand(unrealCommand);
+			defaultActor->ConsoleCommand(unrealCommand.c_str(), true);
 		}
 	}
 }
