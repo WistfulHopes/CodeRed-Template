@@ -22,7 +22,7 @@
 # ========================================================================================= #
 */
 
-#define CONST_LOADING_MOVIE                                         0
+#define CONST_LOADING_MOVIE                                         ""
 #define CONST_GAMEEVENT_AGGREGATED_DATA                             1
 #define CONST_GAMEEVENT_AGGREGATED_PLAYER_TIMEALIVE                 1
 #define CONST_GAMEEVENT_AGGREGATED_PLAYER_KILLS                     1

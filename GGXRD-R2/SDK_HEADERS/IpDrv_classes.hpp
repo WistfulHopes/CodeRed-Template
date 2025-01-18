@@ -26,10 +26,10 @@
 #define CONST_RANKED_MATCH                                          1
 #define CONST_REC_MATCH                                             2
 #define CONST_PRIVATE_MATCH                                         3
-#define CONST_RANKEDPROVIDERTAG                                     0
-#define CONST_UNRANKEDPROVIDERTAG                                   0
-#define CONST_RECMODEPROVIDERTAG                                    0
-#define CONST_PRIVATEPROVIDERTAG                                    0
+#define CONST_RANKEDPROVIDERTAG                                     ""
+#define CONST_UNRANKEDPROVIDERTAG                                   ""
+#define CONST_RECMODEPROVIDERTAG                                    ""
+#define CONST_PRIVATEPROVIDERTAG                                    ""
 
 /*
 # ========================================================================================= #

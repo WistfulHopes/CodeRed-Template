@@ -43,7 +43,7 @@ void AREDActor_CheckDOF::eventTick(float DeltaTime)
 };
 
 // Function REDGame.REDActor_CheckDOF.SetDOFInfoPositionNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39736])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39734])
 // Parameter Info:
 // float                          InnerRadius                    (CPF_Parm)
 // struct FVector                 Position                       (CPF_Parm)
@@ -66,11 +66,11 @@ void AREDActor_CheckDOF::SetDOFInfoPositionNative(float InnerRadius, const struc
 	uFnSetDOFInfoPositionNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDOFInfoPositionNative, &SetDOFInfoPositionNative_Params, nullptr);
 	uFnSetDOFInfoPositionNative->FunctionFlags |= 0x400;
-	uFnSetDOFInfoPositionNative->iNative = 39736;
+	uFnSetDOFInfoPositionNative->iNative = 39734;
 };
 
 // Function REDGame.REDActor_CheckDOF.SetDOFInfoDistanceNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39734])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39732])
 // Parameter Info:
 // float                          InnerRadius                    (CPF_Parm)
 // float                          Distance                       (CPF_Parm)
@@ -93,11 +93,11 @@ void AREDActor_CheckDOF::SetDOFInfoDistanceNative(float InnerRadius, float Dista
 	uFnSetDOFInfoDistanceNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDOFInfoDistanceNative, &SetDOFInfoDistanceNative_Params, nullptr);
 	uFnSetDOFInfoDistanceNative->FunctionFlags |= 0x400;
-	uFnSetDOFInfoDistanceNative->iNative = 39734;
+	uFnSetDOFInfoDistanceNative->iNative = 39732;
 };
 
 // Function REDGame.REDActor_CheckDOF.SetDOFInfoFocusTypeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39735])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39733])
 // Parameter Info:
 // EFocusType                     Type                           (CPF_Parm)
 
@@ -118,7 +118,7 @@ void AREDActor_CheckDOF::SetDOFInfoFocusTypeNative(EFocusType Type)
 	uFnSetDOFInfoFocusTypeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDOFInfoFocusTypeNative, &SetDOFInfoFocusTypeNative_Params, nullptr);
 	uFnSetDOFInfoFocusTypeNative->FunctionFlags |= 0x400;
-	uFnSetDOFInfoFocusTypeNative->iNative = 39735;
+	uFnSetDOFInfoFocusTypeNative->iNative = 39733;
 };
 
 // Function REDGame.REDActor_CheckDOF.SetDOFInfo
@@ -164,7 +164,7 @@ void AREDActor_CheckDOF::SetupCamera()
 };
 
 // Function REDGame.REDActor_CheckDOF.NativeTick
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38513])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38511])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 
@@ -185,7 +185,7 @@ void AREDActor_CheckDOF::NativeTick(float DeltaTime)
 	uFnNativeTick->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNativeTick, &NativeTick_Params, nullptr);
 	uFnNativeTick->FunctionFlags |= 0x400;
-	uFnNativeTick->iNative = 38513;
+	uFnNativeTick->iNative = 38511;
 };
 
 // Function REDGame.REDActor_GlareEffect.Initialize
@@ -212,7 +212,7 @@ void AREDActor_GlareEffect::Initialize(int32_t Index, class AREDSceneColorSettin
 };
 
 // Function REDGame.REDActor_GlareEffect.UpdateMaterialParameter
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40776])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40774])
 // Parameter Info:
 
 void AREDActor_GlareEffect::UpdateMaterialParameter()
@@ -231,11 +231,11 @@ void AREDActor_GlareEffect::UpdateMaterialParameter()
 	uFnUpdateMaterialParameter->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMaterialParameter, &UpdateMaterialParameter_Params, nullptr);
 	uFnUpdateMaterialParameter->FunctionFlags |= 0x400;
-	uFnUpdateMaterialParameter->iNative = 40776;
+	uFnUpdateMaterialParameter->iNative = 40774;
 };
 
 // Function REDGame.REDActor_GlareEffect.UpdateTransform
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40877])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40875])
 // Parameter Info:
 // struct FTPOV                   POV                            (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -256,13 +256,13 @@ void AREDActor_GlareEffect::UpdateTransform(struct FTPOV& POV)
 	uFnUpdateTransform->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateTransform, &UpdateTransform_Params, nullptr);
 	uFnUpdateTransform->FunctionFlags |= 0x400;
-	uFnUpdateTransform->iNative = 40877;
+	uFnUpdateTransform->iNative = 40875;
 
 	memcpy_s(&POV, sizeof(POV), &UpdateTransform_Params.POV, sizeof(UpdateTransform_Params.POV));
 };
 
 // Function REDGame.REDActor_GlareEffect.UpdateParameter
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40800])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40798])
 // Parameter Info:
 
 void AREDActor_GlareEffect::UpdateParameter()
@@ -281,11 +281,11 @@ void AREDActor_GlareEffect::UpdateParameter()
 	uFnUpdateParameter->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateParameter, &UpdateParameter_Params, nullptr);
 	uFnUpdateParameter->FunctionFlags |= 0x400;
-	uFnUpdateParameter->iNative = 40800;
+	uFnUpdateParameter->iNative = 40798;
 };
 
 // Function REDGame.REDActor_GlareEffect.SetAlphaToF
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39688])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39686])
 // Parameter Info:
 // float                          StartAlpha                     (CPF_Parm)
 // float                          EndAlpha                       (CPF_Parm)
@@ -310,11 +310,11 @@ void AREDActor_GlareEffect::SetAlphaToF(float StartAlpha, float EndAlpha, int32_
 	uFnSetAlphaToF->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetAlphaToF, &SetAlphaToF_Params, nullptr);
 	uFnSetAlphaToF->FunctionFlags |= 0x400;
-	uFnSetAlphaToF->iNative = 39688;
+	uFnSetAlphaToF->iNative = 39686;
 };
 
 // Function REDGame.REDActor_GlareEffect.SetAlphaTo
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39687])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39685])
 // Parameter Info:
 // int32_t                        StartAlpha                     (CPF_Parm)
 // int32_t                        EndAlpha                       (CPF_Parm)
@@ -339,11 +339,11 @@ void AREDActor_GlareEffect::SetAlphaTo(int32_t StartAlpha, int32_t EndAlpha, int
 	uFnSetAlphaTo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetAlphaTo, &SetAlphaTo_Params, nullptr);
 	uFnSetAlphaTo->FunctionFlags |= 0x400;
-	uFnSetAlphaTo->iNative = 39687;
+	uFnSetAlphaTo->iNative = 39685;
 };
 
 // Function REDGame.REDActor_GlareEffect.SetAlpha
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39685])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39683])
 // Parameter Info:
 // int32_t                        inAlpha                        (CPF_Parm)
 
@@ -364,11 +364,11 @@ void AREDActor_GlareEffect::SetAlpha(int32_t inAlpha)
 	uFnSetAlpha->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetAlpha, &SetAlpha_Params, nullptr);
 	uFnSetAlpha->FunctionFlags |= 0x400;
-	uFnSetAlpha->iNative = 39685;
+	uFnSetAlpha->iNative = 39683;
 };
 
 // Function REDGame.REDActor_GlareEffect.SetAlphaF
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39686])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39684])
 // Parameter Info:
 // float                          inAlpha                        (CPF_Parm)
 
@@ -389,11 +389,11 @@ void AREDActor_GlareEffect::SetAlphaF(float inAlpha)
 	uFnSetAlphaF->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetAlphaF, &SetAlphaF_Params, nullptr);
 	uFnSetAlphaF->FunctionFlags |= 0x400;
-	uFnSetAlphaF->iNative = 39686;
+	uFnSetAlphaF->iNative = 39684;
 };
 
 // Function REDGame.REDActor_GlareEffect.SetColor
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39711])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39709])
 // Parameter Info:
 // struct FColor                  InColor                        (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -414,13 +414,13 @@ void AREDActor_GlareEffect::SetColor(struct FColor& InColor)
 	uFnSetColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetColor, &SetColor_Params, nullptr);
 	uFnSetColor->FunctionFlags |= 0x400;
-	uFnSetColor->iNative = 39711;
+	uFnSetColor->iNative = 39709;
 
 	memcpy_s(&InColor, sizeof(InColor), &SetColor_Params.InColor, sizeof(SetColor_Params.InColor));
 };
 
 // Function REDGame.REDActor_GlareEffect.SetColorF
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39712])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39710])
 // Parameter Info:
 // struct FLinearColor            InColor                        (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -441,13 +441,13 @@ void AREDActor_GlareEffect::SetColorF(struct FLinearColor& InColor)
 	uFnSetColorF->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetColorF, &SetColorF_Params, nullptr);
 	uFnSetColorF->FunctionFlags |= 0x400;
-	uFnSetColorF->iNative = 39712;
+	uFnSetColorF->iNative = 39710;
 
 	memcpy_s(&InColor, sizeof(InColor), &SetColorF_Params.InColor, sizeof(SetColorF_Params.InColor));
 };
 
 // Function REDGame.REDActor_GlareEffect.ResetColor
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27181])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27179])
 // Parameter Info:
 
 void AREDActor_GlareEffect::ResetColor()
@@ -466,11 +466,11 @@ void AREDActor_GlareEffect::ResetColor()
 	uFnResetColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetColor, &ResetColor_Params, nullptr);
 	uFnResetColor->FunctionFlags |= 0x400;
-	uFnResetColor->iNative = 27181;
+	uFnResetColor->iNative = 27179;
 };
 
 // Function REDGame.REDActor_GlareEffect.SetScale
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28132])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28130])
 // Parameter Info:
 // float                          X                              (CPF_Parm)
 // float                          Y                              (CPF_Parm)
@@ -493,11 +493,11 @@ void AREDActor_GlareEffect::SetScale(float X, float Y)
 	uFnSetScale->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetScale, &SetScale_Params, nullptr);
 	uFnSetScale->FunctionFlags |= 0x400;
-	uFnSetScale->iNative = 28132;
+	uFnSetScale->iNative = 28130;
 };
 
 // Function REDGame.REDActor_GlareEffect.SetDisp
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39728])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39726])
 // Parameter Info:
 // uint32_t                       bDispOn                        (CPF_Parm)
 
@@ -518,11 +518,11 @@ void AREDActor_GlareEffect::SetDisp(bool bDispOn)
 	uFnSetDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDisp, &SetDisp_Params, nullptr);
 	uFnSetDisp->FunctionFlags |= 0x400;
-	uFnSetDisp->iNative = 39728;
+	uFnSetDisp->iNative = 39726;
 };
 
 // Function REDGame.REDActor_GlareEffect.SetOffset
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39786])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39784])
 // Parameter Info:
 // float                          X                              (CPF_Parm)
 // float                          Y                              (CPF_Parm)
@@ -545,7 +545,7 @@ void AREDActor_GlareEffect::SetOffset(float X, float Y)
 	uFnSetOffset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetOffset, &SetOffset_Params, nullptr);
 	uFnSetOffset->FunctionFlags |= 0x400;
-	uFnSetOffset->iNative = 39786;
+	uFnSetOffset->iNative = 39784;
 };
 
 // Function REDGame.REDActor_PauseMenu.Tick
@@ -613,7 +613,7 @@ bool AREDActor_PauseMenu::ActivatePause(class AREDHUD* HUD)
 };
 
 // Function REDGame.REDActor_PauseMenu.PauseUpdate
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38905])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38903])
 // Parameter Info:
 
 void AREDActor_PauseMenu::PauseUpdate()
@@ -632,7 +632,7 @@ void AREDActor_PauseMenu::PauseUpdate()
 	uFnPauseUpdate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPauseUpdate, &PauseUpdate_Params, nullptr);
 	uFnPauseUpdate->FunctionFlags |= 0x400;
-	uFnPauseUpdate->iNative = 38905;
+	uFnPauseUpdate->iNative = 38903;
 };
 
 // Function REDGame.REDActor_PostUpdater.Tick
@@ -657,7 +657,7 @@ void AREDActor_PostUpdater::eventTick(float DeltaTime)
 };
 
 // Function REDGame.REDActor_PostUpdater.UpdateMaterialParam
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40774])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40772])
 // Parameter Info:
 
 void AREDActor_PostUpdater::UpdateMaterialParam()
@@ -676,7 +676,7 @@ void AREDActor_PostUpdater::UpdateMaterialParam()
 	uFnUpdateMaterialParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMaterialParam, &UpdateMaterialParam_Params, nullptr);
 	uFnUpdateMaterialParam->FunctionFlags |= 0x400;
-	uFnUpdateMaterialParam->iNative = 40774;
+	uFnUpdateMaterialParam->iNative = 40772;
 };
 
 // Function REDGame.REDActor_RadialBlur.Tick
@@ -739,7 +739,7 @@ void AREDActor_RadialBlur::SetupCamera()
 };
 
 // Function REDGame.REDActor_RadialBlur.UpdateDraw
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40647])
 // Parameter Info:
 
 void AREDActor_RadialBlur::UpdateDraw()
@@ -758,11 +758,11 @@ void AREDActor_RadialBlur::UpdateDraw()
 	uFnUpdateDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDraw, &UpdateDraw_Params, nullptr);
 	uFnUpdateDraw->FunctionFlags |= 0x400;
-	uFnUpdateDraw->iNative = 40649;
+	uFnUpdateDraw->iNative = 40647;
 };
 
 // Function REDGame.REDActor_RadialBlur.NativeTick
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38513])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38511])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 
@@ -783,11 +783,11 @@ void AREDActor_RadialBlur::NativeTick(float DeltaTime)
 	uFnNativeTick->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNativeTick, &NativeTick_Params, nullptr);
 	uFnNativeTick->FunctionFlags |= 0x400;
-	uFnNativeTick->iNative = 38513;
+	uFnNativeTick->iNative = 38511;
 };
 
 // Function REDGame.REDActor_RadialBlur.End
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[20356])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[20354])
 // Parameter Info:
 // uint32_t                       immediate                      (CPF_Parm)
 
@@ -808,7 +808,7 @@ void AREDActor_RadialBlur::End(bool immediate)
 	uFnEnd->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnEnd, &End_Params, nullptr);
 	uFnEnd->FunctionFlags |= 0x400;
-	uFnEnd->iNative = 20356;
+	uFnEnd->iNative = 20354;
 };
 
 // Function REDGame.REDActor_RadialBlur.Start
@@ -851,7 +851,7 @@ void AREDActor_RadialBlur::Start(const struct FVector& centerLocation, bool bRel
 };
 
 // Function REDGame.REDAdvSceneData.GetSECue
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37165])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37163])
 // Parameter Info:
 // class USoundCue*               ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    cueName                        (CPF_Parm)
@@ -873,13 +873,13 @@ class USoundCue* UREDAdvSceneData::GetSECue(const class FName& cueName)
 	uFnGetSECue->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSECue, &GetSECue_Params, nullptr);
 	uFnGetSECue->FunctionFlags |= 0x400;
-	uFnGetSECue->iNative = 37165;
+	uFnGetSECue->iNative = 37163;
 
 	return GetSECue_Params.ReturnValue;
 };
 
 // Function REDGame.REDAnimNodeBlendList.ChangeAnimSeq
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36090])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36088])
 // Parameter Info:
 // class UREDAnimNodeSequence*    ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SeqName                        (CPF_Parm)
@@ -907,13 +907,13 @@ class UREDAnimNodeSequence* UREDAnimNodeBlendList::ChangeAnimSeq(const class FNa
 	uFnChangeAnimSeq->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeAnimSeq, &ChangeAnimSeq_Params, nullptr);
 	uFnChangeAnimSeq->FunctionFlags |= 0x400;
-	uFnChangeAnimSeq->iNative = 36090;
+	uFnChangeAnimSeq->iNative = 36088;
 
 	return ChangeAnimSeq_Params.ReturnValue;
 };
 
 // Function REDGame.REDAnimNodeBlendAdvFace.UpdateBlendAnim
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40604])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40602])
 // Parameter Info:
 
 void UREDAnimNodeBlendAdvFace::UpdateBlendAnim()
@@ -932,11 +932,11 @@ void UREDAnimNodeBlendAdvFace::UpdateBlendAnim()
 	uFnUpdateBlendAnim->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateBlendAnim, &UpdateBlendAnim_Params, nullptr);
 	uFnUpdateBlendAnim->FunctionFlags |= 0x400;
-	uFnUpdateBlendAnim->iNative = 40604;
+	uFnUpdateBlendAnim->iNative = 40602;
 };
 
 // Function REDGame.REDAnimNodeBlendAdvFace.ChangeFace
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36096])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36094])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        InFaceType                     (CPF_Parm)
@@ -964,13 +964,13 @@ bool UREDAnimNodeBlendAdvFace::ChangeFace(int32_t InFaceType, int32_t InBlendCou
 	uFnChangeFace->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeFace, &ChangeFace_Params, nullptr);
 	uFnChangeFace->FunctionFlags |= 0x400;
-	uFnChangeFace->iNative = 36096;
+	uFnChangeFace->iNative = 36094;
 
 	return ChangeFace_Params.ReturnValue;
 };
 
 // Function REDGame.REDAnimNodeBlendAdvHair.UpdateBlendAnim
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40604])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40602])
 // Parameter Info:
 
 void UREDAnimNodeBlendAdvHair::UpdateBlendAnim()
@@ -989,11 +989,11 @@ void UREDAnimNodeBlendAdvHair::UpdateBlendAnim()
 	uFnUpdateBlendAnim->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateBlendAnim, &UpdateBlendAnim_Params, nullptr);
 	uFnUpdateBlendAnim->FunctionFlags |= 0x400;
-	uFnUpdateBlendAnim->iNative = 40604;
+	uFnUpdateBlendAnim->iNative = 40602;
 };
 
 // Function REDGame.REDAnimNodeBlendAdvHair.SetHair
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39754])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39752])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  AnimName                       (CPF_Parm | CPF_NeedCtorLink)
@@ -1025,7 +1025,7 @@ bool UREDAnimNodeBlendAdvHair::SetHair(const class FString& AnimName, int32_t In
 	uFnSetHair->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetHair, &SetHair_Params, nullptr);
 	uFnSetHair->FunctionFlags |= 0x400;
-	uFnSetHair->iNative = 39754;
+	uFnSetHair->iNative = 39752;
 
 	return SetHair_Params.ReturnValue;
 };
@@ -1054,7 +1054,7 @@ void UREDAnimNodeBlendEyeBlink::Update()
 };
 
 // Function REDGame.REDAnimNodeBlendEyeBlink.StopBlink
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40099])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40097])
 // Parameter Info:
 
 void UREDAnimNodeBlendEyeBlink::StopBlink()
@@ -1073,11 +1073,11 @@ void UREDAnimNodeBlendEyeBlink::StopBlink()
 	uFnStopBlink->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopBlink, &StopBlink_Params, nullptr);
 	uFnStopBlink->FunctionFlags |= 0x400;
-	uFnStopBlink->iNative = 40099;
+	uFnStopBlink->iNative = 40097;
 };
 
 // Function REDGame.REDAnimNodeBlendEyeBlink.PlayBlink
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38963])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38961])
 // Parameter Info:
 // uint32_t                       Linear                         (CPF_OptionalParm | CPF_Parm)
 // float                          Speed                          (CPF_OptionalParm | CPF_Parm)
@@ -1102,11 +1102,11 @@ void UREDAnimNodeBlendEyeBlink::PlayBlink(bool Linear, float Speed, int32_t play
 	uFnPlayBlink->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayBlink, &PlayBlink_Params, nullptr);
 	uFnPlayBlink->FunctionFlags |= 0x400;
-	uFnPlayBlink->iNative = 38963;
+	uFnPlayBlink->iNative = 38961;
 };
 
 // Function REDGame.REDAnimNodeBlendEyeBlink.SetBlendTarget
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27891])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27889])
 // Parameter Info:
 // float                          BlendTarget                    (CPF_Parm)
 // float                          BlendTime                      (CPF_Parm)
@@ -1129,7 +1129,7 @@ void UREDAnimNodeBlendEyeBlink::SetBlendTarget(float BlendTarget, float BlendTim
 	uFnSetBlendTarget->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetBlendTarget, &SetBlendTarget_Params, nullptr);
 	uFnSetBlendTarget->FunctionFlags |= 0x400;
-	uFnSetBlendTarget->iNative = 27891;
+	uFnSetBlendTarget->iNative = 27889;
 };
 
 // Function REDGame.REDAnimNodeBlendLip.Update
@@ -1156,7 +1156,7 @@ void UREDAnimNodeBlendLip::Update()
 };
 
 // Function REDGame.REDAnimNodeBlendLip.ChangeMouthSeqNodeIndex
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36103])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36101])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 
@@ -1177,11 +1177,11 @@ void UREDAnimNodeBlendLip::ChangeMouthSeqNodeIndex(int32_t Index)
 	uFnChangeMouthSeqNodeIndex->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeMouthSeqNodeIndex, &ChangeMouthSeqNodeIndex_Params, nullptr);
 	uFnChangeMouthSeqNodeIndex->FunctionFlags |= 0x400;
-	uFnChangeMouthSeqNodeIndex->iNative = 36103;
+	uFnChangeMouthSeqNodeIndex->iNative = 36101;
 };
 
 // Function REDGame.REDAnimNodeBlendLip.ChangeMouthSeqNode
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36102])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36100])
 // Parameter Info:
 // class FName                    MouthNodeName                  (CPF_Parm)
 
@@ -1202,7 +1202,7 @@ void UREDAnimNodeBlendLip::ChangeMouthSeqNode(const class FName& MouthNodeName)
 	uFnChangeMouthSeqNode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeMouthSeqNode, &ChangeMouthSeqNode_Params, nullptr);
 	uFnChangeMouthSeqNode->FunctionFlags |= 0x400;
-	uFnChangeMouthSeqNode->iNative = 36102;
+	uFnChangeMouthSeqNode->iNative = 36100;
 };
 
 // Function REDGame.REDAnimNodeBlendLip.CloseMouth
@@ -1279,7 +1279,7 @@ void UREDAnimNodeBlendLip::StopLip(bool Linear)
 };
 
 // Function REDGame.REDAnimNodeBlendLip.PlayLip
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39035])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39033])
 // Parameter Info:
 // int32_t                        Type                           (CPF_Parm)
 // uint32_t                       Linear                         (CPF_OptionalParm | CPF_Parm)
@@ -1306,11 +1306,11 @@ void UREDAnimNodeBlendLip::PlayLip(int32_t Type, bool Linear, float Speed, int32
 	uFnPlayLip->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayLip, &PlayLip_Params, nullptr);
 	uFnPlayLip->FunctionFlags |= 0x400;
-	uFnPlayLip->iNative = 39035;
+	uFnPlayLip->iNative = 39033;
 };
 
 // Function REDGame.REDAnimNodeBlendLip.ChangeMouthType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36104])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36102])
 // Parameter Info:
 // int32_t                        Type                           (CPF_Parm)
 
@@ -1331,11 +1331,11 @@ void UREDAnimNodeBlendLip::ChangeMouthType(int32_t Type)
 	uFnChangeMouthType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeMouthType, &ChangeMouthType_Params, nullptr);
 	uFnChangeMouthType->FunctionFlags |= 0x400;
-	uFnChangeMouthType->iNative = 36104;
+	uFnChangeMouthType->iNative = 36102;
 };
 
 // Function REDGame.REDAnimNodeBlendLip.SetBlendTarget
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27891])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27889])
 // Parameter Info:
 // float                          BlendTarget                    (CPF_Parm)
 // float                          BlendTime                      (CPF_Parm)
@@ -1358,11 +1358,11 @@ void UREDAnimNodeBlendLip::SetBlendTarget(float BlendTarget, float BlendTime)
 	uFnSetBlendTarget->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetBlendTarget, &SetBlendTarget_Params, nullptr);
 	uFnSetBlendTarget->FunctionFlags |= 0x400;
-	uFnSetBlendTarget->iNative = 27891;
+	uFnSetBlendTarget->iNative = 27889;
 };
 
 // Function REDGame.REDAnimNodeScarfSystem.UpdateScarfSystem
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40840])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40838])
 // Parameter Info:
 // uint32_t                       bStopShrink                    (CPF_Parm)
 
@@ -1383,11 +1383,11 @@ void UREDAnimNodeScarfSystem::UpdateScarfSystem(bool bStopShrink)
 	uFnUpdateScarfSystem->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateScarfSystem, &UpdateScarfSystem_Params, nullptr);
 	uFnUpdateScarfSystem->FunctionFlags |= 0x400;
-	uFnUpdateScarfSystem->iNative = 40840;
+	uFnUpdateScarfSystem->iNative = 40838;
 };
 
 // Function REDGame.REDAnimNodeScarfSystem.StopScarfSystem
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40104])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40102])
 // Parameter Info:
 // int32_t                        BlendFrame                     (CPF_Parm)
 
@@ -1408,11 +1408,11 @@ void UREDAnimNodeScarfSystem::StopScarfSystem(int32_t BlendFrame)
 	uFnStopScarfSystem->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopScarfSystem, &StopScarfSystem_Params, nullptr);
 	uFnStopScarfSystem->FunctionFlags |= 0x400;
-	uFnStopScarfSystem->iNative = 40104;
+	uFnStopScarfSystem->iNative = 40102;
 };
 
 // Function REDGame.REDAnimNodeScarfSystem.StartScarfSystem
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40032])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40030])
 // Parameter Info:
 // int32_t                        BlendFrame                     (CPF_Parm)
 
@@ -1433,11 +1433,11 @@ void UREDAnimNodeScarfSystem::StartScarfSystem(int32_t BlendFrame)
 	uFnStartScarfSystem->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStartScarfSystem, &StartScarfSystem_Params, nullptr);
 	uFnStartScarfSystem->FunctionFlags |= 0x400;
-	uFnStartScarfSystem->iNative = 40032;
+	uFnStartScarfSystem->iNative = 40030;
 };
 
 // Function REDGame.REDAnimNodeSequence.JumpCutSceneAnimeFrame
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37949])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37947])
 // Parameter Info:
 // float                          frame                          (CPF_Parm)
 
@@ -1458,7 +1458,7 @@ void UREDAnimNodeSequence::JumpCutSceneAnimeFrame(float frame)
 	uFnJumpCutSceneAnimeFrame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJumpCutSceneAnimeFrame, &JumpCutSceneAnimeFrame_Params, nullptr);
 	uFnJumpCutSceneAnimeFrame->FunctionFlags |= 0x400;
-	uFnJumpCutSceneAnimeFrame->iNative = 37949;
+	uFnJumpCutSceneAnimeFrame->iNative = 37947;
 };
 
 // Function REDGame.REDAnimNodeSequence.IsAnimeEnd
@@ -1488,7 +1488,7 @@ bool UREDAnimNodeSequence::IsAnimeEnd()
 };
 
 // Function REDGame.REDAnimNodeSequence.SetAnimeFrame
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39690])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39688])
 // Parameter Info:
 // int32_t                        frame                          (CPF_Parm)
 
@@ -1509,11 +1509,11 @@ void UREDAnimNodeSequence::SetAnimeFrame(int32_t frame)
 	uFnSetAnimeFrame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetAnimeFrame, &SetAnimeFrame_Params, nullptr);
 	uFnSetAnimeFrame->FunctionFlags |= 0x400;
-	uFnSetAnimeFrame->iNative = 39690;
+	uFnSetAnimeFrame->iNative = 39688;
 };
 
 // Function REDGame.REDAnimNodeSequence.StepAnime
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40090])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40088])
 // Parameter Info:
 // int32_t                        frame                          (CPF_Parm)
 
@@ -1534,11 +1534,11 @@ void UREDAnimNodeSequence::StepAnime(int32_t frame)
 	uFnStepAnime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStepAnime, &StepAnime_Params, nullptr);
 	uFnStepAnime->FunctionFlags |= 0x400;
-	uFnStepAnime->iNative = 40090;
+	uFnStepAnime->iNative = 40088;
 };
 
 // Function REDGame.REDAnimNodeSequence.SetAnim
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27871])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27869])
 // Parameter Info:
 // class FName                    Sequence                       (CPF_Parm)
 
@@ -1559,11 +1559,11 @@ void UREDAnimNodeSequence::SetAnim(const class FName& Sequence)
 	uFnSetAnim->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetAnim, &SetAnim_Params, nullptr);
 	uFnSetAnim->FunctionFlags |= 0x400;
-	uFnSetAnim->iNative = 27871;
+	uFnSetAnim->iNative = 27869;
 };
 
 // Function REDGame.REDAnimTree.ZeroScale
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[41039])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[41037])
 // Parameter Info:
 
 void UREDAnimTree::ZeroScale()
@@ -1582,11 +1582,11 @@ void UREDAnimTree::ZeroScale()
 	uFnZeroScale->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnZeroScale, &ZeroScale_Params, nullptr);
 	uFnZeroScale->FunctionFlags |= 0x400;
-	uFnZeroScale->iNative = 41039;
+	uFnZeroScale->iNative = 41037;
 };
 
 // Function REDGame.REDAnimTree.ResetScaleController
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39388])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39386])
 // Parameter Info:
 
 void UREDAnimTree::ResetScaleController()
@@ -1605,7 +1605,7 @@ void UREDAnimTree::ResetScaleController()
 	uFnResetScaleController->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetScaleController, &ResetScaleController_Params, nullptr);
 	uFnResetScaleController->FunctionFlags |= 0x400;
-	uFnResetScaleController->iNative = 39388;
+	uFnResetScaleController->iNative = 39386;
 };
 
 // Function REDGame.REDAnywhereDisp.StopNewChallenger
@@ -1666,7 +1666,7 @@ void UREDAnywhereDisp::eventInitialize()
 };
 
 // Function REDGame.REDAnywhereDisp.UpdateFreeTrialInfomation
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40678])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40676])
 // Parameter Info:
 
 void UREDAnywhereDisp::UpdateFreeTrialInfomation()
@@ -1685,11 +1685,11 @@ void UREDAnywhereDisp::UpdateFreeTrialInfomation()
 	uFnUpdateFreeTrialInfomation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFreeTrialInfomation, &UpdateFreeTrialInfomation_Params, nullptr);
 	uFnUpdateFreeTrialInfomation->FunctionFlags |= 0x400;
-	uFnUpdateFreeTrialInfomation->iNative = 40678;
+	uFnUpdateFreeTrialInfomation->iNative = 40676;
 };
 
 // Function REDGame.REDAnywhereDisp.UpdateNewChallengerDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40794])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40792])
 // Parameter Info:
 
 void UREDAnywhereDisp::UpdateNewChallengerDraw()
@@ -1708,11 +1708,11 @@ void UREDAnywhereDisp::UpdateNewChallengerDraw()
 	uFnUpdateNewChallengerDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateNewChallengerDraw, &UpdateNewChallengerDraw_Params, nullptr);
 	uFnUpdateNewChallengerDraw->FunctionFlags |= 0x400;
-	uFnUpdateNewChallengerDraw->iNative = 40794;
+	uFnUpdateNewChallengerDraw->iNative = 40792;
 };
 
 // Function REDGame.REDAnywhereDisp.IsNewChallengerDrawEnd
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37746])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37744])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -1732,13 +1732,13 @@ bool UREDAnywhereDisp::IsNewChallengerDrawEnd()
 	uFnIsNewChallengerDrawEnd->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsNewChallengerDrawEnd, &IsNewChallengerDrawEnd_Params, nullptr);
 	uFnIsNewChallengerDrawEnd->FunctionFlags |= 0x400;
-	uFnIsNewChallengerDrawEnd->iNative = 37746;
+	uFnIsNewChallengerDrawEnd->iNative = 37744;
 
 	return IsNewChallengerDrawEnd_Params.ReturnValue;
 };
 
 // Function REDGame.REDAnywhereDisp.RequestNewChallengerDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39370])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39368])
 // Parameter Info:
 
 void UREDAnywhereDisp::RequestNewChallengerDraw()
@@ -1757,7 +1757,7 @@ void UREDAnywhereDisp::RequestNewChallengerDraw()
 	uFnRequestNewChallengerDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRequestNewChallengerDraw, &RequestNewChallengerDraw_Params, nullptr);
 	uFnRequestNewChallengerDraw->FunctionFlags |= 0x400;
-	uFnRequestNewChallengerDraw->iNative = 39370;
+	uFnRequestNewChallengerDraw->iNative = 39368;
 };
 
 // Function REDGame.REDAnywhereDisp.Update
@@ -2400,7 +2400,7 @@ void UREDBGMaterialController::Update()
 };
 
 // Function REDGame.REDBGMaterialController.SetBrightness
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39701])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39699])
 // Parameter Info:
 // float                          Brightness                     (CPF_Parm)
 
@@ -2421,7 +2421,7 @@ void UREDBGMaterialController::SetBrightness(float Brightness)
 	uFnSetBrightness->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetBrightness, &SetBrightness_Params, nullptr);
 	uFnSetBrightness->FunctionFlags |= 0x400;
-	uFnSetBrightness->iNative = 39701;
+	uFnSetBrightness->iNative = 39699;
 };
 
 // Function REDGame.REDBGMaterialController.FadeOut
@@ -2553,7 +2553,7 @@ void AREDCamera_Adv::DisplayDebug(class AHUD* HUD, float& out_YL, float& out_YPo
 };
 
 // Function REDGame.REDCamera_Adv.UpdatePawnCameraParam
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40804])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40802])
 // Parameter Info:
 // struct FTPOV                   POV                            (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -2574,13 +2574,13 @@ void AREDCamera_Adv::UpdatePawnCameraParam(struct FTPOV& POV)
 	uFnUpdatePawnCameraParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnCameraParam, &UpdatePawnCameraParam_Params, nullptr);
 	uFnUpdatePawnCameraParam->FunctionFlags |= 0x400;
-	uFnUpdatePawnCameraParam->iNative = 40804;
+	uFnUpdatePawnCameraParam->iNative = 40802;
 
 	memcpy_s(&POV, sizeof(POV), &UpdatePawnCameraParam_Params.POV, sizeof(UpdatePawnCameraParam_Params.POV));
 };
 
 // Function REDGame.REDCamera_Adv.UpdatePawnMaterialInstance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40807])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40805])
 // Parameter Info:
 
 void AREDCamera_Adv::UpdatePawnMaterialInstance()
@@ -2599,11 +2599,11 @@ void AREDCamera_Adv::UpdatePawnMaterialInstance()
 	uFnUpdatePawnMaterialInstance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnMaterialInstance, &UpdatePawnMaterialInstance_Params, nullptr);
 	uFnUpdatePawnMaterialInstance->FunctionFlags |= 0x400;
-	uFnUpdatePawnMaterialInstance->iNative = 40807;
+	uFnUpdatePawnMaterialInstance->iNative = 40805;
 };
 
 // Function REDGame.REDCamera_Adv.UpdateCameraAnimLight
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40611])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40609])
 // Parameter Info:
 
 void AREDCamera_Adv::UpdateCameraAnimLight()
@@ -2622,7 +2622,7 @@ void AREDCamera_Adv::UpdateCameraAnimLight()
 	uFnUpdateCameraAnimLight->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateCameraAnimLight, &UpdateCameraAnimLight_Params, nullptr);
 	uFnUpdateCameraAnimLight->FunctionFlags |= 0x400;
-	uFnUpdateCameraAnimLight->iNative = 40611;
+	uFnUpdateCameraAnimLight->iNative = 40609;
 };
 
 // Function REDGame.REDCamera_CharaSelect.UpdateViewTarget
@@ -2679,7 +2679,7 @@ void AREDCamera_CharaSelect::DisplayDebug(class AHUD* HUD, float& out_YL, float&
 };
 
 // Function REDGame.REDCamera_CharaSelect.UpdatePawnMaterialInstance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40807])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40805])
 // Parameter Info:
 
 void AREDCamera_CharaSelect::UpdatePawnMaterialInstance()
@@ -2698,11 +2698,11 @@ void AREDCamera_CharaSelect::UpdatePawnMaterialInstance()
 	uFnUpdatePawnMaterialInstance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnMaterialInstance, &UpdatePawnMaterialInstance_Params, nullptr);
 	uFnUpdatePawnMaterialInstance->FunctionFlags |= 0x400;
-	uFnUpdatePawnMaterialInstance->iNative = 40807;
+	uFnUpdatePawnMaterialInstance->iNative = 40805;
 };
 
 // Function REDGame.REDCamera_CharaSelect.UpdatePawnCameraParam
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40804])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40802])
 // Parameter Info:
 // struct FTPOV                   POV                            (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -2723,7 +2723,7 @@ void AREDCamera_CharaSelect::UpdatePawnCameraParam(struct FTPOV& POV)
 	uFnUpdatePawnCameraParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnCameraParam, &UpdatePawnCameraParam_Params, nullptr);
 	uFnUpdatePawnCameraParam->FunctionFlags |= 0x400;
-	uFnUpdatePawnCameraParam->iNative = 40804;
+	uFnUpdatePawnCameraParam->iNative = 40802;
 
 	memcpy_s(&POV, sizeof(POV), &UpdatePawnCameraParam_Params.POV, sizeof(UpdatePawnCameraParam_Params.POV));
 };
@@ -2782,7 +2782,7 @@ void AREDCamera_DigitalFigure::DisplayDebug(class AHUD* HUD, float& out_YL, floa
 };
 
 // Function REDGame.REDCamera_DigitalFigure.UpdatePawnCameraParam
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40804])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40802])
 // Parameter Info:
 // struct FTPOV                   POV                            (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -2803,13 +2803,13 @@ void AREDCamera_DigitalFigure::UpdatePawnCameraParam(struct FTPOV& POV)
 	uFnUpdatePawnCameraParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnCameraParam, &UpdatePawnCameraParam_Params, nullptr);
 	uFnUpdatePawnCameraParam->FunctionFlags |= 0x400;
-	uFnUpdatePawnCameraParam->iNative = 40804;
+	uFnUpdatePawnCameraParam->iNative = 40802;
 
 	memcpy_s(&POV, sizeof(POV), &UpdatePawnCameraParam_Params.POV, sizeof(UpdatePawnCameraParam_Params.POV));
 };
 
 // Function REDGame.REDCamera_DigitalFigure.UpdatePawnMaterialInstance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40807])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40805])
 // Parameter Info:
 
 void AREDCamera_DigitalFigure::UpdatePawnMaterialInstance()
@@ -2828,11 +2828,11 @@ void AREDCamera_DigitalFigure::UpdatePawnMaterialInstance()
 	uFnUpdatePawnMaterialInstance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnMaterialInstance, &UpdatePawnMaterialInstance_Params, nullptr);
 	uFnUpdatePawnMaterialInstance->FunctionFlags |= 0x400;
-	uFnUpdatePawnMaterialInstance->iNative = 40807;
+	uFnUpdatePawnMaterialInstance->iNative = 40805;
 };
 
 // Function REDGame.REDCamera_DigitalFigure.UpdateCameraAnimLight
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40611])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40609])
 // Parameter Info:
 
 void AREDCamera_DigitalFigure::UpdateCameraAnimLight()
@@ -2851,7 +2851,7 @@ void AREDCamera_DigitalFigure::UpdateCameraAnimLight()
 	uFnUpdateCameraAnimLight->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateCameraAnimLight, &UpdateCameraAnimLight_Params, nullptr);
 	uFnUpdateCameraAnimLight->FunctionFlags |= 0x400;
-	uFnUpdateCameraAnimLight->iNative = 40611;
+	uFnUpdateCameraAnimLight->iNative = 40609;
 };
 
 // Function REDGame.REDCameraAnimArray.GetCameraAnim
@@ -2905,7 +2905,7 @@ void UREDCameraOffsetDataArray::AddOffsetData(struct FVector& PosOffset, struct 
 };
 
 // Function REDGame.REDCharaAssetLoader.CheckExistPackage
-// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36196])
+// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36194])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FSpawnPlayerInfo        Info                           (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -2927,7 +2927,7 @@ bool UREDCharaAssetLoader::CheckExistPackage(struct FSpawnPlayerInfo& Info)
 	uFnCheckExistPackage->FunctionFlags &= ~0x400;
 	UREDCharaAssetLoader::StaticClass()->ProcessEvent(uFnCheckExistPackage, &CheckExistPackage_Params, nullptr);
 	uFnCheckExistPackage->FunctionFlags |= 0x400;
-	uFnCheckExistPackage->iNative = 36196;
+	uFnCheckExistPackage->iNative = 36194;
 
 	memcpy_s(&Info, sizeof(Info), &CheckExistPackage_Params.Info, sizeof(CheckExistPackage_Params.Info));
 
@@ -2935,7 +2935,7 @@ bool UREDCharaAssetLoader::CheckExistPackage(struct FSpawnPlayerInfo& Info)
 };
 
 // Function REDGame.REDCharaAssetLoader.GetPackageNamesForDrama
-// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37126])
+// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37124])
 // Parameter Info:
 // class FString                  textLang                       (CPF_Parm | CPF_NeedCtorLink)
 // class FString                  voiceLang                      (CPF_Parm | CPF_NeedCtorLink)
@@ -2962,14 +2962,14 @@ void UREDCharaAssetLoader::GetPackageNamesForDrama(const class FString& textLang
 	uFnGetPackageNamesForDrama->FunctionFlags &= ~0x400;
 	UREDCharaAssetLoader::StaticClass()->ProcessEvent(uFnGetPackageNamesForDrama, &GetPackageNamesForDrama_Params, nullptr);
 	uFnGetPackageNamesForDrama->FunctionFlags |= 0x400;
-	uFnGetPackageNamesForDrama->iNative = 37126;
+	uFnGetPackageNamesForDrama->iNative = 37124;
 
 	memcpy_s(&Info, sizeof(Info), &GetPackageNamesForDrama_Params.Info, sizeof(GetPackageNamesForDrama_Params.Info));
 	memcpy_s(&packageNames, sizeof(packageNames), &GetPackageNamesForDrama_Params.packageNames, sizeof(GetPackageNamesForDrama_Params.packageNames));
 };
 
 // Function REDGame.REDCharaAssetLoader.GetPackageNamesForMOM
-// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37127])
+// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37125])
 // Parameter Info:
 // struct FSpawnPlayerInfo        Info                           (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 // class TArray<class FString>    packageNames                   (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -2992,14 +2992,14 @@ void UREDCharaAssetLoader::GetPackageNamesForMOM(struct FSpawnPlayerInfo& Info, 
 	uFnGetPackageNamesForMOM->FunctionFlags &= ~0x400;
 	UREDCharaAssetLoader::StaticClass()->ProcessEvent(uFnGetPackageNamesForMOM, &GetPackageNamesForMOM_Params, nullptr);
 	uFnGetPackageNamesForMOM->FunctionFlags |= 0x400;
-	uFnGetPackageNamesForMOM->iNative = 37127;
+	uFnGetPackageNamesForMOM->iNative = 37125;
 
 	memcpy_s(&Info, sizeof(Info), &GetPackageNamesForMOM_Params.Info, sizeof(GetPackageNamesForMOM_Params.Info));
 	memcpy_s(&packageNames, sizeof(packageNames), &GetPackageNamesForMOM_Params.packageNames, sizeof(GetPackageNamesForMOM_Params.packageNames));
 };
 
 // Function REDGame.REDCharaAssetLoader.LoadAssets
-// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[38017])
+// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[38015])
 // Parameter Info:
 // class UREDCharaAsset*          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class UObject*                 outerObject                    (CPF_Parm)
@@ -3025,7 +3025,7 @@ class UREDCharaAsset* UREDCharaAssetLoader::LoadAssets(class UObject* outerObjec
 	uFnLoadAssets->FunctionFlags &= ~0x400;
 	UREDCharaAssetLoader::StaticClass()->ProcessEvent(uFnLoadAssets, &LoadAssets_Params, nullptr);
 	uFnLoadAssets->FunctionFlags |= 0x400;
-	uFnLoadAssets->iNative = 38017;
+	uFnLoadAssets->iNative = 38015;
 
 	memcpy_s(&packageNames, sizeof(packageNames), &LoadAssets_Params.packageNames, sizeof(LoadAssets_Params.packageNames));
 
@@ -3033,7 +3033,7 @@ class UREDCharaAsset* UREDCharaAssetLoader::LoadAssets(class UObject* outerObjec
 };
 
 // Function REDGame.REDCharaAssetLoader.GetPackageNamesSimple
-// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37129])
+// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37127])
 // Parameter Info:
 // uint32_t                       bColorOnly                     (CPF_Parm)
 // struct FSpawnPlayerInfo        Info                           (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -3058,14 +3058,14 @@ void UREDCharaAssetLoader::GetPackageNamesSimple(bool bColorOnly, struct FSpawnP
 	uFnGetPackageNamesSimple->FunctionFlags &= ~0x400;
 	UREDCharaAssetLoader::StaticClass()->ProcessEvent(uFnGetPackageNamesSimple, &GetPackageNamesSimple_Params, nullptr);
 	uFnGetPackageNamesSimple->FunctionFlags |= 0x400;
-	uFnGetPackageNamesSimple->iNative = 37129;
+	uFnGetPackageNamesSimple->iNative = 37127;
 
 	memcpy_s(&Info, sizeof(Info), &GetPackageNamesSimple_Params.Info, sizeof(GetPackageNamesSimple_Params.Info));
 	memcpy_s(&packageNames, sizeof(packageNames), &GetPackageNamesSimple_Params.packageNames, sizeof(GetPackageNamesSimple_Params.packageNames));
 };
 
 // Function REDGame.REDCharaAssetLoader.GetPackageNamesForOnlyDrama
-// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37128])
+// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37126])
 // Parameter Info:
 // struct FSpawnPlayerInfo        Info                           (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 // class TArray<class FString>    packageNames                   (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -3088,14 +3088,14 @@ void UREDCharaAssetLoader::GetPackageNamesForOnlyDrama(struct FSpawnPlayerInfo& 
 	uFnGetPackageNamesForOnlyDrama->FunctionFlags &= ~0x400;
 	UREDCharaAssetLoader::StaticClass()->ProcessEvent(uFnGetPackageNamesForOnlyDrama, &GetPackageNamesForOnlyDrama_Params, nullptr);
 	uFnGetPackageNamesForOnlyDrama->FunctionFlags |= 0x400;
-	uFnGetPackageNamesForOnlyDrama->iNative = 37128;
+	uFnGetPackageNamesForOnlyDrama->iNative = 37126;
 
 	memcpy_s(&Info, sizeof(Info), &GetPackageNamesForOnlyDrama_Params.Info, sizeof(GetPackageNamesForOnlyDrama_Params.Info));
 	memcpy_s(&packageNames, sizeof(packageNames), &GetPackageNamesForOnlyDrama_Params.packageNames, sizeof(GetPackageNamesForOnlyDrama_Params.packageNames));
 };
 
 // Function REDGame.REDCharaAssetLoader.GetPackageNames
-// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37125])
+// [0x00422401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37123])
 // Parameter Info:
 // struct FSpawnPlayerInfo        Info                           (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 // class TArray<class FString>    packageNames                   (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -3118,7 +3118,7 @@ void UREDCharaAssetLoader::GetPackageNames(struct FSpawnPlayerInfo& Info, class 
 	uFnGetPackageNames->FunctionFlags &= ~0x400;
 	UREDCharaAssetLoader::StaticClass()->ProcessEvent(uFnGetPackageNames, &GetPackageNames_Params, nullptr);
 	uFnGetPackageNames->FunctionFlags |= 0x400;
-	uFnGetPackageNames->iNative = 37125;
+	uFnGetPackageNames->iNative = 37123;
 
 	memcpy_s(&Info, sizeof(Info), &GetPackageNames_Params.Info, sizeof(GetPackageNames_Params.Info));
 	memcpy_s(&packageNames, sizeof(packageNames), &GetPackageNames_Params.packageNames, sizeof(GetPackageNames_Params.packageNames));
@@ -3150,7 +3150,7 @@ void UREDCheatManager::Twitter(const class FString& Exec, const class FString& a
 };
 
 // Function REDGame.REDCheatManager.TwitterControl
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40294])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40292])
 // Parameter Info:
 // class FString                  Exec                           (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 // class FString                  argv1                          (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -3175,7 +3175,7 @@ void UREDCheatManager::TwitterControl(class FString& Exec, class FString& argv1,
 	uFnTwitterControl->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTwitterControl, &TwitterControl_Params, nullptr);
 	uFnTwitterControl->FunctionFlags |= 0x400;
-	uFnTwitterControl->iNative = 40294;
+	uFnTwitterControl->iNative = 40292;
 
 	memcpy_s(&Exec, sizeof(Exec), &TwitterControl_Params.Exec, sizeof(TwitterControl_Params.Exec));
 	memcpy_s(&argv1, sizeof(argv1), &TwitterControl_Params.argv1, sizeof(TwitterControl_Params.argv1));
@@ -3449,7 +3449,7 @@ struct FRotator UREDControlModule_Adv::GetBaseAimRotation()
 };
 
 // Function REDGame.REDControlModule_Adv.GetInnerCameraFov
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37074])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37072])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3469,13 +3469,13 @@ float UREDControlModule_Adv::GetInnerCameraFov()
 	uFnGetInnerCameraFov->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInnerCameraFov, &GetInnerCameraFov_Params, nullptr);
 	uFnGetInnerCameraFov->FunctionFlags |= 0x400;
-	uFnGetInnerCameraFov->iNative = 37074;
+	uFnGetInnerCameraFov->iNative = 37072;
 
 	return GetInnerCameraFov_Params.ReturnValue;
 };
 
 // Function REDGame.REDControlModule_Adv.GetInnerCameraRot
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37076])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37074])
 // Parameter Info:
 // struct FRotator                Rotation                       (CPF_Parm | CPF_OutParm)
 
@@ -3496,13 +3496,13 @@ void UREDControlModule_Adv::GetInnerCameraRot(struct FRotator& Rotation)
 	uFnGetInnerCameraRot->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInnerCameraRot, &GetInnerCameraRot_Params, nullptr);
 	uFnGetInnerCameraRot->FunctionFlags |= 0x400;
-	uFnGetInnerCameraRot->iNative = 37076;
+	uFnGetInnerCameraRot->iNative = 37074;
 
 	memcpy_s(&Rotation, sizeof(Rotation), &GetInnerCameraRot_Params.Rotation, sizeof(GetInnerCameraRot_Params.Rotation));
 };
 
 // Function REDGame.REDControlModule_Adv.GetInnerCameraPos
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37075])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37073])
 // Parameter Info:
 // struct FVector                 Location                       (CPF_Parm | CPF_OutParm)
 
@@ -3523,13 +3523,13 @@ void UREDControlModule_Adv::GetInnerCameraPos(struct FVector& Location)
 	uFnGetInnerCameraPos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInnerCameraPos, &GetInnerCameraPos_Params, nullptr);
 	uFnGetInnerCameraPos->FunctionFlags |= 0x400;
-	uFnGetInnerCameraPos->iNative = 37075;
+	uFnGetInnerCameraPos->iNative = 37073;
 
 	memcpy_s(&Location, sizeof(Location), &GetInnerCameraPos_Params.Location, sizeof(GetInnerCameraPos_Params.Location));
 };
 
 // Function REDGame.REDControlModule_Battle.UpdateRotation
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29850])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29848])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 
@@ -3550,11 +3550,11 @@ void UREDControlModule_Battle::UpdateRotation(float DeltaTime)
 	uFnUpdateRotation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateRotation, &UpdateRotation_Params, nullptr);
 	uFnUpdateRotation->FunctionFlags |= 0x400;
-	uFnUpdateRotation->iNative = 29850;
+	uFnUpdateRotation->iNative = 29848;
 };
 
 // Function REDGame.REDControlModule_Battle.ProcessMove
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26500])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26498])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 // struct FVector                 newAccel                       (CPF_Parm)
@@ -3581,7 +3581,7 @@ void UREDControlModule_Battle::ProcessMove(float DeltaTime, const struct FVector
 	uFnProcessMove->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnProcessMove, &ProcessMove_Params, nullptr);
 	uFnProcessMove->FunctionFlags |= 0x400;
-	uFnProcessMove->iNative = 26500;
+	uFnProcessMove->iNative = 26498;
 };
 
 // Function REDGame.REDControlModule_Battle.GetBaseAimRotation
@@ -3607,7 +3607,7 @@ struct FRotator UREDControlModule_Battle::GetBaseAimRotation()
 };
 
 // Function REDGame.REDControlModule_Battle.SetCameraOffset
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39702])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39700])
 // Parameter Info:
 // struct FVector                 InLocationOffset               (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FRotator                InRotationOffset               (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -3630,14 +3630,14 @@ void UREDControlModule_Battle::SetCameraOffset(struct FVector& InLocationOffset,
 	uFnSetCameraOffset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetCameraOffset, &SetCameraOffset_Params, nullptr);
 	uFnSetCameraOffset->FunctionFlags |= 0x400;
-	uFnSetCameraOffset->iNative = 39702;
+	uFnSetCameraOffset->iNative = 39700;
 
 	memcpy_s(&InLocationOffset, sizeof(InLocationOffset), &SetCameraOffset_Params.InLocationOffset, sizeof(SetCameraOffset_Params.InLocationOffset));
 	memcpy_s(&InRotationOffset, sizeof(InRotationOffset), &SetCameraOffset_Params.InRotationOffset, sizeof(SetCameraOffset_Params.InRotationOffset));
 };
 
 // Function REDGame.REDControlModule_Battle.GetCameraOffset
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37014])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37012])
 // Parameter Info:
 // struct FVector                 Location                       (CPF_Parm | CPF_OutParm)
 // struct FRotator                Rotation                       (CPF_Parm | CPF_OutParm)
@@ -3660,14 +3660,14 @@ void UREDControlModule_Battle::GetCameraOffset(struct FVector& Location, struct 
 	uFnGetCameraOffset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCameraOffset, &GetCameraOffset_Params, nullptr);
 	uFnGetCameraOffset->FunctionFlags |= 0x400;
-	uFnGetCameraOffset->iNative = 37014;
+	uFnGetCameraOffset->iNative = 37012;
 
 	memcpy_s(&Location, sizeof(Location), &GetCameraOffset_Params.Location, sizeof(GetCameraOffset_Params.Location));
 	memcpy_s(&Rotation, sizeof(Rotation), &GetCameraOffset_Params.Rotation, sizeof(GetCameraOffset_Params.Rotation));
 };
 
 // Function REDGame.REDControlModule_Battle.GetInnerCameraRot
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37076])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37074])
 // Parameter Info:
 // struct FRotator                Rotation                       (CPF_Parm | CPF_OutParm)
 
@@ -3688,13 +3688,13 @@ void UREDControlModule_Battle::GetInnerCameraRot(struct FRotator& Rotation)
 	uFnGetInnerCameraRot->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInnerCameraRot, &GetInnerCameraRot_Params, nullptr);
 	uFnGetInnerCameraRot->FunctionFlags |= 0x400;
-	uFnGetInnerCameraRot->iNative = 37076;
+	uFnGetInnerCameraRot->iNative = 37074;
 
 	memcpy_s(&Rotation, sizeof(Rotation), &GetInnerCameraRot_Params.Rotation, sizeof(GetInnerCameraRot_Params.Rotation));
 };
 
 // Function REDGame.REDControlModule_Battle.GetInnerCameraPos
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37075])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37073])
 // Parameter Info:
 // struct FVector                 Location                       (CPF_Parm | CPF_OutParm)
 
@@ -3715,7 +3715,7 @@ void UREDControlModule_Battle::GetInnerCameraPos(struct FVector& Location)
 	uFnGetInnerCameraPos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInnerCameraPos, &GetInnerCameraPos_Params, nullptr);
 	uFnGetInnerCameraPos->FunctionFlags |= 0x400;
-	uFnGetInnerCameraPos->iNative = 37075;
+	uFnGetInnerCameraPos->iNative = 37073;
 
 	memcpy_s(&Location, sizeof(Location), &GetInnerCameraPos_Params.Location, sizeof(GetInnerCameraPos_Params.Location));
 };
@@ -3791,7 +3791,7 @@ struct FRotator UREDControlModule_DigitalFigure::GetBaseAimRotation()
 };
 
 // Function REDGame.REDControlModule_DigitalFigure.GetInnerCameraFov
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37074])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37072])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3811,13 +3811,13 @@ float UREDControlModule_DigitalFigure::GetInnerCameraFov()
 	uFnGetInnerCameraFov->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInnerCameraFov, &GetInnerCameraFov_Params, nullptr);
 	uFnGetInnerCameraFov->FunctionFlags |= 0x400;
-	uFnGetInnerCameraFov->iNative = 37074;
+	uFnGetInnerCameraFov->iNative = 37072;
 
 	return GetInnerCameraFov_Params.ReturnValue;
 };
 
 // Function REDGame.REDControlModule_DigitalFigure.GetInnerCameraRot
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37076])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37074])
 // Parameter Info:
 // struct FRotator                Rotation                       (CPF_Parm | CPF_OutParm)
 
@@ -3838,13 +3838,13 @@ void UREDControlModule_DigitalFigure::GetInnerCameraRot(struct FRotator& Rotatio
 	uFnGetInnerCameraRot->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInnerCameraRot, &GetInnerCameraRot_Params, nullptr);
 	uFnGetInnerCameraRot->FunctionFlags |= 0x400;
-	uFnGetInnerCameraRot->iNative = 37076;
+	uFnGetInnerCameraRot->iNative = 37074;
 
 	memcpy_s(&Rotation, sizeof(Rotation), &GetInnerCameraRot_Params.Rotation, sizeof(GetInnerCameraRot_Params.Rotation));
 };
 
 // Function REDGame.REDControlModule_DigitalFigure.GetInnerCameraPos
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37075])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37073])
 // Parameter Info:
 // struct FVector                 Location                       (CPF_Parm | CPF_OutParm)
 
@@ -3865,7 +3865,7 @@ void UREDControlModule_DigitalFigure::GetInnerCameraPos(struct FVector& Location
 	uFnGetInnerCameraPos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInnerCameraPos, &GetInnerCameraPos_Params, nullptr);
 	uFnGetInnerCameraPos->FunctionFlags |= 0x400;
-	uFnGetInnerCameraPos->iNative = 37075;
+	uFnGetInnerCameraPos->iNative = 37073;
 
 	memcpy_s(&Location, sizeof(Location), &GetInnerCameraPos_Params.Location, sizeof(GetInnerCameraPos_Params.Location));
 };
@@ -3919,7 +3919,7 @@ void UREDControlModule_Lobby::ProcessMove(float DeltaTime, const struct FVector&
 };
 
 // Function REDGame.REDControlModule_Lobby.GetInnerCameraRot
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37076])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37074])
 // Parameter Info:
 // struct FRotator                Rotation                       (CPF_Parm | CPF_OutParm)
 
@@ -3940,13 +3940,13 @@ void UREDControlModule_Lobby::GetInnerCameraRot(struct FRotator& Rotation)
 	uFnGetInnerCameraRot->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInnerCameraRot, &GetInnerCameraRot_Params, nullptr);
 	uFnGetInnerCameraRot->FunctionFlags |= 0x400;
-	uFnGetInnerCameraRot->iNative = 37076;
+	uFnGetInnerCameraRot->iNative = 37074;
 
 	memcpy_s(&Rotation, sizeof(Rotation), &GetInnerCameraRot_Params.Rotation, sizeof(GetInnerCameraRot_Params.Rotation));
 };
 
 // Function REDGame.REDControlModule_Lobby.GetInnerCameraPos
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37075])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37073])
 // Parameter Info:
 // struct FVector                 Location                       (CPF_Parm | CPF_OutParm)
 
@@ -3967,7 +3967,7 @@ void UREDControlModule_Lobby::GetInnerCameraPos(struct FVector& Location)
 	uFnGetInnerCameraPos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInnerCameraPos, &GetInnerCameraPos_Params, nullptr);
 	uFnGetInnerCameraPos->FunctionFlags |= 0x400;
-	uFnGetInnerCameraPos->iNative = 37075;
+	uFnGetInnerCameraPos->iNative = 37073;
 
 	memcpy_s(&Location, sizeof(Location), &GetInnerCameraPos_Params.Location, sizeof(GetInnerCameraPos_Params.Location));
 };
@@ -3992,7 +3992,7 @@ void AREDDebugCameraController::DebugCameraTransformCopyToClipboard()
 };
 
 // Function REDGame.REDDebugCameraController.NativeDebugCameraTransformCopyToClipboard
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38511])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38509])
 // Parameter Info:
 // class AREDPawn_Player*         P1                             (CPF_Parm)
 
@@ -4013,11 +4013,11 @@ void AREDDebugCameraController::NativeDebugCameraTransformCopyToClipboard(class 
 	uFnNativeDebugCameraTransformCopyToClipboard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNativeDebugCameraTransformCopyToClipboard, &NativeDebugCameraTransformCopyToClipboard_Params, nullptr);
 	uFnNativeDebugCameraTransformCopyToClipboard->FunctionFlags |= 0x400;
-	uFnNativeDebugCameraTransformCopyToClipboard->iNative = 38511;
+	uFnNativeDebugCameraTransformCopyToClipboard->iNative = 38509;
 };
 
 // Function REDGame.REDDebugCameraController.ForceMouseUnlock
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36892])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36890])
 // Parameter Info:
 // uint32_t                       bUnlock                        (CPF_Parm)
 
@@ -4038,7 +4038,7 @@ void AREDDebugCameraController::ForceMouseUnlock(bool bUnlock)
 	uFnForceMouseUnlock->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnForceMouseUnlock, &ForceMouseUnlock_Params, nullptr);
 	uFnForceMouseUnlock->FunctionFlags |= 0x400;
-	uFnForceMouseUnlock->iNative = 36892;
+	uFnForceMouseUnlock->iNative = 36890;
 };
 
 // Function REDGame.REDDebugCameraController.DebugCameraRot
@@ -4116,7 +4116,7 @@ class AREDPawn_Player* AREDDebugCameraController::GetPlayer(int32_t Id)
 };
 
 // Function REDGame.REDDebugCameraController.UpdateLocal
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40762])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40760])
 // Parameter Info:
 
 void AREDDebugCameraController::UpdateLocal()
@@ -4135,7 +4135,7 @@ void AREDDebugCameraController::UpdateLocal()
 	uFnUpdateLocal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLocal, &UpdateLocal_Params, nullptr);
 	uFnUpdateLocal->FunctionFlags |= 0x400;
-	uFnUpdateLocal->iNative = 40762;
+	uFnUpdateLocal->iNative = 40760;
 };
 
 // Function REDGame.REDDownloadableContentManager.Init
@@ -4177,7 +4177,7 @@ void UREDDownloadableContentManager::eventRefreshDLCFromNative()
 };
 
 // Function REDGame.REDDownloadableContentManager.DLCPathChange
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36569])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36567])
 // Parameter Info:
 
 void UREDDownloadableContentManager::DLCPathChange()
@@ -4196,7 +4196,7 @@ void UREDDownloadableContentManager::DLCPathChange()
 	uFnDLCPathChange->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDLCPathChange, &DLCPathChange_Params, nullptr);
 	uFnDLCPathChange->FunctionFlags |= 0x400;
-	uFnDLCPathChange->iNative = 36569;
+	uFnDLCPathChange->iNative = 36567;
 };
 
 // Function REDGame.REDEasyCharaSelectActor.GetSpawnPlayerInfo
@@ -4249,7 +4249,7 @@ class FString AREDEasyCharaSelectActor::GetCharaNameID(ECHARA_ID Id)
 };
 
 // Function REDGame.REDEffect.SpawnEffect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39942])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39940])
 // Parameter Info:
 // class AREDPawn_Effect*         ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    EffectName                     (CPF_Parm)
@@ -4275,13 +4275,13 @@ class AREDPawn_Effect* UREDEffect::SpawnEffect(const class FName& EffectName, cl
 	uFnSpawnEffect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSpawnEffect, &SpawnEffect_Params, nullptr);
 	uFnSpawnEffect->FunctionFlags |= 0x400;
-	uFnSpawnEffect->iNative = 39942;
+	uFnSpawnEffect->iNative = 39940;
 
 	return SpawnEffect_Params.ReturnValue;
 };
 
 // Function REDGame.REDEffectMaterialInfo.GetPawnMaterialFromEffectName
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37133])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37131])
 // Parameter Info:
 // class UREDPawnMaterials*       ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    EffectName                     (CPF_Parm)
@@ -4303,13 +4303,13 @@ class UREDPawnMaterials* UREDEffectMaterialInfo::GetPawnMaterialFromEffectName(c
 	uFnGetPawnMaterialFromEffectName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPawnMaterialFromEffectName, &GetPawnMaterialFromEffectName_Params, nullptr);
 	uFnGetPawnMaterialFromEffectName->FunctionFlags |= 0x400;
-	uFnGetPawnMaterialFromEffectName->iNative = 37133;
+	uFnGetPawnMaterialFromEffectName->iNative = 37131;
 
 	return GetPawnMaterialFromEffectName_Params.ReturnValue;
 };
 
 // Function REDGame.REDEffectPawnPool.ReturnEffectPawn
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39402])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39400])
 // Parameter Info:
 // class AREDPawn_Effect*         EffectPawn                     (CPF_Parm)
 
@@ -4330,11 +4330,11 @@ void UREDEffectPawnPool::ReturnEffectPawn(class AREDPawn_Effect* EffectPawn)
 	uFnReturnEffectPawn->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReturnEffectPawn, &ReturnEffectPawn_Params, nullptr);
 	uFnReturnEffectPawn->FunctionFlags |= 0x400;
-	uFnReturnEffectPawn->iNative = 39402;
+	uFnReturnEffectPawn->iNative = 39400;
 };
 
 // Function REDGame.REDEffectPawnPool.GetPooledEffectPawn
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37143])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37141])
 // Parameter Info:
 // class AREDPawn_Effect*         ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -4354,7 +4354,7 @@ class AREDPawn_Effect* UREDEffectPawnPool::GetPooledEffectPawn()
 	uFnGetPooledEffectPawn->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPooledEffectPawn, &GetPooledEffectPawn_Params, nullptr);
 	uFnGetPooledEffectPawn->FunctionFlags |= 0x400;
-	uFnGetPooledEffectPawn->iNative = 37143;
+	uFnGetPooledEffectPawn->iNative = 37141;
 
 	return GetPooledEffectPawn_Params.ReturnValue;
 };
@@ -4442,7 +4442,7 @@ void UREDEffectPawnPool::InitPool(class AGameInfo* gi)
 };
 
 // Function REDGame.REDEffectPawnPool.UpdateLightVector
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40751])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40749])
 // Parameter Info:
 
 void UREDEffectPawnPool::UpdateLightVector()
@@ -4461,11 +4461,11 @@ void UREDEffectPawnPool::UpdateLightVector()
 	uFnUpdateLightVector->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLightVector, &UpdateLightVector_Params, nullptr);
 	uFnUpdateLightVector->FunctionFlags |= 0x400;
-	uFnUpdateLightVector->iNative = 40751;
+	uFnUpdateLightVector->iNative = 40749;
 };
 
 // Function REDGame.REDEffectPawnPool.UpdateMaterialInstanceParam
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40772])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40770])
 // Parameter Info:
 
 void UREDEffectPawnPool::UpdateMaterialInstanceParam()
@@ -4484,11 +4484,11 @@ void UREDEffectPawnPool::UpdateMaterialInstanceParam()
 	uFnUpdateMaterialInstanceParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMaterialInstanceParam, &UpdateMaterialInstanceParam_Params, nullptr);
 	uFnUpdateMaterialInstanceParam->FunctionFlags |= 0x400;
-	uFnUpdateMaterialInstanceParam->iNative = 40772;
+	uFnUpdateMaterialInstanceParam->iNative = 40770;
 };
 
 // Function REDGame.REDEffectPawnPool.UpdateLightVectorFromLightAnime
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40752])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40750])
 // Parameter Info:
 // struct FVector                 LightVector                    (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -4509,13 +4509,13 @@ void UREDEffectPawnPool::UpdateLightVectorFromLightAnime(struct FVector& LightVe
 	uFnUpdateLightVectorFromLightAnime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLightVectorFromLightAnime, &UpdateLightVectorFromLightAnime_Params, nullptr);
 	uFnUpdateLightVectorFromLightAnime->FunctionFlags |= 0x400;
-	uFnUpdateLightVectorFromLightAnime->iNative = 40752;
+	uFnUpdateLightVectorFromLightAnime->iNative = 40750;
 
 	memcpy_s(&LightVector, sizeof(LightVector), &UpdateLightVectorFromLightAnime_Params.LightVector, sizeof(UpdateLightVectorFromLightAnime_Params.LightVector));
 };
 
 // Function REDGame.REDEffectPawnPool.UpdateCameraParam
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40613])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40611])
 // Parameter Info:
 // float                          FOV                            (CPF_Parm)
 // struct FVector                 CameraDir                      (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -4538,13 +4538,13 @@ void UREDEffectPawnPool::UpdateCameraParam(float FOV, struct FVector& CameraDir)
 	uFnUpdateCameraParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateCameraParam, &UpdateCameraParam_Params, nullptr);
 	uFnUpdateCameraParam->FunctionFlags |= 0x400;
-	uFnUpdateCameraParam->iNative = 40613;
+	uFnUpdateCameraParam->iNative = 40611;
 
 	memcpy_s(&CameraDir, sizeof(CameraDir), &UpdateCameraParam_Params.CameraDir, sizeof(UpdateCameraParam_Params.CameraDir));
 };
 
 // Function REDGame.REDEmitterPool.OnParticleSystemFinishedWithColorOverride
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38819])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38817])
 // Parameter Info:
 // class UParticleSystemComponent* PSC                            (CPF_Parm | CPF_EditInline)
 
@@ -4565,11 +4565,11 @@ void AREDEmitterPool::OnParticleSystemFinishedWithColorOverride(class UParticleS
 	uFnOnParticleSystemFinishedWithColorOverride->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnParticleSystemFinishedWithColorOverride, &OnParticleSystemFinishedWithColorOverride_Params, nullptr);
 	uFnOnParticleSystemFinishedWithColorOverride->FunctionFlags |= 0x400;
-	uFnOnParticleSystemFinishedWithColorOverride->iNative = 38819;
+	uFnOnParticleSystemFinishedWithColorOverride->iNative = 38817;
 };
 
 // Function REDGame.REDEmitterPool.SetupMaterialForColorOverrideParticle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39844])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39842])
 // Parameter Info:
 // class UParticleSystemComponent* PSC                            (CPF_Parm | CPF_EditInline)
 
@@ -4590,7 +4590,7 @@ void AREDEmitterPool::SetupMaterialForColorOverrideParticle(class UParticleSyste
 	uFnSetupMaterialForColorOverrideParticle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupMaterialForColorOverrideParticle, &SetupMaterialForColorOverrideParticle_Params, nullptr);
 	uFnSetupMaterialForColorOverrideParticle->FunctionFlags |= 0x400;
-	uFnSetupMaterialForColorOverrideParticle->iNative = 39844;
+	uFnSetupMaterialForColorOverrideParticle->iNative = 39842;
 };
 
 // Function REDGame.REDEmitterPool.SpawnEmitter
@@ -4630,7 +4630,7 @@ class UParticleSystemComponent* AREDEmitterPool::eventSpawnEmitter(class UPartic
 };
 
 // Function REDGame.REDEmitterPool.ResetMaterialInterface
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39386])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39384])
 // Parameter Info:
 
 void AREDEmitterPool::ResetMaterialInterface()
@@ -4649,7 +4649,7 @@ void AREDEmitterPool::ResetMaterialInterface()
 	uFnResetMaterialInterface->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetMaterialInterface, &ResetMaterialInterface_Params, nullptr);
 	uFnResetMaterialInterface->FunctionFlags |= 0x400;
-	uFnResetMaterialInterface->iNative = 39386;
+	uFnResetMaterialInterface->iNative = 39384;
 };
 
 // Function REDGame.REDEmitterPool.RoundReset
@@ -4676,7 +4676,7 @@ void AREDEmitterPool::RoundReset()
 };
 
 // Function REDGame.REDEmitterPool.InitPool
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37542])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37540])
 // Parameter Info:
 
 void AREDEmitterPool::InitPool()
@@ -4695,7 +4695,7 @@ void AREDEmitterPool::InitPool()
 	uFnInitPool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitPool, &InitPool_Params, nullptr);
 	uFnInitPool->FunctionFlags |= 0x400;
-	uFnInitPool->iNative = 37542;
+	uFnInitPool->iNative = 37540;
 };
 
 // Function REDGame.REDGameCommon.GetText
@@ -4917,7 +4917,7 @@ void UREDGameCommon::eventNarrationChangeRequest(const class FString& CharaID, b
 };
 
 // Function REDGame.REDGameCommon.SetPlaySoundPadSpeaker
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39795])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39793])
 // Parameter Info:
 // int32_t                        PadID                          (CPF_Parm)
 
@@ -4938,11 +4938,11 @@ void UREDGameCommon::SetPlaySoundPadSpeaker(int32_t PadID)
 	uFnSetPlaySoundPadSpeaker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPlaySoundPadSpeaker, &SetPlaySoundPadSpeaker_Params, nullptr);
 	uFnSetPlaySoundPadSpeaker->FunctionFlags |= 0x400;
-	uFnSetPlaySoundPadSpeaker->iNative = 39795;
+	uFnSetPlaySoundPadSpeaker->iNative = 39793;
 };
 
 // Function REDGame.REDGameCommon.SetCurrentNarrationCharaID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39719])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39717])
 // Parameter Info:
 // int32_t                        svID                           (CPF_Parm)
 
@@ -4963,11 +4963,11 @@ void UREDGameCommon::SetCurrentNarrationCharaID(int32_t svID)
 	uFnSetCurrentNarrationCharaID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetCurrentNarrationCharaID, &SetCurrentNarrationCharaID_Params, nullptr);
 	uFnSetCurrentNarrationCharaID->FunctionFlags |= 0x400;
-	uFnSetCurrentNarrationCharaID->iNative = 39719;
+	uFnSetCurrentNarrationCharaID->iNative = 39717;
 };
 
 // Function REDGame.REDGameCommon.GetCurrentNarrationCharaID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37040])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37038])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -4987,13 +4987,13 @@ class FString UREDGameCommon::GetCurrentNarrationCharaID()
 	uFnGetCurrentNarrationCharaID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCurrentNarrationCharaID, &GetCurrentNarrationCharaID_Params, nullptr);
 	uFnGetCurrentNarrationCharaID->FunctionFlags |= 0x400;
-	uFnGetCurrentNarrationCharaID->iNative = 37040;
+	uFnGetCurrentNarrationCharaID->iNative = 37038;
 
 	return GetCurrentNarrationCharaID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetMainQuadrant
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37094])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37092])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5013,13 +5013,13 @@ int32_t UREDGameCommon::GetMainQuadrant()
 	uFnGetMainQuadrant->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMainQuadrant, &GetMainQuadrant_Params, nullptr);
 	uFnGetMainQuadrant->FunctionFlags |= 0x400;
-	uFnGetMainQuadrant->iNative = 37094;
+	uFnGetMainQuadrant->iNative = 37092;
 
 	return GetMainQuadrant_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetControllerName
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37031])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37029])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // int32_t                        ControllerId                   (CPF_Parm)
@@ -5041,13 +5041,13 @@ class FString UREDGameCommon::GetControllerName(int32_t ControllerId)
 	uFnGetControllerName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetControllerName, &GetControllerName_Params, nullptr);
 	uFnGetControllerName->FunctionFlags |= 0x400;
-	uFnGetControllerName->iNative = 37031;
+	uFnGetControllerName->iNative = 37029;
 
 	return GetControllerName_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsUsePS3Controller
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37926])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37924])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        ControllerId                   (CPF_Parm)
@@ -5069,13 +5069,13 @@ bool UREDGameCommon::IsUsePS3Controller(int32_t ControllerId)
 	uFnIsUsePS3Controller->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsUsePS3Controller, &IsUsePS3Controller_Params, nullptr);
 	uFnIsUsePS3Controller->FunctionFlags |= 0x400;
-	uFnIsUsePS3Controller->iNative = 37926;
+	uFnIsUsePS3Controller->iNative = 37924;
 
 	return IsUsePS3Controller_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsControllerConnected
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22881])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22879])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        ControllerId                   (CPF_Parm)
@@ -5097,13 +5097,13 @@ bool UREDGameCommon::IsControllerConnected(int32_t ControllerId)
 	uFnIsControllerConnected->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsControllerConnected, &IsControllerConnected_Params, nullptr);
 	uFnIsControllerConnected->FunctionFlags |= 0x400;
-	uFnIsControllerConnected->iNative = 22881;
+	uFnIsControllerConnected->iNative = 22879;
 
 	return IsControllerConnected_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.ResetLightBarColor
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39384])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39382])
 // Parameter Info:
 // int32_t                        ControllerId                   (CPF_Parm)
 
@@ -5124,11 +5124,11 @@ void UREDGameCommon::ResetLightBarColor(int32_t ControllerId)
 	uFnResetLightBarColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetLightBarColor, &ResetLightBarColor_Params, nullptr);
 	uFnResetLightBarColor->FunctionFlags |= 0x400;
-	uFnResetLightBarColor->iNative = 39384;
+	uFnResetLightBarColor->iNative = 39382;
 };
 
 // Function REDGame.REDGameCommon.SetLightBarColor
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39763])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39761])
 // Parameter Info:
 // int32_t                        ControllerId                   (CPF_Parm)
 // struct FColor                  lightBarColor                  (CPF_Parm)
@@ -5151,11 +5151,11 @@ void UREDGameCommon::SetLightBarColor(int32_t ControllerId, const struct FColor&
 	uFnSetLightBarColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLightBarColor, &SetLightBarColor_Params, nullptr);
 	uFnSetLightBarColor->FunctionFlags |= 0x400;
-	uFnSetLightBarColor->iNative = 39763;
+	uFnSetLightBarColor->iNative = 39761;
 };
 
 // Function REDGame.REDGameCommon.DrawStatusIcon_Sub
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36605])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36603])
 // Parameter Info:
 // int32_t                        Type                           (CPF_Parm)
 // int32_t                        X                              (CPF_Parm)
@@ -5184,11 +5184,11 @@ void UREDGameCommon::DrawStatusIcon_Sub(int32_t Type, int32_t X, int32_t Y, int3
 	uFnDrawStatusIcon_Sub->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDrawStatusIcon_Sub, &DrawStatusIcon_Sub_Params, nullptr);
 	uFnDrawStatusIcon_Sub->FunctionFlags |= 0x400;
-	uFnDrawStatusIcon_Sub->iNative = 36605;
+	uFnDrawStatusIcon_Sub->iNative = 36603;
 };
 
 // Function REDGame.REDGameCommon.DispNowSaving
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36563])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36561])
 // Parameter Info:
 
 void UREDGameCommon::DispNowSaving()
@@ -5207,11 +5207,11 @@ void UREDGameCommon::DispNowSaving()
 	uFnDispNowSaving->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDispNowSaving, &DispNowSaving_Params, nullptr);
 	uFnDispNowSaving->FunctionFlags |= 0x400;
-	uFnDispNowSaving->iNative = 36563;
+	uFnDispNowSaving->iNative = 36561;
 };
 
 // Function REDGame.REDGameCommon.DispNowConnecting
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36561])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36559])
 // Parameter Info:
 
 void UREDGameCommon::DispNowConnecting()
@@ -5230,11 +5230,11 @@ void UREDGameCommon::DispNowConnecting()
 	uFnDispNowConnecting->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDispNowConnecting, &DispNowConnecting_Params, nullptr);
 	uFnDispNowConnecting->FunctionFlags |= 0x400;
-	uFnDispNowConnecting->iNative = 36561;
+	uFnDispNowConnecting->iNative = 36559;
 };
 
 // Function REDGame.REDGameCommon.DispNowLoading
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36562])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36560])
 // Parameter Info:
 
 void UREDGameCommon::DispNowLoading()
@@ -5253,11 +5253,11 @@ void UREDGameCommon::DispNowLoading()
 	uFnDispNowLoading->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDispNowLoading, &DispNowLoading_Params, nullptr);
 	uFnDispNowLoading->FunctionFlags |= 0x400;
-	uFnDispNowLoading->iNative = 36562;
+	uFnDispNowLoading->iNative = 36560;
 };
 
 // Function REDGame.REDGameCommon.DrawStatusIcon
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36604])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36602])
 // Parameter Info:
 
 void UREDGameCommon::DrawStatusIcon()
@@ -5276,11 +5276,11 @@ void UREDGameCommon::DrawStatusIcon()
 	uFnDrawStatusIcon->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDrawStatusIcon, &DrawStatusIcon_Params, nullptr);
 	uFnDrawStatusIcon->FunctionFlags |= 0x400;
-	uFnDrawStatusIcon->iNative = 36604;
+	uFnDrawStatusIcon->iNative = 36602;
 };
 
 // Function REDGame.REDGameCommon.UpdateStatusIcon
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40861])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40859])
 // Parameter Info:
 
 void UREDGameCommon::UpdateStatusIcon()
@@ -5299,11 +5299,11 @@ void UREDGameCommon::UpdateStatusIcon()
 	uFnUpdateStatusIcon->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateStatusIcon, &UpdateStatusIcon_Params, nullptr);
 	uFnUpdateStatusIcon->FunctionFlags |= 0x400;
-	uFnUpdateStatusIcon->iNative = 40861;
+	uFnUpdateStatusIcon->iNative = 40859;
 };
 
 // Function REDGame.REDGameCommon.IsSteam
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37872])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37870])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5323,13 +5323,13 @@ bool UREDGameCommon::IsSteam()
 	uFnIsSteam->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsSteam, &IsSteam_Params, nullptr);
 	uFnIsSteam->FunctionFlags |= 0x400;
-	uFnIsSteam->iNative = 37872;
+	uFnIsSteam->iNative = 37870;
 
 	return IsSteam_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsRevelator2_Option_ForBattle
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37829])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37827])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5349,13 +5349,13 @@ bool UREDGameCommon::IsRevelator2_Option_ForBattle()
 	uFnIsRevelator2_Option_ForBattle->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsRevelator2_Option_ForBattle, &IsRevelator2_Option_ForBattle_Params, nullptr);
 	uFnIsRevelator2_Option_ForBattle->FunctionFlags |= 0x400;
-	uFnIsRevelator2_Option_ForBattle->iNative = 37829;
+	uFnIsRevelator2_Option_ForBattle->iNative = 37827;
 
 	return IsRevelator2_Option_ForBattle_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsRevelator2_Option
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37828])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37826])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5375,13 +5375,13 @@ bool UREDGameCommon::IsRevelator2_Option()
 	uFnIsRevelator2_Option->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsRevelator2_Option, &IsRevelator2_Option_Params, nullptr);
 	uFnIsRevelator2_Option->FunctionFlags |= 0x400;
-	uFnIsRevelator2_Option->iNative = 37828;
+	uFnIsRevelator2_Option->iNative = 37826;
 
 	return IsRevelator2_Option_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsRevelator2_DLC
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37827])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37825])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5401,13 +5401,13 @@ bool UREDGameCommon::IsRevelator2_DLC()
 	uFnIsRevelator2_DLC->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsRevelator2_DLC, &IsRevelator2_DLC_Params, nullptr);
 	uFnIsRevelator2_DLC->FunctionFlags |= 0x400;
-	uFnIsRevelator2_DLC->iNative = 37827;
+	uFnIsRevelator2_DLC->iNative = 37825;
 
 	return IsRevelator2_DLC_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsEarlyAccess
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37643])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37641])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5427,13 +5427,13 @@ bool UREDGameCommon::IsEarlyAccess()
 	uFnIsEarlyAccess->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsEarlyAccess, &IsEarlyAccess_Params, nullptr);
 	uFnIsEarlyAccess->FunctionFlags |= 0x400;
-	uFnIsEarlyAccess->iNative = 37643;
+	uFnIsEarlyAccess->iNative = 37641;
 
 	return IsEarlyAccess_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsEnableTournament
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37647])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37645])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5453,13 +5453,13 @@ bool UREDGameCommon::IsEnableTournament()
 	uFnIsEnableTournament->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsEnableTournament, &IsEnableTournament_Params, nullptr);
 	uFnIsEnableTournament->FunctionFlags |= 0x400;
-	uFnIsEnableTournament->iNative = 37647;
+	uFnIsEnableTournament->iNative = 37645;
 
 	return IsEnableTournament_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsCHNRom
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37622])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37620])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5479,13 +5479,13 @@ bool UREDGameCommon::IsCHNRom()
 	uFnIsCHNRom->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsCHNRom, &IsCHNRom_Params, nullptr);
 	uFnIsCHNRom->FunctionFlags |= 0x400;
-	uFnIsCHNRom->iNative = 37622;
+	uFnIsCHNRom->iNative = 37620;
 
 	return IsCHNRom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsAksysMB
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37593])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37591])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5505,13 +5505,13 @@ bool UREDGameCommon::IsAksysMB()
 	uFnIsAksysMB->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsAksysMB, &IsAksysMB_Params, nullptr);
 	uFnIsAksysMB->FunctionFlags |= 0x400;
-	uFnIsAksysMB->iNative = 37593;
+	uFnIsAksysMB->iNative = 37591;
 
 	return IsAksysMB_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsPSPlusTrial
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37796])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37794])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5531,13 +5531,13 @@ bool UREDGameCommon::IsPSPlusTrial()
 	uFnIsPSPlusTrial->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsPSPlusTrial, &IsPSPlusTrial_Params, nullptr);
 	uFnIsPSPlusTrial->FunctionFlags |= 0x400;
-	uFnIsPSPlusTrial->iNative = 37796;
+	uFnIsPSPlusTrial->iNative = 37794;
 
 	return IsPSPlusTrial_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsConsumer
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37628])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37626])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5557,13 +5557,13 @@ bool UREDGameCommon::IsConsumer()
 	uFnIsConsumer->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsConsumer, &IsConsumer_Params, nullptr);
 	uFnIsConsumer->FunctionFlags |= 0x400;
-	uFnIsConsumer->iNative = 37628;
+	uFnIsConsumer->iNative = 37626;
 
 	return IsConsumer_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsE3Rom
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37642])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37640])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5583,7 +5583,7 @@ bool UREDGameCommon::IsE3Rom()
 	uFnIsE3Rom->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsE3Rom, &IsE3Rom_Params, nullptr);
 	uFnIsE3Rom->FunctionFlags |= 0x400;
-	uFnIsE3Rom->iNative = 37642;
+	uFnIsE3Rom->iNative = 37640;
 
 	return IsE3Rom_Params.ReturnValue;
 };
@@ -5608,7 +5608,7 @@ void UREDGameCommon::LocationTest_SetupInfo()
 };
 
 // Function REDGame.REDGameCommon.IsLocationTest
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37714])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37712])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5628,7 +5628,7 @@ bool UREDGameCommon::IsLocationTest()
 	uFnIsLocationTest->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnIsLocationTest, &IsLocationTest_Params, nullptr);
 	uFnIsLocationTest->FunctionFlags |= 0x400;
-	uFnIsLocationTest->iNative = 37714;
+	uFnIsLocationTest->iNative = 37712;
 
 	return IsLocationTest_Params.ReturnValue;
 };
@@ -5676,7 +5676,7 @@ void UREDGameCommon::eventRegistExternalTexture2DArray(class UREDTexture2DArray*
 };
 
 // Function REDGame.REDGameCommon.ClearInterludeAssets
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36224])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36222])
 // Parameter Info:
 
 void UREDGameCommon::ClearInterludeAssets()
@@ -5695,11 +5695,11 @@ void UREDGameCommon::ClearInterludeAssets()
 	uFnClearInterludeAssets->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearInterludeAssets, &ClearInterludeAssets_Params, nullptr);
 	uFnClearInterludeAssets->FunctionFlags |= 0x400;
-	uFnClearInterludeAssets->iNative = 36224;
+	uFnClearInterludeAssets->iNative = 36222;
 };
 
 // Function REDGame.REDGameCommon.LockInterludeAssets
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38086])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38084])
 // Parameter Info:
 
 void UREDGameCommon::LockInterludeAssets()
@@ -5718,11 +5718,11 @@ void UREDGameCommon::LockInterludeAssets()
 	uFnLockInterludeAssets->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLockInterludeAssets, &LockInterludeAssets_Params, nullptr);
 	uFnLockInterludeAssets->FunctionFlags |= 0x400;
-	uFnLockInterludeAssets->iNative = 38086;
+	uFnLockInterludeAssets->iNative = 38084;
 };
 
 // Function REDGame.REDGameCommon.GetInstance
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37077])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37075])
 // Parameter Info:
 // class UREDGameCommon*          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -5742,7 +5742,7 @@ class UREDGameCommon* UREDGameCommon::GetInstance()
 	uFnGetInstance->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnGetInstance, &GetInstance_Params, nullptr);
 	uFnGetInstance->FunctionFlags |= 0x400;
-	uFnGetInstance->iNative = 37077;
+	uFnGetInstance->iNative = 37075;
 
 	return GetInstance_Params.ReturnValue;
 };
@@ -5992,7 +5992,7 @@ bool UREDGameCommon::eventArcadeMode_StepStage(EUE_PLAYER_ID Player)
 };
 
 // Function REDGame.REDGameCommon.IsPlayerColorExChara
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37771])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37769])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  exCharaID                      (CPF_Const | CPF_Parm | CPF_NeedCtorLink)
@@ -6014,13 +6014,13 @@ bool UREDGameCommon::IsPlayerColorExChara(const class FString& exCharaID)
 	uFnIsPlayerColorExChara->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPlayerColorExChara, &IsPlayerColorExChara_Params, nullptr);
 	uFnIsPlayerColorExChara->FunctionFlags |= 0x400;
-	uFnIsPlayerColorExChara->iNative = 37771;
+	uFnIsPlayerColorExChara->iNative = 37769;
 
 	return IsPlayerColorExChara_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetPlayerColorExCharaMaterial
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37137])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37135])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  exCharaID                      (CPF_Const | CPF_Parm | CPF_NeedCtorLink)
@@ -6042,13 +6042,13 @@ class FString UREDGameCommon::GetPlayerColorExCharaMaterial(const class FString&
 	uFnGetPlayerColorExCharaMaterial->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPlayerColorExCharaMaterial, &GetPlayerColorExCharaMaterial_Params, nullptr);
 	uFnGetPlayerColorExCharaMaterial->FunctionFlags |= 0x400;
-	uFnGetPlayerColorExCharaMaterial->iNative = 37137;
+	uFnGetPlayerColorExCharaMaterial->iNative = 37135;
 
 	return GetPlayerColorExCharaMaterial_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetPlayerColorExCharaMatPackage
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37138])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37136])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  exCharaID                      (CPF_Const | CPF_Parm | CPF_NeedCtorLink)
@@ -6070,13 +6070,13 @@ class FString UREDGameCommon::GetPlayerColorExCharaMatPackage(const class FStrin
 	uFnGetPlayerColorExCharaMatPackage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPlayerColorExCharaMatPackage, &GetPlayerColorExCharaMatPackage_Params, nullptr);
 	uFnGetPlayerColorExCharaMatPackage->FunctionFlags |= 0x400;
-	uFnGetPlayerColorExCharaMatPackage->iNative = 37138;
+	uFnGetPlayerColorExCharaMatPackage->iNative = 37136;
 
 	return GetPlayerColorExCharaMatPackage_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.ArcadeMode_IsDarkColor
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35444])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35442])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -6098,7 +6098,7 @@ bool UREDGameCommon::ArcadeMode_IsDarkColor(EUE_PLAYER_ID Player)
 	uFnArcadeMode_IsDarkColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnArcadeMode_IsDarkColor, &ArcadeMode_IsDarkColor_Params, nullptr);
 	uFnArcadeMode_IsDarkColor->FunctionFlags |= 0x400;
-	uFnArcadeMode_IsDarkColor->iNative = 35444;
+	uFnArcadeMode_IsDarkColor->iNative = 35442;
 
 	return ArcadeMode_IsDarkColor_Params.ReturnValue;
 };
@@ -6325,7 +6325,7 @@ void UREDGameCommon::InitializeCharaSelectParam()
 };
 
 // Function REDGame.REDGameCommon.GetCostumeName
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37035])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37033])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -6349,13 +6349,13 @@ class FString UREDGameCommon::GetCostumeName(const class FString& CharaID, int32
 	uFnGetCostumeName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCostumeName, &GetCostumeName_Params, nullptr);
 	uFnGetCostumeName->FunctionFlags |= 0x400;
-	uFnGetCostumeName->iNative = 37035;
+	uFnGetCostumeName->iNative = 37033;
 
 	return GetCostumeName_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsSelectableCostume
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37845])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37843])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -6381,13 +6381,13 @@ bool UREDGameCommon::IsSelectableCostume(const class FString& CharaID, int32_t C
 	uFnIsSelectableCostume->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSelectableCostume, &IsSelectableCostume_Params, nullptr);
 	uFnIsSelectableCostume->FunctionFlags |= 0x400;
-	uFnIsSelectableCostume->iNative = 37845;
+	uFnIsSelectableCostume->iNative = 37843;
 
 	return IsSelectableCostume_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetCostumeNum
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37036])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37034])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -6411,13 +6411,13 @@ int32_t UREDGameCommon::GetCostumeNum(const class FString& CharaID, EUE_PLAYER_I
 	uFnGetCostumeNum->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCostumeNum, &GetCostumeNum_Params, nullptr);
 	uFnGetCostumeNum->FunctionFlags |= 0x400;
-	uFnGetCostumeNum->iNative = 37036;
+	uFnGetCostumeNum->iNative = 37034;
 
 	return GetCostumeNum_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetCostumeMaxNum
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37034])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37032])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -6439,13 +6439,13 @@ int32_t UREDGameCommon::GetCostumeMaxNum(const class FString& CharaID)
 	uFnGetCostumeMaxNum->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCostumeMaxNum, &GetCostumeMaxNum_Params, nullptr);
 	uFnGetCostumeMaxNum->FunctionFlags |= 0x400;
-	uFnGetCostumeMaxNum->iNative = 37034;
+	uFnGetCostumeMaxNum->iNative = 37032;
 
 	return GetCostumeMaxNum_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetDefaultCostumeID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37056])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37054])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -6467,13 +6467,13 @@ int32_t UREDGameCommon::GetDefaultCostumeID(const class FString& CharaID)
 	uFnGetDefaultCostumeID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetDefaultCostumeID, &GetDefaultCostumeID_Params, nullptr);
 	uFnGetDefaultCostumeID->FunctionFlags |= 0x400;
-	uFnGetDefaultCostumeID->iNative = 37056;
+	uFnGetDefaultCostumeID->iNative = 37054;
 
 	return GetDefaultCostumeID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsPlayableChara
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37769])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37767])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -6495,13 +6495,13 @@ bool UREDGameCommon::IsPlayableChara(const class FString& CharaID)
 	uFnIsPlayableChara->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPlayableChara, &IsPlayableChara_Params, nullptr);
 	uFnIsPlayableChara->FunctionFlags |= 0x400;
-	uFnIsPlayableChara->iNative = 37769;
+	uFnIsPlayableChara->iNative = 37767;
 
 	return IsPlayableChara_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsNeedChallengeModeUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37740])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37738])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -6521,13 +6521,13 @@ bool UREDGameCommon::IsNeedChallengeModeUI()
 	uFnIsNeedChallengeModeUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsNeedChallengeModeUI, &IsNeedChallengeModeUI_Params, nullptr);
 	uFnIsNeedChallengeModeUI->FunctionFlags |= 0x400;
-	uFnIsNeedChallengeModeUI->iNative = 37740;
+	uFnIsNeedChallengeModeUI->iNative = 37738;
 
 	return IsNeedChallengeModeUI_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.FreeTrial_SetupInfo
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36913])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36911])
 // Parameter Info:
 
 void UREDGameCommon::FreeTrial_SetupInfo()
@@ -6546,11 +6546,11 @@ void UREDGameCommon::FreeTrial_SetupInfo()
 	uFnFreeTrial_SetupInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFreeTrial_SetupInfo, &FreeTrial_SetupInfo_Params, nullptr);
 	uFnFreeTrial_SetupInfo->FunctionFlags |= 0x400;
-	uFnFreeTrial_SetupInfo->iNative = 36913;
+	uFnFreeTrial_SetupInfo->iNative = 36911;
 };
 
 // Function REDGame.REDGameCommon.IsFreeTrialPlay
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37672])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37670])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -6570,13 +6570,13 @@ bool UREDGameCommon::IsFreeTrialPlay()
 	uFnIsFreeTrialPlay->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsFreeTrialPlay, &IsFreeTrialPlay_Params, nullptr);
 	uFnIsFreeTrialPlay->FunctionFlags |= 0x400;
-	uFnIsFreeTrialPlay->iNative = 37672;
+	uFnIsFreeTrialPlay->iNative = 37670;
 
 	return IsFreeTrialPlay_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.SetFreeTrialPlay
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39751])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39749])
 // Parameter Info:
 // uint32_t                       Src                            (CPF_Parm)
 
@@ -6597,11 +6597,11 @@ void UREDGameCommon::SetFreeTrialPlay(bool Src)
 	uFnSetFreeTrialPlay->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetFreeTrialPlay, &SetFreeTrialPlay_Params, nullptr);
 	uFnSetFreeTrialPlay->FunctionFlags |= 0x400;
-	uFnSetFreeTrialPlay->iNative = 39751;
+	uFnSetFreeTrialPlay->iNative = 39749;
 };
 
 // Function REDGame.REDGameCommon.IsEnableFreeTrial
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37644])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37642])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -6621,13 +6621,13 @@ bool UREDGameCommon::IsEnableFreeTrial()
 	uFnIsEnableFreeTrial->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsEnableFreeTrial, &IsEnableFreeTrial_Params, nullptr);
 	uFnIsEnableFreeTrial->FunctionFlags |= 0x400;
-	uFnIsEnableFreeTrial->iNative = 37644;
+	uFnIsEnableFreeTrial->iNative = 37642;
 
 	return IsEnableFreeTrial_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsSelectDFMode
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37848])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37846])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -6647,13 +6647,13 @@ bool UREDGameCommon::IsSelectDFMode()
 	uFnIsSelectDFMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSelectDFMode, &IsSelectDFMode_Params, nullptr);
 	uFnIsSelectDFMode->FunctionFlags |= 0x400;
-	uFnIsSelectDFMode->iNative = 37848;
+	uFnIsSelectDFMode->iNative = 37846;
 
 	return IsSelectDFMode_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsInRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37693])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37691])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -6673,13 +6673,13 @@ bool UREDGameCommon::IsInRoom()
 	uFnIsInRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsInRoom, &IsInRoom_Params, nullptr);
 	uFnIsInRoom->FunctionFlags |= 0x400;
-	uFnIsInRoom->iNative = 37693;
+	uFnIsInRoom->iNative = 37691;
 
 	return IsInRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsInLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37692])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37690])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -6699,13 +6699,13 @@ bool UREDGameCommon::IsInLobby()
 	uFnIsInLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsInLobby, &IsInLobby_Params, nullptr);
 	uFnIsInLobby->FunctionFlags |= 0x400;
-	uFnIsInLobby->iNative = 37692;
+	uFnIsInLobby->iNative = 37690;
 
 	return IsInLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetVoiceLanguage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37195])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37193])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -6725,13 +6725,13 @@ class FString UREDGameCommon::GetVoiceLanguage()
 	uFnGetVoiceLanguage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVoiceLanguage, &GetVoiceLanguage_Params, nullptr);
 	uFnGetVoiceLanguage->FunctionFlags |= 0x400;
-	uFnGetVoiceLanguage->iNative = 37195;
+	uFnGetVoiceLanguage->iNative = 37193;
 
 	return GetVoiceLanguage_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsHandicapEnableMode
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37684])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37682])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_GAME_MODE                  Mode                           (CPF_Parm)
@@ -6753,13 +6753,13 @@ bool UREDGameCommon::IsHandicapEnableMode(EUE_GAME_MODE Mode)
 	uFnIsHandicapEnableMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsHandicapEnableMode, &IsHandicapEnableMode_Params, nullptr);
 	uFnIsHandicapEnableMode->FunctionFlags |= 0x400;
-	uFnIsHandicapEnableMode->iNative = 37684;
+	uFnIsHandicapEnableMode->iNative = 37682;
 
 	return IsHandicapEnableMode_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsSelectableBGM_Native
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37843])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37841])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_BGM_ID                     Id                             (CPF_Parm)
@@ -6781,13 +6781,13 @@ bool UREDGameCommon::IsSelectableBGM_Native(EUE_BGM_ID Id)
 	uFnIsSelectableBGM_Native->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSelectableBGM_Native, &IsSelectableBGM_Native_Params, nullptr);
 	uFnIsSelectableBGM_Native->FunctionFlags |= 0x400;
-	uFnIsSelectableBGM_Native->iNative = 37843;
+	uFnIsSelectableBGM_Native->iNative = 37841;
 
 	return IsSelectableBGM_Native_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsOnlyDramaBattle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37758])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37756])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -6807,7 +6807,7 @@ bool UREDGameCommon::IsOnlyDramaBattle()
 	uFnIsOnlyDramaBattle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsOnlyDramaBattle, &IsOnlyDramaBattle_Params, nullptr);
 	uFnIsOnlyDramaBattle->FunctionFlags |= 0x400;
-	uFnIsOnlyDramaBattle->iNative = 37758;
+	uFnIsOnlyDramaBattle->iNative = 37756;
 
 	return IsOnlyDramaBattle_Params.ReturnValue;
 };
@@ -6839,7 +6839,7 @@ bool UREDGameCommon::IsDramaBattle()
 };
 
 // Function REDGame.REDGameCommon.PreBattleLoadSetup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39098])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39096])
 // Parameter Info:
 
 void UREDGameCommon::PreBattleLoadSetup()
@@ -6858,11 +6858,11 @@ void UREDGameCommon::PreBattleLoadSetup()
 	uFnPreBattleLoadSetup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPreBattleLoadSetup, &PreBattleLoadSetup_Params, nullptr);
 	uFnPreBattleLoadSetup->FunctionFlags |= 0x400;
-	uFnPreBattleLoadSetup->iNative = 39098;
+	uFnPreBattleLoadSetup->iNative = 39096;
 };
 
 // Function REDGame.REDGameCommon.GetCardInfo
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37015])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37013])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -6896,7 +6896,7 @@ bool UREDGameCommon::GetCardInfo(EUE_PLAYER_ID Player, class FString& PlayerName
 	uFnGetCardInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCardInfo, &GetCardInfo_Params, nullptr);
 	uFnGetCardInfo->FunctionFlags |= 0x400;
-	uFnGetCardInfo->iNative = 37015;
+	uFnGetCardInfo->iNative = 37013;
 
 	memcpy_s(&PlayerName, sizeof(PlayerName), &GetCardInfo_Params.PlayerName, sizeof(GetCardInfo_Params.PlayerName));
 	memcpy_s(&Title, sizeof(Title), &GetCardInfo_Params.Title, sizeof(GetCardInfo_Params.Title));
@@ -6909,7 +6909,7 @@ bool UREDGameCommon::GetCardInfo(EUE_PLAYER_ID Player, class FString& PlayerName
 };
 
 // Function REDGame.REDGameCommon.SetupColorAndVoice
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39831])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39829])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // int32_t                        ColorID                        (CPF_Parm)
@@ -6936,11 +6936,11 @@ void UREDGameCommon::SetupColorAndVoice(EUE_PLAYER_ID Player, int32_t ColorID, b
 	uFnSetupColorAndVoice->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupColorAndVoice, &SetupColorAndVoice_Params, nullptr);
 	uFnSetupColorAndVoice->FunctionFlags |= 0x400;
-	uFnSetupColorAndVoice->iNative = 39831;
+	uFnSetupColorAndVoice->iNative = 39829;
 };
 
 // Function REDGame.REDGameCommon.SetupNewChallenger
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39850])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39848])
 // Parameter Info:
 
 void UREDGameCommon::SetupNewChallenger()
@@ -6959,11 +6959,11 @@ void UREDGameCommon::SetupNewChallenger()
 	uFnSetupNewChallenger->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupNewChallenger, &SetupNewChallenger_Params, nullptr);
 	uFnSetupNewChallenger->FunctionFlags |= 0x400;
-	uFnSetupNewChallenger->iNative = 39850;
+	uFnSetupNewChallenger->iNative = 39848;
 };
 
 // Function REDGame.REDGameCommon.CheckNewChallenger
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36204])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36202])
 // Parameter Info:
 
 void UREDGameCommon::CheckNewChallenger()
@@ -6982,11 +6982,11 @@ void UREDGameCommon::CheckNewChallenger()
 	uFnCheckNewChallenger->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckNewChallenger, &CheckNewChallenger_Params, nullptr);
 	uFnCheckNewChallenger->FunctionFlags |= 0x400;
-	uFnCheckNewChallenger->iNative = 36204;
+	uFnCheckNewChallenger->iNative = 36202;
 };
 
 // Function REDGame.REDGameCommon.SparringMode_SetupInfo
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39939])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39937])
 // Parameter Info:
 // uint32_t                       isEnemySet                     (CPF_Parm)
 
@@ -7007,11 +7007,11 @@ void UREDGameCommon::SparringMode_SetupInfo(bool isEnemySet)
 	uFnSparringMode_SetupInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSparringMode_SetupInfo, &SparringMode_SetupInfo_Params, nullptr);
 	uFnSparringMode_SetupInfo->FunctionFlags |= 0x400;
-	uFnSparringMode_SetupInfo->iNative = 39939;
+	uFnSparringMode_SetupInfo->iNative = 39937;
 };
 
 // Function REDGame.REDGameCommon.ArcadeMode_SetupInfo
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35446])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35444])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -7034,11 +7034,11 @@ void UREDGameCommon::ArcadeMode_SetupInfo(EUE_PLAYER_ID Player, const class FStr
 	uFnArcadeMode_SetupInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnArcadeMode_SetupInfo, &ArcadeMode_SetupInfo_Params, nullptr);
 	uFnArcadeMode_SetupInfo->FunctionFlags |= 0x400;
-	uFnArcadeMode_SetupInfo->iNative = 35446;
+	uFnArcadeMode_SetupInfo->iNative = 35444;
 };
 
 // Function REDGame.REDGameCommon.GetVersionSuffix
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37192])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37190])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -7058,13 +7058,13 @@ class FString UREDGameCommon::GetVersionSuffix()
 	uFnGetVersionSuffix->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVersionSuffix, &GetVersionSuffix_Params, nullptr);
 	uFnGetVersionSuffix->FunctionFlags |= 0x400;
-	uFnGetVersionSuffix->iNative = 37192;
+	uFnGetVersionSuffix->iNative = 37190;
 
 	return GetVersionSuffix_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.REDRand
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[39302])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[39300])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Max                            (CPF_Parm)
@@ -7086,13 +7086,13 @@ int32_t UREDGameCommon::REDRand(int32_t Max)
 	uFnREDRand->FunctionFlags &= ~0x400;
 	UREDGameCommon::StaticClass()->ProcessEvent(uFnREDRand, &REDRand_Params, nullptr);
 	uFnREDRand->FunctionFlags |= 0x400;
-	uFnREDRand->iNative = 39302;
+	uFnREDRand->iNative = 39300;
 
 	return REDRand_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsMOMEnable
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37729])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37727])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7112,13 +7112,13 @@ bool UREDGameCommon::IsMOMEnable()
 	uFnIsMOMEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMOMEnable, &IsMOMEnable_Params, nullptr);
 	uFnIsMOMEnable->FunctionFlags |= 0x400;
-	uFnIsMOMEnable->iNative = 37729;
+	uFnIsMOMEnable->iNative = 37727;
 
 	return IsMOMEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsSparringEnable
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37865])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37863])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7138,13 +7138,13 @@ bool UREDGameCommon::IsSparringEnable()
 	uFnIsSparringEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSparringEnable, &IsSparringEnable_Params, nullptr);
 	uFnIsSparringEnable->FunctionFlags |= 0x400;
-	uFnIsSparringEnable->iNative = 37865;
+	uFnIsSparringEnable->iNative = 37863;
 
 	return IsSparringEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetBGMIDFromCharaID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37009])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37007])
 // Parameter Info:
 // EUE_BGM_ID                     ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -7168,13 +7168,13 @@ EUE_BGM_ID UREDGameCommon::GetBGMIDFromCharaID(const class FString& CharaID, con
 	uFnGetBGMIDFromCharaID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetBGMIDFromCharaID, &GetBGMIDFromCharaID_Params, nullptr);
 	uFnGetBGMIDFromCharaID->FunctionFlags |= 0x400;
-	uFnGetBGMIDFromCharaID->iNative = 37009;
+	uFnGetBGMIDFromCharaID->iNative = 37007;
 
 	return static_cast<EUE_BGM_ID>(GetBGMIDFromCharaID_Params.ReturnValue);
 };
 
 // Function REDGame.REDGameCommon.GetBGIDFromCharaID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37007])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37005])
 // Parameter Info:
 // EUE_BG_ID                      ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -7196,13 +7196,13 @@ EUE_BG_ID UREDGameCommon::GetBGIDFromCharaID(const class FString& CharaID)
 	uFnGetBGIDFromCharaID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetBGIDFromCharaID, &GetBGIDFromCharaID_Params, nullptr);
 	uFnGetBGIDFromCharaID->FunctionFlags |= 0x400;
-	uFnGetBGIDFromCharaID->iNative = 37007;
+	uFnGetBGIDFromCharaID->iNative = 37005;
 
 	return static_cast<EUE_BG_ID>(GetBGIDFromCharaID_Params.ReturnValue);
 };
 
 // Function REDGame.REDGameCommon.GetStaticTexture
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37181])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37179])
 // Parameter Info:
 // class UTexture2D*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  texName                        (CPF_Parm | CPF_NeedCtorLink)
@@ -7226,13 +7226,13 @@ class UTexture2D* UREDGameCommon::GetStaticTexture(const class FString& texName,
 	uFnGetStaticTexture->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetStaticTexture, &GetStaticTexture_Params, nullptr);
 	uFnGetStaticTexture->FunctionFlags |= 0x400;
-	uFnGetStaticTexture->iNative = 37181;
+	uFnGetStaticTexture->iNative = 37179;
 
 	return GetStaticTexture_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.IsUseCircleToAccept
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37924])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37922])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7252,13 +7252,13 @@ bool UREDGameCommon::IsUseCircleToAccept()
 	uFnIsUseCircleToAccept->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsUseCircleToAccept, &IsUseCircleToAccept_Params, nullptr);
 	uFnIsUseCircleToAccept->FunctionFlags |= 0x400;
-	uFnIsUseCircleToAccept->iNative = 37924;
+	uFnIsUseCircleToAccept->iNative = 37922;
 
 	return IsUseCircleToAccept_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetAnywhereDisp
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37003])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37001])
 // Parameter Info:
 // class UREDAnywhereDisp*        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7278,13 +7278,13 @@ class UREDAnywhereDisp* UREDGameCommon::GetAnywhereDisp()
 	uFnGetAnywhereDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetAnywhereDisp, &GetAnywhereDisp_Params, nullptr);
 	uFnGetAnywhereDisp->FunctionFlags |= 0x400;
-	uFnGetAnywhereDisp->iNative = 37003;
+	uFnGetAnywhereDisp->iNative = 37001;
 
 	return GetAnywhereDisp_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetProfileFont
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37145])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37143])
 // Parameter Info:
 // class UFont*                   ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7304,13 +7304,13 @@ class UFont* UREDGameCommon::GetProfileFont()
 	uFnGetProfileFont->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetProfileFont, &GetProfileFont_Params, nullptr);
 	uFnGetProfileFont->FunctionFlags |= 0x400;
-	uFnGetProfileFont->iNative = 37145;
+	uFnGetProfileFont->iNative = 37143;
 
 	return GetProfileFont_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetStaticREDFont
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37180])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37178])
 // Parameter Info:
 // class UFont*                   ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7330,13 +7330,13 @@ class UFont* UREDGameCommon::GetStaticREDFont()
 	uFnGetStaticREDFont->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetStaticREDFont, &GetStaticREDFont_Params, nullptr);
 	uFnGetStaticREDFont->FunctionFlags |= 0x400;
-	uFnGetStaticREDFont->iNative = 37180;
+	uFnGetStaticREDFont->iNative = 37178;
 
 	return GetStaticREDFont_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetStaticFont
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37179])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37177])
 // Parameter Info:
 // class UFont*                   ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7356,13 +7356,13 @@ class UFont* UREDGameCommon::GetStaticFont()
 	uFnGetStaticFont->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetStaticFont, &GetStaticFont_Params, nullptr);
 	uFnGetStaticFont->FunctionFlags |= 0x400;
-	uFnGetStaticFont->iNative = 37179;
+	uFnGetStaticFont->iNative = 37177;
 
 	return GetStaticFont_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetBGMString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37010])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37008])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // EUE_BGM_ID                     Id                             (CPF_Parm)
@@ -7384,13 +7384,13 @@ class FString UREDGameCommon::GetBGMString(EUE_BGM_ID Id)
 	uFnGetBGMString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetBGMString, &GetBGMString_Params, nullptr);
 	uFnGetBGMString->FunctionFlags |= 0x400;
-	uFnGetBGMString->iNative = 37010;
+	uFnGetBGMString->iNative = 37008;
 
 	return GetBGMString_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetBGMID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37008])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37006])
 // Parameter Info:
 // EUE_BGM_ID                     ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7410,13 +7410,13 @@ EUE_BGM_ID UREDGameCommon::GetBGMID()
 	uFnGetBGMID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetBGMID, &GetBGMID_Params, nullptr);
 	uFnGetBGMID->FunctionFlags |= 0x400;
-	uFnGetBGMID->iNative = 37008;
+	uFnGetBGMID->iNative = 37006;
 
 	return static_cast<EUE_BGM_ID>(GetBGMID_Params.ReturnValue);
 };
 
 // Function REDGame.REDGameCommon.SetBGMID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39699])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39697])
 // Parameter Info:
 // EUE_BGM_ID                     Id                             (CPF_Parm)
 
@@ -7437,11 +7437,11 @@ void UREDGameCommon::SetBGMID(EUE_BGM_ID Id)
 	uFnSetBGMID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetBGMID, &SetBGMID_Params, nullptr);
 	uFnSetBGMID->FunctionFlags |= 0x400;
-	uFnSetBGMID->iNative = 39699;
+	uFnSetBGMID->iNative = 39697;
 };
 
 // Function REDGame.REDGameCommon.GetCurrentBGString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37039])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37037])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -7461,13 +7461,13 @@ class FString UREDGameCommon::GetCurrentBGString()
 	uFnGetCurrentBGString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCurrentBGString, &GetCurrentBGString_Params, nullptr);
 	uFnGetCurrentBGString->FunctionFlags |= 0x400;
-	uFnGetCurrentBGString->iNative = 37039;
+	uFnGetCurrentBGString->iNative = 37037;
 
 	return GetCurrentBGString_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetBGString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37011])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37009])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // EUE_BG_ID                      Id                             (CPF_Parm)
@@ -7489,13 +7489,13 @@ class FString UREDGameCommon::GetBGString(EUE_BG_ID Id)
 	uFnGetBGString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetBGString, &GetBGString_Params, nullptr);
 	uFnGetBGString->FunctionFlags |= 0x400;
-	uFnGetBGString->iNative = 37011;
+	uFnGetBGString->iNative = 37009;
 
 	return GetBGString_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetBGID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37006])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37004])
 // Parameter Info:
 // EUE_BG_ID                      ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7515,13 +7515,13 @@ EUE_BG_ID UREDGameCommon::GetBGID()
 	uFnGetBGID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetBGID, &GetBGID_Params, nullptr);
 	uFnGetBGID->FunctionFlags |= 0x400;
-	uFnGetBGID->iNative = 37006;
+	uFnGetBGID->iNative = 37004;
 
 	return static_cast<EUE_BG_ID>(GetBGID_Params.ReturnValue);
 };
 
 // Function REDGame.REDGameCommon.SetBGID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39697])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39695])
 // Parameter Info:
 // EUE_BG_ID                      Id                             (CPF_Parm)
 
@@ -7542,11 +7542,11 @@ void UREDGameCommon::SetBGID(EUE_BG_ID Id)
 	uFnSetBGID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetBGID, &SetBGID_Params, nullptr);
 	uFnSetBGID->FunctionFlags |= 0x400;
-	uFnSetBGID->iNative = 39697;
+	uFnSetBGID->iNative = 39695;
 };
 
 // Function REDGame.REDGameCommon.GetGameMode
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37064])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37062])
 // Parameter Info:
 // EUE_GAME_MODE                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7566,13 +7566,13 @@ EUE_GAME_MODE UREDGameCommon::GetGameMode()
 	uFnGetGameMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetGameMode, &GetGameMode_Params, nullptr);
 	uFnGetGameMode->FunctionFlags |= 0x400;
-	uFnGetGameMode->iNative = 37064;
+	uFnGetGameMode->iNative = 37062;
 
 	return static_cast<EUE_GAME_MODE>(GetGameMode_Params.ReturnValue);
 };
 
 // Function REDGame.REDGameCommon.SetGameMode
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39752])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39750])
 // Parameter Info:
 // EUE_GAME_MODE                  Id                             (CPF_Parm)
 
@@ -7593,11 +7593,11 @@ void UREDGameCommon::SetGameMode(EUE_GAME_MODE Id)
 	uFnSetGameMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetGameMode, &SetGameMode_Params, nullptr);
 	uFnSetGameMode->FunctionFlags |= 0x400;
-	uFnSetGameMode->iNative = 39752;
+	uFnSetGameMode->iNative = 39750;
 };
 
 // Function REDGame.REDGameCommon.GetAnotherPlayer
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37002])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37000])
 // Parameter Info:
 // EUE_PLAYER_ID                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7617,13 +7617,13 @@ EUE_PLAYER_ID UREDGameCommon::GetAnotherPlayer()
 	uFnGetAnotherPlayer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetAnotherPlayer, &GetAnotherPlayer_Params, nullptr);
 	uFnGetAnotherPlayer->FunctionFlags |= 0x400;
-	uFnGetAnotherPlayer->iNative = 37002;
+	uFnGetAnotherPlayer->iNative = 37000;
 
 	return static_cast<EUE_PLAYER_ID>(GetAnotherPlayer_Params.ReturnValue);
 };
 
 // Function REDGame.REDGameCommon.GetMainPlayer
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37092])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37090])
 // Parameter Info:
 // EUE_PLAYER_ID                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -7643,13 +7643,13 @@ EUE_PLAYER_ID UREDGameCommon::GetMainPlayer()
 	uFnGetMainPlayer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMainPlayer, &GetMainPlayer_Params, nullptr);
 	uFnGetMainPlayer->FunctionFlags |= 0x400;
-	uFnGetMainPlayer->iNative = 37092;
+	uFnGetMainPlayer->iNative = 37090;
 
 	return static_cast<EUE_PLAYER_ID>(GetMainPlayer_Params.ReturnValue);
 };
 
 // Function REDGame.REDGameCommon.SetMainPlayer
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39771])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39769])
 // Parameter Info:
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
 
@@ -7670,11 +7670,11 @@ void UREDGameCommon::SetMainPlayer(EUE_PLAYER_ID PlayerID)
 	uFnSetMainPlayer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetMainPlayer, &SetMainPlayer_Params, nullptr);
 	uFnSetMainPlayer->FunctionFlags |= 0x400;
-	uFnSetMainPlayer->iNative = 39771;
+	uFnSetMainPlayer->iNative = 39769;
 };
 
 // Function REDGame.REDGameCommon.IsGamePlaying
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37677])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37675])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
@@ -7696,13 +7696,13 @@ bool UREDGameCommon::IsGamePlaying(EUE_PLAYER_ID PlayerID)
 	uFnIsGamePlaying->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsGamePlaying, &IsGamePlaying_Params, nullptr);
 	uFnIsGamePlaying->FunctionFlags |= 0x400;
-	uFnIsGamePlaying->iNative = 37677;
+	uFnIsGamePlaying->iNative = 37675;
 
 	return IsGamePlaying_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.SetPlayerState
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39794])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39792])
 // Parameter Info:
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
 // EUE_PLAYERSTATE                State                          (CPF_Parm)
@@ -7725,11 +7725,11 @@ void UREDGameCommon::SetPlayerState(EUE_PLAYER_ID PlayerID, EUE_PLAYERSTATE Stat
 	uFnSetPlayerState->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPlayerState, &SetPlayerState_Params, nullptr);
 	uFnSetPlayerState->FunctionFlags |= 0x400;
-	uFnSetPlayerState->iNative = 39794;
+	uFnSetPlayerState->iNative = 39792;
 };
 
 // Function REDGame.REDGameCommon.GetPadID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37130])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37128])
 // Parameter Info:
 // uint8_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
@@ -7751,13 +7751,13 @@ uint8_t UREDGameCommon::GetPadID(EUE_PLAYER_ID PlayerID)
 	uFnGetPadID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPadID, &GetPadID_Params, nullptr);
 	uFnGetPadID->FunctionFlags |= 0x400;
-	uFnGetPadID->iNative = 37130;
+	uFnGetPadID->iNative = 37128;
 
 	return GetPadID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.SetPadID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39787])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39785])
 // Parameter Info:
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
 // uint8_t                        pad                            (CPF_Parm)
@@ -7780,11 +7780,11 @@ void UREDGameCommon::SetPadID(EUE_PLAYER_ID PlayerID, uint8_t pad)
 	uFnSetPadID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPadID, &SetPadID_Params, nullptr);
 	uFnSetPadID->FunctionFlags |= 0x400;
-	uFnSetPadID->iNative = 39787;
+	uFnSetPadID->iNative = 39785;
 };
 
 // Function REDGame.REDGameCommon.IsCPU
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37632])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37630])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
@@ -7806,13 +7806,13 @@ bool UREDGameCommon::IsCPU(EUE_PLAYER_ID PlayerID)
 	uFnIsCPU->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsCPU, &IsCPU_Params, nullptr);
 	uFnIsCPU->FunctionFlags |= 0x400;
-	uFnIsCPU->iNative = 37632;
+	uFnIsCPU->iNative = 37630;
 
 	return IsCPU_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.SetCPU
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39717])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39715])
 // Parameter Info:
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
 // uint32_t                       cpu                            (CPF_Parm)
@@ -7835,11 +7835,11 @@ void UREDGameCommon::SetCPU(EUE_PLAYER_ID PlayerID, bool cpu)
 	uFnSetCPU->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetCPU, &SetCPU_Params, nullptr);
 	uFnSetCPU->FunctionFlags |= 0x400;
-	uFnSetCPU->iNative = 39717;
+	uFnSetCPU->iNative = 39715;
 };
 
 // Function REDGame.REDGameCommon.GetStageNoForDrama
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37174])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37172])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
@@ -7861,13 +7861,13 @@ int32_t UREDGameCommon::GetStageNoForDrama(EUE_PLAYER_ID PlayerID)
 	uFnGetStageNoForDrama->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetStageNoForDrama, &GetStageNoForDrama_Params, nullptr);
 	uFnGetStageNoForDrama->FunctionFlags |= 0x400;
-	uFnGetStageNoForDrama->iNative = 37174;
+	uFnGetStageNoForDrama->iNative = 37172;
 
 	return GetStageNoForDrama_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetCostumeID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37033])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37031])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
@@ -7889,13 +7889,13 @@ int32_t UREDGameCommon::GetCostumeID(EUE_PLAYER_ID PlayerID)
 	uFnGetCostumeID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCostumeID, &GetCostumeID_Params, nullptr);
 	uFnGetCostumeID->FunctionFlags |= 0x400;
-	uFnGetCostumeID->iNative = 37033;
+	uFnGetCostumeID->iNative = 37031;
 
 	return GetCostumeID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetVoiceID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37194])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37192])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
@@ -7917,13 +7917,13 @@ int32_t UREDGameCommon::GetVoiceID(EUE_PLAYER_ID PlayerID)
 	uFnGetVoiceID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVoiceID, &GetVoiceID_Params, nullptr);
 	uFnGetVoiceID->FunctionFlags |= 0x400;
-	uFnGetVoiceID->iNative = 37194;
+	uFnGetVoiceID->iNative = 37192;
 
 	return GetVoiceID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetColorID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37023])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37021])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
@@ -7945,7 +7945,7 @@ int32_t UREDGameCommon::GetColorID(EUE_PLAYER_ID PlayerID)
 	uFnGetColorID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetColorID, &GetColorID_Params, nullptr);
 	uFnGetColorID->FunctionFlags |= 0x400;
-	uFnGetColorID->iNative = 37023;
+	uFnGetColorID->iNative = 37021;
 
 	return GetColorID_Params.ReturnValue;
 };
@@ -7979,7 +7979,7 @@ class FString UREDGameCommon::GetCharaID(EUE_PLAYER_ID PlayerID)
 };
 
 // Function REDGame.REDGameCommon.SetCostumeID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39715])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39713])
 // Parameter Info:
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
 // int32_t                        CostumeID                      (CPF_Parm)
@@ -8002,11 +8002,11 @@ void UREDGameCommon::SetCostumeID(EUE_PLAYER_ID PlayerID, int32_t CostumeID)
 	uFnSetCostumeID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetCostumeID, &SetCostumeID_Params, nullptr);
 	uFnSetCostumeID->FunctionFlags |= 0x400;
-	uFnSetCostumeID->iNative = 39715;
+	uFnSetCostumeID->iNative = 39713;
 };
 
 // Function REDGame.REDGameCommon.SetVoiceID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39865])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39863])
 // Parameter Info:
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
 // int32_t                        VoiceID                        (CPF_Parm)
@@ -8029,11 +8029,11 @@ void UREDGameCommon::SetVoiceID(EUE_PLAYER_ID PlayerID, int32_t VoiceID)
 	uFnSetVoiceID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVoiceID, &SetVoiceID_Params, nullptr);
 	uFnSetVoiceID->FunctionFlags |= 0x400;
-	uFnSetVoiceID->iNative = 39865;
+	uFnSetVoiceID->iNative = 39863;
 };
 
 // Function REDGame.REDGameCommon.SetColorID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39713])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39711])
 // Parameter Info:
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
 // int32_t                        ColorID                        (CPF_Parm)
@@ -8056,11 +8056,11 @@ void UREDGameCommon::SetColorID(EUE_PLAYER_ID PlayerID, int32_t ColorID)
 	uFnSetColorID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetColorID, &SetColorID_Params, nullptr);
 	uFnSetColorID->FunctionFlags |= 0x400;
-	uFnSetColorID->iNative = 39713;
+	uFnSetColorID->iNative = 39711;
 };
 
 // Function REDGame.REDGameCommon.SetCharaID
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39708])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39706])
 // Parameter Info:
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -8083,11 +8083,11 @@ void UREDGameCommon::SetCharaID(EUE_PLAYER_ID PlayerID, const class FString& Cha
 	uFnSetCharaID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetCharaID, &SetCharaID_Params, nullptr);
 	uFnSetCharaID->FunctionFlags |= 0x400;
-	uFnSetCharaID->iNative = 39708;
+	uFnSetCharaID->iNative = 39706;
 };
 
 // Function REDGame.REDGameCommon.GetMainPlayerInfo
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37093])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37091])
 // Parameter Info:
 // class UREDGameCommon_PlayerInfo* ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -8107,13 +8107,13 @@ class UREDGameCommon_PlayerInfo* UREDGameCommon::GetMainPlayerInfo()
 	uFnGetMainPlayerInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMainPlayerInfo, &GetMainPlayerInfo_Params, nullptr);
 	uFnGetMainPlayerInfo->FunctionFlags |= 0x400;
-	uFnGetMainPlayerInfo->iNative = 37093;
+	uFnGetMainPlayerInfo->iNative = 37091;
 
 	return GetMainPlayerInfo_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameCommon.GetPlayerInfo
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34038])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34036])
 // Parameter Info:
 // class UREDGameCommon_PlayerInfo* ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  PlayerID                       (CPF_Parm)
@@ -8135,7 +8135,7 @@ class UREDGameCommon_PlayerInfo* UREDGameCommon::GetPlayerInfo(EUE_PLAYER_ID Pla
 	uFnGetPlayerInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPlayerInfo, &GetPlayerInfo_Params, nullptr);
 	uFnGetPlayerInfo->FunctionFlags |= 0x400;
-	uFnGetPlayerInfo->iNative = 34038;
+	uFnGetPlayerInfo->iNative = 34036;
 
 	return GetPlayerInfo_Params.ReturnValue;
 };
@@ -8396,7 +8396,7 @@ class UPostProcessChain* AREDGameInfo::CreateDepthViewPostProcess(int32_t Id)
 };
 
 // Function REDGame.REDGameInfo.RestoreDispDepthBufferMaterial
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39392])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39390])
 // Parameter Info:
 // class UPostProcessChain*       PP                             (CPF_Parm)
 
@@ -8417,11 +8417,11 @@ void AREDGameInfo::RestoreDispDepthBufferMaterial(class UPostProcessChain* PP)
 	uFnRestoreDispDepthBufferMaterial->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRestoreDispDepthBufferMaterial, &RestoreDispDepthBufferMaterial_Params, nullptr);
 	uFnRestoreDispDepthBufferMaterial->FunctionFlags |= 0x400;
-	uFnRestoreDispDepthBufferMaterial->iNative = 39392;
+	uFnRestoreDispDepthBufferMaterial->iNative = 39390;
 };
 
 // Function REDGame.REDGameInfo.SetDispDepthBufferParam
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39729])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39727])
 // Parameter Info:
 // class UPostProcessChain*       PP                             (CPF_Parm)
 // struct FLinearColor            Params                         (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -8444,7 +8444,7 @@ void AREDGameInfo::SetDispDepthBufferParam(class UPostProcessChain* PP, struct F
 	uFnSetDispDepthBufferParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDispDepthBufferParam, &SetDispDepthBufferParam_Params, nullptr);
 	uFnSetDispDepthBufferParam->FunctionFlags |= 0x400;
-	uFnSetDispDepthBufferParam->iNative = 39729;
+	uFnSetDispDepthBufferParam->iNative = 39727;
 
 	memcpy_s(&Params, sizeof(Params), &SetDispDepthBufferParam_Params.Params, sizeof(SetDispDepthBufferParam_Params.Params));
 };
@@ -9217,7 +9217,7 @@ void AREDGameInfo::eventRestartLevel()
 };
 
 // Function REDGame.REDGameInfo.UpdateDOF
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40648])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40646])
 // Parameter Info:
 
 void AREDGameInfo::UpdateDOF()
@@ -9236,11 +9236,11 @@ void AREDGameInfo::UpdateDOF()
 	uFnUpdateDOF->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDOF, &UpdateDOF_Params, nullptr);
 	uFnUpdateDOF->FunctionFlags |= 0x400;
-	uFnUpdateDOF->iNative = 40648;
+	uFnUpdateDOF->iNative = 40646;
 };
 
 // Function REDGame.REDGameInfo.SetDOFParameterFocusPosition
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39739])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39737])
 // Parameter Info:
 // struct FVector                 Position                       (CPF_Parm)
 
@@ -9261,11 +9261,11 @@ void AREDGameInfo::SetDOFParameterFocusPosition(const struct FVector& Position)
 	uFnSetDOFParameterFocusPosition->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDOFParameterFocusPosition, &SetDOFParameterFocusPosition_Params, nullptr);
 	uFnSetDOFParameterFocusPosition->FunctionFlags |= 0x400;
-	uFnSetDOFParameterFocusPosition->iNative = 39739;
+	uFnSetDOFParameterFocusPosition->iNative = 39737;
 };
 
 // Function REDGame.REDGameInfo.SetDOFParameterFocusDistance
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39738])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39736])
 // Parameter Info:
 // float                          Distance                       (CPF_Parm)
 
@@ -9286,11 +9286,11 @@ void AREDGameInfo::SetDOFParameterFocusDistance(float Distance)
 	uFnSetDOFParameterFocusDistance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDOFParameterFocusDistance, &SetDOFParameterFocusDistance_Params, nullptr);
 	uFnSetDOFParameterFocusDistance->FunctionFlags |= 0x400;
-	uFnSetDOFParameterFocusDistance->iNative = 39738;
+	uFnSetDOFParameterFocusDistance->iNative = 39736;
 };
 
 // Function REDGame.REDGameInfo.SetDOFParameterInnerRadius
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39740])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39738])
 // Parameter Info:
 // float                          InnerRadius                    (CPF_OptionalParm | CPF_Parm)
 
@@ -9311,11 +9311,11 @@ void AREDGameInfo::SetDOFParameterInnerRadius(float InnerRadius)
 	uFnSetDOFParameterInnerRadius->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDOFParameterInnerRadius, &SetDOFParameterInnerRadius_Params, nullptr);
 	uFnSetDOFParameterInnerRadius->FunctionFlags |= 0x400;
-	uFnSetDOFParameterInnerRadius->iNative = 39740;
+	uFnSetDOFParameterInnerRadius->iNative = 39738;
 };
 
 // Function REDGame.REDGameInfo.SetDOFParameterKernelSize
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39741])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39739])
 // Parameter Info:
 // float                          KernelSize                     (CPF_OptionalParm | CPF_Parm)
 
@@ -9336,11 +9336,11 @@ void AREDGameInfo::SetDOFParameterKernelSize(float KernelSize)
 	uFnSetDOFParameterKernelSize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDOFParameterKernelSize, &SetDOFParameterKernelSize_Params, nullptr);
 	uFnSetDOFParameterKernelSize->FunctionFlags |= 0x400;
-	uFnSetDOFParameterKernelSize->iNative = 39741;
+	uFnSetDOFParameterKernelSize->iNative = 39739;
 };
 
 // Function REDGame.REDGameInfo.SetDOFParameterFalloff
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39737])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39735])
 // Parameter Info:
 // float                          Falloff                        (CPF_OptionalParm | CPF_Parm)
 
@@ -9361,11 +9361,11 @@ void AREDGameInfo::SetDOFParameterFalloff(float Falloff)
 	uFnSetDOFParameterFalloff->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDOFParameterFalloff, &SetDOFParameterFalloff_Params, nullptr);
 	uFnSetDOFParameterFalloff->FunctionFlags |= 0x400;
-	uFnSetDOFParameterFalloff->iNative = 39737;
+	uFnSetDOFParameterFalloff->iNative = 39735;
 };
 
 // Function REDGame.REDGameInfo.SwitchDOF
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40150])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40148])
 // Parameter Info:
 // uint32_t                       bOn                            (CPF_Parm)
 
@@ -9386,11 +9386,11 @@ void AREDGameInfo::SwitchDOF(bool bOn)
 	uFnSwitchDOF->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSwitchDOF, &SwitchDOF_Params, nullptr);
 	uFnSwitchDOF->FunctionFlags |= 0x400;
-	uFnSwitchDOF->iNative = 40150;
+	uFnSwitchDOF->iNative = 40148;
 };
 
 // Function REDGame.REDGameInfo.GetUberPostProcessEffect
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37189])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37187])
 // Parameter Info:
 // class UUberPostProcessEffect*  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -9410,13 +9410,13 @@ class UUberPostProcessEffect* AREDGameInfo::GetUberPostProcessEffect()
 	uFnGetUberPostProcessEffect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetUberPostProcessEffect, &GetUberPostProcessEffect_Params, nullptr);
 	uFnGetUberPostProcessEffect->FunctionFlags |= 0x400;
-	uFnGetUberPostProcessEffect->iNative = 37189;
+	uFnGetUberPostProcessEffect->iNative = 37187;
 
 	return GetUberPostProcessEffect_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameInfo.ContrastEffectUpdateDraw
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36309])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36307])
 // Parameter Info:
 
 void AREDGameInfo::ContrastEffectUpdateDraw()
@@ -9435,11 +9435,11 @@ void AREDGameInfo::ContrastEffectUpdateDraw()
 	uFnContrastEffectUpdateDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnContrastEffectUpdateDraw, &ContrastEffectUpdateDraw_Params, nullptr);
 	uFnContrastEffectUpdateDraw->FunctionFlags |= 0x400;
-	uFnContrastEffectUpdateDraw->iNative = 36309;
+	uFnContrastEffectUpdateDraw->iNative = 36307;
 };
 
 // Function REDGame.REDGameInfo.ContrastEffectUpdate
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36308])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36306])
 // Parameter Info:
 
 void AREDGameInfo::ContrastEffectUpdate()
@@ -9458,11 +9458,11 @@ void AREDGameInfo::ContrastEffectUpdate()
 	uFnContrastEffectUpdate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnContrastEffectUpdate, &ContrastEffectUpdate_Params, nullptr);
 	uFnContrastEffectUpdate->FunctionFlags |= 0x400;
-	uFnContrastEffectUpdate->iNative = 36308;
+	uFnContrastEffectUpdate->iNative = 36306;
 };
 
 // Function REDGame.REDGameInfo.ContrastEffect
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[13510])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[13506])
 // Parameter Info:
 // int32_t                        frame                          (CPF_Parm)
 // float                          addMin                         (CPF_OptionalParm | CPF_Parm)
@@ -9489,11 +9489,11 @@ void AREDGameInfo::ContrastEffect(int32_t frame, float addMin, float addMax, flo
 	uFnContrastEffect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnContrastEffect, &ContrastEffect_Params, nullptr);
 	uFnContrastEffect->FunctionFlags |= 0x400;
-	uFnContrastEffect->iNative = 13510;
+	uFnContrastEffect->iNative = 13506;
 };
 
 // Function REDGame.REDGameInfo.SwitchDiffusionFilter2
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[40148])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[40146])
 // Parameter Info:
 // uint32_t                       On                             (CPF_Parm)
 // float                          luminancePow                   (CPF_OptionalParm | CPF_Parm)
@@ -9520,11 +9520,11 @@ void AREDGameInfo::SwitchDiffusionFilter2(bool On, float luminancePow, float sat
 	uFnSwitchDiffusionFilter2->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSwitchDiffusionFilter2, &SwitchDiffusionFilter2_Params, nullptr);
 	uFnSwitchDiffusionFilter2->FunctionFlags |= 0x400;
-	uFnSwitchDiffusionFilter2->iNative = 40148;
+	uFnSwitchDiffusionFilter2->iNative = 40146;
 };
 
 // Function REDGame.REDGameInfo.StopTutorialNarration
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40108])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40106])
 // Parameter Info:
 
 void AREDGameInfo::StopTutorialNarration()
@@ -9543,11 +9543,11 @@ void AREDGameInfo::StopTutorialNarration()
 	uFnStopTutorialNarration->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopTutorialNarration, &StopTutorialNarration_Params, nullptr);
 	uFnStopTutorialNarration->FunctionFlags |= 0x400;
-	uFnStopTutorialNarration->iNative = 40108;
+	uFnStopTutorialNarration->iNative = 40106;
 };
 
 // Function REDGame.REDGameInfo.PlayTutorialNarration
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39048])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39046])
 // Parameter Info:
 // class FName                    cueName                        (CPF_Parm)
 // class AActor*                  Actor                          (CPF_OptionalParm | CPF_Parm)
@@ -9570,11 +9570,11 @@ void AREDGameInfo::PlayTutorialNarration(const class FName& cueName, class AActo
 	uFnPlayTutorialNarration->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayTutorialNarration, &PlayTutorialNarration_Params, nullptr);
 	uFnPlayTutorialNarration->FunctionFlags |= 0x400;
-	uFnPlayTutorialNarration->iNative = 39048;
+	uFnPlayTutorialNarration->iNative = 39046;
 };
 
 // Function REDGame.REDGameInfo.PlayPadSpeakerNarration
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39038])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39036])
 // Parameter Info:
 // class FName                    cueName                        (CPF_Parm)
 // int32_t                        PadID                          (CPF_OptionalParm | CPF_Parm)
@@ -9599,11 +9599,11 @@ void AREDGameInfo::PlayPadSpeakerNarration(const class FName& cueName, int32_t P
 	uFnPlayPadSpeakerNarration->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayPadSpeakerNarration, &PlayPadSpeakerNarration_Params, nullptr);
 	uFnPlayPadSpeakerNarration->FunctionFlags |= 0x400;
-	uFnPlayPadSpeakerNarration->iNative = 39038;
+	uFnPlayPadSpeakerNarration->iNative = 39036;
 };
 
 // Function REDGame.REDGameInfo.PlayPadSpeakerCommonSE
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39037])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39035])
 // Parameter Info:
 // class FName                    cueName                        (CPF_Parm)
 // int32_t                        PadID                          (CPF_OptionalParm | CPF_Parm)
@@ -9628,11 +9628,11 @@ void AREDGameInfo::PlayPadSpeakerCommonSE(const class FName& cueName, int32_t Pa
 	uFnPlayPadSpeakerCommonSE->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayPadSpeakerCommonSE, &PlayPadSpeakerCommonSE_Params, nullptr);
 	uFnPlayPadSpeakerCommonSE->FunctionFlags |= 0x400;
-	uFnPlayPadSpeakerCommonSE->iNative = 39037;
+	uFnPlayPadSpeakerCommonSE->iNative = 39035;
 };
 
 // Function REDGame.REDGameInfo.PlayNarration
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39036])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39034])
 // Parameter Info:
 // class FName                    cueName                        (CPF_Parm)
 // class AActor*                  Actor                          (CPF_OptionalParm | CPF_Parm)
@@ -9655,11 +9655,11 @@ void AREDGameInfo::PlayNarration(const class FName& cueName, class AActor* Actor
 	uFnPlayNarration->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayNarration, &PlayNarration_Params, nullptr);
 	uFnPlayNarration->FunctionFlags |= 0x400;
-	uFnPlayNarration->iNative = 39036;
+	uFnPlayNarration->iNative = 39034;
 };
 
 // Function REDGame.REDGameInfo.PlayCommonSE_WithPos
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[38968])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[38966])
 // Parameter Info:
 // class FName                    cueName                        (CPF_Parm)
 // struct FVector                 Loc                            (CPF_Parm | CPF_OutParm)
@@ -9682,13 +9682,13 @@ void AREDGameInfo::PlayCommonSE_WithPos(const class FName& cueName, struct FVect
 	uFnPlayCommonSE_WithPos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayCommonSE_WithPos, &PlayCommonSE_WithPos_Params, nullptr);
 	uFnPlayCommonSE_WithPos->FunctionFlags |= 0x400;
-	uFnPlayCommonSE_WithPos->iNative = 38968;
+	uFnPlayCommonSE_WithPos->iNative = 38966;
 
 	memcpy_s(&Loc, sizeof(Loc), &PlayCommonSE_WithPos_Params.Loc, sizeof(PlayCommonSE_WithPos_Params.Loc));
 };
 
 // Function REDGame.REDGameInfo.PlayCommonSE
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38967])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38965])
 // Parameter Info:
 // class FName                    cueName                        (CPF_Parm)
 // class AActor*                  Actor                          (CPF_OptionalParm | CPF_Parm)
@@ -9711,11 +9711,11 @@ void AREDGameInfo::PlayCommonSE(const class FName& cueName, class AActor* Actor)
 	uFnPlayCommonSE->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayCommonSE, &PlayCommonSE_Params, nullptr);
 	uFnPlayCommonSE->FunctionFlags |= 0x400;
-	uFnPlayCommonSE->iNative = 38967;
+	uFnPlayCommonSE->iNative = 38965;
 };
 
 // Function REDGame.REDGameInfo.SetPlaySoundPadSpeaker
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39795])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39793])
 // Parameter Info:
 // int32_t                        PadID                          (CPF_Parm)
 
@@ -9736,7 +9736,7 @@ void AREDGameInfo::SetPlaySoundPadSpeaker(int32_t PadID)
 	uFnSetPlaySoundPadSpeaker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPlaySoundPadSpeaker, &SetPlaySoundPadSpeaker_Params, nullptr);
 	uFnSetPlaySoundPadSpeaker->FunctionFlags |= 0x400;
-	uFnSetPlaySoundPadSpeaker->iNative = 39795;
+	uFnSetPlaySoundPadSpeaker->iNative = 39793;
 };
 
 // Function REDGame.REDGameInfo.IsSoundClassPlaying
@@ -9785,7 +9785,7 @@ void AREDGameInfo::eventChangeSoundMode(const class FName& ModeName)
 };
 
 // Function REDGame.REDGameInfo.CreateCommonParticle
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36330])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36328])
 // Parameter Info:
 // class UParticleSystemComponent* ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_EditInline)
 // struct FParticleArg            Arg                            (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -9807,7 +9807,7 @@ class UParticleSystemComponent* AREDGameInfo::CreateCommonParticle(struct FParti
 	uFnCreateCommonParticle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateCommonParticle, &CreateCommonParticle_Params, nullptr);
 	uFnCreateCommonParticle->FunctionFlags |= 0x400;
-	uFnCreateCommonParticle->iNative = 36330;
+	uFnCreateCommonParticle->iNative = 36328;
 
 	memcpy_s(&Arg, sizeof(Arg), &CreateCommonParticle_Params.Arg, sizeof(CreateCommonParticle_Params.Arg));
 
@@ -9815,7 +9815,7 @@ class UParticleSystemComponent* AREDGameInfo::CreateCommonParticle(struct FParti
 };
 
 // Function REDGame.REDGameInfo.SetNoLinkObjParticleDisp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39783])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39781])
 // Parameter Info:
 // uint32_t                       bDisp                          (CPF_Parm)
 
@@ -9836,11 +9836,11 @@ void AREDGameInfo::SetNoLinkObjParticleDisp(bool bDisp)
 	uFnSetNoLinkObjParticleDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetNoLinkObjParticleDisp, &SetNoLinkObjParticleDisp_Params, nullptr);
 	uFnSetNoLinkObjParticleDisp->FunctionFlags |= 0x400;
-	uFnSetNoLinkObjParticleDisp->iNative = 39783;
+	uFnSetNoLinkObjParticleDisp->iNative = 39781;
 };
 
 // Function REDGame.REDGameInfo.GetParticleSpeed
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37132])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37130])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -9860,13 +9860,13 @@ float AREDGameInfo::GetParticleSpeed()
 	uFnGetParticleSpeed->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetParticleSpeed, &GetParticleSpeed_Params, nullptr);
 	uFnGetParticleSpeed->FunctionFlags |= 0x400;
-	uFnGetParticleSpeed->iNative = 37132;
+	uFnGetParticleSpeed->iNative = 37130;
 
 	return GetParticleSpeed_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameInfo.SetParticleSpeed
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39789])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39787])
 // Parameter Info:
 // float                          Speed                          (CPF_Parm)
 
@@ -9887,7 +9887,7 @@ void AREDGameInfo::SetParticleSpeed(float Speed)
 	uFnSetParticleSpeed->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetParticleSpeed, &SetParticleSpeed_Params, nullptr);
 	uFnSetParticleSpeed->FunctionFlags |= 0x400;
-	uFnSetParticleSpeed->iNative = 39789;
+	uFnSetParticleSpeed->iNative = 39787;
 };
 
 // Function REDGame.REDGameInfo.GameEnding
@@ -10110,7 +10110,7 @@ void AREDGameInfo::StepToggle()
 };
 
 // Function REDGame.REDGameInfo.UpdateSceneLightSettings
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40842])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40840])
 // Parameter Info:
 
 void AREDGameInfo::UpdateSceneLightSettings()
@@ -10129,7 +10129,7 @@ void AREDGameInfo::UpdateSceneLightSettings()
 	uFnUpdateSceneLightSettings->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateSceneLightSettings, &UpdateSceneLightSettings_Params, nullptr);
 	uFnUpdateSceneLightSettings->FunctionFlags |= 0x400;
-	uFnUpdateSceneLightSettings->iNative = 40842;
+	uFnUpdateSceneLightSettings->iNative = 40840;
 };
 
 // Function REDGame.REDGameInfo.LoadStaticTextureVersionDiff
@@ -10289,7 +10289,7 @@ void AREDGameInfo::SetupSpawnPlayerInfo(EUE_PLAYER_ID PlayerID, const class FStr
 };
 
 // Function REDGame.REDGameInfo.UpdateControllerConnectStatus
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40632])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40630])
 // Parameter Info:
 
 void AREDGameInfo::UpdateControllerConnectStatus()
@@ -10308,11 +10308,11 @@ void AREDGameInfo::UpdateControllerConnectStatus()
 	uFnUpdateControllerConnectStatus->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateControllerConnectStatus, &UpdateControllerConnectStatus_Params, nullptr);
 	uFnUpdateControllerConnectStatus->FunctionFlags |= 0x400;
-	uFnUpdateControllerConnectStatus->iNative = 40632;
+	uFnUpdateControllerConnectStatus->iNative = 40630;
 };
 
 // Function REDGame.REDGameInfo.IsEnableRedirectPS3toPS4Input
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37646])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37644])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -10332,13 +10332,13 @@ bool AREDGameInfo::IsEnableRedirectPS3toPS4Input()
 	uFnIsEnableRedirectPS3toPS4Input->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsEnableRedirectPS3toPS4Input, &IsEnableRedirectPS3toPS4Input_Params, nullptr);
 	uFnIsEnableRedirectPS3toPS4Input->FunctionFlags |= 0x400;
-	uFnIsEnableRedirectPS3toPS4Input->iNative = 37646;
+	uFnIsEnableRedirectPS3toPS4Input->iNative = 37644;
 
 	return IsEnableRedirectPS3toPS4Input_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameInfo.IS_DEBUG_ON
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37589])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37587])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -10358,13 +10358,13 @@ bool AREDGameInfo::IS_DEBUG_ON()
 	uFnIS_DEBUG_ON->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIS_DEBUG_ON, &IS_DEBUG_ON_Params, nullptr);
 	uFnIS_DEBUG_ON->FunctionFlags |= 0x400;
-	uFnIS_DEBUG_ON->iNative = 37589;
+	uFnIS_DEBUG_ON->iNative = 37587;
 
 	return IS_DEBUG_ON_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameInfo.IsUsePS3Assets
-// [0x00022400] (FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37925])
+// [0x00022400] (FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[37923])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -10384,13 +10384,13 @@ bool AREDGameInfo::IsUsePS3Assets()
 	uFnIsUsePS3Assets->FunctionFlags &= ~0x400;
 	AREDGameInfo::StaticClass()->ProcessEvent(uFnIsUsePS3Assets, &IsUsePS3Assets_Params, nullptr);
 	uFnIsUsePS3Assets->FunctionFlags |= 0x400;
-	uFnIsUsePS3Assets->iNative = 37925;
+	uFnIsUsePS3Assets->iNative = 37923;
 
 	return IsUsePS3Assets_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameInfo.SceneFinalize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39469])
 // Parameter Info:
 
 void AREDGameInfo::SceneFinalize()
@@ -10409,11 +10409,11 @@ void AREDGameInfo::SceneFinalize()
 	uFnSceneFinalize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneFinalize, &SceneFinalize_Params, nullptr);
 	uFnSceneFinalize->FunctionFlags |= 0x400;
-	uFnSceneFinalize->iNative = 39471;
+	uFnSceneFinalize->iNative = 39469;
 };
 
 // Function REDGame.REDGameInfo.SceneInitialize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39473])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
 // Parameter Info:
 
 void AREDGameInfo::SceneInitialize()
@@ -10432,11 +10432,11 @@ void AREDGameInfo::SceneInitialize()
 	uFnSceneInitialize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneInitialize, &SceneInitialize_Params, nullptr);
 	uFnSceneInitialize->FunctionFlags |= 0x400;
-	uFnSceneInitialize->iNative = 39473;
+	uFnSceneInitialize->iNative = 39471;
 };
 
 // Function REDGame.REDGameInfo.IsAsyncLoading
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37599])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37597])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -10456,13 +10456,13 @@ bool AREDGameInfo::IsAsyncLoading()
 	uFnIsAsyncLoading->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsAsyncLoading, &IsAsyncLoading_Params, nullptr);
 	uFnIsAsyncLoading->FunctionFlags |= 0x400;
-	uFnIsAsyncLoading->iNative = 37599;
+	uFnIsAsyncLoading->iNative = 37597;
 
 	return IsAsyncLoading_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameInfo.IsPauseGame
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37768])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37766])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -10482,7 +10482,7 @@ bool AREDGameInfo::IsPauseGame()
 	uFnIsPauseGame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPauseGame, &IsPauseGame_Params, nullptr);
 	uFnIsPauseGame->FunctionFlags |= 0x400;
-	uFnIsPauseGame->iNative = 37768;
+	uFnIsPauseGame->iNative = 37766;
 
 	return IsPauseGame_Params.ReturnValue;
 };
@@ -10513,7 +10513,7 @@ void AREDGameInfo::PauserTick(float DeltaTime)
 };
 
 // Function REDGame.REDGameInfo.SetupInternalHUDPtr
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39838])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39836])
 // Parameter Info:
 // class AHUD*                    HUD                            (CPF_Parm)
 
@@ -10534,11 +10534,11 @@ void AREDGameInfo::SetupInternalHUDPtr(class AHUD* HUD)
 	uFnSetupInternalHUDPtr->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupInternalHUDPtr, &SetupInternalHUDPtr_Params, nullptr);
 	uFnSetupInternalHUDPtr->FunctionFlags |= 0x400;
-	uFnSetupInternalHUDPtr->iNative = 39838;
+	uFnSetupInternalHUDPtr->iNative = 39836;
 };
 
 // Function REDGame.REDGameInfo.InitializeNetworkTextureList
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37529])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
 // Parameter Info:
 // class UREDTexture2DArray*      TextureList                    (CPF_Parm)
 
@@ -10559,7 +10559,7 @@ void AREDGameInfo::InitializeNetworkTextureList(class UREDTexture2DArray* Textur
 	uFnInitializeNetworkTextureList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNetworkTextureList, &InitializeNetworkTextureList_Params, nullptr);
 	uFnInitializeNetworkTextureList->FunctionFlags |= 0x400;
-	uFnInitializeNetworkTextureList->iNative = 37529;
+	uFnInitializeNetworkTextureList->iNative = 37527;
 };
 
 // Function REDGame.REDGameInfo_Adv.SwitchPause
@@ -11003,7 +11003,7 @@ void AREDGameInfo_Adv::eventInitGame(const class FString& Options, class FString
 };
 
 // Function REDGame.REDGameInfo_Adv.UpdatePause
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40801])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40799])
 // Parameter Info:
 
 void AREDGameInfo_Adv::UpdatePause()
@@ -11022,11 +11022,11 @@ void AREDGameInfo_Adv::UpdatePause()
 	uFnUpdatePause->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePause, &UpdatePause_Params, nullptr);
 	uFnUpdatePause->FunctionFlags |= 0x400;
-	uFnUpdatePause->iNative = 40801;
+	uFnUpdatePause->iNative = 40799;
 };
 
 // Function REDGame.REDGameInfo_Adv.UpdateScene
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40841])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40839])
 // Parameter Info:
 
 void AREDGameInfo_Adv::UpdateScene()
@@ -11045,11 +11045,11 @@ void AREDGameInfo_Adv::UpdateScene()
 	uFnUpdateScene->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateScene, &UpdateScene_Params, nullptr);
 	uFnUpdateScene->FunctionFlags |= 0x400;
-	uFnUpdateScene->iNative = 40841;
+	uFnUpdateScene->iNative = 40839;
 };
 
 // Function REDGame.REDGameInfo_Adv.SceneFinalize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39469])
 // Parameter Info:
 
 void AREDGameInfo_Adv::SceneFinalize()
@@ -11068,11 +11068,11 @@ void AREDGameInfo_Adv::SceneFinalize()
 	uFnSceneFinalize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneFinalize, &SceneFinalize_Params, nullptr);
 	uFnSceneFinalize->FunctionFlags |= 0x400;
-	uFnSceneFinalize->iNative = 39471;
+	uFnSceneFinalize->iNative = 39469;
 };
 
 // Function REDGame.REDGameInfo_Adv.SceneInitialize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39473])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
 // Parameter Info:
 
 void AREDGameInfo_Adv::SceneInitialize()
@@ -11091,7 +11091,7 @@ void AREDGameInfo_Adv::SceneInitialize()
 	uFnSceneInitialize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneInitialize, &SceneInitialize_Params, nullptr);
 	uFnSceneInitialize->FunctionFlags |= 0x400;
-	uFnSceneInitialize->iNative = 39473;
+	uFnSceneInitialize->iNative = 39471;
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.GameEnding
@@ -11461,7 +11461,7 @@ void AREDGameInfo_DigitalFigure::eventInitGame(const class FString& Options, cla
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.UpdatePause
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40801])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40799])
 // Parameter Info:
 
 void AREDGameInfo_DigitalFigure::UpdatePause()
@@ -11480,11 +11480,11 @@ void AREDGameInfo_DigitalFigure::UpdatePause()
 	uFnUpdatePause->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePause, &UpdatePause_Params, nullptr);
 	uFnUpdatePause->FunctionFlags |= 0x400;
-	uFnUpdatePause->iNative = 40801;
+	uFnUpdatePause->iNative = 40799;
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.UpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40790])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40788])
 // Parameter Info:
 
 void AREDGameInfo_DigitalFigure::UpdateNative()
@@ -11503,11 +11503,11 @@ void AREDGameInfo_DigitalFigure::UpdateNative()
 	uFnUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateNative, &UpdateNative_Params, nullptr);
 	uFnUpdateNative->FunctionFlags |= 0x400;
-	uFnUpdateNative->iNative = 40790;
+	uFnUpdateNative->iNative = 40788;
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.SceneFinalize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39469])
 // Parameter Info:
 
 void AREDGameInfo_DigitalFigure::SceneFinalize()
@@ -11526,11 +11526,11 @@ void AREDGameInfo_DigitalFigure::SceneFinalize()
 	uFnSceneFinalize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneFinalize, &SceneFinalize_Params, nullptr);
 	uFnSceneFinalize->FunctionFlags |= 0x400;
-	uFnSceneFinalize->iNative = 39471;
+	uFnSceneFinalize->iNative = 39469;
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.SceneInitialize_AfterFileLoad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39474])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39472])
 // Parameter Info:
 
 void AREDGameInfo_DigitalFigure::SceneInitialize_AfterFileLoad()
@@ -11549,11 +11549,11 @@ void AREDGameInfo_DigitalFigure::SceneInitialize_AfterFileLoad()
 	uFnSceneInitialize_AfterFileLoad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneInitialize_AfterFileLoad, &SceneInitialize_AfterFileLoad_Params, nullptr);
 	uFnSceneInitialize_AfterFileLoad->FunctionFlags |= 0x400;
-	uFnSceneInitialize_AfterFileLoad->iNative = 39474;
+	uFnSceneInitialize_AfterFileLoad->iNative = 39472;
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.SceneInitialize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39473])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
 // Parameter Info:
 
 void AREDGameInfo_DigitalFigure::SceneInitialize()
@@ -11572,11 +11572,11 @@ void AREDGameInfo_DigitalFigure::SceneInitialize()
 	uFnSceneInitialize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneInitialize, &SceneInitialize_Params, nullptr);
 	uFnSceneInitialize->FunctionFlags |= 0x400;
-	uFnSceneInitialize->iNative = 39473;
+	uFnSceneInitialize->iNative = 39471;
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.PlaySoundCue
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39043])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39041])
 // Parameter Info:
 // class USoundCue*               Cue                            (CPF_Parm)
 // EUE_BGM_ID                     bgmid                          (CPF_Parm)
@@ -11599,11 +11599,11 @@ void AREDGameInfo_DigitalFigure::PlaySoundCue(class USoundCue* Cue, EUE_BGM_ID b
 	uFnPlaySoundCue->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlaySoundCue, &PlaySoundCue_Params, nullptr);
 	uFnPlaySoundCue->FunctionFlags |= 0x400;
-	uFnPlaySoundCue->iNative = 39043;
+	uFnPlaySoundCue->iNative = 39041;
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.GetPlayBGMID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37134])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37132])
 // Parameter Info:
 // EUE_BGM_ID                     ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -11623,7 +11623,7 @@ EUE_BGM_ID AREDGameInfo_DigitalFigure::GetPlayBGMID()
 	uFnGetPlayBGMID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPlayBGMID, &GetPlayBGMID_Params, nullptr);
 	uFnGetPlayBGMID->FunctionFlags |= 0x400;
-	uFnGetPlayBGMID->iNative = 37134;
+	uFnGetPlayBGMID->iNative = 37132;
 
 	return static_cast<EUE_BGM_ID>(GetPlayBGMID_Params.ReturnValue);
 };
@@ -11720,7 +11720,7 @@ void AREDGameInfo_Ending::eventInitGame(const class FString& Options, class FStr
 };
 
 // Function REDGame.REDGameInfo_Ending.UpdateDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40647])
 // Parameter Info:
 
 void AREDGameInfo_Ending::UpdateDraw()
@@ -11739,11 +11739,11 @@ void AREDGameInfo_Ending::UpdateDraw()
 	uFnUpdateDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDraw, &UpdateDraw_Params, nullptr);
 	uFnUpdateDraw->FunctionFlags |= 0x400;
-	uFnUpdateDraw->iNative = 40649;
+	uFnUpdateDraw->iNative = 40647;
 };
 
 // Function REDGame.REDGameInfo_Ending.UpdateMain
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40763])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40761])
 // Parameter Info:
 
 void AREDGameInfo_Ending::UpdateMain()
@@ -11762,11 +11762,11 @@ void AREDGameInfo_Ending::UpdateMain()
 	uFnUpdateMain->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMain, &UpdateMain_Params, nullptr);
 	uFnUpdateMain->FunctionFlags |= 0x400;
-	uFnUpdateMain->iNative = 40763;
+	uFnUpdateMain->iNative = 40761;
 };
 
 // Function REDGame.REDGameInfo_Ending.SceneFinalize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39469])
 // Parameter Info:
 
 void AREDGameInfo_Ending::SceneFinalize()
@@ -11785,11 +11785,11 @@ void AREDGameInfo_Ending::SceneFinalize()
 	uFnSceneFinalize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneFinalize, &SceneFinalize_Params, nullptr);
 	uFnSceneFinalize->FunctionFlags |= 0x400;
-	uFnSceneFinalize->iNative = 39471;
+	uFnSceneFinalize->iNative = 39469;
 };
 
 // Function REDGame.REDGameInfo_Ending.SceneInitialize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39473])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
 // Parameter Info:
 
 void AREDGameInfo_Ending::SceneInitialize()
@@ -11808,11 +11808,11 @@ void AREDGameInfo_Ending::SceneInitialize()
 	uFnSceneInitialize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneInitialize, &SceneInitialize_Params, nullptr);
 	uFnSceneInitialize->FunctionFlags |= 0x400;
-	uFnSceneInitialize->iNative = 39473;
+	uFnSceneInitialize->iNative = 39471;
 };
 
 // Function REDGame.REDGameInfo_Ending.StopSubtitle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40107])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40105])
 // Parameter Info:
 
 void AREDGameInfo_Ending::StopSubtitle()
@@ -11831,11 +11831,11 @@ void AREDGameInfo_Ending::StopSubtitle()
 	uFnStopSubtitle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopSubtitle, &StopSubtitle_Params, nullptr);
 	uFnStopSubtitle->FunctionFlags |= 0x400;
-	uFnStopSubtitle->iNative = 40107;
+	uFnStopSubtitle->iNative = 40105;
 };
 
 // Function REDGame.REDGameInfo_Ending.UpdatePause
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40801])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40799])
 // Parameter Info:
 
 void AREDGameInfo_Ending::UpdatePause()
@@ -11854,7 +11854,7 @@ void AREDGameInfo_Ending::UpdatePause()
 	uFnUpdatePause->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePause, &UpdatePause_Params, nullptr);
 	uFnUpdatePause->FunctionFlags |= 0x400;
-	uFnUpdatePause->iNative = 40801;
+	uFnUpdatePause->iNative = 40799;
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.GetKismetVariableBool
@@ -11928,7 +11928,7 @@ void AREDGameInfo_InterludeDrama::eventInitGame(const class FString& Options, cl
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.InitPreLoad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37543])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37541])
 // Parameter Info:
 
 void AREDGameInfo_InterludeDrama::InitPreLoad()
@@ -11947,11 +11947,11 @@ void AREDGameInfo_InterludeDrama::InitPreLoad()
 	uFnInitPreLoad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitPreLoad, &InitPreLoad_Params, nullptr);
 	uFnInitPreLoad->FunctionFlags |= 0x400;
-	uFnInitPreLoad->iNative = 37543;
+	uFnInitPreLoad->iNative = 37541;
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.StopMovie
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28957])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28955])
 // Parameter Info:
 
 void AREDGameInfo_InterludeDrama::StopMovie()
@@ -11970,11 +11970,11 @@ void AREDGameInfo_InterludeDrama::StopMovie()
 	uFnStopMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopMovie, &StopMovie_Params, nullptr);
 	uFnStopMovie->FunctionFlags |= 0x400;
-	uFnStopMovie->iNative = 28957;
+	uFnStopMovie->iNative = 28955;
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.SetNewChallengerEnableFlag
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39782])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39780])
 // Parameter Info:
 // uint32_t                       flag                           (CPF_Parm)
 
@@ -11995,11 +11995,11 @@ void AREDGameInfo_InterludeDrama::SetNewChallengerEnableFlag(bool flag)
 	uFnSetNewChallengerEnableFlag->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetNewChallengerEnableFlag, &SetNewChallengerEnableFlag_Params, nullptr);
 	uFnSetNewChallengerEnableFlag->FunctionFlags |= 0x400;
-	uFnSetNewChallengerEnableFlag->iNative = 39782;
+	uFnSetNewChallengerEnableFlag->iNative = 39780;
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.CheckSkipInput
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36209])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36207])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -12019,13 +12019,13 @@ bool AREDGameInfo_InterludeDrama::CheckSkipInput()
 	uFnCheckSkipInput->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckSkipInput, &CheckSkipInput_Params, nullptr);
 	uFnCheckSkipInput->FunctionFlags |= 0x400;
-	uFnCheckSkipInput->iNative = 36209;
+	uFnCheckSkipInput->iNative = 36207;
 
 	return CheckSkipInput_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.UpdateDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40647])
 // Parameter Info:
 
 void AREDGameInfo_InterludeDrama::UpdateDraw()
@@ -12044,11 +12044,11 @@ void AREDGameInfo_InterludeDrama::UpdateDraw()
 	uFnUpdateDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDraw, &UpdateDraw_Params, nullptr);
 	uFnUpdateDraw->FunctionFlags |= 0x400;
-	uFnUpdateDraw->iNative = 40649;
+	uFnUpdateDraw->iNative = 40647;
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.UpdateMain
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40763])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40761])
 // Parameter Info:
 
 void AREDGameInfo_InterludeDrama::UpdateMain()
@@ -12067,11 +12067,11 @@ void AREDGameInfo_InterludeDrama::UpdateMain()
 	uFnUpdateMain->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMain, &UpdateMain_Params, nullptr);
 	uFnUpdateMain->FunctionFlags |= 0x400;
-	uFnUpdateMain->iNative = 40763;
+	uFnUpdateMain->iNative = 40761;
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.SceneFinalize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39469])
 // Parameter Info:
 
 void AREDGameInfo_InterludeDrama::SceneFinalize()
@@ -12090,11 +12090,11 @@ void AREDGameInfo_InterludeDrama::SceneFinalize()
 	uFnSceneFinalize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneFinalize, &SceneFinalize_Params, nullptr);
 	uFnSceneFinalize->FunctionFlags |= 0x400;
-	uFnSceneFinalize->iNative = 39471;
+	uFnSceneFinalize->iNative = 39469;
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.SceneInitialize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39473])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
 // Parameter Info:
 
 void AREDGameInfo_InterludeDrama::SceneInitialize()
@@ -12113,7 +12113,7 @@ void AREDGameInfo_InterludeDrama::SceneInitialize()
 	uFnSceneInitialize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneInitialize, &SceneInitialize_Params, nullptr);
 	uFnSceneInitialize->FunctionFlags |= 0x400;
-	uFnSceneInitialize->iNative = 39473;
+	uFnSceneInitialize->iNative = 39471;
 };
 
 // Function REDGame.REDGameInfo_Menu.SwitchPause
@@ -12184,7 +12184,7 @@ void AREDGameInfo_Menu::eventInitGame(const class FString& Options, class FStrin
 };
 
 // Function REDGame.REDGameInfo_Menu.GetLocalizeString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37091])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37089])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  WidgetName                     (CPF_Parm | CPF_NeedCtorLink)
@@ -12206,13 +12206,13 @@ class FString AREDGameInfo_Menu::GetLocalizeString(const class FString& WidgetNa
 	uFnGetLocalizeString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetLocalizeString, &GetLocalizeString_Params, nullptr);
 	uFnGetLocalizeString->FunctionFlags |= 0x400;
-	uFnGetLocalizeString->iNative = 37091;
+	uFnGetLocalizeString->iNative = 37089;
 
 	return GetLocalizeString_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameInfo_Menu.UpdatePause
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40801])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40799])
 // Parameter Info:
 
 void AREDGameInfo_Menu::UpdatePause()
@@ -12231,7 +12231,7 @@ void AREDGameInfo_Menu::UpdatePause()
 	uFnUpdatePause->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePause, &UpdatePause_Params, nullptr);
 	uFnUpdatePause->FunctionFlags |= 0x400;
-	uFnUpdatePause->iNative = 40801;
+	uFnUpdatePause->iNative = 40799;
 };
 
 // Function REDGame.REDGameInfo_BootSequence.GameEnding
@@ -12300,7 +12300,7 @@ void AREDGameInfo_BootSequence::eventInitGame(const class FString& Options, clas
 };
 
 // Function REDGame.REDGameInfo_BootSequence.BootSequence
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35889])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35887])
 // Parameter Info:
 
 void AREDGameInfo_BootSequence::BootSequence()
@@ -12319,7 +12319,7 @@ void AREDGameInfo_BootSequence::BootSequence()
 	uFnBootSequence->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnBootSequence, &BootSequence_Params, nullptr);
 	uFnBootSequence->FunctionFlags |= 0x400;
-	uFnBootSequence->iNative = 35889;
+	uFnBootSequence->iNative = 35887;
 };
 
 // Function REDGame.REDGameInfo_Library.GameEnding
@@ -12388,7 +12388,7 @@ void AREDGameInfo_Library::eventInitGame(const class FString& Options, class FSt
 };
 
 // Function REDGame.REDGameInfo_Library.execRelease
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36781])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36779])
 // Parameter Info:
 
 void AREDGameInfo_Library::execRelease()
@@ -12407,11 +12407,11 @@ void AREDGameInfo_Library::execRelease()
 	uFnexecRelease->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecRelease, &execRelease_Params, nullptr);
 	uFnexecRelease->FunctionFlags |= 0x400;
-	uFnexecRelease->iNative = 36781;
+	uFnexecRelease->iNative = 36779;
 };
 
 // Function REDGame.REDGameInfo_Library.execDrawNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36776])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36774])
 // Parameter Info:
 
 void AREDGameInfo_Library::execDrawNative()
@@ -12430,11 +12430,11 @@ void AREDGameInfo_Library::execDrawNative()
 	uFnexecDrawNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecDrawNative, &execDrawNative_Params, nullptr);
 	uFnexecDrawNative->FunctionFlags |= 0x400;
-	uFnexecDrawNative->iNative = 36776;
+	uFnexecDrawNative->iNative = 36774;
 };
 
 // Function REDGame.REDGameInfo_Library.execUpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36784])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36782])
 // Parameter Info:
 
 void AREDGameInfo_Library::execUpdateNative()
@@ -12453,11 +12453,11 @@ void AREDGameInfo_Library::execUpdateNative()
 	uFnexecUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecUpdateNative, &execUpdateNative_Params, nullptr);
 	uFnexecUpdateNative->FunctionFlags |= 0x400;
-	uFnexecUpdateNative->iNative = 36784;
+	uFnexecUpdateNative->iNative = 36782;
 };
 
 // Function REDGame.REDGameInfo_Library.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void AREDGameInfo_Library::InitializeNative()
@@ -12476,7 +12476,7 @@ void AREDGameInfo_Library::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGameInfo_LobbyBase.GetKismetObject
@@ -12664,7 +12664,7 @@ void AREDGameInfo_LobbyBase::CollisionData_Update(int32_t kyoutaiMax)
 };
 
 // Function REDGame.REDGameInfo_LobbyBase.CheckEvent
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36195])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36193])
 // Parameter Info:
 // ELOBBY_EVENT                   ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FVector2D               pos                            (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -12692,7 +12692,7 @@ ELOBBY_EVENT AREDGameInfo_LobbyBase::CheckEvent(struct FVector2D& pos, int32_t& 
 	uFnCheckEvent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckEvent, &CheckEvent_Params, nullptr);
 	uFnCheckEvent->FunctionFlags |= 0x400;
-	uFnCheckEvent->iNative = 36195;
+	uFnCheckEvent->iNative = 36193;
 
 	memcpy_s(&pos, sizeof(pos), &CheckEvent_Params.pos, sizeof(CheckEvent_Params.pos));
 	memcpy_s(&OptionData, sizeof(OptionData), &CheckEvent_Params.OptionData, sizeof(CheckEvent_Params.OptionData));
@@ -12703,7 +12703,7 @@ ELOBBY_EVENT AREDGameInfo_LobbyBase::CheckEvent(struct FVector2D& pos, int32_t& 
 };
 
 // Function REDGame.REDGameInfo_LobbyBase.CheckCollision_Rect
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36189])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36187])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // float                          Radius                         (CPF_Parm)
@@ -12731,7 +12731,7 @@ bool AREDGameInfo_LobbyBase::CheckCollision_Rect(float Radius, struct FVector2D&
 	uFnCheckCollision_Rect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckCollision_Rect, &CheckCollision_Rect_Params, nullptr);
 	uFnCheckCollision_Rect->FunctionFlags |= 0x400;
-	uFnCheckCollision_Rect->iNative = 36189;
+	uFnCheckCollision_Rect->iNative = 36187;
 
 	memcpy_s(&prevpos, sizeof(prevpos), &CheckCollision_Rect_Params.prevpos, sizeof(CheckCollision_Rect_Params.prevpos));
 	memcpy_s(&pos, sizeof(pos), &CheckCollision_Rect_Params.pos, sizeof(CheckCollision_Rect_Params.pos));
@@ -12741,7 +12741,7 @@ bool AREDGameInfo_LobbyBase::CheckCollision_Rect(float Radius, struct FVector2D&
 };
 
 // Function REDGame.REDGameInfo_LobbyBase.CheckCollision_Circle
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36188])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36186])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // float                          Radius                         (CPF_Parm)
@@ -12767,7 +12767,7 @@ bool AREDGameInfo_LobbyBase::CheckCollision_Circle(float Radius, struct FVector2
 	uFnCheckCollision_Circle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckCollision_Circle, &CheckCollision_Circle_Params, nullptr);
 	uFnCheckCollision_Circle->FunctionFlags |= 0x400;
-	uFnCheckCollision_Circle->iNative = 36188;
+	uFnCheckCollision_Circle->iNative = 36186;
 
 	memcpy_s(&pos, sizeof(pos), &CheckCollision_Circle_Params.pos, sizeof(CheckCollision_Circle_Params.pos));
 	memcpy_s(&checkedPos, sizeof(checkedPos), &CheckCollision_Circle_Params.checkedPos, sizeof(CheckCollision_Circle_Params.checkedPos));
@@ -12776,7 +12776,7 @@ bool AREDGameInfo_LobbyBase::CheckCollision_Circle(float Radius, struct FVector2
 };
 
 // Function REDGame.REDGameInfo_LobbyBase.CheckCollision_Wall
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36190])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36188])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // float                          Radius                         (CPF_Parm)
@@ -12802,7 +12802,7 @@ bool AREDGameInfo_LobbyBase::CheckCollision_Wall(float Radius, struct FVector2D&
 	uFnCheckCollision_Wall->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckCollision_Wall, &CheckCollision_Wall_Params, nullptr);
 	uFnCheckCollision_Wall->FunctionFlags |= 0x400;
-	uFnCheckCollision_Wall->iNative = 36190;
+	uFnCheckCollision_Wall->iNative = 36188;
 
 	memcpy_s(&pos, sizeof(pos), &CheckCollision_Wall_Params.pos, sizeof(CheckCollision_Wall_Params.pos));
 	memcpy_s(&checkedPos, sizeof(checkedPos), &CheckCollision_Wall_Params.checkedPos, sizeof(CheckCollision_Wall_Params.checkedPos));
@@ -12898,7 +12898,7 @@ void AREDGameInfo_Fishing::eventInitGame(const class FString& Options, class FSt
 };
 
 // Function REDGame.REDGameInfo_Fishing.UpdateDrawNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40652])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40650])
 // Parameter Info:
 
 void AREDGameInfo_Fishing::UpdateDrawNative()
@@ -12917,11 +12917,11 @@ void AREDGameInfo_Fishing::UpdateDrawNative()
 	uFnUpdateDrawNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawNative, &UpdateDrawNative_Params, nullptr);
 	uFnUpdateDrawNative->FunctionFlags |= 0x400;
-	uFnUpdateDrawNative->iNative = 40652;
+	uFnUpdateDrawNative->iNative = 40650;
 };
 
 // Function REDGame.REDGameInfo_Fishing.UpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40790])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40788])
 // Parameter Info:
 
 void AREDGameInfo_Fishing::UpdateNative()
@@ -12940,11 +12940,11 @@ void AREDGameInfo_Fishing::UpdateNative()
 	uFnUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateNative, &UpdateNative_Params, nullptr);
 	uFnUpdateNative->FunctionFlags |= 0x400;
-	uFnUpdateNative->iNative = 40790;
+	uFnUpdateNative->iNative = 40788;
 };
 
 // Function REDGame.REDGameInfo_Fishing.FinalizeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36842])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36840])
 // Parameter Info:
 
 void AREDGameInfo_Fishing::FinalizeNative()
@@ -12963,11 +12963,11 @@ void AREDGameInfo_Fishing::FinalizeNative()
 	uFnFinalizeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFinalizeNative, &FinalizeNative_Params, nullptr);
 	uFnFinalizeNative->FunctionFlags |= 0x400;
-	uFnFinalizeNative->iNative = 36842;
+	uFnFinalizeNative->iNative = 36840;
 };
 
 // Function REDGame.REDGameInfo_Fishing.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void AREDGameInfo_Fishing::InitializeNative()
@@ -12986,7 +12986,7 @@ void AREDGameInfo_Fishing::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGameInfo_Lobby.PlayEasyChatVoice
@@ -13256,7 +13256,7 @@ void AREDGameInfo_NetworkMenu::eventInitGame(const class FString& Options, class
 };
 
 // Function REDGame.REDGameInfo_NetworkMenu.UpdateDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40647])
 // Parameter Info:
 
 void AREDGameInfo_NetworkMenu::UpdateDraw()
@@ -13275,11 +13275,11 @@ void AREDGameInfo_NetworkMenu::UpdateDraw()
 	uFnUpdateDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDraw, &UpdateDraw_Params, nullptr);
 	uFnUpdateDraw->FunctionFlags |= 0x400;
-	uFnUpdateDraw->iNative = 40649;
+	uFnUpdateDraw->iNative = 40647;
 };
 
 // Function REDGame.REDGameInfo_NetworkMenu.UpdateMain
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40763])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40761])
 // Parameter Info:
 
 void AREDGameInfo_NetworkMenu::UpdateMain()
@@ -13298,11 +13298,11 @@ void AREDGameInfo_NetworkMenu::UpdateMain()
 	uFnUpdateMain->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMain, &UpdateMain_Params, nullptr);
 	uFnUpdateMain->FunctionFlags |= 0x400;
-	uFnUpdateMain->iNative = 40763;
+	uFnUpdateMain->iNative = 40761;
 };
 
 // Function REDGame.REDGameInfo_NetworkMenu.SceneFinalize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39469])
 // Parameter Info:
 
 void AREDGameInfo_NetworkMenu::SceneFinalize()
@@ -13321,11 +13321,11 @@ void AREDGameInfo_NetworkMenu::SceneFinalize()
 	uFnSceneFinalize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneFinalize, &SceneFinalize_Params, nullptr);
 	uFnSceneFinalize->FunctionFlags |= 0x400;
-	uFnSceneFinalize->iNative = 39471;
+	uFnSceneFinalize->iNative = 39469;
 };
 
 // Function REDGame.REDGameInfo_NetworkMenu.SceneInitialize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39473])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
 // Parameter Info:
 
 void AREDGameInfo_NetworkMenu::SceneInitialize()
@@ -13344,11 +13344,11 @@ void AREDGameInfo_NetworkMenu::SceneInitialize()
 	uFnSceneInitialize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneInitialize, &SceneInitialize_Params, nullptr);
 	uFnSceneInitialize->FunctionFlags |= 0x400;
-	uFnSceneInitialize->iNative = 39473;
+	uFnSceneInitialize->iNative = 39471;
 };
 
 // Function REDGame.REDGameInfo_NetworkMenu.UpdatePause
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40801])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40799])
 // Parameter Info:
 
 void AREDGameInfo_NetworkMenu::UpdatePause()
@@ -13367,7 +13367,7 @@ void AREDGameInfo_NetworkMenu::UpdatePause()
 	uFnUpdatePause->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePause, &UpdatePause_Params, nullptr);
 	uFnUpdatePause->FunctionFlags |= 0x400;
-	uFnUpdatePause->iNative = 40801;
+	uFnUpdatePause->iNative = 40799;
 };
 
 // Function REDGame.REDGameInfo_StoryStaffRoll.SwitchPause
@@ -13438,7 +13438,7 @@ void AREDGameInfo_StoryStaffRoll::eventInitGame(const class FString& Options, cl
 };
 
 // Function REDGame.REDGameInfo_StoryStaffRoll.UpdatePause
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40801])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40799])
 // Parameter Info:
 
 void AREDGameInfo_StoryStaffRoll::UpdatePause()
@@ -13457,7 +13457,7 @@ void AREDGameInfo_StoryStaffRoll::UpdatePause()
 	uFnUpdatePause->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePause, &UpdatePause_Params, nullptr);
 	uFnUpdatePause->FunctionFlags |= 0x400;
-	uFnUpdatePause->iNative = 40801;
+	uFnUpdatePause->iNative = 40799;
 };
 
 // Function REDGame.REDGameInfo_TestMode.StopTestBGM
@@ -13545,7 +13545,7 @@ void AREDGameInfo_TestMode::eventInitGame(const class FString& Options, class FS
 };
 
 // Function REDGame.REDGameInfo_TestMode.UpdateTestMode
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40868])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40866])
 // Parameter Info:
 
 void AREDGameInfo_TestMode::UpdateTestMode()
@@ -13564,11 +13564,11 @@ void AREDGameInfo_TestMode::UpdateTestMode()
 	uFnUpdateTestMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateTestMode, &UpdateTestMode_Params, nullptr);
 	uFnUpdateTestMode->FunctionFlags |= 0x400;
-	uFnUpdateTestMode->iNative = 40868;
+	uFnUpdateTestMode->iNative = 40866;
 };
 
 // Function REDGame.REDGameInfo_TestMode.FinalizeTestMode
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36844])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36842])
 // Parameter Info:
 
 void AREDGameInfo_TestMode::FinalizeTestMode()
@@ -13587,11 +13587,11 @@ void AREDGameInfo_TestMode::FinalizeTestMode()
 	uFnFinalizeTestMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFinalizeTestMode, &FinalizeTestMode_Params, nullptr);
 	uFnFinalizeTestMode->FunctionFlags |= 0x400;
-	uFnFinalizeTestMode->iNative = 36844;
+	uFnFinalizeTestMode->iNative = 36842;
 };
 
 // Function REDGame.REDGameInfo_TestMode.InitializeTestMode
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37534])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37532])
 // Parameter Info:
 
 void AREDGameInfo_TestMode::InitializeTestMode()
@@ -13610,7 +13610,7 @@ void AREDGameInfo_TestMode::InitializeTestMode()
 	uFnInitializeTestMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeTestMode, &InitializeTestMode_Params, nullptr);
 	uFnInitializeTestMode->FunctionFlags |= 0x400;
-	uFnInitializeTestMode->iNative = 37534;
+	uFnInitializeTestMode->iNative = 37532;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyReceiveBinaryData
@@ -13984,7 +13984,7 @@ void UREDGameOnlineLobbyInterfaceSteamworks::eventInitialize()
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyKickedNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38060])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38058])
 // Parameter Info:
 // int32_t                        LobbyIndex                     (CPF_Parm)
 // int32_t                        AdminIndex                     (CPF_Parm)
@@ -14007,11 +14007,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::LobbyKickedNative(int32_t LobbyInde
 	uFnLobbyKickedNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLobbyKickedNative, &LobbyKickedNative_Params, nullptr);
 	uFnLobbyKickedNative->FunctionFlags |= 0x400;
-	uFnLobbyKickedNative->iNative = 38060;
+	uFnLobbyKickedNative->iNative = 38058;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyInviteCompleteNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38058])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38056])
 // Parameter Info:
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
 // struct FUniqueNetId            FriendId                       (CPF_Parm)
@@ -14036,11 +14036,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::LobbyInviteCompleteNative(const str
 	uFnLobbyInviteCompleteNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLobbyInviteCompleteNative, &LobbyInviteCompleteNative_Params, nullptr);
 	uFnLobbyInviteCompleteNative->FunctionFlags |= 0x400;
-	uFnLobbyInviteCompleteNative->iNative = 38058;
+	uFnLobbyInviteCompleteNative->iNative = 38056;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyReceiveBinaryDataNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38068])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38066])
 // Parameter Info:
 // int32_t                        LobbyIndex                     (CPF_Parm)
 // int32_t                        MemberIndex                    (CPF_Parm)
@@ -14067,11 +14067,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::LobbyReceiveBinaryDataNative(int32_
 	uFnLobbyReceiveBinaryDataNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLobbyReceiveBinaryDataNative, &LobbyReceiveBinaryDataNative_Params, nullptr);
 	uFnLobbyReceiveBinaryDataNative->FunctionFlags |= 0x400;
-	uFnLobbyReceiveBinaryDataNative->iNative = 38068;
+	uFnLobbyReceiveBinaryDataNative->iNative = 38066;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyReceiveMessageNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38070])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38068])
 // Parameter Info:
 // int32_t                        LobbyIndex                     (CPF_Parm)
 // int32_t                        MemberIndex                    (CPF_Parm)
@@ -14098,11 +14098,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::LobbyReceiveMessageNative(int32_t L
 	uFnLobbyReceiveMessageNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLobbyReceiveMessageNative, &LobbyReceiveMessageNative_Params, nullptr);
 	uFnLobbyReceiveMessageNative->FunctionFlags |= 0x400;
-	uFnLobbyReceiveMessageNative->iNative = 38070;
+	uFnLobbyReceiveMessageNative->iNative = 38068;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyMemberSettingsUpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38062])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38060])
 // Parameter Info:
 // int32_t                        LobbyIndex                     (CPF_Parm)
 // int32_t                        MemberIndex                    (CPF_Parm)
@@ -14125,11 +14125,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::LobbyMemberSettingsUpdateNative(int
 	uFnLobbyMemberSettingsUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLobbyMemberSettingsUpdateNative, &LobbyMemberSettingsUpdateNative_Params, nullptr);
 	uFnLobbyMemberSettingsUpdateNative->FunctionFlags |= 0x400;
-	uFnLobbyMemberSettingsUpdateNative->iNative = 38062;
+	uFnLobbyMemberSettingsUpdateNative->iNative = 38060;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyMemberStatusUpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38064])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38062])
 // Parameter Info:
 // int32_t                        LobbyIndex                     (CPF_Parm)
 // int32_t                        MemberIndex                    (CPF_Parm)
@@ -14156,11 +14156,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::LobbyMemberStatusUpdateNative(int32
 	uFnLobbyMemberStatusUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLobbyMemberStatusUpdateNative, &LobbyMemberStatusUpdateNative_Params, nullptr);
 	uFnLobbyMemberStatusUpdateNative->FunctionFlags |= 0x400;
-	uFnLobbyMemberStatusUpdateNative->iNative = 38064;
+	uFnLobbyMemberStatusUpdateNative->iNative = 38062;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbySettingsUpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38076])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38074])
 // Parameter Info:
 // int32_t                        LobbyIndex                     (CPF_Parm)
 
@@ -14181,11 +14181,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::LobbySettingsUpdateNative(int32_t L
 	uFnLobbySettingsUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLobbySettingsUpdateNative, &LobbySettingsUpdateNative_Params, nullptr);
 	uFnLobbySettingsUpdateNative->FunctionFlags |= 0x400;
-	uFnLobbySettingsUpdateNative->iNative = 38076;
+	uFnLobbySettingsUpdateNative->iNative = 38074;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.JoinLobbyCompleteNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37946])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37944])
 // Parameter Info:
 // uint32_t                       bWasSuccessful                 (CPF_Parm)
 // int32_t                        LobbyIndex                     (CPF_Parm)
@@ -14212,11 +14212,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::JoinLobbyCompleteNative(bool bWasSu
 	uFnJoinLobbyCompleteNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJoinLobbyCompleteNative, &JoinLobbyCompleteNative_Params, nullptr);
 	uFnJoinLobbyCompleteNative->FunctionFlags |= 0x400;
-	uFnJoinLobbyCompleteNative->iNative = 37946;
+	uFnJoinLobbyCompleteNative->iNative = 37944;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.FindLobbiesCompleteNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36854])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36852])
 // Parameter Info:
 // uint32_t                       bWasSuccessful                 (CPF_Parm)
 // class TArray<struct FFoundLobby> foundList                      (CPF_Parm | CPF_NeedCtorLink)
@@ -14239,11 +14239,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::FindLobbiesCompleteNative(bool bWas
 	uFnFindLobbiesCompleteNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFindLobbiesCompleteNative, &FindLobbiesCompleteNative_Params, nullptr);
 	uFnFindLobbiesCompleteNative->FunctionFlags |= 0x400;
-	uFnFindLobbiesCompleteNative->iNative = 36854;
+	uFnFindLobbiesCompleteNative->iNative = 36852;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.CreateLobbyCompleteNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36333])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36331])
 // Parameter Info:
 // uint32_t                       bWasSuccessful                 (CPF_Parm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -14268,11 +14268,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::CreateLobbyCompleteNative(bool bWas
 	uFnCreateLobbyCompleteNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateLobbyCompleteNative, &CreateLobbyCompleteNative_Params, nullptr);
 	uFnCreateLobbyCompleteNative->FunctionFlags |= 0x400;
-	uFnCreateLobbyCompleteNative->iNative = 36333;
+	uFnCreateLobbyCompleteNative->iNative = 36331;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.CleanupNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36222])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36220])
 // Parameter Info:
 
 void UREDGameOnlineLobbyInterfaceSteamworks::CleanupNative()
@@ -14291,11 +14291,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::CleanupNative()
 	uFnCleanupNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCleanupNative, &CleanupNative_Params, nullptr);
 	uFnCleanupNative->FunctionFlags |= 0x400;
-	uFnCleanupNative->iNative = 36222;
+	uFnCleanupNative->iNative = 36220;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.JoinedLobbyId
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37944])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37942])
 // Parameter Info:
 // struct FUniqueNetId            ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -14315,13 +14315,13 @@ struct FUniqueNetId UREDGameOnlineLobbyInterfaceSteamworks::JoinedLobbyId()
 	uFnJoinedLobbyId->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJoinedLobbyId, &JoinedLobbyId_Params, nullptr);
 	uFnJoinedLobbyId->FunctionFlags |= 0x400;
-	uFnJoinedLobbyId->iNative = 37944;
+	uFnJoinedLobbyId->iNative = 37942;
 
 	return JoinedLobbyId_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void UREDGameOnlineLobbyInterfaceSteamworks::InitializeNative()
@@ -14340,11 +14340,11 @@ void UREDGameOnlineLobbyInterfaceSteamworks::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGameStatsBase.FlushStatsCompleteNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36882])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36880])
 // Parameter Info:
 
 void UREDGameStatsBase::FlushStatsCompleteNative()
@@ -14363,7 +14363,7 @@ void UREDGameStatsBase::FlushStatsCompleteNative()
 	uFnFlushStatsCompleteNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFlushStatsCompleteNative, &FlushStatsCompleteNative_Params, nullptr);
 	uFnFlushStatsCompleteNative->FunctionFlags |= 0x400;
-	uFnFlushStatsCompleteNative->iNative = 36882;
+	uFnFlushStatsCompleteNative->iNative = 36880;
 };
 
 // Function REDGame.REDGameStatsBase.FlushStatsComplete
@@ -14409,7 +14409,7 @@ void UREDGameStatsBase::WriteStats()
 };
 
 // Function REDGame.REDGameStatsBase.AchievementDoneNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35363])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35361])
 // Parameter Info:
 // int32_t                        unlockedAchievementId          (CPF_Parm)
 
@@ -14430,7 +14430,7 @@ void UREDGameStatsBase::AchievementDoneNative(int32_t unlockedAchievementId)
 	uFnAchievementDoneNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAchievementDoneNative, &AchievementDoneNative_Params, nullptr);
 	uFnAchievementDoneNative->FunctionFlags |= 0x400;
-	uFnAchievementDoneNative->iNative = 35363;
+	uFnAchievementDoneNative->iNative = 35361;
 };
 
 // Function REDGame.REDGameStatsBase.AchievementDone
@@ -14661,7 +14661,7 @@ int32_t UREDGameStatsBase::eventUpdate(int32_t LocalPlayerIndex, int32_t StatsID
 };
 
 // Function REDGame.REDGameStatsBase.ReadStatsCompleteNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39230])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39228])
 // Parameter Info:
 
 void UREDGameStatsBase::ReadStatsCompleteNative()
@@ -14680,7 +14680,7 @@ void UREDGameStatsBase::ReadStatsCompleteNative()
 	uFnReadStatsCompleteNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadStatsCompleteNative, &ReadStatsCompleteNative_Params, nullptr);
 	uFnReadStatsCompleteNative->FunctionFlags |= 0x400;
-	uFnReadStatsCompleteNative->iNative = 39230;
+	uFnReadStatsCompleteNative->iNative = 39228;
 };
 
 // Function REDGame.REDGameStatsBase.ReadStatsComplete
@@ -14808,7 +14808,7 @@ class ULocalPlayer* UREDGameStatsBase::GetLP()
 };
 
 // Function REDGame.REDGameStats.ReadStatsCompleteNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39230])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39228])
 // Parameter Info:
 
 void UREDGameStats::ReadStatsCompleteNative()
@@ -14827,7 +14827,7 @@ void UREDGameStats::ReadStatsCompleteNative()
 	uFnReadStatsCompleteNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadStatsCompleteNative, &ReadStatsCompleteNative_Params, nullptr);
 	uFnReadStatsCompleteNative->FunctionFlags |= 0x400;
-	uFnReadStatsCompleteNative->iNative = 39230;
+	uFnReadStatsCompleteNative->iNative = 39228;
 };
 
 // Function REDGame.REDGameViewportClient.GameSessionEnded
@@ -14892,7 +14892,7 @@ void UREDGameViewportClient::PostRender(class UCanvas* Canvas)
 };
 
 // Function REDGame.REDGameViewportClient.UpdateFade
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40672])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40670])
 // Parameter Info:
 
 void UREDGameViewportClient::UpdateFade()
@@ -14911,7 +14911,7 @@ void UREDGameViewportClient::UpdateFade()
 	uFnUpdateFade->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFade, &UpdateFade_Params, nullptr);
 	uFnUpdateFade->FunctionFlags |= 0x400;
-	uFnUpdateFade->iNative = 40672;
+	uFnUpdateFade->iNative = 40670;
 };
 
 // Function REDGame.REDGameViewportClient.ChangeFadeColor
@@ -15057,7 +15057,7 @@ void UREDGameViewportClient::FadeIn(int32_t frame)
 };
 
 // Function REDGame.REDGameViewportClient.PostDrawUpdate
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39084])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39082])
 // Parameter Info:
 
 void UREDGameViewportClient::PostDrawUpdate()
@@ -15076,11 +15076,11 @@ void UREDGameViewportClient::PostDrawUpdate()
 	uFnPostDrawUpdate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPostDrawUpdate, &PostDrawUpdate_Params, nullptr);
 	uFnPostDrawUpdate->FunctionFlags |= 0x400;
-	uFnPostDrawUpdate->iNative = 39084;
+	uFnPostDrawUpdate->iNative = 39082;
 };
 
 // Function REDGame.REDGameViewportClient.PostUpdate
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26347])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26345])
 // Parameter Info:
 
 void UREDGameViewportClient::PostUpdate()
@@ -15099,11 +15099,11 @@ void UREDGameViewportClient::PostUpdate()
 	uFnPostUpdate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPostUpdate, &PostUpdate_Params, nullptr);
 	uFnPostUpdate->FunctionFlags |= 0x400;
-	uFnPostUpdate->iNative = 26347;
+	uFnPostUpdate->iNative = 26345;
 };
 
 // Function REDGame.REDGameViewportClient.UpdateFade_Tick
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40673])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40671])
 // Parameter Info:
 
 void UREDGameViewportClient::UpdateFade_Tick()
@@ -15122,11 +15122,11 @@ void UREDGameViewportClient::UpdateFade_Tick()
 	uFnUpdateFade_Tick->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFade_Tick, &UpdateFade_Tick_Params, nullptr);
 	uFnUpdateFade_Tick->FunctionFlags |= 0x400;
-	uFnUpdateFade_Tick->iNative = 40673;
+	uFnUpdateFade_Tick->iNative = 40671;
 };
 
 // Function REDGame.REDGameViewportClient.DrawFade
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36602])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36600])
 // Parameter Info:
 
 void UREDGameViewportClient::DrawFade()
@@ -15145,11 +15145,11 @@ void UREDGameViewportClient::DrawFade()
 	uFnDrawFade->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDrawFade, &DrawFade_Params, nullptr);
 	uFnDrawFade->FunctionFlags |= 0x400;
-	uFnDrawFade->iNative = 36602;
+	uFnDrawFade->iNative = 36600;
 };
 
 // Function REDGame.REDGameViewportClient.FlushDebugDraw
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36879])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36877])
 // Parameter Info:
 // class UCanvas*                 Canvas                         (CPF_Parm)
 
@@ -15170,11 +15170,11 @@ void UREDGameViewportClient::FlushDebugDraw(class UCanvas* Canvas)
 	uFnFlushDebugDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFlushDebugDraw, &FlushDebugDraw_Params, nullptr);
 	uFnFlushDebugDraw->FunctionFlags |= 0x400;
-	uFnFlushDebugDraw->iNative = 36879;
+	uFnFlushDebugDraw->iNative = 36877;
 };
 
 // Function REDGame.REDGameViewportClient.FlushRender2D
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36880])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36878])
 // Parameter Info:
 // class UCanvas*                 Canvas                         (CPF_Parm)
 
@@ -15195,11 +15195,11 @@ void UREDGameViewportClient::FlushRender2D(class UCanvas* Canvas)
 	uFnFlushRender2D->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFlushRender2D, &FlushRender2D_Params, nullptr);
 	uFnFlushRender2D->FunctionFlags |= 0x400;
-	uFnFlushRender2D->iNative = 36880;
+	uFnFlushRender2D->iNative = 36878;
 };
 
 // Function REDGame.REDGfxMovieArray.SetDispFromCategory
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39730])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39728])
 // Parameter Info:
 // uint32_t                       disp                           (CPF_Parm)
 // EREDMovie_Category             Category                       (CPF_Parm)
@@ -15222,7 +15222,7 @@ void UREDGfxMovieArray::SetDispFromCategory(bool disp, EREDMovie_Category Catego
 	uFnSetDispFromCategory->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDispFromCategory, &SetDispFromCategory_Params, nullptr);
 	uFnSetDispFromCategory->FunctionFlags |= 0x400;
-	uFnSetDispFromCategory->iNative = 39730;
+	uFnSetDispFromCategory->iNative = 39728;
 };
 
 // Function REDGame.REDGfxMovieArray.Update
@@ -16797,7 +16797,7 @@ void UREDGfxMovieManager_BattleHUD::ResetOnRound()
 };
 
 // Function REDGame.REDGfxMovieManager_BattleHUD.AddBattleHUD
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35377])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35375])
 // Parameter Info:
 // class UREDGfxMoviePlayer_BattleHUD* HUD                            (CPF_Parm)
 
@@ -16818,7 +16818,7 @@ void UREDGfxMovieManager_BattleHUD::AddBattleHUD(class UREDGfxMoviePlayer_Battle
 	uFnAddBattleHUD->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAddBattleHUD, &AddBattleHUD_Params, nullptr);
 	uFnAddBattleHUD->FunctionFlags |= 0x400;
-	uFnAddBattleHUD->iNative = 35377;
+	uFnAddBattleHUD->iNative = 35375;
 };
 
 // Function REDGame.REDGfxMovieManager_BattleHUD.InitializeParam
@@ -16841,7 +16841,7 @@ void UREDGfxMovieManager_BattleHUD::InitializeParam()
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsTournamentLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37885])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37883])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -16861,13 +16861,13 @@ bool UREDGfxMovieManager_Network_Base::IsTournamentLobby()
 	uFnIsTournamentLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTournamentLobby, &IsTournamentLobby_Params, nullptr);
 	uFnIsTournamentLobby->FunctionFlags |= 0x400;
-	uFnIsTournamentLobby->iNative = 37885;
+	uFnIsTournamentLobby->iNative = 37883;
 
 	return IsTournamentLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsTournamentLeaveLobbyForce
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37884])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37882])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  ErrMsgID                       (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -16889,7 +16889,7 @@ bool UREDGfxMovieManager_Network_Base::IsTournamentLeaveLobbyForce(class FString
 	uFnIsTournamentLeaveLobbyForce->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTournamentLeaveLobbyForce, &IsTournamentLeaveLobbyForce_Params, nullptr);
 	uFnIsTournamentLeaveLobbyForce->FunctionFlags |= 0x400;
-	uFnIsTournamentLeaveLobbyForce->iNative = 37884;
+	uFnIsTournamentLeaveLobbyForce->iNative = 37882;
 
 	memcpy_s(&ErrMsgID, sizeof(ErrMsgID), &IsTournamentLeaveLobbyForce_Params.ErrMsgID, sizeof(IsTournamentLeaveLobbyForce_Params.ErrMsgID));
 
@@ -16897,7 +16897,7 @@ bool UREDGfxMovieManager_Network_Base::IsTournamentLeaveLobbyForce(class FString
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsTournamentGotoRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37883])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37881])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -16917,13 +16917,13 @@ bool UREDGfxMovieManager_Network_Base::IsTournamentGotoRoom()
 	uFnIsTournamentGotoRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTournamentGotoRoom, &IsTournamentGotoRoom_Params, nullptr);
 	uFnIsTournamentGotoRoom->FunctionFlags |= 0x400;
-	uFnIsTournamentGotoRoom->iNative = 37883;
+	uFnIsTournamentGotoRoom->iNative = 37881;
 
 	return IsTournamentGotoRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsAsyncLoading
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37599])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37597])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -16943,7 +16943,7 @@ bool UREDGfxMovieManager_Network_Base::IsAsyncLoading()
 	uFnIsAsyncLoading->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsAsyncLoading, &IsAsyncLoading_Params, nullptr);
 	uFnIsAsyncLoading->FunctionFlags |= 0x400;
-	uFnIsAsyncLoading->iNative = 37599;
+	uFnIsAsyncLoading->iNative = 37597;
 
 	return IsAsyncLoading_Params.ReturnValue;
 };
@@ -16975,7 +16975,7 @@ EUE_BGM_ID UREDGfxMovieManager_Network_Base::GetRandomBGM()
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.SetupRandomBGM
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39851])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39849])
 // Parameter Info:
 
 void UREDGfxMovieManager_Network_Base::SetupRandomBGM()
@@ -16994,11 +16994,11 @@ void UREDGfxMovieManager_Network_Base::SetupRandomBGM()
 	uFnSetupRandomBGM->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupRandomBGM, &SetupRandomBGM_Params, nullptr);
 	uFnSetupRandomBGM->FunctionFlags |= 0x400;
-	uFnSetupRandomBGM->iNative = 39851;
+	uFnSetupRandomBGM->iNative = 39849;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsSilentBGM
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37856])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37854])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -17018,13 +17018,13 @@ bool UREDGfxMovieManager_Network_Base::IsSilentBGM()
 	uFnIsSilentBGM->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSilentBGM, &IsSilentBGM_Params, nullptr);
 	uFnIsSilentBGM->FunctionFlags |= 0x400;
-	uFnIsSilentBGM->iNative = 37856;
+	uFnIsSilentBGM->iNative = 37854;
 
 	return IsSilentBGM_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsNormalBGM
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37753])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37751])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -17044,13 +17044,13 @@ bool UREDGfxMovieManager_Network_Base::IsNormalBGM()
 	uFnIsNormalBGM->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsNormalBGM, &IsNormalBGM_Params, nullptr);
 	uFnIsNormalBGM->FunctionFlags |= 0x400;
-	uFnIsNormalBGM->iNative = 37753;
+	uFnIsNormalBGM->iNative = 37751;
 
 	return IsNormalBGM_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsRandomBGM
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37805])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37803])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -17070,13 +17070,13 @@ bool UREDGfxMovieManager_Network_Base::IsRandomBGM()
 	uFnIsRandomBGM->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRandomBGM, &IsRandomBGM_Params, nullptr);
 	uFnIsRandomBGM->FunctionFlags |= 0x400;
-	uFnIsRandomBGM->iNative = 37805;
+	uFnIsRandomBGM->iNative = 37803;
 
 	return IsRandomBGM_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.UpdateCheckWeakErrorInRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40621])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40619])
 // Parameter Info:
 
 void UREDGfxMovieManager_Network_Base::UpdateCheckWeakErrorInRoom()
@@ -17095,11 +17095,11 @@ void UREDGfxMovieManager_Network_Base::UpdateCheckWeakErrorInRoom()
 	uFnUpdateCheckWeakErrorInRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateCheckWeakErrorInRoom, &UpdateCheckWeakErrorInRoom_Params, nullptr);
 	uFnUpdateCheckWeakErrorInRoom->FunctionFlags |= 0x400;
-	uFnUpdateCheckWeakErrorInRoom->iNative = 40621;
+	uFnUpdateCheckWeakErrorInRoom->iNative = 40619;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsInLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37692])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37690])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -17119,13 +17119,13 @@ bool UREDGfxMovieManager_Network_Base::IsInLobby()
 	uFnIsInLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsInLobby, &IsInLobby_Params, nullptr);
 	uFnIsInLobby->FunctionFlags |= 0x400;
-	uFnIsInLobby->iNative = 37692;
+	uFnIsInLobby->iNative = 37690;
 
 	return IsInLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.ErrorNetwork
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36735])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36733])
 // Parameter Info:
 
 void UREDGfxMovieManager_Network_Base::ErrorNetwork()
@@ -17144,11 +17144,11 @@ void UREDGfxMovieManager_Network_Base::ErrorNetwork()
 	uFnErrorNetwork->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnErrorNetwork, &ErrorNetwork_Params, nullptr);
 	uFnErrorNetwork->FunctionFlags |= 0x400;
-	uFnErrorNetwork->iNative = 36735;
+	uFnErrorNetwork->iNative = 36733;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void UREDGfxMovieManager_Network_Base::InitializeNative()
@@ -17167,11 +17167,11 @@ void UREDGfxMovieManager_Network_Base::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.SetupWelcomeScene
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39864])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39862])
 // Parameter Info:
 
 void UREDGfxMovieManager_Network_Base::SetupWelcomeScene()
@@ -17190,11 +17190,11 @@ void UREDGfxMovieManager_Network_Base::SetupWelcomeScene()
 	uFnSetupWelcomeScene->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupWelcomeScene, &SetupWelcomeScene_Params, nullptr);
 	uFnSetupWelcomeScene->FunctionFlags |= 0x400;
-	uFnSetupWelcomeScene->iNative = 39864;
+	uFnSetupWelcomeScene->iNative = 39862;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.GetSystemErrorMessageID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37182])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37180])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -17214,13 +17214,13 @@ class FString UREDGfxMovieManager_Network_Base::GetSystemErrorMessageID()
 	uFnGetSystemErrorMessageID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSystemErrorMessageID, &GetSystemErrorMessageID_Params, nullptr);
 	uFnGetSystemErrorMessageID->FunctionFlags |= 0x400;
-	uFnGetSystemErrorMessageID->iNative = 37182;
+	uFnGetSystemErrorMessageID->iNative = 37180;
 
 	return GetSystemErrorMessageID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsAnySystemError
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37597])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37595])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -17240,13 +17240,13 @@ bool UREDGfxMovieManager_Network_Base::IsAnySystemError()
 	uFnIsAnySystemError->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsAnySystemError, &IsAnySystemError_Params, nullptr);
 	uFnIsAnySystemError->FunctionFlags |= 0x400;
-	uFnIsAnySystemError->iNative = 37597;
+	uFnIsAnySystemError->iNative = 37595;
 
 	return IsAnySystemError_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUp_CheckReturnVal
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39062])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39060])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Handle                         (CPF_Parm)
@@ -17268,13 +17268,13 @@ int32_t UREDGfxMovieManager_Network_Base::PopUp_CheckReturnVal(int32_t Handle)
 	uFnPopUp_CheckReturnVal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_CheckReturnVal, &PopUp_CheckReturnVal_Params, nullptr);
 	uFnPopUp_CheckReturnVal->FunctionFlags |= 0x400;
-	uFnPopUp_CheckReturnVal->iNative = 39062;
+	uFnPopUp_CheckReturnVal->iNative = 39060;
 
 	return PopUp_CheckReturnVal_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUp_OpenYesNo
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39067])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39065])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  messegaID                      (CPF_Parm | CPF_NeedCtorLink)
@@ -17296,13 +17296,13 @@ int32_t UREDGfxMovieManager_Network_Base::PopUp_OpenYesNo(const class FString& m
 	uFnPopUp_OpenYesNo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_OpenYesNo, &PopUp_OpenYesNo_Params, nullptr);
 	uFnPopUp_OpenYesNo->FunctionFlags |= 0x400;
-	uFnPopUp_OpenYesNo->iNative = 39067;
+	uFnPopUp_OpenYesNo->iNative = 39065;
 
 	return PopUp_OpenYesNo_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.MenuWindow_IsActiveAny
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38282])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38280])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -17322,13 +17322,13 @@ bool UREDGfxMovieManager_Network_Base::MenuWindow_IsActiveAny()
 	uFnMenuWindow_IsActiveAny->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMenuWindow_IsActiveAny, &MenuWindow_IsActiveAny_Params, nullptr);
 	uFnMenuWindow_IsActiveAny->FunctionFlags |= 0x400;
-	uFnMenuWindow_IsActiveAny->iNative = 38282;
+	uFnMenuWindow_IsActiveAny->iNative = 38280;
 
 	return MenuWindow_IsActiveAny_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUpErr_IsActive
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39069])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39067])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -17348,13 +17348,13 @@ bool UREDGfxMovieManager_Network_Base::PopUpErr_IsActive()
 	uFnPopUpErr_IsActive->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUpErr_IsActive, &PopUpErr_IsActive_Params, nullptr);
 	uFnPopUpErr_IsActive->FunctionFlags |= 0x400;
-	uFnPopUpErr_IsActive->iNative = 39069;
+	uFnPopUpErr_IsActive->iNative = 39067;
 
 	return PopUpErr_IsActive_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUpErr_OpenOK
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39070])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39068])
 // Parameter Info:
 // class FString                  messegaID                      (CPF_Parm | CPF_NeedCtorLink)
 
@@ -17375,11 +17375,11 @@ void UREDGfxMovieManager_Network_Base::PopUpErr_OpenOK(const class FString& mess
 	uFnPopUpErr_OpenOK->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUpErr_OpenOK, &PopUpErr_OpenOK_Params, nullptr);
 	uFnPopUpErr_OpenOK->FunctionFlags |= 0x400;
-	uFnPopUpErr_OpenOK->iNative = 39070;
+	uFnPopUpErr_OpenOK->iNative = 39068;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUp_IsActive
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39064])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39062])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -17399,13 +17399,13 @@ bool UREDGfxMovieManager_Network_Base::PopUp_IsActive()
 	uFnPopUp_IsActive->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_IsActive, &PopUp_IsActive_Params, nullptr);
 	uFnPopUp_IsActive->FunctionFlags |= 0x400;
-	uFnPopUp_IsActive->iNative = 39064;
+	uFnPopUp_IsActive->iNative = 39062;
 
 	return PopUp_IsActive_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUp_OpenOK
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39065])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39063])
 // Parameter Info:
 // class FString                  messegaID                      (CPF_Parm | CPF_NeedCtorLink)
 
@@ -17426,7 +17426,7 @@ void UREDGfxMovieManager_Network_Base::PopUp_OpenOK(const class FString& messega
 	uFnPopUp_OpenOK->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_OpenOK, &PopUp_OpenOK_Params, nullptr);
 	uFnPopUp_OpenOK->FunctionFlags |= 0x400;
-	uFnPopUp_OpenOK->iNative = 39065;
+	uFnPopUp_OpenOK->iNative = 39063;
 };
 
 // Function REDGame.REDGfxMovieManager_Network.Update
@@ -17919,7 +17919,7 @@ class AREDPlayerController* UREDGfxMoviePlayer::REDPC()
 };
 
 // Function REDGame.REDGfxMoviePlayer.GetLocalizeStaffRoll
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37090])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37088])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  Id                             (CPF_Parm | CPF_NeedCtorLink)
@@ -17943,13 +17943,13 @@ class FString UREDGfxMoviePlayer::GetLocalizeStaffRoll(const class FString& Id, 
 	uFnGetLocalizeStaffRoll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetLocalizeStaffRoll, &GetLocalizeStaffRoll_Params, nullptr);
 	uFnGetLocalizeStaffRoll->FunctionFlags |= 0x400;
-	uFnGetLocalizeStaffRoll->iNative = 37090;
+	uFnGetLocalizeStaffRoll->iNative = 37088;
 
 	return GetLocalizeStaffRoll_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer.GetLocalizeString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37091])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37089])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  WidgetName                     (CPF_Parm | CPF_NeedCtorLink)
@@ -17971,13 +17971,13 @@ class FString UREDGfxMoviePlayer::GetLocalizeString(const class FString& WidgetN
 	uFnGetLocalizeString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetLocalizeString, &GetLocalizeString_Params, nullptr);
 	uFnGetLocalizeString->FunctionFlags |= 0x400;
-	uFnGetLocalizeString->iNative = 37091;
+	uFnGetLocalizeString->iNative = 37089;
 
 	return GetLocalizeString_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer.SetDispFromCategory
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39730])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39728])
 // Parameter Info:
 // uint32_t                       disp                           (CPF_Parm)
 // EREDMovie_Category             Category                       (CPF_Parm)
@@ -18000,7 +18000,7 @@ void UREDGfxMoviePlayer::SetDispFromCategory(bool disp, EREDMovie_Category Categ
 	uFnSetDispFromCategory->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDispFromCategory, &SetDispFromCategory_Params, nullptr);
 	uFnSetDispFromCategory->FunctionFlags |= 0x400;
-	uFnSetDispFromCategory->iNative = 39730;
+	uFnSetDispFromCategory->iNative = 39728;
 };
 
 // Function REDGame.REDGfxMoviePlayer.WidgetInitialized
@@ -18306,7 +18306,7 @@ bool UREDGfxMoviePlayer_BattleHaiku::Start(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleHUD.ChangeMCColor
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36100])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36098])
 // Parameter Info:
 // class UGFxObject*              pMC                            (CPF_Parm)
 // int32_t                        colorMul                       (CPF_Parm)
@@ -18331,7 +18331,7 @@ void UREDGfxMoviePlayer_BattleHUD::ChangeMCColor(class UGFxObject* pMC, int32_t 
 	uFnChangeMCColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeMCColor, &ChangeMCColor_Params, nullptr);
 	uFnChangeMCColor->FunctionFlags |= 0x400;
-	uFnChangeMCColor->iNative = 36100;
+	uFnChangeMCColor->iNative = 36098;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleHUD.FadeOut
@@ -19600,7 +19600,7 @@ void UREDGfxMoviePlayer_BattleHUD::ResetOnRound()
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleHUD.GetPlayerPosX
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37141])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37139])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -19622,13 +19622,13 @@ int32_t UREDGfxMoviePlayer_BattleHUD::GetPlayerPosX(int32_t Player)
 	uFnGetPlayerPosX->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPlayerPosX, &GetPlayerPosX_Params, nullptr);
 	uFnGetPlayerPosX->FunctionFlags |= 0x400;
-	uFnGetPlayerPosX->iNative = 37141;
+	uFnGetPlayerPosX->iNative = 37139;
 
 	return GetPlayerPosX_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDBurst
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40704])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40702])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateHUDBurst()
@@ -19647,11 +19647,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateHUDBurst()
 	uFnUpdateHUDBurst->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDBurst, &UpdateHUDBurst_Params, nullptr);
 	uFnUpdateHUDBurst->FunctionFlags |= 0x400;
-	uFnUpdateHUDBurst->iNative = 40704;
+	uFnUpdateHUDBurst->iNative = 40702;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDDangerDamage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40705])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40703])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateHUDDangerDamage()
@@ -19670,11 +19670,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateHUDDangerDamage()
 	uFnUpdateHUDDangerDamage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDDangerDamage, &UpdateHUDDangerDamage_Params, nullptr);
 	uFnUpdateHUDDangerDamage->FunctionFlags |= 0x400;
-	uFnUpdateHUDDangerDamage->iNative = 40705;
+	uFnUpdateHUDDangerDamage->iNative = 40703;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.SetDangerDamage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39725])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39723])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // int32_t                        frame                          (CPF_Parm)
@@ -19697,11 +19697,11 @@ void UREDGfxMoviePlayer_BattleDownside::SetDangerDamage(int32_t Player, int32_t 
 	uFnSetDangerDamage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDangerDamage, &SetDangerDamage_Params, nullptr);
 	uFnSetDangerDamage->FunctionFlags |= 0x400;
-	uFnSetDangerDamage->iNative = 39725;
+	uFnSetDangerDamage->iNative = 39723;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDNegaPenaPos
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40709])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40707])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateHUDNegaPenaPos()
@@ -19720,11 +19720,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateHUDNegaPenaPos()
 	uFnUpdateHUDNegaPenaPos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDNegaPenaPos, &UpdateHUDNegaPenaPos_Params, nullptr);
 	uFnUpdateHUDNegaPenaPos->FunctionFlags |= 0x400;
-	uFnUpdateHUDNegaPenaPos->iNative = 40709;
+	uFnUpdateHUDNegaPenaPos->iNative = 40707;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateNegaPenaPos
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40791])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40789])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // class UGFxObject*              mc                             (CPF_Parm)
@@ -19749,11 +19749,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateNegaPenaPos(int32_t Player, class 
 	uFnUpdateNegaPenaPos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateNegaPenaPos, &UpdateNegaPenaPos_Params, nullptr);
 	uFnUpdateNegaPenaPos->FunctionFlags |= 0x400;
-	uFnUpdateNegaPenaPos->iNative = 40791;
+	uFnUpdateNegaPenaPos->iNative = 40789;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDNegaPena
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40708])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40706])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateHUDNegaPena()
@@ -19772,11 +19772,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateHUDNegaPena()
 	uFnUpdateHUDNegaPena->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDNegaPena, &UpdateHUDNegaPena_Params, nullptr);
 	uFnUpdateHUDNegaPena->FunctionFlags |= 0x400;
-	uFnUpdateHUDNegaPena->iNative = 40708;
+	uFnUpdateHUDNegaPena->iNative = 40706;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.ReqHUDNegativePenalty
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39350])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39348])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 
@@ -19797,11 +19797,11 @@ void UREDGfxMoviePlayer_BattleDownside::ReqHUDNegativePenalty(int32_t Player)
 	uFnReqHUDNegativePenalty->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReqHUDNegativePenalty, &ReqHUDNegativePenalty_Params, nullptr);
 	uFnReqHUDNegativePenalty->FunctionFlags |= 0x400;
-	uFnReqHUDNegativePenalty->iNative = 39350;
+	uFnReqHUDNegativePenalty->iNative = 39348;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDNegativeDanger
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40710])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40708])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateHUDNegativeDanger()
@@ -19820,11 +19820,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateHUDNegativeDanger()
 	uFnUpdateHUDNegativeDanger->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDNegativeDanger, &UpdateHUDNegativeDanger_Params, nullptr);
 	uFnUpdateHUDNegativeDanger->FunctionFlags |= 0x400;
-	uFnUpdateHUDNegativeDanger->iNative = 40710;
+	uFnUpdateHUDNegativeDanger->iNative = 40708;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.SetHUDNegativeDangerDisp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39758])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39756])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // uint32_t                       disp                           (CPF_Parm)
@@ -19849,11 +19849,11 @@ void UREDGfxMoviePlayer_BattleDownside::SetHUDNegativeDangerDisp(int32_t Player,
 	uFnSetHUDNegativeDangerDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetHUDNegativeDangerDisp, &SetHUDNegativeDangerDisp_Params, nullptr);
 	uFnSetHUDNegativeDangerDisp->FunctionFlags |= 0x400;
-	uFnSetHUDNegativeDangerDisp->iNative = 39758;
+	uFnSetHUDNegativeDangerDisp->iNative = 39756;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.SetHUDExGaugeActive
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39757])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39755])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 
@@ -19874,11 +19874,11 @@ void UREDGfxMoviePlayer_BattleDownside::SetHUDExGaugeActive(int32_t Player)
 	uFnSetHUDExGaugeActive->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetHUDExGaugeActive, &SetHUDExGaugeActive_Params, nullptr);
 	uFnSetHUDExGaugeActive->FunctionFlags |= 0x400;
-	uFnSetHUDExGaugeActive->iNative = 39757;
+	uFnSetHUDExGaugeActive->iNative = 39755;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDExGauge
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40707])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40705])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // int32_t                        Id                             (CPF_Parm)
@@ -19911,11 +19911,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateHUDExGauge(int32_t Player, int32_t
 	uFnUpdateHUDExGauge->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDExGauge, &UpdateHUDExGauge_Params, nullptr);
 	uFnUpdateHUDExGauge->FunctionFlags |= 0x400;
-	uFnUpdateHUDExGauge->iNative = 40707;
+	uFnUpdateHUDExGauge->iNative = 40705;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateExGaugeTrig
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40667])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40665])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateExGaugeTrig()
@@ -19934,11 +19934,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateExGaugeTrig()
 	uFnUpdateExGaugeTrig->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateExGaugeTrig, &UpdateExGaugeTrig_Params, nullptr);
 	uFnUpdateExGaugeTrig->FunctionFlags |= 0x400;
-	uFnUpdateExGaugeTrig->iNative = 40667;
+	uFnUpdateExGaugeTrig->iNative = 40665;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateExGaugeActive
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40666])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40664])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateExGaugeActive()
@@ -19957,11 +19957,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateExGaugeActive()
 	uFnUpdateExGaugeActive->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateExGaugeActive, &UpdateExGaugeActive_Params, nullptr);
 	uFnUpdateExGaugeActive->FunctionFlags |= 0x400;
-	uFnUpdateExGaugeActive->iNative = 40666;
+	uFnUpdateExGaugeActive->iNative = 40664;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDDangerTime
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40706])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40704])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateHUDDangerTime()
@@ -19980,11 +19980,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateHUDDangerTime()
 	uFnUpdateHUDDangerTime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDDangerTime, &UpdateHUDDangerTime_Params, nullptr);
 	uFnUpdateHUDDangerTime->FunctionFlags |= 0x400;
-	uFnUpdateHUDDangerTime->iNative = 40706;
+	uFnUpdateHUDDangerTime->iNative = 40704;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.SetHUDDangerTimeMC
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39756])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39754])
 // Parameter Info:
 // class UGFxObject*              mc                             (CPF_Parm)
 // float                          Time                           (CPF_Parm)
@@ -20007,11 +20007,11 @@ void UREDGfxMoviePlayer_BattleDownside::SetHUDDangerTimeMC(class UGFxObject* mc,
 	uFnSetHUDDangerTimeMC->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetHUDDangerTimeMC, &SetHUDDangerTimeMC_Params, nullptr);
 	uFnSetHUDDangerTimeMC->FunctionFlags |= 0x400;
-	uFnSetHUDDangerTimeMC->iNative = 39756;
+	uFnSetHUDDangerTimeMC->iNative = 39754;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.ChangeTensionCoverColor
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36106])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36104])
 // Parameter Info:
 // int32_t                        MulColor                       (CPF_Parm)
 // int32_t                        AddColor                       (CPF_Parm)
@@ -20034,11 +20034,11 @@ void UREDGfxMoviePlayer_BattleDownside::ChangeTensionCoverColor(int32_t MulColor
 	uFnChangeTensionCoverColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeTensionCoverColor, &ChangeTensionCoverColor_Params, nullptr);
 	uFnChangeTensionCoverColor->FunctionFlags |= 0x400;
-	uFnChangeTensionCoverColor->iNative = 36106;
+	uFnChangeTensionCoverColor->iNative = 36104;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDTensionState
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40713])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40711])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 
@@ -20059,11 +20059,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateHUDTensionState(int32_t Player)
 	uFnUpdateHUDTensionState->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDTensionState, &UpdateHUDTensionState_Params, nullptr);
 	uFnUpdateHUDTensionState->FunctionFlags |= 0x400;
-	uFnUpdateHUDTensionState->iNative = 40713;
+	uFnUpdateHUDTensionState->iNative = 40711;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDTensGaugeColor
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40711])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40709])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateHUDTensGaugeColor()
@@ -20082,11 +20082,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateHUDTensGaugeColor()
 	uFnUpdateHUDTensGaugeColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDTensGaugeColor, &UpdateHUDTensGaugeColor_Params, nullptr);
 	uFnUpdateHUDTensGaugeColor->FunctionFlags |= 0x400;
-	uFnUpdateHUDTensGaugeColor->iNative = 40711;
+	uFnUpdateHUDTensGaugeColor->iNative = 40709;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDTension
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40712])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40710])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateHUDTension()
@@ -20105,11 +20105,11 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateHUDTension()
 	uFnUpdateHUDTension->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDTension, &UpdateHUDTension_Params, nullptr);
 	uFnUpdateHUDTension->FunctionFlags |= 0x400;
-	uFnUpdateHUDTension->iNative = 40712;
+	uFnUpdateHUDTension->iNative = 40710;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateAll
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40595])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40593])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleDownside::UpdateAll()
@@ -20128,7 +20128,7 @@ void UREDGfxMoviePlayer_BattleDownside::UpdateAll()
 	uFnUpdateAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateAll, &UpdateAll_Params, nullptr);
 	uFnUpdateAll->FunctionFlags |= 0x400;
-	uFnUpdateAll->iNative = 40595;
+	uFnUpdateAll->iNative = 40593;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.Update
@@ -21141,7 +21141,7 @@ bool UREDGfxMoviePlayer_BattleMiddleF::MovieStartInternal(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateBurstSealIcon
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40607])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40605])
 // Parameter Info:
 // int32_t                        Side                           (CPF_Parm)
 // uint32_t                       disp                           (CPF_Parm)
@@ -21166,11 +21166,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateBurstSealIcon(int32_t Side, bool dis
 	uFnUpdateBurstSealIcon->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateBurstSealIcon, &UpdateBurstSealIcon_Params, nullptr);
 	uFnUpdateBurstSealIcon->FunctionFlags |= 0x400;
-	uFnUpdateBurstSealIcon->iNative = 40607;
+	uFnUpdateBurstSealIcon->iNative = 40605;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateDispBurstSeal
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40646])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40644])
 // Parameter Info:
 // int32_t                        Side                           (CPF_Parm)
 
@@ -21191,11 +21191,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateDispBurstSeal(int32_t Side)
 	uFnUpdateDispBurstSeal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDispBurstSeal, &UpdateDispBurstSeal_Params, nullptr);
 	uFnUpdateDispBurstSeal->FunctionFlags |= 0x400;
-	uFnUpdateDispBurstSeal->iNative = 40646;
+	uFnUpdateDispBurstSeal->iNative = 40644;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateHUDBurst
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40704])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40702])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateHUDBurst()
@@ -21214,11 +21214,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateHUDBurst()
 	uFnUpdateHUDBurst->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDBurst, &UpdateHUDBurst_Params, nullptr);
 	uFnUpdateHUDBurst->FunctionFlags |= 0x400;
-	uFnUpdateHUDBurst->iNative = 40704;
+	uFnUpdateHUDBurst->iNative = 40702;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.SetTimer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28177])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28175])
 // Parameter Info:
 // int32_t                        digit1                         (CPF_Parm)
 // int32_t                        digit10                        (CPF_Parm)
@@ -21245,11 +21245,11 @@ void UREDGfxMoviePlayer_BattleUpside::SetTimer(int32_t digit1, int32_t digit10, 
 	uFnSetTimer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetTimer, &SetTimer_Params, nullptr);
 	uFnSetTimer->FunctionFlags |= 0x400;
-	uFnSetTimer->iNative = 28177;
+	uFnSetTimer->iNative = 28175;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateHUDTimer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40714])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40712])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateHUDTimer()
@@ -21268,11 +21268,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateHUDTimer()
 	uFnUpdateHUDTimer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHUDTimer, &UpdateHUDTimer_Params, nullptr);
 	uFnUpdateHUDTimer->FunctionFlags |= 0x400;
-	uFnUpdateHUDTimer->iNative = 40714;
+	uFnUpdateHUDTimer->iNative = 40712;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.JKOUpdate
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37942])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37940])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::JKOUpdate()
@@ -21291,11 +21291,11 @@ void UREDGfxMoviePlayer_BattleUpside::JKOUpdate()
 	uFnJKOUpdate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJKOUpdate, &JKOUpdate_Params, nullptr);
 	uFnJKOUpdate->FunctionFlags |= 0x400;
-	uFnJKOUpdate->iNative = 37942;
+	uFnJKOUpdate->iNative = 37940;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.JKOUpdateGauge
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37943])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37941])
 // Parameter Info:
 // int32_t                        typeId                         (CPF_Parm)
 // struct FJKOGaugeMC             mc                             (CPF_Parm | CPF_OutParm)
@@ -21318,13 +21318,13 @@ void UREDGfxMoviePlayer_BattleUpside::JKOUpdateGauge(int32_t typeId, struct FJKO
 	uFnJKOUpdateGauge->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJKOUpdateGauge, &JKOUpdateGauge_Params, nullptr);
 	uFnJKOUpdateGauge->FunctionFlags |= 0x400;
-	uFnJKOUpdateGauge->iNative = 37943;
+	uFnJKOUpdateGauge->iNative = 37941;
 
 	memcpy_s(&mc, sizeof(mc), &JKOUpdateGauge_Params.mc, sizeof(JKOUpdateGauge_Params.mc));
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateDangerTime
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40642])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40640])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateDangerTime()
@@ -21343,11 +21343,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateDangerTime()
 	uFnUpdateDangerTime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDangerTime, &UpdateDangerTime_Params, nullptr);
 	uFnUpdateDangerTime->FunctionFlags |= 0x400;
-	uFnUpdateDangerTime->iNative = 40642;
+	uFnUpdateDangerTime->iNative = 40640;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateDangerDamage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40641])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40639])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 
@@ -21368,11 +21368,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateDangerDamage(int32_t Player)
 	uFnUpdateDangerDamage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDangerDamage, &UpdateDangerDamage_Params, nullptr);
 	uFnUpdateDangerDamage->FunctionFlags |= 0x400;
-	uFnUpdateDangerDamage->iNative = 40641;
+	uFnUpdateDangerDamage->iNative = 40639;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateDanger
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40640])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40638])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateDanger()
@@ -21391,11 +21391,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateDanger()
 	uFnUpdateDanger->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDanger, &UpdateDanger_Params, nullptr);
 	uFnUpdateDanger->FunctionFlags |= 0x400;
-	uFnUpdateDanger->iNative = 40640;
+	uFnUpdateDanger->iNative = 40638;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateGBLight
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40691])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40689])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateGBLight()
@@ -21414,11 +21414,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateGBLight()
 	uFnUpdateGBLight->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateGBLight, &UpdateGBLight_Params, nullptr);
 	uFnUpdateGBLight->FunctionFlags |= 0x400;
-	uFnUpdateGBLight->iNative = 40691;
+	uFnUpdateGBLight->iNative = 40689;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateRoundNumIcon
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40837])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40835])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateRoundNumIcon()
@@ -21437,11 +21437,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateRoundNumIcon()
 	uFnUpdateRoundNumIcon->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateRoundNumIcon, &UpdateRoundNumIcon_Params, nullptr);
 	uFnUpdateRoundNumIcon->FunctionFlags |= 0x400;
-	uFnUpdateRoundNumIcon->iNative = 40837;
+	uFnUpdateRoundNumIcon->iNative = 40835;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateHPGaugeMulti
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40703])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40701])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateHPGaugeMulti()
@@ -21460,11 +21460,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateHPGaugeMulti()
 	uFnUpdateHPGaugeMulti->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHPGaugeMulti, &UpdateHPGaugeMulti_Params, nullptr);
 	uFnUpdateHPGaugeMulti->FunctionFlags |= 0x400;
-	uFnUpdateHPGaugeMulti->iNative = 40703;
+	uFnUpdateHPGaugeMulti->iNative = 40701;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateHPGaugeColor
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40702])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40700])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateHPGaugeColor()
@@ -21483,11 +21483,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateHPGaugeColor()
 	uFnUpdateHPGaugeColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHPGaugeColor, &UpdateHPGaugeColor_Params, nullptr);
 	uFnUpdateHPGaugeColor->FunctionFlags |= 0x400;
-	uFnUpdateHPGaugeColor->iNative = 40702;
+	uFnUpdateHPGaugeColor->iNative = 40700;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateHideCombo
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40701])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40699])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateHideCombo()
@@ -21506,11 +21506,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateHideCombo()
 	uFnUpdateHideCombo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHideCombo, &UpdateHideCombo_Params, nullptr);
 	uFnUpdateHideCombo->FunctionFlags |= 0x400;
-	uFnUpdateHideCombo->iNative = 40701;
+	uFnUpdateHideCombo->iNative = 40699;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateComboEffect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40624])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40622])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateComboEffect()
@@ -21529,11 +21529,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateComboEffect()
 	uFnUpdateComboEffect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateComboEffect, &UpdateComboEffect_Params, nullptr);
 	uFnUpdateComboEffect->FunctionFlags |= 0x400;
-	uFnUpdateComboEffect->iNative = 40624;
+	uFnUpdateComboEffect->iNative = 40622;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateComboAS
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40623])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40621])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateComboAS()
@@ -21552,11 +21552,11 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateComboAS()
 	uFnUpdateComboAS->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateComboAS, &UpdateComboAS_Params, nullptr);
 	uFnUpdateComboAS->FunctionFlags |= 0x400;
-	uFnUpdateComboAS->iNative = 40623;
+	uFnUpdateComboAS->iNative = 40621;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.HideComboAS
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37438])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37436])
 // Parameter Info:
 // struct FMiddlePlateMC          mc                             (CPF_Parm | CPF_OutParm)
 
@@ -21577,13 +21577,13 @@ void UREDGfxMoviePlayer_BattleUpside::HideComboAS(struct FMiddlePlateMC& mc)
 	uFnHideComboAS->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnHideComboAS, &HideComboAS_Params, nullptr);
 	uFnHideComboAS->FunctionFlags |= 0x400;
-	uFnHideComboAS->iNative = 37438;
+	uFnHideComboAS->iNative = 37436;
 
 	memcpy_s(&mc, sizeof(mc), &HideComboAS_Params.mc, sizeof(HideComboAS_Params.mc));
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.ShowComboAS
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39892])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39890])
 // Parameter Info:
 // struct FMiddlePlateMC          mc                             (CPF_Parm | CPF_OutParm)
 
@@ -21604,13 +21604,13 @@ void UREDGfxMoviePlayer_BattleUpside::ShowComboAS(struct FMiddlePlateMC& mc)
 	uFnShowComboAS->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowComboAS, &ShowComboAS_Params, nullptr);
 	uFnShowComboAS->FunctionFlags |= 0x400;
-	uFnShowComboAS->iNative = 39892;
+	uFnShowComboAS->iNative = 39890;
 
 	memcpy_s(&mc, sizeof(mc), &ShowComboAS_Params.mc, sizeof(ShowComboAS_Params.mc));
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateAll
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40595])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40593])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BattleUpside::UpdateAll()
@@ -21629,7 +21629,7 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateAll()
 	uFnUpdateAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateAll, &UpdateAll_Params, nullptr);
 	uFnUpdateAll->FunctionFlags |= 0x400;
-	uFnUpdateAll->iNative = 40595;
+	uFnUpdateAll->iNative = 40593;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.Update
@@ -22529,7 +22529,7 @@ void UREDGfxMoviePlayer_BattleUpside::HideCombo(int32_t Player)
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.ShowComboSub
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39893])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39891])
 // Parameter Info:
 // int32_t                        combo                          (CPF_Parm)
 // int32_t                        Player                         (CPF_Parm)
@@ -22564,11 +22564,11 @@ void UREDGfxMoviePlayer_BattleUpside::ShowComboSub(int32_t combo, int32_t Player
 	uFnShowComboSub->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowComboSub, &ShowComboSub_Params, nullptr);
 	uFnShowComboSub->FunctionFlags |= 0x400;
-	uFnShowComboSub->iNative = 39893;
+	uFnShowComboSub->iNative = 39891;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.ComboEffect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36271])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36269])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // int32_t                        Level                          (CPF_Parm)
@@ -22591,7 +22591,7 @@ void UREDGfxMoviePlayer_BattleUpside::ComboEffect(int32_t Player, int32_t Level)
 	uFnComboEffect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnComboEffect, &ComboEffect_Params, nullptr);
 	uFnComboEffect->FunctionFlags |= 0x400;
-	uFnComboEffect->iNative = 36271;
+	uFnComboEffect->iNative = 36269;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.ShowCombo
@@ -22692,7 +22692,7 @@ void UREDGfxMoviePlayer_BattleUpside::UpdateHP(float hp1, float hp2, float red1,
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.GetBattleVersion
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37005])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37003])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -22712,7 +22712,7 @@ int32_t UREDGfxMoviePlayer_BattleUpside::GetBattleVersion()
 	uFnGetBattleVersion->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetBattleVersion, &GetBattleVersion_Params, nullptr);
 	uFnGetBattleVersion->FunctionFlags |= 0x400;
-	uFnGetBattleVersion->iNative = 37005;
+	uFnGetBattleVersion->iNative = 37003;
 
 	return GetBattleVersion_Params.ReturnValue;
 };
@@ -22934,7 +22934,7 @@ void UREDGfxMoviePlayer_BattleUpside::InitializeMiddlePlate(int32_t PlayerID, cl
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.GetScore
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37162])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37160])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -22956,7 +22956,7 @@ int32_t UREDGfxMoviePlayer_BattleUpside::GetScore(EUE_PLAYER_ID Player)
 	uFnGetScore->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetScore, &GetScore_Params, nullptr);
 	uFnGetScore->FunctionFlags |= 0x400;
-	uFnGetScore->iNative = 37162;
+	uFnGetScore->iNative = 37160;
 
 	return GetScore_Params.ReturnValue;
 };
@@ -24412,7 +24412,7 @@ void UREDGfxMoviePlayer_BattleResultWindow::SetWindowEnable(int32_t Player, ERES
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsTrig_Right
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37913])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37911])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -24434,13 +24434,13 @@ bool UREDGfxMoviePlayer_BattleResultWindow::IsTrig_Right(EUE_PLAYER_ID Player)
 	uFnIsTrig_Right->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Right, &IsTrig_Right_Params, nullptr);
 	uFnIsTrig_Right->FunctionFlags |= 0x400;
-	uFnIsTrig_Right->iNative = 37913;
+	uFnIsTrig_Right->iNative = 37911;
 
 	return IsTrig_Right_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsTrig_Left
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37904])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37902])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -24462,13 +24462,13 @@ bool UREDGfxMoviePlayer_BattleResultWindow::IsTrig_Left(EUE_PLAYER_ID Player)
 	uFnIsTrig_Left->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Left, &IsTrig_Left_Params, nullptr);
 	uFnIsTrig_Left->FunctionFlags |= 0x400;
-	uFnIsTrig_Left->iNative = 37904;
+	uFnIsTrig_Left->iNative = 37902;
 
 	return IsTrig_Left_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsRep_Down
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37819])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37817])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -24490,13 +24490,13 @@ bool UREDGfxMoviePlayer_BattleResultWindow::IsRep_Down(EUE_PLAYER_ID Player)
 	uFnIsRep_Down->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRep_Down, &IsRep_Down_Params, nullptr);
 	uFnIsRep_Down->FunctionFlags |= 0x400;
-	uFnIsRep_Down->iNative = 37819;
+	uFnIsRep_Down->iNative = 37817;
 
 	return IsRep_Down_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsRep_Up
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37823])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37821])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -24518,7 +24518,7 @@ bool UREDGfxMoviePlayer_BattleResultWindow::IsRep_Up(EUE_PLAYER_ID Player)
 	uFnIsRep_Up->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRep_Up, &IsRep_Up_Params, nullptr);
 	uFnIsRep_Up->FunctionFlags |= 0x400;
-	uFnIsRep_Up->iNative = 37823;
+	uFnIsRep_Up->iNative = 37821;
 
 	return IsRep_Up_Params.ReturnValue;
 };
@@ -24569,7 +24569,7 @@ bool UREDGfxMoviePlayer_BattleResultWindow::MovieStartInternal(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.DemoteLightBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36525])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 
@@ -24590,11 +24590,11 @@ void UREDGfxMoviePlayer_BattleResultWindow::DemoteLightBar(EUE_PLAYER_ID Player)
 	uFnDemoteLightBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDemoteLightBar, &DemoteLightBar_Params, nullptr);
 	uFnDemoteLightBar->FunctionFlags |= 0x400;
-	uFnDemoteLightBar->iNative = 36527;
+	uFnDemoteLightBar->iNative = 36525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.PromoteLightBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39150])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39148])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 
@@ -24615,11 +24615,11 @@ void UREDGfxMoviePlayer_BattleResultWindow::PromoteLightBar(EUE_PLAYER_ID Player
 	uFnPromoteLightBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPromoteLightBar, &PromoteLightBar_Params, nullptr);
 	uFnPromoteLightBar->FunctionFlags |= 0x400;
-	uFnPromoteLightBar->iNative = 39150;
+	uFnPromoteLightBar->iNative = 39148;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsTrig_Right_Indiv
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37915])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37913])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -24641,13 +24641,13 @@ bool UREDGfxMoviePlayer_BattleResultWindow::IsTrig_Right_Indiv(EUE_PLAYER_ID Pla
 	uFnIsTrig_Right_Indiv->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Right_Indiv, &IsTrig_Right_Indiv_Params, nullptr);
 	uFnIsTrig_Right_Indiv->FunctionFlags |= 0x400;
-	uFnIsTrig_Right_Indiv->iNative = 37915;
+	uFnIsTrig_Right_Indiv->iNative = 37913;
 
 	return IsTrig_Right_Indiv_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsTrig_Left_Indiv
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37906])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37904])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -24669,13 +24669,13 @@ bool UREDGfxMoviePlayer_BattleResultWindow::IsTrig_Left_Indiv(EUE_PLAYER_ID Play
 	uFnIsTrig_Left_Indiv->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Left_Indiv, &IsTrig_Left_Indiv_Params, nullptr);
 	uFnIsTrig_Left_Indiv->FunctionFlags |= 0x400;
-	uFnIsTrig_Left_Indiv->iNative = 37906;
+	uFnIsTrig_Left_Indiv->iNative = 37904;
 
 	return IsTrig_Left_Indiv_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsRep_Down_Indiv
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37820])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37818])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -24697,13 +24697,13 @@ bool UREDGfxMoviePlayer_BattleResultWindow::IsRep_Down_Indiv(EUE_PLAYER_ID Playe
 	uFnIsRep_Down_Indiv->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRep_Down_Indiv, &IsRep_Down_Indiv_Params, nullptr);
 	uFnIsRep_Down_Indiv->FunctionFlags |= 0x400;
-	uFnIsRep_Down_Indiv->iNative = 37820;
+	uFnIsRep_Down_Indiv->iNative = 37818;
 
 	return IsRep_Down_Indiv_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsRep_Up_Indiv
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37824])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37822])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -24725,13 +24725,13 @@ bool UREDGfxMoviePlayer_BattleResultWindow::IsRep_Up_Indiv(EUE_PLAYER_ID Player)
 	uFnIsRep_Up_Indiv->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRep_Up_Indiv, &IsRep_Up_Indiv_Params, nullptr);
 	uFnIsRep_Up_Indiv->FunctionFlags |= 0x400;
-	uFnIsRep_Up_Indiv->iNative = 37824;
+	uFnIsRep_Up_Indiv->iNative = 37822;
 
 	return IsRep_Up_Indiv_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.GetRankFromExp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37148])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37146])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Exp                            (CPF_Parm)
@@ -24753,13 +24753,13 @@ int32_t UREDGfxMoviePlayer_BattleResultWindow::GetRankFromExp(int32_t Exp)
 	uFnGetRankFromExp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetRankFromExp, &GetRankFromExp_Params, nullptr);
 	uFnGetRankFromExp->FunctionFlags |= 0x400;
-	uFnGetRankFromExp->iNative = 37148;
+	uFnGetRankFromExp->iNative = 37146;
 
 	return GetRankFromExp_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.GetRankExpAll
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37147])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37145])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Rank                           (CPF_Parm)
@@ -24781,13 +24781,13 @@ int32_t UREDGfxMoviePlayer_BattleResultWindow::GetRankExpAll(int32_t Rank)
 	uFnGetRankExpAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetRankExpAll, &GetRankExpAll_Params, nullptr);
 	uFnGetRankExpAll->FunctionFlags |= 0x400;
-	uFnGetRankExpAll->iNative = 37147;
+	uFnGetRankExpAll->iNative = 37145;
 
 	return GetRankExpAll_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.GetNextRankExp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37119])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37117])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Rank                           (CPF_Parm)
@@ -24809,7 +24809,7 @@ int32_t UREDGfxMoviePlayer_BattleResultWindow::GetNextRankExp(int32_t Rank)
 	uFnGetNextRankExp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetNextRankExp, &GetNextRankExp_Params, nullptr);
 	uFnGetNextRankExp->FunctionFlags |= 0x400;
-	uFnGetNextRankExp->iNative = 37119;
+	uFnGetNextRankExp->iNative = 37117;
 
 	return GetNextRankExp_Params.ReturnValue;
 };
@@ -24883,7 +24883,7 @@ bool UREDGfxMoviePlayer_BG_Arena::Start(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_BG_Arena.UpdateScroll
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34843])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34841])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_BG_Arena::UpdateScroll()
@@ -24902,11 +24902,11 @@ void UREDGfxMoviePlayer_BG_Arena::UpdateScroll()
 	uFnUpdateScroll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateScroll, &UpdateScroll_Params, nullptr);
 	uFnUpdateScroll->FunctionFlags |= 0x400;
-	uFnUpdateScroll->iNative = 34843;
+	uFnUpdateScroll->iNative = 34841;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BG_Arena.GetPlayerInfo
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34038])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34036])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -24944,7 +24944,7 @@ bool UREDGfxMoviePlayer_BG_Arena::GetPlayerInfo(EUE_PLAYER_ID Player, class FStr
 	uFnGetPlayerInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPlayerInfo, &GetPlayerInfo_Params, nullptr);
 	uFnGetPlayerInfo->FunctionFlags |= 0x400;
-	uFnGetPlayerInfo->iNative = 34038;
+	uFnGetPlayerInfo->iNative = 34036;
 
 	memcpy_s(&PlayerName, sizeof(PlayerName), &GetPlayerInfo_Params.PlayerName, sizeof(GetPlayerInfo_Params.PlayerName));
 	memcpy_s(&Dan, sizeof(Dan), &GetPlayerInfo_Params.Dan, sizeof(GetPlayerInfo_Params.Dan));
@@ -24959,7 +24959,7 @@ bool UREDGfxMoviePlayer_BG_Arena::GetPlayerInfo(EUE_PLAYER_ID Player, class FStr
 };
 
 // Function REDGame.REDGfxMoviePlayer_BG_Arena.GetShopName
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37169])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37167])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -24979,13 +24979,13 @@ class FString UREDGfxMoviePlayer_BG_Arena::GetShopName()
 	uFnGetShopName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetShopName, &GetShopName_Params, nullptr);
 	uFnGetShopName->FunctionFlags |= 0x400;
-	uFnGetShopName->iNative = 37169;
+	uFnGetShopName->iNative = 37167;
 
 	return GetShopName_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_BG_Arena.GetTitleName
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37188])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37186])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -25005,7 +25005,7 @@ class FString UREDGfxMoviePlayer_BG_Arena::GetTitleName()
 	uFnGetTitleName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetTitleName, &GetTitleName_Params, nullptr);
 	uFnGetTitleName->FunctionFlags |= 0x400;
-	uFnGetTitleName->iNative = 37188;
+	uFnGetTitleName->iNative = 37186;
 
 	return GetTitleName_Params.ReturnValue;
 };
@@ -25196,7 +25196,7 @@ void UREDGfxMoviePlayer_ChatWindow::CallSetupFocusedForm(const class FString& Te
 };
 
 // Function REDGame.REDGfxMoviePlayer_ChatWindow.OnStop
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38822])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38820])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_ChatWindow::OnStop()
@@ -25215,11 +25215,11 @@ void UREDGfxMoviePlayer_ChatWindow::OnStop()
 	uFnOnStop->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnStop, &OnStop_Params, nullptr);
 	uFnOnStop->FunctionFlags |= 0x400;
-	uFnOnStop->iNative = 38822;
+	uFnOnStop->iNative = 38820;
 };
 
 // Function REDGame.REDGfxMoviePlayer_ChatWindow.OnStart
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38820])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38818])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_ChatWindow::OnStart()
@@ -25238,7 +25238,7 @@ void UREDGfxMoviePlayer_ChatWindow::OnStart()
 	uFnOnStart->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnStart, &OnStart_Params, nullptr);
 	uFnOnStart->FunctionFlags |= 0x400;
-	uFnOnStart->iNative = 38820;
+	uFnOnStart->iNative = 38818;
 };
 
 // Function REDGame.REDGfxMoviePlayer_ChatWindow.OnCleanup
@@ -25265,7 +25265,7 @@ void UREDGfxMoviePlayer_ChatWindow::OnCleanup()
 };
 
 // Function REDGame.REDGfxMoviePlayer_ChatWindow.OnStartup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38821])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38819])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_ChatWindow::OnStartup()
@@ -25284,11 +25284,11 @@ void UREDGfxMoviePlayer_ChatWindow::OnStartup()
 	uFnOnStartup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnStartup, &OnStartup_Params, nullptr);
 	uFnOnStartup->FunctionFlags |= 0x400;
-	uFnOnStartup->iNative = 38821;
+	uFnOnStartup->iNative = 38819;
 };
 
 // Function REDGame.REDGfxMoviePlayer_ChatWindow.setPasswordMode
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39790])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39788])
 // Parameter Info:
 // uint32_t                       _isPassword                    (CPF_Parm)
 
@@ -25309,7 +25309,7 @@ void UREDGfxMoviePlayer_ChatWindow::setPasswordMode(bool _isPassword)
 	uFnsetPasswordMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnsetPasswordMode, &setPasswordMode_Params, nullptr);
 	uFnsetPasswordMode->FunctionFlags |= 0x400;
-	uFnsetPasswordMode->iNative = 39790;
+	uFnsetPasswordMode->iNative = 39788;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.OnFinalize
@@ -25461,7 +25461,7 @@ bool UREDGfxMoviePlayer_Menu_Base::eventWidgetInitialized(const class FName& Wid
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsLoadedPackages
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37704])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37702])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  packageNames                   (CPF_Const | CPF_Parm | CPF_NeedCtorLink)
@@ -25483,7 +25483,7 @@ bool UREDGfxMoviePlayer_Menu_Base::IsLoadedPackages(const class FString& package
 	uFnIsLoadedPackages->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLoadedPackages, &IsLoadedPackages_Params, nullptr);
 	uFnIsLoadedPackages->FunctionFlags |= 0x400;
-	uFnIsLoadedPackages->iNative = 37704;
+	uFnIsLoadedPackages->iNative = 37702;
 
 	return IsLoadedPackages_Params.ReturnValue;
 };
@@ -25517,7 +25517,7 @@ class UREDCharaAsset* UREDGfxMoviePlayer_Menu_Base::LoadPackages(bool bBlock, cl
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPS4Controller
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37795])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37793])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        PadID                          (CPF_Parm)
@@ -25539,7 +25539,7 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPS4Controller(int32_t PadID)
 	uFnIsPS4Controller->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPS4Controller, &IsPS4Controller_Params, nullptr);
 	uFnIsPS4Controller->FunctionFlags |= 0x400;
-	uFnIsPS4Controller->iNative = 37795;
+	uFnIsPS4Controller->iNative = 37793;
 
 	return IsPS4Controller_Params.ReturnValue;
 };
@@ -25992,7 +25992,7 @@ void UREDGfxMoviePlayer_Menu_Base::CommonSE(const class FName& cueName)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.DebugRectDraw
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[36429])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[36427])
 // Parameter Info:
 // struct FVector2D               LU                             (CPF_Parm)
 // struct FVector2D               RU                             (CPF_Parm)
@@ -26023,11 +26023,11 @@ void UREDGfxMoviePlayer_Menu_Base::DebugRectDraw(const struct FVector2D& LU, con
 	uFnDebugRectDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDebugRectDraw, &DebugRectDraw_Params, nullptr);
 	uFnDebugRectDraw->FunctionFlags |= 0x400;
-	uFnDebugRectDraw->iNative = 36429;
+	uFnDebugRectDraw->iNative = 36427;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.DebugMainMenuOpen
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36423])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36421])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_Menu_Base::DebugMainMenuOpen()
@@ -26046,11 +26046,11 @@ void UREDGfxMoviePlayer_Menu_Base::DebugMainMenuOpen()
 	uFnDebugMainMenuOpen->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDebugMainMenuOpen, &DebugMainMenuOpen_Params, nullptr);
 	uFnDebugMainMenuOpen->FunctionFlags |= 0x400;
-	uFnDebugMainMenuOpen->iNative = 36423;
+	uFnDebugMainMenuOpen->iNative = 36421;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.DebugText2
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[36430])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[36428])
 // Parameter Info:
 // int32_t                        X                              (CPF_Parm)
 // int32_t                        Y                              (CPF_Parm)
@@ -26083,11 +26083,11 @@ void UREDGfxMoviePlayer_Menu_Base::DebugText2(int32_t X, int32_t Y, int32_t Col,
 	uFnDebugText2->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDebugText2, &DebugText2_Params, nullptr);
 	uFnDebugText2->FunctionFlags |= 0x400;
-	uFnDebugText2->iNative = 36430;
+	uFnDebugText2->iNative = 36428;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.DebugText
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[19315])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[19313])
 // Parameter Info:
 // int32_t                        X                              (CPF_Parm)
 // int32_t                        Y                              (CPF_Parm)
@@ -26116,11 +26116,11 @@ void UREDGfxMoviePlayer_Menu_Base::DebugText(int32_t X, int32_t Y, int32_t Col, 
 	uFnDebugText->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDebugText, &DebugText_Params, nullptr);
 	uFnDebugText->FunctionFlags |= 0x400;
-	uFnDebugText->iNative = 19315;
+	uFnDebugText->iNative = 19313;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Timer2Digit
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40233])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40231])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Time                           (CPF_Parm)
@@ -26148,7 +26148,7 @@ int32_t UREDGfxMoviePlayer_Menu_Base::Timer2Digit(int32_t Time, int32_t& digit1,
 	uFnTimer2Digit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTimer2Digit, &Timer2Digit_Params, nullptr);
 	uFnTimer2Digit->FunctionFlags |= 0x400;
-	uFnTimer2Digit->iNative = 40233;
+	uFnTimer2Digit->iNative = 40231;
 
 	memcpy_s(&digit1, sizeof(digit1), &Timer2Digit_Params.digit1, sizeof(Timer2Digit_Params.digit1));
 	memcpy_s(&digit10, sizeof(digit10), &Timer2Digit_Params.digit10, sizeof(Timer2Digit_Params.digit10));
@@ -26158,7 +26158,7 @@ int32_t UREDGfxMoviePlayer_Menu_Base::Timer2Digit(int32_t Time, int32_t& digit1,
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.SlideMessage
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39915])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39913])
 // Parameter Info:
 // class FString                  MessageId                      (CPF_Parm | CPF_NeedCtorLink)
 // EUE_PLAYER_ID                  Side                           (CPF_OptionalParm | CPF_Parm)
@@ -26181,11 +26181,11 @@ void UREDGfxMoviePlayer_Menu_Base::SlideMessage(const class FString& MessageId, 
 	uFnSlideMessage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSlideMessage, &SlideMessage_Params, nullptr);
 	uFnSlideMessage->FunctionFlags |= 0x400;
-	uFnSlideMessage->iNative = 39915;
+	uFnSlideMessage->iNative = 39913;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_OpenOK_CustomMessage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39066])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39064])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -26209,13 +26209,13 @@ int32_t UREDGfxMoviePlayer_Menu_Base::PopUp_OpenOK_CustomMessage(EUE_PLAYER_ID P
 	uFnPopUp_OpenOK_CustomMessage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_OpenOK_CustomMessage, &PopUp_OpenOK_CustomMessage_Params, nullptr);
 	uFnPopUp_OpenOK_CustomMessage->FunctionFlags |= 0x400;
-	uFnPopUp_OpenOK_CustomMessage->iNative = 39066;
+	uFnPopUp_OpenOK_CustomMessage->iNative = 39064;
 
 	return PopUp_OpenOK_CustomMessage_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_Close
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39063])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39061])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_Menu_Base::PopUp_Close()
@@ -26234,11 +26234,11 @@ void UREDGfxMoviePlayer_Menu_Base::PopUp_Close()
 	uFnPopUp_Close->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_Close, &PopUp_Close_Params, nullptr);
 	uFnPopUp_Close->FunctionFlags |= 0x400;
-	uFnPopUp_Close->iNative = 39063;
+	uFnPopUp_Close->iNative = 39061;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_IsActive
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39064])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39062])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -26258,13 +26258,13 @@ bool UREDGfxMoviePlayer_Menu_Base::PopUp_IsActive()
 	uFnPopUp_IsActive->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_IsActive, &PopUp_IsActive_Params, nullptr);
 	uFnPopUp_IsActive->FunctionFlags |= 0x400;
-	uFnPopUp_IsActive->iNative = 39064;
+	uFnPopUp_IsActive->iNative = 39062;
 
 	return PopUp_IsActive_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_CheckReturnVal
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39062])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39060])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Handle                         (CPF_Parm)
@@ -26286,13 +26286,13 @@ int32_t UREDGfxMoviePlayer_Menu_Base::PopUp_CheckReturnVal(int32_t Handle)
 	uFnPopUp_CheckReturnVal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_CheckReturnVal, &PopUp_CheckReturnVal_Params, nullptr);
 	uFnPopUp_CheckReturnVal->FunctionFlags |= 0x400;
-	uFnPopUp_CheckReturnVal->iNative = 39062;
+	uFnPopUp_CheckReturnVal->iNative = 39060;
 
 	return PopUp_CheckReturnVal_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_OpenYesNo
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39067])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39065])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -26316,13 +26316,13 @@ int32_t UREDGfxMoviePlayer_Menu_Base::PopUp_OpenYesNo(EUE_PLAYER_ID Player, cons
 	uFnPopUp_OpenYesNo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_OpenYesNo, &PopUp_OpenYesNo_Params, nullptr);
 	uFnPopUp_OpenYesNo->FunctionFlags |= 0x400;
-	uFnPopUp_OpenYesNo->iNative = 39067;
+	uFnPopUp_OpenYesNo->iNative = 39065;
 
 	return PopUp_OpenYesNo_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_OpenOK
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39065])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39063])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -26346,13 +26346,13 @@ int32_t UREDGfxMoviePlayer_Menu_Base::PopUp_OpenOK(EUE_PLAYER_ID Player, const c
 	uFnPopUp_OpenOK->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_OpenOK, &PopUp_OpenOK_Params, nullptr);
 	uFnPopUp_OpenOK->FunctionFlags |= 0x400;
-	uFnPopUp_OpenOK->iNative = 39065;
+	uFnPopUp_OpenOK->iNative = 39063;
 
 	return PopUp_OpenOK_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Account_IsBannedNetwork
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35357])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35355])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -26372,13 +26372,13 @@ bool UREDGfxMoviePlayer_Menu_Base::Account_IsBannedNetwork()
 	uFnAccount_IsBannedNetwork->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAccount_IsBannedNetwork, &Account_IsBannedNetwork_Params, nullptr);
 	uFnAccount_IsBannedNetwork->FunctionFlags |= 0x400;
-	uFnAccount_IsBannedNetwork->iNative = 35357;
+	uFnAccount_IsBannedNetwork->iNative = 35355;
 
 	return Account_IsBannedNetwork_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Account_IsBannedChat
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35356])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35354])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -26398,13 +26398,13 @@ bool UREDGfxMoviePlayer_Menu_Base::Account_IsBannedChat()
 	uFnAccount_IsBannedChat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAccount_IsBannedChat, &Account_IsBannedChat_Params, nullptr);
 	uFnAccount_IsBannedChat->FunctionFlags |= 0x400;
-	uFnAccount_IsBannedChat->iNative = 35356;
+	uFnAccount_IsBannedChat->iNative = 35354;
 
 	return Account_IsBannedChat_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.DrawCreditFont
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36600])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36598])
 // Parameter Info:
 // int32_t                        X                              (CPF_Parm)
 // int32_t                        Y                              (CPF_Parm)
@@ -26433,11 +26433,11 @@ void UREDGfxMoviePlayer_Menu_Base::DrawCreditFont(int32_t X, int32_t Y, bool isC
 	uFnDrawCreditFont->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDrawCreditFont, &DrawCreditFont_Params, nullptr);
 	uFnDrawCreditFont->FunctionFlags |= 0x400;
-	uFnDrawCreditFont->iNative = 36600;
+	uFnDrawCreditFont->iNative = 36598;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_SetHidden
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36345])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36343])
 // Parameter Info:
 // uint32_t                       flag                           (CPF_Parm)
 
@@ -26458,11 +26458,11 @@ void UREDGfxMoviePlayer_Menu_Base::Credit_SetHidden(bool flag)
 	uFnCredit_SetHidden->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCredit_SetHidden, &Credit_SetHidden_Params, nullptr);
 	uFnCredit_SetHidden->FunctionFlags |= 0x400;
-	uFnCredit_SetHidden->iNative = 36345;
+	uFnCredit_SetHidden->iNative = 36343;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_ContinueGame
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36339])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36337])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 
@@ -26483,11 +26483,11 @@ void UREDGfxMoviePlayer_Menu_Base::Credit_ContinueGame(EUE_PLAYER_ID Player)
 	uFnCredit_ContinueGame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCredit_ContinueGame, &Credit_ContinueGame_Params, nullptr);
 	uFnCredit_ContinueGame->FunctionFlags |= 0x400;
-	uFnCredit_ContinueGame->iNative = 36339;
+	uFnCredit_ContinueGame->iNative = 36337;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_StartGame
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36346])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36344])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 
@@ -26508,11 +26508,11 @@ void UREDGfxMoviePlayer_Menu_Base::Credit_StartGame(EUE_PLAYER_ID Player)
 	uFnCredit_StartGame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCredit_StartGame, &Credit_StartGame_Params, nullptr);
 	uFnCredit_StartGame->FunctionFlags |= 0x400;
-	uFnCredit_StartGame->iNative = 36346;
+	uFnCredit_StartGame->iNative = 36344;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_IsFreePlay
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36343])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36341])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -26532,13 +26532,13 @@ bool UREDGfxMoviePlayer_Menu_Base::Credit_IsFreePlay()
 	uFnCredit_IsFreePlay->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCredit_IsFreePlay, &Credit_IsFreePlay_Params, nullptr);
 	uFnCredit_IsFreePlay->FunctionFlags |= 0x400;
-	uFnCredit_IsFreePlay->iNative = 36343;
+	uFnCredit_IsFreePlay->iNative = 36341;
 
 	return Credit_IsFreePlay_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_IsCoinZero
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36340])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36338])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -26560,13 +26560,13 @@ bool UREDGfxMoviePlayer_Menu_Base::Credit_IsCoinZero(EUE_PLAYER_ID Player)
 	uFnCredit_IsCoinZero->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCredit_IsCoinZero, &Credit_IsCoinZero_Params, nullptr);
 	uFnCredit_IsCoinZero->FunctionFlags |= 0x400;
-	uFnCredit_IsCoinZero->iNative = 36340;
+	uFnCredit_IsCoinZero->iNative = 36338;
 
 	return Credit_IsCoinZero_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_IsInsertCoin
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36344])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36342])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -26588,13 +26588,13 @@ bool UREDGfxMoviePlayer_Menu_Base::Credit_IsInsertCoin(EUE_PLAYER_ID Player)
 	uFnCredit_IsInsertCoin->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCredit_IsInsertCoin, &Credit_IsInsertCoin_Params, nullptr);
 	uFnCredit_IsInsertCoin->FunctionFlags |= 0x400;
-	uFnCredit_IsInsertCoin->iNative = 36344;
+	uFnCredit_IsInsertCoin->iNative = 36342;
 
 	return Credit_IsInsertCoin_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_IsEnough_Continue
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36342])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36340])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -26616,13 +26616,13 @@ bool UREDGfxMoviePlayer_Menu_Base::Credit_IsEnough_Continue(EUE_PLAYER_ID Player
 	uFnCredit_IsEnough_Continue->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCredit_IsEnough_Continue, &Credit_IsEnough_Continue_Params, nullptr);
 	uFnCredit_IsEnough_Continue->FunctionFlags |= 0x400;
-	uFnCredit_IsEnough_Continue->iNative = 36342;
+	uFnCredit_IsEnough_Continue->iNative = 36340;
 
 	return Credit_IsEnough_Continue_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_IsEnough
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36341])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36339])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -26644,7 +26644,7 @@ bool UREDGfxMoviePlayer_Menu_Base::Credit_IsEnough(EUE_PLAYER_ID Player)
 	uFnCredit_IsEnough->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCredit_IsEnough, &Credit_IsEnough_Params, nullptr);
 	uFnCredit_IsEnough->FunctionFlags |= 0x400;
-	uFnCredit_IsEnough->iNative = 36341;
+	uFnCredit_IsEnough->iNative = 36339;
 
 	return Credit_IsEnough_Params.ReturnValue;
 };
@@ -26742,7 +26742,7 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_AnyBtn(EUE_PLAYER_ID Player)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsUIExclusive
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37921])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37919])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -26762,13 +26762,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsUIExclusive()
 	uFnIsUIExclusive->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsUIExclusive, &IsUIExclusive_Params, nullptr);
 	uFnIsUIExclusive->FunctionFlags |= 0x400;
-	uFnIsUIExclusive->iNative = 37921;
+	uFnIsUIExclusive->iNative = 37919;
 
 	return IsUIExclusive_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.GetPadNum
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37131])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37129])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -26788,13 +26788,13 @@ int32_t UREDGfxMoviePlayer_Menu_Base::GetPadNum()
 	uFnGetPadNum->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPadNum, &GetPadNum_Params, nullptr);
 	uFnGetPadNum->FunctionFlags |= 0x400;
-	uFnGetPadNum->iNative = 37131;
+	uFnGetPadNum->iNative = 37129;
 
 	return GetPadNum_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.GetPlayerPadID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37140])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37138])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -26816,13 +26816,13 @@ int32_t UREDGfxMoviePlayer_Menu_Base::GetPlayerPadID(EUE_PLAYER_ID Player)
 	uFnGetPlayerPadID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPlayerPadID, &GetPlayerPadID_Params, nullptr);
 	uFnGetPlayerPadID->FunctionFlags |= 0x400;
-	uFnGetPlayerPadID->iNative = 37140;
+	uFnGetPlayerPadID->iNative = 37138;
 
 	return GetPlayerPadID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.SetPlayerPadID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39793])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39791])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // int32_t                        PadID                          (CPF_Parm)
@@ -26845,11 +26845,11 @@ void UREDGfxMoviePlayer_Menu_Base::SetPlayerPadID(EUE_PLAYER_ID Player, int32_t 
 	uFnSetPlayerPadID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPlayerPadID, &SetPlayerPadID_Params, nullptr);
 	uFnSetPlayerPadID->FunctionFlags |= 0x400;
-	uFnSetPlayerPadID->iNative = 39793;
+	uFnSetPlayerPadID->iNative = 39791;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Right_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37914])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37912])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -26871,13 +26871,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Right_FromPad(int32_t Player)
 	uFnIsTrig_Right_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Right_FromPad, &IsTrig_Right_FromPad_Params, nullptr);
 	uFnIsTrig_Right_FromPad->FunctionFlags |= 0x400;
-	uFnIsTrig_Right_FromPad->iNative = 37914;
+	uFnIsTrig_Right_FromPad->iNative = 37912;
 
 	return IsTrig_Right_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Left_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37905])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37903])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -26899,13 +26899,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Left_FromPad(int32_t Player)
 	uFnIsTrig_Left_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Left_FromPad, &IsTrig_Left_FromPad_Params, nullptr);
 	uFnIsTrig_Left_FromPad->FunctionFlags |= 0x400;
-	uFnIsTrig_Left_FromPad->iNative = 37905;
+	uFnIsTrig_Left_FromPad->iNative = 37903;
 
 	return IsTrig_Left_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Down_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37901])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37899])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -26927,13 +26927,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Down_FromPad(int32_t Player)
 	uFnIsTrig_Down_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Down_FromPad, &IsTrig_Down_FromPad_Params, nullptr);
 	uFnIsTrig_Down_FromPad->FunctionFlags |= 0x400;
-	uFnIsTrig_Down_FromPad->iNative = 37901;
+	uFnIsTrig_Down_FromPad->iNative = 37899;
 
 	return IsTrig_Down_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Up_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37917])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37915])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -26955,13 +26955,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Up_FromPad(int32_t Player)
 	uFnIsTrig_Up_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Up_FromPad, &IsTrig_Up_FromPad_Params, nullptr);
 	uFnIsTrig_Up_FromPad->FunctionFlags |= 0x400;
-	uFnIsTrig_Up_FromPad->iNative = 37917;
+	uFnIsTrig_Up_FromPad->iNative = 37915;
 
 	return IsTrig_Up_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_NG_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37908])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37906])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -26983,13 +26983,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_NG_FromPad(int32_t Player)
 	uFnIsTrig_NG_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_NG_FromPad, &IsTrig_NG_FromPad_Params, nullptr);
 	uFnIsTrig_NG_FromPad->FunctionFlags |= 0x400;
-	uFnIsTrig_NG_FromPad->iNative = 37908;
+	uFnIsTrig_NG_FromPad->iNative = 37906;
 
 	return IsTrig_NG_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_OK_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37910])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37908])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -27011,13 +27011,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_OK_FromPad(int32_t Player)
 	uFnIsTrig_OK_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_OK_FromPad, &IsTrig_OK_FromPad_Params, nullptr);
 	uFnIsTrig_OK_FromPad->FunctionFlags |= 0x400;
-	uFnIsTrig_OK_FromPad->iNative = 37910;
+	uFnIsTrig_OK_FromPad->iNative = 37908;
 
 	return IsTrig_OK_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Right_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37789])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37787])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -27039,13 +27039,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_Right_FromPad(int32_t Player)
 	uFnIsPress_Right_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_Right_FromPad, &IsPress_Right_FromPad_Params, nullptr);
 	uFnIsPress_Right_FromPad->FunctionFlags |= 0x400;
-	uFnIsPress_Right_FromPad->iNative = 37789;
+	uFnIsPress_Right_FromPad->iNative = 37787;
 
 	return IsPress_Right_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Left_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37784])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37782])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -27067,13 +27067,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_Left_FromPad(int32_t Player)
 	uFnIsPress_Left_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_Left_FromPad, &IsPress_Left_FromPad_Params, nullptr);
 	uFnIsPress_Left_FromPad->FunctionFlags |= 0x400;
-	uFnIsPress_Left_FromPad->iNative = 37784;
+	uFnIsPress_Left_FromPad->iNative = 37782;
 
 	return IsPress_Left_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Down_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37780])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37778])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -27095,13 +27095,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_Down_FromPad(int32_t Player)
 	uFnIsPress_Down_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_Down_FromPad, &IsPress_Down_FromPad_Params, nullptr);
 	uFnIsPress_Down_FromPad->FunctionFlags |= 0x400;
-	uFnIsPress_Down_FromPad->iNative = 37780;
+	uFnIsPress_Down_FromPad->iNative = 37778;
 
 	return IsPress_Down_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Up_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37791])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37789])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Player                         (CPF_Parm)
@@ -27123,13 +27123,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_Up_FromPad(int32_t Player)
 	uFnIsPress_Up_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_Up_FromPad, &IsPress_Up_FromPad_Params, nullptr);
 	uFnIsPress_Up_FromPad->FunctionFlags |= 0x400;
-	uFnIsPress_Up_FromPad->iNative = 37791;
+	uFnIsPress_Up_FromPad->iNative = 37789;
 
 	return IsPress_Up_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Btn_Without1_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37778])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37776])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        PadID                          (CPF_Parm)
@@ -27151,13 +27151,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_Btn_Without1_FromPad(int32_t PadID)
 	uFnIsPress_Btn_Without1_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_Btn_Without1_FromPad, &IsPress_Btn_Without1_FromPad_Params, nullptr);
 	uFnIsPress_Btn_Without1_FromPad->FunctionFlags |= 0x400;
-	uFnIsPress_Btn_Without1_FromPad->iNative = 37778;
+	uFnIsPress_Btn_Without1_FromPad->iNative = 37776;
 
 	return IsPress_Btn_Without1_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Btn1_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37777])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37775])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        PadID                          (CPF_Parm)
@@ -27179,13 +27179,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_Btn1_FromPad(int32_t PadID)
 	uFnIsPress_Btn1_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_Btn1_FromPad, &IsPress_Btn1_FromPad_Params, nullptr);
 	uFnIsPress_Btn1_FromPad->FunctionFlags |= 0x400;
-	uFnIsPress_Btn1_FromPad->iNative = 37777;
+	uFnIsPress_Btn1_FromPad->iNative = 37775;
 
 	return IsPress_Btn1_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_BtnBack_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37897])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37895])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        PadID                          (CPF_Parm)
@@ -27207,13 +27207,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_BtnBack_FromPad(int32_t PadID)
 	uFnIsTrig_BtnBack_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_BtnBack_FromPad, &IsTrig_BtnBack_FromPad_Params, nullptr);
 	uFnIsTrig_BtnBack_FromPad->FunctionFlags |= 0x400;
-	uFnIsTrig_BtnBack_FromPad->iNative = 37897;
+	uFnIsTrig_BtnBack_FromPad->iNative = 37895;
 
 	return IsTrig_BtnBack_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_AnyBtn_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37889])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37887])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        PadID                          (CPF_Parm)
@@ -27235,13 +27235,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_AnyBtn_FromPad(int32_t PadID)
 	uFnIsTrig_AnyBtn_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_AnyBtn_FromPad, &IsTrig_AnyBtn_FromPad_Params, nullptr);
 	uFnIsTrig_AnyBtn_FromPad->FunctionFlags |= 0x400;
-	uFnIsTrig_AnyBtn_FromPad->iNative = 37889;
+	uFnIsTrig_AnyBtn_FromPad->iNative = 37887;
 
 	return IsTrig_AnyBtn_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_BtnStart_FromPad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37899])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37897])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        PadID                          (CPF_Parm)
@@ -27263,13 +27263,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_BtnStart_FromPad(int32_t PadID)
 	uFnIsTrig_BtnStart_FromPad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_BtnStart_FromPad, &IsTrig_BtnStart_FromPad_Params, nullptr);
 	uFnIsTrig_BtnStart_FromPad->FunctionFlags |= 0x400;
-	uFnIsTrig_BtnStart_FromPad->iNative = 37899;
+	uFnIsTrig_BtnStart_FromPad->iNative = 37897;
 
 	return IsTrig_BtnStart_FromPad_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn6
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37896])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37894])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27291,13 +27291,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Btn6(EUE_PLAYER_ID Player)
 	uFnIsTrig_Btn6->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Btn6, &IsTrig_Btn6_Params, nullptr);
 	uFnIsTrig_Btn6->FunctionFlags |= 0x400;
-	uFnIsTrig_Btn6->iNative = 37896;
+	uFnIsTrig_Btn6->iNative = 37894;
 
 	return IsTrig_Btn6_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn5
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37895])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37893])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27319,13 +27319,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Btn5(EUE_PLAYER_ID Player)
 	uFnIsTrig_Btn5->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Btn5, &IsTrig_Btn5_Params, nullptr);
 	uFnIsTrig_Btn5->FunctionFlags |= 0x400;
-	uFnIsTrig_Btn5->iNative = 37895;
+	uFnIsTrig_Btn5->iNative = 37893;
 
 	return IsTrig_Btn5_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn4
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37894])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37892])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27347,13 +27347,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Btn4(EUE_PLAYER_ID Player)
 	uFnIsTrig_Btn4->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Btn4, &IsTrig_Btn4_Params, nullptr);
 	uFnIsTrig_Btn4->FunctionFlags |= 0x400;
-	uFnIsTrig_Btn4->iNative = 37894;
+	uFnIsTrig_Btn4->iNative = 37892;
 
 	return IsTrig_Btn4_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn3
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37893])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37891])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27375,13 +27375,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Btn3(EUE_PLAYER_ID Player)
 	uFnIsTrig_Btn3->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Btn3, &IsTrig_Btn3_Params, nullptr);
 	uFnIsTrig_Btn3->FunctionFlags |= 0x400;
-	uFnIsTrig_Btn3->iNative = 37893;
+	uFnIsTrig_Btn3->iNative = 37891;
 
 	return IsTrig_Btn3_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn2
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37892])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37890])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27403,13 +27403,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Btn2(EUE_PLAYER_ID Player)
 	uFnIsTrig_Btn2->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Btn2, &IsTrig_Btn2_Params, nullptr);
 	uFnIsTrig_Btn2->FunctionFlags |= 0x400;
-	uFnIsTrig_Btn2->iNative = 37892;
+	uFnIsTrig_Btn2->iNative = 37890;
 
 	return IsTrig_Btn2_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn1
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37891])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37889])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27431,13 +27431,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Btn1(EUE_PLAYER_ID Player)
 	uFnIsTrig_Btn1->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Btn1, &IsTrig_Btn1_Params, nullptr);
 	uFnIsTrig_Btn1->FunctionFlags |= 0x400;
-	uFnIsTrig_Btn1->iNative = 37891;
+	uFnIsTrig_Btn1->iNative = 37889;
 
 	return IsTrig_Btn1_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPull_R2
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37800])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37798])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27459,13 +27459,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPull_R2(EUE_PLAYER_ID Player)
 	uFnIsPull_R2->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPull_R2, &IsPull_R2_Params, nullptr);
 	uFnIsPull_R2->FunctionFlags |= 0x400;
-	uFnIsPull_R2->iNative = 37800;
+	uFnIsPull_R2->iNative = 37798;
 
 	return IsPull_R2_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPull_L2
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37798])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37796])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27487,13 +27487,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPull_L2(EUE_PLAYER_ID Player)
 	uFnIsPull_L2->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPull_L2, &IsPull_L2_Params, nullptr);
 	uFnIsPull_L2->FunctionFlags |= 0x400;
-	uFnIsPull_L2->iNative = 37798;
+	uFnIsPull_L2->iNative = 37796;
 
 	return IsPull_L2_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPull_R1
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37799])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37797])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27515,13 +27515,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPull_R1(EUE_PLAYER_ID Player)
 	uFnIsPull_R1->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPull_R1, &IsPull_R1_Params, nullptr);
 	uFnIsPull_R1->FunctionFlags |= 0x400;
-	uFnIsPull_R1->iNative = 37799;
+	uFnIsPull_R1->iNative = 37797;
 
 	return IsPull_R1_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPull_L1
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37797])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37795])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27543,13 +27543,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPull_L1(EUE_PLAYER_ID Player)
 	uFnIsPull_L1->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPull_L1, &IsPull_L1_Params, nullptr);
 	uFnIsPull_L1->FunctionFlags |= 0x400;
-	uFnIsPull_L1->iNative = 37797;
+	uFnIsPull_L1->iNative = 37795;
 
 	return IsPull_L1_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_R2
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37787])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37785])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27571,13 +27571,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_R2(EUE_PLAYER_ID Player)
 	uFnIsPress_R2->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_R2, &IsPress_R2_Params, nullptr);
 	uFnIsPress_R2->FunctionFlags |= 0x400;
-	uFnIsPress_R2->iNative = 37787;
+	uFnIsPress_R2->iNative = 37785;
 
 	return IsPress_R2_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_L2
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37782])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37780])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27599,13 +27599,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_L2(EUE_PLAYER_ID Player)
 	uFnIsPress_L2->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_L2, &IsPress_L2_Params, nullptr);
 	uFnIsPress_L2->FunctionFlags |= 0x400;
-	uFnIsPress_L2->iNative = 37782;
+	uFnIsPress_L2->iNative = 37780;
 
 	return IsPress_L2_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_R1
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37786])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37784])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27627,13 +27627,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_R1(EUE_PLAYER_ID Player)
 	uFnIsPress_R1->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_R1, &IsPress_R1_Params, nullptr);
 	uFnIsPress_R1->FunctionFlags |= 0x400;
-	uFnIsPress_R1->iNative = 37786;
+	uFnIsPress_R1->iNative = 37784;
 
 	return IsPress_R1_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_L1
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37781])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37779])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27655,13 +27655,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_L1(EUE_PLAYER_ID Player)
 	uFnIsPress_L1->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_L1, &IsPress_L1_Params, nullptr);
 	uFnIsPress_L1->FunctionFlags |= 0x400;
-	uFnIsPress_L1->iNative = 37781;
+	uFnIsPress_L1->iNative = 37779;
 
 	return IsPress_L1_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_L2
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37903])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37901])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27683,13 +27683,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_L2(EUE_PLAYER_ID Player)
 	uFnIsTrig_L2->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_L2, &IsTrig_L2_Params, nullptr);
 	uFnIsTrig_L2->FunctionFlags |= 0x400;
-	uFnIsTrig_L2->iNative = 37903;
+	uFnIsTrig_L2->iNative = 37901;
 
 	return IsTrig_L2_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_L1
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37902])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37900])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27711,13 +27711,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_L1(EUE_PLAYER_ID Player)
 	uFnIsTrig_L1->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_L1, &IsTrig_L1_Params, nullptr);
 	uFnIsTrig_L1->FunctionFlags |= 0x400;
-	uFnIsTrig_L1->iNative = 37902;
+	uFnIsTrig_L1->iNative = 37900;
 
 	return IsTrig_L1_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_R2
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37912])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37910])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27739,13 +27739,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_R2(EUE_PLAYER_ID Player)
 	uFnIsTrig_R2->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_R2, &IsTrig_R2_Params, nullptr);
 	uFnIsTrig_R2->FunctionFlags |= 0x400;
-	uFnIsTrig_R2->iNative = 37912;
+	uFnIsTrig_R2->iNative = 37910;
 
 	return IsTrig_R2_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_R1
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37911])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37909])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27767,13 +27767,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_R1(EUE_PLAYER_ID Player)
 	uFnIsTrig_R1->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_R1, &IsTrig_R1_Params, nullptr);
 	uFnIsTrig_R1->FunctionFlags |= 0x400;
-	uFnIsTrig_R1->iNative = 37911;
+	uFnIsTrig_R1->iNative = 37909;
 
 	return IsTrig_R1_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_A
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37887])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37885])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27795,13 +27795,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_A(EUE_PLAYER_ID Player)
 	uFnIsTrig_A->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_A, &IsTrig_A_Params, nullptr);
 	uFnIsTrig_A->FunctionFlags |= 0x400;
-	uFnIsTrig_A->iNative = 37887;
+	uFnIsTrig_A->iNative = 37885;
 
 	return IsTrig_A_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_X
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37918])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37916])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27823,13 +27823,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_X(EUE_PLAYER_ID Player)
 	uFnIsTrig_X->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_X, &IsTrig_X_Params, nullptr);
 	uFnIsTrig_X->FunctionFlags |= 0x400;
-	uFnIsTrig_X->iNative = 37918;
+	uFnIsTrig_X->iNative = 37916;
 
 	return IsTrig_X_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Y
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37919])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37917])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27851,13 +27851,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Y(EUE_PLAYER_ID Player)
 	uFnIsTrig_Y->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Y, &IsTrig_Y_Params, nullptr);
 	uFnIsTrig_Y->FunctionFlags |= 0x400;
-	uFnIsTrig_Y->iNative = 37919;
+	uFnIsTrig_Y->iNative = 37917;
 
 	return IsTrig_Y_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_B
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37890])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37888])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27879,13 +27879,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_B(EUE_PLAYER_ID Player)
 	uFnIsTrig_B->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_B, &IsTrig_B_Params, nullptr);
 	uFnIsTrig_B->FunctionFlags |= 0x400;
-	uFnIsTrig_B->iNative = 37890;
+	uFnIsTrig_B->iNative = 37888;
 
 	return IsTrig_B_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_OK
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37785])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37783])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27907,13 +27907,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_OK(EUE_PLAYER_ID Player)
 	uFnIsPress_OK->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_OK, &IsPress_OK_Params, nullptr);
 	uFnIsPress_OK->FunctionFlags |= 0x400;
-	uFnIsPress_OK->iNative = 37785;
+	uFnIsPress_OK->iNative = 37783;
 
 	return IsPress_OK_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_BtnStart
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37898])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37896])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27935,13 +27935,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_BtnStart(EUE_PLAYER_ID Player)
 	uFnIsTrig_BtnStart->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_BtnStart, &IsTrig_BtnStart_Params, nullptr);
 	uFnIsTrig_BtnStart->FunctionFlags |= 0x400;
-	uFnIsTrig_BtnStart->iNative = 37898;
+	uFnIsTrig_BtnStart->iNative = 37896;
 
 	return IsTrig_BtnStart_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_NG
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37907])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37905])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27963,13 +27963,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_NG(EUE_PLAYER_ID Player)
 	uFnIsTrig_NG->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_NG, &IsTrig_NG_Params, nullptr);
 	uFnIsTrig_NG->FunctionFlags |= 0x400;
-	uFnIsTrig_NG->iNative = 37907;
+	uFnIsTrig_NG->iNative = 37905;
 
 	return IsTrig_NG_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_OK
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37909])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37907])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -27991,13 +27991,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_OK(EUE_PLAYER_ID Player)
 	uFnIsTrig_OK->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_OK, &IsTrig_OK_Params, nullptr);
 	uFnIsTrig_OK->FunctionFlags |= 0x400;
-	uFnIsTrig_OK->iNative = 37909;
+	uFnIsTrig_OK->iNative = 37907;
 
 	return IsTrig_OK_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Right
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37913])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37911])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28019,13 +28019,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Right(EUE_PLAYER_ID Player)
 	uFnIsTrig_Right->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Right, &IsTrig_Right_Params, nullptr);
 	uFnIsTrig_Right->FunctionFlags |= 0x400;
-	uFnIsTrig_Right->iNative = 37913;
+	uFnIsTrig_Right->iNative = 37911;
 
 	return IsTrig_Right_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Left
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37904])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37902])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28047,13 +28047,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Left(EUE_PLAYER_ID Player)
 	uFnIsTrig_Left->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Left, &IsTrig_Left_Params, nullptr);
 	uFnIsTrig_Left->FunctionFlags |= 0x400;
-	uFnIsTrig_Left->iNative = 37904;
+	uFnIsTrig_Left->iNative = 37902;
 
 	return IsTrig_Left_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Down
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37900])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37898])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28075,13 +28075,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Down(EUE_PLAYER_ID Player)
 	uFnIsTrig_Down->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Down, &IsTrig_Down_Params, nullptr);
 	uFnIsTrig_Down->FunctionFlags |= 0x400;
-	uFnIsTrig_Down->iNative = 37900;
+	uFnIsTrig_Down->iNative = 37898;
 
 	return IsTrig_Down_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Up
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37916])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37914])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28103,13 +28103,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsTrig_Up(EUE_PLAYER_ID Player)
 	uFnIsTrig_Up->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTrig_Up, &IsTrig_Up_Params, nullptr);
 	uFnIsTrig_Up->FunctionFlags |= 0x400;
-	uFnIsTrig_Up->iNative = 37916;
+	uFnIsTrig_Up->iNative = 37914;
 
 	return IsTrig_Up_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Right
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37788])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37786])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28131,13 +28131,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_Right(EUE_PLAYER_ID Player)
 	uFnIsPress_Right->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_Right, &IsPress_Right_Params, nullptr);
 	uFnIsPress_Right->FunctionFlags |= 0x400;
-	uFnIsPress_Right->iNative = 37788;
+	uFnIsPress_Right->iNative = 37786;
 
 	return IsPress_Right_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Left
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37783])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37781])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28159,13 +28159,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_Left(EUE_PLAYER_ID Player)
 	uFnIsPress_Left->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_Left, &IsPress_Left_Params, nullptr);
 	uFnIsPress_Left->FunctionFlags |= 0x400;
-	uFnIsPress_Left->iNative = 37783;
+	uFnIsPress_Left->iNative = 37781;
 
 	return IsPress_Left_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Down
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37779])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37777])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28187,13 +28187,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_Down(EUE_PLAYER_ID Player)
 	uFnIsPress_Down->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_Down, &IsPress_Down_Params, nullptr);
 	uFnIsPress_Down->FunctionFlags |= 0x400;
-	uFnIsPress_Down->iNative = 37779;
+	uFnIsPress_Down->iNative = 37777;
 
 	return IsPress_Down_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Up
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37790])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37788])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28215,13 +28215,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsPress_Up(EUE_PLAYER_ID Player)
 	uFnIsPress_Up->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPress_Up, &IsPress_Up_Params, nullptr);
 	uFnIsPress_Up->FunctionFlags |= 0x400;
-	uFnIsPress_Up->iNative = 37790;
+	uFnIsPress_Up->iNative = 37788;
 
 	return IsPress_Up_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsRep_Right
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37822])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37820])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28243,13 +28243,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsRep_Right(EUE_PLAYER_ID Player)
 	uFnIsRep_Right->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRep_Right, &IsRep_Right_Params, nullptr);
 	uFnIsRep_Right->FunctionFlags |= 0x400;
-	uFnIsRep_Right->iNative = 37822;
+	uFnIsRep_Right->iNative = 37820;
 
 	return IsRep_Right_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsRep_Left
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37821])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37819])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28271,13 +28271,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsRep_Left(EUE_PLAYER_ID Player)
 	uFnIsRep_Left->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRep_Left, &IsRep_Left_Params, nullptr);
 	uFnIsRep_Left->FunctionFlags |= 0x400;
-	uFnIsRep_Left->iNative = 37821;
+	uFnIsRep_Left->iNative = 37819;
 
 	return IsRep_Left_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsRep_Down
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37819])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37817])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28299,13 +28299,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsRep_Down(EUE_PLAYER_ID Player)
 	uFnIsRep_Down->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRep_Down, &IsRep_Down_Params, nullptr);
 	uFnIsRep_Down->FunctionFlags |= 0x400;
-	uFnIsRep_Down->iNative = 37819;
+	uFnIsRep_Down->iNative = 37817;
 
 	return IsRep_Down_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsRep_Up
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37823])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37821])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_OptionalParm | CPF_Parm)
@@ -28327,13 +28327,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsRep_Up(EUE_PLAYER_ID Player)
 	uFnIsRep_Up->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRep_Up, &IsRep_Up_Params, nullptr);
 	uFnIsRep_Up->FunctionFlags |= 0x400;
-	uFnIsRep_Up->iNative = 37823;
+	uFnIsRep_Up->iNative = 37821;
 
 	return IsRep_Up_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.EnableOnUpdateDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36671])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36669])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -28353,13 +28353,13 @@ bool UREDGfxMoviePlayer_Menu_Base::EnableOnUpdateDraw()
 	uFnEnableOnUpdateDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnEnableOnUpdateDraw, &EnableOnUpdateDraw_Params, nullptr);
 	uFnEnableOnUpdateDraw->FunctionFlags |= 0x400;
-	uFnEnableOnUpdateDraw->iNative = 36671;
+	uFnEnableOnUpdateDraw->iNative = 36669;
 
 	return EnableOnUpdateDraw_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsSceneChanging
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37836])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37834])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -28379,13 +28379,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsSceneChanging()
 	uFnIsSceneChanging->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSceneChanging, &IsSceneChanging_Params, nullptr);
 	uFnIsSceneChanging->FunctionFlags |= 0x400;
-	uFnIsSceneChanging->iNative = 37836;
+	uFnIsSceneChanging->iNative = 37834;
 
 	return IsSceneChanging_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.SceneChangeRequest
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39469])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39467])
 // Parameter Info:
 // EUE_SCENE_ID                   SceneID                        (CPF_Parm)
 
@@ -28406,11 +28406,11 @@ void UREDGfxMoviePlayer_Menu_Base::SceneChangeRequest(EUE_SCENE_ID SceneID)
 	uFnSceneChangeRequest->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneChangeRequest, &SceneChangeRequest_Params, nullptr);
 	uFnSceneChangeRequest->FunctionFlags |= 0x400;
-	uFnSceneChangeRequest->iNative = 39469;
+	uFnSceneChangeRequest->iNative = 39467;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.GetMainQuadrant
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37094])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37092])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -28430,13 +28430,13 @@ int32_t UREDGfxMoviePlayer_Menu_Base::GetMainQuadrant()
 	uFnGetMainQuadrant->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMainQuadrant, &GetMainQuadrant_Params, nullptr);
 	uFnGetMainQuadrant->FunctionFlags |= 0x400;
-	uFnGetMainQuadrant->iNative = 37094;
+	uFnGetMainQuadrant->iNative = 37092;
 
 	return GetMainQuadrant_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsEventMode
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37656])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37654])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -28456,13 +28456,13 @@ bool UREDGfxMoviePlayer_Menu_Base::IsEventMode()
 	uFnIsEventMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsEventMode, &IsEventMode_Params, nullptr);
 	uFnIsEventMode->FunctionFlags |= 0x400;
-	uFnIsEventMode->iNative = 37656;
+	uFnIsEventMode->iNative = 37654;
 
 	return IsEventMode_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.SetNewChallengerEnableFlag
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39782])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39780])
 // Parameter Info:
 // uint32_t                       flag                           (CPF_Parm)
 
@@ -28483,7 +28483,7 @@ void UREDGfxMoviePlayer_Menu_Base::SetNewChallengerEnableFlag(bool flag)
 	uFnSetNewChallengerEnableFlag->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetNewChallengerEnableFlag, &SetNewChallengerEnableFlag_Params, nullptr);
 	uFnSetNewChallengerEnableFlag->FunctionFlags |= 0x400;
-	uFnSetNewChallengerEnableFlag->iNative = 39782;
+	uFnSetNewChallengerEnableFlag->iNative = 39780;
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Initialize
@@ -28510,7 +28510,7 @@ void UREDGfxMoviePlayer_Menu_Base::Initialize()
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsEditor
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[13918])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[13916])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -28530,7 +28530,7 @@ bool UREDGfxMoviePlayer_Menu_Base::IsEditor()
 	uFnIsEditor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsEditor, &IsEditor_Params, nullptr);
 	uFnIsEditor->FunctionFlags |= 0x400;
-	uFnIsEditor->iNative = 13918;
+	uFnIsEditor->iNative = 13916;
 
 	return IsEditor_Params.ReturnValue;
 };
@@ -28681,7 +28681,7 @@ void UMenu_DebugCharaSelect::OnInitialize()
 };
 
 // Function REDGame.Menu_DebugCharaSelect.UpdateDrawMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40651])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
 // Parameter Info:
 
 void UMenu_DebugCharaSelect::UpdateDrawMenu()
@@ -28700,11 +28700,11 @@ void UMenu_DebugCharaSelect::UpdateDrawMenu()
 	uFnUpdateDrawMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawMenu, &UpdateDrawMenu_Params, nullptr);
 	uFnUpdateDrawMenu->FunctionFlags |= 0x400;
-	uFnUpdateDrawMenu->iNative = 40651;
+	uFnUpdateDrawMenu->iNative = 40649;
 };
 
 // Function REDGame.Menu_DebugCharaSelect.UpdateMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40782])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40780])
 // Parameter Info:
 
 void UMenu_DebugCharaSelect::UpdateMenu()
@@ -28723,11 +28723,11 @@ void UMenu_DebugCharaSelect::UpdateMenu()
 	uFnUpdateMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMenu, &UpdateMenu_Params, nullptr);
 	uFnUpdateMenu->FunctionFlags |= 0x400;
-	uFnUpdateMenu->iNative = 40782;
+	uFnUpdateMenu->iNative = 40780;
 };
 
 // Function REDGame.Menu_DebugCharaSelect.FinishMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36862])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36860])
 // Parameter Info:
 
 void UMenu_DebugCharaSelect::FinishMenu()
@@ -28746,11 +28746,11 @@ void UMenu_DebugCharaSelect::FinishMenu()
 	uFnFinishMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFinishMenu, &FinishMenu_Params, nullptr);
 	uFnFinishMenu->FunctionFlags |= 0x400;
-	uFnFinishMenu->iNative = 36862;
+	uFnFinishMenu->iNative = 36860;
 };
 
 // Function REDGame.Menu_DebugCharaSelect.InitMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37538])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37536])
 // Parameter Info:
 
 void UMenu_DebugCharaSelect::InitMenu()
@@ -28769,7 +28769,7 @@ void UMenu_DebugCharaSelect::InitMenu()
 	uFnInitMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitMenu, &InitMenu_Params, nullptr);
 	uFnInitMenu->FunctionFlags |= 0x400;
-	uFnInitMenu->iNative = 37538;
+	uFnInitMenu->iNative = 37536;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuBriefing.OnDrawUpdate
@@ -28832,7 +28832,7 @@ void UREDGfxMoviePlayer_MenuBriefing::OnInitialize()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuBriefing.UpdateDrawMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40651])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuBriefing::UpdateDrawMenu()
@@ -28851,11 +28851,11 @@ void UREDGfxMoviePlayer_MenuBriefing::UpdateDrawMenu()
 	uFnUpdateDrawMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawMenu, &UpdateDrawMenu_Params, nullptr);
 	uFnUpdateDrawMenu->FunctionFlags |= 0x400;
-	uFnUpdateDrawMenu->iNative = 40651;
+	uFnUpdateDrawMenu->iNative = 40649;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuBriefing.UpdateMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40782])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40780])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuBriefing::UpdateMenu()
@@ -28874,11 +28874,11 @@ void UREDGfxMoviePlayer_MenuBriefing::UpdateMenu()
 	uFnUpdateMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMenu, &UpdateMenu_Params, nullptr);
 	uFnUpdateMenu->FunctionFlags |= 0x400;
-	uFnUpdateMenu->iNative = 40782;
+	uFnUpdateMenu->iNative = 40780;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuBriefing.InitMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37538])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37536])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuBriefing::InitMenu()
@@ -28897,11 +28897,11 @@ void UREDGfxMoviePlayer_MenuBriefing::InitMenu()
 	uFnInitMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitMenu, &InitMenu_Params, nullptr);
 	uFnInitMenu->FunctionFlags |= 0x400;
-	uFnInitMenu->iNative = 37538;
+	uFnInitMenu->iNative = 37536;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.DebugGetCharaModelOffset
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36422])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36420])
 // Parameter Info:
 // struct FVector                 pos                            (CPF_Parm | CPF_OutParm)
 // float                          Scale                          (CPF_Parm | CPF_OutParm)
@@ -28924,14 +28924,14 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::DebugGetCharaModelOffset(struct FVe
 	uFnDebugGetCharaModelOffset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDebugGetCharaModelOffset, &DebugGetCharaModelOffset_Params, nullptr);
 	uFnDebugGetCharaModelOffset->FunctionFlags |= 0x400;
-	uFnDebugGetCharaModelOffset->iNative = 36422;
+	uFnDebugGetCharaModelOffset->iNative = 36420;
 
 	memcpy_s(&pos, sizeof(pos), &DebugGetCharaModelOffset_Params.pos, sizeof(DebugGetCharaModelOffset_Params.pos));
 	memcpy_s(&Scale, sizeof(Scale), &DebugGetCharaModelOffset_Params.Scale, sizeof(DebugGetCharaModelOffset_Params.Scale));
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.UpdateDrawNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40652])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40650])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuCharaSelectBase::UpdateDrawNative()
@@ -28950,11 +28950,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::UpdateDrawNative()
 	uFnUpdateDrawNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawNative, &UpdateDrawNative_Params, nullptr);
 	uFnUpdateDrawNative->FunctionFlags |= 0x400;
-	uFnUpdateDrawNative->iNative = 40652;
+	uFnUpdateDrawNative->iNative = 40650;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.UpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40790])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40788])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuCharaSelectBase::UpdateNative()
@@ -28973,11 +28973,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::UpdateNative()
 	uFnUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateNative, &UpdateNative_Params, nullptr);
 	uFnUpdateNative->FunctionFlags |= 0x400;
-	uFnUpdateNative->iNative = 40790;
+	uFnUpdateNative->iNative = 40788;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuCharaSelectBase::InitializeNative()
@@ -28996,11 +28996,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsNewQuestExist
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37748])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37746])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -29022,13 +29022,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsNewQuestExist(EUE_PLAYER_ID Playe
 	uFnIsNewQuestExist->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsNewQuestExist, &IsNewQuestExist_Params, nullptr);
 	uFnIsNewQuestExist->FunctionFlags |= 0x400;
-	uFnIsNewQuestExist->iNative = 37748;
+	uFnIsNewQuestExist->iNative = 37746;
 
 	return IsNewQuestExist_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.CharaID_Int
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36146])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36144])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -29050,13 +29050,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::CharaID_Int(const class FString&
 	uFnCharaID_Int->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCharaID_Int, &CharaID_Int_Params, nullptr);
 	uFnCharaID_Int->FunctionFlags |= 0x400;
-	uFnCharaID_Int->iNative = 36146;
+	uFnCharaID_Int->iNative = 36144;
 
 	return CharaID_Int_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMysetData
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37115])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37113])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // struct FCharaSel_MysetData     mySetData                      (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -29079,13 +29079,13 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::GetMysetData(EUE_PLAYER_ID Player, 
 	uFnGetMysetData->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMysetData, &GetMysetData_Params, nullptr);
 	uFnGetMysetData->FunctionFlags |= 0x400;
-	uFnGetMysetData->iNative = 37115;
+	uFnGetMysetData->iNative = 37113;
 
 	memcpy_s(&mySetData, sizeof(mySetData), &GetMysetData_Params.mySetData, sizeof(GetMysetData_Params.mySetData));
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetCardStyleType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37016])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37014])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -29107,13 +29107,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetCardStyleType(EUE_PLAYER_ID P
 	uFnGetCardStyleType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCardStyleType, &GetCardStyleType_Params, nullptr);
 	uFnGetCardStyleType->FunctionFlags |= 0x400;
-	uFnGetCardStyleType->iNative = 37016;
+	uFnGetCardStyleType->iNative = 37014;
 
 	return GetCardStyleType_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SetCardStyleType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39704])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39702])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // int32_t                        Type                           (CPF_Parm)
@@ -29136,11 +29136,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::SetCardStyleType(EUE_PLAYER_ID Play
 	uFnSetCardStyleType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetCardStyleType, &SetCardStyleType_Params, nullptr);
 	uFnSetCardStyleType->FunctionFlags |= 0x400;
-	uFnSetCardStyleType->iNative = 39704;
+	uFnSetCardStyleType->iNative = 39702;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsSkipAll
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37860])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37858])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -29162,13 +29162,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsSkipAll(EUE_PLAYER_ID Player)
 	uFnIsSkipAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSkipAll, &IsSkipAll_Params, nullptr);
 	uFnIsSkipAll->FunctionFlags |= 0x400;
-	uFnIsSkipAll->iNative = 37860;
+	uFnIsSkipAll->iNative = 37858;
 
 	return IsSkipAll_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.PopUpTimer_OpenOK
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39073])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39071])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -29196,7 +29196,7 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::PopUpTimer_OpenOK(EUE_PLAYER_ID 
 	uFnPopUpTimer_OpenOK->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUpTimer_OpenOK, &PopUpTimer_OpenOK_Params, nullptr);
 	uFnPopUpTimer_OpenOK->FunctionFlags |= 0x400;
-	uFnPopUpTimer_OpenOK->iNative = 39073;
+	uFnPopUpTimer_OpenOK->iNative = 39071;
 
 	return PopUpTimer_OpenOK_Params.ReturnValue;
 };
@@ -29223,7 +29223,7 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::eventExternalMOMSetEnemyCursor(cons
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMBonus
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37728])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37726])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -29245,13 +29245,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsMOMBonus(EUE_PLAYER_ID Player)
 	uFnIsMOMBonus->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMOMBonus, &IsMOMBonus_Params, nullptr);
 	uFnIsMOMBonus->FunctionFlags |= 0x400;
-	uFnIsMOMBonus->iNative = 37728;
+	uFnIsMOMBonus->iNative = 37726;
 
 	return IsMOMBonus_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMSelectableChara
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37734])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37732])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -29273,13 +29273,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsMOMSelectableChara(const class FS
 	uFnIsMOMSelectableChara->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMOMSelectableChara, &IsMOMSelectableChara_Params, nullptr);
 	uFnIsMOMSelectableChara->FunctionFlags |= 0x400;
-	uFnIsMOMSelectableChara->iNative = 37734;
+	uFnIsMOMSelectableChara->iNative = 37732;
 
 	return IsMOMSelectableChara_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMTrigOK
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37737])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37735])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -29301,13 +29301,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsMOMTrigOK(EUE_PLAYER_ID Player)
 	uFnIsMOMTrigOK->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMOMTrigOK, &IsMOMTrigOK_Params, nullptr);
 	uFnIsMOMTrigOK->FunctionFlags |= 0x400;
-	uFnIsMOMTrigOK->iNative = 37737;
+	uFnIsMOMTrigOK->iNative = 37735;
 
 	return IsMOMTrigOK_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMSetPresetType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38403])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38401])
 // Parameter Info:
 // int32_t                        Type                           (CPF_Parm)
 
@@ -29328,11 +29328,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMSetPresetType(int32_t Type)
 	uFnMOMSetPresetType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMSetPresetType, &MOMSetPresetType_Params, nullptr);
 	uFnMOMSetPresetType->FunctionFlags |= 0x400;
-	uFnMOMSetPresetType->iNative = 38403;
+	uFnMOMSetPresetType->iNative = 38401;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMOMStarType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37113])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37111])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -29354,13 +29354,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetMOMStarType(const class FStri
 	uFnGetMOMStarType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMOMStarType, &GetMOMStarType_Params, nullptr);
 	uFnGetMOMStarType->FunctionFlags |= 0x400;
-	uFnGetMOMStarType->iNative = 37113;
+	uFnGetMOMStarType->iNative = 37111;
 
 	return GetMOMStarType_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMGetMedalYama
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[38384])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[38382])
 // Parameter Info:
 // float                          baseVal                        (CPF_Parm | CPF_OutParm)
 // float                          targetVal                      (CPF_Parm | CPF_OutParm)
@@ -29385,7 +29385,7 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMGetMedalYama(float& baseVal, flo
 	uFnMOMGetMedalYama->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMGetMedalYama, &MOMGetMedalYama_Params, nullptr);
 	uFnMOMGetMedalYama->FunctionFlags |= 0x400;
-	uFnMOMGetMedalYama->iNative = 38384;
+	uFnMOMGetMedalYama->iNative = 38382;
 
 	memcpy_s(&baseVal, sizeof(baseVal), &MOMGetMedalYama_Params.baseVal, sizeof(MOMGetMedalYama_Params.baseVal));
 	memcpy_s(&targetVal, sizeof(targetVal), &MOMGetMedalYama_Params.targetVal, sizeof(MOMGetMedalYama_Params.targetVal));
@@ -29393,7 +29393,7 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMGetMedalYama(float& baseVal, flo
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMGetTimeCount
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38385])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38383])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -29413,13 +29413,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::MOMGetTimeCount()
 	uFnMOMGetTimeCount->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMGetTimeCount, &MOMGetTimeCount_Params, nullptr);
 	uFnMOMGetTimeCount->FunctionFlags |= 0x400;
-	uFnMOMGetTimeCount->iNative = 38385;
+	uFnMOMGetTimeCount->iNative = 38383;
 
 	return MOMGetTimeCount_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMGetBGColorIndex
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38382])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38380])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -29439,13 +29439,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::MOMGetBGColorIndex()
 	uFnMOMGetBGColorIndex->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMGetBGColorIndex, &MOMGetBGColorIndex_Params, nullptr);
 	uFnMOMGetBGColorIndex->FunctionFlags |= 0x400;
-	uFnMOMGetBGColorIndex->iNative = 38382;
+	uFnMOMGetBGColorIndex->iNative = 38380;
 
 	return MOMGetBGColorIndex_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMGetEnemyCharaID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38383])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38381])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -29465,13 +29465,13 @@ class FString UREDGfxMoviePlayer_MenuCharaSelectBase::MOMGetEnemyCharaID()
 	uFnMOMGetEnemyCharaID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMGetEnemyCharaID, &MOMGetEnemyCharaID_Params, nullptr);
 	uFnMOMGetEnemyCharaID->FunctionFlags |= 0x400;
-	uFnMOMGetEnemyCharaID->iNative = 38383;
+	uFnMOMGetEnemyCharaID->iNative = 38381;
 
 	return MOMGetEnemyCharaID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMSetEnemyCharaID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38402])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38400])
 // Parameter Info:
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
 
@@ -29492,11 +29492,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMSetEnemyCharaID(const class FStr
 	uFnMOMSetEnemyCharaID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMSetEnemyCharaID, &MOMSetEnemyCharaID_Params, nullptr);
 	uFnMOMSetEnemyCharaID->FunctionFlags |= 0x400;
-	uFnMOMSetEnemyCharaID->iNative = 38402;
+	uFnMOMSetEnemyCharaID->iNative = 38400;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMStageSelectCancel
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37735])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37733])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -29516,13 +29516,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsMOMStageSelectCancel()
 	uFnIsMOMStageSelectCancel->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMOMStageSelectCancel, &IsMOMStageSelectCancel_Params, nullptr);
 	uFnIsMOMStageSelectCancel->FunctionFlags |= 0x400;
-	uFnIsMOMStageSelectCancel->iNative = 37735;
+	uFnIsMOMStageSelectCancel->iNative = 37733;
 
 	return IsMOMStageSelectCancel_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMStageSelect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38405])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38403])
 // Parameter Info:
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
 
@@ -29543,11 +29543,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMStageSelect(const class FString&
 	uFnMOMStageSelect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMStageSelect, &MOMStageSelect_Params, nullptr);
 	uFnMOMStageSelect->FunctionFlags |= 0x400;
-	uFnMOMStageSelect->iNative = 38405;
+	uFnMOMStageSelect->iNative = 38403;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMMenuCloseAll
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38394])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38392])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMMenuCloseAll()
@@ -29566,11 +29566,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMMenuCloseAll()
 	uFnMOMMenuCloseAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMMenuCloseAll, &MOMMenuCloseAll_Params, nullptr);
 	uFnMOMMenuCloseAll->FunctionFlags |= 0x400;
-	uFnMOMMenuCloseAll->iNative = 38394;
+	uFnMOMMenuCloseAll->iNative = 38392;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMStarted
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37736])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37734])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -29590,13 +29590,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsMOMStarted()
 	uFnIsMOMStarted->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMOMStarted, &IsMOMStarted_Params, nullptr);
 	uFnIsMOMStarted->FunctionFlags |= 0x400;
-	uFnIsMOMStarted->iNative = 37736;
+	uFnIsMOMStarted->iNative = 37734;
 
 	return IsMOMStarted_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.FinishMOMHelpDisp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36863])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36861])
 // Parameter Info:
 // ECHARASEL_MOMHELP_FLAG         flag                           (CPF_Parm)
 
@@ -29617,11 +29617,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::FinishMOMHelpDisp(ECHARASEL_MOMHELP
 	uFnFinishMOMHelpDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFinishMOMHelpDisp, &FinishMOMHelpDisp_Params, nullptr);
 	uFnFinishMOMHelpDisp->FunctionFlags |= 0x400;
-	uFnFinishMOMHelpDisp->iNative = 36863;
+	uFnFinishMOMHelpDisp->iNative = 36861;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMHelpDisp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37730])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37728])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // ECHARASEL_MOMHELP_FLAG         flag                           (CPF_Parm)
@@ -29643,13 +29643,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsMOMHelpDisp(ECHARASEL_MOMHELP_FLA
 	uFnIsMOMHelpDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMOMHelpDisp, &IsMOMHelpDisp_Params, nullptr);
 	uFnIsMOMHelpDisp->FunctionFlags |= 0x400;
-	uFnIsMOMHelpDisp->iNative = 37730;
+	uFnIsMOMHelpDisp->iNative = 37728;
 
 	return IsMOMHelpDisp_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMPresetDisp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37733])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37731])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -29669,13 +29669,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsMOMPresetDisp()
 	uFnIsMOMPresetDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMOMPresetDisp, &IsMOMPresetDisp_Params, nullptr);
 	uFnIsMOMPresetDisp->FunctionFlags |= 0x400;
-	uFnIsMOMPresetDisp->iNative = 37733;
+	uFnIsMOMPresetDisp->iNative = 37731;
 
 	return IsMOMPresetDisp_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMSceneDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38397])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38395])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMSceneDraw()
@@ -29694,11 +29694,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMSceneDraw()
 	uFnMOMSceneDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMSceneDraw, &MOMSceneDraw_Params, nullptr);
 	uFnMOMSceneDraw->FunctionFlags |= 0x400;
-	uFnMOMSceneDraw->iNative = 38397;
+	uFnMOMSceneDraw->iNative = 38395;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMSceneUpdate
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38399])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38397])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMSceneUpdate()
@@ -29717,11 +29717,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMSceneUpdate()
 	uFnMOMSceneUpdate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMSceneUpdate, &MOMSceneUpdate_Params, nullptr);
 	uFnMOMSceneUpdate->FunctionFlags |= 0x400;
-	uFnMOMSceneUpdate->iNative = 38399;
+	uFnMOMSceneUpdate->iNative = 38397;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMSceneInit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38398])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38396])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMSceneInit()
@@ -29740,11 +29740,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::MOMSceneInit()
 	uFnMOMSceneInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOMSceneInit, &MOMSceneInit_Params, nullptr);
 	uFnMOMSceneInit->FunctionFlags |= 0x400;
-	uFnMOMSceneInit->iNative = 38398;
+	uFnMOMSceneInit->iNative = 38396;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SetupArcadeStoryDrama
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39818])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39816])
 // Parameter Info:
 // EBATTLE_DRAMA_ID               BattleDramaID                  (CPF_Parm)
 
@@ -29765,11 +29765,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::SetupArcadeStoryDrama(EBATTLE_DRAMA
 	uFnSetupArcadeStoryDrama->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupArcadeStoryDrama, &SetupArcadeStoryDrama_Params, nullptr);
 	uFnSetupArcadeStoryDrama->FunctionFlags |= 0x400;
-	uFnSetupArcadeStoryDrama->iNative = 39818;
+	uFnSetupArcadeStoryDrama->iNative = 39816;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SaveMemoryCostumeID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39460])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39458])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -29794,11 +29794,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::SaveMemoryCostumeID(EUE_PLAYER_ID P
 	uFnSaveMemoryCostumeID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSaveMemoryCostumeID, &SaveMemoryCostumeID_Params, nullptr);
 	uFnSaveMemoryCostumeID->FunctionFlags |= 0x400;
-	uFnSaveMemoryCostumeID->iNative = 39460;
+	uFnSaveMemoryCostumeID->iNative = 39458;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SaveMemoryStylish
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39461])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39459])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // int32_t                        Stylish                        (CPF_Parm)
@@ -29821,11 +29821,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::SaveMemoryStylish(EUE_PLAYER_ID Pla
 	uFnSaveMemoryStylish->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSaveMemoryStylish, &SaveMemoryStylish_Params, nullptr);
 	uFnSaveMemoryStylish->FunctionFlags |= 0x400;
-	uFnSaveMemoryStylish->iNative = 39461;
+	uFnSaveMemoryStylish->iNative = 39459;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryCostumeID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37101])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37099])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -29849,13 +29849,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetMemoryCostumeID(EUE_PLAYER_ID
 	uFnGetMemoryCostumeID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMemoryCostumeID, &GetMemoryCostumeID_Params, nullptr);
 	uFnGetMemoryCostumeID->FunctionFlags |= 0x400;
-	uFnGetMemoryCostumeID->iNative = 37101;
+	uFnGetMemoryCostumeID->iNative = 37099;
 
 	return GetMemoryCostumeID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryStylish
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37102])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37100])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -29877,13 +29877,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetMemoryStylish(EUE_PLAYER_ID P
 	uFnGetMemoryStylish->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMemoryStylish, &GetMemoryStylish_Params, nullptr);
 	uFnGetMemoryStylish->FunctionFlags |= 0x400;
-	uFnGetMemoryStylish->iNative = 37102;
+	uFnGetMemoryStylish->iNative = 37100;
 
 	return GetMemoryStylish_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SaveMemoryBGIDAndBGMID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39458])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39456])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // EUE_BG_ID                      bg_id                          (CPF_Parm)
@@ -29908,11 +29908,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::SaveMemoryBGIDAndBGMID(EUE_PLAYER_I
 	uFnSaveMemoryBGIDAndBGMID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSaveMemoryBGIDAndBGMID, &SaveMemoryBGIDAndBGMID_Params, nullptr);
 	uFnSaveMemoryBGIDAndBGMID->FunctionFlags |= 0x400;
-	uFnSaveMemoryBGIDAndBGMID->iNative = 39458;
+	uFnSaveMemoryBGIDAndBGMID->iNative = 39456;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SaveMemoryCharaIDAndColorID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39459])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39457])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -29937,11 +29937,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::SaveMemoryCharaIDAndColorID(EUE_PLA
 	uFnSaveMemoryCharaIDAndColorID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSaveMemoryCharaIDAndColorID, &SaveMemoryCharaIDAndColorID_Params, nullptr);
 	uFnSaveMemoryCharaIDAndColorID->FunctionFlags |= 0x400;
-	uFnSaveMemoryCharaIDAndColorID->iNative = 39459;
+	uFnSaveMemoryCharaIDAndColorID->iNative = 39457;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryBGMID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37098])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37096])
 // Parameter Info:
 // EUE_BGM_ID                     ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -29963,13 +29963,13 @@ EUE_BGM_ID UREDGfxMoviePlayer_MenuCharaSelectBase::GetMemoryBGMID(EUE_PLAYER_ID 
 	uFnGetMemoryBGMID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMemoryBGMID, &GetMemoryBGMID_Params, nullptr);
 	uFnGetMemoryBGMID->FunctionFlags |= 0x400;
-	uFnGetMemoryBGMID->iNative = 37098;
+	uFnGetMemoryBGMID->iNative = 37096;
 
 	return static_cast<EUE_BGM_ID>(GetMemoryBGMID_Params.ReturnValue);
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryBGID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37097])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37095])
 // Parameter Info:
 // EUE_BG_ID                      ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -29991,13 +29991,13 @@ EUE_BG_ID UREDGfxMoviePlayer_MenuCharaSelectBase::GetMemoryBGID(EUE_PLAYER_ID Pl
 	uFnGetMemoryBGID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMemoryBGID, &GetMemoryBGID_Params, nullptr);
 	uFnGetMemoryBGID->FunctionFlags |= 0x400;
-	uFnGetMemoryBGID->iNative = 37097;
+	uFnGetMemoryBGID->iNative = 37095;
 
 	return static_cast<EUE_BG_ID>(GetMemoryBGID_Params.ReturnValue);
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryColorID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37100])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37098])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -30021,13 +30021,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetMemoryColorID(EUE_PLAYER_ID P
 	uFnGetMemoryColorID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMemoryColorID, &GetMemoryColorID_Params, nullptr);
 	uFnGetMemoryColorID->FunctionFlags |= 0x400;
-	uFnGetMemoryColorID->iNative = 37100;
+	uFnGetMemoryColorID->iNative = 37098;
 
 	return GetMemoryColorID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryCharaID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37099])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37097])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -30049,13 +30049,13 @@ class FString UREDGfxMoviePlayer_MenuCharaSelectBase::GetMemoryCharaID(EUE_PLAYE
 	uFnGetMemoryCharaID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMemoryCharaID, &GetMemoryCharaID_Params, nullptr);
 	uFnGetMemoryCharaID->FunctionFlags |= 0x400;
-	uFnGetMemoryCharaID->iNative = 37099;
+	uFnGetMemoryCharaID->iNative = 37097;
 
 	return GetMemoryCharaID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsKeyConfig_Active
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37697])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37695])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -30077,13 +30077,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsKeyConfig_Active(EUE_PLAYER_ID Pl
 	uFnIsKeyConfig_Active->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsKeyConfig_Active, &IsKeyConfig_Active_Params, nullptr);
 	uFnIsKeyConfig_Active->FunctionFlags |= 0x400;
-	uFnIsKeyConfig_Active->iNative = 37697;
+	uFnIsKeyConfig_Active->iNative = 37695;
 
 	return IsKeyConfig_Active_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.KeyConfig_GetType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37953])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37951])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -30105,13 +30105,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::KeyConfig_GetType(EUE_PLAYER_ID 
 	uFnKeyConfig_GetType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnKeyConfig_GetType, &KeyConfig_GetType_Params, nullptr);
 	uFnKeyConfig_GetType->FunctionFlags |= 0x400;
-	uFnKeyConfig_GetType->iNative = 37953;
+	uFnKeyConfig_GetType->iNative = 37951;
 
 	return KeyConfig_GetType_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.KeyConfig_Open
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37954])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37952])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 
@@ -30132,11 +30132,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::KeyConfig_Open(EUE_PLAYER_ID Player
 	uFnKeyConfig_Open->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnKeyConfig_Open, &KeyConfig_Open_Params, nullptr);
 	uFnKeyConfig_Open->FunctionFlags |= 0x400;
-	uFnKeyConfig_Open->iNative = 37954;
+	uFnKeyConfig_Open->iNative = 37952;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.Network_IsStylish
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38732])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38730])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -30164,13 +30164,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::Network_IsStylish(const class FStri
 	uFnNetwork_IsStylish->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNetwork_IsStylish, &Network_IsStylish_Params, nullptr);
 	uFnNetwork_IsStylish->FunctionFlags |= 0x400;
-	uFnNetwork_IsStylish->iNative = 38732;
+	uFnNetwork_IsStylish->iNative = 38730;
 
 	return Network_IsStylish_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.Network_GetCostumeID
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38731])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38729])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -30198,13 +30198,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::Network_GetCostumeID(const class
 	uFnNetwork_GetCostumeID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNetwork_GetCostumeID, &Network_GetCostumeID_Params, nullptr);
 	uFnNetwork_GetCostumeID->FunctionFlags |= 0x400;
-	uFnNetwork_GetCostumeID->iNative = 38731;
+	uFnNetwork_GetCostumeID->iNative = 38729;
 
 	return Network_GetCostumeID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.Network_GetColorID
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38730])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38728])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -30232,13 +30232,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::Network_GetColorID(const class F
 	uFnNetwork_GetColorID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNetwork_GetColorID, &Network_GetColorID_Params, nullptr);
 	uFnNetwork_GetColorID->FunctionFlags |= 0x400;
-	uFnNetwork_GetColorID->iNative = 38730;
+	uFnNetwork_GetColorID->iNative = 38728;
 
 	return Network_GetColorID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.Network_SetMyChara
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38733])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[38731])
 // Parameter Info:
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
 // int32_t                        ColorID                        (CPF_Parm)
@@ -30277,11 +30277,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::Network_SetMyChara(const class FStr
 	uFnNetwork_SetMyChara->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNetwork_SetMyChara, &Network_SetMyChara_Params, nullptr);
 	uFnNetwork_SetMyChara->FunctionFlags |= 0x400;
-	uFnNetwork_SetMyChara->iNative = 38733;
+	uFnNetwork_SetMyChara->iNative = 38731;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsEvent_StageSelectLock
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37655])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37653])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -30301,13 +30301,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsEvent_StageSelectLock()
 	uFnIsEvent_StageSelectLock->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsEvent_StageSelectLock, &IsEvent_StageSelectLock_Params, nullptr);
 	uFnIsEvent_StageSelectLock->FunctionFlags |= 0x400;
-	uFnIsEvent_StageSelectLock->iNative = 37655;
+	uFnIsEvent_StageSelectLock->iNative = 37653;
 
 	return IsEvent_StageSelectLock_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsEvent_StageSelectEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37654])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37652])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -30327,13 +30327,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsEvent_StageSelectEnable()
 	uFnIsEvent_StageSelectEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsEvent_StageSelectEnable, &IsEvent_StageSelectEnable_Params, nullptr);
 	uFnIsEvent_StageSelectEnable->FunctionFlags |= 0x400;
-	uFnIsEvent_StageSelectEnable->iNative = 37654;
+	uFnIsEvent_StageSelectEnable->iNative = 37652;
 
 	return IsEvent_StageSelectEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.TrialGetAchievementRate
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40286])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40284])
 // Parameter Info:
 // int32_t                        Num                            (CPF_Parm | CPF_OutParm)
 // int32_t                        numAll                         (CPF_Parm | CPF_OutParm)
@@ -30356,14 +30356,14 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::TrialGetAchievementRate(int32_t& Nu
 	uFnTrialGetAchievementRate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTrialGetAchievementRate, &TrialGetAchievementRate_Params, nullptr);
 	uFnTrialGetAchievementRate->FunctionFlags |= 0x400;
-	uFnTrialGetAchievementRate->iNative = 40286;
+	uFnTrialGetAchievementRate->iNative = 40284;
 
 	memcpy_s(&Num, sizeof(Num), &TrialGetAchievementRate_Params.Num, sizeof(TrialGetAchievementRate_Params.Num));
 	memcpy_s(&numAll, sizeof(numAll), &TrialGetAchievementRate_Params.numAll, sizeof(TrialGetAchievementRate_Params.numAll));
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.TrialGetEnemyChara
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40287])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40285])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -30383,13 +30383,13 @@ class FString UREDGfxMoviePlayer_MenuCharaSelectBase::TrialGetEnemyChara()
 	uFnTrialGetEnemyChara->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTrialGetEnemyChara, &TrialGetEnemyChara_Params, nullptr);
 	uFnTrialGetEnemyChara->FunctionFlags |= 0x400;
-	uFnTrialGetEnemyChara->iNative = 40287;
+	uFnTrialGetEnemyChara->iNative = 40285;
 
 	return TrialGetEnemyChara_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.TrialSelectNG
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40289])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40287])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -30409,13 +30409,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::TrialSelectNG()
 	uFnTrialSelectNG->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTrialSelectNG, &TrialSelectNG_Params, nullptr);
 	uFnTrialSelectNG->FunctionFlags |= 0x400;
-	uFnTrialSelectNG->iNative = 40289;
+	uFnTrialSelectNG->iNative = 40287;
 
 	return TrialSelectNG_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.TrialSelectOK
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40290])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40288])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -30435,13 +30435,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::TrialSelectOK()
 	uFnTrialSelectOK->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTrialSelectOK, &TrialSelectOK_Params, nullptr);
 	uFnTrialSelectOK->FunctionFlags |= 0x400;
-	uFnTrialSelectOK->iNative = 40290;
+	uFnTrialSelectOK->iNative = 40288;
 
 	return TrialSelectOK_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.TrialSelectOpen
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40291])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40289])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -30464,11 +30464,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::TrialSelectOpen(EUE_PLAYER_ID Playe
 	uFnTrialSelectOpen->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTrialSelectOpen, &TrialSelectOpen_Params, nullptr);
 	uFnTrialSelectOpen->FunctionFlags |= 0x400;
-	uFnTrialSelectOpen->iNative = 40291;
+	uFnTrialSelectOpen->iNative = 40289;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetColorMax
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37024])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37022])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -30488,13 +30488,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetColorMax()
 	uFnGetColorMax->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetColorMax, &GetColorMax_Params, nullptr);
 	uFnGetColorMax->FunctionFlags |= 0x400;
-	uFnGetColorMax->iNative = 37024;
+	uFnGetColorMax->iNative = 37022;
 
 	return GetColorMax_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetVicinityColor
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37193])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37191])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
@@ -30527,7 +30527,7 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::GetVicinityColor(EUE_PLAYER_ID Play
 	uFnGetVicinityColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVicinityColor, &GetVicinityColor_Params, nullptr);
 	uFnGetVicinityColor->FunctionFlags |= 0x400;
-	uFnGetVicinityColor->iNative = 37193;
+	uFnGetVicinityColor->iNative = 37191;
 
 	memcpy_s(&prevprev, sizeof(prevprev), &GetVicinityColor_Params.prevprev, sizeof(GetVicinityColor_Params.prevprev));
 	memcpy_s(&prev, sizeof(prev), &GetVicinityColor_Params.prev, sizeof(GetVicinityColor_Params.prev));
@@ -30536,7 +30536,7 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::GetVicinityColor(EUE_PLAYER_ID Play
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsForbiddenCustomMenuOK
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37668])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37666])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -30558,13 +30558,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsForbiddenCustomMenuOK(EUE_PLAYER_
 	uFnIsForbiddenCustomMenuOK->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsForbiddenCustomMenuOK, &IsForbiddenCustomMenuOK_Params, nullptr);
 	uFnIsForbiddenCustomMenuOK->FunctionFlags |= 0x400;
-	uFnIsForbiddenCustomMenuOK->iNative = 37668;
+	uFnIsForbiddenCustomMenuOK->iNative = 37666;
 
 	return IsForbiddenCustomMenuOK_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.CloseCustomMenu
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[36231])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[36229])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // uint32_t                       bFast                          (CPF_OptionalParm | CPF_Parm)
@@ -30587,11 +30587,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::CloseCustomMenu(EUE_PLAYER_ID Playe
 	uFnCloseCustomMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCloseCustomMenu, &CloseCustomMenu_Params, nullptr);
 	uFnCloseCustomMenu->FunctionFlags |= 0x400;
-	uFnCloseCustomMenu->iNative = 36231;
+	uFnCloseCustomMenu->iNative = 36229;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SetCustomMenuVal_KeyType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39723])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39721])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // int32_t                        val                            (CPF_Parm)
@@ -30614,11 +30614,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::SetCustomMenuVal_KeyType(EUE_PLAYER
 	uFnSetCustomMenuVal_KeyType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetCustomMenuVal_KeyType, &SetCustomMenuVal_KeyType_Params, nullptr);
 	uFnSetCustomMenuVal_KeyType->FunctionFlags |= 0x400;
-	uFnSetCustomMenuVal_KeyType->iNative = 39723;
+	uFnSetCustomMenuVal_KeyType->iNative = 39721;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SetCustomMenuVal_Color
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39722])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39720])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // int32_t                        val                            (CPF_Parm)
@@ -30641,11 +30641,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::SetCustomMenuVal_Color(EUE_PLAYER_I
 	uFnSetCustomMenuVal_Color->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetCustomMenuVal_Color, &SetCustomMenuVal_Color_Params, nullptr);
 	uFnSetCustomMenuVal_Color->FunctionFlags |= 0x400;
-	uFnSetCustomMenuVal_Color->iNative = 39722;
+	uFnSetCustomMenuVal_Color->iNative = 39720;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetCustomMenuVal_KeyType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37042])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37040])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -30667,13 +30667,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetCustomMenuVal_KeyType(EUE_PLA
 	uFnGetCustomMenuVal_KeyType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCustomMenuVal_KeyType, &GetCustomMenuVal_KeyType_Params, nullptr);
 	uFnGetCustomMenuVal_KeyType->FunctionFlags |= 0x400;
-	uFnGetCustomMenuVal_KeyType->iNative = 37042;
+	uFnGetCustomMenuVal_KeyType->iNative = 37040;
 
 	return GetCustomMenuVal_KeyType_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetCustomMenuVal_Color
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37041])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37039])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -30695,13 +30695,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetCustomMenuVal_Color(EUE_PLAYE
 	uFnGetCustomMenuVal_Color->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCustomMenuVal_Color, &GetCustomMenuVal_Color_Params, nullptr);
 	uFnGetCustomMenuVal_Color->FunctionFlags |= 0x400;
-	uFnGetCustomMenuVal_Color->iNative = 37041;
+	uFnGetCustomMenuVal_Color->iNative = 37039;
 
 	return GetCustomMenuVal_Color_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.OpenCustomMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38829])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38827])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // EUE_PLAYER_ID                  controlPlayer                  (CPF_Parm)
@@ -30726,11 +30726,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::OpenCustomMenu(EUE_PLAYER_ID Player
 	uFnOpenCustomMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenCustomMenu, &OpenCustomMenu_Params, nullptr);
 	uFnOpenCustomMenu->FunctionFlags |= 0x400;
-	uFnOpenCustomMenu->iNative = 38829;
+	uFnOpenCustomMenu->iNative = 38827;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.RequestInfoBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39369])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39367])
 // Parameter Info:
 // class FString                  TextID                         (CPF_Parm | CPF_NeedCtorLink)
 
@@ -30751,11 +30751,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::RequestInfoBar(const class FString&
 	uFnRequestInfoBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRequestInfoBar, &RequestInfoBar_Params, nullptr);
 	uFnRequestInfoBar->FunctionFlags |= 0x400;
-	uFnRequestInfoBar->iNative = 39369;
+	uFnRequestInfoBar->iNative = 39367;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.DelayGarbageCollection
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36525])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36523])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuCharaSelectBase::DelayGarbageCollection()
@@ -30774,7 +30774,7 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::DelayGarbageCollection()
 	uFnDelayGarbageCollection->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDelayGarbageCollection, &DelayGarbageCollection_Params, nullptr);
 	uFnDelayGarbageCollection->FunctionFlags |= 0x400;
-	uFnDelayGarbageCollection->iNative = 36525;
+	uFnDelayGarbageCollection->iNative = 36523;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetSelectCharaID
@@ -30802,7 +30802,7 @@ class FString UREDGfxMoviePlayer_MenuCharaSelectBase::eventGetSelectCharaID(EUE_
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.UpdateBookKeepingInfo
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40605])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40603])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 
@@ -30823,11 +30823,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::UpdateBookKeepingInfo(EUE_PLAYER_ID
 	uFnUpdateBookKeepingInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateBookKeepingInfo, &UpdateBookKeepingInfo_Params, nullptr);
 	uFnUpdateBookKeepingInfo->FunctionFlags |= 0x400;
-	uFnUpdateBookKeepingInfo->iNative = 40605;
+	uFnUpdateBookKeepingInfo->iNative = 40603;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.UpdateCardInfoFromGameCommon
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40615])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40613])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuCharaSelectBase::UpdateCardInfoFromGameCommon()
@@ -30846,11 +30846,11 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::UpdateCardInfoFromGameCommon()
 	uFnUpdateCardInfoFromGameCommon->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateCardInfoFromGameCommon, &UpdateCardInfoFromGameCommon_Params, nullptr);
 	uFnUpdateCardInfoFromGameCommon->FunctionFlags |= 0x400;
-	uFnUpdateCardInfoFromGameCommon->iNative = 40615;
+	uFnUpdateCardInfoFromGameCommon->iNative = 40613;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsSelectableColor
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37844])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37842])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -30876,13 +30876,13 @@ bool UREDGfxMoviePlayer_MenuCharaSelectBase::IsSelectableColor(EUE_PLAYER_ID Pla
 	uFnIsSelectableColor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSelectableColor, &IsSelectableColor_Params, nullptr);
 	uFnIsSelectableColor->FunctionFlags |= 0x400;
-	uFnIsSelectableColor->iNative = 37844;
+	uFnIsSelectableColor->iNative = 37842;
 
 	return IsSelectableColor_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetCostumeFromCard
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37032])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37030])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -30906,13 +30906,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetCostumeFromCard(EUE_PLAYER_ID
 	uFnGetCostumeFromCard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCostumeFromCard, &GetCostumeFromCard_Params, nullptr);
 	uFnGetCostumeFromCard->FunctionFlags |= 0x400;
-	uFnGetCostumeFromCard->iNative = 37032;
+	uFnGetCostumeFromCard->iNative = 37030;
 
 	return GetCostumeFromCard_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetColorFromCard
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37022])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37020])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -30936,7 +30936,7 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetColorFromCard(EUE_PLAYER_ID P
 	uFnGetColorFromCard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetColorFromCard, &GetColorFromCard_Params, nullptr);
 	uFnGetColorFromCard->FunctionFlags |= 0x400;
-	uFnGetColorFromCard->iNative = 37022;
+	uFnGetColorFromCard->iNative = 37020;
 
 	return GetColorFromCard_Params.ReturnValue;
 };
@@ -30961,7 +30961,7 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::CardFadeOut()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.InitCardLoad
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37512])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37510])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 
@@ -30982,7 +30982,7 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::InitCardLoad(EUE_PLAYER_ID Player)
 	uFnInitCardLoad->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitCardLoad, &InitCardLoad_Params, nullptr);
 	uFnInitCardLoad->FunctionFlags |= 0x400;
-	uFnInitCardLoad->iNative = 37512;
+	uFnInitCardLoad->iNative = 37510;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.CommonSE_Cursor
@@ -31024,7 +31024,7 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::CommonSE_OK()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetKeyAllocationTypeNum
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37080])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37078])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -31044,13 +31044,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetKeyAllocationTypeNum()
 	uFnGetKeyAllocationTypeNum->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetKeyAllocationTypeNum, &GetKeyAllocationTypeNum_Params, nullptr);
 	uFnGetKeyAllocationTypeNum->FunctionFlags |= 0x400;
-	uFnGetKeyAllocationTypeNum->iNative = 37080;
+	uFnGetKeyAllocationTypeNum->iNative = 37078;
 
 	return GetKeyAllocationTypeNum_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetKeyAllocationType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37079])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37077])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -31072,13 +31072,13 @@ int32_t UREDGfxMoviePlayer_MenuCharaSelectBase::GetKeyAllocationType(EUE_PLAYER_
 	uFnGetKeyAllocationType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetKeyAllocationType, &GetKeyAllocationType_Params, nullptr);
 	uFnGetKeyAllocationType->FunctionFlags |= 0x400;
-	uFnGetKeyAllocationType->iNative = 37079;
+	uFnGetKeyAllocationType->iNative = 37077;
 
 	return GetKeyAllocationType_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SetKeyAllocationType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39762])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39760])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // int32_t                        Type                           (CPF_Parm)
@@ -31101,7 +31101,7 @@ void UREDGfxMoviePlayer_MenuCharaSelectBase::SetKeyAllocationType(EUE_PLAYER_ID 
 	uFnSetKeyAllocationType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetKeyAllocationType, &SetKeyAllocationType_Params, nullptr);
 	uFnSetKeyAllocationType->FunctionFlags |= 0x400;
-	uFnSetKeyAllocationType->iNative = 39762;
+	uFnSetKeyAllocationType->iNative = 39760;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuModeSelect.AS_SetTimer
@@ -31390,7 +31390,7 @@ bool UREDGfxMoviePlayer_MenuModeSelect::CheckGameModeFromTestMode(EUE_GAME_MODE 
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuModeSelect.MOM_GetModeSelectText
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38379])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38377])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -31410,13 +31410,13 @@ class FString UREDGfxMoviePlayer_MenuModeSelect::MOM_GetModeSelectText()
 	uFnMOM_GetModeSelectText->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOM_GetModeSelectText, &MOM_GetModeSelectText_Params, nullptr);
 	uFnMOM_GetModeSelectText->FunctionFlags |= 0x400;
-	uFnMOM_GetModeSelectText->iNative = 38379;
+	uFnMOM_GetModeSelectText->iNative = 38377;
 
 	return MOM_GetModeSelectText_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuModeSelect.CheckGameModeVersion
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36201])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36199])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -31440,13 +31440,13 @@ bool UREDGfxMoviePlayer_MenuModeSelect::CheckGameModeVersion(EUE_PLAYER_ID Playe
 	uFnCheckGameModeVersion->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckGameModeVersion, &CheckGameModeVersion_Params, nullptr);
 	uFnCheckGameModeVersion->FunctionFlags |= 0x400;
-	uFnCheckGameModeVersion->iNative = 36201;
+	uFnCheckGameModeVersion->iNative = 36199;
 
 	return CheckGameModeVersion_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuModeSelect.GetSelectModeFromCard
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37166])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37164])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -31468,13 +31468,13 @@ int32_t UREDGfxMoviePlayer_MenuModeSelect::GetSelectModeFromCard(EUE_PLAYER_ID P
 	uFnGetSelectModeFromCard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSelectModeFromCard, &GetSelectModeFromCard_Params, nullptr);
 	uFnGetSelectModeFromCard->FunctionFlags |= 0x400;
-	uFnGetSelectModeFromCard->iNative = 37166;
+	uFnGetSelectModeFromCard->iNative = 37164;
 
 	return GetSelectModeFromCard_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuModeSelect.SetSelectModeForCard
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39806])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39804])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 // EUE_GAME_MODE                  Mode                           (CPF_Parm)
@@ -31499,7 +31499,7 @@ void UREDGfxMoviePlayer_MenuModeSelect::SetSelectModeForCard(EUE_PLAYER_ID Playe
 	uFnSetSelectModeForCard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetSelectModeForCard, &SetSelectModeForCard_Params, nullptr);
 	uFnSetSelectModeForCard->FunctionFlags |= 0x400;
-	uFnSetSelectModeForCard->iNative = 39806;
+	uFnSetSelectModeForCard->iNative = 39804;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMOMPreset.AS_SetTimer
@@ -31795,7 +31795,7 @@ void UREDGfxMoviePlayer_MenuMOMPreset::OpenMessageBox()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMOMPreset.DrawUpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36607])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36605])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMOMPreset::DrawUpdateNative()
@@ -31814,7 +31814,7 @@ void UREDGfxMoviePlayer_MenuMOMPreset::DrawUpdateNative()
 	uFnDrawUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDrawUpdateNative, &DrawUpdateNative_Params, nullptr);
 	uFnDrawUpdateNative->FunctionFlags |= 0x400;
-	uFnDrawUpdateNative->iNative = 36607;
+	uFnDrawUpdateNative->iNative = 36605;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuQuestList.OnUpdate
@@ -32012,7 +32012,7 @@ bool UREDGfxMoviePlayer_MenuQuestList::Start(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuQuestList.GetQuestList
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37146])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37144])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -32038,7 +32038,7 @@ bool UREDGfxMoviePlayer_MenuQuestList::GetQuestList(EUE_PLAYER_ID Player, bool i
 	uFnGetQuestList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetQuestList, &GetQuestList_Params, nullptr);
 	uFnGetQuestList->FunctionFlags |= 0x400;
-	uFnGetQuestList->iNative = 37146;
+	uFnGetQuestList->iNative = 37144;
 
 	memcpy_s(&outList, sizeof(outList), &GetQuestList_Params.outList, sizeof(GetQuestList_Params.outList));
 
@@ -32679,7 +32679,7 @@ bool UREDGfxMoviePlayer_MenuReadCard::Start(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_ExclusiveError
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36182])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36180])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -32701,13 +32701,13 @@ bool UREDGfxMoviePlayer_MenuReadCard::Check_ExclusiveError(EUE_PLAYER_ID Player)
 	uFnCheck_ExclusiveError->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheck_ExclusiveError, &Check_ExclusiveError_Params, nullptr);
 	uFnCheck_ExclusiveError->FunctionFlags |= 0x400;
-	uFnCheck_ExclusiveError->iNative = 36182;
+	uFnCheck_ExclusiveError->iNative = 36180;
 
 	return Check_ExclusiveError_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_Online
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36183])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36181])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -32727,13 +32727,13 @@ bool UREDGfxMoviePlayer_MenuReadCard::Check_Online()
 	uFnCheck_Online->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheck_Online, &Check_Online_Params, nullptr);
 	uFnCheck_Online->FunctionFlags |= 0x400;
-	uFnCheck_Online->iNative = 36183;
+	uFnCheck_Online->iNative = 36181;
 
 	return Check_Online_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_SingleNode
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36186])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36184])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -32753,13 +32753,13 @@ bool UREDGfxMoviePlayer_MenuReadCard::Check_SingleNode()
 	uFnCheck_SingleNode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheck_SingleNode, &Check_SingleNode_Params, nullptr);
 	uFnCheck_SingleNode->FunctionFlags |= 0x400;
-	uFnCheck_SingleNode->iNative = 36186;
+	uFnCheck_SingleNode->iNative = 36184;
 
 	return Check_SingleNode_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Req_SetupCard
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39347])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39345])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -32783,13 +32783,13 @@ bool UREDGfxMoviePlayer_MenuReadCard::Req_SetupCard(EUE_PLAYER_ID Player, bool i
 	uFnReq_SetupCard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReq_SetupCard, &Req_SetupCard_Params, nullptr);
 	uFnReq_SetupCard->FunctionFlags |= 0x400;
-	uFnReq_SetupCard->iNative = 39347;
+	uFnReq_SetupCard->iNative = 39345;
 
 	return Req_SetupCard_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_EntryCard
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36181])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36179])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -32813,7 +32813,7 @@ bool UREDGfxMoviePlayer_MenuReadCard::Check_EntryCard(EUE_PLAYER_ID Player, int3
 	uFnCheck_EntryCard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheck_EntryCard, &Check_EntryCard_Params, nullptr);
 	uFnCheck_EntryCard->FunctionFlags |= 0x400;
-	uFnCheck_EntryCard->iNative = 36181;
+	uFnCheck_EntryCard->iNative = 36179;
 
 	memcpy_s(&Error, sizeof(Error), &Check_EntryCard_Params.Error, sizeof(Check_EntryCard_Params.Error));
 
@@ -32821,7 +32821,7 @@ bool UREDGfxMoviePlayer_MenuReadCard::Check_EntryCard(EUE_PLAYER_ID Player, int3
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Req_EntryCard
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39344])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39342])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 
@@ -32842,11 +32842,11 @@ void UREDGfxMoviePlayer_MenuReadCard::Req_EntryCard(EUE_PLAYER_ID Player)
 	uFnReq_EntryCard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReq_EntryCard, &Req_EntryCard_Params, nullptr);
 	uFnReq_EntryCard->FunctionFlags |= 0x400;
-	uFnReq_EntryCard->iNative = 39344;
+	uFnReq_EntryCard->iNative = 39342;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_ReadCard
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36184])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36182])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -32872,7 +32872,7 @@ bool UREDGfxMoviePlayer_MenuReadCard::Check_ReadCard(EUE_PLAYER_ID Player, int32
 	uFnCheck_ReadCard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheck_ReadCard, &Check_ReadCard_Params, nullptr);
 	uFnCheck_ReadCard->FunctionFlags |= 0x400;
-	uFnCheck_ReadCard->iNative = 36184;
+	uFnCheck_ReadCard->iNative = 36182;
 
 	memcpy_s(&newCard, sizeof(newCard), &Check_ReadCard_Params.newCard, sizeof(Check_ReadCard_Params.newCard));
 	memcpy_s(&Error, sizeof(Error), &Check_ReadCard_Params.Error, sizeof(Check_ReadCard_Params.Error));
@@ -32881,7 +32881,7 @@ bool UREDGfxMoviePlayer_MenuReadCard::Check_ReadCard(EUE_PLAYER_ID Player, int32
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_ReadCardStart
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36185])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36183])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -32903,13 +32903,13 @@ bool UREDGfxMoviePlayer_MenuReadCard::Check_ReadCardStart(EUE_PLAYER_ID Player)
 	uFnCheck_ReadCardStart->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheck_ReadCardStart, &Check_ReadCardStart_Params, nullptr);
 	uFnCheck_ReadCardStart->FunctionFlags |= 0x400;
-	uFnCheck_ReadCardStart->iNative = 36185;
+	uFnCheck_ReadCardStart->iNative = 36183;
 
 	return Check_ReadCardStart_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Req_ReadCardSkip
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39345])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39343])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 
@@ -32930,11 +32930,11 @@ void UREDGfxMoviePlayer_MenuReadCard::Req_ReadCardSkip(EUE_PLAYER_ID Player)
 	uFnReq_ReadCardSkip->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReq_ReadCardSkip, &Req_ReadCardSkip_Params, nullptr);
 	uFnReq_ReadCardSkip->FunctionFlags |= 0x400;
-	uFnReq_ReadCardSkip->iNative = 39345;
+	uFnReq_ReadCardSkip->iNative = 39343;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Req_ReadCardStart
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39346])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39344])
 // Parameter Info:
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
 
@@ -32955,7 +32955,7 @@ void UREDGfxMoviePlayer_MenuReadCard::Req_ReadCardStart(EUE_PLAYER_ID Player)
 	uFnReq_ReadCardStart->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReq_ReadCardStart, &Req_ReadCardStart_Params, nullptr);
 	uFnReq_ReadCardStart->FunctionFlags |= 0x400;
-	uFnReq_ReadCardStart->iNative = 39346;
+	uFnReq_ReadCardStart->iNative = 39344;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuContinue.SetCountDownTime
@@ -33187,7 +33187,7 @@ void UREDGfxMoviePlayer_MenuDebugMenu::OnInitialize()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuDebugMenu.UpdateDrawDebugMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40650])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40648])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuDebugMenu::UpdateDrawDebugMenu()
@@ -33206,11 +33206,11 @@ void UREDGfxMoviePlayer_MenuDebugMenu::UpdateDrawDebugMenu()
 	uFnUpdateDrawDebugMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawDebugMenu, &UpdateDrawDebugMenu_Params, nullptr);
 	uFnUpdateDrawDebugMenu->FunctionFlags |= 0x400;
-	uFnUpdateDrawDebugMenu->iNative = 40650;
+	uFnUpdateDrawDebugMenu->iNative = 40648;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuDebugMenu.UpdateDebugMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40643])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40641])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuDebugMenu::UpdateDebugMenu()
@@ -33229,11 +33229,11 @@ void UREDGfxMoviePlayer_MenuDebugMenu::UpdateDebugMenu()
 	uFnUpdateDebugMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDebugMenu, &UpdateDebugMenu_Params, nullptr);
 	uFnUpdateDebugMenu->FunctionFlags |= 0x400;
-	uFnUpdateDebugMenu->iNative = 40643;
+	uFnUpdateDebugMenu->iNative = 40641;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuDebugMenu.InitDebugMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37513])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37511])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuDebugMenu::InitDebugMenu()
@@ -33252,7 +33252,7 @@ void UREDGfxMoviePlayer_MenuDebugMenu::InitDebugMenu()
 	uFnInitDebugMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitDebugMenu, &InitDebugMenu_Params, nullptr);
 	uFnInitDebugMenu->FunctionFlags |= 0x400;
-	uFnInitDebugMenu->iNative = 37513;
+	uFnInitDebugMenu->iNative = 37511;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.OnFinalize
@@ -33630,7 +33630,7 @@ int32_t UREDGfxMoviePlayer_MenuGallery::eventGetFactorPrice(int32_t Category, in
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.PopUp_OpenYesNo_Custom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39068])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39066])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -33654,13 +33654,13 @@ int32_t UREDGfxMoviePlayer_MenuGallery::PopUp_OpenYesNo_Custom(EUE_PLAYER_ID Pla
 	uFnPopUp_OpenYesNo_Custom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUp_OpenYesNo_Custom, &PopUp_OpenYesNo_Custom_Params, nullptr);
 	uFnPopUp_OpenYesNo_Custom->FunctionFlags |= 0x400;
-	uFnPopUp_OpenYesNo_Custom->iNative = 39068;
+	uFnPopUp_OpenYesNo_Custom->iNative = 39066;
 
 	return PopUp_OpenYesNo_Custom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.SetupArcadeOPED
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39817])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39815])
 // Parameter Info:
 // EBATTLE_DRAMA_ID               BattleDramaID                  (CPF_Parm)
 
@@ -33681,11 +33681,11 @@ void UREDGfxMoviePlayer_MenuGallery::SetupArcadeOPED(EBATTLE_DRAMA_ID BattleDram
 	uFnSetupArcadeOPED->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupArcadeOPED, &SetupArcadeOPED_Params, nullptr);
 	uFnSetupArcadeOPED->FunctionFlags |= 0x400;
-	uFnSetupArcadeOPED->iNative = 39817;
+	uFnSetupArcadeOPED->iNative = 39815;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.StopGalleryVoice
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40100])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40098])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuGallery::StopGalleryVoice()
@@ -33704,11 +33704,11 @@ void UREDGfxMoviePlayer_MenuGallery::StopGalleryVoice()
 	uFnStopGalleryVoice->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopGalleryVoice, &StopGalleryVoice_Params, nullptr);
 	uFnStopGalleryVoice->FunctionFlags |= 0x400;
-	uFnStopGalleryVoice->iNative = 40100;
+	uFnStopGalleryVoice->iNative = 40098;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.PlayGalleryVoice
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39028])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39026])
 // Parameter Info:
 // class FName                    cueName                        (CPF_Parm)
 // class AActor*                  Actor                          (CPF_OptionalParm | CPF_Parm)
@@ -33731,11 +33731,11 @@ void UREDGfxMoviePlayer_MenuGallery::PlayGalleryVoice(const class FName& cueName
 	uFnPlayGalleryVoice->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayGalleryVoice, &PlayGalleryVoice_Params, nullptr);
 	uFnPlayGalleryVoice->FunctionFlags |= 0x400;
-	uFnPlayGalleryVoice->iNative = 39028;
+	uFnPlayGalleryVoice->iNative = 39026;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.StopMovie
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28957])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28955])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuGallery::StopMovie()
@@ -33754,11 +33754,11 @@ void UREDGfxMoviePlayer_MenuGallery::StopMovie()
 	uFnStopMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopMovie, &StopMovie_Params, nullptr);
 	uFnStopMovie->FunctionFlags |= 0x400;
-	uFnStopMovie->iNative = 28957;
+	uFnStopMovie->iNative = 28955;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.IsMoviePlaying
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37739])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37737])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  MovieName                      (CPF_Parm | CPF_NeedCtorLink)
@@ -33780,13 +33780,13 @@ bool UREDGfxMoviePlayer_MenuGallery::IsMoviePlaying(const class FString& MovieNa
 	uFnIsMoviePlaying->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMoviePlaying, &IsMoviePlaying_Params, nullptr);
 	uFnIsMoviePlaying->FunctionFlags |= 0x400;
-	uFnIsMoviePlaying->iNative = 37739;
+	uFnIsMoviePlaying->iNative = 37737;
 
 	return IsMoviePlaying_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.IsMovieFinish
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37738])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37736])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  MovieName                      (CPF_Parm | CPF_NeedCtorLink)
@@ -33808,13 +33808,13 @@ bool UREDGfxMoviePlayer_MenuGallery::IsMovieFinish(const class FString& MovieNam
 	uFnIsMovieFinish->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMovieFinish, &IsMovieFinish_Params, nullptr);
 	uFnIsMovieFinish->FunctionFlags |= 0x400;
-	uFnIsMovieFinish->iNative = 37738;
+	uFnIsMovieFinish->iNative = 37736;
 
 	return IsMovieFinish_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.StartMovie
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40026])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40024])
 // Parameter Info:
 // class FString                  MovieName                      (CPF_Parm | CPF_NeedCtorLink)
 
@@ -33835,11 +33835,11 @@ void UREDGfxMoviePlayer_MenuGallery::StartMovie(const class FString& MovieName)
 	uFnStartMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStartMovie, &StartMovie_Params, nullptr);
 	uFnStartMovie->FunctionFlags |= 0x400;
-	uFnStartMovie->iNative = 40026;
+	uFnStartMovie->iNative = 40024;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.CursorDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36378])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36376])
 // Parameter Info:
 // int32_t                        X                              (CPF_Parm)
 // int32_t                        Y                              (CPF_Parm)
@@ -33862,11 +33862,11 @@ void UREDGfxMoviePlayer_MenuGallery::CursorDraw(int32_t X, int32_t Y)
 	uFnCursorDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCursorDraw, &CursorDraw_Params, nullptr);
 	uFnCursorDraw->FunctionFlags |= 0x400;
-	uFnCursorDraw->iNative = 36378;
+	uFnCursorDraw->iNative = 36376;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.ThumbnailDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40223])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40221])
 // Parameter Info:
 // int32_t                        Category                       (CPF_Parm)
 // int32_t                        Index                          (CPF_Parm)
@@ -33895,11 +33895,11 @@ void UREDGfxMoviePlayer_MenuGallery::ThumbnailDraw(int32_t Category, int32_t Ind
 	uFnThumbnailDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnThumbnailDraw, &ThumbnailDraw_Params, nullptr);
 	uFnThumbnailDraw->FunctionFlags |= 0x400;
-	uFnThumbnailDraw->iNative = 40223;
+	uFnThumbnailDraw->iNative = 40221;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.ThumbnailMaskDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40224])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40222])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuGallery::ThumbnailMaskDraw()
@@ -33918,11 +33918,11 @@ void UREDGfxMoviePlayer_MenuGallery::ThumbnailMaskDraw()
 	uFnThumbnailMaskDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnThumbnailMaskDraw, &ThumbnailMaskDraw_Params, nullptr);
 	uFnThumbnailMaskDraw->FunctionFlags |= 0x400;
-	uFnThumbnailMaskDraw->iNative = 40224;
+	uFnThumbnailMaskDraw->iNative = 40222;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.UpdateViewerCurrent
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40882])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40880])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Add                            (CPF_Parm)
@@ -33944,13 +33944,13 @@ bool UREDGfxMoviePlayer_MenuGallery::UpdateViewerCurrent(int32_t Add)
 	uFnUpdateViewerCurrent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateViewerCurrent, &UpdateViewerCurrent_Params, nullptr);
 	uFnUpdateViewerCurrent->FunctionFlags |= 0x400;
-	uFnUpdateViewerCurrent->iNative = 40882;
+	uFnUpdateViewerCurrent->iNative = 40880;
 
 	return UpdateViewerCurrent_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.UpdateViewerAxis
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40881])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40879])
 // Parameter Info:
 // float                          X                              (CPF_Parm)
 // float                          Y                              (CPF_Parm)
@@ -33975,11 +33975,11 @@ void UREDGfxMoviePlayer_MenuGallery::UpdateViewerAxis(float X, float Y, float Z)
 	uFnUpdateViewerAxis->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateViewerAxis, &UpdateViewerAxis_Params, nullptr);
 	uFnUpdateViewerAxis->FunctionFlags |= 0x400;
-	uFnUpdateViewerAxis->iNative = 40881;
+	uFnUpdateViewerAxis->iNative = 40879;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.InitViewer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37547])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37545])
 // Parameter Info:
 // class FString                  PackageName                    (CPF_Parm | CPF_NeedCtorLink)
 
@@ -34000,11 +34000,11 @@ void UREDGfxMoviePlayer_MenuGallery::InitViewer(const class FString& PackageName
 	uFnInitViewer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitViewer, &InitViewer_Params, nullptr);
 	uFnInitViewer->FunctionFlags |= 0x400;
-	uFnInitViewer->iNative = 37547;
+	uFnInitViewer->iNative = 37545;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.IsLoading
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37705])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37703])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -34024,13 +34024,13 @@ bool UREDGfxMoviePlayer_MenuGallery::IsLoading()
 	uFnIsLoading->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLoading, &IsLoading_Params, nullptr);
 	uFnIsLoading->FunctionFlags |= 0x400;
-	uFnIsLoading->iNative = 37705;
+	uFnIsLoading->iNative = 37703;
 
 	return IsLoading_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.PointPayment
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39056])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39054])
 // Parameter Info:
 // int32_t                        Point                          (CPF_Parm)
 
@@ -34051,11 +34051,11 @@ void UREDGfxMoviePlayer_MenuGallery::PointPayment(int32_t Point)
 	uFnPointPayment->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPointPayment, &PointPayment_Params, nullptr);
 	uFnPointPayment->FunctionFlags |= 0x400;
-	uFnPointPayment->iNative = 39056;
+	uFnPointPayment->iNative = 39054;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.CheckPurchase
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36206])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36204])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Point                          (CPF_Parm)
@@ -34077,13 +34077,13 @@ bool UREDGfxMoviePlayer_MenuGallery::CheckPurchase(int32_t Point)
 	uFnCheckPurchase->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckPurchase, &CheckPurchase_Params, nullptr);
 	uFnCheckPurchase->FunctionFlags |= 0x400;
-	uFnCheckPurchase->iNative = 36206;
+	uFnCheckPurchase->iNative = 36204;
 
 	return CheckPurchase_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.UpdateFactorState
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40671])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40669])
 // Parameter Info:
 // int32_t                        Category                       (CPF_Parm)
 // int32_t                        Index                          (CPF_Parm)
@@ -34108,11 +34108,11 @@ void UREDGfxMoviePlayer_MenuGallery::UpdateFactorState(int32_t Category, int32_t
 	uFnUpdateFactorState->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFactorState, &UpdateFactorState_Params, nullptr);
 	uFnUpdateFactorState->FunctionFlags |= 0x400;
-	uFnUpdateFactorState->iNative = 40671;
+	uFnUpdateFactorState->iNative = 40669;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.CheckFactorDecision
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36197])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36195])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Category                       (CPF_Parm)
@@ -34136,13 +34136,13 @@ int32_t UREDGfxMoviePlayer_MenuGallery::CheckFactorDecision(int32_t Category, in
 	uFnCheckFactorDecision->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckFactorDecision, &CheckFactorDecision_Params, nullptr);
 	uFnCheckFactorDecision->FunctionFlags |= 0x400;
-	uFnCheckFactorDecision->iNative = 36197;
+	uFnCheckFactorDecision->iNative = 36195;
 
 	return CheckFactorDecision_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.GetUserOpenPer
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37191])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37189])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Open                           (CPF_Parm | CPF_OutParm)
@@ -34166,7 +34166,7 @@ int32_t UREDGfxMoviePlayer_MenuGallery::GetUserOpenPer(int32_t& Open, int32_t& t
 	uFnGetUserOpenPer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetUserOpenPer, &GetUserOpenPer_Params, nullptr);
 	uFnGetUserOpenPer->FunctionFlags |= 0x400;
-	uFnGetUserOpenPer->iNative = 37191;
+	uFnGetUserOpenPer->iNative = 37189;
 
 	memcpy_s(&Open, sizeof(Open), &GetUserOpenPer_Params.Open, sizeof(GetUserOpenPer_Params.Open));
 	memcpy_s(&total, sizeof(total), &GetUserOpenPer_Params.total, sizeof(GetUserOpenPer_Params.total));
@@ -34175,7 +34175,7 @@ int32_t UREDGfxMoviePlayer_MenuGallery::GetUserOpenPer(int32_t& Open, int32_t& t
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.GetUserHavePoint
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37190])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37188])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -34195,13 +34195,13 @@ int32_t UREDGfxMoviePlayer_MenuGallery::GetUserHavePoint()
 	uFnGetUserHavePoint->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetUserHavePoint, &GetUserHavePoint_Params, nullptr);
 	uFnGetUserHavePoint->FunctionFlags |= 0x400;
-	uFnGetUserHavePoint->iNative = 37190;
+	uFnGetUserHavePoint->iNative = 37188;
 
 	return GetUserHavePoint_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execViewer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36785])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36783])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -34222,11 +34222,11 @@ void UREDGfxMoviePlayer_MenuGallery::execViewer(int32_t State)
 	uFnexecViewer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecViewer, &execViewer_Params, nullptr);
 	uFnexecViewer->FunctionFlags |= 0x400;
-	uFnexecViewer->iNative = 36785;
+	uFnexecViewer->iNative = 36783;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execScrollBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36783])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36781])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -34247,11 +34247,11 @@ void UREDGfxMoviePlayer_MenuGallery::execScrollBar(int32_t State)
 	uFnexecScrollBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecScrollBar, &execScrollBar_Params, nullptr);
 	uFnexecScrollBar->FunctionFlags |= 0x400;
-	uFnexecScrollBar->iNative = 36783;
+	uFnexecScrollBar->iNative = 36781;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execCtrlBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36775])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36773])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -34272,11 +34272,11 @@ void UREDGfxMoviePlayer_MenuGallery::execCtrlBar(int32_t State)
 	uFnexecCtrlBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecCtrlBar, &execCtrlBar_Params, nullptr);
 	uFnexecCtrlBar->FunctionFlags |= 0x400;
-	uFnexecCtrlBar->iNative = 36775;
+	uFnexecCtrlBar->iNative = 36773;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execInfoBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36780])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36778])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 // int32_t                        Category                       (CPF_Parm)
@@ -34301,11 +34301,11 @@ void UREDGfxMoviePlayer_MenuGallery::execInfoBar(int32_t State, int32_t Category
 	uFnexecInfoBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecInfoBar, &execInfoBar_Params, nullptr);
 	uFnexecInfoBar->FunctionFlags |= 0x400;
-	uFnexecInfoBar->iNative = 36780;
+	uFnexecInfoBar->iNative = 36778;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execFactorName
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36778])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36776])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 // class FString                  Message                        (CPF_Parm | CPF_NeedCtorLink)
@@ -34328,11 +34328,11 @@ void UREDGfxMoviePlayer_MenuGallery::execFactorName(int32_t State, const class F
 	uFnexecFactorName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecFactorName, &execFactorName_Params, nullptr);
 	uFnexecFactorName->FunctionFlags |= 0x400;
-	uFnexecFactorName->iNative = 36778;
+	uFnexecFactorName->iNative = 36776;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execDrawNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36776])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36774])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -34353,11 +34353,11 @@ void UREDGfxMoviePlayer_MenuGallery::execDrawNative(int32_t State)
 	uFnexecDrawNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecDrawNative, &execDrawNative_Params, nullptr);
 	uFnexecDrawNative->FunctionFlags |= 0x400;
-	uFnexecDrawNative->iNative = 36776;
+	uFnexecDrawNative->iNative = 36774;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuGallery::InitializeNative()
@@ -34376,7 +34376,7 @@ void UREDGfxMoviePlayer_MenuGallery::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGameOver.AS_Label
@@ -34441,7 +34441,7 @@ void UREDGfxMoviePlayer_MenuGameOver::OnInitialize()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGameOver.EndMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36684])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36682])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuGameOver::EndMenu()
@@ -34460,11 +34460,11 @@ void UREDGfxMoviePlayer_MenuGameOver::EndMenu()
 	uFnEndMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnEndMenu, &EndMenu_Params, nullptr);
 	uFnEndMenu->FunctionFlags |= 0x400;
-	uFnEndMenu->iNative = 36684;
+	uFnEndMenu->iNative = 36682;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGameOver.UpdateMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40782])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40780])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuGameOver::UpdateMenu()
@@ -34483,11 +34483,11 @@ void UREDGfxMoviePlayer_MenuGameOver::UpdateMenu()
 	uFnUpdateMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMenu, &UpdateMenu_Params, nullptr);
 	uFnUpdateMenu->FunctionFlags |= 0x400;
-	uFnUpdateMenu->iNative = 40782;
+	uFnUpdateMenu->iNative = 40780;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGameOver.InitMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37538])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37536])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuGameOver::InitMenu()
@@ -34506,7 +34506,7 @@ void UREDGfxMoviePlayer_MenuGameOver::InitMenu()
 	uFnInitMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitMenu, &InitMenu_Params, nullptr);
 	uFnInitMenu->FunctionFlags |= 0x400;
-	uFnInitMenu->iNative = 37538;
+	uFnInitMenu->iNative = 37536;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.OnDrawUpdate
@@ -34718,7 +34718,7 @@ void UREDGfxMoviePlayer_MenuInterlude::BGMRequest(const class FString& cueName, 
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsPlayerPlateDebug
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37774])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37772])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -34738,13 +34738,13 @@ bool UREDGfxMoviePlayer_MenuInterlude::IsPlayerPlateDebug()
 	uFnIsPlayerPlateDebug->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPlayerPlateDebug, &IsPlayerPlateDebug_Params, nullptr);
 	uFnIsPlayerPlateDebug->FunctionFlags |= 0x400;
-	uFnIsPlayerPlateDebug->iNative = 37774;
+	uFnIsPlayerPlateDebug->iNative = 37772;
 
 	return IsPlayerPlateDebug_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.MOM_FinishDispBaseRule
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38378])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38376])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuInterlude::MOM_FinishDispBaseRule()
@@ -34763,11 +34763,11 @@ void UREDGfxMoviePlayer_MenuInterlude::MOM_FinishDispBaseRule()
 	uFnMOM_FinishDispBaseRule->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOM_FinishDispBaseRule, &MOM_FinishDispBaseRule_Params, nullptr);
 	uFnMOM_FinishDispBaseRule->FunctionFlags |= 0x400;
-	uFnMOM_FinishDispBaseRule->iNative = 38378;
+	uFnMOM_FinishDispBaseRule->iNative = 38376;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.MOM_IsDispBaseRule
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38380])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38378])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -34787,13 +34787,13 @@ bool UREDGfxMoviePlayer_MenuInterlude::MOM_IsDispBaseRule()
 	uFnMOM_IsDispBaseRule->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMOM_IsDispBaseRule, &MOM_IsDispBaseRule_Params, nullptr);
 	uFnMOM_IsDispBaseRule->FunctionFlags |= 0x400;
-	uFnMOM_IsDispBaseRule->iNative = 38380;
+	uFnMOM_IsDispBaseRule->iNative = 38378;
 
 	return MOM_IsDispBaseRule_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsVSLoadComplete
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37928])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37926])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -34813,13 +34813,13 @@ bool UREDGfxMoviePlayer_MenuInterlude::IsVSLoadComplete()
 	uFnIsVSLoadComplete->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsVSLoadComplete, &IsVSLoadComplete_Params, nullptr);
 	uFnIsVSLoadComplete->FunctionFlags |= 0x400;
-	uFnIsVSLoadComplete->iNative = 37928;
+	uFnIsVSLoadComplete->iNative = 37926;
 
 	return IsVSLoadComplete_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.UpdateVSLoadPercent
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40884])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40882])
 // Parameter Info:
 // int32_t                        Percent                        (CPF_Parm)
 
@@ -34840,11 +34840,11 @@ void UREDGfxMoviePlayer_MenuInterlude::UpdateVSLoadPercent(int32_t Percent)
 	uFnUpdateVSLoadPercent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateVSLoadPercent, &UpdateVSLoadPercent_Params, nullptr);
 	uFnUpdateVSLoadPercent->FunctionFlags |= 0x400;
-	uFnUpdateVSLoadPercent->iNative = 40884;
+	uFnUpdateVSLoadPercent->iNative = 40882;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.RankMatch_IsUploadRCodeEnd
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39205])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39203])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -34864,13 +34864,13 @@ bool UREDGfxMoviePlayer_MenuInterlude::RankMatch_IsUploadRCodeEnd()
 	uFnRankMatch_IsUploadRCodeEnd->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRankMatch_IsUploadRCodeEnd, &RankMatch_IsUploadRCodeEnd_Params, nullptr);
 	uFnRankMatch_IsUploadRCodeEnd->FunctionFlags |= 0x400;
-	uFnRankMatch_IsUploadRCodeEnd->iNative = 39205;
+	uFnRankMatch_IsUploadRCodeEnd->iNative = 39203;
 
 	return RankMatch_IsUploadRCodeEnd_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.RankMatch_UploadRCode
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39206])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39204])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuInterlude::RankMatch_UploadRCode()
@@ -34889,11 +34889,11 @@ void UREDGfxMoviePlayer_MenuInterlude::RankMatch_UploadRCode()
 	uFnRankMatch_UploadRCode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRankMatch_UploadRCode, &RankMatch_UploadRCode_Params, nullptr);
 	uFnRankMatch_UploadRCode->FunctionFlags |= 0x400;
-	uFnRankMatch_UploadRCode->iNative = 39206;
+	uFnRankMatch_UploadRCode->iNative = 39204;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsRankMatchBattle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37811])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37809])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -34913,13 +34913,13 @@ bool UREDGfxMoviePlayer_MenuInterlude::IsRankMatchBattle()
 	uFnIsRankMatchBattle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRankMatchBattle, &IsRankMatchBattle_Params, nullptr);
 	uFnIsRankMatchBattle->FunctionFlags |= 0x400;
-	uFnIsRankMatchBattle->iNative = 37811;
+	uFnIsRankMatchBattle->iNative = 37809;
 
 	return IsRankMatchBattle_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsNinteisen
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37751])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37749])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -34941,13 +34941,13 @@ bool UREDGfxMoviePlayer_MenuInterlude::IsNinteisen(EUE_PLAYER_ID Player)
 	uFnIsNinteisen->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsNinteisen, &IsNinteisen_Params, nullptr);
 	uFnIsNinteisen->FunctionFlags |= 0x400;
-	uFnIsNinteisen->iNative = 37751;
+	uFnIsNinteisen->iNative = 37749;
 
 	return IsNinteisen_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.VSStartTrigger
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40986])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40984])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuInterlude::VSStartTrigger()
@@ -34966,11 +34966,11 @@ void UREDGfxMoviePlayer_MenuInterlude::VSStartTrigger()
 	uFnVSStartTrigger->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnVSStartTrigger, &VSStartTrigger_Params, nullptr);
 	uFnVSStartTrigger->FunctionFlags |= 0x400;
-	uFnVSStartTrigger->iNative = 40986;
+	uFnVSStartTrigger->iNative = 40984;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.UpdateDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40647])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuInterlude::UpdateDraw()
@@ -34989,11 +34989,11 @@ void UREDGfxMoviePlayer_MenuInterlude::UpdateDraw()
 	uFnUpdateDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDraw, &UpdateDraw_Params, nullptr);
 	uFnUpdateDraw->FunctionFlags |= 0x400;
-	uFnUpdateDraw->iNative = 40649;
+	uFnUpdateDraw->iNative = 40647;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsRankdownMatch
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37807])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37805])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -35015,13 +35015,13 @@ bool UREDGfxMoviePlayer_MenuInterlude::IsRankdownMatch(EUE_PLAYER_ID Player)
 	uFnIsRankdownMatch->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRankdownMatch, &IsRankdownMatch_Params, nullptr);
 	uFnIsRankdownMatch->FunctionFlags |= 0x400;
-	uFnIsRankdownMatch->iNative = 37807;
+	uFnIsRankdownMatch->iNative = 37805;
 
 	return IsRankdownMatch_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsRankupMatch
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37815])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37813])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // EUE_PLAYER_ID                  Player                         (CPF_Parm)
@@ -35043,13 +35043,13 @@ bool UREDGfxMoviePlayer_MenuInterlude::IsRankupMatch(EUE_PLAYER_ID Player)
 	uFnIsRankupMatch->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRankupMatch, &IsRankupMatch_Params, nullptr);
 	uFnIsRankupMatch->FunctionFlags |= 0x400;
-	uFnIsRankupMatch->iNative = 37815;
+	uFnIsRankupMatch->iNative = 37813;
 
 	return IsRankupMatch_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.ProcAsyncLoading
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39146])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39144])
 // Parameter Info:
 // float                          Time                           (CPF_Parm)
 
@@ -35070,11 +35070,11 @@ void UREDGfxMoviePlayer_MenuInterlude::ProcAsyncLoading(float Time)
 	uFnProcAsyncLoading->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnProcAsyncLoading, &ProcAsyncLoading_Params, nullptr);
 	uFnProcAsyncLoading->FunctionFlags |= 0x400;
-	uFnProcAsyncLoading->iNative = 39146;
+	uFnProcAsyncLoading->iNative = 39144;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsAsyncLoading
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37599])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37597])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -35094,7 +35094,7 @@ bool UREDGfxMoviePlayer_MenuInterlude::IsAsyncLoading()
 	uFnIsAsyncLoading->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsAsyncLoading, &IsAsyncLoading_Params, nullptr);
 	uFnIsAsyncLoading->FunctionFlags |= 0x400;
-	uFnIsAsyncLoading->iNative = 37599;
+	uFnIsAsyncLoading->iNative = 37597;
 
 	return IsAsyncLoading_Params.ReturnValue;
 };
@@ -35796,7 +35796,7 @@ void UREDGfxMoviePlayer_MenuMainMenu::setupMainFocus(bool flg)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncTournament
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40689])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40687])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -35820,7 +35820,7 @@ bool UREDGfxMoviePlayer_MenuMainMenu::UpdateFuncTournament(bool bTrigger, int32_
 	uFnUpdateFuncTournament->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFuncTournament, &UpdateFuncTournament_Params, nullptr);
 	uFnUpdateFuncTournament->FunctionFlags |= 0x400;
-	uFnUpdateFuncTournament->iNative = 40689;
+	uFnUpdateFuncTournament->iNative = 40687;
 
 	memcpy_s(&IsGotoLobby, sizeof(IsGotoLobby), &UpdateFuncTournament_Params.IsGotoLobby, sizeof(UpdateFuncTournament_Params.IsGotoLobby));
 
@@ -35828,7 +35828,7 @@ bool UREDGfxMoviePlayer_MenuMainMenu::UpdateFuncTournament(bool bTrigger, int32_
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncLinkStore
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40683])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40681])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -35850,13 +35850,13 @@ int32_t UREDGfxMoviePlayer_MenuMainMenu::UpdateFuncLinkStore(bool bTrigger)
 	uFnUpdateFuncLinkStore->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFuncLinkStore, &UpdateFuncLinkStore_Params, nullptr);
 	uFnUpdateFuncLinkStore->FunctionFlags |= 0x400;
-	uFnUpdateFuncLinkStore->iNative = 40683;
+	uFnUpdateFuncLinkStore->iNative = 40681;
 
 	return UpdateFuncLinkStore_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncMOM
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40684])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40682])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -35878,13 +35878,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu::UpdateFuncMOM(bool bTrigger)
 	uFnUpdateFuncMOM->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFuncMOM, &UpdateFuncMOM_Params, nullptr);
 	uFnUpdateFuncMOM->FunctionFlags |= 0x400;
-	uFnUpdateFuncMOM->iNative = 40684;
+	uFnUpdateFuncMOM->iNative = 40682;
 
 	return UpdateFuncMOM_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncReplay
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40686])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40684])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -35906,13 +35906,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu::UpdateFuncReplay(bool bTrigger)
 	uFnUpdateFuncReplay->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFuncReplay, &UpdateFuncReplay_Params, nullptr);
 	uFnUpdateFuncReplay->FunctionFlags |= 0x400;
-	uFnUpdateFuncReplay->iNative = 40686;
+	uFnUpdateFuncReplay->iNative = 40684;
 
 	return UpdateFuncReplay_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncStory2
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40688])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40686])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -35936,7 +35936,7 @@ bool UREDGfxMoviePlayer_MenuMainMenu::UpdateFuncStory2(bool bTrigger, int32_t& I
 	uFnUpdateFuncStory2->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFuncStory2, &UpdateFuncStory2_Params, nullptr);
 	uFnUpdateFuncStory2->FunctionFlags |= 0x400;
-	uFnUpdateFuncStory2->iNative = 40688;
+	uFnUpdateFuncStory2->iNative = 40686;
 
 	memcpy_s(&IsOK, sizeof(IsOK), &UpdateFuncStory2_Params.IsOK, sizeof(UpdateFuncStory2_Params.IsOK));
 
@@ -35944,7 +35944,7 @@ bool UREDGfxMoviePlayer_MenuMainMenu::UpdateFuncStory2(bool bTrigger, int32_t& I
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncStory
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40687])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40685])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -35966,13 +35966,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu::UpdateFuncStory(bool bTrigger)
 	uFnUpdateFuncStory->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFuncStory, &UpdateFuncStory_Params, nullptr);
 	uFnUpdateFuncStory->FunctionFlags |= 0x400;
-	uFnUpdateFuncStory->iNative = 40687;
+	uFnUpdateFuncStory->iNative = 40685;
 
 	return UpdateFuncStory_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsR2LobbyEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37803])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37801])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -35992,13 +35992,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu::IsR2LobbyEnable()
 	uFnIsR2LobbyEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsR2LobbyEnable, &IsR2LobbyEnable_Params, nullptr);
 	uFnIsR2LobbyEnable->FunctionFlags |= 0x400;
-	uFnIsR2LobbyEnable->iNative = 37803;
+	uFnIsR2LobbyEnable->iNative = 37801;
 
 	return IsR2LobbyEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsRankMatchEntry
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37813])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37811])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -36018,13 +36018,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu::IsRankMatchEntry()
 	uFnIsRankMatchEntry->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRankMatchEntry, &IsRankMatchEntry_Params, nullptr);
 	uFnIsRankMatchEntry->FunctionFlags |= 0x400;
-	uFnIsRankMatchEntry->iNative = 37813;
+	uFnIsRankMatchEntry->iNative = 37811;
 
 	return IsRankMatchEntry_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsGalleryPlayEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37676])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37674])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -36044,13 +36044,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu::IsGalleryPlayEnable()
 	uFnIsGalleryPlayEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsGalleryPlayEnable, &IsGalleryPlayEnable_Params, nullptr);
 	uFnIsGalleryPlayEnable->FunctionFlags |= 0x400;
-	uFnIsGalleryPlayEnable->iNative = 37676;
+	uFnIsGalleryPlayEnable->iNative = 37674;
 
 	return IsGalleryPlayEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsStoryPlayEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37874])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37872])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -36070,13 +36070,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu::IsStoryPlayEnable()
 	uFnIsStoryPlayEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsStoryPlayEnable, &IsStoryPlayEnable_Params, nullptr);
 	uFnIsStoryPlayEnable->FunctionFlags |= 0x400;
-	uFnIsStoryPlayEnable->iNative = 37874;
+	uFnIsStoryPlayEnable->iNative = 37872;
 
 	return IsStoryPlayEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsModeDecisionEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37726])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37724])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Main                           (CPF_Parm)
@@ -36100,13 +36100,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu::IsModeDecisionEnable(int32_t Main, int32_t
 	uFnIsModeDecisionEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsModeDecisionEnable, &IsModeDecisionEnable_Params, nullptr);
 	uFnIsModeDecisionEnable->FunctionFlags |= 0x400;
-	uFnIsModeDecisionEnable->iNative = 37726;
+	uFnIsModeDecisionEnable->iNative = 37724;
 
 	return IsModeDecisionEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsRegionJP_MainMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37818])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37816])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -36126,13 +36126,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu::IsRegionJP_MainMenu()
 	uFnIsRegionJP_MainMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRegionJP_MainMenu, &IsRegionJP_MainMenu_Params, nullptr);
 	uFnIsRegionJP_MainMenu->FunctionFlags |= 0x400;
-	uFnIsRegionJP_MainMenu->iNative = 37818;
+	uFnIsRegionJP_MainMenu->iNative = 37816;
 
 	return IsRegionJP_MainMenu_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.LinkStoreJumpPopup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38009])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38007])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu::LinkStoreJumpPopup()
@@ -36151,11 +36151,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::LinkStoreJumpPopup()
 	uFnLinkStoreJumpPopup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLinkStoreJumpPopup, &LinkStoreJumpPopup_Params, nullptr);
 	uFnLinkStoreJumpPopup->FunctionFlags |= 0x400;
-	uFnLinkStoreJumpPopup->iNative = 38009;
+	uFnLinkStoreJumpPopup->iNative = 38007;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UnLockMessagePopup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40586])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40584])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu::UnLockMessagePopup()
@@ -36174,11 +36174,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::UnLockMessagePopup()
 	uFnUnLockMessagePopup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnLockMessagePopup, &UnLockMessagePopup_Params, nullptr);
 	uFnUnLockMessagePopup->FunctionFlags |= 0x400;
-	uFnUnLockMessagePopup->iNative = 40586;
+	uFnUnLockMessagePopup->iNative = 40584;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.CheckRespectDisablePopup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36207])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36205])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu::CheckRespectDisablePopup()
@@ -36197,11 +36197,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::CheckRespectDisablePopup()
 	uFnCheckRespectDisablePopup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckRespectDisablePopup, &CheckRespectDisablePopup_Params, nullptr);
 	uFnCheckRespectDisablePopup->FunctionFlags |= 0x400;
-	uFnCheckRespectDisablePopup->iNative = 36207;
+	uFnCheckRespectDisablePopup->iNative = 36205;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsRespectEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37826])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37824])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -36221,13 +36221,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu::IsRespectEnable()
 	uFnIsRespectEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRespectEnable, &IsRespectEnable_Params, nullptr);
 	uFnIsRespectEnable->FunctionFlags |= 0x400;
-	uFnIsRespectEnable->iNative = 37826;
+	uFnIsRespectEnable->iNative = 37824;
 
 	return IsRespectEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.ModeDecisionLightBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38360])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38358])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu::ModeDecisionLightBar()
@@ -36246,11 +36246,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::ModeDecisionLightBar()
 	uFnModeDecisionLightBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnModeDecisionLightBar, &ModeDecisionLightBar_Params, nullptr);
 	uFnModeDecisionLightBar->FunctionFlags |= 0x400;
-	uFnModeDecisionLightBar->iNative = 38360;
+	uFnModeDecisionLightBar->iNative = 38358;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.SetupCardData
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39825])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39823])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu::SetupCardData()
@@ -36269,11 +36269,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::SetupCardData()
 	uFnSetupCardData->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupCardData, &SetupCardData_Params, nullptr);
 	uFnSetupCardData->FunctionFlags |= 0x400;
-	uFnSetupCardData->iNative = 39825;
+	uFnSetupCardData->iNative = 39823;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.PopUpMenuInit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39072])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39070])
 // Parameter Info:
 // int32_t                        Type                           (CPF_Parm)
 
@@ -36294,11 +36294,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::PopUpMenuInit(int32_t Type)
 	uFnPopUpMenuInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUpMenuInit, &PopUpMenuInit_Params, nullptr);
 	uFnPopUpMenuInit->FunctionFlags |= 0x400;
-	uFnPopUpMenuInit->iNative = 39072;
+	uFnPopUpMenuInit->iNative = 39070;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.execCtrlBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36775])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36773])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -36319,11 +36319,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::execCtrlBar(int32_t State)
 	uFnexecCtrlBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecCtrlBar, &execCtrlBar_Params, nullptr);
 	uFnexecCtrlBar->FunctionFlags |= 0x400;
-	uFnexecCtrlBar->iNative = 36775;
+	uFnexecCtrlBar->iNative = 36773;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.execInfoBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36780])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36778])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -36344,11 +36344,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::execInfoBar(int32_t State)
 	uFnexecInfoBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecInfoBar, &execInfoBar_Params, nullptr);
 	uFnexecInfoBar->FunctionFlags |= 0x400;
-	uFnexecInfoBar->iNative = 36780;
+	uFnexecInfoBar->iNative = 36778;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.execDrawNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36776])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36774])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -36369,11 +36369,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::execDrawNative(int32_t State)
 	uFnexecDrawNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecDrawNative, &execDrawNative_Params, nullptr);
 	uFnexecDrawNative->FunctionFlags |= 0x400;
-	uFnexecDrawNative->iNative = 36776;
+	uFnexecDrawNative->iNative = 36774;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.execUpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36784])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36782])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -36394,11 +36394,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::execUpdateNative(int32_t State)
 	uFnexecUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecUpdateNative, &execUpdateNative_Params, nullptr);
 	uFnexecUpdateNative->FunctionFlags |= 0x400;
-	uFnexecUpdateNative->iNative = 36784;
+	uFnexecUpdateNative->iNative = 36782;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.InitializeInMainMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37524])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37522])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu::InitializeInMainMenu()
@@ -36417,11 +36417,11 @@ void UREDGfxMoviePlayer_MenuMainMenu::InitializeInMainMenu()
 	uFnInitializeInMainMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeInMainMenu, &InitializeInMainMenu_Params, nullptr);
 	uFnInitializeInMainMenu->FunctionFlags |= 0x400;
-	uFnInitializeInMainMenu->iNative = 37524;
+	uFnInitializeInMainMenu->iNative = 37522;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu::InitializeNative()
@@ -36440,7 +36440,7 @@ void UREDGfxMoviePlayer_MenuMainMenu::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.OnFinalize
@@ -37687,7 +37687,7 @@ bool UREDGfxMoviePlayer_MenuMainMenu20::Start(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.IsNewMMIndex
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37747])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37745])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -37709,13 +37709,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu20::IsNewMMIndex(int32_t Index)
 	uFnIsNewMMIndex->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsNewMMIndex, &IsNewMMIndex_Params, nullptr);
 	uFnIsNewMMIndex->FunctionFlags |= 0x400;
-	uFnIsNewMMIndex->iNative = 37747;
+	uFnIsNewMMIndex->iNative = 37745;
 
 	return IsNewMMIndex_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.IsModeDecisionEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37726])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37724])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Main                           (CPF_Parm)
@@ -37739,13 +37739,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu20::IsModeDecisionEnable(int32_t Main, int32
 	uFnIsModeDecisionEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsModeDecisionEnable, &IsModeDecisionEnable_Params, nullptr);
 	uFnIsModeDecisionEnable->FunctionFlags |= 0x400;
-	uFnIsModeDecisionEnable->iNative = 37726;
+	uFnIsModeDecisionEnable->iNative = 37724;
 
 	return IsModeDecisionEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.IsRespectEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37826])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37824])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -37765,13 +37765,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu20::IsRespectEnable()
 	uFnIsRespectEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRespectEnable, &IsRespectEnable_Params, nullptr);
 	uFnIsRespectEnable->FunctionFlags |= 0x400;
-	uFnIsRespectEnable->iNative = 37826;
+	uFnIsRespectEnable->iNative = 37824;
 
 	return IsRespectEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.CheckFirstBattlePopup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36198])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36196])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu20::CheckFirstBattlePopup()
@@ -37790,11 +37790,11 @@ void UREDGfxMoviePlayer_MenuMainMenu20::CheckFirstBattlePopup()
 	uFnCheckFirstBattlePopup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckFirstBattlePopup, &CheckFirstBattlePopup_Params, nullptr);
 	uFnCheckFirstBattlePopup->FunctionFlags |= 0x400;
-	uFnCheckFirstBattlePopup->iNative = 36198;
+	uFnCheckFirstBattlePopup->iNative = 36196;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.FirstBattleSelect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36867])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36865])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu20::FirstBattleSelect()
@@ -37813,11 +37813,11 @@ void UREDGfxMoviePlayer_MenuMainMenu20::FirstBattleSelect()
 	uFnFirstBattleSelect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFirstBattleSelect, &FirstBattleSelect_Params, nullptr);
 	uFnFirstBattleSelect->FunctionFlags |= 0x400;
-	uFnFirstBattleSelect->iNative = 36867;
+	uFnFirstBattleSelect->iNative = 36865;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.UpdateFuncFigure
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40681])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40679])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -37839,13 +37839,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu20::UpdateFuncFigure(bool bTrigger)
 	uFnUpdateFuncFigure->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFuncFigure, &UpdateFuncFigure_Params, nullptr);
 	uFnUpdateFuncFigure->FunctionFlags |= 0x400;
-	uFnUpdateFuncFigure->iNative = 40681;
+	uFnUpdateFuncFigure->iNative = 40679;
 
 	return UpdateFuncFigure_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.UpdateFuncBattleConfig
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40680])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40678])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -37871,7 +37871,7 @@ bool UREDGfxMoviePlayer_MenuMainMenu20::UpdateFuncBattleConfig(bool bTrigger, in
 	uFnUpdateFuncBattleConfig->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFuncBattleConfig, &UpdateFuncBattleConfig_Params, nullptr);
 	uFnUpdateFuncBattleConfig->FunctionFlags |= 0x400;
-	uFnUpdateFuncBattleConfig->iNative = 40680;
+	uFnUpdateFuncBattleConfig->iNative = 40678;
 
 	memcpy_s(&IsOK, sizeof(IsOK), &UpdateFuncBattleConfig_Params.IsOK, sizeof(UpdateFuncBattleConfig_Params.IsOK));
 
@@ -37879,7 +37879,7 @@ bool UREDGfxMoviePlayer_MenuMainMenu20::UpdateFuncBattleConfig(bool bTrigger, in
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.UpdateFuncNews
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40685])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40683])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -37901,13 +37901,13 @@ bool UREDGfxMoviePlayer_MenuMainMenu20::UpdateFuncNews(bool bTrigger)
 	uFnUpdateFuncNews->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFuncNews, &UpdateFuncNews_Params, nullptr);
 	uFnUpdateFuncNews->FunctionFlags |= 0x400;
-	uFnUpdateFuncNews->iNative = 40685;
+	uFnUpdateFuncNews->iNative = 40683;
 
 	return UpdateFuncNews_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.UpdateFuncIdleEA
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40682])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40680])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -37931,7 +37931,7 @@ bool UREDGfxMoviePlayer_MenuMainMenu20::UpdateFuncIdleEA(bool bTrigger, int32_t&
 	uFnUpdateFuncIdleEA->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFuncIdleEA, &UpdateFuncIdleEA_Params, nullptr);
 	uFnUpdateFuncIdleEA->FunctionFlags |= 0x400;
-	uFnUpdateFuncIdleEA->iNative = 40682;
+	uFnUpdateFuncIdleEA->iNative = 40680;
 
 	memcpy_s(&IsMode, sizeof(IsMode), &UpdateFuncIdleEA_Params.IsMode, sizeof(UpdateFuncIdleEA_Params.IsMode));
 
@@ -37939,7 +37939,7 @@ bool UREDGfxMoviePlayer_MenuMainMenu20::UpdateFuncIdleEA(bool bTrigger, int32_t&
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.execDrawNews
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36777])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36775])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -37960,11 +37960,11 @@ void UREDGfxMoviePlayer_MenuMainMenu20::execDrawNews(int32_t State)
 	uFnexecDrawNews->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecDrawNews, &execDrawNews_Params, nullptr);
 	uFnexecDrawNews->FunctionFlags |= 0x400;
-	uFnexecDrawNews->iNative = 36777;
+	uFnexecDrawNews->iNative = 36775;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.execCtrlBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36775])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36773])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -37985,11 +37985,11 @@ void UREDGfxMoviePlayer_MenuMainMenu20::execCtrlBar(int32_t State)
 	uFnexecCtrlBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecCtrlBar, &execCtrlBar_Params, nullptr);
 	uFnexecCtrlBar->FunctionFlags |= 0x400;
-	uFnexecCtrlBar->iNative = 36775;
+	uFnexecCtrlBar->iNative = 36773;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.execDrawNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36776])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36774])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -38010,11 +38010,11 @@ void UREDGfxMoviePlayer_MenuMainMenu20::execDrawNative(int32_t State)
 	uFnexecDrawNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecDrawNative, &execDrawNative_Params, nullptr);
 	uFnexecDrawNative->FunctionFlags |= 0x400;
-	uFnexecDrawNative->iNative = 36776;
+	uFnexecDrawNative->iNative = 36774;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.execUpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36784])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36782])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -38035,11 +38035,11 @@ void UREDGfxMoviePlayer_MenuMainMenu20::execUpdateNative(int32_t State)
 	uFnexecUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecUpdateNative, &execUpdateNative_Params, nullptr);
 	uFnexecUpdateNative->FunctionFlags |= 0x400;
-	uFnexecUpdateNative->iNative = 36784;
+	uFnexecUpdateNative->iNative = 36782;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.InitializeInMainMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37524])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37522])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu20::InitializeInMainMenu()
@@ -38058,11 +38058,11 @@ void UREDGfxMoviePlayer_MenuMainMenu20::InitializeInMainMenu()
 	uFnInitializeInMainMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeInMainMenu, &InitializeInMainMenu_Params, nullptr);
 	uFnInitializeInMainMenu->FunctionFlags |= 0x400;
-	uFnInitializeInMainMenu->iNative = 37524;
+	uFnInitializeInMainMenu->iNative = 37522;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuMainMenu20::InitializeNative()
@@ -38081,7 +38081,7 @@ void UREDGfxMoviePlayer_MenuMainMenu20::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenuScene.OnFinalize
@@ -38520,7 +38520,7 @@ void UREDGfxMoviePlayer_MenuNetwork_Base::StartMenu()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.IsCancelRankMatchEntry
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37616])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37614])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -38540,13 +38540,13 @@ bool UREDGfxMoviePlayer_MenuNetwork_Base::IsCancelRankMatchEntry()
 	uFnIsCancelRankMatchEntry->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsCancelRankMatchEntry, &IsCancelRankMatchEntry_Params, nullptr);
 	uFnIsCancelRankMatchEntry->FunctionFlags |= 0x400;
-	uFnIsCancelRankMatchEntry->iNative = 37616;
+	uFnIsCancelRankMatchEntry->iNative = 37614;
 
 	return IsCancelRankMatchEntry_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.CancelRankMatchEntry
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36066])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36064])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetwork_Base::CancelRankMatchEntry()
@@ -38565,11 +38565,11 @@ void UREDGfxMoviePlayer_MenuNetwork_Base::CancelRankMatchEntry()
 	uFnCancelRankMatchEntry->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCancelRankMatchEntry, &CancelRankMatchEntry_Params, nullptr);
 	uFnCancelRankMatchEntry->FunctionFlags |= 0x400;
-	uFnCancelRankMatchEntry->iNative = 36066;
+	uFnCancelRankMatchEntry->iNative = 36064;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.IsRankMatchEntry
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37813])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37811])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -38589,13 +38589,13 @@ bool UREDGfxMoviePlayer_MenuNetwork_Base::IsRankMatchEntry()
 	uFnIsRankMatchEntry->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRankMatchEntry, &IsRankMatchEntry_Params, nullptr);
 	uFnIsRankMatchEntry->FunctionFlags |= 0x400;
-	uFnIsRankMatchEntry->iNative = 37813;
+	uFnIsRankMatchEntry->iNative = 37811;
 
 	return IsRankMatchEntry_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.RealtimeMultiPlayNotify
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39232])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39230])
 // Parameter Info:
 // uint32_t                       isAsync                        (CPF_Parm)
 
@@ -38616,11 +38616,11 @@ void UREDGfxMoviePlayer_MenuNetwork_Base::RealtimeMultiPlayNotify(bool isAsync)
 	uFnRealtimeMultiPlayNotify->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRealtimeMultiPlayNotify, &RealtimeMultiPlayNotify_Params, nullptr);
 	uFnRealtimeMultiPlayNotify->FunctionFlags |= 0x400;
-	uFnRealtimeMultiPlayNotify->iNative = 39232;
+	uFnRealtimeMultiPlayNotify->iNative = 39230;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.IsBannedChat
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37600])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37598])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -38640,13 +38640,13 @@ bool UREDGfxMoviePlayer_MenuNetwork_Base::IsBannedChat()
 	uFnIsBannedChat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsBannedChat, &IsBannedChat_Params, nullptr);
 	uFnIsBannedChat->FunctionFlags |= 0x400;
-	uFnIsBannedChat->iNative = 37600;
+	uFnIsBannedChat->iNative = 37598;
 
 	return IsBannedChat_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.IsDisableLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37638])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37636])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -38666,13 +38666,13 @@ bool UREDGfxMoviePlayer_MenuNetwork_Base::IsDisableLobby()
 	uFnIsDisableLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsDisableLobby, &IsDisableLobby_Params, nullptr);
 	uFnIsDisableLobby->FunctionFlags |= 0x400;
-	uFnIsDisableLobby->iNative = 37638;
+	uFnIsDisableLobby->iNative = 37636;
 
 	return IsDisableLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.IsWaitMessageActive
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37929])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37927])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -38692,13 +38692,13 @@ bool UREDGfxMoviePlayer_MenuNetwork_Base::IsWaitMessageActive()
 	uFnIsWaitMessageActive->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsWaitMessageActive, &IsWaitMessageActive_Params, nullptr);
 	uFnIsWaitMessageActive->FunctionFlags |= 0x400;
-	uFnIsWaitMessageActive->iNative = 37929;
+	uFnIsWaitMessageActive->iNative = 37927;
 
 	return IsWaitMessageActive_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.StopWaitMessage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40111])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40109])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetwork_Base::StopWaitMessage()
@@ -38717,11 +38717,11 @@ void UREDGfxMoviePlayer_MenuNetwork_Base::StopWaitMessage()
 	uFnStopWaitMessage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopWaitMessage, &StopWaitMessage_Params, nullptr);
 	uFnStopWaitMessage->FunctionFlags |= 0x400;
-	uFnStopWaitMessage->iNative = 40111;
+	uFnStopWaitMessage->iNative = 40109;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.ReqWaitMessage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39372])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39370])
 // Parameter Info:
 // class FString                  MessageId                      (CPF_Parm | CPF_NeedCtorLink)
 
@@ -38742,11 +38742,11 @@ void UREDGfxMoviePlayer_MenuNetwork_Base::ReqWaitMessage(const class FString& Me
 	uFnReqWaitMessage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReqWaitMessage, &ReqWaitMessage_Params, nullptr);
 	uFnReqWaitMessage->FunctionFlags |= 0x400;
-	uFnReqWaitMessage->iNative = 39372;
+	uFnReqWaitMessage->iNative = 39370;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.MenuWindoeCloseAll
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38281])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38279])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetwork_Base::MenuWindoeCloseAll()
@@ -38765,11 +38765,11 @@ void UREDGfxMoviePlayer_MenuNetwork_Base::MenuWindoeCloseAll()
 	uFnMenuWindoeCloseAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMenuWindoeCloseAll, &MenuWindoeCloseAll_Params, nullptr);
 	uFnMenuWindoeCloseAll->FunctionFlags |= 0x400;
-	uFnMenuWindoeCloseAll->iNative = 38281;
+	uFnMenuWindoeCloseAll->iNative = 38279;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.UpdateTextChatInput
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40869])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40867])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       IsLobby                        (CPF_Parm)
@@ -38791,13 +38791,13 @@ bool UREDGfxMoviePlayer_MenuNetwork_Base::UpdateTextChatInput(bool IsLobby)
 	uFnUpdateTextChatInput->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateTextChatInput, &UpdateTextChatInput_Params, nullptr);
 	uFnUpdateTextChatInput->FunctionFlags |= 0x400;
-	uFnUpdateTextChatInput->iNative = 40869;
+	uFnUpdateTextChatInput->iNative = 40867;
 
 	return UpdateTextChatInput_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.InitTextChat
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37546])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37544])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetwork_Base::InitTextChat()
@@ -38816,7 +38816,7 @@ void UREDGfxMoviePlayer_MenuNetwork_Base::InitTextChat()
 	uFnInitTextChat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitTextChat, &InitTextChat_Params, nullptr);
 	uFnInitTextChat->FunctionFlags |= 0x400;
-	uFnInitTextChat->iNative = 37546;
+	uFnInitTextChat->iNative = 37544;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.OnDrawUpdate
@@ -39213,7 +39213,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::IsFromInvite()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.GetSealingNetworkMessage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37164])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37162])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -39233,13 +39233,13 @@ class FString UREDGfxMoviePlayer_MenuNetworkInit::GetSealingNetworkMessage()
 	uFnGetSealingNetworkMessage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSealingNetworkMessage, &GetSealingNetworkMessage_Params, nullptr);
 	uFnGetSealingNetworkMessage->FunctionFlags |= 0x400;
-	uFnGetSealingNetworkMessage->iNative = 37164;
+	uFnGetSealingNetworkMessage->iNative = 37162;
 
 	return GetSealingNetworkMessage_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.SetInitializeNetworkFlag
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39759])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39757])
 // Parameter Info:
 // uint32_t                       flag                           (CPF_Parm)
 
@@ -39260,11 +39260,11 @@ void UREDGfxMoviePlayer_MenuNetworkInit::SetInitializeNetworkFlag(bool flag)
 	uFnSetInitializeNetworkFlag->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetInitializeNetworkFlag, &SetInitializeNetworkFlag_Params, nullptr);
 	uFnSetInitializeNetworkFlag->FunctionFlags |= 0x400;
-	uFnSetInitializeNetworkFlag->iNative = 39759;
+	uFnSetInitializeNetworkFlag->iNative = 39757;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.UpdateRcode
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40817])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40815])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -39288,7 +39288,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::UpdateRcode(bool bTrigger, int32_t& Suc
 	uFnUpdateRcode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateRcode, &UpdateRcode_Params, nullptr);
 	uFnUpdateRcode->FunctionFlags |= 0x400;
-	uFnUpdateRcode->iNative = 40817;
+	uFnUpdateRcode->iNative = 40815;
 
 	memcpy_s(&Success, sizeof(Success), &UpdateRcode_Params.Success, sizeof(UpdateRcode_Params.Success));
 
@@ -39296,7 +39296,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::UpdateRcode(bool bTrigger, int32_t& Suc
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.IsBannedChatMessageRunning
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37601])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37599])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -39316,13 +39316,13 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::IsBannedChatMessageRunning()
 	uFnIsBannedChatMessageRunning->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsBannedChatMessageRunning, &IsBannedChatMessageRunning_Params, nullptr);
 	uFnIsBannedChatMessageRunning->FunctionFlags |= 0x400;
-	uFnIsBannedChatMessageRunning->iNative = 37601;
+	uFnIsBannedChatMessageRunning->iNative = 37599;
 
 	return IsBannedChatMessageRunning_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.ReqBannedChatMessage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39348])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39346])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -39342,13 +39342,13 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::ReqBannedChatMessage()
 	uFnReqBannedChatMessage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReqBannedChatMessage, &ReqBannedChatMessage_Params, nullptr);
 	uFnReqBannedChatMessage->FunctionFlags |= 0x400;
-	uFnReqBannedChatMessage->iNative = 39348;
+	uFnReqBannedChatMessage->iNative = 39346;
 
 	return ReqBannedChatMessage_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.GetInitErrorMessageID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37073])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37071])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -39368,13 +39368,13 @@ class FString UREDGfxMoviePlayer_MenuNetworkInit::GetInitErrorMessageID()
 	uFnGetInitErrorMessageID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInitErrorMessageID, &GetInitErrorMessageID_Params, nullptr);
 	uFnGetInitErrorMessageID->FunctionFlags |= 0x400;
-	uFnGetInitErrorMessageID->iNative = 37073;
+	uFnGetInitErrorMessageID->iNative = 37071;
 
 	return GetInitErrorMessageID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.IsInitializing
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37691])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37689])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -39400,7 +39400,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::IsInitializing(int32_t& isError, int32_
 	uFnIsInitializing->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsInitializing, &IsInitializing_Params, nullptr);
 	uFnIsInitializing->FunctionFlags |= 0x400;
-	uFnIsInitializing->iNative = 37691;
+	uFnIsInitializing->iNative = 37689;
 
 	memcpy_s(&isError, sizeof(isError), &IsInitializing_Params.isError, sizeof(IsInitializing_Params.isError));
 	memcpy_s(&IsBannedChat, sizeof(IsBannedChat), &IsInitializing_Params.IsBannedChat, sizeof(IsInitializing_Params.IsBannedChat));
@@ -39410,7 +39410,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::IsInitializing(int32_t& isError, int32_
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.ReqInitializeError
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39352])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39350])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -39430,13 +39430,13 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::ReqInitializeError()
 	uFnReqInitializeError->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReqInitializeError, &ReqInitializeError_Params, nullptr);
 	uFnReqInitializeError->FunctionFlags |= 0x400;
-	uFnReqInitializeError->iNative = 39352;
+	uFnReqInitializeError->iNative = 39350;
 
 	return ReqInitializeError_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.ReqInitialize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39351])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39349])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -39456,13 +39456,13 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::ReqInitialize()
 	uFnReqInitialize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReqInitialize, &ReqInitialize_Params, nullptr);
 	uFnReqInitialize->FunctionFlags |= 0x400;
-	uFnReqInitialize->iNative = 39351;
+	uFnReqInitialize->iNative = 39349;
 
 	return ReqInitialize_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.IsSignInDialogRunning
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37855])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37853])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -39482,13 +39482,13 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::IsSignInDialogRunning()
 	uFnIsSignInDialogRunning->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSignInDialogRunning, &IsSignInDialogRunning_Params, nullptr);
 	uFnIsSignInDialogRunning->FunctionFlags |= 0x400;
-	uFnIsSignInDialogRunning->iNative = 37855;
+	uFnIsSignInDialogRunning->iNative = 37853;
 
 	return IsSignInDialogRunning_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.ReqSignInDialog
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39358])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39356])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -39508,13 +39508,13 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::ReqSignInDialog()
 	uFnReqSignInDialog->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReqSignInDialog, &ReqSignInDialog_Params, nullptr);
 	uFnReqSignInDialog->FunctionFlags |= 0x400;
-	uFnReqSignInDialog->iNative = 39358;
+	uFnReqSignInDialog->iNative = 39356;
 
 	return ReqSignInDialog_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.IsPreWait
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37792])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37790])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -39534,7 +39534,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInit::IsPreWait()
 	uFnIsPreWait->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPreWait, &IsPreWait_Params, nullptr);
 	uFnIsPreWait->FunctionFlags |= 0x400;
-	uFnIsPreWait->iNative = 37792;
+	uFnIsPreWait->iNative = 37790;
 
 	return IsPreWait_Params.ReturnValue;
 };
@@ -39828,7 +39828,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInvite::Start(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.GetRoomGameVersion
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37159])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37157])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -39850,7 +39850,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInvite::GetRoomGameVersion(int32_t& isError)
 	uFnGetRoomGameVersion->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetRoomGameVersion, &GetRoomGameVersion_Params, nullptr);
 	uFnGetRoomGameVersion->FunctionFlags |= 0x400;
-	uFnGetRoomGameVersion->iNative = 37159;
+	uFnGetRoomGameVersion->iNative = 37157;
 
 	memcpy_s(&isError, sizeof(isError), &GetRoomGameVersion_Params.isError, sizeof(GetRoomGameVersion_Params.isError));
 
@@ -39858,7 +39858,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInvite::GetRoomGameVersion(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.InviteDone
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37588])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37586])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkInvite::InviteDone()
@@ -39877,11 +39877,11 @@ void UREDGfxMoviePlayer_MenuNetworkInvite::InviteDone()
 	uFnInviteDone->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInviteDone, &InviteDone_Params, nullptr);
 	uFnInviteDone->FunctionFlags |= 0x400;
-	uFnInviteDone->iNative = 37588;
+	uFnInviteDone->iNative = 37586;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.GetErrorMessageID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37059])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37057])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -39901,13 +39901,13 @@ class FString UREDGfxMoviePlayer_MenuNetworkInvite::GetErrorMessageID()
 	uFnGetErrorMessageID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetErrorMessageID, &GetErrorMessageID_Params, nullptr);
 	uFnGetErrorMessageID->FunctionFlags |= 0x400;
-	uFnGetErrorMessageID->iNative = 37059;
+	uFnGetErrorMessageID->iNative = 37057;
 
 	return GetErrorMessageID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.IsJoinSessionRunning
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37696])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37694])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -39929,7 +39929,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInvite::IsJoinSessionRunning(int32_t& isError
 	uFnIsJoinSessionRunning->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsJoinSessionRunning, &IsJoinSessionRunning_Params, nullptr);
 	uFnIsJoinSessionRunning->FunctionFlags |= 0x400;
-	uFnIsJoinSessionRunning->iNative = 37696;
+	uFnIsJoinSessionRunning->iNative = 37694;
 
 	memcpy_s(&isError, sizeof(isError), &IsJoinSessionRunning_Params.isError, sizeof(IsJoinSessionRunning_Params.isError));
 
@@ -39937,7 +39937,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInvite::IsJoinSessionRunning(int32_t& isError
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.JoinSession
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37948])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37946])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -39957,13 +39957,13 @@ bool UREDGfxMoviePlayer_MenuNetworkInvite::JoinSession()
 	uFnJoinSession->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJoinSession, &JoinSession_Params, nullptr);
 	uFnJoinSession->FunctionFlags |= 0x400;
-	uFnJoinSession->iNative = 37948;
+	uFnJoinSession->iNative = 37946;
 
 	return JoinSession_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.ChangeVersion
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36107])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36105])
 // Parameter Info:
 // uint32_t                       bRev2                          (CPF_Parm)
 
@@ -39984,11 +39984,11 @@ void UREDGfxMoviePlayer_MenuNetworkInvite::ChangeVersion(bool bRev2)
 	uFnChangeVersion->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeVersion, &ChangeVersion_Params, nullptr);
 	uFnChangeVersion->FunctionFlags |= 0x400;
-	uFnChangeVersion->iNative = 36107;
+	uFnChangeVersion->iNative = 36105;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.CheckVersion
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36212])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36210])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        VersionRev2                    (CPF_Parm | CPF_OutParm)
@@ -40010,7 +40010,7 @@ bool UREDGfxMoviePlayer_MenuNetworkInvite::CheckVersion(int32_t& VersionRev2)
 	uFnCheckVersion->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckVersion, &CheckVersion_Params, nullptr);
 	uFnCheckVersion->FunctionFlags |= 0x400;
-	uFnCheckVersion->iNative = 36212;
+	uFnCheckVersion->iNative = 36210;
 
 	memcpy_s(&VersionRev2, sizeof(VersionRev2), &CheckVersion_Params.VersionRev2, sizeof(CheckVersion_Params.VersionRev2));
 
@@ -40750,7 +40750,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsFromCharaSelect()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateLobbyChatDisableMessage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40755])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40753])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -40770,13 +40770,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::UpdateLobbyChatDisableMessage()
 	uFnUpdateLobbyChatDisableMessage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLobbyChatDisableMessage, &UpdateLobbyChatDisableMessage_Params, nullptr);
 	uFnUpdateLobbyChatDisableMessage->FunctionFlags |= 0x400;
-	uFnUpdateLobbyChatDisableMessage->iNative = 40755;
+	uFnUpdateLobbyChatDisableMessage->iNative = 40753;
 
 	return UpdateLobbyChatDisableMessage_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsForceLobbyExitCall
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37669])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37667])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -40796,13 +40796,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsForceLobbyExitCall()
 	uFnIsForceLobbyExitCall->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsForceLobbyExitCall, &IsForceLobbyExitCall_Params, nullptr);
 	uFnIsForceLobbyExitCall->FunctionFlags |= 0x400;
-	uFnIsForceLobbyExitCall->iNative = 37669;
+	uFnIsForceLobbyExitCall->iNative = 37667;
 
 	return IsForceLobbyExitCall_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.TournamentShowBattler
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40278])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40276])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobby::TournamentShowBattler()
@@ -40821,11 +40821,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobby::TournamentShowBattler()
 	uFnTournamentShowBattler->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTournamentShowBattler, &TournamentShowBattler_Params, nullptr);
 	uFnTournamentShowBattler->FunctionFlags |= 0x400;
-	uFnTournamentShowBattler->iNative = 40278;
+	uFnTournamentShowBattler->iNative = 40276;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsTournamentLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37885])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37883])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -40845,13 +40845,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsTournamentLobby()
 	uFnIsTournamentLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTournamentLobby, &IsTournamentLobby_Params, nullptr);
 	uFnIsTournamentLobby->FunctionFlags |= 0x400;
-	uFnIsTournamentLobby->iNative = 37885;
+	uFnIsTournamentLobby->iNative = 37883;
 
 	return IsTournamentLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateLobbyRoomJoinNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40761])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40759])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -40881,7 +40881,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::UpdateLobbyRoomJoinNative(bool bTrigge
 	uFnUpdateLobbyRoomJoinNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLobbyRoomJoinNative, &UpdateLobbyRoomJoinNative_Params, nullptr);
 	uFnUpdateLobbyRoomJoinNative->FunctionFlags |= 0x400;
-	uFnUpdateLobbyRoomJoinNative->iNative = 40761;
+	uFnUpdateLobbyRoomJoinNative->iNative = 40759;
 
 	memcpy_s(&State, sizeof(State), &UpdateLobbyRoomJoinNative_Params.State, sizeof(UpdateLobbyRoomJoinNative_Params.State));
 	memcpy_s(&isGotoRoom, sizeof(isGotoRoom), &UpdateLobbyRoomJoinNative_Params.isGotoRoom, sizeof(UpdateLobbyRoomJoinNative_Params.isGotoRoom));
@@ -40892,7 +40892,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::UpdateLobbyRoomJoinNative(bool bTrigge
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateInputTournament
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40723])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40721])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -40912,13 +40912,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::UpdateInputTournament()
 	uFnUpdateInputTournament->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateInputTournament, &UpdateInputTournament_Params, nullptr);
 	uFnUpdateInputTournament->FunctionFlags |= 0x400;
-	uFnUpdateInputTournament->iNative = 40723;
+	uFnUpdateInputTournament->iNative = 40721;
 
 	return UpdateInputTournament_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateInputNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40722])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40720])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        IsLobbyMenu                    (CPF_Parm | CPF_OutParm)
@@ -40950,7 +40950,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::UpdateInputNative(int32_t& IsLobbyMenu
 	uFnUpdateInputNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateInputNative, &UpdateInputNative_Params, nullptr);
 	uFnUpdateInputNative->FunctionFlags |= 0x400;
-	uFnUpdateInputNative->iNative = 40722;
+	uFnUpdateInputNative->iNative = 40720;
 
 	memcpy_s(&IsLobbyMenu, sizeof(IsLobbyMenu), &UpdateInputNative_Params.IsLobbyMenu, sizeof(UpdateInputNative_Params.IsLobbyMenu));
 	memcpy_s(&IsGotoLobbyRoom, sizeof(IsGotoLobbyRoom), &UpdateInputNative_Params.IsGotoLobbyRoom, sizeof(UpdateInputNative_Params.IsGotoLobbyRoom));
@@ -40963,7 +40963,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::UpdateInputNative(int32_t& IsLobbyMenu
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateEntryCancelConfirmNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40658])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40656])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -40987,7 +40987,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::UpdateEntryCancelConfirmNative(bool bT
 	uFnUpdateEntryCancelConfirmNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateEntryCancelConfirmNative, &UpdateEntryCancelConfirmNative_Params, nullptr);
 	uFnUpdateEntryCancelConfirmNative->FunctionFlags |= 0x400;
-	uFnUpdateEntryCancelConfirmNative->iNative = 40658;
+	uFnUpdateEntryCancelConfirmNative->iNative = 40656;
 
 	memcpy_s(&IsCancel, sizeof(IsCancel), &UpdateEntryCancelConfirmNative_Params.IsCancel, sizeof(UpdateEntryCancelConfirmNative_Params.IsCancel));
 
@@ -40995,7 +40995,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::UpdateEntryCancelConfirmNative(bool bT
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateLeaveLobbyConfirmNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40742])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40740])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -41019,7 +41019,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::UpdateLeaveLobbyConfirmNative(bool bTr
 	uFnUpdateLeaveLobbyConfirmNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLeaveLobbyConfirmNative, &UpdateLeaveLobbyConfirmNative_Params, nullptr);
 	uFnUpdateLeaveLobbyConfirmNative->FunctionFlags |= 0x400;
-	uFnUpdateLeaveLobbyConfirmNative->iNative = 40742;
+	uFnUpdateLeaveLobbyConfirmNative->iNative = 40740;
 
 	memcpy_s(&IsLeave, sizeof(IsLeave), &UpdateLeaveLobbyConfirmNative_Params.IsLeave, sizeof(UpdateLeaveLobbyConfirmNative_Params.IsLeave));
 
@@ -41027,7 +41027,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::UpdateLeaveLobbyConfirmNative(bool bTr
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsLeaveLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37699])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37697])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -41047,13 +41047,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsLeaveLobby()
 	uFnIsLeaveLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLeaveLobby, &IsLeaveLobby_Params, nullptr);
 	uFnIsLeaveLobby->FunctionFlags |= 0x400;
-	uFnIsLeaveLobby->iNative = 37699;
+	uFnIsLeaveLobby->iNative = 37697;
 
 	return IsLeaveLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.LeaveLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35120])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35118])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobby::LeaveLobby()
@@ -41072,11 +41072,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobby::LeaveLobby()
 	uFnLeaveLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLeaveLobby, &LeaveLobby_Params, nullptr);
 	uFnLeaveLobby->FunctionFlags |= 0x400;
-	uFnLeaveLobby->iNative = 35120;
+	uFnLeaveLobby->iNative = 35118;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsLeaveRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37700])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37698])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -41096,13 +41096,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsLeaveRoom()
 	uFnIsLeaveRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLeaveRoom, &IsLeaveRoom_Params, nullptr);
 	uFnIsLeaveRoom->FunctionFlags |= 0x400;
-	uFnIsLeaveRoom->iNative = 37700;
+	uFnIsLeaveRoom->iNative = 37698;
 
 	return IsLeaveRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.LeaveRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37985])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37983])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobby::LeaveRoom()
@@ -41121,11 +41121,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobby::LeaveRoom()
 	uFnLeaveRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLeaveRoom, &LeaveRoom_Params, nullptr);
 	uFnLeaveRoom->FunctionFlags |= 0x400;
-	uFnLeaveRoom->iNative = 37985;
+	uFnLeaveRoom->iNative = 37983;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.OpenRoomMenuFromSearch
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38844])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38842])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobby::OpenRoomMenuFromSearch()
@@ -41144,11 +41144,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobby::OpenRoomMenuFromSearch()
 	uFnOpenRoomMenuFromSearch->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenRoomMenuFromSearch, &OpenRoomMenuFromSearch_Params, nullptr);
 	uFnOpenRoomMenuFromSearch->FunctionFlags |= 0x400;
-	uFnOpenRoomMenuFromSearch->iNative = 38844;
+	uFnOpenRoomMenuFromSearch->iNative = 38842;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.OpenRoomMenuFromCharaSelect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38843])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38841])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobby::OpenRoomMenuFromCharaSelect()
@@ -41167,11 +41167,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobby::OpenRoomMenuFromCharaSelect()
 	uFnOpenRoomMenuFromCharaSelect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenRoomMenuFromCharaSelect, &OpenRoomMenuFromCharaSelect_Params, nullptr);
 	uFnOpenRoomMenuFromCharaSelect->FunctionFlags |= 0x400;
-	uFnOpenRoomMenuFromCharaSelect->iNative = 38843;
+	uFnOpenRoomMenuFromCharaSelect->iNative = 38841;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsLobbyMenuRunning
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37711])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37709])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        IsCreate                       (CPF_Parm | CPF_OutParm)
@@ -41207,7 +41207,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsLobbyMenuRunning(int32_t& IsCreate, 
 	uFnIsLobbyMenuRunning->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLobbyMenuRunning, &IsLobbyMenuRunning_Params, nullptr);
 	uFnIsLobbyMenuRunning->FunctionFlags |= 0x400;
-	uFnIsLobbyMenuRunning->iNative = 37711;
+	uFnIsLobbyMenuRunning->iNative = 37709;
 
 	memcpy_s(&IsCreate, sizeof(IsCreate), &IsLobbyMenuRunning_Params.IsCreate, sizeof(IsLobbyMenuRunning_Params.IsCreate));
 	memcpy_s(&IsSearch, sizeof(IsSearch), &IsLobbyMenuRunning_Params.IsSearch, sizeof(IsLobbyMenuRunning_Params.IsSearch));
@@ -41222,7 +41222,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsLobbyMenuRunning(int32_t& IsCreate, 
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.OpenLobbyMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38833])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38831])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobby::OpenLobbyMenu()
@@ -41241,11 +41241,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobby::OpenLobbyMenu()
 	uFnOpenLobbyMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenLobbyMenu, &OpenLobbyMenu_Params, nullptr);
 	uFnOpenLobbyMenu->FunctionFlags |= 0x400;
-	uFnOpenLobbyMenu->iNative = 38833;
+	uFnOpenLobbyMenu->iNative = 38831;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsCreatingLobbyRoom
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37634])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37632])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -41267,7 +41267,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsCreatingLobbyRoom(int32_t& isError)
 	uFnIsCreatingLobbyRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsCreatingLobbyRoom, &IsCreatingLobbyRoom_Params, nullptr);
 	uFnIsCreatingLobbyRoom->FunctionFlags |= 0x400;
-	uFnIsCreatingLobbyRoom->iNative = 37634;
+	uFnIsCreatingLobbyRoom->iNative = 37632;
 
 	memcpy_s(&isError, sizeof(isError), &IsCreatingLobbyRoom_Params.isError, sizeof(IsCreatingLobbyRoom_Params.isError));
 
@@ -41275,7 +41275,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsCreatingLobbyRoom(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.CreateLobbyRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36334])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36332])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -41295,13 +41295,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::CreateLobbyRoom()
 	uFnCreateLobbyRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateLobbyRoom, &CreateLobbyRoom_Params, nullptr);
 	uFnCreateLobbyRoom->FunctionFlags |= 0x400;
-	uFnCreateLobbyRoom->iNative = 36334;
+	uFnCreateLobbyRoom->iNative = 36332;
 
 	return CreateLobbyRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsCreatingRoom
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37635])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37633])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -41323,7 +41323,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsCreatingRoom(int32_t& isError)
 	uFnIsCreatingRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsCreatingRoom, &IsCreatingRoom_Params, nullptr);
 	uFnIsCreatingRoom->FunctionFlags |= 0x400;
-	uFnIsCreatingRoom->iNative = 37635;
+	uFnIsCreatingRoom->iNative = 37633;
 
 	memcpy_s(&isError, sizeof(isError), &IsCreatingRoom_Params.isError, sizeof(IsCreatingRoom_Params.isError));
 
@@ -41331,7 +41331,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsCreatingRoom(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.CreateRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36337])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36335])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -41351,13 +41351,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::CreateRoom()
 	uFnCreateRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateRoom, &CreateRoom_Params, nullptr);
 	uFnCreateRoom->FunctionFlags |= 0x400;
-	uFnCreateRoom->iNative = 36337;
+	uFnCreateRoom->iNative = 36335;
 
 	return CreateRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsGotoRoomFromLobbyMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37683])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37681])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -41377,13 +41377,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsGotoRoomFromLobbyMenu()
 	uFnIsGotoRoomFromLobbyMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsGotoRoomFromLobbyMenu, &IsGotoRoomFromLobbyMenu_Params, nullptr);
 	uFnIsGotoRoomFromLobbyMenu->FunctionFlags |= 0x400;
-	uFnIsGotoRoomFromLobbyMenu->iNative = 37683;
+	uFnIsGotoRoomFromLobbyMenu->iNative = 37681;
 
 	return IsGotoRoomFromLobbyMenu_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsExistRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37661])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37659])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -41403,13 +41403,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobby::IsExistRoom()
 	uFnIsExistRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsExistRoom, &IsExistRoom_Params, nullptr);
 	uFnIsExistRoom->FunctionFlags |= 0x400;
-	uFnIsExistRoom->iNative = 37661;
+	uFnIsExistRoom->iNative = 37659;
 
 	return IsExistRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateDrawMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40651])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobby::UpdateDrawMenu()
@@ -41428,11 +41428,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobby::UpdateDrawMenu()
 	uFnUpdateDrawMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawMenu, &UpdateDrawMenu_Params, nullptr);
 	uFnUpdateDrawMenu->FunctionFlags |= 0x400;
-	uFnUpdateDrawMenu->iNative = 40651;
+	uFnUpdateDrawMenu->iNative = 40649;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40782])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40780])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobby::UpdateMenu()
@@ -41451,11 +41451,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobby::UpdateMenu()
 	uFnUpdateMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMenu, &UpdateMenu_Params, nullptr);
 	uFnUpdateMenu->FunctionFlags |= 0x400;
-	uFnUpdateMenu->iNative = 40782;
+	uFnUpdateMenu->iNative = 40780;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.OnCloseNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38813])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38811])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobby::OnCloseNative()
@@ -41474,11 +41474,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobby::OnCloseNative()
 	uFnOnCloseNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnCloseNative, &OnCloseNative_Params, nullptr);
 	uFnOnCloseNative->FunctionFlags |= 0x400;
-	uFnOnCloseNative->iNative = 38813;
+	uFnOnCloseNative->iNative = 38811;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.InitMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37538])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37536])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobby::InitMenu()
@@ -41497,7 +41497,7 @@ void UREDGfxMoviePlayer_MenuNetworkLobby::InitMenu()
 	uFnInitMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitMenu, &InitMenu_Params, nullptr);
 	uFnInitMenu->FunctionFlags |= 0x400;
-	uFnInitMenu->iNative = 37538;
+	uFnInitMenu->iNative = 37536;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.OnDrawUpdate
@@ -42018,7 +42018,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::Start(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.UpdateScrollWindow
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40844])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40842])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobbySelect::UpdateScrollWindow()
@@ -42037,11 +42037,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobbySelect::UpdateScrollWindow()
 	uFnUpdateScrollWindow->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateScrollWindow, &UpdateScrollWindow_Params, nullptr);
 	uFnUpdateScrollWindow->FunctionFlags |= 0x400;
-	uFnUpdateScrollWindow->iNative = 40844;
+	uFnUpdateScrollWindow->iNative = 40842;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.UpdatePrevLobby_Native
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40809])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40807])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       IsTrigger                      (CPF_Parm)
@@ -42069,7 +42069,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::UpdatePrevLobby_Native(bool IsTr
 	uFnUpdatePrevLobby_Native->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePrevLobby_Native, &UpdatePrevLobby_Native_Params, nullptr);
 	uFnUpdatePrevLobby_Native->FunctionFlags |= 0x400;
-	uFnUpdatePrevLobby_Native->iNative = 40809;
+	uFnUpdatePrevLobby_Native->iNative = 40807;
 
 	memcpy_s(&isError, sizeof(isError), &UpdatePrevLobby_Native_Params.isError, sizeof(UpdatePrevLobby_Native_Params.isError));
 	memcpy_s(&ErrMsgID, sizeof(ErrMsgID), &UpdatePrevLobby_Native_Params.ErrMsgID, sizeof(UpdatePrevLobby_Native_Params.ErrMsgID));
@@ -42078,7 +42078,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::UpdatePrevLobby_Native(bool IsTr
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.CloseScrollWindow
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36235])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36233])
 // Parameter Info:
 // ECURSOR_TYPE                   Type                           (CPF_Parm)
 
@@ -42099,11 +42099,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobbySelect::CloseScrollWindow(ECURSOR_TYPE T
 	uFnCloseScrollWindow->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCloseScrollWindow, &CloseScrollWindow_Params, nullptr);
 	uFnCloseScrollWindow->FunctionFlags |= 0x400;
-	uFnCloseScrollWindow->iNative = 36235;
+	uFnCloseScrollWindow->iNative = 36233;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.OpenScrollWindow
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38845])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38843])
 // Parameter Info:
 // ECURSOR_TYPE                   Type                           (CPF_Parm)
 
@@ -42124,11 +42124,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobbySelect::OpenScrollWindow(ECURSOR_TYPE Ty
 	uFnOpenScrollWindow->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenScrollWindow, &OpenScrollWindow_Params, nullptr);
 	uFnOpenScrollWindow->FunctionFlags |= 0x400;
-	uFnOpenScrollWindow->iNative = 38845;
+	uFnOpenScrollWindow->iNative = 38843;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ScrollUpdate
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39481])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39479])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // ECURSOR_TYPE                   Type                           (CPF_Parm)
@@ -42152,7 +42152,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::ScrollUpdate(ECURSOR_TYPE Type, 
 	uFnScrollUpdate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnScrollUpdate, &ScrollUpdate_Params, nullptr);
 	uFnScrollUpdate->FunctionFlags |= 0x400;
-	uFnScrollUpdate->iNative = 39481;
+	uFnScrollUpdate->iNative = 39479;
 
 	memcpy_s(&Cursor, sizeof(Cursor), &ScrollUpdate_Params.Cursor, sizeof(ScrollUpdate_Params.Cursor));
 
@@ -42160,7 +42160,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::ScrollUpdate(ECURSOR_TYPE Type, 
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ScrollInit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39479])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39477])
 // Parameter Info:
 // ECURSOR_TYPE                   Type                           (CPF_Parm)
 // int32_t                        Cursor                         (CPF_Parm)
@@ -42187,11 +42187,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobbySelect::ScrollInit(ECURSOR_TYPE Type, in
 	uFnScrollInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnScrollInit, &ScrollInit_Params, nullptr);
 	uFnScrollInit->FunctionFlags |= 0x400;
-	uFnScrollInit->iNative = 39479;
+	uFnScrollInit->iNative = 39477;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.GetJoinLobbyErrorMessageID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37078])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37076])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -42211,13 +42211,13 @@ class FString UREDGfxMoviePlayer_MenuNetworkLobbySelect::GetJoinLobbyErrorMessag
 	uFnGetJoinLobbyErrorMessageID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetJoinLobbyErrorMessageID, &GetJoinLobbyErrorMessageID_Params, nullptr);
 	uFnGetJoinLobbyErrorMessageID->FunctionFlags |= 0x400;
-	uFnGetJoinLobbyErrorMessageID->iNative = 37078;
+	uFnGetJoinLobbyErrorMessageID->iNative = 37076;
 
 	return GetJoinLobbyErrorMessageID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsJoinLobby
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37695])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37693])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -42239,7 +42239,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsJoinLobby(int32_t& isError)
 	uFnIsJoinLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsJoinLobby, &IsJoinLobby_Params, nullptr);
 	uFnIsJoinLobby->FunctionFlags |= 0x400;
-	uFnIsJoinLobby->iNative = 37695;
+	uFnIsJoinLobby->iNative = 37693;
 
 	memcpy_s(&isError, sizeof(isError), &IsJoinLobby_Params.isError, sizeof(IsJoinLobby_Params.isError));
 
@@ -42247,7 +42247,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsJoinLobby(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ReqJoinLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39353])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39351])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Cursor                         (CPF_Parm)
@@ -42269,13 +42269,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::ReqJoinLobby(int32_t Cursor)
 	uFnReqJoinLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReqJoinLobby, &ReqJoinLobby_Params, nullptr);
 	uFnReqJoinLobby->FunctionFlags |= 0x400;
-	uFnReqJoinLobby->iNative = 39353;
+	uFnReqJoinLobby->iNative = 39351;
 
 	return ReqJoinLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsSelectableLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37846])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37844])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Cursor                         (CPF_Parm)
@@ -42297,13 +42297,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsSelectableLobby(int32_t Cursor
 	uFnIsSelectableLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSelectableLobby, &IsSelectableLobby_Params, nullptr);
 	uFnIsSelectableLobby->FunctionFlags |= 0x400;
-	uFnIsSelectableLobby->iNative = 37846;
+	uFnIsSelectableLobby->iNative = 37844;
 
 	return IsSelectableLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.SelectWorld
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39671])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39669])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Cursor                         (CPF_Parm)
@@ -42325,13 +42325,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::SelectWorld(int32_t Cursor)
 	uFnSelectWorld->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSelectWorld, &SelectWorld_Params, nullptr);
 	uFnSelectWorld->FunctionFlags |= 0x400;
-	uFnSelectWorld->iNative = 39671;
+	uFnSelectWorld->iNative = 39669;
 
 	return SelectWorld_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.SelectServer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39670])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39668])
 // Parameter Info:
 // int32_t                        Cursor                         (CPF_Parm)
 
@@ -42352,11 +42352,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobbySelect::SelectServer(int32_t Cursor)
 	uFnSelectServer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSelectServer, &SelectServer_Params, nullptr);
 	uFnSelectServer->FunctionFlags |= 0x400;
-	uFnSelectServer->iNative = 39670;
+	uFnSelectServer->iNative = 39668;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.GetLobbyInitErrorMessageID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37089])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37087])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -42376,13 +42376,13 @@ class FString UREDGfxMoviePlayer_MenuNetworkLobbySelect::GetLobbyInitErrorMessag
 	uFnGetLobbyInitErrorMessageID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetLobbyInitErrorMessageID, &GetLobbyInitErrorMessageID_Params, nullptr);
 	uFnGetLobbyInitErrorMessageID->FunctionFlags |= 0x400;
-	uFnGetLobbyInitErrorMessageID->iNative = 37089;
+	uFnGetLobbyInitErrorMessageID->iNative = 37087;
 
 	return GetLobbyInitErrorMessageID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsLobbyInit
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37709])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37707])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -42404,7 +42404,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsLobbyInit(int32_t& isError)
 	uFnIsLobbyInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLobbyInit, &IsLobbyInit_Params, nullptr);
 	uFnIsLobbyInit->FunctionFlags |= 0x400;
-	uFnIsLobbyInit->iNative = 37709;
+	uFnIsLobbyInit->iNative = 37707;
 
 	memcpy_s(&isError, sizeof(isError), &IsLobbyInit_Params.isError, sizeof(IsLobbyInit_Params.isError));
 
@@ -42412,7 +42412,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsLobbyInit(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ReqLobbyInit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39354])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39352])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -42432,13 +42432,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::ReqLobbyInit()
 	uFnReqLobbyInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReqLobbyInit, &ReqLobbyInit_Params, nullptr);
 	uFnReqLobbyInit->FunctionFlags |= 0x400;
-	uFnReqLobbyInit->iNative = 39354;
+	uFnReqLobbyInit->iNative = 39352;
 
 	return ReqLobbyInit_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.GetWorldInitErrorMessageID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37196])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37194])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -42458,13 +42458,13 @@ class FString UREDGfxMoviePlayer_MenuNetworkLobbySelect::GetWorldInitErrorMessag
 	uFnGetWorldInitErrorMessageID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetWorldInitErrorMessageID, &GetWorldInitErrorMessageID_Params, nullptr);
 	uFnGetWorldInitErrorMessageID->FunctionFlags |= 0x400;
-	uFnGetWorldInitErrorMessageID->iNative = 37196;
+	uFnGetWorldInitErrorMessageID->iNative = 37194;
 
 	return GetWorldInitErrorMessageID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsWorldInit
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37932])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37930])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -42486,7 +42486,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsWorldInit(int32_t& isError)
 	uFnIsWorldInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsWorldInit, &IsWorldInit_Params, nullptr);
 	uFnIsWorldInit->FunctionFlags |= 0x400;
-	uFnIsWorldInit->iNative = 37932;
+	uFnIsWorldInit->iNative = 37930;
 
 	memcpy_s(&isError, sizeof(isError), &IsWorldInit_Params.isError, sizeof(IsWorldInit_Params.isError));
 
@@ -42494,7 +42494,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsWorldInit(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ReqWorldInit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39373])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39371])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -42514,13 +42514,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::ReqWorldInit()
 	uFnReqWorldInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReqWorldInit, &ReqWorldInit_Params, nullptr);
 	uFnReqWorldInit->FunctionFlags |= 0x400;
-	uFnReqWorldInit->iNative = 39373;
+	uFnReqWorldInit->iNative = 39371;
 
 	return ReqWorldInit_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsSelectableServer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37847])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37845])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        ServerIndex                    (CPF_Parm)
@@ -42542,13 +42542,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsSelectableServer(int32_t Serve
 	uFnIsSelectableServer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSelectableServer, &IsSelectableServer_Params, nullptr);
 	uFnIsSelectableServer->FunctionFlags |= 0x400;
-	uFnIsSelectableServer->iNative = 37847;
+	uFnIsSelectableServer->iNative = 37845;
 
 	return IsSelectableServer_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.GetServerInitErrorMessageID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37167])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37165])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -42568,13 +42568,13 @@ class FString UREDGfxMoviePlayer_MenuNetworkLobbySelect::GetServerInitErrorMessa
 	uFnGetServerInitErrorMessageID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetServerInitErrorMessageID, &GetServerInitErrorMessageID_Params, nullptr);
 	uFnGetServerInitErrorMessageID->FunctionFlags |= 0x400;
-	uFnGetServerInitErrorMessageID->iNative = 37167;
+	uFnGetServerInitErrorMessageID->iNative = 37165;
 
 	return GetServerInitErrorMessageID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsServerInit
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37850])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37848])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -42596,7 +42596,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsServerInit(int32_t& isError)
 	uFnIsServerInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsServerInit, &IsServerInit_Params, nullptr);
 	uFnIsServerInit->FunctionFlags |= 0x400;
-	uFnIsServerInit->iNative = 37850;
+	uFnIsServerInit->iNative = 37848;
 
 	memcpy_s(&isError, sizeof(isError), &IsServerInit_Params.isError, sizeof(IsServerInit_Params.isError));
 
@@ -42604,7 +42604,7 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsServerInit(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ReqServerInit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39357])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39355])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -42624,13 +42624,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::ReqServerInit()
 	uFnReqServerInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReqServerInit, &ReqServerInit_Params, nullptr);
 	uFnReqServerInit->FunctionFlags |= 0x400;
-	uFnReqServerInit->iNative = 39357;
+	uFnReqServerInit->iNative = 39355;
 
 	return ReqServerInit_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsInLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37692])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37690])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -42650,13 +42650,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsInLobby()
 	uFnIsInLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsInLobby, &IsInLobby_Params, nullptr);
 	uFnIsInLobby->FunctionFlags |= 0x400;
-	uFnIsInLobby->iNative = 37692;
+	uFnIsInLobby->iNative = 37690;
 
 	return IsInLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.SetupLobbySelected
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39839])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39837])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobbySelect::SetupLobbySelected()
@@ -42675,11 +42675,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobbySelect::SetupLobbySelected()
 	uFnSetupLobbySelected->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupLobbySelected, &SetupLobbySelected_Params, nullptr);
 	uFnSetupLobbySelected->FunctionFlags |= 0x400;
-	uFnSetupLobbySelected->iNative = 39839;
+	uFnSetupLobbySelected->iNative = 39837;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsLobbySelected
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37713])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37711])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -42699,13 +42699,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsLobbySelected()
 	uFnIsLobbySelected->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLobbySelected, &IsLobbySelected_Params, nullptr);
 	uFnIsLobbySelected->FunctionFlags |= 0x400;
-	uFnIsLobbySelected->iNative = 37713;
+	uFnIsLobbySelected->iNative = 37711;
 
 	return IsLobbySelected_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsEventRobbyEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37657])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37655])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -42725,13 +42725,13 @@ bool UREDGfxMoviePlayer_MenuNetworkLobbySelect::IsEventRobbyEnable()
 	uFnIsEventRobbyEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsEventRobbyEnable, &IsEventRobbyEnable_Params, nullptr);
 	uFnIsEventRobbyEnable->FunctionFlags |= 0x400;
-	uFnIsEventRobbyEnable->iNative = 37657;
+	uFnIsEventRobbyEnable->iNative = 37655;
 
 	return IsEventRobbyEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.UpdateDrawMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40651])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobbySelect::UpdateDrawMenu()
@@ -42750,11 +42750,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobbySelect::UpdateDrawMenu()
 	uFnUpdateDrawMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawMenu, &UpdateDrawMenu_Params, nullptr);
 	uFnUpdateDrawMenu->FunctionFlags |= 0x400;
-	uFnUpdateDrawMenu->iNative = 40651;
+	uFnUpdateDrawMenu->iNative = 40649;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.OnCloseNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38813])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38811])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobbySelect::OnCloseNative()
@@ -42773,11 +42773,11 @@ void UREDGfxMoviePlayer_MenuNetworkLobbySelect::OnCloseNative()
 	uFnOnCloseNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnCloseNative, &OnCloseNative_Params, nullptr);
 	uFnOnCloseNative->FunctionFlags |= 0x400;
-	uFnOnCloseNative->iNative = 38813;
+	uFnOnCloseNative->iNative = 38811;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.InitMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37538])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37536])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkLobbySelect::InitMenu()
@@ -42796,7 +42796,7 @@ void UREDGfxMoviePlayer_MenuNetworkLobbySelect::InitMenu()
 	uFnInitMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitMenu, &InitMenu_Params, nullptr);
 	uFnInitMenu->FunctionFlags |= 0x400;
-	uFnInitMenu->iNative = 37538;
+	uFnInitMenu->iNative = 37536;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRankBoard.OnDrawUpdate
@@ -42983,7 +42983,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRankBoard::Start(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRankBoard.UpdateDrawNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40652])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40650])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRankBoard::UpdateDrawNative()
@@ -43002,11 +43002,11 @@ void UREDGfxMoviePlayer_MenuNetworkRankBoard::UpdateDrawNative()
 	uFnUpdateDrawNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawNative, &UpdateDrawNative_Params, nullptr);
 	uFnUpdateDrawNative->FunctionFlags |= 0x400;
-	uFnUpdateDrawNative->iNative = 40652;
+	uFnUpdateDrawNative->iNative = 40650;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRankBoard.UpdateMainNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40768])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40766])
 // Parameter Info:
 // uint32_t                       bTrigger                       (CPF_Parm)
 
@@ -43027,11 +43027,11 @@ void UREDGfxMoviePlayer_MenuNetworkRankBoard::UpdateMainNative(bool bTrigger)
 	uFnUpdateMainNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMainNative, &UpdateMainNative_Params, nullptr);
 	uFnUpdateMainNative->FunctionFlags |= 0x400;
-	uFnUpdateMainNative->iNative = 40768;
+	uFnUpdateMainNative->iNative = 40766;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRankBoard.FinalizeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36842])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36840])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRankBoard::FinalizeNative()
@@ -43050,11 +43050,11 @@ void UREDGfxMoviePlayer_MenuNetworkRankBoard::FinalizeNative()
 	uFnFinalizeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFinalizeNative, &FinalizeNative_Params, nullptr);
 	uFnFinalizeNative->FunctionFlags |= 0x400;
-	uFnFinalizeNative->iNative = 36842;
+	uFnFinalizeNative->iNative = 36840;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRankBoard.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRankBoard::InitializeNative()
@@ -43073,7 +43073,7 @@ void UREDGfxMoviePlayer_MenuNetworkRankBoard::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OnDrawUpdate
@@ -43781,7 +43781,7 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::eventHideBG(bool hide)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsBreakupSoon
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37612])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37610])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -43801,13 +43801,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsBreakupSoon()
 	uFnIsBreakupSoon->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsBreakupSoon, &IsBreakupSoon_Params, nullptr);
 	uFnIsBreakupSoon->FunctionFlags |= 0x400;
-	uFnIsBreakupSoon->iNative = 37612;
+	uFnIsBreakupSoon->iNative = 37610;
 
 	return IsBreakupSoon_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsLeaveLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37699])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37697])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -43827,13 +43827,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsLeaveLobby()
 	uFnIsLeaveLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLeaveLobby, &IsLeaveLobby_Params, nullptr);
 	uFnIsLeaveLobby->FunctionFlags |= 0x400;
-	uFnIsLeaveLobby->iNative = 37699;
+	uFnIsLeaveLobby->iNative = 37697;
 
 	return IsLeaveLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.LeaveLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35120])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35118])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::LeaveLobby()
@@ -43852,11 +43852,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::LeaveLobby()
 	uFnLeaveLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLeaveLobby, &LeaveLobby_Params, nullptr);
 	uFnLeaveLobby->FunctionFlags |= 0x400;
-	uFnLeaveLobby->iNative = 35120;
+	uFnLeaveLobby->iNative = 35118;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsTournamentForceLeaveRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37882])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37880])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -43876,13 +43876,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsTournamentForceLeaveRoom()
 	uFnIsTournamentForceLeaveRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTournamentForceLeaveRoom, &IsTournamentForceLeaveRoom_Params, nullptr);
 	uFnIsTournamentForceLeaveRoom->FunctionFlags |= 0x400;
-	uFnIsTournamentForceLeaveRoom->iNative = 37882;
+	uFnIsTournamentForceLeaveRoom->iNative = 37880;
 
 	return IsTournamentForceLeaveRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsTournamentForceBattleReady
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37881])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37879])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -43902,13 +43902,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsTournamentForceBattleReady()
 	uFnIsTournamentForceBattleReady->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTournamentForceBattleReady, &IsTournamentForceBattleReady_Params, nullptr);
 	uFnIsTournamentForceBattleReady->FunctionFlags |= 0x400;
-	uFnIsTournamentForceBattleReady->iNative = 37881;
+	uFnIsTournamentForceBattleReady->iNative = 37879;
 
 	return IsTournamentForceBattleReady_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsTournamentRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37886])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37884])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -43928,13 +43928,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsTournamentRoom()
 	uFnIsTournamentRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTournamentRoom, &IsTournamentRoom_Params, nullptr);
 	uFnIsTournamentRoom->FunctionFlags |= 0x400;
-	uFnIsTournamentRoom->iNative = 37886;
+	uFnIsTournamentRoom->iNative = 37884;
 
 	return IsTournamentRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsLobbyRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37712])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37710])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -43954,13 +43954,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsLobbyRoom()
 	uFnIsLobbyRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLobbyRoom, &IsLobbyRoom_Params, nullptr);
 	uFnIsLobbyRoom->FunctionFlags |= 0x400;
-	uFnIsLobbyRoom->iNative = 37712;
+	uFnIsLobbyRoom->iNative = 37710;
 
 	return IsLobbyRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.SwitchLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40151])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40149])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::SwitchLobby()
@@ -43979,11 +43979,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::SwitchLobby()
 	uFnSwitchLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSwitchLobby, &SwitchLobby_Params, nullptr);
 	uFnSwitchLobby->FunctionFlags |= 0x400;
-	uFnSwitchLobby->iNative = 40151;
+	uFnSwitchLobby->iNative = 40149;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.GetRoomState
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37160])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37158])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // class FString                  Message                        (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -44008,14 +44008,14 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::GetRoomState(int32_t Index, class FStri
 	uFnGetRoomState->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetRoomState, &GetRoomState_Params, nullptr);
 	uFnGetRoomState->FunctionFlags |= 0x400;
-	uFnGetRoomState->iNative = 37160;
+	uFnGetRoomState->iNative = 37158;
 
 	memcpy_s(&Message, sizeof(Message), &GetRoomState_Params.Message, sizeof(GetRoomState_Params.Message));
 	memcpy_s(&IconType, sizeof(IconType), &GetRoomState_Params.IconType, sizeof(GetRoomState_Params.IconType));
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.GetRoomErrorMessageID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37158])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37156])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -44035,13 +44035,13 @@ class FString UREDGfxMoviePlayer_MenuNetworkRoom::GetRoomErrorMessageID()
 	uFnGetRoomErrorMessageID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetRoomErrorMessageID, &GetRoomErrorMessageID_Params, nullptr);
 	uFnGetRoomErrorMessageID->FunctionFlags |= 0x400;
-	uFnGetRoomErrorMessageID->iNative = 37158;
+	uFnGetRoomErrorMessageID->iNative = 37156;
 
 	return GetRoomErrorMessageID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsRoomError
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37833])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37831])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44061,13 +44061,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsRoomError()
 	uFnIsRoomError->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRoomError, &IsRoomError_Params, nullptr);
 	uFnIsRoomError->FunctionFlags |= 0x400;
-	uFnIsRoomError->iNative = 37833;
+	uFnIsRoomError->iNative = 37831;
 
 	return IsRoomError_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateGotoBattleNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40695])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40693])
 // Parameter Info:
 // uint32_t                       bTrigger                       (CPF_Parm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -44090,13 +44090,13 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::UpdateGotoBattleNative(bool bTrigger, i
 	uFnUpdateGotoBattleNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateGotoBattleNative, &UpdateGotoBattleNative_Params, nullptr);
 	uFnUpdateGotoBattleNative->FunctionFlags |= 0x400;
-	uFnUpdateGotoBattleNative->iNative = 40695;
+	uFnUpdateGotoBattleNative->iNative = 40693;
 
 	memcpy_s(&isError, sizeof(isError), &UpdateGotoBattleNative_Params.isError, sizeof(UpdateGotoBattleNative_Params.isError));
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateRoomErrorNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40833])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40831])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -44118,13 +44118,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::UpdateRoomErrorNative(bool bTrigger)
 	uFnUpdateRoomErrorNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateRoomErrorNative, &UpdateRoomErrorNative_Params, nullptr);
 	uFnUpdateRoomErrorNative->FunctionFlags |= 0x400;
-	uFnUpdateRoomErrorNative->iNative = 40833;
+	uFnUpdateRoomErrorNative->iNative = 40831;
 
 	return UpdateRoomErrorNative_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateLeaveRoomConfirmNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40745])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40743])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -44148,7 +44148,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::UpdateLeaveRoomConfirmNative(bool bTrig
 	uFnUpdateLeaveRoomConfirmNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLeaveRoomConfirmNative, &UpdateLeaveRoomConfirmNative_Params, nullptr);
 	uFnUpdateLeaveRoomConfirmNative->FunctionFlags |= 0x400;
-	uFnUpdateLeaveRoomConfirmNative->iNative = 40745;
+	uFnUpdateLeaveRoomConfirmNative->iNative = 40743;
 
 	memcpy_s(&IsLeave, sizeof(IsLeave), &UpdateLeaveRoomConfirmNative_Params.IsLeave, sizeof(UpdateLeaveRoomConfirmNative_Params.IsLeave));
 
@@ -44156,7 +44156,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::UpdateLeaveRoomConfirmNative(bool bTrig
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.RoomInfo_MemberMax
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39420])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39418])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44176,13 +44176,13 @@ int32_t UREDGfxMoviePlayer_MenuNetworkRoom::RoomInfo_MemberMax()
 	uFnRoomInfo_MemberMax->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRoomInfo_MemberMax, &RoomInfo_MemberMax_Params, nullptr);
 	uFnRoomInfo_MemberMax->FunctionFlags |= 0x400;
-	uFnRoomInfo_MemberMax->iNative = 39420;
+	uFnRoomInfo_MemberMax->iNative = 39418;
 
 	return RoomInfo_MemberMax_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateMemberInfo
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40781])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40779])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::UpdateMemberInfo()
@@ -44201,11 +44201,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::UpdateMemberInfo()
 	uFnUpdateMemberInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMemberInfo, &UpdateMemberInfo_Params, nullptr);
 	uFnUpdateMemberInfo->FunctionFlags |= 0x400;
-	uFnUpdateMemberInfo->iNative = 40781;
+	uFnUpdateMemberInfo->iNative = 40779;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsContactMenuExit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37629])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37627])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44225,13 +44225,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsContactMenuExit()
 	uFnIsContactMenuExit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsContactMenuExit, &IsContactMenuExit_Params, nullptr);
 	uFnIsContactMenuExit->FunctionFlags |= 0x400;
-	uFnIsContactMenuExit->iNative = 37629;
+	uFnIsContactMenuExit->iNative = 37627;
 
 	return IsContactMenuExit_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OpenContactMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38828])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38826])
 // Parameter Info:
 // ENETCONTACT_MENU_TYPE          Type                           (CPF_Parm)
 // int32_t                        SlotIndex                      (CPF_Parm)
@@ -44258,11 +44258,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::OpenContactMenu(ENETCONTACT_MENU_TYPE T
 	uFnOpenContactMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenContactMenu, &OpenContactMenu_Params, nullptr);
 	uFnOpenContactMenu->FunctionFlags |= 0x400;
-	uFnOpenContactMenu->iNative = 38828;
+	uFnOpenContactMenu->iNative = 38826;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OpenEasyTextChat
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38831])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38829])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::OpenEasyTextChat()
@@ -44281,11 +44281,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::OpenEasyTextChat()
 	uFnOpenEasyTextChat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenEasyTextChat, &OpenEasyTextChat_Params, nullptr);
 	uFnOpenEasyTextChat->FunctionFlags |= 0x400;
-	uFnOpenEasyTextChat->iNative = 38831;
+	uFnOpenEasyTextChat->iNative = 38829;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsRoomMenuExit
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37834])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37832])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        IsLeaveRoom                    (CPF_Parm | CPF_OutParm)
@@ -44309,7 +44309,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsRoomMenuExit(int32_t& IsLeaveRoom, in
 	uFnIsRoomMenuExit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRoomMenuExit, &IsRoomMenuExit_Params, nullptr);
 	uFnIsRoomMenuExit->FunctionFlags |= 0x400;
-	uFnIsRoomMenuExit->iNative = 37834;
+	uFnIsRoomMenuExit->iNative = 37832;
 
 	memcpy_s(&IsLeaveRoom, sizeof(IsLeaveRoom), &IsRoomMenuExit_Params.IsLeaveRoom, sizeof(IsRoomMenuExit_Params.IsLeaveRoom));
 	memcpy_s(&IsMainMenu, sizeof(IsMainMenu), &IsRoomMenuExit_Params.IsMainMenu, sizeof(IsRoomMenuExit_Params.IsMainMenu));
@@ -44318,7 +44318,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsRoomMenuExit(int32_t& IsLeaveRoom, in
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OpenRoomMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38842])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38840])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::OpenRoomMenu()
@@ -44337,11 +44337,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::OpenRoomMenu()
 	uFnOpenRoomMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenRoomMenu, &OpenRoomMenu_Params, nullptr);
 	uFnOpenRoomMenu->FunctionFlags |= 0x400;
-	uFnOpenRoomMenu->iNative = 38842;
+	uFnOpenRoomMenu->iNative = 38840;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.BackToWaitRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35525])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::BackToWaitRoom()
@@ -44360,11 +44360,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::BackToWaitRoom()
 	uFnBackToWaitRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnBackToWaitRoom, &BackToWaitRoom_Params, nullptr);
 	uFnBackToWaitRoom->FunctionFlags |= 0x400;
-	uFnBackToWaitRoom->iNative = 35527;
+	uFnBackToWaitRoom->iNative = 35525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.SendBattleReadyCancel
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39680])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39678])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::SendBattleReadyCancel()
@@ -44383,11 +44383,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::SendBattleReadyCancel()
 	uFnSendBattleReadyCancel->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendBattleReadyCancel, &SendBattleReadyCancel_Params, nullptr);
 	uFnSendBattleReadyCancel->FunctionFlags |= 0x400;
-	uFnSendBattleReadyCancel->iNative = 39680;
+	uFnSendBattleReadyCancel->iNative = 39678;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsSendingBattleReady
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37849])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37847])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44407,13 +44407,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsSendingBattleReady()
 	uFnIsSendingBattleReady->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSendingBattleReady, &IsSendingBattleReady_Params, nullptr);
 	uFnIsSendingBattleReady->FunctionFlags |= 0x400;
-	uFnIsSendingBattleReady->iNative = 37849;
+	uFnIsSendingBattleReady->iNative = 37847;
 
 	return IsSendingBattleReady_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.SendBattleReady
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39679])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39677])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::SendBattleReady()
@@ -44432,11 +44432,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::SendBattleReady()
 	uFnSendBattleReady->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendBattleReady, &SendBattleReady_Params, nullptr);
 	uFnSendBattleReady->FunctionFlags |= 0x400;
-	uFnSendBattleReady->iNative = 39679;
+	uFnSendBattleReady->iNative = 39677;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsLeaveRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37700])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37698])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44456,13 +44456,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsLeaveRoom()
 	uFnIsLeaveRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLeaveRoom, &IsLeaveRoom_Params, nullptr);
 	uFnIsLeaveRoom->FunctionFlags |= 0x400;
-	uFnIsLeaveRoom->iNative = 37700;
+	uFnIsLeaveRoom->iNative = 37698;
 
 	return IsLeaveRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.LeaveRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37985])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37983])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::LeaveRoom()
@@ -44481,11 +44481,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::LeaveRoom()
 	uFnLeaveRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLeaveRoom, &LeaveRoom_Params, nullptr);
 	uFnLeaveRoom->FunctionFlags |= 0x400;
-	uFnLeaveRoom->iNative = 37985;
+	uFnLeaveRoom->iNative = 37983;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.GotoBattle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37406])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37404])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::GotoBattle()
@@ -44504,11 +44504,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::GotoBattle()
 	uFnGotoBattle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGotoBattle, &GotoBattle_Params, nullptr);
 	uFnGotoBattle->FunctionFlags |= 0x400;
-	uFnGotoBattle->iNative = 37406;
+	uFnGotoBattle->iNative = 37404;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.GetMySlotIndex
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37116])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37114])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44528,13 +44528,13 @@ int32_t UREDGfxMoviePlayer_MenuNetworkRoom::GetMySlotIndex()
 	uFnGetMySlotIndex->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMySlotIndex, &GetMySlotIndex_Params, nullptr);
 	uFnGetMySlotIndex->FunctionFlags |= 0x400;
-	uFnGetMySlotIndex->iNative = 37116;
+	uFnGetMySlotIndex->iNative = 37114;
 
 	return GetMySlotIndex_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsBattleReadyInputEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37605])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37603])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44554,13 +44554,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsBattleReadyInputEnable()
 	uFnIsBattleReadyInputEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsBattleReadyInputEnable, &IsBattleReadyInputEnable_Params, nullptr);
 	uFnIsBattleReadyInputEnable->FunctionFlags |= 0x400;
-	uFnIsBattleReadyInputEnable->iNative = 37605;
+	uFnIsBattleReadyInputEnable->iNative = 37603;
 
 	return IsBattleReadyInputEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsBattleReady
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37604])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37602])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44580,13 +44580,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsBattleReady()
 	uFnIsBattleReady->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsBattleReady, &IsBattleReady_Params, nullptr);
 	uFnIsBattleReady->FunctionFlags |= 0x400;
-	uFnIsBattleReady->iNative = 37604;
+	uFnIsBattleReady->iNative = 37602;
 
 	return IsBattleReady_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsNeedGotoBattle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37741])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37739])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44606,13 +44606,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsNeedGotoBattle()
 	uFnIsNeedGotoBattle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsNeedGotoBattle, &IsNeedGotoBattle_Params, nullptr);
 	uFnIsNeedGotoBattle->FunctionFlags |= 0x400;
-	uFnIsNeedGotoBattle->iNative = 37741;
+	uFnIsNeedGotoBattle->iNative = 37739;
 
 	return IsNeedGotoBattle_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsSitBattleConsole
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37857])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37855])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44632,13 +44632,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsSitBattleConsole()
 	uFnIsSitBattleConsole->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSitBattleConsole, &IsSitBattleConsole_Params, nullptr);
 	uFnIsSitBattleConsole->FunctionFlags |= 0x400;
-	uFnIsSitBattleConsole->iNative = 37857;
+	uFnIsSitBattleConsole->iNative = 37855;
 
 	return IsSitBattleConsole_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsSlotIsMine
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37863])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37861])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        SlotIndex                      (CPF_Parm)
@@ -44660,13 +44660,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsSlotIsMine(int32_t SlotIndex)
 	uFnIsSlotIsMine->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSlotIsMine, &IsSlotIsMine_Params, nullptr);
 	uFnIsSlotIsMine->FunctionFlags |= 0x400;
-	uFnIsSlotIsMine->iNative = 37863;
+	uFnIsSlotIsMine->iNative = 37861;
 
 	return IsSlotIsMine_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsHost
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37687])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37685])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44686,13 +44686,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::IsHost()
 	uFnIsHost->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsHost, &IsHost_Params, nullptr);
 	uFnIsHost->FunctionFlags |= 0x400;
-	uFnIsHost->iNative = 37687;
+	uFnIsHost->iNative = 37685;
 
 	return IsHost_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.TextChat_IsFullScreen
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40207])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40205])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -44712,13 +44712,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoom::TextChat_IsFullScreen()
 	uFnTextChat_IsFullScreen->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTextChat_IsFullScreen, &TextChat_IsFullScreen_Params, nullptr);
 	uFnTextChat_IsFullScreen->FunctionFlags |= 0x400;
-	uFnTextChat_IsFullScreen->iNative = 40207;
+	uFnTextChat_IsFullScreen->iNative = 40205;
 
 	return TextChat_IsFullScreen_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateDrawMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40651])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::UpdateDrawMenu()
@@ -44737,11 +44737,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::UpdateDrawMenu()
 	uFnUpdateDrawMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawMenu, &UpdateDrawMenu_Params, nullptr);
 	uFnUpdateDrawMenu->FunctionFlags |= 0x400;
-	uFnUpdateDrawMenu->iNative = 40651;
+	uFnUpdateDrawMenu->iNative = 40649;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40782])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40780])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::UpdateMenu()
@@ -44760,11 +44760,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::UpdateMenu()
 	uFnUpdateMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMenu, &UpdateMenu_Params, nullptr);
 	uFnUpdateMenu->FunctionFlags |= 0x400;
-	uFnUpdateMenu->iNative = 40782;
+	uFnUpdateMenu->iNative = 40780;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OnCloseNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38813])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38811])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::OnCloseNative()
@@ -44783,11 +44783,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::OnCloseNative()
 	uFnOnCloseNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnCloseNative, &OnCloseNative_Params, nullptr);
 	uFnOnCloseNative->FunctionFlags |= 0x400;
-	uFnOnCloseNative->iNative = 38813;
+	uFnOnCloseNative->iNative = 38811;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.InitMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37538])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37536])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoom::InitMenu()
@@ -44806,7 +44806,7 @@ void UREDGfxMoviePlayer_MenuNetworkRoom::InitMenu()
 	uFnInitMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitMenu, &InitMenu_Params, nullptr);
 	uFnInitMenu->FunctionFlags |= 0x400;
-	uFnInitMenu->iNative = 37538;
+	uFnInitMenu->iNative = 37536;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.OnDrawUpdate
@@ -45356,7 +45356,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsIMEFormOpen()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.GetKyoutaiMaxNum
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37083])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37081])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -45376,13 +45376,13 @@ int32_t UREDGfxMoviePlayer_MenuNetworkRoomAC20::GetKyoutaiMaxNum()
 	uFnGetKyoutaiMaxNum->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetKyoutaiMaxNum, &GetKyoutaiMaxNum_Params, nullptr);
 	uFnGetKyoutaiMaxNum->FunctionFlags |= 0x400;
-	uFnGetKyoutaiMaxNum->iNative = 37083;
+	uFnGetKyoutaiMaxNum->iNative = 37081;
 
 	return GetKyoutaiMaxNum_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsBreakupSoon
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37612])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37610])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -45402,13 +45402,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsBreakupSoon()
 	uFnIsBreakupSoon->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsBreakupSoon, &IsBreakupSoon_Params, nullptr);
 	uFnIsBreakupSoon->FunctionFlags |= 0x400;
-	uFnIsBreakupSoon->iNative = 37612;
+	uFnIsBreakupSoon->iNative = 37610;
 
 	return IsBreakupSoon_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsLeaveLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37699])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37697])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -45428,13 +45428,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsLeaveLobby()
 	uFnIsLeaveLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLeaveLobby, &IsLeaveLobby_Params, nullptr);
 	uFnIsLeaveLobby->FunctionFlags |= 0x400;
-	uFnIsLeaveLobby->iNative = 37699;
+	uFnIsLeaveLobby->iNative = 37697;
 
 	return IsLeaveLobby_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.LeaveLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35120])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35118])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::LeaveLobby()
@@ -45453,11 +45453,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::LeaveLobby()
 	uFnLeaveLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLeaveLobby, &LeaveLobby_Params, nullptr);
 	uFnLeaveLobby->FunctionFlags |= 0x400;
-	uFnLeaveLobby->iNative = 35120;
+	uFnLeaveLobby->iNative = 35118;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsTournamentForceLeaveRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37882])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37880])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -45477,13 +45477,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsTournamentForceLeaveRoom()
 	uFnIsTournamentForceLeaveRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTournamentForceLeaveRoom, &IsTournamentForceLeaveRoom_Params, nullptr);
 	uFnIsTournamentForceLeaveRoom->FunctionFlags |= 0x400;
-	uFnIsTournamentForceLeaveRoom->iNative = 37882;
+	uFnIsTournamentForceLeaveRoom->iNative = 37880;
 
 	return IsTournamentForceLeaveRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsTournamentForceBattleReady
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37881])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37879])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -45503,13 +45503,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsTournamentForceBattleReady()
 	uFnIsTournamentForceBattleReady->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTournamentForceBattleReady, &IsTournamentForceBattleReady_Params, nullptr);
 	uFnIsTournamentForceBattleReady->FunctionFlags |= 0x400;
-	uFnIsTournamentForceBattleReady->iNative = 37881;
+	uFnIsTournamentForceBattleReady->iNative = 37879;
 
 	return IsTournamentForceBattleReady_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsTournamentRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37886])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37884])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -45529,13 +45529,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsTournamentRoom()
 	uFnIsTournamentRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsTournamentRoom, &IsTournamentRoom_Params, nullptr);
 	uFnIsTournamentRoom->FunctionFlags |= 0x400;
-	uFnIsTournamentRoom->iNative = 37886;
+	uFnIsTournamentRoom->iNative = 37884;
 
 	return IsTournamentRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.SwitchLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40151])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40149])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::SwitchLobby()
@@ -45554,11 +45554,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::SwitchLobby()
 	uFnSwitchLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSwitchLobby, &SwitchLobby_Params, nullptr);
 	uFnSwitchLobby->FunctionFlags |= 0x400;
-	uFnSwitchLobby->iNative = 40151;
+	uFnSwitchLobby->iNative = 40149;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.GetRoomErrorMessageID
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37158])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37156])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -45578,13 +45578,13 @@ class FString UREDGfxMoviePlayer_MenuNetworkRoomAC20::GetRoomErrorMessageID()
 	uFnGetRoomErrorMessageID->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetRoomErrorMessageID, &GetRoomErrorMessageID_Params, nullptr);
 	uFnGetRoomErrorMessageID->FunctionFlags |= 0x400;
-	uFnGetRoomErrorMessageID->iNative = 37158;
+	uFnGetRoomErrorMessageID->iNative = 37156;
 
 	return GetRoomErrorMessageID_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsRoomError
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37833])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37831])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -45604,13 +45604,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsRoomError()
 	uFnIsRoomError->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRoomError, &IsRoomError_Params, nullptr);
 	uFnIsRoomError->FunctionFlags |= 0x400;
-	uFnIsRoomError->iNative = 37833;
+	uFnIsRoomError->iNative = 37831;
 
 	return IsRoomError_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateGotoBattleNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40695])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40693])
 // Parameter Info:
 // uint32_t                       bTrigger                       (CPF_Parm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -45633,13 +45633,13 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::UpdateGotoBattleNative(bool bTrigge
 	uFnUpdateGotoBattleNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateGotoBattleNative, &UpdateGotoBattleNative_Params, nullptr);
 	uFnUpdateGotoBattleNative->FunctionFlags |= 0x400;
-	uFnUpdateGotoBattleNative->iNative = 40695;
+	uFnUpdateGotoBattleNative->iNative = 40693;
 
 	memcpy_s(&isError, sizeof(isError), &UpdateGotoBattleNative_Params.isError, sizeof(UpdateGotoBattleNative_Params.isError));
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateRoomErrorNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40833])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40831])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -45661,13 +45661,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::UpdateRoomErrorNative(bool bTrigger
 	uFnUpdateRoomErrorNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateRoomErrorNative, &UpdateRoomErrorNative_Params, nullptr);
 	uFnUpdateRoomErrorNative->FunctionFlags |= 0x400;
-	uFnUpdateRoomErrorNative->iNative = 40833;
+	uFnUpdateRoomErrorNative->iNative = 40831;
 
 	return UpdateRoomErrorNative_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateLeaveRoomConfirmNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40745])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40743])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -45691,7 +45691,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::UpdateLeaveRoomConfirmNative(bool b
 	uFnUpdateLeaveRoomConfirmNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLeaveRoomConfirmNative, &UpdateLeaveRoomConfirmNative_Params, nullptr);
 	uFnUpdateLeaveRoomConfirmNative->FunctionFlags |= 0x400;
-	uFnUpdateLeaveRoomConfirmNative->iNative = 40745;
+	uFnUpdateLeaveRoomConfirmNative->iNative = 40743;
 
 	memcpy_s(&IsLeave, sizeof(IsLeave), &UpdateLeaveRoomConfirmNative_Params.IsLeave, sizeof(UpdateLeaveRoomConfirmNative_Params.IsLeave));
 
@@ -45699,7 +45699,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::UpdateLeaveRoomConfirmNative(bool b
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsContactMenuExit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37629])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37627])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -45719,13 +45719,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsContactMenuExit()
 	uFnIsContactMenuExit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsContactMenuExit, &IsContactMenuExit_Params, nullptr);
 	uFnIsContactMenuExit->FunctionFlags |= 0x400;
-	uFnIsContactMenuExit->iNative = 37629;
+	uFnIsContactMenuExit->iNative = 37627;
 
 	return IsContactMenuExit_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.OpenContactMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38828])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38826])
 // Parameter Info:
 // ENETCONTACT_MENU_TYPE          Type                           (CPF_Parm)
 // int32_t                        SlotIndex                      (CPF_Parm)
@@ -45752,11 +45752,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::OpenContactMenu(ENETCONTACT_MENU_TY
 	uFnOpenContactMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenContactMenu, &OpenContactMenu_Params, nullptr);
 	uFnOpenContactMenu->FunctionFlags |= 0x400;
-	uFnOpenContactMenu->iNative = 38828;
+	uFnOpenContactMenu->iNative = 38826;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.OpenEasyTextChat
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38831])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38829])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::OpenEasyTextChat()
@@ -45775,11 +45775,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::OpenEasyTextChat()
 	uFnOpenEasyTextChat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenEasyTextChat, &OpenEasyTextChat_Params, nullptr);
 	uFnOpenEasyTextChat->FunctionFlags |= 0x400;
-	uFnOpenEasyTextChat->iNative = 38831;
+	uFnOpenEasyTextChat->iNative = 38829;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsRoomMenuExit
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37834])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37832])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        IsLeaveRoom                    (CPF_Parm | CPF_OutParm)
@@ -45805,7 +45805,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsRoomMenuExit(int32_t& IsLeaveRoom
 	uFnIsRoomMenuExit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRoomMenuExit, &IsRoomMenuExit_Params, nullptr);
 	uFnIsRoomMenuExit->FunctionFlags |= 0x400;
-	uFnIsRoomMenuExit->iNative = 37834;
+	uFnIsRoomMenuExit->iNative = 37832;
 
 	memcpy_s(&IsLeaveRoom, sizeof(IsLeaveRoom), &IsRoomMenuExit_Params.IsLeaveRoom, sizeof(IsRoomMenuExit_Params.IsLeaveRoom));
 	memcpy_s(&IsMainMenu, sizeof(IsMainMenu), &IsRoomMenuExit_Params.IsMainMenu, sizeof(IsRoomMenuExit_Params.IsMainMenu));
@@ -45815,7 +45815,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsRoomMenuExit(int32_t& IsLeaveRoom
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.OpenRoomMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38842])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38840])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::OpenRoomMenu()
@@ -45834,11 +45834,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::OpenRoomMenu()
 	uFnOpenRoomMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenRoomMenu, &OpenRoomMenu_Params, nullptr);
 	uFnOpenRoomMenu->FunctionFlags |= 0x400;
-	uFnOpenRoomMenu->iNative = 38842;
+	uFnOpenRoomMenu->iNative = 38840;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.BackToWaitRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35525])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::BackToWaitRoom()
@@ -45857,11 +45857,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::BackToWaitRoom()
 	uFnBackToWaitRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnBackToWaitRoom, &BackToWaitRoom_Params, nullptr);
 	uFnBackToWaitRoom->FunctionFlags |= 0x400;
-	uFnBackToWaitRoom->iNative = 35527;
+	uFnBackToWaitRoom->iNative = 35525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.SendBattleReadyCancel
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39680])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39678])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::SendBattleReadyCancel()
@@ -45880,11 +45880,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::SendBattleReadyCancel()
 	uFnSendBattleReadyCancel->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendBattleReadyCancel, &SendBattleReadyCancel_Params, nullptr);
 	uFnSendBattleReadyCancel->FunctionFlags |= 0x400;
-	uFnSendBattleReadyCancel->iNative = 39680;
+	uFnSendBattleReadyCancel->iNative = 39678;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsSendingBattleReady
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37849])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37847])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -45904,13 +45904,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsSendingBattleReady()
 	uFnIsSendingBattleReady->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSendingBattleReady, &IsSendingBattleReady_Params, nullptr);
 	uFnIsSendingBattleReady->FunctionFlags |= 0x400;
-	uFnIsSendingBattleReady->iNative = 37849;
+	uFnIsSendingBattleReady->iNative = 37847;
 
 	return IsSendingBattleReady_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.SendBattleReady
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39679])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39677])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::SendBattleReady()
@@ -45929,11 +45929,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::SendBattleReady()
 	uFnSendBattleReady->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendBattleReady, &SendBattleReady_Params, nullptr);
 	uFnSendBattleReady->FunctionFlags |= 0x400;
-	uFnSendBattleReady->iNative = 39679;
+	uFnSendBattleReady->iNative = 39677;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsLeaveRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37700])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37698])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -45953,13 +45953,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsLeaveRoom()
 	uFnIsLeaveRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLeaveRoom, &IsLeaveRoom_Params, nullptr);
 	uFnIsLeaveRoom->FunctionFlags |= 0x400;
-	uFnIsLeaveRoom->iNative = 37700;
+	uFnIsLeaveRoom->iNative = 37698;
 
 	return IsLeaveRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.LeaveRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37985])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37983])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::LeaveRoom()
@@ -45978,11 +45978,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::LeaveRoom()
 	uFnLeaveRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLeaveRoom, &LeaveRoom_Params, nullptr);
 	uFnLeaveRoom->FunctionFlags |= 0x400;
-	uFnLeaveRoom->iNative = 37985;
+	uFnLeaveRoom->iNative = 37983;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.GotoBattle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37406])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37404])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::GotoBattle()
@@ -46001,11 +46001,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::GotoBattle()
 	uFnGotoBattle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGotoBattle, &GotoBattle_Params, nullptr);
 	uFnGotoBattle->FunctionFlags |= 0x400;
-	uFnGotoBattle->iNative = 37406;
+	uFnGotoBattle->iNative = 37404;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.GetMySlotIndex
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37116])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37114])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -46025,13 +46025,13 @@ int32_t UREDGfxMoviePlayer_MenuNetworkRoomAC20::GetMySlotIndex()
 	uFnGetMySlotIndex->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMySlotIndex, &GetMySlotIndex_Params, nullptr);
 	uFnGetMySlotIndex->FunctionFlags |= 0x400;
-	uFnGetMySlotIndex->iNative = 37116;
+	uFnGetMySlotIndex->iNative = 37114;
 
 	return GetMySlotIndex_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsBattleReadyInputEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37605])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37603])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -46051,13 +46051,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsBattleReadyInputEnable()
 	uFnIsBattleReadyInputEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsBattleReadyInputEnable, &IsBattleReadyInputEnable_Params, nullptr);
 	uFnIsBattleReadyInputEnable->FunctionFlags |= 0x400;
-	uFnIsBattleReadyInputEnable->iNative = 37605;
+	uFnIsBattleReadyInputEnable->iNative = 37603;
 
 	return IsBattleReadyInputEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsBattleReady
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37604])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37602])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -46077,13 +46077,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsBattleReady()
 	uFnIsBattleReady->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsBattleReady, &IsBattleReady_Params, nullptr);
 	uFnIsBattleReady->FunctionFlags |= 0x400;
-	uFnIsBattleReady->iNative = 37604;
+	uFnIsBattleReady->iNative = 37602;
 
 	return IsBattleReady_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsNeedGotoBattle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37741])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37739])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -46103,13 +46103,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsNeedGotoBattle()
 	uFnIsNeedGotoBattle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsNeedGotoBattle, &IsNeedGotoBattle_Params, nullptr);
 	uFnIsNeedGotoBattle->FunctionFlags |= 0x400;
-	uFnIsNeedGotoBattle->iNative = 37741;
+	uFnIsNeedGotoBattle->iNative = 37739;
 
 	return IsNeedGotoBattle_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsSitBattleConsole
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37857])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37855])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -46129,13 +46129,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsSitBattleConsole()
 	uFnIsSitBattleConsole->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSitBattleConsole, &IsSitBattleConsole_Params, nullptr);
 	uFnIsSitBattleConsole->FunctionFlags |= 0x400;
-	uFnIsSitBattleConsole->iNative = 37857;
+	uFnIsSitBattleConsole->iNative = 37855;
 
 	return IsSitBattleConsole_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsSlotIsMine
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37863])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37861])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        SlotIndex                      (CPF_Parm)
@@ -46157,13 +46157,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsSlotIsMine(int32_t SlotIndex)
 	uFnIsSlotIsMine->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSlotIsMine, &IsSlotIsMine_Params, nullptr);
 	uFnIsSlotIsMine->FunctionFlags |= 0x400;
-	uFnIsSlotIsMine->iNative = 37863;
+	uFnIsSlotIsMine->iNative = 37861;
 
 	return IsSlotIsMine_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsHost
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37687])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37685])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -46183,13 +46183,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::IsHost()
 	uFnIsHost->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsHost, &IsHost_Params, nullptr);
 	uFnIsHost->FunctionFlags |= 0x400;
-	uFnIsHost->iNative = 37687;
+	uFnIsHost->iNative = 37685;
 
 	return IsHost_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.TextChat_IsFullScreen
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40207])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40205])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -46209,13 +46209,13 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::TextChat_IsFullScreen()
 	uFnTextChat_IsFullScreen->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTextChat_IsFullScreen, &TextChat_IsFullScreen_Params, nullptr);
 	uFnTextChat_IsFullScreen->FunctionFlags |= 0x400;
-	uFnTextChat_IsFullScreen->iNative = 40207;
+	uFnTextChat_IsFullScreen->iNative = 40205;
 
 	return TextChat_IsFullScreen_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateDrawMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40651])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::UpdateDrawMenu()
@@ -46234,11 +46234,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::UpdateDrawMenu()
 	uFnUpdateDrawMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawMenu, &UpdateDrawMenu_Params, nullptr);
 	uFnUpdateDrawMenu->FunctionFlags |= 0x400;
-	uFnUpdateDrawMenu->iNative = 40651;
+	uFnUpdateDrawMenu->iNative = 40649;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateInput
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40721])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40719])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        BattleReady                    (CPF_Parm | CPF_OutParm)
@@ -46266,7 +46266,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::UpdateInput(int32_t& BattleReady, i
 	uFnUpdateInput->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateInput, &UpdateInput_Params, nullptr);
 	uFnUpdateInput->FunctionFlags |= 0x400;
-	uFnUpdateInput->iNative = 40721;
+	uFnUpdateInput->iNative = 40719;
 
 	memcpy_s(&BattleReady, sizeof(BattleReady), &UpdateInput_Params.BattleReady, sizeof(UpdateInput_Params.BattleReady));
 	memcpy_s(&LeaveRoom, sizeof(LeaveRoom), &UpdateInput_Params.LeaveRoom, sizeof(UpdateInput_Params.LeaveRoom));
@@ -46277,7 +46277,7 @@ bool UREDGfxMoviePlayer_MenuNetworkRoomAC20::UpdateInput(int32_t& BattleReady, i
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40782])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40780])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::UpdateMenu()
@@ -46296,11 +46296,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::UpdateMenu()
 	uFnUpdateMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMenu, &UpdateMenu_Params, nullptr);
 	uFnUpdateMenu->FunctionFlags |= 0x400;
-	uFnUpdateMenu->iNative = 40782;
+	uFnUpdateMenu->iNative = 40780;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.OnCloseNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38813])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38811])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::OnCloseNative()
@@ -46319,11 +46319,11 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::OnCloseNative()
 	uFnOnCloseNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnCloseNative, &OnCloseNative_Params, nullptr);
 	uFnOnCloseNative->FunctionFlags |= 0x400;
-	uFnOnCloseNative->iNative = 38813;
+	uFnOnCloseNative->iNative = 38811;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.InitMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37538])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37536])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkRoomAC20::InitMenu()
@@ -46342,7 +46342,7 @@ void UREDGfxMoviePlayer_MenuNetworkRoomAC20::InitMenu()
 	uFnInitMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitMenu, &InitMenu_Params, nullptr);
 	uFnInitMenu->FunctionFlags |= 0x400;
-	uFnInitMenu->iNative = 37538;
+	uFnInitMenu->iNative = 37536;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.OnDrawUpdate
@@ -46822,7 +46822,7 @@ void UREDGfxMoviePlayer_MenuNetworkSearch::SetReturnLobbyState()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.ReturnLobbyNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39403])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39401])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkSearch::ReturnLobbyNative()
@@ -46841,11 +46841,11 @@ void UREDGfxMoviePlayer_MenuNetworkSearch::ReturnLobbyNative()
 	uFnReturnLobbyNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReturnLobbyNative, &ReturnLobbyNative_Params, nullptr);
 	uFnReturnLobbyNative->FunctionFlags |= 0x400;
-	uFnReturnLobbyNative->iNative = 39403;
+	uFnReturnLobbyNative->iNative = 39401;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateDrawNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40652])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40650])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkSearch::UpdateDrawNative()
@@ -46864,11 +46864,11 @@ void UREDGfxMoviePlayer_MenuNetworkSearch::UpdateDrawNative()
 	uFnUpdateDrawNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawNative, &UpdateDrawNative_Params, nullptr);
 	uFnUpdateDrawNative->FunctionFlags |= 0x400;
-	uFnUpdateDrawNative->iNative = 40652;
+	uFnUpdateDrawNative->iNative = 40650;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateJoinPasswordMissNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40735])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40733])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -46890,13 +46890,13 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::UpdateJoinPasswordMissNative(bool bTr
 	uFnUpdateJoinPasswordMissNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateJoinPasswordMissNative, &UpdateJoinPasswordMissNative_Params, nullptr);
 	uFnUpdateJoinPasswordMissNative->FunctionFlags |= 0x400;
-	uFnUpdateJoinPasswordMissNative->iNative = 40735;
+	uFnUpdateJoinPasswordMissNative->iNative = 40733;
 
 	return UpdateJoinPasswordMissNative_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateJoinPasswordNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40736])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40734])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -46922,7 +46922,7 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::UpdateJoinPasswordNative(bool bTrigge
 	uFnUpdateJoinPasswordNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateJoinPasswordNative, &UpdateJoinPasswordNative_Params, nullptr);
 	uFnUpdateJoinPasswordNative->FunctionFlags |= 0x400;
-	uFnUpdateJoinPasswordNative->iNative = 40736;
+	uFnUpdateJoinPasswordNative->iNative = 40734;
 
 	memcpy_s(&IsCancel, sizeof(IsCancel), &UpdateJoinPasswordNative_Params.IsCancel, sizeof(UpdateJoinPasswordNative_Params.IsCancel));
 	memcpy_s(&IsMiss, sizeof(IsMiss), &UpdateJoinPasswordNative_Params.IsMiss, sizeof(UpdateJoinPasswordNative_Params.IsMiss));
@@ -46931,7 +46931,7 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::UpdateJoinPasswordNative(bool bTrigge
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateJoinErrorNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40730])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40728])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -46953,13 +46953,13 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::UpdateJoinErrorNative(bool bTrigger)
 	uFnUpdateJoinErrorNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateJoinErrorNative, &UpdateJoinErrorNative_Params, nullptr);
 	uFnUpdateJoinErrorNative->FunctionFlags |= 0x400;
-	uFnUpdateJoinErrorNative->iNative = 40730;
+	uFnUpdateJoinErrorNative->iNative = 40728;
 
 	return UpdateJoinErrorNative_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateReturnLobbyNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40827])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40825])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -46983,7 +46983,7 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::UpdateReturnLobbyNative(bool bTrigger
 	uFnUpdateReturnLobbyNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateReturnLobbyNative, &UpdateReturnLobbyNative_Params, nullptr);
 	uFnUpdateReturnLobbyNative->FunctionFlags |= 0x400;
-	uFnUpdateReturnLobbyNative->iNative = 40827;
+	uFnUpdateReturnLobbyNative->iNative = 40825;
 
 	memcpy_s(&IsCancel, sizeof(IsCancel), &UpdateReturnLobbyNative_Params.IsCancel, sizeof(UpdateReturnLobbyNative_Params.IsCancel));
 
@@ -46991,7 +46991,7 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::UpdateReturnLobbyNative(bool bTrigger
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateJoinConfirmNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40728])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40726])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -47015,7 +47015,7 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::UpdateJoinConfirmNative(bool bTrigger
 	uFnUpdateJoinConfirmNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateJoinConfirmNative, &UpdateJoinConfirmNative_Params, nullptr);
 	uFnUpdateJoinConfirmNative->FunctionFlags |= 0x400;
-	uFnUpdateJoinConfirmNative->iNative = 40728;
+	uFnUpdateJoinConfirmNative->iNative = 40726;
 
 	memcpy_s(&IsCancel, sizeof(IsCancel), &UpdateJoinConfirmNative_Params.IsCancel, sizeof(UpdateJoinConfirmNative_Params.IsCancel));
 
@@ -47023,7 +47023,7 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::UpdateJoinConfirmNative(bool bTrigger
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateResultScroll
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40824])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40822])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bUpHold                        (CPF_Parm)
@@ -47047,13 +47047,13 @@ int32_t UREDGfxMoviePlayer_MenuNetworkSearch::UpdateResultScroll(bool bUpHold, b
 	uFnUpdateResultScroll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateResultScroll, &UpdateResultScroll_Params, nullptr);
 	uFnUpdateResultScroll->FunctionFlags |= 0x400;
-	uFnUpdateResultScroll->iNative = 40824;
+	uFnUpdateResultScroll->iNative = 40822;
 
 	return UpdateResultScroll_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.OpenMOMKinshiMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38837])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38835])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 
@@ -47074,11 +47074,11 @@ void UREDGfxMoviePlayer_MenuNetworkSearch::OpenMOMKinshiMenu(int32_t Index)
 	uFnOpenMOMKinshiMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenMOMKinshiMenu, &OpenMOMKinshiMenu_Params, nullptr);
 	uFnOpenMOMKinshiMenu->FunctionFlags |= 0x400;
-	uFnOpenMOMKinshiMenu->iNative = 38837;
+	uFnOpenMOMKinshiMenu->iNative = 38835;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.OpenRankMatchMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38841])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38839])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkSearch::OpenRankMatchMenu()
@@ -47097,11 +47097,11 @@ void UREDGfxMoviePlayer_MenuNetworkSearch::OpenRankMatchMenu()
 	uFnOpenRankMatchMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenRankMatchMenu, &OpenRankMatchMenu_Params, nullptr);
 	uFnOpenRankMatchMenu->FunctionFlags |= 0x400;
-	uFnOpenRankMatchMenu->iNative = 38841;
+	uFnOpenRankMatchMenu->iNative = 38839;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.IsQosLimitProcess
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37802])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37800])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -47123,13 +47123,13 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::IsQosLimitProcess(int32_t Index)
 	uFnIsQosLimitProcess->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsQosLimitProcess, &IsQosLimitProcess_Params, nullptr);
 	uFnIsQosLimitProcess->FunctionFlags |= 0x400;
-	uFnIsQosLimitProcess->iNative = 37802;
+	uFnIsQosLimitProcess->iNative = 37800;
 
 	return IsQosLimitProcess_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.IsQosLimitClear
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37801])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37799])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -47151,13 +47151,13 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::IsQosLimitClear(int32_t Index)
 	uFnIsQosLimitClear->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsQosLimitClear, &IsQosLimitClear_Params, nullptr);
 	uFnIsQosLimitClear->FunctionFlags |= 0x400;
-	uFnIsQosLimitClear->iNative = 37801;
+	uFnIsQosLimitClear->iNative = 37799;
 
 	return IsQosLimitClear_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.IsJoiningRoom
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37694])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37692])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -47179,7 +47179,7 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::IsJoiningRoom(int32_t& isError)
 	uFnIsJoiningRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsJoiningRoom, &IsJoiningRoom_Params, nullptr);
 	uFnIsJoiningRoom->FunctionFlags |= 0x400;
-	uFnIsJoiningRoom->iNative = 37694;
+	uFnIsJoiningRoom->iNative = 37692;
 
 	memcpy_s(&isError, sizeof(isError), &IsJoiningRoom_Params.isError, sizeof(IsJoiningRoom_Params.isError));
 
@@ -47187,7 +47187,7 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::IsJoiningRoom(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.JoinRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37947])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37945])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -47209,13 +47209,13 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::JoinRoom(int32_t Index)
 	uFnJoinRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJoinRoom, &JoinRoom_Params, nullptr);
 	uFnJoinRoom->FunctionFlags |= 0x400;
-	uFnJoinRoom->iNative = 37947;
+	uFnJoinRoom->iNative = 37945;
 
 	return JoinRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.IsPasswordRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37766])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37764])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -47237,13 +47237,13 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::IsPasswordRoom(int32_t Index)
 	uFnIsPasswordRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPasswordRoom, &IsPasswordRoom_Params, nullptr);
 	uFnIsPasswordRoom->FunctionFlags |= 0x400;
-	uFnIsPasswordRoom->iNative = 37766;
+	uFnIsPasswordRoom->iNative = 37764;
 
 	return IsPasswordRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.SetupResultList
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39852])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39850])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -47263,13 +47263,13 @@ int32_t UREDGfxMoviePlayer_MenuNetworkSearch::SetupResultList()
 	uFnSetupResultList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupResultList, &SetupResultList_Params, nullptr);
 	uFnSetupResultList->FunctionFlags |= 0x400;
-	uFnSetupResultList->iNative = 39852;
+	uFnSetupResultList->iNative = 39850;
 
 	return SetupResultList_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.IsSearchingRoom
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37839])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37837])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -47291,7 +47291,7 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::IsSearchingRoom(int32_t& isError)
 	uFnIsSearchingRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSearchingRoom, &IsSearchingRoom_Params, nullptr);
 	uFnIsSearchingRoom->FunctionFlags |= 0x400;
-	uFnIsSearchingRoom->iNative = 37839;
+	uFnIsSearchingRoom->iNative = 37837;
 
 	memcpy_s(&isError, sizeof(isError), &IsSearchingRoom_Params.isError, sizeof(IsSearchingRoom_Params.isError));
 
@@ -47299,7 +47299,7 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::IsSearchingRoom(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.SearchRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39658])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39656])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -47319,13 +47319,13 @@ bool UREDGfxMoviePlayer_MenuNetworkSearch::SearchRoom()
 	uFnSearchRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSearchRoom, &SearchRoom_Params, nullptr);
 	uFnSearchRoom->FunctionFlags |= 0x400;
-	uFnSearchRoom->iNative = 39658;
+	uFnSearchRoom->iNative = 39656;
 
 	return SearchRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.FinalizeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36842])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36840])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkSearch::FinalizeNative()
@@ -47344,11 +47344,11 @@ void UREDGfxMoviePlayer_MenuNetworkSearch::FinalizeNative()
 	uFnFinalizeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFinalizeNative, &FinalizeNative_Params, nullptr);
 	uFnFinalizeNative->FunctionFlags |= 0x400;
-	uFnFinalizeNative->iNative = 36842;
+	uFnFinalizeNative->iNative = 36840;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkSearch::InitializeNative()
@@ -47367,7 +47367,7 @@ void UREDGfxMoviePlayer_MenuNetworkSearch::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.OnDrawUpdate
@@ -47807,7 +47807,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::Start(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.GetSavedCursor
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37161])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37159])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -47827,13 +47827,13 @@ int32_t UREDGfxMoviePlayer_MenuNetworkTopMenu::GetSavedCursor()
 	uFnGetSavedCursor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSavedCursor, &GetSavedCursor_Params, nullptr);
 	uFnGetSavedCursor->FunctionFlags |= 0x400;
-	uFnGetSavedCursor->iNative = 37161;
+	uFnGetSavedCursor->iNative = 37159;
 
 	return GetSavedCursor_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.SaveCursor
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39457])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39455])
 // Parameter Info:
 // int32_t                        Cursor                         (CPF_Parm)
 
@@ -47854,11 +47854,11 @@ void UREDGfxMoviePlayer_MenuNetworkTopMenu::SaveCursor(int32_t Cursor)
 	uFnSaveCursor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSaveCursor, &SaveCursor_Params, nullptr);
 	uFnSaveCursor->FunctionFlags |= 0x400;
-	uFnSaveCursor->iNative = 39457;
+	uFnSaveCursor->iNative = 39455;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.IsCheckPlus
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37621])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37619])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -47880,7 +47880,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::IsCheckPlus(int32_t& isError)
 	uFnIsCheckPlus->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsCheckPlus, &IsCheckPlus_Params, nullptr);
 	uFnIsCheckPlus->FunctionFlags |= 0x400;
-	uFnIsCheckPlus->iNative = 37621;
+	uFnIsCheckPlus->iNative = 37619;
 
 	memcpy_s(&isError, sizeof(isError), &IsCheckPlus_Params.isError, sizeof(IsCheckPlus_Params.isError));
 
@@ -47888,7 +47888,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::IsCheckPlus(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.CheckPlus
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36205])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36203])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        IsNotNeed                      (CPF_Parm | CPF_OutParm)
@@ -47910,7 +47910,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::CheckPlus(int32_t& IsNotNeed)
 	uFnCheckPlus->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckPlus, &CheckPlus_Params, nullptr);
 	uFnCheckPlus->FunctionFlags |= 0x400;
-	uFnCheckPlus->iNative = 36205;
+	uFnCheckPlus->iNative = 36203;
 
 	memcpy_s(&IsNotNeed, sizeof(IsNotNeed), &CheckPlus_Params.IsNotNeed, sizeof(CheckPlus_Params.IsNotNeed));
 
@@ -47918,7 +47918,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::CheckPlus(int32_t& IsNotNeed)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.IsCreatingRoom
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37635])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37633])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        isError                        (CPF_Parm | CPF_OutParm)
@@ -47940,7 +47940,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::IsCreatingRoom(int32_t& isError)
 	uFnIsCreatingRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsCreatingRoom, &IsCreatingRoom_Params, nullptr);
 	uFnIsCreatingRoom->FunctionFlags |= 0x400;
-	uFnIsCreatingRoom->iNative = 37635;
+	uFnIsCreatingRoom->iNative = 37633;
 
 	memcpy_s(&isError, sizeof(isError), &IsCreatingRoom_Params.isError, sizeof(IsCreatingRoom_Params.isError));
 
@@ -47948,7 +47948,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::IsCreatingRoom(int32_t& isError)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.CreateRoom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36337])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36335])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -47968,13 +47968,13 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::CreateRoom()
 	uFnCreateRoom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateRoom, &CreateRoom_Params, nullptr);
 	uFnCreateRoom->FunctionFlags |= 0x400;
-	uFnCreateRoom->iNative = 36337;
+	uFnCreateRoom->iNative = 36335;
 
 	return CreateRoom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.IsPlayerMatchEnd
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37772])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37770])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        IsCreate                       (CPF_Parm | CPF_OutParm)
@@ -47998,7 +47998,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::IsPlayerMatchEnd(int32_t& IsCreate, 
 	uFnIsPlayerMatchEnd->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPlayerMatchEnd, &IsPlayerMatchEnd_Params, nullptr);
 	uFnIsPlayerMatchEnd->FunctionFlags |= 0x400;
-	uFnIsPlayerMatchEnd->iNative = 37772;
+	uFnIsPlayerMatchEnd->iNative = 37770;
 
 	memcpy_s(&IsCreate, sizeof(IsCreate), &IsPlayerMatchEnd_Params.IsCreate, sizeof(IsPlayerMatchEnd_Params.IsCreate));
 	memcpy_s(&IsSearch, sizeof(IsSearch), &IsPlayerMatchEnd_Params.IsSearch, sizeof(IsPlayerMatchEnd_Params.IsSearch));
@@ -48007,7 +48007,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::IsPlayerMatchEnd(int32_t& IsCreate, 
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.OpenPlayerMatch
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38838])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38836])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkTopMenu::OpenPlayerMatch()
@@ -48026,11 +48026,11 @@ void UREDGfxMoviePlayer_MenuNetworkTopMenu::OpenPlayerMatch()
 	uFnOpenPlayerMatch->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenPlayerMatch, &OpenPlayerMatch_Params, nullptr);
 	uFnOpenPlayerMatch->FunctionFlags |= 0x400;
-	uFnOpenPlayerMatch->iNative = 38838;
+	uFnOpenPlayerMatch->iNative = 38836;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.IsRankMatchEnd
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37812])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37810])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        IsSearch                       (CPF_Parm | CPF_OutParm)
@@ -48052,7 +48052,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::IsRankMatchEnd(int32_t& IsSearch)
 	uFnIsRankMatchEnd->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRankMatchEnd, &IsRankMatchEnd_Params, nullptr);
 	uFnIsRankMatchEnd->FunctionFlags |= 0x400;
-	uFnIsRankMatchEnd->iNative = 37812;
+	uFnIsRankMatchEnd->iNative = 37810;
 
 	memcpy_s(&IsSearch, sizeof(IsSearch), &IsRankMatchEnd_Params.IsSearch, sizeof(IsRankMatchEnd_Params.IsSearch));
 
@@ -48060,7 +48060,7 @@ bool UREDGfxMoviePlayer_MenuNetworkTopMenu::IsRankMatchEnd(int32_t& IsSearch)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.OpenRankMatch
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38840])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38838])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkTopMenu::OpenRankMatch()
@@ -48079,7 +48079,7 @@ void UREDGfxMoviePlayer_MenuNetworkTopMenu::OpenRankMatch()
 	uFnOpenRankMatch->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenRankMatch, &OpenRankMatch_Params, nullptr);
 	uFnOpenRankMatch->FunctionFlags |= 0x400;
-	uFnOpenRankMatch->iNative = 38840;
+	uFnOpenRankMatch->iNative = 38838;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkWelcome.OnDrawUpdate
@@ -48245,7 +48245,7 @@ bool UREDGfxMoviePlayer_MenuNetworkWelcome::Start(bool StartPaused)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkWelcome.DrawNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36603])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36601])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkWelcome::DrawNative()
@@ -48264,11 +48264,11 @@ void UREDGfxMoviePlayer_MenuNetworkWelcome::DrawNative()
 	uFnDrawNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDrawNative, &DrawNative_Params, nullptr);
 	uFnDrawNative->FunctionFlags |= 0x400;
-	uFnDrawNative->iNative = 36603;
+	uFnDrawNative->iNative = 36601;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkWelcome.UpdateNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40790])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40788])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bTrigger                       (CPF_Parm)
@@ -48292,7 +48292,7 @@ bool UREDGfxMoviePlayer_MenuNetworkWelcome::UpdateNative(bool bTrigger, int32_t&
 	uFnUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateNative, &UpdateNative_Params, nullptr);
 	uFnUpdateNative->FunctionFlags |= 0x400;
-	uFnUpdateNative->iNative = 40790;
+	uFnUpdateNative->iNative = 40788;
 
 	memcpy_s(&FromInvite, sizeof(FromInvite), &UpdateNative_Params.FromInvite, sizeof(UpdateNative_Params.FromInvite));
 
@@ -48300,7 +48300,7 @@ bool UREDGfxMoviePlayer_MenuNetworkWelcome::UpdateNative(bool bTrigger, int32_t&
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkWelcome.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuNetworkWelcome::InitializeNative()
@@ -48319,7 +48319,7 @@ void UREDGfxMoviePlayer_MenuNetworkWelcome::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.AS_DiagramTextColor
@@ -48881,7 +48881,7 @@ class TArray<uint8_t> UREDGfxMoviePlayer_MenuRanking::GetStateList()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.Debug_GetForceState
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36417])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36415])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -48901,13 +48901,13 @@ int32_t UREDGfxMoviePlayer_MenuRanking::Debug_GetForceState()
 	uFnDebug_GetForceState->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDebug_GetForceState, &Debug_GetForceState_Params, nullptr);
 	uFnDebug_GetForceState->FunctionFlags |= 0x400;
-	uFnDebug_GetForceState->iNative = 36417;
+	uFnDebug_GetForceState->iNative = 36415;
 
 	return Debug_GetForceState_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.SortRank
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39928])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39926])
 // Parameter Info:
 // class TArray<int32_t>          outIndexList                   (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 // class TArray<int32_t>          rankList                       (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -48930,14 +48930,14 @@ void UREDGfxMoviePlayer_MenuRanking::SortRank(class TArray<int32_t>& outIndexLis
 	uFnSortRank->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSortRank, &SortRank_Params, nullptr);
 	uFnSortRank->FunctionFlags |= 0x400;
-	uFnSortRank->iNative = 39928;
+	uFnSortRank->iNative = 39926;
 
 	memcpy_s(&outIndexList, sizeof(outIndexList), &SortRank_Params.outIndexList, sizeof(SortRank_Params.outIndexList));
 	memcpy_s(&rankList, sizeof(rankList), &SortRank_Params.rankList, sizeof(SortRank_Params.rankList));
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetRankingGroup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37149])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37147])
 // Parameter Info:
 // ERANKING_GROUP                 ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -48957,13 +48957,13 @@ ERANKING_GROUP UREDGfxMoviePlayer_MenuRanking::GetRankingGroup()
 	uFnGetRankingGroup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetRankingGroup, &GetRankingGroup_Params, nullptr);
 	uFnGetRankingGroup->FunctionFlags |= 0x400;
-	uFnGetRankingGroup->iNative = 37149;
+	uFnGetRankingGroup->iNative = 37147;
 
 	return static_cast<ERANKING_GROUP>(GetRankingGroup_Params.ReturnValue);
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_QuestScore
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37046])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37044])
 // Parameter Info:
 // int32_t                        Rank                           (CPF_Parm)
 // class FString                  PlayerName                     (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -48990,7 +48990,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_QuestScore(int32_t Rank, class FStr
 	uFnGetData_QuestScore->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetData_QuestScore, &GetData_QuestScore_Params, nullptr);
 	uFnGetData_QuestScore->FunctionFlags |= 0x400;
-	uFnGetData_QuestScore->iNative = 37046;
+	uFnGetData_QuestScore->iNative = 37044;
 
 	memcpy_s(&PlayerName, sizeof(PlayerName), &GetData_QuestScore_Params.PlayerName, sizeof(GetData_QuestScore_Params.PlayerName));
 	memcpy_s(&Score, sizeof(Score), &GetData_QuestScore_Params.Score, sizeof(GetData_QuestScore_Params.Score));
@@ -48998,7 +48998,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_QuestScore(int32_t Rank, class FStr
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_MOMScore
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37045])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37043])
 // Parameter Info:
 // int32_t                        Rank                           (CPF_Parm)
 // class FString                  PlayerName                     (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -49027,7 +49027,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_MOMScore(int32_t Rank, class FStrin
 	uFnGetData_MOMScore->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetData_MOMScore, &GetData_MOMScore_Params, nullptr);
 	uFnGetData_MOMScore->FunctionFlags |= 0x400;
-	uFnGetData_MOMScore->iNative = 37045;
+	uFnGetData_MOMScore->iNative = 37043;
 
 	memcpy_s(&PlayerName, sizeof(PlayerName), &GetData_MOMScore_Params.PlayerName, sizeof(GetData_MOMScore_Params.PlayerName));
 	memcpy_s(&Num, sizeof(Num), &GetData_MOMScore_Params.Num, sizeof(GetData_MOMScore_Params.Num));
@@ -49036,7 +49036,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_MOMScore(int32_t Rank, class FStrin
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_StraightWins
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37049])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37047])
 // Parameter Info:
 // int32_t                        Rank                           (CPF_Parm)
 // class FString                  PlayerName                     (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -49063,7 +49063,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_StraightWins(int32_t Rank, class FS
 	uFnGetData_StraightWins->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetData_StraightWins, &GetData_StraightWins_Params, nullptr);
 	uFnGetData_StraightWins->FunctionFlags |= 0x400;
-	uFnGetData_StraightWins->iNative = 37049;
+	uFnGetData_StraightWins->iNative = 37047;
 
 	memcpy_s(&PlayerName, sizeof(PlayerName), &GetData_StraightWins_Params.PlayerName, sizeof(GetData_StraightWins_Params.PlayerName));
 	memcpy_s(&Num, sizeof(Num), &GetData_StraightWins_Params.Num, sizeof(GetData_StraightWins_Params.Num));
@@ -49071,7 +49071,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_StraightWins(int32_t Rank, class FS
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_RRChara
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37048])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37046])
 // Parameter Info:
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
 // int32_t                        Rank                           (CPF_Parm)
@@ -49100,7 +49100,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_RRChara(const class FString& CharaI
 	uFnGetData_RRChara->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetData_RRChara, &GetData_RRChara_Params, nullptr);
 	uFnGetData_RRChara->FunctionFlags |= 0x400;
-	uFnGetData_RRChara->iNative = 37048;
+	uFnGetData_RRChara->iNative = 37046;
 
 	memcpy_s(&PlayerName, sizeof(PlayerName), &GetData_RRChara_Params.PlayerName, sizeof(GetData_RRChara_Params.PlayerName));
 	memcpy_s(&Num, sizeof(Num), &GetData_RRChara_Params.Num, sizeof(GetData_RRChara_Params.Num));
@@ -49108,7 +49108,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_RRChara(const class FString& CharaI
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_RRAll
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37047])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37045])
 // Parameter Info:
 // int32_t                        Rank                           (CPF_Parm)
 // class FString                  PlayerName                     (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -49137,7 +49137,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_RRAll(int32_t Rank, class FString& 
 	uFnGetData_RRAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetData_RRAll, &GetData_RRAll_Params, nullptr);
 	uFnGetData_RRAll->FunctionFlags |= 0x400;
-	uFnGetData_RRAll->iNative = 37047;
+	uFnGetData_RRAll->iNative = 37045;
 
 	memcpy_s(&PlayerName, sizeof(PlayerName), &GetData_RRAll_Params.PlayerName, sizeof(GetData_RRAll_Params.PlayerName));
 	memcpy_s(&Num, sizeof(Num), &GetData_RRAll_Params.Num, sizeof(GetData_RRAll_Params.Num));
@@ -49146,7 +49146,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_RRAll(int32_t Rank, class FString& 
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_WinsChara
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37052])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37050])
 // Parameter Info:
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
 // int32_t                        Rank                           (CPF_Parm)
@@ -49175,7 +49175,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_WinsChara(const class FString& Char
 	uFnGetData_WinsChara->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetData_WinsChara, &GetData_WinsChara_Params, nullptr);
 	uFnGetData_WinsChara->FunctionFlags |= 0x400;
-	uFnGetData_WinsChara->iNative = 37052;
+	uFnGetData_WinsChara->iNative = 37050;
 
 	memcpy_s(&PlayerName, sizeof(PlayerName), &GetData_WinsChara_Params.PlayerName, sizeof(GetData_WinsChara_Params.PlayerName));
 	memcpy_s(&Num, sizeof(Num), &GetData_WinsChara_Params.Num, sizeof(GetData_WinsChara_Params.Num));
@@ -49183,7 +49183,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_WinsChara(const class FString& Char
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_WinsAll
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37051])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37049])
 // Parameter Info:
 // int32_t                        Rank                           (CPF_Parm)
 // class FString                  PlayerName                     (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -49210,7 +49210,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_WinsAll(int32_t Rank, class FString
 	uFnGetData_WinsAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetData_WinsAll, &GetData_WinsAll_Params, nullptr);
 	uFnGetData_WinsAll->FunctionFlags |= 0x400;
-	uFnGetData_WinsAll->iNative = 37051;
+	uFnGetData_WinsAll->iNative = 37049;
 
 	memcpy_s(&PlayerName, sizeof(PlayerName), &GetData_WinsAll_Params.PlayerName, sizeof(GetData_WinsAll_Params.PlayerName));
 	memcpy_s(&Num, sizeof(Num), &GetData_WinsAll_Params.Num, sizeof(GetData_WinsAll_Params.Num));
@@ -49218,7 +49218,7 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_WinsAll(int32_t Rank, class FString
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_Diagram
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37044])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37042])
 // Parameter Info:
 // class FString                  CharaID1                       (CPF_Parm | CPF_NeedCtorLink)
 // class FString                  CharaID2                       (CPF_Parm | CPF_NeedCtorLink)
@@ -49243,13 +49243,13 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_Diagram(const class FString& CharaI
 	uFnGetData_Diagram->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetData_Diagram, &GetData_Diagram_Params, nullptr);
 	uFnGetData_Diagram->FunctionFlags |= 0x400;
-	uFnGetData_Diagram->iNative = 37044;
+	uFnGetData_Diagram->iNative = 37042;
 
 	memcpy_s(&Rate, sizeof(Rate), &GetData_Diagram_Params.Rate, sizeof(GetData_Diagram_Params.Rate));
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_UseCount
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37050])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37048])
 // Parameter Info:
 // class FString                  CharaID                        (CPF_Parm | CPF_NeedCtorLink)
 // int32_t                        Count                          (CPF_Parm | CPF_OutParm)
@@ -49272,13 +49272,13 @@ void UREDGfxMoviePlayer_MenuRanking::GetData_UseCount(const class FString& Chara
 	uFnGetData_UseCount->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetData_UseCount, &GetData_UseCount_Params, nullptr);
 	uFnGetData_UseCount->FunctionFlags |= 0x400;
-	uFnGetData_UseCount->iNative = 37050;
+	uFnGetData_UseCount->iNative = 37048;
 
 	memcpy_s(&Count, sizeof(Count), &GetData_UseCount_Params.Count, sizeof(GetData_UseCount_Params.Count));
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.IsRankingAccessFinish
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37809])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37807])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -49298,13 +49298,13 @@ bool UREDGfxMoviePlayer_MenuRanking::IsRankingAccessFinish()
 	uFnIsRankingAccessFinish->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRankingAccessFinish, &IsRankingAccessFinish_Params, nullptr);
 	uFnIsRankingAccessFinish->FunctionFlags |= 0x400;
-	uFnIsRankingAccessFinish->iNative = 37809;
+	uFnIsRankingAccessFinish->iNative = 37807;
 
 	return IsRankingAccessFinish_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.RequestRankingAccess
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39371])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39369])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuRanking::RequestRankingAccess()
@@ -49323,11 +49323,11 @@ void UREDGfxMoviePlayer_MenuRanking::RequestRankingAccess()
 	uFnRequestRankingAccess->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRequestRankingAccess, &RequestRankingAccess_Params, nullptr);
 	uFnRequestRankingAccess->FunctionFlags |= 0x400;
-	uFnRequestRankingAccess->iNative = 39371;
+	uFnRequestRankingAccess->iNative = 39369;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.InitMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37538])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37536])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuRanking::InitMenu()
@@ -49346,7 +49346,7 @@ void UREDGfxMoviePlayer_MenuRanking::InitMenu()
 	uFnInitMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitMenu, &InitMenu_Params, nullptr);
 	uFnInitMenu->FunctionFlags |= 0x400;
-	uFnInitMenu->iNative = 37538;
+	uFnInitMenu->iNative = 37536;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.OnFinalize
@@ -49624,7 +49624,7 @@ void UREDGfxMoviePlayer_MenuReplay::setupStorageText()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.ChengeCreateSort
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36213])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36211])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuReplay::ChengeCreateSort()
@@ -49643,11 +49643,11 @@ void UREDGfxMoviePlayer_MenuReplay::ChengeCreateSort()
 	uFnChengeCreateSort->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChengeCreateSort, &ChengeCreateSort_Params, nullptr);
 	uFnChengeCreateSort->FunctionFlags |= 0x400;
-	uFnChengeCreateSort->iNative = 36213;
+	uFnChengeCreateSort->iNative = 36211;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.IsFilterChenge
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37665])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37663])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Filter                         (CPF_Parm)
@@ -49669,13 +49669,13 @@ bool UREDGfxMoviePlayer_MenuReplay::IsFilterChenge(int32_t Filter)
 	uFnIsFilterChenge->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsFilterChenge, &IsFilterChenge_Params, nullptr);
 	uFnIsFilterChenge->FunctionFlags |= 0x400;
-	uFnIsFilterChenge->iNative = 37665;
+	uFnIsFilterChenge->iNative = 37663;
 
 	return IsFilterChenge_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.GetReplayListNum
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37155])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37153])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Category                       (CPF_Parm)
@@ -49697,13 +49697,13 @@ int32_t UREDGfxMoviePlayer_MenuReplay::GetReplayListNum(int32_t Category)
 	uFnGetReplayListNum->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetReplayListNum, &GetReplayListNum_Params, nullptr);
 	uFnGetReplayListNum->FunctionFlags |= 0x400;
-	uFnGetReplayListNum->iNative = 37155;
+	uFnGetReplayListNum->iNative = 37153;
 
 	return GetReplayListNum_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.IsOnlineStorageEnable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37757])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37755])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -49723,13 +49723,13 @@ bool UREDGfxMoviePlayer_MenuReplay::IsOnlineStorageEnable()
 	uFnIsOnlineStorageEnable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsOnlineStorageEnable, &IsOnlineStorageEnable_Params, nullptr);
 	uFnIsOnlineStorageEnable->FunctionFlags |= 0x400;
-	uFnIsOnlineStorageEnable->iNative = 37757;
+	uFnIsOnlineStorageEnable->iNative = 37755;
 
 	return IsOnlineStorageEnable_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.IsLoadReplayList
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37706])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37704])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -49749,13 +49749,13 @@ bool UREDGfxMoviePlayer_MenuReplay::IsLoadReplayList()
 	uFnIsLoadReplayList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLoadReplayList, &IsLoadReplayList_Params, nullptr);
 	uFnIsLoadReplayList->FunctionFlags |= 0x400;
-	uFnIsLoadReplayList->iNative = 37706;
+	uFnIsLoadReplayList->iNative = 37704;
 
 	return IsLoadReplayList_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.SetResultVisible
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39803])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39801])
 // Parameter Info:
 // uint32_t                       flg                            (CPF_Parm)
 
@@ -49776,11 +49776,11 @@ void UREDGfxMoviePlayer_MenuReplay::SetResultVisible(bool flg)
 	uFnSetResultVisible->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetResultVisible, &SetResultVisible_Params, nullptr);
 	uFnSetResultVisible->FunctionFlags |= 0x400;
-	uFnSetResultVisible->iNative = 39803;
+	uFnSetResultVisible->iNative = 39801;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.FilterReplayList
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36840])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36838])
 // Parameter Info:
 // int32_t                        Category                       (CPF_Parm)
 
@@ -49801,11 +49801,11 @@ void UREDGfxMoviePlayer_MenuReplay::FilterReplayList(int32_t Category)
 	uFnFilterReplayList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFilterReplayList, &FilterReplayList_Params, nullptr);
 	uFnFilterReplayList->FunctionFlags |= 0x400;
-	uFnFilterReplayList->iNative = 36840;
+	uFnFilterReplayList->iNative = 36838;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.CheckCopyPopup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36191])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36189])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuReplay::CheckCopyPopup()
@@ -49824,11 +49824,11 @@ void UREDGfxMoviePlayer_MenuReplay::CheckCopyPopup()
 	uFnCheckCopyPopup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckCopyPopup, &CheckCopyPopup_Params, nullptr);
 	uFnCheckCopyPopup->FunctionFlags |= 0x400;
-	uFnCheckCopyPopup->iNative = 36191;
+	uFnCheckCopyPopup->iNative = 36189;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.ReplayDataCopy
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39342])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39340])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuReplay::ReplayDataCopy()
@@ -49847,11 +49847,11 @@ void UREDGfxMoviePlayer_MenuReplay::ReplayDataCopy()
 	uFnReplayDataCopy->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReplayDataCopy, &ReplayDataCopy_Params, nullptr);
 	uFnReplayDataCopy->FunctionFlags |= 0x400;
-	uFnReplayDataCopy->iNative = 39342;
+	uFnReplayDataCopy->iNative = 39340;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.IsReplayDataPlayError
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37825])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37823])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -49871,13 +49871,13 @@ bool UREDGfxMoviePlayer_MenuReplay::IsReplayDataPlayError()
 	uFnIsReplayDataPlayError->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsReplayDataPlayError, &IsReplayDataPlayError_Params, nullptr);
 	uFnIsReplayDataPlayError->FunctionFlags |= 0x400;
-	uFnIsReplayDataPlayError->iNative = 37825;
+	uFnIsReplayDataPlayError->iNative = 37823;
 
 	return IsReplayDataPlayError_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.ReplayDataPlay
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39343])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39341])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -49897,13 +49897,13 @@ bool UREDGfxMoviePlayer_MenuReplay::ReplayDataPlay()
 	uFnReplayDataPlay->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReplayDataPlay, &ReplayDataPlay_Params, nullptr);
 	uFnReplayDataPlay->FunctionFlags |= 0x400;
-	uFnReplayDataPlay->iNative = 39343;
+	uFnReplayDataPlay->iNative = 39341;
 
 	return ReplayDataPlay_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.CheckSignOutPopup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36208])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36206])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuReplay::CheckSignOutPopup()
@@ -49922,11 +49922,11 @@ void UREDGfxMoviePlayer_MenuReplay::CheckSignOutPopup()
 	uFnCheckSignOutPopup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckSignOutPopup, &CheckSignOutPopup_Params, nullptr);
 	uFnCheckSignOutPopup->FunctionFlags |= 0x400;
-	uFnCheckSignOutPopup->iNative = 36208;
+	uFnCheckSignOutPopup->iNative = 36206;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.PopUpMenuInit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39072])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39070])
 // Parameter Info:
 // int32_t                        Type                           (CPF_Parm)
 
@@ -49947,11 +49947,11 @@ void UREDGfxMoviePlayer_MenuReplay::PopUpMenuInit(int32_t Type)
 	uFnPopUpMenuInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopUpMenuInit, &PopUpMenuInit_Params, nullptr);
 	uFnPopUpMenuInit->FunctionFlags |= 0x400;
-	uFnPopUpMenuInit->iNative = 39072;
+	uFnPopUpMenuInit->iNative = 39070;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execScrollBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36783])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36781])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -49972,11 +49972,11 @@ void UREDGfxMoviePlayer_MenuReplay::execScrollBar(int32_t State)
 	uFnexecScrollBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecScrollBar, &execScrollBar_Params, nullptr);
 	uFnexecScrollBar->FunctionFlags |= 0x400;
-	uFnexecScrollBar->iNative = 36783;
+	uFnexecScrollBar->iNative = 36781;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execCtrlBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36775])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36773])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -49997,11 +49997,11 @@ void UREDGfxMoviePlayer_MenuReplay::execCtrlBar(int32_t State)
 	uFnexecCtrlBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecCtrlBar, &execCtrlBar_Params, nullptr);
 	uFnexecCtrlBar->FunctionFlags |= 0x400;
-	uFnexecCtrlBar->iNative = 36775;
+	uFnexecCtrlBar->iNative = 36773;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execInfoBar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36780])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36778])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 // int32_t                        Category                       (CPF_Parm)
@@ -50026,11 +50026,11 @@ void UREDGfxMoviePlayer_MenuReplay::execInfoBar(int32_t State, int32_t Category,
 	uFnexecInfoBar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecInfoBar, &execInfoBar_Params, nullptr);
 	uFnexecInfoBar->FunctionFlags |= 0x400;
-	uFnexecInfoBar->iNative = 36780;
+	uFnexecInfoBar->iNative = 36778;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execReplayList
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36782])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36780])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuReplay::execReplayList()
@@ -50049,11 +50049,11 @@ void UREDGfxMoviePlayer_MenuReplay::execReplayList()
 	uFnexecReplayList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecReplayList, &execReplayList_Params, nullptr);
 	uFnexecReplayList->FunctionFlags |= 0x400;
-	uFnexecReplayList->iNative = 36782;
+	uFnexecReplayList->iNative = 36780;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execFilterText
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36779])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36777])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuReplay::execFilterText()
@@ -50072,11 +50072,11 @@ void UREDGfxMoviePlayer_MenuReplay::execFilterText()
 	uFnexecFilterText->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecFilterText, &execFilterText_Params, nullptr);
 	uFnexecFilterText->FunctionFlags |= 0x400;
-	uFnexecFilterText->iNative = 36779;
+	uFnexecFilterText->iNative = 36777;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execDrawNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36776])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36774])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -50097,11 +50097,11 @@ void UREDGfxMoviePlayer_MenuReplay::execDrawNative(int32_t State)
 	uFnexecDrawNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecDrawNative, &execDrawNative_Params, nullptr);
 	uFnexecDrawNative->FunctionFlags |= 0x400;
-	uFnexecDrawNative->iNative = 36776;
+	uFnexecDrawNative->iNative = 36774;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execUpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36784])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36782])
 // Parameter Info:
 // int32_t                        State                          (CPF_Parm)
 
@@ -50122,11 +50122,11 @@ void UREDGfxMoviePlayer_MenuReplay::execUpdateNative(int32_t State)
 	uFnexecUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnexecUpdateNative, &execUpdateNative_Params, nullptr);
 	uFnexecUpdateNative->FunctionFlags |= 0x400;
-	uFnexecUpdateNative->iNative = 36784;
+	uFnexecUpdateNative->iNative = 36782;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.FinalizeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36842])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36840])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuReplay::FinalizeNative()
@@ -50145,11 +50145,11 @@ void UREDGfxMoviePlayer_MenuReplay::FinalizeNative()
 	uFnFinalizeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFinalizeNative, &FinalizeNative_Params, nullptr);
 	uFnFinalizeNative->FunctionFlags |= 0x400;
-	uFnFinalizeNative->iNative = 36842;
+	uFnFinalizeNative->iNative = 36840;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.InitializeNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37527])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37525])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuReplay::InitializeNative()
@@ -50168,7 +50168,7 @@ void UREDGfxMoviePlayer_MenuReplay::InitializeNative()
 	uFnInitializeNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitializeNative, &InitializeNative_Params, nullptr);
 	uFnInitializeNative->FunctionFlags |= 0x400;
-	uFnInitializeNative->iNative = 37527;
+	uFnInitializeNative->iNative = 37525;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStaffRoll.IsEnd
@@ -50748,7 +50748,7 @@ bool UREDGfxMoviePlayer_MenuStaffRoll::IsSkipable()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStaffRoll.UpdateToBeContinueNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40873])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40871])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        stFrame                        (CPF_Parm)
@@ -50784,13 +50784,13 @@ bool UREDGfxMoviePlayer_MenuStaffRoll::UpdateToBeContinueNative(int32_t stFrame,
 	uFnUpdateToBeContinueNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateToBeContinueNative, &UpdateToBeContinueNative_Params, nullptr);
 	uFnUpdateToBeContinueNative->FunctionFlags |= 0x400;
-	uFnUpdateToBeContinueNative->iNative = 40873;
+	uFnUpdateToBeContinueNative->iNative = 40871;
 
 	return UpdateToBeContinueNative_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStaffRoll.DelayGarbageCollection
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36525])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36523])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuStaffRoll::DelayGarbageCollection()
@@ -50809,11 +50809,11 @@ void UREDGfxMoviePlayer_MenuStaffRoll::DelayGarbageCollection()
 	uFnDelayGarbageCollection->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDelayGarbageCollection, &DelayGarbageCollection_Params, nullptr);
 	uFnDelayGarbageCollection->FunctionFlags |= 0x400;
-	uFnDelayGarbageCollection->iNative = 36525;
+	uFnDelayGarbageCollection->iNative = 36523;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStaffRoll.GetRecordAll
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37151])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37149])
 // Parameter Info:
 // class FString                  BadgeNum                       (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 // class FString                  Score                          (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -50840,7 +50840,7 @@ void UREDGfxMoviePlayer_MenuStaffRoll::GetRecordAll(class FString& BadgeNum, cla
 	uFnGetRecordAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetRecordAll, &GetRecordAll_Params, nullptr);
 	uFnGetRecordAll->FunctionFlags |= 0x400;
-	uFnGetRecordAll->iNative = 37151;
+	uFnGetRecordAll->iNative = 37149;
 
 	memcpy_s(&BadgeNum, sizeof(BadgeNum), &GetRecordAll_Params.BadgeNum, sizeof(GetRecordAll_Params.BadgeNum));
 	memcpy_s(&Score, sizeof(Score), &GetRecordAll_Params.Score, sizeof(GetRecordAll_Params.Score));
@@ -50849,7 +50849,7 @@ void UREDGfxMoviePlayer_MenuStaffRoll::GetRecordAll(class FString& BadgeNum, cla
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStaffRoll.GetStageRecord
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37176])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37174])
 // Parameter Info:
 // int32_t                        stage                          (CPF_Parm)
 // class FString                  BadgeNum                       (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -50874,7 +50874,7 @@ void UREDGfxMoviePlayer_MenuStaffRoll::GetStageRecord(int32_t stage, class FStri
 	uFnGetStageRecord->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetStageRecord, &GetStageRecord_Params, nullptr);
 	uFnGetStageRecord->FunctionFlags |= 0x400;
-	uFnGetStageRecord->iNative = 37176;
+	uFnGetStageRecord->iNative = 37174;
 
 	memcpy_s(&BadgeNum, sizeof(BadgeNum), &GetStageRecord_Params.BadgeNum, sizeof(GetStageRecord_Params.BadgeNum));
 	memcpy_s(&Score, sizeof(Score), &GetStageRecord_Params.Score, sizeof(GetStageRecord_Params.Score));
@@ -51040,7 +51040,7 @@ bool UREDGfxMoviePlayer_MenuStory::eventIsStartAnimEnd()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStory.GetReadRatioString
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37150])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37148])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -51060,13 +51060,13 @@ class FString UREDGfxMoviePlayer_MenuStory::GetReadRatioString()
 	uFnGetReadRatioString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetReadRatioString, &GetReadRatioString_Params, nullptr);
 	uFnGetReadRatioString->FunctionFlags |= 0x400;
-	uFnGetReadRatioString->iNative = 37150;
+	uFnGetReadRatioString->iNative = 37148;
 
 	return GetReadRatioString_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStory.UpdateDrawMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40651])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40649])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuStory::UpdateDrawMenu()
@@ -51085,11 +51085,11 @@ void UREDGfxMoviePlayer_MenuStory::UpdateDrawMenu()
 	uFnUpdateDrawMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDrawMenu, &UpdateDrawMenu_Params, nullptr);
 	uFnUpdateDrawMenu->FunctionFlags |= 0x400;
-	uFnUpdateDrawMenu->iNative = 40651;
+	uFnUpdateDrawMenu->iNative = 40649;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStory.UpdateMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40782])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40780])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuStory::UpdateMenu()
@@ -51108,11 +51108,11 @@ void UREDGfxMoviePlayer_MenuStory::UpdateMenu()
 	uFnUpdateMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMenu, &UpdateMenu_Params, nullptr);
 	uFnUpdateMenu->FunctionFlags |= 0x400;
-	uFnUpdateMenu->iNative = 40782;
+	uFnUpdateMenu->iNative = 40780;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStory.InitMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37538])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37536])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuStory::InitMenu()
@@ -51131,7 +51131,7 @@ void UREDGfxMoviePlayer_MenuStory::InitMenu()
 	uFnInitMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitMenu, &InitMenu_Params, nullptr);
 	uFnInitMenu->FunctionFlags |= 0x400;
-	uFnInitMenu->iNative = 37538;
+	uFnInitMenu->iNative = 37536;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.AS_LabelStop
@@ -51411,7 +51411,7 @@ void UREDGfxMoviePlayer_MenuTitle::TitleStart()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.OnCloseNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38813])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38811])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuTitle::OnCloseNative()
@@ -51430,11 +51430,11 @@ void UREDGfxMoviePlayer_MenuTitle::OnCloseNative()
 	uFnOnCloseNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnCloseNative, &OnCloseNative_Params, nullptr);
 	uFnOnCloseNative->FunctionFlags |= 0x400;
-	uFnOnCloseNative->iNative = 38813;
+	uFnOnCloseNative->iNative = 38811;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.OnUpdateNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38825])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38823])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuTitle::OnUpdateNative()
@@ -51453,11 +51453,11 @@ void UREDGfxMoviePlayer_MenuTitle::OnUpdateNative()
 	uFnOnUpdateNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnUpdateNative, &OnUpdateNative_Params, nullptr);
 	uFnOnUpdateNative->FunctionFlags |= 0x400;
-	uFnOnUpdateNative->iNative = 38825;
+	uFnOnUpdateNative->iNative = 38823;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.OnTitleStart
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38823])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38821])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuTitle::OnTitleStart()
@@ -51476,11 +51476,11 @@ void UREDGfxMoviePlayer_MenuTitle::OnTitleStart()
 	uFnOnTitleStart->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnTitleStart, &OnTitleStart_Params, nullptr);
 	uFnOnTitleStart->FunctionFlags |= 0x400;
-	uFnOnTitleStart->iNative = 38823;
+	uFnOnTitleStart->iNative = 38821;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsUSRom
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37927])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37925])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -51500,13 +51500,13 @@ bool UREDGfxMoviePlayer_MenuTitle::IsUSRom()
 	uFnIsUSRom->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsUSRom, &IsUSRom_Params, nullptr);
 	uFnIsUSRom->FunctionFlags |= 0x400;
-	uFnIsUSRom->iNative = 37927;
+	uFnIsUSRom->iNative = 37925;
 
 	return IsUSRom_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsOpenPSPlusTrialMenuCancel
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37762])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37760])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -51526,13 +51526,13 @@ bool UREDGfxMoviePlayer_MenuTitle::IsOpenPSPlusTrialMenuCancel()
 	uFnIsOpenPSPlusTrialMenuCancel->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsOpenPSPlusTrialMenuCancel, &IsOpenPSPlusTrialMenuCancel_Params, nullptr);
 	uFnIsOpenPSPlusTrialMenuCancel->FunctionFlags |= 0x400;
-	uFnIsOpenPSPlusTrialMenuCancel->iNative = 37762;
+	uFnIsOpenPSPlusTrialMenuCancel->iNative = 37760;
 
 	return IsOpenPSPlusTrialMenuCancel_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.OpenPSPlusTrialMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38839])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38837])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuTitle::OpenPSPlusTrialMenu()
@@ -51551,11 +51551,11 @@ void UREDGfxMoviePlayer_MenuTitle::OpenPSPlusTrialMenu()
 	uFnOpenPSPlusTrialMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOpenPSPlusTrialMenu, &OpenPSPlusTrialMenu_Params, nullptr);
 	uFnOpenPSPlusTrialMenu->FunctionFlags |= 0x400;
-	uFnOpenPSPlusTrialMenu->iNative = 38839;
+	uFnOpenPSPlusTrialMenu->iNative = 38837;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.UpdateTrial
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40878])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40876])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -51575,13 +51575,13 @@ bool UREDGfxMoviePlayer_MenuTitle::UpdateTrial()
 	uFnUpdateTrial->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateTrial, &UpdateTrial_Params, nullptr);
 	uFnUpdateTrial->FunctionFlags |= 0x400;
-	uFnUpdateTrial->iNative = 40878;
+	uFnUpdateTrial->iNative = 40876;
 
 	return UpdateTrial_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.GetCompanyLogoMovieName
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37029])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37027])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // class FString                  MovieName                      (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -51604,13 +51604,13 @@ void UREDGfxMoviePlayer_MenuTitle::GetCompanyLogoMovieName(int32_t Index, class 
 	uFnGetCompanyLogoMovieName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCompanyLogoMovieName, &GetCompanyLogoMovieName_Params, nullptr);
 	uFnGetCompanyLogoMovieName->FunctionFlags |= 0x400;
-	uFnGetCompanyLogoMovieName->iNative = 37029;
+	uFnGetCompanyLogoMovieName->iNative = 37027;
 
 	memcpy_s(&MovieName, sizeof(MovieName), &GetCompanyLogoMovieName_Params.MovieName, sizeof(GetCompanyLogoMovieName_Params.MovieName));
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsSkipOpeningMovie
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37862])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37860])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -51630,13 +51630,13 @@ bool UREDGfxMoviePlayer_MenuTitle::IsSkipOpeningMovie()
 	uFnIsSkipOpeningMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSkipOpeningMovie, &IsSkipOpeningMovie_Params, nullptr);
 	uFnIsSkipOpeningMovie->FunctionFlags |= 0x400;
-	uFnIsSkipOpeningMovie->iNative = 37862;
+	uFnIsSkipOpeningMovie->iNative = 37860;
 
 	return IsSkipOpeningMovie_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsSkipCompanyLogo
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37861])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37859])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -51656,13 +51656,13 @@ bool UREDGfxMoviePlayer_MenuTitle::IsSkipCompanyLogo()
 	uFnIsSkipCompanyLogo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsSkipCompanyLogo, &IsSkipCompanyLogo_Params, nullptr);
 	uFnIsSkipCompanyLogo->FunctionFlags |= 0x400;
-	uFnIsSkipCompanyLogo->iNative = 37861;
+	uFnIsSkipCompanyLogo->iNative = 37859;
 
 	return IsSkipCompanyLogo_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsNoCard
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37752])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37750])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -51682,13 +51682,13 @@ bool UREDGfxMoviePlayer_MenuTitle::IsNoCard()
 	uFnIsNoCard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsNoCard, &IsNoCard_Params, nullptr);
 	uFnIsNoCard->FunctionFlags |= 0x400;
-	uFnIsNoCard->iNative = 37752;
+	uFnIsNoCard->iNative = 37750;
 
 	return IsNoCard_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.SetDispRankingGroup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39732])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39730])
 // Parameter Info:
 // ERANKING_GROUP                 Group                          (CPF_Parm)
 
@@ -51709,11 +51709,11 @@ void UREDGfxMoviePlayer_MenuTitle::SetDispRankingGroup(ERANKING_GROUP Group)
 	uFnSetDispRankingGroup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDispRankingGroup, &SetDispRankingGroup_Params, nullptr);
 	uFnSetDispRankingGroup->FunctionFlags |= 0x400;
-	uFnSetDispRankingGroup->iNative = 39732;
+	uFnSetDispRankingGroup->iNative = 39730;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.StepNextScene
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40092])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40090])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuTitle::StepNextScene()
@@ -51732,11 +51732,11 @@ void UREDGfxMoviePlayer_MenuTitle::StepNextScene()
 	uFnStepNextScene->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStepNextScene, &StepNextScene_Params, nullptr);
 	uFnStepNextScene->FunctionFlags |= 0x400;
-	uFnStepNextScene->iNative = 40092;
+	uFnStepNextScene->iNative = 40090;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.GetNextScene
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37120])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37118])
 // Parameter Info:
 // ETITLE_NEXTSCENE               ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -51756,13 +51756,13 @@ ETITLE_NEXTSCENE UREDGfxMoviePlayer_MenuTitle::GetNextScene()
 	uFnGetNextScene->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetNextScene, &GetNextScene_Params, nullptr);
 	uFnGetNextScene->FunctionFlags |= 0x400;
-	uFnGetNextScene->iNative = 37120;
+	uFnGetNextScene->iNative = 37118;
 
 	return static_cast<ETITLE_NEXTSCENE>(GetNextScene_Params.ReturnValue);
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.StopMovie
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28957])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28955])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuTitle::StopMovie()
@@ -51781,11 +51781,11 @@ void UREDGfxMoviePlayer_MenuTitle::StopMovie()
 	uFnStopMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopMovie, &StopMovie_Params, nullptr);
 	uFnStopMovie->FunctionFlags |= 0x400;
-	uFnStopMovie->iNative = 28957;
+	uFnStopMovie->iNative = 28955;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsMoviePlaying
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37739])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37737])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  MovieName                      (CPF_Parm | CPF_NeedCtorLink)
@@ -51807,13 +51807,13 @@ bool UREDGfxMoviePlayer_MenuTitle::IsMoviePlaying(const class FString& MovieName
 	uFnIsMoviePlaying->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMoviePlaying, &IsMoviePlaying_Params, nullptr);
 	uFnIsMoviePlaying->FunctionFlags |= 0x400;
-	uFnIsMoviePlaying->iNative = 37739;
+	uFnIsMoviePlaying->iNative = 37737;
 
 	return IsMoviePlaying_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsMovieFinish
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37738])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37736])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  MovieName                      (CPF_Parm | CPF_NeedCtorLink)
@@ -51835,13 +51835,13 @@ bool UREDGfxMoviePlayer_MenuTitle::IsMovieFinish(const class FString& MovieName)
 	uFnIsMovieFinish->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsMovieFinish, &IsMovieFinish_Params, nullptr);
 	uFnIsMovieFinish->FunctionFlags |= 0x400;
-	uFnIsMovieFinish->iNative = 37738;
+	uFnIsMovieFinish->iNative = 37736;
 
 	return IsMovieFinish_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.StartMovie
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40026])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40024])
 // Parameter Info:
 // class FString                  MovieName                      (CPF_Parm | CPF_NeedCtorLink)
 
@@ -51862,11 +51862,11 @@ void UREDGfxMoviePlayer_MenuTitle::StartMovie(const class FString& MovieName)
 	uFnStartMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStartMovie, &StartMovie_Params, nullptr);
 	uFnStartMovie->FunctionFlags |= 0x400;
-	uFnStartMovie->iNative = 40026;
+	uFnStartMovie->iNative = 40024;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.UpdateCardDisp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40614])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40612])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -51886,13 +51886,13 @@ bool UREDGfxMoviePlayer_MenuTitle::UpdateCardDisp()
 	uFnUpdateCardDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateCardDisp, &UpdateCardDisp_Params, nullptr);
 	uFnUpdateCardDisp->FunctionFlags |= 0x400;
-	uFnUpdateCardDisp->iNative = 40614;
+	uFnUpdateCardDisp->iNative = 40612;
 
 	return UpdateCardDisp_Params.ReturnValue;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.UpdateMenuTitleDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40783])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40781])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuTitle::UpdateMenuTitleDraw()
@@ -51911,11 +51911,11 @@ void UREDGfxMoviePlayer_MenuTitle::UpdateMenuTitleDraw()
 	uFnUpdateMenuTitleDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMenuTitleDraw, &UpdateMenuTitleDraw_Params, nullptr);
 	uFnUpdateMenuTitleDraw->FunctionFlags |= 0x400;
-	uFnUpdateMenuTitleDraw->iNative = 40783;
+	uFnUpdateMenuTitleDraw->iNative = 40781;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.InitMenuTitle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37539])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37537])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuTitle::InitMenuTitle()
@@ -51934,7 +51934,7 @@ void UREDGfxMoviePlayer_MenuTitle::InitMenuTitle()
 	uFnInitMenuTitle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitMenuTitle, &InitMenuTitle_Params, nullptr);
 	uFnInitMenuTitle->FunctionFlags |= 0x400;
-	uFnInitMenuTitle->iNative = 37539;
+	uFnInitMenuTitle->iNative = 37537;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTournamentList.OnUpdate
@@ -52164,7 +52164,7 @@ void UREDGfxMoviePlayer_MenuTournamentMisc::eventStopShowRanking()
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTournamentMisc.ShowRankingEnd
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39903])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39901])
 // Parameter Info:
 
 void UREDGfxMoviePlayer_MenuTournamentMisc::ShowRankingEnd()
@@ -52183,7 +52183,7 @@ void UREDGfxMoviePlayer_MenuTournamentMisc::ShowRankingEnd()
 	uFnShowRankingEnd->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowRankingEnd, &ShowRankingEnd_Params, nullptr);
 	uFnShowRankingEnd->FunctionFlags |= 0x400;
-	uFnShowRankingEnd->iNative = 39903;
+	uFnShowRankingEnd->iNative = 39901;
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTournamentMisc.IsShowRanking
@@ -52766,7 +52766,7 @@ void AREDHUD::CleanUIForPauseScreen()
 };
 
 // Function REDGame.REDHUD.GetGameViewportClient
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31963])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31961])
 // Parameter Info:
 // class UGameViewportClient*     ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -52786,13 +52786,13 @@ class UGameViewportClient* AREDHUD::GetGameViewportClient()
 	uFnGetGameViewportClient->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetGameViewportClient, &GetGameViewportClient_Params, nullptr);
 	uFnGetGameViewportClient->FunctionFlags |= 0x400;
-	uFnGetGameViewportClient->iNative = 31963;
+	uFnGetGameViewportClient->iNative = 31961;
 
 	return GetGameViewportClient_Params.ReturnValue;
 };
 
 // Function REDGame.REDHUD.PostDispRoot
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39083])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39081])
 // Parameter Info:
 
 void AREDHUD::PostDispRoot()
@@ -52811,7 +52811,7 @@ void AREDHUD::PostDispRoot()
 	uFnPostDispRoot->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPostDispRoot, &PostDispRoot_Params, nullptr);
 	uFnPostDispRoot->FunctionFlags |= 0x400;
-	uFnPostDispRoot->iNative = 39083;
+	uFnPostDispRoot->iNative = 39081;
 };
 
 // Function REDGame.REDHUD_Battle.RVNBlinkEffect
@@ -52865,7 +52865,7 @@ void AREDHUD_Battle::RVNRiseEffect(int32_t Player)
 };
 
 // Function REDGame.REDHUD_Battle.JKOGhostGaugeDisp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37941])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37939])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // int32_t                        ColorID                        (CPF_Parm)
@@ -52896,7 +52896,7 @@ void AREDHUD_Battle::JKOGhostGaugeDisp(int32_t Player, int32_t ColorID, int32_t 
 	uFnJKOGhostGaugeDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJKOGhostGaugeDisp, &JKOGhostGaugeDisp_Params, nullptr);
 	uFnJKOGhostGaugeDisp->FunctionFlags |= 0x400;
-	uFnJKOGhostGaugeDisp->iNative = 37941;
+	uFnJKOGhostGaugeDisp->iNative = 37939;
 };
 
 // Function REDGame.REDHUD_Battle.BurstKakuseiEff
@@ -52950,7 +52950,7 @@ void AREDHUD_Battle::BurstShake(int32_t Player)
 };
 
 // Function REDGame.REDHUD_Battle.RequestBattleInfo
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39368])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39366])
 // Parameter Info:
 // int32_t                        TextID                         (CPF_Parm)
 // int32_t                        Player                         (CPF_Parm)
@@ -52977,11 +52977,11 @@ void AREDHUD_Battle::RequestBattleInfo(int32_t TextID, int32_t Player, int32_t s
 	uFnRequestBattleInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRequestBattleInfo, &RequestBattleInfo_Params, nullptr);
 	uFnRequestBattleInfo->FunctionFlags |= 0x400;
-	uFnRequestBattleInfo->iNative = 39368;
+	uFnRequestBattleInfo->iNative = 39366;
 };
 
 // Function REDGame.REDHUD_Battle.Guardmiss_m
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37415])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37413])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // int32_t                        X                              (CPF_Parm)
@@ -53008,11 +53008,11 @@ void AREDHUD_Battle::Guardmiss_m(int32_t Player, int32_t X, int32_t Y, int32_t D
 	uFnGuardmiss_m->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGuardmiss_m, &Guardmiss_m_Params, nullptr);
 	uFnGuardmiss_m->FunctionFlags |= 0x400;
-	uFnGuardmiss_m->iNative = 37415;
+	uFnGuardmiss_m->iNative = 37413;
 };
 
 // Function REDGame.REDHUD_Battle.Guardmiss_u
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37416])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37414])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // int32_t                        X                              (CPF_Parm)
@@ -53039,11 +53039,11 @@ void AREDHUD_Battle::Guardmiss_u(int32_t Player, int32_t X, int32_t Y, int32_t D
 	uFnGuardmiss_u->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGuardmiss_u, &Guardmiss_u_Params, nullptr);
 	uFnGuardmiss_u->FunctionFlags |= 0x400;
-	uFnGuardmiss_u->iNative = 37416;
+	uFnGuardmiss_u->iNative = 37414;
 };
 
 // Function REDGame.REDHUD_Battle.ShinSousaiDamage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39882])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39880])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // int32_t                        shakeFrame                     (CPF_Parm)
@@ -53066,11 +53066,11 @@ void AREDHUD_Battle::ShinSousaiDamage(int32_t Player, int32_t shakeFrame)
 	uFnShinSousaiDamage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShinSousaiDamage, &ShinSousaiDamage_Params, nullptr);
 	uFnShinSousaiDamage->FunctionFlags |= 0x400;
-	uFnShinSousaiDamage->iNative = 39882;
+	uFnShinSousaiDamage->iNative = 39880;
 };
 
 // Function REDGame.REDHUD_Battle.ShinSousai
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39881])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39879])
 // Parameter Info:
 // int32_t                        frame                          (CPF_Parm)
 
@@ -53091,11 +53091,11 @@ void AREDHUD_Battle::ShinSousai(int32_t frame)
 	uFnShinSousai->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShinSousai, &ShinSousai_Params, nullptr);
 	uFnShinSousai->FunctionFlags |= 0x400;
-	uFnShinSousai->iNative = 39881;
+	uFnShinSousai->iNative = 39879;
 };
 
 // Function REDGame.REDHUD_Battle.DispCockpitAll
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36552])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36550])
 // Parameter Info:
 // uint32_t                       disp                           (CPF_Parm)
 
@@ -53116,11 +53116,11 @@ void AREDHUD_Battle::DispCockpitAll(bool disp)
 	uFnDispCockpitAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDispCockpitAll, &DispCockpitAll_Params, nullptr);
 	uFnDispCockpitAll->FunctionFlags |= 0x400;
-	uFnDispCockpitAll->iNative = 36552;
+	uFnDispCockpitAll->iNative = 36550;
 };
 
 // Function REDGame.REDHUD_Battle.DispCockpit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36551])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36549])
 // Parameter Info:
 // uint32_t                       disp                           (CPF_Parm)
 
@@ -53141,11 +53141,11 @@ void AREDHUD_Battle::DispCockpit(bool disp)
 	uFnDispCockpit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDispCockpit, &DispCockpit_Params, nullptr);
 	uFnDispCockpit->FunctionFlags |= 0x400;
-	uFnDispCockpit->iNative = 36551;
+	uFnDispCockpit->iNative = 36549;
 };
 
 // Function REDGame.REDHUD_Battle.NegaPena
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38529])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38527])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 
@@ -53166,11 +53166,11 @@ void AREDHUD_Battle::NegaPena(int32_t Player)
 	uFnNegaPena->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNegaPena, &NegaPena_Params, nullptr);
 	uFnNegaPena->FunctionFlags |= 0x400;
-	uFnNegaPena->iNative = 38529;
+	uFnNegaPena->iNative = 38527;
 };
 
 // Function REDGame.REDHUD_Battle.ButtonRenda
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36031])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36029])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // int32_t                        timePer                        (CPF_Parm)
@@ -53199,11 +53199,11 @@ void AREDHUD_Battle::ButtonRenda(int32_t Player, int32_t timePer, int32_t X, int
 	uFnButtonRenda->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnButtonRenda, &ButtonRenda_Params, nullptr);
 	uFnButtonRenda->FunctionFlags |= 0x400;
-	uFnButtonRenda->iNative = 36031;
+	uFnButtonRenda->iNative = 36029;
 };
 
 // Function REDGame.REDHUD_Battle.LeverGacha
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37995])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37993])
 // Parameter Info:
 // int32_t                        Player                         (CPF_Parm)
 // int32_t                        timePer                        (CPF_Parm)
@@ -53232,7 +53232,7 @@ void AREDHUD_Battle::LeverGacha(int32_t Player, int32_t timePer, int32_t X, int3
 	uFnLeverGacha->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLeverGacha, &LeverGacha_Params, nullptr);
 	uFnLeverGacha->FunctionFlags |= 0x400;
-	uFnLeverGacha->iNative = 37995;
+	uFnLeverGacha->iNative = 37993;
 };
 
 // Function REDGame.REDHUD_Battle.SetTensGaugeColor
@@ -53687,7 +53687,7 @@ void AREDHUD_Battle::MatchResultWindow_StartShow(struct FMatchResultWindowArg& a
 };
 
 // Function REDGame.REDHUD_Battle.UpdateCombo
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40622])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40620])
 // Parameter Info:
 // class AREDPawn*                player1                        (CPF_Parm)
 // class AREDPawn*                player2                        (CPF_Parm)
@@ -53710,11 +53710,11 @@ void AREDHUD_Battle::UpdateCombo(class AREDPawn* player1, class AREDPawn* player
 	uFnUpdateCombo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateCombo, &UpdateCombo_Params, nullptr);
 	uFnUpdateCombo->FunctionFlags |= 0x400;
-	uFnUpdateCombo->iNative = 40622;
+	uFnUpdateCombo->iNative = 40620;
 };
 
 // Function REDGame.REDHUD_Battle.Update_Tick
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40594])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40592])
 // Parameter Info:
 
 void AREDHUD_Battle::Update_Tick()
@@ -53733,11 +53733,11 @@ void AREDHUD_Battle::Update_Tick()
 	uFnUpdate_Tick->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdate_Tick, &Update_Tick_Params, nullptr);
 	uFnUpdate_Tick->FunctionFlags |= 0x400;
-	uFnUpdate_Tick->iNative = 40594;
+	uFnUpdate_Tick->iNative = 40592;
 };
 
 // Function REDGame.REDHUD_Battle.UpdateAll
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40595])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40593])
 // Parameter Info:
 
 void AREDHUD_Battle::UpdateAll()
@@ -53756,7 +53756,7 @@ void AREDHUD_Battle::UpdateAll()
 	uFnUpdateAll->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateAll, &UpdateAll_Params, nullptr);
 	uFnUpdateAll->FunctionFlags |= 0x400;
-	uFnUpdateAll->iNative = 40595;
+	uFnUpdateAll->iNative = 40593;
 };
 
 // Function REDGame.REDHUD_Battle.PostRender
@@ -53917,7 +53917,7 @@ bool AREDHUD_Battle::IsMapCycleTransitioning()
 };
 
 // Function REDGame.REDHUD_Battle.SetupBeginPlay
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39820])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39818])
 // Parameter Info:
 
 void AREDHUD_Battle::SetupBeginPlay()
@@ -53936,11 +53936,11 @@ void AREDHUD_Battle::SetupBeginPlay()
 	uFnSetupBeginPlay->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupBeginPlay, &SetupBeginPlay_Params, nullptr);
 	uFnSetupBeginPlay->FunctionFlags |= 0x400;
-	uFnSetupBeginPlay->iNative = 39820;
+	uFnSetupBeginPlay->iNative = 39818;
 };
 
 // Function REDGame.REDHUD_Battle.GetGameVersionString
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37065])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37063])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -53960,13 +53960,13 @@ class FString AREDHUD_Battle::GetGameVersionString()
 	uFnGetGameVersionString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetGameVersionString, &GetGameVersionString_Params, nullptr);
 	uFnGetGameVersionString->FunctionFlags |= 0x400;
-	uFnGetGameVersionString->iNative = 37065;
+	uFnGetGameVersionString->iNative = 37063;
 
 	return GetGameVersionString_Params.ReturnValue;
 };
 
 // Function REDGame.REDHUD_Battle.GetDanToString
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37043])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37041])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // int32_t                        Dan                            (CPF_Parm)
@@ -53988,13 +53988,13 @@ class FString AREDHUD_Battle::GetDanToString(int32_t Dan)
 	uFnGetDanToString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetDanToString, &GetDanToString_Params, nullptr);
 	uFnGetDanToString->FunctionFlags |= 0x400;
-	uFnGetDanToString->iNative = 37043;
+	uFnGetDanToString->iNative = 37041;
 
 	return GetDanToString_Params.ReturnValue;
 };
 
 // Function REDGame.REDMaterialSetArray.GetMaterialDataIndexFromMeshName
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37095])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37093])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    MeshName                       (CPF_Parm)
@@ -54016,7 +54016,7 @@ int32_t UREDMaterialSetArray::GetMaterialDataIndexFromMeshName(const class FName
 	uFnGetMaterialDataIndexFromMeshName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMaterialDataIndexFromMeshName, &GetMaterialDataIndexFromMeshName_Params, nullptr);
 	uFnGetMaterialDataIndexFromMeshName->FunctionFlags |= 0x400;
-	uFnGetMaterialDataIndexFromMeshName->iNative = 37095;
+	uFnGetMaterialDataIndexFromMeshName->iNative = 37093;
 
 	return GetMaterialDataIndexFromMeshName_Params.ReturnValue;
 };
@@ -54050,7 +54050,7 @@ void UREDMeshPool::DisplayDebug(class AHUD* HUD, float& out_YL, float& out_YPos)
 };
 
 // Function REDGame.REDMeshPool.ResetPool
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39387])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39385])
 // Parameter Info:
 
 void UREDMeshPool::ResetPool()
@@ -54069,11 +54069,11 @@ void UREDMeshPool::ResetPool()
 	uFnResetPool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetPool, &ResetPool_Params, nullptr);
 	uFnResetPool->FunctionFlags |= 0x400;
-	uFnResetPool->iNative = 39387;
+	uFnResetPool->iNative = 39385;
 };
 
 // Function REDGame.REDMeshPool.InitPool
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37542])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37540])
 // Parameter Info:
 
 void UREDMeshPool::InitPool()
@@ -54092,11 +54092,11 @@ void UREDMeshPool::InitPool()
 	uFnInitPool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitPool, &InitPool_Params, nullptr);
 	uFnInitPool->FunctionFlags |= 0x400;
-	uFnInitPool->iNative = 37542;
+	uFnInitPool->iNative = 37540;
 };
 
 // Function REDGame.REDMeshPool.GetFreeMaterialInstanceConstant
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37062])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37060])
 // Parameter Info:
 // class UMaterialInstanceConstant* ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bCreateNewObject               (CPF_OptionalParm | CPF_Parm)
@@ -54118,13 +54118,13 @@ class UMaterialInstanceConstant* UREDMeshPool::GetFreeMaterialInstanceConstant(b
 	uFnGetFreeMaterialInstanceConstant->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetFreeMaterialInstanceConstant, &GetFreeMaterialInstanceConstant_Params, nullptr);
 	uFnGetFreeMaterialInstanceConstant->FunctionFlags |= 0x400;
-	uFnGetFreeMaterialInstanceConstant->iNative = 37062;
+	uFnGetFreeMaterialInstanceConstant->iNative = 37060;
 
 	return GetFreeMaterialInstanceConstant_Params.ReturnValue;
 };
 
 // Function REDGame.REDMeshPool.GetFreeSkeletalMeshComponent
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37063])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37061])
 // Parameter Info:
 // class USkeletalMeshComponent*  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_EditInline)
 // uint32_t                       bCreateNewObject               (CPF_OptionalParm | CPF_Parm)
@@ -54146,13 +54146,13 @@ class USkeletalMeshComponent* UREDMeshPool::GetFreeSkeletalMeshComponent(bool bC
 	uFnGetFreeSkeletalMeshComponent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetFreeSkeletalMeshComponent, &GetFreeSkeletalMeshComponent_Params, nullptr);
 	uFnGetFreeSkeletalMeshComponent->FunctionFlags |= 0x400;
-	uFnGetFreeSkeletalMeshComponent->iNative = 37063;
+	uFnGetFreeSkeletalMeshComponent->iNative = 37061;
 
 	return GetFreeSkeletalMeshComponent_Params.ReturnValue;
 };
 
 // Function REDGame.REDMeshPool.ReturnToMaterialInstanceFromPawn
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39406])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39404])
 // Parameter Info:
 // class AREDPawn*                ReleasePawn                    (CPF_Parm)
 
@@ -54173,11 +54173,11 @@ void UREDMeshPool::ReturnToMaterialInstanceFromPawn(class AREDPawn* ReleasePawn)
 	uFnReturnToMaterialInstanceFromPawn->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReturnToMaterialInstanceFromPawn, &ReturnToMaterialInstanceFromPawn_Params, nullptr);
 	uFnReturnToMaterialInstanceFromPawn->FunctionFlags |= 0x400;
-	uFnReturnToMaterialInstanceFromPawn->iNative = 39406;
+	uFnReturnToMaterialInstanceFromPawn->iNative = 39404;
 };
 
 // Function REDGame.REDMeshPool.ReturnToSkeletalMeshComponentFromPawn
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39407])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39405])
 // Parameter Info:
 // class AREDPawn*                ReleasePawn                    (CPF_Parm)
 
@@ -54198,11 +54198,11 @@ void UREDMeshPool::ReturnToSkeletalMeshComponentFromPawn(class AREDPawn* Release
 	uFnReturnToSkeletalMeshComponentFromPawn->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReturnToSkeletalMeshComponentFromPawn, &ReturnToSkeletalMeshComponentFromPawn_Params, nullptr);
 	uFnReturnToSkeletalMeshComponentFromPawn->FunctionFlags |= 0x400;
-	uFnReturnToSkeletalMeshComponentFromPawn->iNative = 39407;
+	uFnReturnToSkeletalMeshComponentFromPawn->iNative = 39405;
 };
 
 // Function REDGame.REDMeshPool.FreeMaterialInstanceConstant
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36910])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36908])
 // Parameter Info:
 // class UMaterialInstanceConstant* MIC                            (CPF_Parm)
 
@@ -54223,11 +54223,11 @@ void UREDMeshPool::FreeMaterialInstanceConstant(class UMaterialInstanceConstant*
 	uFnFreeMaterialInstanceConstant->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFreeMaterialInstanceConstant, &FreeMaterialInstanceConstant_Params, nullptr);
 	uFnFreeMaterialInstanceConstant->FunctionFlags |= 0x400;
-	uFnFreeMaterialInstanceConstant->iNative = 36910;
+	uFnFreeMaterialInstanceConstant->iNative = 36908;
 };
 
 // Function REDGame.REDMeshPool.FreeSkeletalMeshComponent
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36911])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36909])
 // Parameter Info:
 // class USkeletalMeshComponent*  SKMeshComponent                (CPF_Parm | CPF_EditInline)
 
@@ -54248,11 +54248,11 @@ void UREDMeshPool::FreeSkeletalMeshComponent(class USkeletalMeshComponent* SKMes
 	uFnFreeSkeletalMeshComponent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFreeSkeletalMeshComponent, &FreeSkeletalMeshComponent_Params, nullptr);
 	uFnFreeSkeletalMeshComponent->FunctionFlags |= 0x400;
-	uFnFreeSkeletalMeshComponent->iNative = 36911;
+	uFnFreeSkeletalMeshComponent->iNative = 36909;
 };
 
 // Function REDGame.REDParticle.CreateParticle
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36336])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36334])
 // Parameter Info:
 // class UParticleSystemComponent* ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_EditInline)
 // class AActor*                  Actor                          (CPF_Parm)
@@ -54276,7 +54276,7 @@ class UParticleSystemComponent* UREDParticle::CreateParticle(class AActor* Actor
 	uFnCreateParticle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateParticle, &CreateParticle_Params, nullptr);
 	uFnCreateParticle->FunctionFlags |= 0x400;
-	uFnCreateParticle->iNative = 36336;
+	uFnCreateParticle->iNative = 36334;
 
 	memcpy_s(&Arg, sizeof(Arg), &CreateParticle_Params.Arg, sizeof(CreateParticle_Params.Arg));
 
@@ -54284,7 +54284,7 @@ class UParticleSystemComponent* UREDParticle::CreateParticle(class AActor* Actor
 };
 
 // Function REDGame.REDParticleMaterialInfo.Setup
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28188])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28186])
 // Parameter Info:
 // class AREDPawn*                ParentPawn                     (CPF_Parm)
 // class UREDParticleColorInfo*   SetColorInfo                   (CPF_Parm)
@@ -54307,11 +54307,11 @@ void UREDParticleMaterialInfo::Setup(class AREDPawn* ParentPawn, class UREDParti
 	uFnSetup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetup, &Setup_Params, nullptr);
 	uFnSetup->FunctionFlags |= 0x400;
-	uFnSetup->iNative = 28188;
+	uFnSetup->iNative = 28186;
 };
 
 // Function REDGame.REDPawnMaterials.GetMaterialSetArrayFromPatternName
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37096])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37094])
 // Parameter Info:
 // class UREDMaterialSetArray*    ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    PatternName                    (CPF_OptionalParm | CPF_Parm)
@@ -54333,7 +54333,7 @@ class UREDMaterialSetArray* UREDPawnMaterials::GetMaterialSetArrayFromPatternNam
 	uFnGetMaterialSetArrayFromPatternName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMaterialSetArrayFromPatternName, &GetMaterialSetArrayFromPatternName_Params, nullptr);
 	uFnGetMaterialSetArrayFromPatternName->FunctionFlags |= 0x400;
-	uFnGetMaterialSetArrayFromPatternName->iNative = 37096;
+	uFnGetMaterialSetArrayFromPatternName->iNative = 37094;
 
 	return GetMaterialSetArrayFromPatternName_Params.ReturnValue;
 };
@@ -54622,7 +54622,7 @@ void AREDPlayerController::ShowMenu()
 };
 
 // Function REDGame.REDPlayerController.IsOnlineRollback
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22938])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22936])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -54642,7 +54642,7 @@ bool AREDPlayerController::IsOnlineRollback()
 	uFnIsOnlineRollback->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsOnlineRollback, &IsOnlineRollback_Params, nullptr);
 	uFnIsOnlineRollback->FunctionFlags |= 0x400;
-	uFnIsOnlineRollback->iNative = 22938;
+	uFnIsOnlineRollback->iNative = 22936;
 
 	return IsOnlineRollback_Params.ReturnValue;
 };
@@ -54667,7 +54667,7 @@ void AREDPlayerController_Adv::eventPreBeginPlay()
 };
 
 // Function REDGame.REDPlayerController_Adv.InitPlayerController_Adv
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37540])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37538])
 // Parameter Info:
 
 void AREDPlayerController_Adv::InitPlayerController_Adv()
@@ -54686,7 +54686,7 @@ void AREDPlayerController_Adv::InitPlayerController_Adv()
 	uFnInitPlayerController_Adv->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitPlayerController_Adv, &InitPlayerController_Adv_Params, nullptr);
 	uFnInitPlayerController_Adv->FunctionFlags |= 0x400;
-	uFnInitPlayerController_Adv->iNative = 37540;
+	uFnInitPlayerController_Adv->iNative = 37538;
 };
 
 // Function REDGame.REDPlayerController_DigitalFigure.PreBeginPlay
@@ -54709,7 +54709,7 @@ void AREDPlayerController_DigitalFigure::eventPreBeginPlay()
 };
 
 // Function REDGame.REDPlayerController_DigitalFigure.InitPlayerController_DigitalFigure
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37541])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37539])
 // Parameter Info:
 
 void AREDPlayerController_DigitalFigure::InitPlayerController_DigitalFigure()
@@ -54728,7 +54728,7 @@ void AREDPlayerController_DigitalFigure::InitPlayerController_DigitalFigure()
 	uFnInitPlayerController_DigitalFigure->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitPlayerController_DigitalFigure, &InitPlayerController_DigitalFigure_Params, nullptr);
 	uFnInitPlayerController_DigitalFigure->FunctionFlags |= 0x400;
-	uFnInitPlayerController_DigitalFigure->iNative = 37541;
+	uFnInitPlayerController_DigitalFigure->iNative = 37539;
 };
 
 // Function REDGame.REDPointLightManager.DebugDisp
@@ -54755,7 +54755,7 @@ void UREDPointLightManager::eventDebugDisp(class AGameInfo* Info, bool bDisp)
 };
 
 // Function REDGame.REDPointLightManager.PostUpdate
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26347])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26345])
 // Parameter Info:
 
 void UREDPointLightManager::PostUpdate()
@@ -54774,11 +54774,11 @@ void UREDPointLightManager::PostUpdate()
 	uFnPostUpdate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPostUpdate, &PostUpdate_Params, nullptr);
 	uFnPostUpdate->FunctionFlags |= 0x400;
-	uFnPostUpdate->iNative = 26347;
+	uFnPostUpdate->iNative = 26345;
 };
 
 // Function REDGame.REDPointLightManager.UpdateCalledOn
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40610])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40608])
 // Parameter Info:
 // int32_t                        Id                             (CPF_Parm)
 
@@ -54799,11 +54799,11 @@ void UREDPointLightManager::UpdateCalledOn(int32_t Id)
 	uFnUpdateCalledOn->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateCalledOn, &UpdateCalledOn_Params, nullptr);
 	uFnUpdateCalledOn->FunctionFlags |= 0x400;
-	uFnUpdateCalledOn->iNative = 40610;
+	uFnUpdateCalledOn->iNative = 40608;
 };
 
 // Function REDGame.REDPointLightManager.NativeDebugDisp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38512])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38510])
 // Parameter Info:
 // uint32_t                       bDisp                          (CPF_Parm)
 
@@ -54824,7 +54824,7 @@ void UREDPointLightManager::NativeDebugDisp(bool bDisp)
 	uFnNativeDebugDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNativeDebugDisp, &NativeDebugDisp_Params, nullptr);
 	uFnNativeDebugDisp->FunctionFlags |= 0x400;
-	uFnNativeDebugDisp->iNative = 38512;
+	uFnNativeDebugDisp->iNative = 38510;
 };
 
 // Function REDGame.REDPointLightManager.Tick
@@ -54853,7 +54853,7 @@ void UREDPointLightManager::Tick(float DeltaTime)
 };
 
 // Function REDGame.REDPointLightManager.GetClosestPointLight
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37021])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37019])
 // Parameter Info:
 // struct FVector                 Location                       (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FLinearColor            LightPositionAndCutoff         (CPF_Parm | CPF_OutParm)
@@ -54878,7 +54878,7 @@ void UREDPointLightManager::GetClosestPointLight(struct FVector& Location, struc
 	uFnGetClosestPointLight->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetClosestPointLight, &GetClosestPointLight_Params, nullptr);
 	uFnGetClosestPointLight->FunctionFlags |= 0x400;
-	uFnGetClosestPointLight->iNative = 37021;
+	uFnGetClosestPointLight->iNative = 37019;
 
 	memcpy_s(&Location, sizeof(Location), &GetClosestPointLight_Params.Location, sizeof(GetClosestPointLight_Params.Location));
 	memcpy_s(&LightPositionAndCutoff, sizeof(LightPositionAndCutoff), &GetClosestPointLight_Params.LightPositionAndCutoff, sizeof(GetClosestPointLight_Params.LightPositionAndCutoff));
@@ -54886,7 +54886,7 @@ void UREDPointLightManager::GetClosestPointLight(struct FVector& Location, struc
 };
 
 // Function REDGame.REDPointLightManager.UnregistLight
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40588])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40586])
 // Parameter Info:
 // int32_t                        Id                             (CPF_Parm)
 
@@ -54907,11 +54907,11 @@ void UREDPointLightManager::UnregistLight(int32_t Id)
 	uFnUnregistLight->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnregistLight, &UnregistLight_Params, nullptr);
 	uFnUnregistLight->FunctionFlags |= 0x400;
-	uFnUnregistLight->iNative = 40588;
+	uFnUnregistLight->iNative = 40586;
 };
 
 // Function REDGame.REDPointLightManager.UpdateLight
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40749])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40747])
 // Parameter Info:
 // int32_t                        Id                             (CPF_Parm)
 // struct FVector                 NewLocation                    (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -54936,14 +54936,14 @@ void UREDPointLightManager::UpdateLight(int32_t Id, struct FVector& NewLocation,
 	uFnUpdateLight->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLight, &UpdateLight_Params, nullptr);
 	uFnUpdateLight->FunctionFlags |= 0x400;
-	uFnUpdateLight->iNative = 40749;
+	uFnUpdateLight->iNative = 40747;
 
 	memcpy_s(&NewLocation, sizeof(NewLocation), &UpdateLight_Params.NewLocation, sizeof(UpdateLight_Params.NewLocation));
 	memcpy_s(&NewLightColor, sizeof(NewLightColor), &UpdateLight_Params.NewLightColor, sizeof(UpdateLight_Params.NewLightColor));
 };
 
 // Function REDGame.REDPointLightManager.UpdateLightDebug
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40750])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40748])
 // Parameter Info:
 // int32_t                        Id                             (CPF_Parm)
 // float                          amp                            (CPF_Parm)
@@ -54982,14 +54982,14 @@ void UREDPointLightManager::UpdateLightDebug(int32_t Id, float amp, float Freq, 
 	uFnUpdateLightDebug->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLightDebug, &UpdateLightDebug_Params, nullptr);
 	uFnUpdateLightDebug->FunctionFlags |= 0x400;
-	uFnUpdateLightDebug->iNative = 40750;
+	uFnUpdateLightDebug->iNative = 40748;
 
 	memcpy_s(&NewLocation, sizeof(NewLocation), &UpdateLightDebug_Params.NewLocation, sizeof(UpdateLightDebug_Params.NewLocation));
 	memcpy_s(&NewLightColor, sizeof(NewLightColor), &UpdateLightDebug_Params.NewLightColor, sizeof(UpdateLightDebug_Params.NewLightColor));
 };
 
 // Function REDGame.REDPointLightManager.RegistLight
-// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39324])
+// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39322])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // float                          amp                            (CPF_Parm)
@@ -55029,7 +55029,7 @@ int32_t UREDPointLightManager::RegistLight(float amp, float Freq, float Amplify,
 	uFnRegistLight->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegistLight, &RegistLight_Params, nullptr);
 	uFnRegistLight->FunctionFlags |= 0x400;
-	uFnRegistLight->iNative = 39324;
+	uFnRegistLight->iNative = 39322;
 
 	memcpy_s(&Location, sizeof(Location), &RegistLight_Params.Location, sizeof(RegistLight_Params.Location));
 	memcpy_s(&LightColor, sizeof(LightColor), &RegistLight_Params.LightColor, sizeof(RegistLight_Params.LightColor));
@@ -55038,7 +55038,7 @@ int32_t UREDPointLightManager::RegistLight(float amp, float Freq, float Amplify,
 };
 
 // Function REDGame.REDPointLightManager.EnableLight
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36669])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36667])
 // Parameter Info:
 // uint32_t                       bEnable                        (CPF_Parm)
 
@@ -55059,7 +55059,7 @@ void UREDPointLightManager::EnableLight(bool bEnable)
 	uFnEnableLight->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnEnableLight, &EnableLight_Params, nullptr);
 	uFnEnableLight->FunctionFlags |= 0x400;
-	uFnEnableLight->iNative = 36669;
+	uFnEnableLight->iNative = 36667;
 };
 
 // Function REDGame.REDPointLightManager.Reset
@@ -55152,7 +55152,7 @@ void UREDSeqAct_ChangeAnimNodeLookAtBattle::eventActivateFunc()
 };
 
 // Function REDGame.REDSeqAct_SetCharaToLookAtBattle.GetCharaPawn
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37020])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37018])
 // Parameter Info:
 // class APawn*                   ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  _CharaID                       (CPF_Parm | CPF_NeedCtorLink)
@@ -55174,7 +55174,7 @@ class APawn* UREDSeqAct_SetCharaToLookAtBattle::GetCharaPawn(const class FString
 	uFnGetCharaPawn->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCharaPawn, &GetCharaPawn_Params, nullptr);
 	uFnGetCharaPawn->FunctionFlags |= 0x400;
-	uFnGetCharaPawn->iNative = 37020;
+	uFnGetCharaPawn->iNative = 37018;
 
 	return GetCharaPawn_Params.ReturnValue;
 };
@@ -55586,7 +55586,7 @@ bool AREDSeqEventManager::RequestEventBGEffect(const class FName& EventName, flo
 };
 
 // Function REDGame.REDSeqEventManager.DrawBGAttributeRect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36598])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36596])
 // Parameter Info:
 // class AHUD*                    HUD                            (CPF_Parm)
 // float                          X1                             (CPF_Parm)
@@ -55615,11 +55615,11 @@ void AREDSeqEventManager::DrawBGAttributeRect(class AHUD* HUD, float X1, float X
 	uFnDrawBGAttributeRect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDrawBGAttributeRect, &DrawBGAttributeRect_Params, nullptr);
 	uFnDrawBGAttributeRect->FunctionFlags |= 0x400;
-	uFnDrawBGAttributeRect->iNative = 36598;
+	uFnDrawBGAttributeRect->iNative = 36596;
 };
 
 // Function REDGame.REDSeqEventManager.DrawBGEffectRect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36599])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36597])
 // Parameter Info:
 // class AHUD*                    HUD                            (CPF_Parm)
 // class UREDSeqEvent_BGEffect*   eff                            (CPF_Parm)
@@ -55646,11 +55646,11 @@ void AREDSeqEventManager::DrawBGEffectRect(class AHUD* HUD, class UREDSeqEvent_B
 	uFnDrawBGEffectRect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDrawBGEffectRect, &DrawBGEffectRect_Params, nullptr);
 	uFnDrawBGEffectRect->FunctionFlags |= 0x400;
-	uFnDrawBGEffectRect->iNative = 36599;
+	uFnDrawBGEffectRect->iNative = 36597;
 };
 
 // Function REDGame.REDSeqEventManager.ToUEPos
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40274])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40272])
 // Parameter Info:
 // struct FVector                 Loc                            (CPF_Parm | CPF_OutParm)
 
@@ -55671,13 +55671,13 @@ void AREDSeqEventManager::ToUEPos(struct FVector& Loc)
 	uFnToUEPos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnToUEPos, &ToUEPos_Params, nullptr);
 	uFnToUEPos->FunctionFlags |= 0x400;
-	uFnToUEPos->iNative = 40274;
+	uFnToUEPos->iNative = 40272;
 
 	memcpy_s(&Loc, sizeof(Loc), &ToUEPos_Params.Loc, sizeof(ToUEPos_Params.Loc));
 };
 
 // Function REDGame.REDSeqEventManager.IsBGEffectHit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37606])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37604])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // float                          X1                             (CPF_Parm)
@@ -55707,13 +55707,13 @@ bool AREDSeqEventManager::IsBGEffectHit(float X1, float X2, float Y1, float Y2, 
 	uFnIsBGEffectHit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsBGEffectHit, &IsBGEffectHit_Params, nullptr);
 	uFnIsBGEffectHit->FunctionFlags |= 0x400;
-	uFnIsBGEffectHit->iNative = 37606;
+	uFnIsBGEffectHit->iNative = 37604;
 
 	return IsBGEffectHit_Params.ReturnValue;
 };
 
 // Function REDGame.REDSoundLipsyncArray.GetLipsync
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37086])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37084])
 // Parameter Info:
 // class UREDAssetLipSync*        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    Key                            (CPF_Parm)
@@ -55735,13 +55735,13 @@ class UREDAssetLipSync* UREDSoundLipsyncArray::GetLipsync(const class FName& Key
 	uFnGetLipsync->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetLipsync, &GetLipsync_Params, nullptr);
 	uFnGetLipsync->FunctionFlags |= 0x400;
-	uFnGetLipsync->iNative = 37086;
+	uFnGetLipsync->iNative = 37084;
 
 	return GetLipsync_Params.ReturnValue;
 };
 
 // Function REDGame.REDSoundPlayer.PlayStaticSoundWithPos
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39047])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39045])
 // Parameter Info:
 // class FName                    cueName                        (CPF_Parm)
 // struct FVector                 Location                       (CPF_Parm | CPF_OutParm)
@@ -55764,13 +55764,13 @@ void UREDSoundPlayer::PlayStaticSoundWithPos(const class FName& cueName, struct 
 	uFnPlayStaticSoundWithPos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayStaticSoundWithPos, &PlayStaticSoundWithPos_Params, nullptr);
 	uFnPlayStaticSoundWithPos->FunctionFlags |= 0x400;
-	uFnPlayStaticSoundWithPos->iNative = 39047;
+	uFnPlayStaticSoundWithPos->iNative = 39045;
 
 	memcpy_s(&Location, sizeof(Location), &PlayStaticSoundWithPos_Params.Location, sizeof(PlayStaticSoundWithPos_Params.Location));
 };
 
 // Function REDGame.REDSoundPlayer.PlayStaticSound
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39046])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39044])
 // Parameter Info:
 // class FName                    cueName                        (CPF_Parm)
 
@@ -55791,7 +55791,7 @@ void UREDSoundPlayer::PlayStaticSound(const class FName& cueName)
 	uFnPlayStaticSound->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayStaticSound, &PlayStaticSound_Params, nullptr);
 	uFnPlayStaticSound->FunctionFlags |= 0x400;
-	uFnPlayStaticSound->iNative = 39046;
+	uFnPlayStaticSound->iNative = 39044;
 };
 
 // Function REDGame.REDSoundPlayer.PlaySound
@@ -55822,7 +55822,7 @@ void UREDSoundPlayer::PlaySound(class AActor* Actor, const class FName& cueName)
 };
 
 // Function REDGame.REDSoundPlayer.GetSoundCue
-// [0x00080400] (FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[37171])
+// [0x00080400] (FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[37169])
 // Parameter Info:
 // class USoundCue*               ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    cueName                        (CPF_Parm)
@@ -55844,13 +55844,13 @@ class USoundCue* UREDSoundPlayer::GetSoundCue(const class FName& cueName)
 	uFnGetSoundCue->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSoundCue, &GetSoundCue_Params, nullptr);
 	uFnGetSoundCue->FunctionFlags |= 0x400;
-	uFnGetSoundCue->iNative = 37171;
+	uFnGetSoundCue->iNative = 37169;
 
 	return GetSoundCue_Params.ReturnValue;
 };
 
 // Function REDGame.REDSoundPlayerUnique.IsPlayingUniqueSound
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37776])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[37774])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        ch                             (CPF_OptionalParm | CPF_Parm)
@@ -55872,13 +55872,13 @@ bool UREDSoundPlayerUnique::IsPlayingUniqueSound(int32_t ch)
 	uFnIsPlayingUniqueSound->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPlayingUniqueSound, &IsPlayingUniqueSound_Params, nullptr);
 	uFnIsPlayingUniqueSound->FunctionFlags |= 0x400;
-	uFnIsPlayingUniqueSound->iNative = 37776;
+	uFnIsPlayingUniqueSound->iNative = 37774;
 
 	return IsPlayingUniqueSound_Params.ReturnValue;
 };
 
 // Function REDGame.REDSoundPlayerUnique.StopUniqueSound
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[40109])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[40107])
 // Parameter Info:
 // int32_t                        ch                             (CPF_OptionalParm | CPF_Parm)
 
@@ -55899,11 +55899,11 @@ void UREDSoundPlayerUnique::StopUniqueSound(int32_t ch)
 	uFnStopUniqueSound->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopUniqueSound, &StopUniqueSound_Params, nullptr);
 	uFnStopUniqueSound->FunctionFlags |= 0x400;
-	uFnStopUniqueSound->iNative = 40109;
+	uFnStopUniqueSound->iNative = 40107;
 };
 
 // Function REDGame.REDSoundPlayerUnique.PlayUniqueSound
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39050])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39048])
 // Parameter Info:
 // class AActor*                  Actor                          (CPF_Parm)
 // class FName                    cueName                        (CPF_Parm)
@@ -55932,11 +55932,11 @@ void UREDSoundPlayerUnique::PlayUniqueSound(class AActor* Actor, const class FNa
 	uFnPlayUniqueSound->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayUniqueSound, &PlayUniqueSound_Params, nullptr);
 	uFnPlayUniqueSound->FunctionFlags |= 0x400;
-	uFnPlayUniqueSound->iNative = 39050;
+	uFnPlayUniqueSound->iNative = 39048;
 };
 
 // Function REDGame.REDSoundPlayerUnique.AttachComponent
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[15083])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[15081])
 // Parameter Info:
 // class AActor*                  Actor                          (CPF_Parm)
 
@@ -55957,7 +55957,7 @@ void UREDSoundPlayerUnique::AttachComponent(class AActor* Actor)
 	uFnAttachComponent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAttachComponent, &AttachComponent_Params, nullptr);
 	uFnAttachComponent->FunctionFlags |= 0x400;
-	uFnAttachComponent->iNative = 15083;
+	uFnAttachComponent->iNative = 15081;
 };
 
 // Function REDGame.REDSoundPlayerUnique.CreateAudioComponent
@@ -55980,7 +55980,7 @@ void UREDSoundPlayerUnique::eventCreateAudioComponent()
 };
 
 // Function REDGame.REDTexture2DArray.GetTexture2D
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37187])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37185])
 // Parameter Info:
 // class UTexture2D*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    texName                        (CPF_Parm)
@@ -56002,7 +56002,7 @@ class UTexture2D* UREDTexture2DArray::GetTexture2D(const class FName& texName)
 	uFnGetTexture2D->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetTexture2D, &GetTexture2D_Params, nullptr);
 	uFnGetTexture2D->FunctionFlags |= 0x400;
-	uFnGetTexture2D->iNative = 37187;
+	uFnGetTexture2D->iNative = 37185;
 
 	return GetTexture2D_Params.ReturnValue;
 };
@@ -56027,7 +56027,7 @@ void UREDTMSConfig::eventDispData()
 };
 
 // Function REDGame.REDAnimArray.GetAnimSet
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37000])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36998])
 // Parameter Info:
 // class UAnimSet*                ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    DataName                       (CPF_Parm)
@@ -56049,13 +56049,13 @@ class UAnimSet* UREDAnimArray::GetAnimSet(const class FName& DataName)
 	uFnGetAnimSet->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetAnimSet, &GetAnimSet_Params, nullptr);
 	uFnGetAnimSet->FunctionFlags |= 0x400;
-	uFnGetAnimSet->iNative = 37000;
+	uFnGetAnimSet->iNative = 36998;
 
 	return GetAnimSet_Params.ReturnValue;
 };
 
 // Function REDGame.REDAnimArray.GetAnimTree
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37001])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36999])
 // Parameter Info:
 // class UREDAnimTree*            ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    DataName                       (CPF_Parm)
@@ -56077,13 +56077,13 @@ class UREDAnimTree* UREDAnimArray::GetAnimTree(const class FName& DataName)
 	uFnGetAnimTree->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetAnimTree, &GetAnimTree_Params, nullptr);
 	uFnGetAnimTree->FunctionFlags |= 0x400;
-	uFnGetAnimTree->iNative = 37001;
+	uFnGetAnimTree->iNative = 36999;
 
 	return GetAnimTree_Params.ReturnValue;
 };
 
 // Function REDGame.REDAnimArray.GetAnimDataIndex
-// [0x00440401] (FUNC_Final | FUNC_Native | FUNC_Private | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36999])
+// [0x00440401] (FUNC_Final | FUNC_Native | FUNC_Private | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36997])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    DataName                       (CPF_Parm | CPF_OutParm)
@@ -56105,7 +56105,7 @@ int32_t UREDAnimArray::GetAnimDataIndex(class FName& DataName)
 	uFnGetAnimDataIndex->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetAnimDataIndex, &GetAnimDataIndex_Params, nullptr);
 	uFnGetAnimDataIndex->FunctionFlags |= 0x400;
-	uFnGetAnimDataIndex->iNative = 36999;
+	uFnGetAnimDataIndex->iNative = 36997;
 
 	memcpy_s(&DataName, sizeof(DataName), &GetAnimDataIndex_Params.DataName, sizeof(GetAnimDataIndex_Params.DataName));
 
@@ -56350,7 +56350,7 @@ void AREDGameInfo_Battle::UpdateWaitAsyncLoading()
 };
 
 // Function REDGame.REDGameInfo_Battle.RenderUpdate2D
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39327])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39325])
 // Parameter Info:
 // class UCanvas*                 Canvas                         (CPF_Parm)
 
@@ -56371,7 +56371,7 @@ void AREDGameInfo_Battle::RenderUpdate2D(class UCanvas* Canvas)
 	uFnRenderUpdate2D->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRenderUpdate2D, &RenderUpdate2D_Params, nullptr);
 	uFnRenderUpdate2D->FunctionFlags |= 0x400;
-	uFnRenderUpdate2D->iNative = 39327;
+	uFnRenderUpdate2D->iNative = 39325;
 };
 
 // Function REDGame.REDGameInfo_Battle.Tick
@@ -56731,7 +56731,7 @@ void AREDGameInfo_Battle::eventBGFadeIn(int32_t frame)
 };
 
 // Function REDGame.REDGameInfo_Battle.SetResultCamera
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39802])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39800])
 // Parameter Info:
 // EUE_PLAYER_ID                  Winner                         (CPF_Parm)
 
@@ -56752,11 +56752,11 @@ void AREDGameInfo_Battle::SetResultCamera(EUE_PLAYER_ID Winner)
 	uFnSetResultCamera->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetResultCamera, &SetResultCamera_Params, nullptr);
 	uFnSetResultCamera->FunctionFlags |= 0x400;
-	uFnSetResultCamera->iNative = 39802;
+	uFnSetResultCamera->iNative = 39800;
 };
 
 // Function REDGame.REDGameInfo_Battle.UpdatePawnLightVector
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40806])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40804])
 // Parameter Info:
 
 void AREDGameInfo_Battle::UpdatePawnLightVector()
@@ -56775,11 +56775,11 @@ void AREDGameInfo_Battle::UpdatePawnLightVector()
 	uFnUpdatePawnLightVector->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnLightVector, &UpdatePawnLightVector_Params, nullptr);
 	uFnUpdatePawnLightVector->FunctionFlags |= 0x400;
-	uFnUpdatePawnLightVector->iNative = 40806;
+	uFnUpdatePawnLightVector->iNative = 40804;
 };
 
 // Function REDGame.REDGameInfo_Battle.UpdatePawnMaterialInstance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40807])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40805])
 // Parameter Info:
 
 void AREDGameInfo_Battle::UpdatePawnMaterialInstance()
@@ -56798,7 +56798,7 @@ void AREDGameInfo_Battle::UpdatePawnMaterialInstance()
 	uFnUpdatePawnMaterialInstance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnMaterialInstance, &UpdatePawnMaterialInstance_Params, nullptr);
 	uFnUpdatePawnMaterialInstance->FunctionFlags |= 0x400;
-	uFnUpdatePawnMaterialInstance->iNative = 40807;
+	uFnUpdatePawnMaterialInstance->iNative = 40805;
 };
 
 // Function REDGame.REDGameInfo_Battle.StopSound
@@ -56861,7 +56861,7 @@ void AREDGameInfo_Battle::eventRoundReset()
 };
 
 // Function REDGame.REDGameInfo_Battle.RoundResetCommonPawn
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39449])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39447])
 // Parameter Info:
 
 void AREDGameInfo_Battle::RoundResetCommonPawn()
@@ -56880,7 +56880,7 @@ void AREDGameInfo_Battle::RoundResetCommonPawn()
 	uFnRoundResetCommonPawn->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRoundResetCommonPawn, &RoundResetCommonPawn_Params, nullptr);
 	uFnRoundResetCommonPawn->FunctionFlags |= 0x400;
-	uFnRoundResetCommonPawn->iNative = 39449;
+	uFnRoundResetCommonPawn->iNative = 39447;
 };
 
 // Function REDGame.REDGameInfo_Battle.PostSeamlessTravel
@@ -57205,7 +57205,7 @@ void AREDGameInfo_Battle::eventGameEnding()
 };
 
 // Function REDGame.REDGameInfo_Battle.IsDispCockpit
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37640])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37638])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57225,13 +57225,13 @@ bool AREDGameInfo_Battle::IsDispCockpit()
 	uFnIsDispCockpit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsDispCockpit, &IsDispCockpit_Params, nullptr);
 	uFnIsDispCockpit->FunctionFlags |= 0x400;
-	uFnIsDispCockpit->iNative = 37640;
+	uFnIsDispCockpit->iNative = 37638;
 
 	return IsDispCockpit_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameInfo_Battle.SetupDramaEffect
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39835])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39833])
 // Parameter Info:
 // class TArray<class FString>    ExPackagenames                 (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 
@@ -57252,13 +57252,13 @@ void AREDGameInfo_Battle::SetupDramaEffect(class TArray<class FString>& ExPackag
 	uFnSetupDramaEffect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupDramaEffect, &SetupDramaEffect_Params, nullptr);
 	uFnSetupDramaEffect->FunctionFlags |= 0x400;
-	uFnSetupDramaEffect->iNative = 39835;
+	uFnSetupDramaEffect->iNative = 39833;
 
 	memcpy_s(&ExPackagenames, sizeof(ExPackagenames), &SetupDramaEffect_Params.ExPackagenames, sizeof(SetupDramaEffect_Params.ExPackagenames));
 };
 
 // Function REDGame.REDGameInfo_Battle.SetupMOMEffect
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39849])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39847])
 // Parameter Info:
 // class TArray<struct FSpawnPlayerInfo> PlayerInfo                     (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 
@@ -57279,13 +57279,13 @@ void AREDGameInfo_Battle::SetupMOMEffect(class TArray<struct FSpawnPlayerInfo>& 
 	uFnSetupMOMEffect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupMOMEffect, &SetupMOMEffect_Params, nullptr);
 	uFnSetupMOMEffect->FunctionFlags |= 0x400;
-	uFnSetupMOMEffect->iNative = 39849;
+	uFnSetupMOMEffect->iNative = 39847;
 
 	memcpy_s(&PlayerInfo, sizeof(PlayerInfo), &SetupMOMEffect_Params.PlayerInfo, sizeof(SetupMOMEffect_Params.PlayerInfo));
 };
 
 // Function REDGame.REDGameInfo_Battle.GetBattleTimer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37004])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37002])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57305,13 +57305,13 @@ int32_t AREDGameInfo_Battle::GetBattleTimer()
 	uFnGetBattleTimer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetBattleTimer, &GetBattleTimer_Params, nullptr);
 	uFnGetBattleTimer->FunctionFlags |= 0x400;
-	uFnGetBattleTimer->iNative = 37004;
+	uFnGetBattleTimer->iNative = 37002;
 
 	return GetBattleTimer_Params.ReturnValue;
 };
 
 // Function REDGame.REDGameInfo_Battle.SceneFinalize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39469])
 // Parameter Info:
 
 void AREDGameInfo_Battle::SceneFinalize()
@@ -57330,11 +57330,11 @@ void AREDGameInfo_Battle::SceneFinalize()
 	uFnSceneFinalize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneFinalize, &SceneFinalize_Params, nullptr);
 	uFnSceneFinalize->FunctionFlags |= 0x400;
-	uFnSceneFinalize->iNative = 39471;
+	uFnSceneFinalize->iNative = 39469;
 };
 
 // Function REDGame.REDGameInfo_Battle.SceneInitialize
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39473])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39471])
 // Parameter Info:
 
 void AREDGameInfo_Battle::SceneInitialize()
@@ -57353,11 +57353,11 @@ void AREDGameInfo_Battle::SceneInitialize()
 	uFnSceneInitialize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSceneInitialize, &SceneInitialize_Params, nullptr);
 	uFnSceneInitialize->FunctionFlags |= 0x400;
-	uFnSceneInitialize->iNative = 39473;
+	uFnSceneInitialize->iNative = 39471;
 };
 
 // Function REDGame.REDGameInfo_Battle.UpdateNetworkError
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40792])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40790])
 // Parameter Info:
 
 void AREDGameInfo_Battle::UpdateNetworkError()
@@ -57376,11 +57376,11 @@ void AREDGameInfo_Battle::UpdateNetworkError()
 	uFnUpdateNetworkError->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateNetworkError, &UpdateNetworkError_Params, nullptr);
 	uFnUpdateNetworkError->FunctionFlags |= 0x400;
-	uFnUpdateNetworkError->iNative = 40792;
+	uFnUpdateNetworkError->iNative = 40790;
 };
 
 // Function REDGame.REDGameInfo_Battle.UpdateBattle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40599])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40597])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 
@@ -57401,11 +57401,11 @@ void AREDGameInfo_Battle::UpdateBattle(float DeltaTime)
 	uFnUpdateBattle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateBattle, &UpdateBattle_Params, nullptr);
 	uFnUpdateBattle->FunctionFlags |= 0x400;
-	uFnUpdateBattle->iNative = 40599;
+	uFnUpdateBattle->iNative = 40597;
 };
 
 // Function REDGame.REDGameInfo_Battle.EndBattle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36677])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36675])
 // Parameter Info:
 
 void AREDGameInfo_Battle::EndBattle()
@@ -57424,11 +57424,11 @@ void AREDGameInfo_Battle::EndBattle()
 	uFnEndBattle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnEndBattle, &EndBattle_Params, nullptr);
 	uFnEndBattle->FunctionFlags |= 0x400;
-	uFnEndBattle->iNative = 36677;
+	uFnEndBattle->iNative = 36675;
 };
 
 // Function REDGame.REDGameInfo_Battle.CleanupBattleInfo
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36220])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36218])
 // Parameter Info:
 
 void AREDGameInfo_Battle::CleanupBattleInfo()
@@ -57447,11 +57447,11 @@ void AREDGameInfo_Battle::CleanupBattleInfo()
 	uFnCleanupBattleInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCleanupBattleInfo, &CleanupBattleInfo_Params, nullptr);
 	uFnCleanupBattleInfo->FunctionFlags |= 0x400;
-	uFnCleanupBattleInfo->iNative = 36220;
+	uFnCleanupBattleInfo->iNative = 36218;
 };
 
 // Function REDGame.REDGameInfo_Battle.PostLogin_Internal
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39085])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39083])
 // Parameter Info:
 // class APlayerController*       NewPlayer                      (CPF_Parm)
 
@@ -57472,11 +57472,11 @@ void AREDGameInfo_Battle::PostLogin_Internal(class APlayerController* NewPlayer)
 	uFnPostLogin_Internal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPostLogin_Internal, &PostLogin_Internal_Params, nullptr);
 	uFnPostLogin_Internal->FunctionFlags |= 0x400;
-	uFnPostLogin_Internal->iNative = 39085;
+	uFnPostLogin_Internal->iNative = 39083;
 };
 
 // Function REDGame.REDGameInfo_Battle.PostBeginPlay_Internal
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39082])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39080])
 // Parameter Info:
 
 void AREDGameInfo_Battle::PostBeginPlay_Internal()
@@ -57495,11 +57495,11 @@ void AREDGameInfo_Battle::PostBeginPlay_Internal()
 	uFnPostBeginPlay_Internal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPostBeginPlay_Internal, &PostBeginPlay_Internal_Params, nullptr);
 	uFnPostBeginPlay_Internal->FunctionFlags |= 0x400;
-	uFnPostBeginPlay_Internal->iNative = 39082;
+	uFnPostBeginPlay_Internal->iNative = 39080;
 };
 
 // Function REDGame.REDGameInfo_Battle.PreBeginPlay_Internal
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39099])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39097])
 // Parameter Info:
 
 void AREDGameInfo_Battle::PreBeginPlay_Internal()
@@ -57518,11 +57518,11 @@ void AREDGameInfo_Battle::PreBeginPlay_Internal()
 	uFnPreBeginPlay_Internal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPreBeginPlay_Internal, &PreBeginPlay_Internal_Params, nullptr);
 	uFnPreBeginPlay_Internal->FunctionFlags |= 0x400;
-	uFnPreBeginPlay_Internal->iNative = 39099;
+	uFnPreBeginPlay_Internal->iNative = 39097;
 };
 
 // Function REDGame.REDGameInfo_Battle.SetupBattleInfo
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39819])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39817])
 // Parameter Info:
 
 void AREDGameInfo_Battle::SetupBattleInfo()
@@ -57541,11 +57541,11 @@ void AREDGameInfo_Battle::SetupBattleInfo()
 	uFnSetupBattleInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupBattleInfo, &SetupBattleInfo_Params, nullptr);
 	uFnSetupBattleInfo->FunctionFlags |= 0x400;
-	uFnSetupBattleInfo->iNative = 39819;
+	uFnSetupBattleInfo->iNative = 39817;
 };
 
 // Function REDGame.REDGameInfo_Battle.PostDispRoot
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39083])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39081])
 // Parameter Info:
 // class AHUD*                    HUD                            (CPF_Parm)
 
@@ -57566,11 +57566,11 @@ void AREDGameInfo_Battle::PostDispRoot(class AHUD* HUD)
 	uFnPostDispRoot->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPostDispRoot, &PostDispRoot_Params, nullptr);
 	uFnPostDispRoot->FunctionFlags |= 0x400;
-	uFnPostDispRoot->iNative = 39083;
+	uFnPostDispRoot->iNative = 39081;
 };
 
 // Function REDGame.REDPawn.SetMeshDamageLevel
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39776])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39774])
 // Parameter Info:
 // int32_t                        Level                          (CPF_Parm)
 
@@ -57591,11 +57591,11 @@ void AREDPawn::SetMeshDamageLevel(int32_t Level)
 	uFnSetMeshDamageLevel->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetMeshDamageLevel, &SetMeshDamageLevel_Params, nullptr);
 	uFnSetMeshDamageLevel->FunctionFlags |= 0x400;
-	uFnSetMeshDamageLevel->iNative = 39776;
+	uFnSetMeshDamageLevel->iNative = 39774;
 };
 
 // Function REDGame.REDPawn.GetExGaugeParam
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37060])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37058])
 // Parameter Info:
 // int32_t                        Id                             (CPF_Parm)
 // struct FPlayerExGaugeParam     Param                          (CPF_Parm | CPF_OutParm)
@@ -57618,13 +57618,13 @@ void AREDPawn::GetExGaugeParam(int32_t Id, struct FPlayerExGaugeParam& Param)
 	uFnGetExGaugeParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetExGaugeParam, &GetExGaugeParam_Params, nullptr);
 	uFnGetExGaugeParam->FunctionFlags |= 0x400;
-	uFnGetExGaugeParam->iNative = 37060;
+	uFnGetExGaugeParam->iNative = 37058;
 
 	memcpy_s(&Param, sizeof(Param), &GetExGaugeParam_Params.Param, sizeof(GetExGaugeParam_Params.Param));
 };
 
 // Function REDGame.REDPawn.GetOffscreenParam
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37122])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37120])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        PosX                           (CPF_Parm | CPF_OutParm)
@@ -57648,7 +57648,7 @@ bool AREDPawn::GetOffscreenParam(int32_t& PosX, int32_t& Direction)
 	uFnGetOffscreenParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetOffscreenParam, &GetOffscreenParam_Params, nullptr);
 	uFnGetOffscreenParam->FunctionFlags |= 0x400;
-	uFnGetOffscreenParam->iNative = 37122;
+	uFnGetOffscreenParam->iNative = 37120;
 
 	memcpy_s(&PosX, sizeof(PosX), &GetOffscreenParam_Params.PosX, sizeof(GetOffscreenParam_Params.PosX));
 	memcpy_s(&Direction, sizeof(Direction), &GetOffscreenParam_Params.Direction, sizeof(GetOffscreenParam_Params.Direction));
@@ -57657,7 +57657,7 @@ bool AREDPawn::GetOffscreenParam(int32_t& PosX, int32_t& Direction)
 };
 
 // Function REDGame.REDPawn.GetNegativeVal
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37117])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37115])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57677,13 +57677,13 @@ float AREDPawn::GetNegativeVal()
 	uFnGetNegativeVal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetNegativeVal, &GetNegativeVal_Params, nullptr);
 	uFnGetNegativeVal->FunctionFlags |= 0x400;
-	uFnGetNegativeVal->iNative = 37117;
+	uFnGetNegativeVal->iNative = 37115;
 
 	return GetNegativeVal_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetTensionBalanceSpeed
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37184])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37182])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57703,13 +57703,13 @@ float AREDPawn::GetTensionBalanceSpeed()
 	uFnGetTensionBalanceSpeed->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetTensionBalanceSpeed, &GetTensionBalanceSpeed_Params, nullptr);
 	uFnGetTensionBalanceSpeed->FunctionFlags |= 0x400;
-	uFnGetTensionBalanceSpeed->iNative = 37184;
+	uFnGetTensionBalanceSpeed->iNative = 37182;
 
 	return GetTensionBalanceSpeed_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.IsCounterHitByGuardBalance
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37631])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37629])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57729,13 +57729,13 @@ bool AREDPawn::IsCounterHitByGuardBalance()
 	uFnIsCounterHitByGuardBalance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsCounterHitByGuardBalance, &IsCounterHitByGuardBalance_Params, nullptr);
 	uFnIsCounterHitByGuardBalance->FunctionFlags |= 0x400;
-	uFnIsCounterHitByGuardBalance->iNative = 37631;
+	uFnIsCounterHitByGuardBalance->iNative = 37629;
 
 	return IsCounterHitByGuardBalance_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetGuardBalanceRed
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37067])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37065])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57755,13 +57755,13 @@ float AREDPawn::GetGuardBalanceRed()
 	uFnGetGuardBalanceRed->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetGuardBalanceRed, &GetGuardBalanceRed_Params, nullptr);
 	uFnGetGuardBalanceRed->FunctionFlags |= 0x400;
-	uFnGetGuardBalanceRed->iNative = 37067;
+	uFnGetGuardBalanceRed->iNative = 37065;
 
 	return GetGuardBalanceRed_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetGuardBalance
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37066])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37064])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57781,13 +57781,13 @@ float AREDPawn::GetGuardBalance()
 	uFnGetGuardBalance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetGuardBalance, &GetGuardBalance_Params, nullptr);
 	uFnGetGuardBalance->FunctionFlags |= 0x400;
-	uFnGetGuardBalance->iNative = 37066;
+	uFnGetGuardBalance->iNative = 37064;
 
 	return GetGuardBalance_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetImperfectComboLog
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37072])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37070])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -57809,13 +57809,13 @@ int32_t AREDPawn::GetImperfectComboLog(int32_t Index)
 	uFnGetImperfectComboLog->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetImperfectComboLog, &GetImperfectComboLog_Params, nullptr);
 	uFnGetImperfectComboLog->FunctionFlags |= 0x400;
-	uFnGetImperfectComboLog->iNative = 37072;
+	uFnGetImperfectComboLog->iNative = 37070;
 
 	return GetImperfectComboLog_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetComboDamage
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37028])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37026])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57835,13 +57835,13 @@ int32_t AREDPawn::GetComboDamage()
 	uFnGetComboDamage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetComboDamage, &GetComboDamage_Params, nullptr);
 	uFnGetComboDamage->FunctionFlags |= 0x400;
-	uFnGetComboDamage->iNative = 37028;
+	uFnGetComboDamage->iNative = 37026;
 
 	return GetComboDamage_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetComboCount
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37026])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37024])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57861,13 +57861,13 @@ int32_t AREDPawn::GetComboCount()
 	uFnGetComboCount->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetComboCount, &GetComboCount_Params, nullptr);
 	uFnGetComboCount->FunctionFlags |= 0x400;
-	uFnGetComboCount->iNative = 37026;
+	uFnGetComboCount->iNative = 37024;
 
 	return GetComboCount_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetComboCountAddTime
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37027])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37025])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57887,13 +57887,13 @@ int32_t AREDPawn::GetComboCountAddTime()
 	uFnGetComboCountAddTime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetComboCountAddTime, &GetComboCountAddTime_Params, nullptr);
 	uFnGetComboCountAddTime->FunctionFlags |= 0x400;
-	uFnGetComboCountAddTime->iNative = 37027;
+	uFnGetComboCountAddTime->iNative = 37025;
 
 	return GetComboCountAddTime_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetComboBreakTime
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37025])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37023])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57913,13 +57913,13 @@ int32_t AREDPawn::GetComboBreakTime()
 	uFnGetComboBreakTime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetComboBreakTime, &GetComboBreakTime_Params, nullptr);
 	uFnGetComboBreakTime->FunctionFlags |= 0x400;
-	uFnGetComboBreakTime->iNative = 37025;
+	uFnGetComboBreakTime->iNative = 37023;
 
 	return GetComboBreakTime_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.IsComboImperfect
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37623])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37621])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57939,13 +57939,13 @@ bool AREDPawn::IsComboImperfect()
 	uFnIsComboImperfect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsComboImperfect, &IsComboImperfect_Params, nullptr);
 	uFnIsComboImperfect->FunctionFlags |= 0x400;
-	uFnIsComboImperfect->iNative = 37623;
+	uFnIsComboImperfect->iNative = 37621;
 
 	return IsComboImperfect_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.IsComboTrigger
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37624])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37622])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57965,13 +57965,13 @@ bool AREDPawn::IsComboTrigger()
 	uFnIsComboTrigger->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsComboTrigger, &IsComboTrigger_Params, nullptr);
 	uFnIsComboTrigger->FunctionFlags |= 0x400;
-	uFnIsComboTrigger->iNative = 37624;
+	uFnIsComboTrigger->iNative = 37622;
 
 	return IsComboTrigger_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.IsBurstSealed
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37613])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37611])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -57991,13 +57991,13 @@ int32_t AREDPawn::IsBurstSealed()
 	uFnIsBurstSealed->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsBurstSealed, &IsBurstSealed_Params, nullptr);
 	uFnIsBurstSealed->FunctionFlags |= 0x400;
-	uFnIsBurstSealed->iNative = 37613;
+	uFnIsBurstSealed->iNative = 37611;
 
 	return IsBurstSealed_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetBurstVal
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37012])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37010])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -58017,13 +58017,13 @@ float AREDPawn::GetBurstVal()
 	uFnGetBurstVal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetBurstVal, &GetBurstVal_Params, nullptr);
 	uFnGetBurstVal->FunctionFlags |= 0x400;
-	uFnGetBurstVal->iNative = 37012;
+	uFnGetBurstVal->iNative = 37010;
 
 	return GetBurstVal_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetTensionState
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37186])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37184])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -58043,13 +58043,13 @@ class FString AREDPawn::GetTensionState()
 	uFnGetTensionState->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetTensionState, &GetTensionState_Params, nullptr);
 	uFnGetTensionState->FunctionFlags |= 0x400;
-	uFnGetTensionState->iNative = 37186;
+	uFnGetTensionState->iNative = 37184;
 
 	return GetTensionState_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetTensionColorIndex
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37185])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37183])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -58069,13 +58069,13 @@ int32_t AREDPawn::GetTensionColorIndex()
 	uFnGetTensionColorIndex->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetTensionColorIndex, &GetTensionColorIndex_Params, nullptr);
 	uFnGetTensionColorIndex->FunctionFlags |= 0x400;
-	uFnGetTensionColorIndex->iNative = 37185;
+	uFnGetTensionColorIndex->iNative = 37183;
 
 	return GetTensionColorIndex_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetTension
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37183])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37181])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -58095,13 +58095,13 @@ float AREDPawn::GetTension()
 	uFnGetTension->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetTension, &GetTension_Params, nullptr);
 	uFnGetTension->FunctionFlags |= 0x400;
-	uFnGetTension->iNative = 37183;
+	uFnGetTension->iNative = 37181;
 
 	return GetTension_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetHitPointWhite
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37070])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37068])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -58121,13 +58121,13 @@ float AREDPawn::GetHitPointWhite()
 	uFnGetHitPointWhite->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetHitPointWhite, &GetHitPointWhite_Params, nullptr);
 	uFnGetHitPointWhite->FunctionFlags |= 0x400;
-	uFnGetHitPointWhite->iNative = 37070;
+	uFnGetHitPointWhite->iNative = 37068;
 
 	return GetHitPointWhite_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetHitPointRed
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37069])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37067])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -58147,13 +58147,13 @@ float AREDPawn::GetHitPointRed()
 	uFnGetHitPointRed->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetHitPointRed, &GetHitPointRed_Params, nullptr);
 	uFnGetHitPointRed->FunctionFlags |= 0x400;
-	uFnGetHitPointRed->iNative = 37069;
+	uFnGetHitPointRed->iNative = 37067;
 
 	return GetHitPointRed_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetHitPoint
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37068])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37066])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -58173,7 +58173,7 @@ float AREDPawn::GetHitPoint()
 	uFnGetHitPoint->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetHitPoint, &GetHitPoint_Params, nullptr);
 	uFnGetHitPoint->FunctionFlags |= 0x400;
-	uFnGetHitPoint->iNative = 37068;
+	uFnGetHitPoint->iNative = 37066;
 
 	return GetHitPoint_Params.ReturnValue;
 };
@@ -58296,7 +58296,7 @@ void AREDPawn::eventStopCamera(int32_t outFrame)
 };
 
 // Function REDGame.REDPawn.LookAtCamera
-// [0x00424401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[38090])
+// [0x00424401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[38088])
 // Parameter Info:
 // class AREDPawn*                BasePawn                       (CPF_Parm)
 // class AREDPawn*                LookAtPawn                     (CPF_Parm)
@@ -58347,7 +58347,7 @@ void AREDPawn::LookAtCamera(class AREDPawn* BasePawn, class AREDPawn* LookAtPawn
 	uFnLookAtCamera->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLookAtCamera, &LookAtCamera_Params, nullptr);
 	uFnLookAtCamera->FunctionFlags |= 0x400;
-	uFnLookAtCamera->iNative = 38090;
+	uFnLookAtCamera->iNative = 38088;
 
 	memcpy_s(&baseOfs, sizeof(baseOfs), &LookAtCamera_Params.baseOfs, sizeof(LookAtCamera_Params.baseOfs));
 	memcpy_s(&targetOfs, sizeof(targetOfs), &LookAtCamera_Params.targetOfs, sizeof(LookAtCamera_Params.targetOfs));
@@ -58429,7 +58429,7 @@ void AREDPawn::eventMoveCameraPreset(const class FName& PresetName, bool MirrorX
 };
 
 // Function REDGame.REDPawn.CommonSE
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[36277])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[36275])
 // Parameter Info:
 // class FName                    cueName                        (CPF_Parm)
 // uint32_t                       onCenter                       (CPF_OptionalParm | CPF_Parm)
@@ -58452,11 +58452,11 @@ void AREDPawn::CommonSE(const class FName& cueName, bool onCenter)
 	uFnCommonSE->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCommonSE, &CommonSE_Params, nullptr);
 	uFnCommonSE->FunctionFlags |= 0x400;
-	uFnCommonSE->iNative = 36277;
+	uFnCommonSE->iNative = 36275;
 };
 
 // Function REDGame.REDPawn.GetSoundPlayLocation
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37172])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37170])
 // Parameter Info:
 // struct FVector                 Loc                            (CPF_Parm | CPF_OutParm)
 
@@ -58477,13 +58477,13 @@ void AREDPawn::GetSoundPlayLocation(struct FVector& Loc)
 	uFnGetSoundPlayLocation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSoundPlayLocation, &GetSoundPlayLocation_Params, nullptr);
 	uFnGetSoundPlayLocation->FunctionFlags |= 0x400;
-	uFnGetSoundPlayLocation->iNative = 37172;
+	uFnGetSoundPlayLocation->iNative = 37170;
 
 	memcpy_s(&Loc, sizeof(Loc), &GetSoundPlayLocation_Params.Loc, sizeof(GetSoundPlayLocation_Params.Loc));
 };
 
 // Function REDGame.REDPawn.CreateCommonParticle
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36330])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36328])
 // Parameter Info:
 // class UParticleSystemComponent* ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_EditInline)
 // struct FParticleArg            Arg                            (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -58505,7 +58505,7 @@ class UParticleSystemComponent* AREDPawn::CreateCommonParticle(struct FParticleA
 	uFnCreateCommonParticle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateCommonParticle, &CreateCommonParticle_Params, nullptr);
 	uFnCreateCommonParticle->FunctionFlags |= 0x400;
-	uFnCreateCommonParticle->iNative = 36330;
+	uFnCreateCommonParticle->iNative = 36328;
 
 	memcpy_s(&Arg, sizeof(Arg), &CreateCommonParticle_Params.Arg, sizeof(CreateCommonParticle_Params.Arg));
 
@@ -58513,7 +58513,7 @@ class UParticleSystemComponent* AREDPawn::CreateCommonParticle(struct FParticleA
 };
 
 // Function REDGame.REDPawn.ParticleMoveToSocket
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[38892])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[38890])
 // Parameter Info:
 // class UParticleSystemComponent* PSC                            (CPF_Parm | CPF_EditInline)
 // uint32_t                       bWithRotation                  (CPF_Parm)
@@ -58538,13 +58538,13 @@ void AREDPawn::ParticleMoveToSocket(class UParticleSystemComponent* PSC, bool bW
 	uFnParticleMoveToSocket->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnParticleMoveToSocket, &ParticleMoveToSocket_Params, nullptr);
 	uFnParticleMoveToSocket->FunctionFlags |= 0x400;
-	uFnParticleMoveToSocket->iNative = 38892;
+	uFnParticleMoveToSocket->iNative = 38890;
 
 	memcpy_s(&SocketName, sizeof(SocketName), &ParticleMoveToSocket_Params.SocketName, sizeof(ParticleMoveToSocket_Params.SocketName));
 };
 
 // Function REDGame.REDPawn.GetSocketLocationAndRotation
-// [0x00424401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37170])
+// [0x00424401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37168])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SocketName                     (CPF_Parm)
@@ -58570,7 +58570,7 @@ bool AREDPawn::GetSocketLocationAndRotation(const class FName& SocketName, struc
 	uFnGetSocketLocationAndRotation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSocketLocationAndRotation, &GetSocketLocationAndRotation_Params, nullptr);
 	uFnGetSocketLocationAndRotation->FunctionFlags |= 0x400;
-	uFnGetSocketLocationAndRotation->iNative = 37170;
+	uFnGetSocketLocationAndRotation->iNative = 37168;
 
 	memcpy_s(&Loc, sizeof(Loc), &GetSocketLocationAndRotation_Params.Loc, sizeof(GetSocketLocationAndRotation_Params.Loc));
 	memcpy_s(&Rot, sizeof(Rot), &GetSocketLocationAndRotation_Params.Rot, sizeof(GetSocketLocationAndRotation_Params.Rot));
@@ -58600,7 +58600,7 @@ void AREDPawn::eventTick(float DeltaTime)
 };
 
 // Function REDGame.REDPawn.NativeTick
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38513])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38511])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 
@@ -58621,11 +58621,11 @@ void AREDPawn::NativeTick(float DeltaTime)
 	uFnNativeTick->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNativeTick, &NativeTick_Params, nullptr);
 	uFnNativeTick->FunctionFlags |= 0x400;
-	uFnNativeTick->iNative = 38513;
+	uFnNativeTick->iNative = 38511;
 };
 
 // Function REDGame.REDPawn.DebugTick
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36431])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36429])
 // Parameter Info:
 
 void AREDPawn::DebugTick()
@@ -58644,11 +58644,11 @@ void AREDPawn::DebugTick()
 	uFnDebugTick->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDebugTick, &DebugTick_Params, nullptr);
 	uFnDebugTick->FunctionFlags |= 0x400;
-	uFnDebugTick->iNative = 36431;
+	uFnDebugTick->iNative = 36429;
 };
 
 // Function REDGame.REDPawn.UpdateBlendAnim
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40604])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40602])
 // Parameter Info:
 
 void AREDPawn::UpdateBlendAnim()
@@ -58667,7 +58667,7 @@ void AREDPawn::UpdateBlendAnim()
 	uFnUpdateBlendAnim->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateBlendAnim, &UpdateBlendAnim_Params, nullptr);
 	uFnUpdateBlendAnim->FunctionFlags |= 0x400;
-	uFnUpdateBlendAnim->iNative = 40604;
+	uFnUpdateBlendAnim->iNative = 40602;
 };
 
 // Function REDGame.REDPawn.SetAutoUpdateBlendAnime
@@ -58692,7 +58692,7 @@ void AREDPawn::eventSetAutoUpdateBlendAnime(bool bAutoUpdate)
 };
 
 // Function REDGame.REDPawn.GetModelDir
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37110])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37108])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -58712,7 +58712,7 @@ int32_t AREDPawn::GetModelDir()
 	uFnGetModelDir->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetModelDir, &GetModelDir_Params, nullptr);
 	uFnGetModelDir->FunctionFlags |= 0x400;
-	uFnGetModelDir->iNative = 37110;
+	uFnGetModelDir->iNative = 37108;
 
 	return GetModelDir_Params.ReturnValue;
 };
@@ -58862,7 +58862,7 @@ void AREDPawn::eventCloseMouth()
 };
 
 // Function REDGame.REDPawn.ChangeMouth
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36101])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36099])
 // Parameter Info:
 // class FName                    MouthNodeName                  (CPF_Parm)
 
@@ -58883,7 +58883,7 @@ void AREDPawn::ChangeMouth(const class FName& MouthNodeName)
 	uFnChangeMouth->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeMouth, &ChangeMouth_Params, nullptr);
 	uFnChangeMouth->FunctionFlags |= 0x400;
-	uFnChangeMouth->iNative = 36101;
+	uFnChangeMouth->iNative = 36099;
 };
 
 // Function REDGame.REDPawn.OpenMouth
@@ -58956,7 +58956,7 @@ void AREDPawn::eventStartLip(int32_t Type, bool isLinear, float Speed, int32_t f
 };
 
 // Function REDGame.REDPawn.SetNonStepAnimUseDeltaSeconds
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39785])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39783])
 // Parameter Info:
 // uint32_t                       On                             (CPF_Parm)
 
@@ -58977,7 +58977,7 @@ void AREDPawn::SetNonStepAnimUseDeltaSeconds(bool On)
 	uFnSetNonStepAnimUseDeltaSeconds->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetNonStepAnimUseDeltaSeconds, &SetNonStepAnimUseDeltaSeconds_Params, nullptr);
 	uFnSetNonStepAnimUseDeltaSeconds->FunctionFlags |= 0x400;
-	uFnSetNonStepAnimUseDeltaSeconds->iNative = 39785;
+	uFnSetNonStepAnimUseDeltaSeconds->iNative = 39783;
 };
 
 // Function REDGame.REDPawn.IsAnimeEnd
@@ -59007,7 +59007,7 @@ bool AREDPawn::IsAnimeEnd()
 };
 
 // Function REDGame.REDPawn.SetStepAnimeMode
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39814])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39812])
 // Parameter Info:
 // uint32_t                       On                             (CPF_Parm)
 
@@ -59028,11 +59028,11 @@ void AREDPawn::SetStepAnimeMode(bool On)
 	uFnSetStepAnimeMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetStepAnimeMode, &SetStepAnimeMode_Params, nullptr);
 	uFnSetStepAnimeMode->FunctionFlags |= 0x400;
-	uFnSetStepAnimeMode->iNative = 39814;
+	uFnSetStepAnimeMode->iNative = 39812;
 };
 
 // Function REDGame.REDPawn.SetNonStepAnimeFrame
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39784])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39782])
 // Parameter Info:
 // int32_t                        frame                          (CPF_Parm)
 
@@ -59053,11 +59053,11 @@ void AREDPawn::SetNonStepAnimeFrame(int32_t frame)
 	uFnSetNonStepAnimeFrame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetNonStepAnimeFrame, &SetNonStepAnimeFrame_Params, nullptr);
 	uFnSetNonStepAnimeFrame->FunctionFlags |= 0x400;
-	uFnSetNonStepAnimeFrame->iNative = 39784;
+	uFnSetNonStepAnimeFrame->iNative = 39782;
 };
 
 // Function REDGame.REDPawn.SetAnimeFrame
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39690])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39688])
 // Parameter Info:
 // int32_t                        frame                          (CPF_Parm)
 
@@ -59078,11 +59078,11 @@ void AREDPawn::SetAnimeFrame(int32_t frame)
 	uFnSetAnimeFrame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetAnimeFrame, &SetAnimeFrame_Params, nullptr);
 	uFnSetAnimeFrame->FunctionFlags |= 0x400;
-	uFnSetAnimeFrame->iNative = 39690;
+	uFnSetAnimeFrame->iNative = 39688;
 };
 
 // Function REDGame.REDPawn.StepAnime
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[40090])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[40088])
 // Parameter Info:
 // int32_t                        StepFrame                      (CPF_OptionalParm | CPF_Parm)
 
@@ -59103,11 +59103,11 @@ void AREDPawn::StepAnime(int32_t StepFrame)
 	uFnStepAnime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStepAnime, &StepAnime_Params, nullptr);
 	uFnStepAnime->FunctionFlags |= 0x400;
-	uFnStepAnime->iNative = 40090;
+	uFnStepAnime->iNative = 40088;
 };
 
 // Function REDGame.REDPawn.StopAnimeSectionLoop
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40098])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40096])
 // Parameter Info:
 
 void AREDPawn::StopAnimeSectionLoop()
@@ -59126,11 +59126,11 @@ void AREDPawn::StopAnimeSectionLoop()
 	uFnStopAnimeSectionLoop->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopAnimeSectionLoop, &StopAnimeSectionLoop_Params, nullptr);
 	uFnStopAnimeSectionLoop->FunctionFlags |= 0x400;
-	uFnStopAnimeSectionLoop->iNative = 40098;
+	uFnStopAnimeSectionLoop->iNative = 40096;
 };
 
 // Function REDGame.REDPawn.SetAnimeLoop
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39691])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39689])
 // Parameter Info:
 // uint32_t                       flag                           (CPF_Parm)
 
@@ -59151,11 +59151,11 @@ void AREDPawn::SetAnimeLoop(bool flag)
 	uFnSetAnimeLoop->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetAnimeLoop, &SetAnimeLoop_Params, nullptr);
 	uFnSetAnimeLoop->FunctionFlags |= 0x400;
-	uFnSetAnimeLoop->iNative = 39691;
+	uFnSetAnimeLoop->iNative = 39689;
 };
 
 // Function REDGame.REDPawn.PlayCutSceneAnime
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38969])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38967])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    AnimSeqName                    (CPF_Parm)
@@ -59179,13 +59179,13 @@ bool AREDPawn::PlayCutSceneAnime(const class FName& AnimSeqName, float StartTime
 	uFnPlayCutSceneAnime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayCutSceneAnime, &PlayCutSceneAnime_Params, nullptr);
 	uFnPlayCutSceneAnime->FunctionFlags |= 0x400;
-	uFnPlayCutSceneAnime->iNative = 38969;
+	uFnPlayCutSceneAnime->iNative = 38967;
 
 	return PlayCutSceneAnime_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.ChangeAnime
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36087])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36085])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    AnimSeqName                    (CPF_Parm)
@@ -59213,13 +59213,13 @@ bool AREDPawn::ChangeAnime(const class FName& AnimSeqName, bool isLoop, float St
 	uFnChangeAnime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeAnime, &ChangeAnime_Params, nullptr);
 	uFnChangeAnime->FunctionFlags |= 0x400;
-	uFnChangeAnime->iNative = 36087;
+	uFnChangeAnime->iNative = 36085;
 
 	return ChangeAnime_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.UpdateNonStepAnime
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40795])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40793])
 // Parameter Info:
 
 void AREDPawn::UpdateNonStepAnime()
@@ -59238,11 +59238,11 @@ void AREDPawn::UpdateNonStepAnime()
 	uFnUpdateNonStepAnime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateNonStepAnime, &UpdateNonStepAnime_Params, nullptr);
 	uFnUpdateNonStepAnime->FunctionFlags |= 0x400;
-	uFnUpdateNonStepAnime->iNative = 40795;
+	uFnUpdateNonStepAnime->iNative = 40793;
 };
 
 // Function REDGame.REDPawn.OnActionChange
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38810])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38808])
 // Parameter Info:
 
 void AREDPawn::OnActionChange()
@@ -59261,7 +59261,7 @@ void AREDPawn::OnActionChange()
 	uFnOnActionChange->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnOnActionChange, &OnActionChange_Params, nullptr);
 	uFnOnActionChange->FunctionFlags |= 0x400;
-	uFnOnActionChange->iNative = 38810;
+	uFnOnActionChange->iNative = 38808;
 };
 
 // Function REDGame.REDPawn.GetMeshFromIndex
@@ -59393,7 +59393,7 @@ bool AREDPawn::CalcCamera(float fDeltaTime, struct FVector& out_CamLoc, struct F
 };
 
 // Function REDGame.REDPawn.SetMaterialParamFloat
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39772])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39770])
 // Parameter Info:
 // class FName                    ParamName                      (CPF_Const | CPF_Parm)
 // float                          Param                          (CPF_Parm)
@@ -59418,11 +59418,11 @@ void AREDPawn::SetMaterialParamFloat(const class FName& ParamName, float Param, 
 	uFnSetMaterialParamFloat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetMaterialParamFloat, &SetMaterialParamFloat_Params, nullptr);
 	uFnSetMaterialParamFloat->FunctionFlags |= 0x400;
-	uFnSetMaterialParamFloat->iNative = 39772;
+	uFnSetMaterialParamFloat->iNative = 39770;
 };
 
 // Function REDGame.REDPawn.SetMaterialParamVector
-// [0x00424401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39773])
+// [0x00424401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39771])
 // Parameter Info:
 // class FName                    ParamName                      (CPF_Const | CPF_Parm)
 // EMaterialCategory              Category                       (CPF_OptionalParm | CPF_Parm)
@@ -59447,13 +59447,13 @@ void AREDPawn::SetMaterialParamVector(const class FName& ParamName, EMaterialCat
 	uFnSetMaterialParamVector->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetMaterialParamVector, &SetMaterialParamVector_Params, nullptr);
 	uFnSetMaterialParamVector->FunctionFlags |= 0x400;
-	uFnSetMaterialParamVector->iNative = 39773;
+	uFnSetMaterialParamVector->iNative = 39771;
 
 	memcpy_s(&Param, sizeof(Param), &SetMaterialParamVector_Params.Param, sizeof(SetMaterialParamVector_Params.Param));
 };
 
 // Function REDGame.REDPawn.AddExtraAnimArray
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35385])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35383])
 // Parameter Info:
 // class UREDAnimArray*           AnimInfo                       (CPF_Parm)
 
@@ -59474,11 +59474,11 @@ void AREDPawn::AddExtraAnimArray(class UREDAnimArray* AnimInfo)
 	uFnAddExtraAnimArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAddExtraAnimArray, &AddExtraAnimArray_Params, nullptr);
 	uFnAddExtraAnimArray->FunctionFlags |= 0x400;
-	uFnAddExtraAnimArray->iNative = 35385;
+	uFnAddExtraAnimArray->iNative = 35383;
 };
 
 // Function REDGame.REDPawn.SetupMeshInstance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39847])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39845])
 // Parameter Info:
 // class UREDMeshArray*           MeshInfo                       (CPF_Parm)
 // class UREDAnimArray*           AnimInfo                       (CPF_Parm)
@@ -59503,11 +59503,11 @@ void AREDPawn::SetupMeshInstance(class UREDMeshArray* MeshInfo, class UREDAnimAr
 	uFnSetupMeshInstance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupMeshInstance, &SetupMeshInstance_Params, nullptr);
 	uFnSetupMeshInstance->FunctionFlags |= 0x400;
-	uFnSetupMeshInstance->iNative = 39847;
+	uFnSetupMeshInstance->iNative = 39845;
 };
 
 // Function REDGame.REDPawn.SetupMaterialsForAdv
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39846])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39844])
 // Parameter Info:
 
 void AREDPawn::SetupMaterialsForAdv()
@@ -59526,11 +59526,11 @@ void AREDPawn::SetupMaterialsForAdv()
 	uFnSetupMaterialsForAdv->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupMaterialsForAdv, &SetupMaterialsForAdv_Params, nullptr);
 	uFnSetupMaterialsForAdv->FunctionFlags |= 0x400;
-	uFnSetupMaterialsForAdv->iNative = 39846;
+	uFnSetupMaterialsForAdv->iNative = 39844;
 };
 
 // Function REDGame.REDPawn.SetLoadingMaterials
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39768])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39766])
 // Parameter Info:
 // class UREDPawnMaterials*       Materials                      (CPF_Parm)
 
@@ -59551,11 +59551,11 @@ void AREDPawn::SetLoadingMaterials(class UREDPawnMaterials* Materials)
 	uFnSetLoadingMaterials->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLoadingMaterials, &SetLoadingMaterials_Params, nullptr);
 	uFnSetLoadingMaterials->FunctionFlags |= 0x400;
-	uFnSetLoadingMaterials->iNative = 39768;
+	uFnSetLoadingMaterials->iNative = 39766;
 };
 
 // Function REDGame.REDPawn.SetupMaterials
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39845])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39843])
 // Parameter Info:
 // class FName                    Typename                       (CPF_OptionalParm | CPF_Parm)
 // uint32_t                       ForceUpdate                    (CPF_OptionalParm | CPF_Parm)
@@ -59578,7 +59578,7 @@ void AREDPawn::SetupMaterials(const class FName& Typename, bool ForceUpdate)
 	uFnSetupMaterials->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupMaterials, &SetupMaterials_Params, nullptr);
 	uFnSetupMaterials->FunctionFlags |= 0x400;
-	uFnSetupMaterials->iNative = 39845;
+	uFnSetupMaterials->iNative = 39843;
 };
 
 // Function REDGame.REDPawn.ForceDestroy
@@ -59620,7 +59620,7 @@ void AREDPawn::eventDestroyed()
 };
 
 // Function REDGame.REDPawn.ReusePawn
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39408])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39406])
 // Parameter Info:
 
 void AREDPawn::ReusePawn()
@@ -59639,7 +59639,7 @@ void AREDPawn::ReusePawn()
 	uFnReusePawn->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReusePawn, &ReusePawn_Params, nullptr);
 	uFnReusePawn->FunctionFlags |= 0x400;
-	uFnReusePawn->iNative = 39408;
+	uFnReusePawn->iNative = 39406;
 };
 
 // Function REDGame.REDPawn.ResetOnGame
@@ -59662,7 +59662,7 @@ void AREDPawn::eventResetOnGame()
 };
 
 // Function REDGame.REDPawn.SetSkeletonUpdateOnCellChange
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39809])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39807])
 // Parameter Info:
 // uint32_t                       bUpdate                        (CPF_Parm)
 
@@ -59683,11 +59683,11 @@ void AREDPawn::SetSkeletonUpdateOnCellChange(bool bUpdate)
 	uFnSetSkeletonUpdateOnCellChange->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetSkeletonUpdateOnCellChange, &SetSkeletonUpdateOnCellChange_Params, nullptr);
 	uFnSetSkeletonUpdateOnCellChange->FunctionFlags |= 0x400;
-	uFnSetSkeletonUpdateOnCellChange->iNative = 39809;
+	uFnSetSkeletonUpdateOnCellChange->iNative = 39807;
 };
 
 // Function REDGame.REDPawn.DispMeshOff
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36559])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36557])
 // Parameter Info:
 // uint32_t                       Off                            (CPF_Parm)
 
@@ -59708,11 +59708,11 @@ void AREDPawn::DispMeshOff(bool Off)
 	uFnDispMeshOff->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDispMeshOff, &DispMeshOff_Params, nullptr);
 	uFnDispMeshOff->FunctionFlags |= 0x400;
-	uFnDispMeshOff->iNative = 36559;
+	uFnDispMeshOff->iNative = 36557;
 };
 
 // Function REDGame.REDPawn.SetDispMesh
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39731])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39729])
 // Parameter Info:
 // uint32_t                       On                             (CPF_Parm)
 // class FName                    MeshName                       (CPF_OptionalParm | CPF_Parm)
@@ -59735,11 +59735,11 @@ void AREDPawn::SetDispMesh(bool On, const class FName& MeshName)
 	uFnSetDispMesh->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDispMesh, &SetDispMesh_Params, nullptr);
 	uFnSetDispMesh->FunctionFlags |= 0x400;
-	uFnSetDispMesh->iNative = 39731;
+	uFnSetDispMesh->iNative = 39729;
 };
 
 // Function REDGame.REDPawn.ResetMaterialInstanceParam
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39385])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39383])
 // Parameter Info:
 
 void AREDPawn::ResetMaterialInstanceParam()
@@ -59758,11 +59758,11 @@ void AREDPawn::ResetMaterialInstanceParam()
 	uFnResetMaterialInstanceParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetMaterialInstanceParam, &ResetMaterialInstanceParam_Params, nullptr);
 	uFnResetMaterialInstanceParam->FunctionFlags |= 0x400;
-	uFnResetMaterialInstanceParam->iNative = 39385;
+	uFnResetMaterialInstanceParam->iNative = 39383;
 };
 
 // Function REDGame.REDPawn.UpdateMaterialInstanceParam
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40772])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40770])
 // Parameter Info:
 
 void AREDPawn::UpdateMaterialInstanceParam()
@@ -59781,11 +59781,11 @@ void AREDPawn::UpdateMaterialInstanceParam()
 	uFnUpdateMaterialInstanceParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMaterialInstanceParam, &UpdateMaterialInstanceParam_Params, nullptr);
 	uFnUpdateMaterialInstanceParam->FunctionFlags |= 0x400;
-	uFnUpdateMaterialInstanceParam->iNative = 40772;
+	uFnUpdateMaterialInstanceParam->iNative = 40770;
 };
 
 // Function REDGame.REDPawn.UpdateMaterialOnCharaSelect
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40773])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40771])
 // Parameter Info:
 // float                          inAddColor                     (CPF_Parm | CPF_OutParm)
 
@@ -59806,13 +59806,13 @@ void AREDPawn::UpdateMaterialOnCharaSelect(float& inAddColor)
 	uFnUpdateMaterialOnCharaSelect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMaterialOnCharaSelect, &UpdateMaterialOnCharaSelect_Params, nullptr);
 	uFnUpdateMaterialOnCharaSelect->FunctionFlags |= 0x400;
-	uFnUpdateMaterialOnCharaSelect->iNative = 40773;
+	uFnUpdateMaterialOnCharaSelect->iNative = 40771;
 
 	memcpy_s(&inAddColor, sizeof(inAddColor), &UpdateMaterialOnCharaSelect_Params.inAddColor, sizeof(UpdateMaterialOnCharaSelect_Params.inAddColor));
 };
 
 // Function REDGame.REDPawn.UpdateMaterialParamDirection
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40775])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40773])
 // Parameter Info:
 
 void AREDPawn::UpdateMaterialParamDirection()
@@ -59831,11 +59831,11 @@ void AREDPawn::UpdateMaterialParamDirection()
 	uFnUpdateMaterialParamDirection->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateMaterialParamDirection, &UpdateMaterialParamDirection_Params, nullptr);
 	uFnUpdateMaterialParamDirection->FunctionFlags |= 0x400;
-	uFnUpdateMaterialParamDirection->iNative = 40775;
+	uFnUpdateMaterialParamDirection->iNative = 40773;
 };
 
 // Function REDGame.REDPawn.UpdateCameraParam
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40613])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40611])
 // Parameter Info:
 // float                          InFovTan                       (CPF_Parm)
 // struct FVector                 InCameraDir                    (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -59858,13 +59858,13 @@ void AREDPawn::UpdateCameraParam(float InFovTan, struct FVector& InCameraDir)
 	uFnUpdateCameraParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateCameraParam, &UpdateCameraParam_Params, nullptr);
 	uFnUpdateCameraParam->FunctionFlags |= 0x400;
-	uFnUpdateCameraParam->iNative = 40613;
+	uFnUpdateCameraParam->iNative = 40611;
 
 	memcpy_s(&InCameraDir, sizeof(InCameraDir), &UpdateCameraParam_Params.InCameraDir, sizeof(UpdateCameraParam_Params.InCameraDir));
 };
 
 // Function REDGame.REDPawn.UpdateLightVectorFromLightAnime
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40752])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40750])
 // Parameter Info:
 // struct FVector                 lightVec                       (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -59885,13 +59885,13 @@ void AREDPawn::UpdateLightVectorFromLightAnime(struct FVector& lightVec)
 	uFnUpdateLightVectorFromLightAnime->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLightVectorFromLightAnime, &UpdateLightVectorFromLightAnime_Params, nullptr);
 	uFnUpdateLightVectorFromLightAnime->FunctionFlags |= 0x400;
-	uFnUpdateLightVectorFromLightAnime->iNative = 40752;
+	uFnUpdateLightVectorFromLightAnime->iNative = 40750;
 
 	memcpy_s(&lightVec, sizeof(lightVec), &UpdateLightVectorFromLightAnime_Params.lightVec, sizeof(UpdateLightVectorFromLightAnime_Params.lightVec));
 };
 
 // Function REDGame.REDPawn.UpdateLightVector
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40751])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40749])
 // Parameter Info:
 
 void AREDPawn::UpdateLightVector()
@@ -59910,11 +59910,11 @@ void AREDPawn::UpdateLightVector()
 	uFnUpdateLightVector->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateLightVector, &UpdateLightVector_Params, nullptr);
 	uFnUpdateLightVector->FunctionFlags |= 0x400;
-	uFnUpdateLightVector->iNative = 40751;
+	uFnUpdateLightVector->iNative = 40749;
 };
 
 // Function REDGame.REDPawn.SetLightVector
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39765])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39763])
 // Parameter Info:
 // int32_t                        xsiDirX                        (CPF_Parm)
 // int32_t                        xsiDirY                        (CPF_Parm)
@@ -59937,11 +59937,11 @@ void AREDPawn::SetLightVector(int32_t xsiDirX, int32_t xsiDirY)
 	uFnSetLightVector->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLightVector, &SetLightVector_Params, nullptr);
 	uFnSetLightVector->FunctionFlags |= 0x400;
-	uFnSetLightVector->iNative = 39765;
+	uFnSetLightVector->iNative = 39763;
 };
 
 // Function REDGame.REDPawn.SetDefaultLightVector
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39726])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39724])
 // Parameter Info:
 
 void AREDPawn::SetDefaultLightVector()
@@ -59960,11 +59960,11 @@ void AREDPawn::SetDefaultLightVector()
 	uFnSetDefaultLightVector->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDefaultLightVector, &SetDefaultLightVector_Params, nullptr);
 	uFnSetDefaultLightVector->FunctionFlags |= 0x400;
-	uFnSetDefaultLightVector->iNative = 39726;
+	uFnSetDefaultLightVector->iNative = 39724;
 };
 
 // Function REDGame.REDPawn.GetScreenSpaceZOffset
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37163])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37161])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -59984,7 +59984,7 @@ float AREDPawn::GetScreenSpaceZOffset()
 	uFnGetScreenSpaceZOffset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetScreenSpaceZOffset, &GetScreenSpaceZOffset_Params, nullptr);
 	uFnGetScreenSpaceZOffset->FunctionFlags |= 0x400;
-	uFnGetScreenSpaceZOffset->iNative = 37163;
+	uFnGetScreenSpaceZOffset->iNative = 37161;
 
 	return GetScreenSpaceZOffset_Params.ReturnValue;
 };
@@ -60032,7 +60032,7 @@ void AREDPawn::eventSetEyeHeight(float Height)
 };
 
 // Function REDGame.REDPawn.ClearMeshSet
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36226])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36224])
 // Parameter Info:
 
 void AREDPawn::ClearMeshSet()
@@ -60051,11 +60051,11 @@ void AREDPawn::ClearMeshSet()
 	uFnClearMeshSet->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearMeshSet, &ClearMeshSet_Params, nullptr);
 	uFnClearMeshSet->FunctionFlags |= 0x400;
-	uFnClearMeshSet->iNative = 36226;
+	uFnClearMeshSet->iNative = 36224;
 };
 
 // Function REDGame.REDPawn.ClearMeshControls
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36225])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36223])
 // Parameter Info:
 
 void AREDPawn::ClearMeshControls()
@@ -60074,11 +60074,11 @@ void AREDPawn::ClearMeshControls()
 	uFnClearMeshControls->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearMeshControls, &ClearMeshControls_Params, nullptr);
 	uFnClearMeshControls->FunctionFlags |= 0x400;
-	uFnClearMeshControls->iNative = 36225;
+	uFnClearMeshControls->iNative = 36223;
 };
 
 // Function REDGame.REDPawn.RestoreMeshSet
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39393])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39391])
 // Parameter Info:
 
 void AREDPawn::RestoreMeshSet()
@@ -60097,11 +60097,11 @@ void AREDPawn::RestoreMeshSet()
 	uFnRestoreMeshSet->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRestoreMeshSet, &RestoreMeshSet_Params, nullptr);
 	uFnRestoreMeshSet->FunctionFlags |= 0x400;
-	uFnRestoreMeshSet->iNative = 39393;
+	uFnRestoreMeshSet->iNative = 39391;
 };
 
 // Function REDGame.REDPawn.SaveMeshSet
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39462])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39460])
 // Parameter Info:
 
 void AREDPawn::SaveMeshSet()
@@ -60120,11 +60120,11 @@ void AREDPawn::SaveMeshSet()
 	uFnSaveMeshSet->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSaveMeshSet, &SaveMeshSet_Params, nullptr);
 	uFnSaveMeshSet->FunctionFlags |= 0x400;
-	uFnSaveMeshSet->iNative = 39462;
+	uFnSaveMeshSet->iNative = 39460;
 };
 
 // Function REDGame.REDPawn.SwitchMeshSet
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40152])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40150])
 // Parameter Info:
 // class FName                    SetName                        (CPF_Parm)
 
@@ -60145,11 +60145,11 @@ void AREDPawn::SwitchMeshSet(const class FName& SetName)
 	uFnSwitchMeshSet->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSwitchMeshSet, &SwitchMeshSet_Params, nullptr);
 	uFnSwitchMeshSet->FunctionFlags |= 0x400;
-	uFnSwitchMeshSet->iNative = 40152;
+	uFnSwitchMeshSet->iNative = 40150;
 };
 
 // Function REDGame.REDPawn.AddMeshSet
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35387])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35385])
 // Parameter Info:
 // struct FMeshSet                Set                            (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -60170,13 +60170,13 @@ void AREDPawn::AddMeshSet(struct FMeshSet& Set)
 	uFnAddMeshSet->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAddMeshSet, &AddMeshSet_Params, nullptr);
 	uFnAddMeshSet->FunctionFlags |= 0x400;
-	uFnAddMeshSet->iNative = 35387;
+	uFnAddMeshSet->iNative = 35385;
 
 	memcpy_s(&Set, sizeof(Set), &AddMeshSet_Params.Set, sizeof(AddMeshSet_Params.Set));
 };
 
 // Function REDGame.REDPawn.GetMeshSetIndexFromSetName
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37109])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37107])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SetName                        (CPF_Parm)
@@ -60198,13 +60198,13 @@ int32_t AREDPawn::GetMeshSetIndexFromSetName(const class FName& SetName)
 	uFnGetMeshSetIndexFromSetName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMeshSetIndexFromSetName, &GetMeshSetIndexFromSetName_Params, nullptr);
 	uFnGetMeshSetIndexFromSetName->FunctionFlags |= 0x400;
-	uFnGetMeshSetIndexFromSetName->iNative = 37109;
+	uFnGetMeshSetIndexFromSetName->iNative = 37107;
 
 	return GetMeshSetIndexFromSetName_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.UpdateDispState
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40647])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40645])
 // Parameter Info:
 
 void AREDPawn::UpdateDispState()
@@ -60223,11 +60223,11 @@ void AREDPawn::UpdateDispState()
 	uFnUpdateDispState->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDispState, &UpdateDispState_Params, nullptr);
 	uFnUpdateDispState->FunctionFlags |= 0x400;
-	uFnUpdateDispState->iNative = 40647;
+	uFnUpdateDispState->iNative = 40645;
 };
 
 // Function REDGame.REDPawn.FreeSkeletalMeshComponents
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36912])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36910])
 // Parameter Info:
 
 void AREDPawn::FreeSkeletalMeshComponents()
@@ -60246,11 +60246,11 @@ void AREDPawn::FreeSkeletalMeshComponents()
 	uFnFreeSkeletalMeshComponents->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFreeSkeletalMeshComponents, &FreeSkeletalMeshComponents_Params, nullptr);
 	uFnFreeSkeletalMeshComponents->FunctionFlags |= 0x400;
-	uFnFreeSkeletalMeshComponents->iNative = 36912;
+	uFnFreeSkeletalMeshComponents->iNative = 36910;
 };
 
 // Function REDGame.REDPawn.FreeLocalMaterialPool
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36909])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36907])
 // Parameter Info:
 
 void AREDPawn::FreeLocalMaterialPool()
@@ -60269,11 +60269,11 @@ void AREDPawn::FreeLocalMaterialPool()
 	uFnFreeLocalMaterialPool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFreeLocalMaterialPool, &FreeLocalMaterialPool_Params, nullptr);
 	uFnFreeLocalMaterialPool->FunctionFlags |= 0x400;
-	uFnFreeLocalMaterialPool->iNative = 36909;
+	uFnFreeLocalMaterialPool->iNative = 36907;
 };
 
 // Function REDGame.REDPawn.InitLocalMaterialPool
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37535])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37533])
 // Parameter Info:
 
 void AREDPawn::InitLocalMaterialPool()
@@ -60292,11 +60292,11 @@ void AREDPawn::InitLocalMaterialPool()
 	uFnInitLocalMaterialPool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInitLocalMaterialPool, &InitLocalMaterialPool_Params, nullptr);
 	uFnInitLocalMaterialPool->FunctionFlags |= 0x400;
-	uFnInitLocalMaterialPool->iNative = 37535;
+	uFnInitLocalMaterialPool->iNative = 37533;
 };
 
 // Function REDGame.REDPawn.GetMeshControlIndexFromName
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37105])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37103])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    MeshName                       (CPF_Parm)
@@ -60318,13 +60318,13 @@ int32_t AREDPawn::GetMeshControlIndexFromName(const class FName& MeshName)
 	uFnGetMeshControlIndexFromName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMeshControlIndexFromName, &GetMeshControlIndexFromName_Params, nullptr);
 	uFnGetMeshControlIndexFromName->FunctionFlags |= 0x400;
-	uFnGetMeshControlIndexFromName->iNative = 37105;
+	uFnGetMeshControlIndexFromName->iNative = 37103;
 
 	return GetMeshControlIndexFromName_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetMeshComponentFromIndex
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37104])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37102])
 // Parameter Info:
 // class USkeletalMeshComponent*  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_EditInline)
 // int32_t                        Index                          (CPF_Parm)
@@ -60346,13 +60346,13 @@ class USkeletalMeshComponent* AREDPawn::GetMeshComponentFromIndex(int32_t Index)
 	uFnGetMeshComponentFromIndex->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMeshComponentFromIndex, &GetMeshComponentFromIndex_Params, nullptr);
 	uFnGetMeshComponentFromIndex->FunctionFlags |= 0x400;
-	uFnGetMeshComponentFromIndex->iNative = 37104;
+	uFnGetMeshComponentFromIndex->iNative = 37102;
 
 	return GetMeshComponentFromIndex_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn.GetMeshNum
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37108])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37106])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -60372,7 +60372,7 @@ int32_t AREDPawn::GetMeshNum()
 	uFnGetMeshNum->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMeshNum, &GetMeshNum_Params, nullptr);
 	uFnGetMeshNum->FunctionFlags |= 0x400;
-	uFnGetMeshNum->iNative = 37108;
+	uFnGetMeshNum->iNative = 37106;
 
 	return GetMeshNum_Params.ReturnValue;
 };
@@ -60399,7 +60399,7 @@ void AREDDebugPause::eventPauserTick(float DeltaTime)
 };
 
 // Function REDGame.REDDebugPause.ToggleDoNotPause
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40266])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40264])
 // Parameter Info:
 
 void AREDDebugPause::ToggleDoNotPause()
@@ -60418,7 +60418,7 @@ void AREDDebugPause::ToggleDoNotPause()
 	uFnToggleDoNotPause->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnToggleDoNotPause, &ToggleDoNotPause_Params, nullptr);
 	uFnToggleDoNotPause->FunctionFlags |= 0x400;
-	uFnToggleDoNotPause->iNative = 40266;
+	uFnToggleDoNotPause->iNative = 40264;
 };
 
 // Function REDGame.REDDebugPause.ToggleShowDebugMenu
@@ -60479,7 +60479,7 @@ void AREDDebugPause::StepToggle()
 };
 
 // Function REDGame.REDDebugPause.IsDoNotPause
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37641])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37639])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -60499,13 +60499,13 @@ bool AREDDebugPause::IsDoNotPause()
 	uFnIsDoNotPause->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsDoNotPause, &IsDoNotPause_Params, nullptr);
 	uFnIsDoNotPause->FunctionFlags |= 0x400;
-	uFnIsDoNotPause->iNative = 37641;
+	uFnIsDoNotPause->iNative = 37639;
 
 	return IsDoNotPause_Params.ReturnValue;
 };
 
 // Function REDGame.REDDebugPause.IsShowDebugMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37854])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37852])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -60525,13 +60525,13 @@ bool AREDDebugPause::IsShowDebugMenu()
 	uFnIsShowDebugMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsShowDebugMenu, &IsShowDebugMenu_Params, nullptr);
 	uFnIsShowDebugMenu->FunctionFlags |= 0x400;
-	uFnIsShowDebugMenu->iNative = 37854;
+	uFnIsShowDebugMenu->iNative = 37852;
 
 	return IsShowDebugMenu_Params.ReturnValue;
 };
 
 // Function REDGame.REDDebugPause.UpdateDebugMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40643])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40641])
 // Parameter Info:
 
 void AREDDebugPause::UpdateDebugMenu()
@@ -60550,11 +60550,11 @@ void AREDDebugPause::UpdateDebugMenu()
 	uFnUpdateDebugMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateDebugMenu, &UpdateDebugMenu_Params, nullptr);
 	uFnUpdateDebugMenu->FunctionFlags |= 0x400;
-	uFnUpdateDebugMenu->iNative = 40643;
+	uFnUpdateDebugMenu->iNative = 40641;
 };
 
 // Function REDGame.REDDebugPause.SetGamePause
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39753])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39751])
 // Parameter Info:
 // uint32_t                       On                             (CPF_Parm)
 
@@ -60575,11 +60575,11 @@ void AREDDebugPause::SetGamePause(bool On)
 	uFnSetGamePause->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetGamePause, &SetGamePause_Params, nullptr);
 	uFnSetGamePause->FunctionFlags |= 0x400;
-	uFnSetGamePause->iNative = 39753;
+	uFnSetGamePause->iNative = 39751;
 };
 
 // Function REDGame.REDDebugPause.ShowDebugMenu
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39895])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39893])
 // Parameter Info:
 // uint32_t                       Show                           (CPF_Parm)
 
@@ -60600,7 +60600,7 @@ void AREDDebugPause::ShowDebugMenu(bool Show)
 	uFnShowDebugMenu->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowDebugMenu, &ShowDebugMenu_Params, nullptr);
 	uFnShowDebugMenu->FunctionFlags |= 0x400;
-	uFnShowDebugMenu->iNative = 39895;
+	uFnShowDebugMenu->iNative = 39893;
 };
 
 // Function REDGame.REDDebugPause.GetPlayerController
@@ -60654,7 +60654,7 @@ void AREDPawn_AdjLightDir::DisplayDebug(class AHUD* HUD, float& out_YL, float& o
 };
 
 // Function REDGame.REDPawn_AdjLightDir.NativeTick
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38513])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[38511])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 
@@ -60675,11 +60675,11 @@ void AREDPawn_AdjLightDir::NativeTick(float DeltaTime)
 	uFnNativeTick->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNativeTick, &NativeTick_Params, nullptr);
 	uFnNativeTick->FunctionFlags |= 0x400;
-	uFnNativeTick->iNative = 38513;
+	uFnNativeTick->iNative = 38511;
 };
 
 // Function REDGame.REDPawn_AdjLightDir.IsDisp
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37639])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37637])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -60699,13 +60699,13 @@ bool AREDPawn_AdjLightDir::IsDisp()
 	uFnIsDisp->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsDisp, &IsDisp_Params, nullptr);
 	uFnIsDisp->FunctionFlags |= 0x400;
-	uFnIsDisp->iNative = 37639;
+	uFnIsDisp->iNative = 37637;
 
 	return IsDisp_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn_AdjLightDir.GetDebugLightRotation
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37053])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[37051])
 // Parameter Info:
 // struct FRotator                Rot                            (CPF_Parm | CPF_OutParm)
 
@@ -60726,13 +60726,13 @@ void AREDPawn_AdjLightDir::GetDebugLightRotation(struct FRotator& Rot)
 	uFnGetDebugLightRotation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetDebugLightRotation, &GetDebugLightRotation_Params, nullptr);
 	uFnGetDebugLightRotation->FunctionFlags |= 0x400;
-	uFnGetDebugLightRotation->iNative = 37053;
+	uFnGetDebugLightRotation->iNative = 37051;
 
 	memcpy_s(&Rot, sizeof(Rot), &GetDebugLightRotation_Params.Rot, sizeof(GetDebugLightRotation_Params.Rot));
 };
 
 // Function REDGame.REDPawn_AdvAvatar.GetMotionLengthFrame
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37114])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37112])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -60752,7 +60752,7 @@ int32_t AREDPawn_AdvAvatar::GetMotionLengthFrame()
 	uFnGetMotionLengthFrame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMotionLengthFrame, &GetMotionLengthFrame_Params, nullptr);
 	uFnGetMotionLengthFrame->FunctionFlags |= 0x400;
-	uFnGetMotionLengthFrame->iNative = 37114;
+	uFnGetMotionLengthFrame->iNative = 37112;
 
 	return GetMotionLengthFrame_Params.ReturnValue;
 };
@@ -60780,7 +60780,7 @@ bool AREDPawn_AdvAvatar::eventIsLipPlaying()
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ResetFaceScaleController
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39380])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39378])
 // Parameter Info:
 
 void AREDPawn_AdvAvatar::ResetFaceScaleController()
@@ -60799,11 +60799,11 @@ void AREDPawn_AdvAvatar::ResetFaceScaleController()
 	uFnResetFaceScaleController->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetFaceScaleController, &ResetFaceScaleController_Params, nullptr);
 	uFnResetFaceScaleController->FunctionFlags |= 0x400;
-	uFnResetFaceScaleController->iNative = 39380;
+	uFnResetFaceScaleController->iNative = 39378;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetLipSyncType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39767])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39765])
 // Parameter Info:
 // class FName                    Typename                       (CPF_Parm)
 
@@ -60824,11 +60824,11 @@ void AREDPawn_AdvAvatar::SetLipSyncType(const class FName& Typename)
 	uFnSetLipSyncType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLipSyncType, &SetLipSyncType_Params, nullptr);
 	uFnSetLipSyncType->FunctionFlags |= 0x400;
-	uFnSetLipSyncType->iNative = 39767;
+	uFnSetLipSyncType->iNative = 39765;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetExPosAndRot
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39744])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39742])
 // Parameter Info:
 // struct FVector                 InExPos                        (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FVector                 InExPos2                       (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -60861,7 +60861,7 @@ void AREDPawn_AdvAvatar::SetExPosAndRot(struct FVector& InExPos, struct FVector&
 	uFnSetExPosAndRot->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetExPosAndRot, &SetExPosAndRot_Params, nullptr);
 	uFnSetExPosAndRot->FunctionFlags |= 0x400;
-	uFnSetExPosAndRot->iNative = 39744;
+	uFnSetExPosAndRot->iNative = 39742;
 
 	memcpy_s(&InExPos, sizeof(InExPos), &SetExPosAndRot_Params.InExPos, sizeof(SetExPosAndRot_Params.InExPos));
 	memcpy_s(&InExPos2, sizeof(InExPos2), &SetExPosAndRot_Params.InExPos2, sizeof(SetExPosAndRot_Params.InExPos2));
@@ -60873,7 +60873,7 @@ void AREDPawn_AdvAvatar::SetExPosAndRot(struct FVector& InExPos, struct FVector&
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetLipPos
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39766])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39764])
 // Parameter Info:
 // struct FVector                 InLipPos                       (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FVector                 InLipScale                     (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -60896,14 +60896,14 @@ void AREDPawn_AdvAvatar::SetLipPos(struct FVector& InLipPos, struct FVector& InL
 	uFnSetLipPos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLipPos, &SetLipPos_Params, nullptr);
 	uFnSetLipPos->FunctionFlags |= 0x400;
-	uFnSetLipPos->iNative = 39766;
+	uFnSetLipPos->iNative = 39764;
 
 	memcpy_s(&InLipPos, sizeof(InLipPos), &SetLipPos_Params.InLipPos, sizeof(SetLipPos_Params.InLipPos));
 	memcpy_s(&InLipScale, sizeof(InLipScale), &SetLipPos_Params.InLipScale, sizeof(SetLipPos_Params.InLipScale));
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetEyePos
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39746])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39744])
 // Parameter Info:
 // struct FVector                 InEyePosL                      (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FVector                 InEyeScaleL                    (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -60930,7 +60930,7 @@ void AREDPawn_AdvAvatar::SetEyePos(struct FVector& InEyePosL, struct FVector& In
 	uFnSetEyePos->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetEyePos, &SetEyePos_Params, nullptr);
 	uFnSetEyePos->FunctionFlags |= 0x400;
-	uFnSetEyePos->iNative = 39746;
+	uFnSetEyePos->iNative = 39744;
 
 	memcpy_s(&InEyePosL, sizeof(InEyePosL), &SetEyePos_Params.InEyePosL, sizeof(SetEyePos_Params.InEyePosL));
 	memcpy_s(&InEyeScaleL, sizeof(InEyeScaleL), &SetEyePos_Params.InEyeScaleL, sizeof(SetEyePos_Params.InEyeScaleL));
@@ -60939,7 +60939,7 @@ void AREDPawn_AdvAvatar::SetEyePos(struct FVector& InEyePosL, struct FVector& In
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetPupilScale
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39797])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39795])
 // Parameter Info:
 // struct FVector                 InPupilScaleL                  (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FVector                 InPupilScaleR                  (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -60962,14 +60962,14 @@ void AREDPawn_AdvAvatar::SetPupilScale(struct FVector& InPupilScaleL, struct FVe
 	uFnSetPupilScale->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPupilScale, &SetPupilScale_Params, nullptr);
 	uFnSetPupilScale->FunctionFlags |= 0x400;
-	uFnSetPupilScale->iNative = 39797;
+	uFnSetPupilScale->iNative = 39795;
 
 	memcpy_s(&InPupilScaleL, sizeof(InPupilScaleL), &SetPupilScale_Params.InPupilScaleL, sizeof(SetPupilScale_Params.InPupilScaleL));
 	memcpy_s(&InPupilScaleR, sizeof(InPupilScaleR), &SetPupilScale_Params.InPupilScaleR, sizeof(SetPupilScale_Params.InPupilScaleR));
 };
 
 // Function REDGame.REDPawn_AdvAvatar.UpdateHand
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40699])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40697])
 // Parameter Info:
 
 void AREDPawn_AdvAvatar::UpdateHand()
@@ -60988,11 +60988,11 @@ void AREDPawn_AdvAvatar::UpdateHand()
 	uFnUpdateHand->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHand, &UpdateHand_Params, nullptr);
 	uFnUpdateHand->FunctionFlags |= 0x400;
-	uFnUpdateHand->iNative = 40699;
+	uFnUpdateHand->iNative = 40697;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.UpdateHair
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40698])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40696])
 // Parameter Info:
 
 void AREDPawn_AdvAvatar::UpdateHair()
@@ -61011,11 +61011,11 @@ void AREDPawn_AdvAvatar::UpdateHair()
 	uFnUpdateHair->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateHair, &UpdateHair_Params, nullptr);
 	uFnUpdateHair->FunctionFlags |= 0x400;
-	uFnUpdateHair->iNative = 40698;
+	uFnUpdateHair->iNative = 40696;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetEyeRotation
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39747])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39745])
 // Parameter Info:
 // struct FRotator                InEyeRotL                      (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FRotator                InEyeRotR                      (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -61038,14 +61038,14 @@ void AREDPawn_AdvAvatar::SetEyeRotation(struct FRotator& InEyeRotL, struct FRota
 	uFnSetEyeRotation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetEyeRotation, &SetEyeRotation_Params, nullptr);
 	uFnSetEyeRotation->FunctionFlags |= 0x400;
-	uFnSetEyeRotation->iNative = 39747;
+	uFnSetEyeRotation->iNative = 39745;
 
 	memcpy_s(&InEyeRotL, sizeof(InEyeRotL), &SetEyeRotation_Params.InEyeRotL, sizeof(SetEyeRotation_Params.InEyeRotL));
 	memcpy_s(&InEyeRotR, sizeof(InEyeRotR), &SetEyeRotation_Params.InEyeRotR, sizeof(SetEyeRotation_Params.InEyeRotR));
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetNeckRotation
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39779])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39777])
 // Parameter Info:
 // struct FRotator                InNeckRot                      (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -61066,13 +61066,13 @@ void AREDPawn_AdvAvatar::SetNeckRotation(struct FRotator& InNeckRot)
 	uFnSetNeckRotation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetNeckRotation, &SetNeckRotation_Params, nullptr);
 	uFnSetNeckRotation->FunctionFlags |= 0x400;
-	uFnSetNeckRotation->iNative = 39779;
+	uFnSetNeckRotation->iNative = 39777;
 
 	memcpy_s(&InNeckRot, sizeof(InNeckRot), &SetNeckRotation_Params.InNeckRot, sizeof(SetNeckRotation_Params.InNeckRot));
 };
 
 // Function REDGame.REDPawn_AdvAvatar.UpdateFace
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40670])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40668])
 // Parameter Info:
 
 void AREDPawn_AdvAvatar::UpdateFace()
@@ -61091,11 +61091,11 @@ void AREDPawn_AdvAvatar::UpdateFace()
 	uFnUpdateFace->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFace, &UpdateFace_Params, nullptr);
 	uFnUpdateFace->FunctionFlags |= 0x400;
-	uFnUpdateFace->iNative = 40670;
+	uFnUpdateFace->iNative = 40668;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.UpdateBlendAnim
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40604])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40602])
 // Parameter Info:
 
 void AREDPawn_AdvAvatar::UpdateBlendAnim()
@@ -61114,11 +61114,11 @@ void AREDPawn_AdvAvatar::UpdateBlendAnim()
 	uFnUpdateBlendAnim->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateBlendAnim, &UpdateBlendAnim_Params, nullptr);
 	uFnUpdateBlendAnim->FunctionFlags |= 0x400;
-	uFnUpdateBlendAnim->iNative = 40604;
+	uFnUpdateBlendAnim->iNative = 40602;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ChangeAnimeAdv
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36088])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36086])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    AnimSeqName                    (CPF_Parm)
@@ -61150,13 +61150,13 @@ bool AREDPawn_AdvAvatar::ChangeAnimeAdv(const class FName& AnimSeqName, int32_t 
 	uFnChangeAnimeAdv->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeAnimeAdv, &ChangeAnimeAdv_Params, nullptr);
 	uFnChangeAnimeAdv->FunctionFlags |= 0x400;
-	uFnChangeAnimeAdv->iNative = 36088;
+	uFnChangeAnimeAdv->iNative = 36086;
 
 	return ChangeAnimeAdv_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ChangeHand
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36099])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36097])
 // Parameter Info:
 // int32_t                        InHandType                     (CPF_Parm)
 // uint32_t                       isLeft                         (CPF_Parm)
@@ -61185,11 +61185,11 @@ void AREDPawn_AdvAvatar::ChangeHand(int32_t InHandType, bool isLeft, int32_t Ble
 	uFnChangeHand->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeHand, &ChangeHand_Params, nullptr);
 	uFnChangeHand->FunctionFlags |= 0x400;
-	uFnChangeHand->iNative = 36099;
+	uFnChangeHand->iNative = 36097;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ChangeHair
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36098])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36096])
 // Parameter Info:
 // class FString                  InHairAnim                     (CPF_Parm | CPF_NeedCtorLink)
 // int32_t                        BlendCount                     (CPF_Parm)
@@ -61220,11 +61220,11 @@ void AREDPawn_AdvAvatar::ChangeHair(const class FString& InHairAnim, int32_t Ble
 	uFnChangeHair->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeHair, &ChangeHair_Params, nullptr);
 	uFnChangeHair->FunctionFlags |= 0x400;
-	uFnChangeHair->iNative = 36098;
+	uFnChangeHair->iNative = 36096;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.UpdateEye
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40669])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40667])
 // Parameter Info:
 // float                          Blend                          (CPF_Parm)
 
@@ -61245,11 +61245,11 @@ void AREDPawn_AdvAvatar::UpdateEye(float Blend)
 	uFnUpdateEye->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateEye, &UpdateEye_Params, nullptr);
 	uFnUpdateEye->FunctionFlags |= 0x400;
-	uFnUpdateEye->iNative = 40669;
+	uFnUpdateEye->iNative = 40667;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ChangeFace
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36096])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36094])
 // Parameter Info:
 // int32_t                        InFaceType                     (CPF_Parm)
 // int32_t                        BlendCount                     (CPF_Parm)
@@ -61278,7 +61278,7 @@ void AREDPawn_AdvAvatar::ChangeFace(int32_t InFaceType, int32_t BlendCount, int3
 	uFnChangeFace->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeFace, &ChangeFace_Params, nullptr);
 	uFnChangeFace->FunctionFlags |= 0x400;
-	uFnChangeFace->iNative = 36096;
+	uFnChangeFace->iNative = 36094;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.RootMotionProcessed
@@ -61303,7 +61303,7 @@ void AREDPawn_AdvAvatar::eventRootMotionProcessed(class USkeletalMeshComponent* 
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ChangeShadowMaterialsForAdv
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36105])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36103])
 // Parameter Info:
 // class FString                  CharaName                      (CPF_Parm | CPF_NeedCtorLink)
 // uint32_t                       isBoyake                       (CPF_Parm)
@@ -61326,11 +61326,11 @@ void AREDPawn_AdvAvatar::ChangeShadowMaterialsForAdv(const class FString& CharaN
 	uFnChangeShadowMaterialsForAdv->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeShadowMaterialsForAdv, &ChangeShadowMaterialsForAdv_Params, nullptr);
 	uFnChangeShadowMaterialsForAdv->FunctionFlags |= 0x400;
-	uFnChangeShadowMaterialsForAdv->iNative = 36105;
+	uFnChangeShadowMaterialsForAdv->iNative = 36103;
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetupMeshInstance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39847])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39845])
 // Parameter Info:
 // class UREDMeshArray*           MeshInfo                       (CPF_Parm)
 // class UREDAnimArray*           AnimInfo                       (CPF_Parm)
@@ -61355,11 +61355,11 @@ void AREDPawn_AdvAvatar::SetupMeshInstance(class UREDMeshArray* MeshInfo, class 
 	uFnSetupMeshInstance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupMeshInstance, &SetupMeshInstance_Params, nullptr);
 	uFnSetupMeshInstance->FunctionFlags |= 0x400;
-	uFnSetupMeshInstance->iNative = 39847;
+	uFnSetupMeshInstance->iNative = 39845;
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.SetEyeRotation
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39747])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39745])
 // Parameter Info:
 // struct FRotator                InEyeRotL                      (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FRotator                InEyeRotR                      (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -61382,14 +61382,14 @@ void AREDPawn_DigitalFigureAvatar::SetEyeRotation(struct FRotator& InEyeRotL, st
 	uFnSetEyeRotation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetEyeRotation, &SetEyeRotation_Params, nullptr);
 	uFnSetEyeRotation->FunctionFlags |= 0x400;
-	uFnSetEyeRotation->iNative = 39747;
+	uFnSetEyeRotation->iNative = 39745;
 
 	memcpy_s(&InEyeRotL, sizeof(InEyeRotL), &SetEyeRotation_Params.InEyeRotL, sizeof(SetEyeRotation_Params.InEyeRotL));
 	memcpy_s(&InEyeRotR, sizeof(InEyeRotR), &SetEyeRotation_Params.InEyeRotR, sizeof(SetEyeRotation_Params.InEyeRotR));
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.GetMotionLengthFrame
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37114])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37112])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -61409,13 +61409,13 @@ int32_t AREDPawn_DigitalFigureAvatar::GetMotionLengthFrame()
 	uFnGetMotionLengthFrame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMotionLengthFrame, &GetMotionLengthFrame_Params, nullptr);
 	uFnGetMotionLengthFrame->FunctionFlags |= 0x400;
-	uFnGetMotionLengthFrame->iNative = 37114;
+	uFnGetMotionLengthFrame->iNative = 37112;
 
 	return GetMotionLengthFrame_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.ResetFaceScaleController
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39380])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39378])
 // Parameter Info:
 
 void AREDPawn_DigitalFigureAvatar::ResetFaceScaleController()
@@ -61434,11 +61434,11 @@ void AREDPawn_DigitalFigureAvatar::ResetFaceScaleController()
 	uFnResetFaceScaleController->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetFaceScaleController, &ResetFaceScaleController_Params, nullptr);
 	uFnResetFaceScaleController->FunctionFlags |= 0x400;
-	uFnResetFaceScaleController->iNative = 39380;
+	uFnResetFaceScaleController->iNative = 39378;
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.UpdateFace
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40670])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40668])
 // Parameter Info:
 
 void AREDPawn_DigitalFigureAvatar::UpdateFace()
@@ -61457,11 +61457,11 @@ void AREDPawn_DigitalFigureAvatar::UpdateFace()
 	uFnUpdateFace->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFace, &UpdateFace_Params, nullptr);
 	uFnUpdateFace->FunctionFlags |= 0x400;
-	uFnUpdateFace->iNative = 40670;
+	uFnUpdateFace->iNative = 40668;
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.UpdateBlendAnim
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40604])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40602])
 // Parameter Info:
 
 void AREDPawn_DigitalFigureAvatar::UpdateBlendAnim()
@@ -61480,11 +61480,11 @@ void AREDPawn_DigitalFigureAvatar::UpdateBlendAnim()
 	uFnUpdateBlendAnim->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateBlendAnim, &UpdateBlendAnim_Params, nullptr);
 	uFnUpdateBlendAnim->FunctionFlags |= 0x400;
-	uFnUpdateBlendAnim->iNative = 40604;
+	uFnUpdateBlendAnim->iNative = 40602;
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.ChangeAnimeDF
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36089])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36087])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    AnimSeqName                    (CPF_Parm)
@@ -61516,13 +61516,13 @@ bool AREDPawn_DigitalFigureAvatar::ChangeAnimeDF(const class FName& AnimSeqName,
 	uFnChangeAnimeDF->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeAnimeDF, &ChangeAnimeDF_Params, nullptr);
 	uFnChangeAnimeDF->FunctionFlags |= 0x400;
-	uFnChangeAnimeDF->iNative = 36089;
+	uFnChangeAnimeDF->iNative = 36087;
 
 	return ChangeAnimeDF_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.ChangeFace
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36096])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36094])
 // Parameter Info:
 // int32_t                        InFaceType                     (CPF_Parm)
 // int32_t                        BlendCount                     (CPF_Parm)
@@ -61551,7 +61551,7 @@ void AREDPawn_DigitalFigureAvatar::ChangeFace(int32_t InFaceType, int32_t BlendC
 	uFnChangeFace->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeFace, &ChangeFace_Params, nullptr);
 	uFnChangeFace->FunctionFlags |= 0x400;
-	uFnChangeFace->iNative = 36096;
+	uFnChangeFace->iNative = 36094;
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.RootMotionProcessed
@@ -61576,7 +61576,7 @@ void AREDPawn_DigitalFigureAvatar::eventRootMotionProcessed(class USkeletalMeshC
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.SetupMeshInstance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39847])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39845])
 // Parameter Info:
 // class UREDMeshArray*           MeshInfo                       (CPF_Parm)
 // class UREDAnimArray*           AnimInfo                       (CPF_Parm)
@@ -61601,7 +61601,7 @@ void AREDPawn_DigitalFigureAvatar::SetupMeshInstance(class UREDMeshArray* MeshIn
 	uFnSetupMeshInstance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupMeshInstance, &SetupMeshInstance_Params, nullptr);
 	uFnSetupMeshInstance->FunctionFlags |= 0x400;
-	uFnSetupMeshInstance->iNative = 39847;
+	uFnSetupMeshInstance->iNative = 39845;
 };
 
 // Function REDGame.REDPawn_Effect.Destroyed
@@ -61665,7 +61665,7 @@ class AREDPawn_Player* AREDPawn_Effect::GetOwner()
 };
 
 // Function REDGame.REDPawn_AdvEffect.GetMotionLengthFrame
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37114])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37112])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -61685,13 +61685,13 @@ int32_t AREDPawn_AdvEffect::GetMotionLengthFrame()
 	uFnGetMotionLengthFrame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetMotionLengthFrame, &GetMotionLengthFrame_Params, nullptr);
 	uFnGetMotionLengthFrame->FunctionFlags |= 0x400;
-	uFnGetMotionLengthFrame->iNative = 37114;
+	uFnGetMotionLengthFrame->iNative = 37112;
 
 	return GetMotionLengthFrame_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn_AdvEffect.UpdateBlendAnim
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40604])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40602])
 // Parameter Info:
 
 void AREDPawn_AdvEffect::UpdateBlendAnim()
@@ -61710,11 +61710,11 @@ void AREDPawn_AdvEffect::UpdateBlendAnim()
 	uFnUpdateBlendAnim->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateBlendAnim, &UpdateBlendAnim_Params, nullptr);
 	uFnUpdateBlendAnim->FunctionFlags |= 0x400;
-	uFnUpdateBlendAnim->iNative = 40604;
+	uFnUpdateBlendAnim->iNative = 40602;
 };
 
 // Function REDGame.REDPawn_AdvEffect.ChangeAnimeAdv
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36088])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36086])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    AnimSeqName                    (CPF_Parm)
@@ -61746,13 +61746,13 @@ bool AREDPawn_AdvEffect::ChangeAnimeAdv(const class FName& AnimSeqName, int32_t 
 	uFnChangeAnimeAdv->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnChangeAnimeAdv, &ChangeAnimeAdv_Params, nullptr);
 	uFnChangeAnimeAdv->FunctionFlags |= 0x400;
-	uFnChangeAnimeAdv->iNative = 36088;
+	uFnChangeAnimeAdv->iNative = 36086;
 
 	return ChangeAnimeAdv_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn_AdvEffect.SetExBoneScale
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39743])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39741])
 // Parameter Info:
 // struct FVector                 InExBone0Scale                 (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FVector                 InExBone1Scale                 (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -61781,7 +61781,7 @@ void AREDPawn_AdvEffect::SetExBoneScale(struct FVector& InExBone0Scale, struct F
 	uFnSetExBoneScale->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetExBoneScale, &SetExBoneScale_Params, nullptr);
 	uFnSetExBoneScale->FunctionFlags |= 0x400;
-	uFnSetExBoneScale->iNative = 39743;
+	uFnSetExBoneScale->iNative = 39741;
 
 	memcpy_s(&InExBone0Scale, sizeof(InExBone0Scale), &SetExBoneScale_Params.InExBone0Scale, sizeof(SetExBoneScale_Params.InExBone0Scale));
 	memcpy_s(&InExBone1Scale, sizeof(InExBone1Scale), &SetExBoneScale_Params.InExBone1Scale, sizeof(SetExBoneScale_Params.InExBone1Scale));
@@ -61791,7 +61791,7 @@ void AREDPawn_AdvEffect::SetExBoneScale(struct FVector& InExBone0Scale, struct F
 };
 
 // Function REDGame.REDPawn_AdvEffect.SetExPosAndRot
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39744])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39742])
 // Parameter Info:
 // struct FVector                 InExPos                        (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FVector                 InExPos2                       (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -61824,7 +61824,7 @@ void AREDPawn_AdvEffect::SetExPosAndRot(struct FVector& InExPos, struct FVector&
 	uFnSetExPosAndRot->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetExPosAndRot, &SetExPosAndRot_Params, nullptr);
 	uFnSetExPosAndRot->FunctionFlags |= 0x400;
-	uFnSetExPosAndRot->iNative = 39744;
+	uFnSetExPosAndRot->iNative = 39742;
 
 	memcpy_s(&InExPos, sizeof(InExPos), &SetExPosAndRot_Params.InExPos, sizeof(SetExPosAndRot_Params.InExPos));
 	memcpy_s(&InExPos2, sizeof(InExPos2), &SetExPosAndRot_Params.InExPos2, sizeof(SetExPosAndRot_Params.InExPos2));
@@ -61836,7 +61836,7 @@ void AREDPawn_AdvEffect::SetExPosAndRot(struct FVector& InExPos, struct FVector&
 };
 
 // Function REDGame.REDPawn_AdvEffect.SetupMeshInstance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39847])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39845])
 // Parameter Info:
 // class UREDMeshArray*           MeshInfo                       (CPF_Parm)
 // class UREDAnimArray*           AnimInfo                       (CPF_Parm)
@@ -61861,7 +61861,7 @@ void AREDPawn_AdvEffect::SetupMeshInstance(class UREDMeshArray* MeshInfo, class 
 	uFnSetupMeshInstance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupMeshInstance, &SetupMeshInstance_Params, nullptr);
 	uFnSetupMeshInstance->FunctionFlags |= 0x400;
-	uFnSetupMeshInstance->iNative = 39847;
+	uFnSetupMeshInstance->iNative = 39845;
 };
 
 // Function REDGame.REDPawn_Matinee.Tick
@@ -61961,7 +61961,7 @@ void AREDPawn_Matinee::eventBeginAnimControl(class UInterpGroup* InInterpGroup)
 };
 
 // Function REDGame.REDPawn_Matinee.SetAnimPosition_Internal
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39693])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39691])
 // Parameter Info:
 // class FName                    SlotName                       (CPF_Parm)
 // int32_t                        ChannelIndex                   (CPF_Parm)
@@ -61994,11 +61994,11 @@ void AREDPawn_Matinee::SetAnimPosition_Internal(const class FName& SlotName, int
 	uFnSetAnimPosition_Internal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetAnimPosition_Internal, &SetAnimPosition_Internal_Params, nullptr);
 	uFnSetAnimPosition_Internal->FunctionFlags |= 0x400;
-	uFnSetAnimPosition_Internal->iNative = 39693;
+	uFnSetAnimPosition_Internal->iNative = 39691;
 };
 
 // Function REDGame.REDPawn_Matinee.FinishAnimControl_Internal
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36857])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36855])
 // Parameter Info:
 // class UInterpGroup*            InInterpGroup                  (CPF_Parm)
 
@@ -62019,11 +62019,11 @@ void AREDPawn_Matinee::FinishAnimControl_Internal(class UInterpGroup* InInterpGr
 	uFnFinishAnimControl_Internal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFinishAnimControl_Internal, &FinishAnimControl_Internal_Params, nullptr);
 	uFnFinishAnimControl_Internal->FunctionFlags |= 0x400;
-	uFnFinishAnimControl_Internal->iNative = 36857;
+	uFnFinishAnimControl_Internal->iNative = 36855;
 };
 
 // Function REDGame.REDPawn_Matinee.BeginAnimControl_Internal
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35698])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35696])
 // Parameter Info:
 // class UInterpGroup*            InInterpGroup                  (CPF_Parm)
 
@@ -62044,7 +62044,7 @@ void AREDPawn_Matinee::BeginAnimControl_Internal(class UInterpGroup* InInterpGro
 	uFnBeginAnimControl_Internal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnBeginAnimControl_Internal, &BeginAnimControl_Internal_Params, nullptr);
 	uFnBeginAnimControl_Internal->FunctionFlags |= 0x400;
-	uFnBeginAnimControl_Internal->iNative = 35698;
+	uFnBeginAnimControl_Internal->iNative = 35696;
 };
 
 // Function REDGame.REDPawn_Player.Tick
@@ -62069,7 +62069,7 @@ void AREDPawn_Player::eventTick(float DeltaTime)
 };
 
 // Function REDGame.REDPawn_Player.UpdateScarfSystem
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40840])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40838])
 // Parameter Info:
 // uint32_t                       bStopShrink                    (CPF_Parm)
 
@@ -62090,11 +62090,11 @@ void AREDPawn_Player::UpdateScarfSystem(bool bStopShrink)
 	uFnUpdateScarfSystem->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateScarfSystem, &UpdateScarfSystem_Params, nullptr);
 	uFnUpdateScarfSystem->FunctionFlags |= 0x400;
-	uFnUpdateScarfSystem->iNative = 40840;
+	uFnUpdateScarfSystem->iNative = 40838;
 };
 
 // Function REDGame.REDPawn_Player.StopScarfSystem
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40104])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40102])
 // Parameter Info:
 // int32_t                        BlendFrame                     (CPF_Parm)
 
@@ -62115,11 +62115,11 @@ void AREDPawn_Player::StopScarfSystem(int32_t BlendFrame)
 	uFnStopScarfSystem->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopScarfSystem, &StopScarfSystem_Params, nullptr);
 	uFnStopScarfSystem->FunctionFlags |= 0x400;
-	uFnStopScarfSystem->iNative = 40104;
+	uFnStopScarfSystem->iNative = 40102;
 };
 
 // Function REDGame.REDPawn_Player.StartScarfSystem
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40032])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40030])
 // Parameter Info:
 // int32_t                        BlendFrame                     (CPF_Parm)
 
@@ -62140,11 +62140,11 @@ void AREDPawn_Player::StartScarfSystem(int32_t BlendFrame)
 	uFnStartScarfSystem->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStartScarfSystem, &StartScarfSystem_Params, nullptr);
 	uFnStartScarfSystem->FunctionFlags |= 0x400;
-	uFnStartScarfSystem->iNative = 40032;
+	uFnStartScarfSystem->iNative = 40030;
 };
 
 // Function REDGame.REDPawn_Player.SetupMeshInstance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39847])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39845])
 // Parameter Info:
 // class UREDMeshArray*           MeshInfo                       (CPF_Parm)
 // class UREDAnimArray*           AnimInfo                       (CPF_Parm)
@@ -62169,7 +62169,7 @@ void AREDPawn_Player::SetupMeshInstance(class UREDMeshArray* MeshInfo, class URE
 	uFnSetupMeshInstance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetupMeshInstance, &SetupMeshInstance_Params, nullptr);
 	uFnSetupMeshInstance->FunctionFlags |= 0x400;
-	uFnSetupMeshInstance->iNative = 39847;
+	uFnSetupMeshInstance->iNative = 39845;
 };
 
 // Function REDGame.REDPawn_Player.AllocateSoundPlayer
@@ -62192,7 +62192,7 @@ void AREDPawn_Player::AllocateSoundPlayer()
 };
 
 // Function REDGame.REDPawn_Player.StopVoice
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[40110])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[40108])
 // Parameter Info:
 // int32_t                        ch                             (CPF_OptionalParm | CPF_Parm)
 
@@ -62213,11 +62213,11 @@ void AREDPawn_Player::StopVoice(int32_t ch)
 	uFnStopVoice->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopVoice, &StopVoice_Params, nullptr);
 	uFnStopVoice->FunctionFlags |= 0x400;
-	uFnStopVoice->iNative = 40110;
+	uFnStopVoice->iNative = 40108;
 };
 
 // Function REDGame.REDPawn_Player.PlayVoice
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39051])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39049])
 // Parameter Info:
 // class AREDPawn*                pPlayPawn                      (CPF_Parm)
 // class FName                    cueName                        (CPF_Parm)
@@ -62248,11 +62248,11 @@ void AREDPawn_Player::PlayVoice(class AREDPawn* pPlayPawn, const class FName& cu
 	uFnPlayVoice->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayVoice, &PlayVoice_Params, nullptr);
 	uFnPlayVoice->FunctionFlags |= 0x400;
-	uFnPlayVoice->iNative = 39051;
+	uFnPlayVoice->iNative = 39049;
 };
 
 // Function REDGame.REDPawn_Player.PlayPrivateSE
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39039])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[39037])
 // Parameter Info:
 // class AREDPawn*                pPlayPawn                      (CPF_Parm)
 // class FName                    cueName                        (CPF_Parm)
@@ -62277,11 +62277,11 @@ void AREDPawn_Player::PlayPrivateSE(class AREDPawn* pPlayPawn, const class FName
 	uFnPlayPrivateSE->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayPrivateSE, &PlayPrivateSE_Params, nullptr);
 	uFnPlayPrivateSE->FunctionFlags |= 0x400;
-	uFnPlayPrivateSE->iNative = 39039;
+	uFnPlayPrivateSE->iNative = 39037;
 };
 
 // Function REDGame.REDPawn_Player.SpawnEffect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39942])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39940])
 // Parameter Info:
 // class AREDPawn_Effect*         ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    EffectName                     (CPF_Parm)
@@ -62303,13 +62303,13 @@ class AREDPawn_Effect* AREDPawn_Player::SpawnEffect(const class FName& EffectNam
 	uFnSpawnEffect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSpawnEffect, &SpawnEffect_Params, nullptr);
 	uFnSpawnEffect->FunctionFlags |= 0x400;
-	uFnSpawnEffect->iNative = 39942;
+	uFnSpawnEffect->iNative = 39940;
 
 	return SpawnEffect_Params.ReturnValue;
 };
 
 // Function REDGame.REDPawn_Player.GetCameraAnim
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37013])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37011])
 // Parameter Info:
 // class UCameraAnim*             ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    CameraName                     (CPF_Parm)
@@ -62331,7 +62331,7 @@ class UCameraAnim* AREDPawn_Player::GetCameraAnim(const class FName& CameraName)
 	uFnGetCameraAnim->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCameraAnim, &GetCameraAnim_Params, nullptr);
 	uFnGetCameraAnim->FunctionFlags |= 0x400;
-	uFnGetCameraAnim->iNative = 37013;
+	uFnGetCameraAnim->iNative = 37011;
 
 	return GetCameraAnim_Params.ReturnValue;
 };
@@ -62426,7 +62426,7 @@ void AREDPawn_Player::eventPlayCameraAnim(const class FName& CameraName, class A
 };
 
 // Function REDGame.REDPawn_Player.CreateSelfParticle
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36338])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36336])
 // Parameter Info:
 // class UParticleSystemComponent* ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_EditInline)
 // struct FParticleArg            Arg                            (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -62448,7 +62448,7 @@ class UParticleSystemComponent* AREDPawn_Player::CreateSelfParticle(struct FPart
 	uFnCreateSelfParticle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateSelfParticle, &CreateSelfParticle_Params, nullptr);
 	uFnCreateSelfParticle->FunctionFlags |= 0x400;
-	uFnCreateSelfParticle->iNative = 36338;
+	uFnCreateSelfParticle->iNative = 36336;
 
 	memcpy_s(&Arg, sizeof(Arg), &CreateSelfParticle_Params.Arg, sizeof(CreateSelfParticle_Params.Arg));
 
@@ -62477,7 +62477,7 @@ void AREDPawn_Player::SetCharacterColor(int32_t colorNo)
 };
 
 // Function REDGame.REDPlayerController_Battle.SetLocationAndRotation
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39769])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39767])
 // Parameter Info:
 // struct FVector                 NewLocation                    (CPF_Parm)
 // struct FRotator                NewRotation                    (CPF_Parm)
@@ -62500,7 +62500,7 @@ void AREDPlayerController_Battle::SetLocationAndRotation(const struct FVector& N
 	uFnSetLocationAndRotation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLocationAndRotation, &SetLocationAndRotation_Params, nullptr);
 	uFnSetLocationAndRotation->FunctionFlags |= 0x400;
-	uFnSetLocationAndRotation->iNative = 39769;
+	uFnSetLocationAndRotation->iNative = 39767;
 };
 
 // Function REDGame.REDCamera.StopShakeCamera
@@ -62636,7 +62636,7 @@ void AREDCamera::UpdateViewTarget(float DeltaTime, struct FTViewTarget& OutVT)
 };
 
 // Function REDGame.REDCamera.UpdateAttachedPawnFromVT
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40597])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40595])
 // Parameter Info:
 // struct FTViewTarget            VT                             (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -62657,7 +62657,7 @@ void AREDCamera::UpdateAttachedPawnFromVT(struct FTViewTarget& VT)
 	uFnUpdateAttachedPawnFromVT->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateAttachedPawnFromVT, &UpdateAttachedPawnFromVT_Params, nullptr);
 	uFnUpdateAttachedPawnFromVT->FunctionFlags |= 0x400;
-	uFnUpdateAttachedPawnFromVT->iNative = 40597;
+	uFnUpdateAttachedPawnFromVT->iNative = 40595;
 
 	memcpy_s(&VT, sizeof(VT), &UpdateAttachedPawnFromVT_Params.VT, sizeof(UpdateAttachedPawnFromVT_Params.VT));
 };
@@ -62727,7 +62727,7 @@ void AREDCamera::PostBeginPlay()
 };
 
 // Function REDGame.REDCamera_Battle.UpdatePawnMaterialInstance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40807])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40805])
 // Parameter Info:
 
 void AREDCamera_Battle::UpdatePawnMaterialInstance()
@@ -62746,11 +62746,11 @@ void AREDCamera_Battle::UpdatePawnMaterialInstance()
 	uFnUpdatePawnMaterialInstance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnMaterialInstance, &UpdatePawnMaterialInstance_Params, nullptr);
 	uFnUpdatePawnMaterialInstance->FunctionFlags |= 0x400;
-	uFnUpdatePawnMaterialInstance->iNative = 40807;
+	uFnUpdatePawnMaterialInstance->iNative = 40805;
 };
 
 // Function REDGame.REDCamera_Battle.UpdatePawnCameraParam
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40804])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40802])
 // Parameter Info:
 // struct FTPOV                   POV                            (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -62771,13 +62771,13 @@ void AREDCamera_Battle::UpdatePawnCameraParam(struct FTPOV& POV)
 	uFnUpdatePawnCameraParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnCameraParam, &UpdatePawnCameraParam_Params, nullptr);
 	uFnUpdatePawnCameraParam->FunctionFlags |= 0x400;
-	uFnUpdatePawnCameraParam->iNative = 40804;
+	uFnUpdatePawnCameraParam->iNative = 40802;
 
 	memcpy_s(&POV, sizeof(POV), &UpdatePawnCameraParam_Params.POV, sizeof(UpdatePawnCameraParam_Params.POV));
 };
 
 // Function REDGame.REDCamera_Battle.UpdatePawnLightParam
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40805])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40803])
 // Parameter Info:
 // struct FVector                 LightPos                       (CPF_Const | CPF_Parm | CPF_OutParm)
 // struct FRotator                LightRot                       (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -62800,7 +62800,7 @@ void AREDCamera_Battle::UpdatePawnLightParam(struct FVector& LightPos, struct FR
 	uFnUpdatePawnLightParam->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawnLightParam, &UpdatePawnLightParam_Params, nullptr);
 	uFnUpdatePawnLightParam->FunctionFlags |= 0x400;
-	uFnUpdatePawnLightParam->iNative = 40805;
+	uFnUpdatePawnLightParam->iNative = 40803;
 
 	memcpy_s(&LightPos, sizeof(LightPos), &UpdatePawnLightParam_Params.LightPos, sizeof(UpdatePawnLightParam_Params.LightPos));
 	memcpy_s(&LightRot, sizeof(LightRot), &UpdatePawnLightParam_Params.LightRot, sizeof(UpdatePawnLightParam_Params.LightRot));
@@ -62850,7 +62850,7 @@ void AREDCamera_Battle::eventSetAutoUpdate(bool bAuto)
 };
 
 // Function REDGame.REDCamera_Battle.UpdateFromREDGameInfo_Battle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40679])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40677])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 
@@ -62871,11 +62871,11 @@ void AREDCamera_Battle::UpdateFromREDGameInfo_Battle(float DeltaTime)
 	uFnUpdateFromREDGameInfo_Battle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFromREDGameInfo_Battle, &UpdateFromREDGameInfo_Battle_Params, nullptr);
 	uFnUpdateFromREDGameInfo_Battle->FunctionFlags |= 0x400;
-	uFnUpdateFromREDGameInfo_Battle->iNative = 40679;
+	uFnUpdateFromREDGameInfo_Battle->iNative = 40677;
 };
 
 // Function REDGame.REDCamera_Battle.UpdateViewTarget
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[29863])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[29861])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 // struct FTViewTarget            OutVT                          (CPF_Parm | CPF_OutParm)
@@ -62898,13 +62898,13 @@ void AREDCamera_Battle::UpdateViewTarget(float DeltaTime, struct FTViewTarget& O
 	uFnUpdateViewTarget->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateViewTarget, &UpdateViewTarget_Params, nullptr);
 	uFnUpdateViewTarget->FunctionFlags |= 0x400;
-	uFnUpdateViewTarget->iNative = 29863;
+	uFnUpdateViewTarget->iNative = 29861;
 
 	memcpy_s(&OutVT, sizeof(OutVT), &UpdateViewTarget_Params.OutVT, sizeof(UpdateViewTarget_Params.OutVT));
 };
 
 // Function REDGame.REDCamera_Battle.UpdateViewTargetNative
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40883])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40881])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 // struct FTViewTarget            OutVT                          (CPF_Parm | CPF_OutParm)
@@ -62927,13 +62927,13 @@ void AREDCamera_Battle::UpdateViewTargetNative(float DeltaTime, struct FTViewTar
 	uFnUpdateViewTargetNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateViewTargetNative, &UpdateViewTargetNative_Params, nullptr);
 	uFnUpdateViewTargetNative->FunctionFlags |= 0x400;
-	uFnUpdateViewTargetNative->iNative = 40883;
+	uFnUpdateViewTargetNative->iNative = 40881;
 
 	memcpy_s(&OutVT, sizeof(OutVT), &UpdateViewTargetNative_Params.OutVT, sizeof(UpdateViewTargetNative_Params.OutVT));
 };
 
 // Function REDGame.REDCamera_Battle.CheckForceUIBackDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36199])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[36197])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class AREDPawn*                reqPawn                        (CPF_Parm)
@@ -62955,13 +62955,13 @@ bool AREDCamera_Battle::CheckForceUIBackDraw(class AREDPawn* reqPawn)
 	uFnCheckForceUIBackDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckForceUIBackDraw, &CheckForceUIBackDraw_Params, nullptr);
 	uFnCheckForceUIBackDraw->FunctionFlags |= 0x400;
-	uFnCheckForceUIBackDraw->iNative = 36199;
+	uFnCheckForceUIBackDraw->iNative = 36197;
 
 	return CheckForceUIBackDraw_Params.ReturnValue;
 };
 
 // Function REDGame.REDCamera_Battle.IsForceUIBackDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37671])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37669])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -62981,13 +62981,13 @@ bool AREDCamera_Battle::IsForceUIBackDraw()
 	uFnIsForceUIBackDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsForceUIBackDraw, &IsForceUIBackDraw_Params, nullptr);
 	uFnIsForceUIBackDraw->FunctionFlags |= 0x400;
-	uFnIsForceUIBackDraw->iNative = 37671;
+	uFnIsForceUIBackDraw->iNative = 37669;
 
 	return IsForceUIBackDraw_Params.ReturnValue;
 };
 
 // Function REDGame.REDCamera_Battle.SetForceUIBackDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39749])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39747])
 // Parameter Info:
 // class AREDPawn*                reqPawn                        (CPF_Parm)
 // uint32_t                       flag                           (CPF_Parm)
@@ -63010,11 +63010,11 @@ void AREDCamera_Battle::SetForceUIBackDraw(class AREDPawn* reqPawn, bool flag)
 	uFnSetForceUIBackDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetForceUIBackDraw, &SetForceUIBackDraw_Params, nullptr);
 	uFnSetForceUIBackDraw->FunctionFlags |= 0x400;
-	uFnSetForceUIBackDraw->iNative = 39749;
+	uFnSetForceUIBackDraw->iNative = 39747;
 };
 
 // Function REDGame.REDCamera_Battle.BackupMainCamera
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35529])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35527])
 // Parameter Info:
 // struct FTPOV                   OutVT                          (CPF_Parm | CPF_OutParm)
 
@@ -63035,7 +63035,7 @@ void AREDCamera_Battle::BackupMainCamera(struct FTPOV& OutVT)
 	uFnBackupMainCamera->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnBackupMainCamera, &BackupMainCamera_Params, nullptr);
 	uFnBackupMainCamera->FunctionFlags |= 0x400;
-	uFnBackupMainCamera->iNative = 35529;
+	uFnBackupMainCamera->iNative = 35527;
 
 	memcpy_s(&OutVT, sizeof(OutVT), &BackupMainCamera_Params.OutVT, sizeof(BackupMainCamera_Params.OutVT));
 };
@@ -63417,7 +63417,7 @@ void AREDCamera_Battle::eventUpdateBattleCamera(float DeltaTime, struct FTViewTa
 };
 
 // Function REDGame.REDCamera_Battle.UpdateBattleCamera_Func
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40600])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[40598])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 // struct FTViewTarget            OutVT                          (CPF_Parm | CPF_OutParm)
@@ -63440,13 +63440,13 @@ void AREDCamera_Battle::UpdateBattleCamera_Func(float DeltaTime, struct FTViewTa
 	uFnUpdateBattleCamera_Func->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateBattleCamera_Func, &UpdateBattleCamera_Func_Params, nullptr);
 	uFnUpdateBattleCamera_Func->FunctionFlags |= 0x400;
-	uFnUpdateBattleCamera_Func->iNative = 40600;
+	uFnUpdateBattleCamera_Func->iNative = 40598;
 
 	memcpy_s(&OutVT, sizeof(OutVT), &UpdateBattleCamera_Func_Params.OutVT, sizeof(UpdateBattleCamera_Func_Params.OutVT));
 };
 
 // Function REDGame.REDCamera_Battle.EyesViewPointToBaseViewPoint
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36819])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36817])
 // Parameter Info:
 // struct FTPOV                   EyeViewPoint                   (CPF_Parm | CPF_OutParm)
 // struct FTPOV                   BaseEyeViewPoint               (CPF_Parm | CPF_OutParm)
@@ -63469,14 +63469,14 @@ void AREDCamera_Battle::EyesViewPointToBaseViewPoint(struct FTPOV& EyeViewPoint,
 	uFnEyesViewPointToBaseViewPoint->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnEyesViewPointToBaseViewPoint, &EyesViewPointToBaseViewPoint_Params, nullptr);
 	uFnEyesViewPointToBaseViewPoint->FunctionFlags |= 0x400;
-	uFnEyesViewPointToBaseViewPoint->iNative = 36819;
+	uFnEyesViewPointToBaseViewPoint->iNative = 36817;
 
 	memcpy_s(&EyeViewPoint, sizeof(EyeViewPoint), &EyesViewPointToBaseViewPoint_Params.EyeViewPoint, sizeof(EyesViewPointToBaseViewPoint_Params.EyeViewPoint));
 	memcpy_s(&BaseEyeViewPoint, sizeof(BaseEyeViewPoint), &EyesViewPointToBaseViewPoint_Params.BaseEyeViewPoint, sizeof(EyesViewPointToBaseViewPoint_Params.BaseEyeViewPoint));
 };
 
 // Function REDGame.REDCamera_Battle.CalcCenterLocation
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36045])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[36043])
 // Parameter Info:
 // struct FVector                 ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // float                          Weight                         (CPF_Parm)
@@ -63502,7 +63502,7 @@ struct FVector AREDCamera_Battle::CalcCenterLocation(float Weight, struct FVecto
 	uFnCalcCenterLocation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCalcCenterLocation, &CalcCenterLocation_Params, nullptr);
 	uFnCalcCenterLocation->FunctionFlags |= 0x400;
-	uFnCalcCenterLocation->iNative = 36045;
+	uFnCalcCenterLocation->iNative = 36043;
 
 	memcpy_s(&OutVTLocation, sizeof(OutVTLocation), &CalcCenterLocation_Params.OutVTLocation, sizeof(CalcCenterLocation_Params.OutVTLocation));
 	memcpy_s(&PlayCameraLocation, sizeof(PlayCameraLocation), &CalcCenterLocation_Params.PlayCameraLocation, sizeof(CalcCenterLocation_Params.PlayCameraLocation));
@@ -63550,7 +63550,7 @@ void AREDCamera_Battle::eventPlayBattleCamera(class UCameraAnim* Anim, class ARE
 };
 
 // Function REDGame.REDCamera_Battle.UpdateCameraOffset
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40612])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40610])
 // Parameter Info:
 
 void AREDCamera_Battle::UpdateCameraOffset()
@@ -63569,11 +63569,11 @@ void AREDCamera_Battle::UpdateCameraOffset()
 	uFnUpdateCameraOffset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateCameraOffset, &UpdateCameraOffset_Params, nullptr);
 	uFnUpdateCameraOffset->FunctionFlags |= 0x400;
-	uFnUpdateCameraOffset->iNative = 40612;
+	uFnUpdateCameraOffset->iNative = 40610;
 };
 
 // Function REDGame.REDCamera_Battle.GetReplayCameraNum
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37154])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37152])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Type                           (CPF_Parm)
@@ -63595,13 +63595,13 @@ int32_t AREDCamera_Battle::GetReplayCameraNum(int32_t Type)
 	uFnGetReplayCameraNum->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetReplayCameraNum, &GetReplayCameraNum_Params, nullptr);
 	uFnGetReplayCameraNum->FunctionFlags |= 0x400;
-	uFnGetReplayCameraNum->iNative = 37154;
+	uFnGetReplayCameraNum->iNative = 37152;
 
 	return GetReplayCameraNum_Params.ReturnValue;
 };
 
 // Function REDGame.REDCamera_Battle.SetReplayCamera
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39801])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39799])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // int32_t                        Type                           (CPF_Parm)
@@ -63624,7 +63624,7 @@ void AREDCamera_Battle::SetReplayCamera(int32_t Index, int32_t Type)
 	uFnSetReplayCamera->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetReplayCamera, &SetReplayCamera_Params, nullptr);
 	uFnSetReplayCamera->FunctionFlags |= 0x400;
-	uFnSetReplayCamera->iNative = 39801;
+	uFnSetReplayCamera->iNative = 39799;
 };
 
 // Function REDGame.REDCamera_Battle.UpdateFixedCamera
@@ -63716,7 +63716,7 @@ void AREDCamera_Battle::Reset()
 };
 
 // Function REDGame.REDCamera_Battle.ResetForceUIBackDraw
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39381])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39379])
 // Parameter Info:
 
 void AREDCamera_Battle::ResetForceUIBackDraw()
@@ -63735,7 +63735,7 @@ void AREDCamera_Battle::ResetForceUIBackDraw()
 	uFnResetForceUIBackDraw->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetForceUIBackDraw, &ResetForceUIBackDraw_Params, nullptr);
 	uFnResetForceUIBackDraw->FunctionFlags |= 0x400;
-	uFnResetForceUIBackDraw->iNative = 39381;
+	uFnResetForceUIBackDraw->iNative = 39379;
 };
 
 // Function REDGame.REDCamera_Battle.ResetCamera
@@ -63758,7 +63758,7 @@ void AREDCamera_Battle::eventResetCamera()
 };
 
 // Function REDGame.REDCamera_Battle.ResetCameraNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39378])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[39376])
 // Parameter Info:
 
 void AREDCamera_Battle::ResetCameraNative()
@@ -63777,11 +63777,11 @@ void AREDCamera_Battle::ResetCameraNative()
 	uFnResetCameraNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetCameraNative, &ResetCameraNative_Params, nullptr);
 	uFnResetCameraNative->FunctionFlags |= 0x400;
-	uFnResetCameraNative->iNative = 39378;
+	uFnResetCameraNative->iNative = 39376;
 };
 
 // Function REDGame.REDCamera_Battle.SetPlayBattleCameraAnim
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39791])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[39789])
 // Parameter Info:
 // class UCameraAnim*             _Anim                          (CPF_Parm)
 // class AREDPawn*                _Pawn                          (CPF_Parm)
@@ -63822,7 +63822,7 @@ void AREDCamera_Battle::SetPlayBattleCameraAnim(class UCameraAnim* _Anim, class 
 	uFnSetPlayBattleCameraAnim->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPlayBattleCameraAnim, &SetPlayBattleCameraAnim_Params, nullptr);
 	uFnSetPlayBattleCameraAnim->FunctionFlags |= 0x400;
-	uFnSetPlayBattleCameraAnim->iNative = 39791;
+	uFnSetPlayBattleCameraAnim->iNative = 39789;
 
 	memcpy_s(&structToUpdate, sizeof(structToUpdate), &SetPlayBattleCameraAnim_Params.structToUpdate, sizeof(SetPlayBattleCameraAnim_Params.structToUpdate));
 };
@@ -63856,7 +63856,7 @@ void AREDCamera_Battle::DisplayDebug(class AHUD* HUD, float& out_YL, float& out_
 };
 
 // Function REDGame.REDCamera_Battle.IsOnlineRollback
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22938])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22936])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -63876,13 +63876,13 @@ bool AREDCamera_Battle::IsOnlineRollback()
 	uFnIsOnlineRollback->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsOnlineRollback, &IsOnlineRollback_Params, nullptr);
 	uFnIsOnlineRollback->FunctionFlags |= 0x400;
-	uFnIsOnlineRollback->iNative = 22938;
+	uFnIsOnlineRollback->iNative = 22936;
 
 	return IsOnlineRollback_Params.ReturnValue;
 };
 
 // Function REDGame.REDCamera_Battle.IsStopBattle
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37873])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[37871])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -63902,7 +63902,7 @@ bool AREDCamera_Battle::IsStopBattle()
 	uFnIsStopBattle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsStopBattle, &IsStopBattle_Params, nullptr);
 	uFnIsStopBattle->FunctionFlags |= 0x400;
-	uFnIsStopBattle->iNative = 37873;
+	uFnIsStopBattle->iNative = 37871;
 
 	return IsStopBattle_Params.ReturnValue;
 };
@@ -63961,7 +63961,7 @@ void AREDCamera_Lobby::DisplayDebug(class AHUD* HUD, float& out_YL, float& out_Y
 };
 
 // Function REDGame.REDCamera_Lobby.UpdatePawn_AfterCamera
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40803])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[40801])
 // Parameter Info:
 
 void AREDCamera_Lobby::UpdatePawn_AfterCamera()
@@ -63980,7 +63980,7 @@ void AREDCamera_Lobby::UpdatePawn_AfterCamera()
 	uFnUpdatePawn_AfterCamera->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdatePawn_AfterCamera, &UpdatePawn_AfterCamera_Params, nullptr);
 	uFnUpdatePawn_AfterCamera->FunctionFlags |= 0x400;
-	uFnUpdatePawn_AfterCamera->iNative = 40803;
+	uFnUpdatePawn_AfterCamera->iNative = 40801;
 };
 
 // Function REDGame.REDCameraShakePatterns.GetShakePatternFromName

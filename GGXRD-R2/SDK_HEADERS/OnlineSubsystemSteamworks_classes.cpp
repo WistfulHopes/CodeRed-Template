@@ -22,7 +22,7 @@
 */
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.GetServerAddr
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21966])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21964])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        OutServerIP                    (CPF_Parm | CPF_OutParm)
@@ -46,7 +46,7 @@ bool UOnlineAuthInterfaceSteamworks::GetServerAddr(int32_t& OutServerIP, int32_t
 	uFnGetServerAddr->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetServerAddr, &GetServerAddr_Params, nullptr);
 	uFnGetServerAddr->FunctionFlags |= 0x400;
-	uFnGetServerAddr->iNative = 21966;
+	uFnGetServerAddr->iNative = 21964;
 
 	memcpy_s(&OutServerIP, sizeof(OutServerIP), &GetServerAddr_Params.OutServerIP, sizeof(GetServerAddr_Params.OutServerIP));
 	memcpy_s(&OutServerPort, sizeof(OutServerPort), &GetServerAddr_Params.OutServerPort, sizeof(GetServerAddr_Params.OutServerPort));
@@ -55,7 +55,7 @@ bool UOnlineAuthInterfaceSteamworks::GetServerAddr(int32_t& OutServerIP, int32_t
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.GetServerUniqueId
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21969])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21967])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            OutServerUID                   (CPF_Parm | CPF_OutParm)
@@ -77,7 +77,7 @@ bool UOnlineAuthInterfaceSteamworks::GetServerUniqueId(struct FUniqueNetId& OutS
 	uFnGetServerUniqueId->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetServerUniqueId, &GetServerUniqueId_Params, nullptr);
 	uFnGetServerUniqueId->FunctionFlags |= 0x400;
-	uFnGetServerUniqueId->iNative = 21969;
+	uFnGetServerUniqueId->iNative = 21967;
 
 	memcpy_s(&OutServerUID, sizeof(OutServerUID), &GetServerUniqueId_Params.OutServerUID, sizeof(GetServerUniqueId_Params.OutServerUID));
 
@@ -85,7 +85,7 @@ bool UOnlineAuthInterfaceSteamworks::GetServerUniqueId(struct FUniqueNetId& OutS
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.VerifyServerAuthSession
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30009])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30007])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            ServerUID                      (CPF_Parm)
@@ -111,13 +111,13 @@ bool UOnlineAuthInterfaceSteamworks::VerifyServerAuthSession(const struct FUniqu
 	uFnVerifyServerAuthSession->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnVerifyServerAuthSession, &VerifyServerAuthSession_Params, nullptr);
 	uFnVerifyServerAuthSession->FunctionFlags |= 0x400;
-	uFnVerifyServerAuthSession->iNative = 30009;
+	uFnVerifyServerAuthSession->iNative = 30007;
 
 	return VerifyServerAuthSession_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.CreateServerAuthSession
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[18991])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[18989])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            ClientUID                      (CPF_Parm)
@@ -145,7 +145,7 @@ bool UOnlineAuthInterfaceSteamworks::CreateServerAuthSession(const struct FUniqu
 	uFnCreateServerAuthSession->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateServerAuthSession, &CreateServerAuthSession_Params, nullptr);
 	uFnCreateServerAuthSession->FunctionFlags |= 0x400;
-	uFnCreateServerAuthSession->iNative = 18991;
+	uFnCreateServerAuthSession->iNative = 18989;
 
 	memcpy_s(&OutAuthTicketUID, sizeof(OutAuthTicketUID), &CreateServerAuthSession_Params.OutAuthTicketUID, sizeof(CreateServerAuthSession_Params.OutAuthTicketUID));
 
@@ -153,7 +153,7 @@ bool UOnlineAuthInterfaceSteamworks::CreateServerAuthSession(const struct FUniqu
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.VerifyClientAuthSession
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30005])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30003])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            ClientUID                      (CPF_Parm)
@@ -181,13 +181,13 @@ bool UOnlineAuthInterfaceSteamworks::VerifyClientAuthSession(const struct FUniqu
 	uFnVerifyClientAuthSession->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnVerifyClientAuthSession, &VerifyClientAuthSession_Params, nullptr);
 	uFnVerifyClientAuthSession->FunctionFlags |= 0x400;
-	uFnVerifyClientAuthSession->iNative = 30005;
+	uFnVerifyClientAuthSession->iNative = 30003;
 
 	return VerifyClientAuthSession_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.CreateClientAuthSession
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[18977])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[18975])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            ServerUID                      (CPF_Parm)
@@ -217,7 +217,7 @@ bool UOnlineAuthInterfaceSteamworks::CreateClientAuthSession(const struct FUniqu
 	uFnCreateClientAuthSession->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateClientAuthSession, &CreateClientAuthSession_Params, nullptr);
 	uFnCreateClientAuthSession->FunctionFlags |= 0x400;
-	uFnCreateClientAuthSession->iNative = 18977;
+	uFnCreateClientAuthSession->iNative = 18975;
 
 	memcpy_s(&OutAuthTicketUID, sizeof(OutAuthTicketUID), &CreateClientAuthSession_Params.OutAuthTicketUID, sizeof(CreateClientAuthSession_Params.OutAuthTicketUID));
 
@@ -225,7 +225,7 @@ bool UOnlineAuthInterfaceSteamworks::CreateClientAuthSession(const struct FUniqu
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.SendServerAuthRequest
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27683])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27681])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            ServerUID                      (CPF_Parm)
@@ -247,13 +247,13 @@ bool UOnlineAuthInterfaceSteamworks::SendServerAuthRequest(const struct FUniqueN
 	uFnSendServerAuthRequest->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendServerAuthRequest, &SendServerAuthRequest_Params, nullptr);
 	uFnSendServerAuthRequest->FunctionFlags |= 0x400;
-	uFnSendServerAuthRequest->iNative = 27683;
+	uFnSendServerAuthRequest->iNative = 27681;
 
 	return SendServerAuthRequest_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.SendClientAuthRequest
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27666])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27664])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class UPlayer*                 ClientConnection               (CPF_Parm)
@@ -277,7 +277,7 @@ bool UOnlineAuthInterfaceSteamworks::SendClientAuthRequest(class UPlayer* Client
 	uFnSendClientAuthRequest->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendClientAuthRequest, &SendClientAuthRequest_Params, nullptr);
 	uFnSendClientAuthRequest->FunctionFlags |= 0x400;
-	uFnSendClientAuthRequest->iNative = 27666;
+	uFnSendClientAuthRequest->iNative = 27664;
 
 	return SendClientAuthRequest_Params.ReturnValue;
 };
@@ -376,7 +376,7 @@ void UOnlineGameInterfaceSteamworks::OnUnregisterPlayerComplete(const class FNam
 };
 
 // Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.UnregisterPlayer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29783])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29781])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -400,7 +400,7 @@ bool UOnlineGameInterfaceSteamworks::UnregisterPlayer(const class FName& Session
 	uFnUnregisterPlayer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnregisterPlayer, &UnregisterPlayer_Params, nullptr);
 	uFnUnregisterPlayer->FunctionFlags |= 0x400;
-	uFnUnregisterPlayer->iNative = 29783;
+	uFnUnregisterPlayer->iNative = 29781;
 
 	return UnregisterPlayer_Params.ReturnValue;
 };
@@ -473,7 +473,7 @@ void UOnlineGameInterfaceSteamworks::OnRegisterPlayerComplete(const class FName&
 };
 
 // Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.RegisterPlayer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27019])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27017])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -499,13 +499,13 @@ bool UOnlineGameInterfaceSteamworks::RegisterPlayer(const class FName& SessionNa
 	uFnRegisterPlayer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegisterPlayer, &RegisterPlayer_Params, nullptr);
 	uFnRegisterPlayer->FunctionFlags |= 0x400;
-	uFnRegisterPlayer->iNative = 27019;
+	uFnRegisterPlayer->iNative = 27017;
 
 	return RegisterPlayer_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.AcceptGameInvite
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[14414])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[14412])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -529,7 +529,7 @@ bool UOnlineGameInterfaceSteamworks::AcceptGameInvite(uint8_t LocalUserNum, cons
 	uFnAcceptGameInvite->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAcceptGameInvite, &AcceptGameInvite_Params, nullptr);
 	uFnAcceptGameInvite->FunctionFlags |= 0x400;
-	uFnAcceptGameInvite->iNative = 14414;
+	uFnAcceptGameInvite->iNative = 14412;
 
 	return AcceptGameInvite_Params.ReturnValue;
 };
@@ -604,7 +604,7 @@ void UOnlineGameInterfaceSteamworks::AddGameInviteAcceptedDelegate(uint8_t Local
 };
 
 // Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.UpdateOnlineGame
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29842])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29840])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -630,13 +630,13 @@ bool UOnlineGameInterfaceSteamworks::UpdateOnlineGame(const class FName& Session
 	uFnUpdateOnlineGame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateOnlineGame, &UpdateOnlineGame_Params, nullptr);
 	uFnUpdateOnlineGame->FunctionFlags |= 0x400;
-	uFnUpdateOnlineGame->iNative = 29842;
+	uFnUpdateOnlineGame->iNative = 29840;
 
 	return UpdateOnlineGame_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.GetLobbyFromCommandline
-// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35085])
+// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35083])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bMarkAsJoined                  (CPF_OptionalParm | CPF_Parm)
@@ -660,7 +660,7 @@ bool UOnlineLobbyInterfaceSteamworks::GetLobbyFromCommandline(bool bMarkAsJoined
 	uFnGetLobbyFromCommandline->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetLobbyFromCommandline, &GetLobbyFromCommandline_Params, nullptr);
 	uFnGetLobbyFromCommandline->FunctionFlags |= 0x400;
-	uFnGetLobbyFromCommandline->iNative = 35085;
+	uFnGetLobbyFromCommandline->iNative = 35083;
 
 	memcpy_s(&LobbyId, sizeof(LobbyId), &GetLobbyFromCommandline_Params.LobbyId, sizeof(GetLobbyFromCommandline_Params.LobbyId));
 
@@ -735,7 +735,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbyInvite(const struct FUniqueNetId& L
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.InviteToLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35097])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35095])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -759,13 +759,13 @@ bool UOnlineLobbyInterfaceSteamworks::InviteToLobby(const struct FUniqueNetId& L
 	uFnInviteToLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInviteToLobby, &InviteToLobby_Params, nullptr);
 	uFnInviteToLobby->FunctionFlags |= 0x400;
-	uFnInviteToLobby->iNative = 35097;
+	uFnInviteToLobby->iNative = 35095;
 
 	return InviteToLobby_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyOwner
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35233])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35231])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -789,13 +789,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyOwner(const struct FUniqueNetId& L
 	uFnSetLobbyOwner->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbyOwner, &SetLobbyOwner_Params, nullptr);
 	uFnSetLobbyOwner->FunctionFlags |= 0x400;
-	uFnSetLobbyOwner->iNative = 35233;
+	uFnSetLobbyOwner->iNative = 35231;
 
 	return SetLobbyOwner_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyLock
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35232])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35230])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -819,13 +819,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyLock(const struct FUniqueNetId& Lo
 	uFnSetLobbyLock->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbyLock, &SetLobbyLock_Params, nullptr);
 	uFnSetLobbyLock->FunctionFlags |= 0x400;
-	uFnSetLobbyLock->iNative = 35232;
+	uFnSetLobbyLock->iNative = 35230;
 
 	return SetLobbyLock_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35236])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35234])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -849,13 +849,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyType(const struct FUniqueNetId& Lo
 	uFnSetLobbyType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbyType, &SetLobbyType_Params, nullptr);
 	uFnSetLobbyType->FunctionFlags |= 0x400;
-	uFnSetLobbyType->iNative = 35236;
+	uFnSetLobbyType->iNative = 35234;
 
 	return SetLobbyType_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyServer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35234])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35232])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -881,13 +881,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyServer(const struct FUniqueNetId& 
 	uFnSetLobbyServer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbyServer, &SetLobbyServer_Params, nullptr);
 	uFnSetLobbyServer->FunctionFlags |= 0x400;
-	uFnSetLobbyServer->iNative = 35234;
+	uFnSetLobbyServer->iNative = 35232;
 
 	return SetLobbyServer_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.RemoveLobbySetting
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35224])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35222])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -911,13 +911,13 @@ bool UOnlineLobbyInterfaceSteamworks::RemoveLobbySetting(const struct FUniqueNet
 	uFnRemoveLobbySetting->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRemoveLobbySetting, &RemoveLobbySetting_Params, nullptr);
 	uFnRemoveLobbySetting->FunctionFlags |= 0x400;
-	uFnRemoveLobbySetting->iNative = 35224;
+	uFnRemoveLobbySetting->iNative = 35222;
 
 	return RemoveLobbySetting_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbySetting
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35235])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35233])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -943,13 +943,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbySetting(const struct FUniqueNetId&
 	uFnSetLobbySetting->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbySetting, &SetLobbySetting_Params, nullptr);
 	uFnSetLobbySetting->FunctionFlags |= 0x400;
-	uFnSetLobbySetting->iNative = 35235;
+	uFnSetLobbySetting->iNative = 35233;
 
 	return SetLobbySetting_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.GetLobbyAdmin
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35084])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35082])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -973,7 +973,7 @@ bool UOnlineLobbyInterfaceSteamworks::GetLobbyAdmin(const struct FUniqueNetId& L
 	uFnGetLobbyAdmin->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetLobbyAdmin, &GetLobbyAdmin_Params, nullptr);
 	uFnGetLobbyAdmin->FunctionFlags |= 0x400;
-	uFnGetLobbyAdmin->iNative = 35084;
+	uFnGetLobbyAdmin->iNative = 35082;
 
 	memcpy_s(&AdminId, sizeof(AdminId), &GetLobbyAdmin_Params.AdminId, sizeof(GetLobbyAdmin_Params.AdminId));
 
@@ -1579,7 +1579,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbySettingsUpdate(int32_t LobbyIndex, 
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SendLobbyBinaryData
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35225])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35223])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -1603,7 +1603,7 @@ bool UOnlineLobbyInterfaceSteamworks::SendLobbyBinaryData(const struct FUniqueNe
 	uFnSendLobbyBinaryData->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendLobbyBinaryData, &SendLobbyBinaryData_Params, nullptr);
 	uFnSendLobbyBinaryData->FunctionFlags |= 0x400;
-	uFnSendLobbyBinaryData->iNative = 35225;
+	uFnSendLobbyBinaryData->iNative = 35223;
 
 	memcpy_s(&Data, sizeof(Data), &SendLobbyBinaryData_Params.Data, sizeof(SendLobbyBinaryData_Params.Data));
 
@@ -1611,7 +1611,7 @@ bool UOnlineLobbyInterfaceSteamworks::SendLobbyBinaryData(const struct FUniqueNe
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SendLobbyMessage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35226])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35224])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -1635,13 +1635,13 @@ bool UOnlineLobbyInterfaceSteamworks::SendLobbyMessage(const struct FUniqueNetId
 	uFnSendLobbyMessage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendLobbyMessage, &SendLobbyMessage_Params, nullptr);
 	uFnSendLobbyMessage->FunctionFlags |= 0x400;
-	uFnSendLobbyMessage->iNative = 35226;
+	uFnSendLobbyMessage->iNative = 35224;
 
 	return SendLobbyMessage_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyUserSetting
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35237])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35235])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -1667,13 +1667,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyUserSetting(const struct FUniqueNe
 	uFnSetLobbyUserSetting->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbyUserSetting, &SetLobbyUserSetting_Params, nullptr);
 	uFnSetLobbyUserSetting->FunctionFlags |= 0x400;
-	uFnSetLobbyUserSetting->iNative = 35237;
+	uFnSetLobbyUserSetting->iNative = 35235;
 
 	return SetLobbyUserSetting_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.LeaveLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35120])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35118])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -1695,7 +1695,7 @@ bool UOnlineLobbyInterfaceSteamworks::LeaveLobby(const struct FUniqueNetId& Lobb
 	uFnLeaveLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLeaveLobby, &LeaveLobby_Params, nullptr);
 	uFnLeaveLobby->FunctionFlags |= 0x400;
-	uFnLeaveLobby->iNative = 35120;
+	uFnLeaveLobby->iNative = 35118;
 
 	return LeaveLobby_Params.ReturnValue;
 };
@@ -1801,7 +1801,7 @@ void UOnlineLobbyInterfaceSteamworks::OnJoinLobbyComplete(bool bWasSuccessful, i
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.JoinLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35099])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35097])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -1823,7 +1823,7 @@ bool UOnlineLobbyInterfaceSteamworks::JoinLobby(const struct FUniqueNetId& Lobby
 	uFnJoinLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJoinLobby, &JoinLobby_Params, nullptr);
 	uFnJoinLobby->FunctionFlags |= 0x400;
-	uFnJoinLobby->iNative = 35099;
+	uFnJoinLobby->iNative = 35097;
 
 	return JoinLobby_Params.ReturnValue;
 };
@@ -1917,7 +1917,7 @@ void UOnlineLobbyInterfaceSteamworks::OnFindLobbiesComplete(bool bWasSuccessful,
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.UpdateFoundLobbies
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[35263])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[35261])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_OptionalParm | CPF_Parm)
@@ -1939,7 +1939,7 @@ bool UOnlineLobbyInterfaceSteamworks::UpdateFoundLobbies(const struct FUniqueNet
 	uFnUpdateFoundLobbies->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFoundLobbies, &UpdateFoundLobbies_Params, nullptr);
 	uFnUpdateFoundLobbies->FunctionFlags |= 0x400;
-	uFnUpdateFoundLobbies->iNative = 35263;
+	uFnUpdateFoundLobbies->iNative = 35261;
 
 	return UpdateFoundLobbies_Params.ReturnValue;
 };
@@ -2223,7 +2223,7 @@ void UOnlineSubsystemSteamworks::AddWriteSharedFileCompleteDelegate(const struct
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteSharedFile
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30365])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30363])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2249,7 +2249,7 @@ bool UOnlineSubsystemSteamworks::WriteSharedFile(const class FString& UserId, co
 	uFnWriteSharedFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteSharedFile, &WriteSharedFile_Params, nullptr);
 	uFnWriteSharedFile->FunctionFlags |= 0x400;
-	uFnWriteSharedFile->iNative = 30365;
+	uFnWriteSharedFile->iNative = 30363;
 
 	memcpy_s(&Contents, sizeof(Contents), &WriteSharedFile_Params.Contents, sizeof(WriteSharedFile_Params.Contents));
 
@@ -2326,7 +2326,7 @@ void UOnlineSubsystemSteamworks::AddReadSharedFileCompleteDelegate(const struct 
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadSharedFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26883])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26881])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  SharedHandle                   (CPF_Parm | CPF_NeedCtorLink)
@@ -2348,7 +2348,7 @@ bool UOnlineSubsystemSteamworks::ReadSharedFile(const class FString& SharedHandl
 	uFnReadSharedFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadSharedFile, &ReadSharedFile_Params, nullptr);
 	uFnReadSharedFile->FunctionFlags |= 0x400;
-	uFnReadSharedFile->iNative = 26883;
+	uFnReadSharedFile->iNative = 26881;
 
 	return ReadSharedFile_Params.ReturnValue;
 };
@@ -2377,7 +2377,7 @@ void UOnlineSubsystemSteamworks::OnReadSharedFileComplete(bool bWasSuccessful, c
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearSharedFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18452])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18450])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  SharedHandle                   (CPF_Parm | CPF_NeedCtorLink)
@@ -2399,13 +2399,13 @@ bool UOnlineSubsystemSteamworks::ClearSharedFile(const class FString& SharedHand
 	uFnClearSharedFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearSharedFile, &ClearSharedFile_Params, nullptr);
 	uFnClearSharedFile->FunctionFlags |= 0x400;
-	uFnClearSharedFile->iNative = 18452;
+	uFnClearSharedFile->iNative = 18450;
 
 	return ClearSharedFile_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearSharedFiles
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18453])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18451])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -2425,13 +2425,13 @@ bool UOnlineSubsystemSteamworks::ClearSharedFiles()
 	uFnClearSharedFiles->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearSharedFiles, &ClearSharedFiles_Params, nullptr);
 	uFnClearSharedFiles->FunctionFlags |= 0x400;
-	uFnClearSharedFiles->iNative = 18453;
+	uFnClearSharedFiles->iNative = 18451;
 
 	return ClearSharedFiles_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetSharedFileContents
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21979])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21977])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  SharedHandle                   (CPF_Parm | CPF_NeedCtorLink)
@@ -2455,7 +2455,7 @@ bool UOnlineSubsystemSteamworks::GetSharedFileContents(const class FString& Shar
 	uFnGetSharedFileContents->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSharedFileContents, &GetSharedFileContents_Params, nullptr);
 	uFnGetSharedFileContents->FunctionFlags |= 0x400;
-	uFnGetSharedFileContents->iNative = 21979;
+	uFnGetSharedFileContents->iNative = 21977;
 
 	memcpy_s(&FileContents, sizeof(FileContents), &GetSharedFileContents_Params.FileContents, sizeof(GetSharedFileContents_Params.FileContents));
 
@@ -2505,7 +2505,7 @@ void UOnlineSubsystemSteamworks::AddDeleteUserFileCompleteDelegate(const struct 
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DeleteUserFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[19556])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[19554])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2533,7 +2533,7 @@ bool UOnlineSubsystemSteamworks::DeleteUserFile(const class FString& UserId, con
 	uFnDeleteUserFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDeleteUserFile, &DeleteUserFile_Params, nullptr);
 	uFnDeleteUserFile->FunctionFlags |= 0x400;
-	uFnDeleteUserFile->iNative = 19556;
+	uFnDeleteUserFile->iNative = 19554;
 
 	return DeleteUserFile_Params.ReturnValue;
 };
@@ -2606,7 +2606,7 @@ void UOnlineSubsystemSteamworks::AddWriteUserFileCompleteDelegate(const struct F
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteUserFile
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30368])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30366])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2632,7 +2632,7 @@ bool UOnlineSubsystemSteamworks::WriteUserFile(const class FString& UserId, cons
 	uFnWriteUserFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteUserFile, &WriteUserFile_Params, nullptr);
 	uFnWriteUserFile->FunctionFlags |= 0x400;
-	uFnWriteUserFile->iNative = 30368;
+	uFnWriteUserFile->iNative = 30366;
 
 	memcpy_s(&FileContents, sizeof(FileContents), &WriteUserFile_Params.FileContents, sizeof(WriteUserFile_Params.FileContents));
 
@@ -2707,7 +2707,7 @@ void UOnlineSubsystemSteamworks::AddReadUserFileCompleteDelegate(const struct FS
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadUserFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26889])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26887])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2731,7 +2731,7 @@ bool UOnlineSubsystemSteamworks::ReadUserFile(const class FString& UserId, const
 	uFnReadUserFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadUserFile, &ReadUserFile_Params, nullptr);
 	uFnReadUserFile->FunctionFlags |= 0x400;
-	uFnReadUserFile->iNative = 26889;
+	uFnReadUserFile->iNative = 26887;
 
 	return ReadUserFile_Params.ReturnValue;
 };
@@ -2762,7 +2762,7 @@ void UOnlineSubsystemSteamworks::OnReadUserFileComplete(bool bWasSuccessful, con
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetUserFileList
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[22059])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[22057])
 // Parameter Info:
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
 // class TArray<struct FEmsFile>  UserFiles                      (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -2785,7 +2785,7 @@ void UOnlineSubsystemSteamworks::GetUserFileList(const class FString& UserId, cl
 	uFnGetUserFileList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetUserFileList, &GetUserFileList_Params, nullptr);
 	uFnGetUserFileList->FunctionFlags |= 0x400;
-	uFnGetUserFileList->iNative = 22059;
+	uFnGetUserFileList->iNative = 22057;
 
 	memcpy_s(&UserFiles, sizeof(UserFiles), &GetUserFileList_Params.UserFiles, sizeof(GetUserFileList_Params.UserFiles));
 };
@@ -2833,7 +2833,7 @@ void UOnlineSubsystemSteamworks::AddEnumerateUserFileCompleteDelegate(const stru
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.EnumerateUserFiles
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[20427])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[20425])
 // Parameter Info:
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
 
@@ -2854,7 +2854,7 @@ void UOnlineSubsystemSteamworks::EnumerateUserFiles(const class FString& UserId)
 	uFnEnumerateUserFiles->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnEnumerateUserFiles, &EnumerateUserFiles_Params, nullptr);
 	uFnEnumerateUserFiles->FunctionFlags |= 0x400;
-	uFnEnumerateUserFiles->iNative = 20427;
+	uFnEnumerateUserFiles->iNative = 20425;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnEnumerateUserFilesComplete
@@ -2881,7 +2881,7 @@ void UOnlineSubsystemSteamworks::OnEnumerateUserFilesComplete(bool bWasSuccessfu
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18364])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18362])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2905,13 +2905,13 @@ bool UOnlineSubsystemSteamworks::ClearFile(const class FString& UserId, const cl
 	uFnClearFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearFile, &ClearFile_Params, nullptr);
 	uFnClearFile->FunctionFlags |= 0x400;
-	uFnClearFile->iNative = 18364;
+	uFnClearFile->iNative = 18362;
 
 	return ClearFile_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFiles
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18365])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18363])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2933,13 +2933,13 @@ bool UOnlineSubsystemSteamworks::ClearFiles(const class FString& UserId)
 	uFnClearFiles->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearFiles, &ClearFiles_Params, nullptr);
 	uFnClearFiles->FunctionFlags |= 0x400;
-	uFnClearFiles->iNative = 18365;
+	uFnClearFiles->iNative = 18363;
 
 	return ClearFiles_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetFileContents
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21731])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21729])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2965,7 +2965,7 @@ bool UOnlineSubsystemSteamworks::GetFileContents(const class FString& UserId, co
 	uFnGetFileContents->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetFileContents, &GetFileContents_Params, nullptr);
 	uFnGetFileContents->FunctionFlags |= 0x400;
-	uFnGetFileContents->iNative = 21731;
+	uFnGetFileContents->iNative = 21729;
 
 	memcpy_s(&FileContents, sizeof(FileContents), &GetFileContents_Params.FileContents, sizeof(GetFileContents_Params.FileContents));
 
@@ -2973,7 +2973,7 @@ bool UOnlineSubsystemSteamworks::GetFileContents(const class FString& UserId, co
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteUserFileInternal
-// [0x00440401] (FUNC_Final | FUNC_Native | FUNC_Private | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35273])
+// [0x00440401] (FUNC_Final | FUNC_Native | FUNC_Private | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35271])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2999,7 +2999,7 @@ bool UOnlineSubsystemSteamworks::WriteUserFileInternal(const class FString& User
 	uFnWriteUserFileInternal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteUserFileInternal, &WriteUserFileInternal_Params, nullptr);
 	uFnWriteUserFileInternal->FunctionFlags |= 0x400;
-	uFnWriteUserFileInternal->iNative = 35273;
+	uFnWriteUserFileInternal->iNative = 35271;
 
 	memcpy_s(&FileContents, sizeof(FileContents), &WriteUserFileInternal_Params.FileContents, sizeof(WriteUserFileInternal_Params.FileContents));
 
@@ -3007,7 +3007,7 @@ bool UOnlineSubsystemSteamworks::WriteUserFileInternal(const class FString& User
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetFriendJoinURL
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35083])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35081])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            FriendUID                      (CPF_Parm)
@@ -3033,7 +3033,7 @@ bool UOnlineSubsystemSteamworks::GetFriendJoinURL(const struct FUniqueNetId& Fri
 	uFnGetFriendJoinURL->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetFriendJoinURL, &GetFriendJoinURL_Params, nullptr);
 	uFnGetFriendJoinURL->FunctionFlags |= 0x400;
-	uFnGetFriendJoinURL->iNative = 35083;
+	uFnGetFriendJoinURL->iNative = 35081;
 
 	memcpy_s(&ServerURL, sizeof(ServerURL), &GetFriendJoinURL_Params.ServerURL, sizeof(GetFriendJoinURL_Params.ServerURL));
 	memcpy_s(&ServerUID, sizeof(ServerUID), &GetFriendJoinURL_Params.ServerUID, sizeof(GetFriendJoinURL_Params.ServerUID));
@@ -3042,7 +3042,7 @@ bool UOnlineSubsystemSteamworks::GetFriendJoinURL(const struct FUniqueNetId& Fri
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetCommandlineJoinURL
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35082])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35080])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bMarkAsJoined                  (CPF_Parm)
@@ -3068,7 +3068,7 @@ bool UOnlineSubsystemSteamworks::GetCommandlineJoinURL(bool bMarkAsJoined, class
 	uFnGetCommandlineJoinURL->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCommandlineJoinURL, &GetCommandlineJoinURL_Params, nullptr);
 	uFnGetCommandlineJoinURL->FunctionFlags |= 0x400;
-	uFnGetCommandlineJoinURL->iNative = 35082;
+	uFnGetCommandlineJoinURL->iNative = 35080;
 
 	memcpy_s(&ServerURL, sizeof(ServerURL), &GetCommandlineJoinURL_Params.ServerURL, sizeof(GetCommandlineJoinURL_Params.ServerURL));
 	memcpy_s(&ServerUID, sizeof(ServerUID), &GetCommandlineJoinURL_Params.ServerUID, sizeof(GetCommandlineJoinURL_Params.ServerUID));
@@ -3077,7 +3077,7 @@ bool UOnlineSubsystemSteamworks::GetCommandlineJoinURL(bool bMarkAsJoined, class
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.Int64ToUniqueNetId
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35091])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35089])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UIDString                      (CPF_Parm | CPF_NeedCtorLink)
@@ -3101,7 +3101,7 @@ bool UOnlineSubsystemSteamworks::Int64ToUniqueNetId(const class FString& UIDStri
 	uFnInt64ToUniqueNetId->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInt64ToUniqueNetId, &Int64ToUniqueNetId_Params, nullptr);
 	uFnInt64ToUniqueNetId->FunctionFlags |= 0x400;
-	uFnInt64ToUniqueNetId->iNative = 35091;
+	uFnInt64ToUniqueNetId->iNative = 35089;
 
 	memcpy_s(&OutUID, sizeof(OutUID), &Int64ToUniqueNetId_Params.OutUID, sizeof(Int64ToUniqueNetId_Params.OutUID));
 
@@ -3109,7 +3109,7 @@ bool UOnlineSubsystemSteamworks::Int64ToUniqueNetId(const class FString& UIDStri
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UniqueNetIdToInt64
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35260])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35258])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // struct FUniqueNetId            Uid                            (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -3131,7 +3131,7 @@ class FString UOnlineSubsystemSteamworks::UniqueNetIdToInt64(struct FUniqueNetId
 	uFnUniqueNetIdToInt64->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUniqueNetIdToInt64, &UniqueNetIdToInt64_Params, nullptr);
 	uFnUniqueNetIdToInt64->FunctionFlags |= 0x400;
-	uFnUniqueNetIdToInt64->iNative = 35260;
+	uFnUniqueNetIdToInt64->iNative = 35258;
 
 	memcpy_s(&Uid, sizeof(Uid), &UniqueNetIdToInt64_Params.Uid, sizeof(UniqueNetIdToInt64_Params.Uid));
 
@@ -3163,7 +3163,7 @@ bool UOnlineSubsystemSteamworks::eventSetLobbyInterface(class UObject* NewInterf
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.NotifyVOIPPlaybackFinished
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35188])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35186])
 // Parameter Info:
 // class UAudioComponent*         VOIPAudioComponent             (CPF_Parm | CPF_EditInline)
 
@@ -3184,7 +3184,7 @@ void UOnlineSubsystemSteamworks::NotifyVOIPPlaybackFinished(class UAudioComponen
 	uFnNotifyVOIPPlaybackFinished->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNotifyVOIPPlaybackFinished, &NotifyVOIPPlaybackFinished_Params, nullptr);
 	uFnNotifyVOIPPlaybackFinished->FunctionFlags |= 0x400;
-	uFnNotifyVOIPPlaybackFinished->iNative = 35188;
+	uFnNotifyVOIPPlaybackFinished->iNative = 35186;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnVOIPPlaybackFinished
@@ -3209,7 +3209,7 @@ void UOnlineSubsystemSteamworks::OnVOIPPlaybackFinished(class UAudioComponent* A
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowProfileUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[35241])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[35239])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3235,13 +3235,13 @@ bool UOnlineSubsystemSteamworks::ShowProfileUI(uint8_t LocalUserNum, const class
 	uFnShowProfileUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowProfileUI, &ShowProfileUI_Params, nullptr);
 	uFnShowProfileUI->FunctionFlags |= 0x400;
-	uFnShowProfileUI->iNative = 35241;
+	uFnShowProfileUI->iNative = 35239;
 
 	return ShowProfileUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UniqueNetIdToPlayerName
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35261])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35259])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // struct FUniqueNetId            Uid                            (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -3263,7 +3263,7 @@ class FString UOnlineSubsystemSteamworks::UniqueNetIdToPlayerName(struct FUnique
 	uFnUniqueNetIdToPlayerName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUniqueNetIdToPlayerName, &UniqueNetIdToPlayerName_Params, nullptr);
 	uFnUniqueNetIdToPlayerName->FunctionFlags |= 0x400;
-	uFnUniqueNetIdToPlayerName->iNative = 35261;
+	uFnUniqueNetIdToPlayerName->iNative = 35259;
 
 	memcpy_s(&Uid, sizeof(Uid), &UniqueNetIdToPlayerName_Params.Uid, sizeof(UniqueNetIdToPlayerName_Params.Uid));
 
@@ -3271,7 +3271,7 @@ class FString UOnlineSubsystemSteamworks::UniqueNetIdToPlayerName(struct FUnique
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DisplayAchievementProgress
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35057])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35055])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        AchievementId                  (CPF_Parm)
@@ -3297,13 +3297,13 @@ bool UOnlineSubsystemSteamworks::DisplayAchievementProgress(int32_t AchievementI
 	uFnDisplayAchievementProgress->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDisplayAchievementProgress, &DisplayAchievementProgress_Params, nullptr);
 	uFnDisplayAchievementProgress->FunctionFlags |= 0x400;
-	uFnDisplayAchievementProgress->iNative = 35057;
+	uFnDisplayAchievementProgress->iNative = 35055;
 
 	return DisplayAchievementProgress_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CreateLeaderboard
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35039])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35037])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  LeaderboardName                (CPF_Parm | CPF_NeedCtorLink)
@@ -3329,7 +3329,7 @@ bool UOnlineSubsystemSteamworks::CreateLeaderboard(const class FString& Leaderbo
 	uFnCreateLeaderboard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateLeaderboard, &CreateLeaderboard_Params, nullptr);
 	uFnCreateLeaderboard->FunctionFlags |= 0x400;
-	uFnCreateLeaderboard->iNative = 35039;
+	uFnCreateLeaderboard->iNative = 35037;
 
 	return CreateLeaderboard_Params.ReturnValue;
 };
@@ -3571,7 +3571,7 @@ bool UOnlineSubsystemSteamworks::UnlockAvatarAward(uint8_t LocalUserNum, int32_t
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetSteamClanData
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35087])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35085])
 // Parameter Info:
 // class TArray<struct FSteamPlayerClanData> Results                        (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 
@@ -3592,7 +3592,7 @@ void UOnlineSubsystemSteamworks::GetSteamClanData(class TArray<struct FSteamPlay
 	uFnGetSteamClanData->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSteamClanData, &GetSteamClanData_Params, nullptr);
 	uFnGetSteamClanData->FunctionFlags |= 0x400;
-	uFnGetSteamClanData->iNative = 35087;
+	uFnGetSteamClanData->iNative = 35085;
 
 	memcpy_s(&Results, sizeof(Results), &GetSteamClanData_Params.Results, sizeof(GetSteamClanData_Params.Results));
 };
@@ -3661,7 +3661,7 @@ void UOnlineSubsystemSteamworks::OnGetNumberOfCurrentPlayersComplete(int32_t Tot
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetNumberOfCurrentPlayers
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21845])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21843])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3681,13 +3681,13 @@ bool UOnlineSubsystemSteamworks::GetNumberOfCurrentPlayers()
 	uFnGetNumberOfCurrentPlayers->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetNumberOfCurrentPlayers, &GetNumberOfCurrentPlayers_Params, nullptr);
 	uFnGetNumberOfCurrentPlayers->FunctionFlags |= 0x400;
-	uFnGetNumberOfCurrentPlayers->iNative = 21845;
+	uFnGetNumberOfCurrentPlayers->iNative = 21843;
 
 	return GetNumberOfCurrentPlayers_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineAvatar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35216])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35214])
 // Parameter Info:
 // struct FUniqueNetId            PlayerNetId                    (CPF_Const | CPF_Parm)
 // int32_t                        Size                           (CPF_Parm)
@@ -3712,7 +3712,7 @@ void UOnlineSubsystemSteamworks::ReadOnlineAvatar(const struct FUniqueNetId& Pla
 	uFnReadOnlineAvatar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadOnlineAvatar, &ReadOnlineAvatar_Params, nullptr);
 	uFnReadOnlineAvatar->FunctionFlags |= 0x400;
-	uFnReadOnlineAvatar->iNative = 35216;
+	uFnReadOnlineAvatar->iNative = 35214;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadOnlineAvatarComplete
@@ -3739,7 +3739,7 @@ void UOnlineSubsystemSteamworks::OnReadOnlineAvatarComplete(const struct FUnique
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowCustomPlayersUI
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[28299])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[28297])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3767,7 +3767,7 @@ bool UOnlineSubsystemSteamworks::ShowCustomPlayersUI(uint8_t LocalUserNum, const
 	uFnShowCustomPlayersUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowCustomPlayersUI, &ShowCustomPlayersUI_Params, nullptr);
 	uFnShowCustomPlayersUI->FunctionFlags |= 0x400;
-	uFnShowCustomPlayersUI->iNative = 28299;
+	uFnShowCustomPlayersUI->iNative = 28297;
 
 	memcpy_s(&Players, sizeof(Players), &ShowCustomPlayersUI_Params.Players, sizeof(ShowCustomPlayersUI_Params.Players));
 
@@ -3775,7 +3775,7 @@ bool UOnlineSubsystemSteamworks::ShowCustomPlayersUI(uint8_t LocalUserNum, const
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetAchievements
-// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21578])
+// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21576])
 // Parameter Info:
 // EOnlineEnumerationReadState    ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3801,7 +3801,7 @@ EOnlineEnumerationReadState UOnlineSubsystemSteamworks::GetAchievements(uint8_t 
 	uFnGetAchievements->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetAchievements, &GetAchievements_Params, nullptr);
 	uFnGetAchievements->FunctionFlags |= 0x400;
-	uFnGetAchievements->iNative = 21578;
+	uFnGetAchievements->iNative = 21576;
 
 	memcpy_s(&Achievements, sizeof(Achievements), &GetAchievements_Params.Achievements, sizeof(GetAchievements_Params.Achievements));
 
@@ -3876,7 +3876,7 @@ void UOnlineSubsystemSteamworks::OnReadAchievementsComplete(int32_t TitleId)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadAchievements
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26851])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26849])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3904,13 +3904,13 @@ bool UOnlineSubsystemSteamworks::ReadAchievements(uint8_t LocalUserNum, int32_t 
 	uFnReadAchievements->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadAchievements, &ReadAchievements_Params, nullptr);
 	uFnReadAchievements->FunctionFlags |= 0x400;
-	uFnReadAchievements->iNative = 26851;
+	uFnReadAchievements->iNative = 26849;
 
 	return ReadAchievements_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowPlayersUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28328])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28326])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3932,13 +3932,13 @@ bool UOnlineSubsystemSteamworks::ShowPlayersUI(uint8_t LocalUserNum)
 	uFnShowPlayersUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowPlayersUI, &ShowPlayersUI_Params, nullptr);
 	uFnShowPlayersUI->FunctionFlags |= 0x400;
-	uFnShowPlayersUI->iNative = 28328;
+	uFnShowPlayersUI->iNative = 28326;
 
 	return ShowPlayersUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowFriendsInviteUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28307])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28305])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3962,13 +3962,13 @@ bool UOnlineSubsystemSteamworks::ShowFriendsInviteUI(uint8_t LocalUserNum, const
 	uFnShowFriendsInviteUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowFriendsInviteUI, &ShowFriendsInviteUI_Params, nullptr);
 	uFnShowFriendsInviteUI->FunctionFlags |= 0x400;
-	uFnShowFriendsInviteUI->iNative = 28307;
+	uFnShowFriendsInviteUI->iNative = 28305;
 
 	return ShowFriendsInviteUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowFriendsUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28308])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28306])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3990,7 +3990,7 @@ bool UOnlineSubsystemSteamworks::ShowFriendsUI(uint8_t LocalUserNum)
 	uFnShowFriendsUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowFriendsUI, &ShowFriendsUI_Params, nullptr);
 	uFnShowFriendsUI->FunctionFlags |= 0x400;
-	uFnShowFriendsUI->iNative = 28308;
+	uFnShowFriendsUI->iNative = 28306;
 
 	return ShowFriendsUI_Params.ReturnValue;
 };
@@ -4061,7 +4061,7 @@ void UOnlineSubsystemSteamworks::OnProfileDataChanged()
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnlockGamerPicture
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29767])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29765])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4085,7 +4085,7 @@ bool UOnlineSubsystemSteamworks::UnlockGamerPicture(uint8_t LocalUserNum, int32_
 	uFnUnlockGamerPicture->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnlockGamerPicture, &UnlockGamerPicture_Params, nullptr);
 	uFnUnlockGamerPicture->FunctionFlags |= 0x400;
-	uFnUnlockGamerPicture->iNative = 29767;
+	uFnUnlockGamerPicture->iNative = 29765;
 
 	return UnlockGamerPicture_Params.ReturnValue;
 };
@@ -4158,7 +4158,7 @@ void UOnlineSubsystemSteamworks::OnUnlockAchievementComplete(bool bWasSuccessful
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnlockAchievement
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29764])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29762])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4184,13 +4184,13 @@ bool UOnlineSubsystemSteamworks::UnlockAchievement(uint8_t LocalUserNum, int32_t
 	uFnUnlockAchievement->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnlockAchievement, &UnlockAchievement_Params, nullptr);
 	uFnUnlockAchievement->FunctionFlags |= 0x400;
-	uFnUnlockAchievement->iNative = 29764;
+	uFnUnlockAchievement->iNative = 29762;
 
 	return UnlockAchievement_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsDeviceValid
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[22889])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[22887])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        DeviceID                       (CPF_Parm)
@@ -4214,13 +4214,13 @@ bool UOnlineSubsystemSteamworks::IsDeviceValid(int32_t DeviceID, int32_t SizeNee
 	uFnIsDeviceValid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsDeviceValid, &IsDeviceValid_Params, nullptr);
 	uFnIsDeviceValid->FunctionFlags |= 0x400;
-	uFnIsDeviceValid->iNative = 22889;
+	uFnIsDeviceValid->iNative = 22887;
 
 	return IsDeviceValid_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetDeviceSelectionResults
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21717])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21715])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4244,7 +4244,7 @@ int32_t UOnlineSubsystemSteamworks::GetDeviceSelectionResults(uint8_t LocalUserN
 	uFnGetDeviceSelectionResults->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetDeviceSelectionResults, &GetDeviceSelectionResults_Params, nullptr);
 	uFnGetDeviceSelectionResults->FunctionFlags |= 0x400;
-	uFnGetDeviceSelectionResults->iNative = 21717;
+	uFnGetDeviceSelectionResults->iNative = 21715;
 
 	memcpy_s(&DeviceName, sizeof(DeviceName), &GetDeviceSelectionResults_Params.DeviceName, sizeof(GetDeviceSelectionResults_Params.DeviceName));
 
@@ -4319,7 +4319,7 @@ void UOnlineSubsystemSteamworks::OnDeviceSelectionComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowDeviceSelectionUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28303])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28301])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4345,13 +4345,13 @@ bool UOnlineSubsystemSteamworks::ShowDeviceSelectionUI(uint8_t LocalUserNum, int
 	uFnShowDeviceSelectionUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowDeviceSelectionUI, &ShowDeviceSelectionUI_Params, nullptr);
 	uFnShowDeviceSelectionUI->FunctionFlags |= 0x400;
-	uFnShowDeviceSelectionUI->iNative = 28303;
+	uFnShowDeviceSelectionUI->iNative = 28301;
 
 	return ShowDeviceSelectionUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowMembershipMarketplaceUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28320])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28318])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4373,13 +4373,13 @@ bool UOnlineSubsystemSteamworks::ShowMembershipMarketplaceUI(uint8_t LocalUserNu
 	uFnShowMembershipMarketplaceUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowMembershipMarketplaceUI, &ShowMembershipMarketplaceUI_Params, nullptr);
 	uFnShowMembershipMarketplaceUI->FunctionFlags |= 0x400;
-	uFnShowMembershipMarketplaceUI->iNative = 28320;
+	uFnShowMembershipMarketplaceUI->iNative = 28318;
 
 	return ShowMembershipMarketplaceUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowContentMarketplaceUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28296])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28294])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4405,13 +4405,13 @@ bool UOnlineSubsystemSteamworks::ShowContentMarketplaceUI(uint8_t LocalUserNum, 
 	uFnShowContentMarketplaceUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowContentMarketplaceUI, &ShowContentMarketplaceUI_Params, nullptr);
 	uFnShowContentMarketplaceUI->FunctionFlags |= 0x400;
-	uFnShowContentMarketplaceUI->iNative = 28296;
+	uFnShowContentMarketplaceUI->iNative = 28294;
 
 	return ShowContentMarketplaceUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowInviteUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28314])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28312])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4435,13 +4435,13 @@ bool UOnlineSubsystemSteamworks::ShowInviteUI(uint8_t LocalUserNum, const class 
 	uFnShowInviteUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowInviteUI, &ShowInviteUI_Params, nullptr);
 	uFnShowInviteUI->FunctionFlags |= 0x400;
-	uFnShowInviteUI->iNative = 28314;
+	uFnShowInviteUI->iNative = 28312;
 
 	return ShowInviteUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowAchievementsUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28293])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28291])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4463,13 +4463,13 @@ bool UOnlineSubsystemSteamworks::ShowAchievementsUI(uint8_t LocalUserNum)
 	uFnShowAchievementsUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowAchievementsUI, &ShowAchievementsUI_Params, nullptr);
 	uFnShowAchievementsUI->FunctionFlags |= 0x400;
-	uFnShowAchievementsUI->iNative = 28293;
+	uFnShowAchievementsUI->iNative = 28291;
 
 	return ShowAchievementsUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowMessagesUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28321])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28319])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4491,13 +4491,13 @@ bool UOnlineSubsystemSteamworks::ShowMessagesUI(uint8_t LocalUserNum)
 	uFnShowMessagesUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowMessagesUI, &ShowMessagesUI_Params, nullptr);
 	uFnShowMessagesUI->FunctionFlags |= 0x400;
-	uFnShowMessagesUI->iNative = 28321;
+	uFnShowMessagesUI->iNative = 28319;
 
 	return ShowMessagesUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowGamerCardUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28309])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28307])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4521,13 +4521,13 @@ bool UOnlineSubsystemSteamworks::ShowGamerCardUI(uint8_t LocalUserNum, const str
 	uFnShowGamerCardUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowGamerCardUI, &ShowGamerCardUI_Params, nullptr);
 	uFnShowGamerCardUI->FunctionFlags |= 0x400;
-	uFnShowGamerCardUI->iNative = 28309;
+	uFnShowGamerCardUI->iNative = 28307;
 
 	return ShowGamerCardUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowFeedbackUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28304])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28302])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4551,7 +4551,7 @@ bool UOnlineSubsystemSteamworks::ShowFeedbackUI(uint8_t LocalUserNum, const stru
 	uFnShowFeedbackUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowFeedbackUI, &ShowFeedbackUI_Params, nullptr);
 	uFnShowFeedbackUI->FunctionFlags |= 0x400;
-	uFnShowFeedbackUI->iNative = 28304;
+	uFnShowFeedbackUI->iNative = 28302;
 
 	return ShowFeedbackUI_Params.ReturnValue;
 };
@@ -4663,7 +4663,7 @@ void UOnlineSubsystemSteamworks::CalcAggregateSkill(const class TArray<struct FD
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterStatGuid
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[27028])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[27026])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            PlayerID                       (CPF_Parm)
@@ -4687,7 +4687,7 @@ bool UOnlineSubsystemSteamworks::RegisterStatGuid(const struct FUniqueNetId& Pla
 	uFnRegisterStatGuid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegisterStatGuid, &RegisterStatGuid_Params, nullptr);
 	uFnRegisterStatGuid->FunctionFlags |= 0x400;
-	uFnRegisterStatGuid->iNative = 27028;
+	uFnRegisterStatGuid->iNative = 27026;
 
 	memcpy_s(&ClientStatGuid, sizeof(ClientStatGuid), &RegisterStatGuid_Params.ClientStatGuid, sizeof(RegisterStatGuid_Params.ClientStatGuid));
 
@@ -4695,7 +4695,7 @@ bool UOnlineSubsystemSteamworks::RegisterStatGuid(const struct FUniqueNetId& Pla
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetClientStatGuid
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21649])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21647])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -4715,7 +4715,7 @@ class FString UOnlineSubsystemSteamworks::GetClientStatGuid()
 	uFnGetClientStatGuid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetClientStatGuid, &GetClientStatGuid_Params, nullptr);
 	uFnGetClientStatGuid->FunctionFlags |= 0x400;
-	uFnGetClientStatGuid->iNative = 21649;
+	uFnGetClientStatGuid->iNative = 21647;
 
 	return GetClientStatGuid_Params.ReturnValue;
 };
@@ -4784,7 +4784,7 @@ void UOnlineSubsystemSteamworks::OnRegisterHostStatGuidComplete(bool bWasSuccess
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterHostStatGuid
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[27014])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[27012])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  HostStatGuid                   (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -4806,7 +4806,7 @@ bool UOnlineSubsystemSteamworks::RegisterHostStatGuid(class FString& HostStatGui
 	uFnRegisterHostStatGuid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegisterHostStatGuid, &RegisterHostStatGuid_Params, nullptr);
 	uFnRegisterHostStatGuid->FunctionFlags |= 0x400;
-	uFnRegisterHostStatGuid->iNative = 27014;
+	uFnRegisterHostStatGuid->iNative = 27012;
 
 	memcpy_s(&HostStatGuid, sizeof(HostStatGuid), &RegisterHostStatGuid_Params.HostStatGuid, sizeof(RegisterHostStatGuid_Params.HostStatGuid));
 
@@ -4814,7 +4814,7 @@ bool UOnlineSubsystemSteamworks::RegisterHostStatGuid(class FString& HostStatGui
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetHostStatGuid
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21776])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21774])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -4834,7 +4834,7 @@ class FString UOnlineSubsystemSteamworks::GetHostStatGuid()
 	uFnGetHostStatGuid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetHostStatGuid, &GetHostStatGuid_Params, nullptr);
 	uFnGetHostStatGuid->FunctionFlags |= 0x400;
-	uFnGetHostStatGuid->iNative = 21776;
+	uFnGetHostStatGuid->iNative = 21774;
 
 	return GetHostStatGuid_Params.ReturnValue;
 };
@@ -5001,7 +5001,7 @@ void UOnlineSubsystemSteamworks::OnJoinFriendGameComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.JoinFriendGame
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[23004])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[23002])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5025,7 +5025,7 @@ bool UOnlineSubsystemSteamworks::JoinFriendGame(uint8_t LocalUserNum, const stru
 	uFnJoinFriendGame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJoinFriendGame, &JoinFriendGame_Params, nullptr);
 	uFnJoinFriendGame->FunctionFlags |= 0x400;
-	uFnJoinFriendGame->iNative = 23004;
+	uFnJoinFriendGame->iNative = 23002;
 
 	return JoinFriendGame_Params.ReturnValue;
 };
@@ -5100,7 +5100,7 @@ void UOnlineSubsystemSteamworks::OnReceivedGameInvite(uint8_t LocalUserNum, cons
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SendGameInviteToFriends
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[27671])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[27669])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5126,13 +5126,13 @@ bool UOnlineSubsystemSteamworks::SendGameInviteToFriends(uint8_t LocalUserNum, c
 	uFnSendGameInviteToFriends->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendGameInviteToFriends, &SendGameInviteToFriends_Params, nullptr);
 	uFnSendGameInviteToFriends->FunctionFlags |= 0x400;
-	uFnSendGameInviteToFriends->iNative = 27671;
+	uFnSendGameInviteToFriends->iNative = 27669;
 
 	return SendGameInviteToFriends_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SendGameInviteToFriend
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[27670])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[27668])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5158,13 +5158,13 @@ bool UOnlineSubsystemSteamworks::SendGameInviteToFriend(uint8_t LocalUserNum, co
 	uFnSendGameInviteToFriend->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendGameInviteToFriend, &SendGameInviteToFriend_Params, nullptr);
 	uFnSendGameInviteToFriend->FunctionFlags |= 0x400;
-	uFnSendGameInviteToFriend->iNative = 27670;
+	uFnSendGameInviteToFriend->iNative = 27668;
 
 	return SendGameInviteToFriend_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SendMessageToFriend
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27678])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27676])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5190,7 +5190,7 @@ bool UOnlineSubsystemSteamworks::SendMessageToFriendW(uint8_t LocalUserNum, cons
 	uFnSendMessageToFriendW->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendMessageToFriendW, &SendMessageToFriendW_Params, nullptr);
 	uFnSendMessageToFriendW->FunctionFlags |= 0x400;
-	uFnSendMessageToFriendW->iNative = 27678;
+	uFnSendMessageToFriendW->iNative = 27676;
 
 	return SendMessageToFriendW_Params.ReturnValue;
 };
@@ -5269,7 +5269,7 @@ void UOnlineSubsystemSteamworks::OnFriendInviteReceived(uint8_t LocalUserNum, co
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DenyFriendInvite
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[19565])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[19563])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5293,13 +5293,13 @@ bool UOnlineSubsystemSteamworks::DenyFriendInvite(uint8_t LocalUserNum, const st
 	uFnDenyFriendInvite->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDenyFriendInvite, &DenyFriendInvite_Params, nullptr);
 	uFnDenyFriendInvite->FunctionFlags |= 0x400;
-	uFnDenyFriendInvite->iNative = 19565;
+	uFnDenyFriendInvite->iNative = 19563;
 
 	return DenyFriendInvite_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AcceptFriendInvite
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[14413])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[14411])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5323,13 +5323,13 @@ bool UOnlineSubsystemSteamworks::AcceptFriendInvite(uint8_t LocalUserNum, const 
 	uFnAcceptFriendInvite->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAcceptFriendInvite, &AcceptFriendInvite_Params, nullptr);
 	uFnAcceptFriendInvite->FunctionFlags |= 0x400;
-	uFnAcceptFriendInvite->iNative = 14413;
+	uFnAcceptFriendInvite->iNative = 14411;
 
 	return AcceptFriendInvite_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RemoveFriend
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27087])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27085])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5353,7 +5353,7 @@ bool UOnlineSubsystemSteamworks::RemoveFriend(uint8_t LocalUserNum, const struct
 	uFnRemoveFriend->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRemoveFriend, &RemoveFriend_Params, nullptr);
 	uFnRemoveFriend->FunctionFlags |= 0x400;
-	uFnRemoveFriend->iNative = 27087;
+	uFnRemoveFriend->iNative = 27085;
 
 	return RemoveFriend_Params.ReturnValue;
 };
@@ -5426,7 +5426,7 @@ void UOnlineSubsystemSteamworks::OnAddFriendByNameComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriendByName
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[14564])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[14562])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5452,13 +5452,13 @@ bool UOnlineSubsystemSteamworks::AddFriendByName(uint8_t LocalUserNum, const cla
 	uFnAddFriendByName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAddFriendByName, &AddFriendByName_Params, nullptr);
 	uFnAddFriendByName->FunctionFlags |= 0x400;
-	uFnAddFriendByName->iNative = 14564;
+	uFnAddFriendByName->iNative = 14562;
 
 	return AddFriendByName_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriend
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[14563])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[14561])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5484,7 +5484,7 @@ bool UOnlineSubsystemSteamworks::AddFriend(uint8_t LocalUserNum, const struct FU
 	uFnAddFriend->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAddFriend, &AddFriend_Params, nullptr);
 	uFnAddFriend->FunctionFlags |= 0x400;
-	uFnAddFriend->iNative = 14563;
+	uFnAddFriend->iNative = 14561;
 
 	return AddFriend_Params.ReturnValue;
 };
@@ -5579,7 +5579,7 @@ void UOnlineSubsystemSteamworks::OnKeyboardInputComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowKeyboardUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28315])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28313])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5613,13 +5613,13 @@ bool UOnlineSubsystemSteamworks::ShowKeyboardUI(uint8_t LocalUserNum, const clas
 	uFnShowKeyboardUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowKeyboardUI, &ShowKeyboardUI_Params, nullptr);
 	uFnShowKeyboardUI->FunctionFlags |= 0x400;
-	uFnShowKeyboardUI->iNative = 28315;
+	uFnShowKeyboardUI->iNative = 28313;
 
 	return ShowKeyboardUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetOnlineStatus
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[28065])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[28063])
 // Parameter Info:
 // uint8_t                        LocalUserNum                   (CPF_Parm)
 // int32_t                        StatusId                       (CPF_Parm)
@@ -5646,7 +5646,7 @@ void UOnlineSubsystemSteamworks::SetOnlineStatus(uint8_t LocalUserNum, int32_t S
 	uFnSetOnlineStatus->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetOnlineStatus, &SetOnlineStatus_Params, nullptr);
 	uFnSetOnlineStatus->FunctionFlags |= 0x400;
-	uFnSetOnlineStatus->iNative = 28065;
+	uFnSetOnlineStatus->iNative = 28063;
 
 	memcpy_s(&LocalizedStringSettings, sizeof(LocalizedStringSettings), &SetOnlineStatus_Params.LocalizedStringSettings, sizeof(SetOnlineStatus_Params.LocalizedStringSettings));
 	memcpy_s(&Properties, sizeof(Properties), &SetOnlineStatus_Params.Properties, sizeof(SetOnlineStatus_Params.Properties));
@@ -5822,7 +5822,7 @@ void UOnlineSubsystemSteamworks::OnCreateOnlineAccountCompleted(EOnlineAccountCr
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CreateOnlineAccount
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[18984])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[18982])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserName                       (CPF_Parm | CPF_NeedCtorLink)
@@ -5850,7 +5850,7 @@ bool UOnlineSubsystemSteamworks::CreateOnlineAccount(const class FString& UserNa
 	uFnCreateOnlineAccount->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateOnlineAccount, &CreateOnlineAccount_Params, nullptr);
 	uFnCreateOnlineAccount->FunctionFlags |= 0x400;
-	uFnCreateOnlineAccount->iNative = 18984;
+	uFnCreateOnlineAccount->iNative = 18982;
 
 	return CreateOnlineAccount_Params.ReturnValue;
 };
@@ -5880,7 +5880,7 @@ EOnlineEnumerationReadState UOnlineSubsystemSteamworks::GetTitleFileState(const 
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetTitleFileContents
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[22034])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[22032])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Filename                       (CPF_Parm | CPF_NeedCtorLink)
@@ -5904,7 +5904,7 @@ bool UOnlineSubsystemSteamworks::GetTitleFileContents(const class FString& Filen
 	uFnGetTitleFileContents->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetTitleFileContents, &GetTitleFileContents_Params, nullptr);
 	uFnGetTitleFileContents->FunctionFlags |= 0x400;
-	uFnGetTitleFileContents->iNative = 22034;
+	uFnGetTitleFileContents->iNative = 22032;
 
 	memcpy_s(&FileContents, sizeof(FileContents), &GetTitleFileContents_Params.FileContents, sizeof(GetTitleFileContents_Params.FileContents));
 
@@ -5954,7 +5954,7 @@ void UOnlineSubsystemSteamworks::AddReadTitleFileCompleteDelegate(const struct F
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadTitleFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26886])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26884])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  FileToRead                     (CPF_Parm | CPF_NeedCtorLink)
@@ -5976,7 +5976,7 @@ bool UOnlineSubsystemSteamworks::ReadTitleFile(const class FString& FileToRead)
 	uFnReadTitleFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadTitleFile, &ReadTitleFile_Params, nullptr);
 	uFnReadTitleFile->FunctionFlags |= 0x400;
-	uFnReadTitleFile->iNative = 26886;
+	uFnReadTitleFile->iNative = 26884;
 
 	return ReadTitleFile_Params.ReturnValue;
 };
@@ -6177,7 +6177,7 @@ void UOnlineSubsystemSteamworks::OnConnectionStatusChange(EOnlineServerConnectio
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsControllerConnected
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22881])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22879])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        ControllerId                   (CPF_Parm)
@@ -6199,7 +6199,7 @@ bool UOnlineSubsystemSteamworks::IsControllerConnected(int32_t ControllerId)
 	uFnIsControllerConnected->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsControllerConnected, &IsControllerConnected_Params, nullptr);
 	uFnIsControllerConnected->FunctionFlags |= 0x400;
-	uFnIsControllerConnected->iNative = 22881;
+	uFnIsControllerConnected->iNative = 22879;
 
 	return IsControllerConnected_Params.ReturnValue;
 };
@@ -6270,7 +6270,7 @@ void UOnlineSubsystemSteamworks::OnControllerChange(int32_t ControllerId, bool b
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetNetworkNotificationPosition
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28059])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28057])
 // Parameter Info:
 // ENetworkNotificationPosition   NewPos                         (CPF_Parm)
 
@@ -6291,7 +6291,7 @@ void UOnlineSubsystemSteamworks::SetNetworkNotificationPosition(ENetworkNotifica
 	uFnSetNetworkNotificationPosition->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetNetworkNotificationPosition, &SetNetworkNotificationPosition_Params, nullptr);
 	uFnSetNetworkNotificationPosition->FunctionFlags |= 0x400;
-	uFnSetNetworkNotificationPosition->iNative = 28059;
+	uFnSetNetworkNotificationPosition->iNative = 28057;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetNetworkNotificationPosition
@@ -6493,7 +6493,7 @@ class FString UOnlineSubsystemSteamworks::eventGetPlayerNicknameFromIndex(int32_
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteOnlinePlayerScores
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30356])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30354])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -6519,7 +6519,7 @@ bool UOnlineSubsystemSteamworks::WriteOnlinePlayerScores(const class FName& Sess
 	uFnWriteOnlinePlayerScores->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteOnlinePlayerScores, &WriteOnlinePlayerScores_Params, nullptr);
 	uFnWriteOnlinePlayerScores->FunctionFlags |= 0x400;
-	uFnWriteOnlinePlayerScores->iNative = 30356;
+	uFnWriteOnlinePlayerScores->iNative = 30354;
 
 	memcpy_s(&PlayerScores, sizeof(PlayerScores), &WriteOnlinePlayerScores_Params.PlayerScores, sizeof(WriteOnlinePlayerScores_Params.PlayerScores));
 
@@ -6592,7 +6592,7 @@ void UOnlineSubsystemSteamworks::OnFlushOnlineStatsComplete(const class FName& S
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.FlushOnlineStats
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21155])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21153])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -6614,13 +6614,13 @@ bool UOnlineSubsystemSteamworks::FlushOnlineStats(const class FName& SessionName
 	uFnFlushOnlineStats->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFlushOnlineStats, &FlushOnlineStats_Params, nullptr);
 	uFnFlushOnlineStats->FunctionFlags |= 0x400;
-	uFnFlushOnlineStats->iNative = 21155;
+	uFnFlushOnlineStats->iNative = 21153;
 
 	return FlushOnlineStats_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteOnlineStats
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30357])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30355])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -6646,13 +6646,13 @@ bool UOnlineSubsystemSteamworks::WriteOnlineStats(const class FName& SessionName
 	uFnWriteOnlineStats->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteOnlineStats, &WriteOnlineStats_Params, nullptr);
 	uFnWriteOnlineStats->FunctionFlags |= 0x400;
-	uFnWriteOnlineStats->iNative = 30357;
+	uFnWriteOnlineStats->iNative = 30355;
 
 	return WriteOnlineStats_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.FreeStats
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21363])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21361])
 // Parameter Info:
 // class UOnlineStatsRead*        StatsRead                      (CPF_Parm)
 
@@ -6673,7 +6673,7 @@ void UOnlineSubsystemSteamworks::FreeStats(class UOnlineStatsRead* StatsRead)
 	uFnFreeStats->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFreeStats, &FreeStats_Params, nullptr);
 	uFnFreeStats->FunctionFlags |= 0x400;
-	uFnFreeStats->iNative = 21363;
+	uFnFreeStats->iNative = 21361;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadOnlineStatsCompleteDelegate
@@ -6740,7 +6740,7 @@ void UOnlineSubsystemSteamworks::OnReadOnlineStatsComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStatsByRankAroundPlayer
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26870])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26868])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -6766,13 +6766,13 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStatsByRankAroundPlayer(uint8_t Local
 	uFnReadOnlineStatsByRankAroundPlayer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadOnlineStatsByRankAroundPlayer, &ReadOnlineStatsByRankAroundPlayer_Params, nullptr);
 	uFnReadOnlineStatsByRankAroundPlayer->FunctionFlags |= 0x400;
-	uFnReadOnlineStatsByRankAroundPlayer->iNative = 26870;
+	uFnReadOnlineStatsByRankAroundPlayer->iNative = 26868;
 
 	return ReadOnlineStatsByRankAroundPlayer_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStatsByRank
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26869])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26867])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class UOnlineStatsRead*        StatsRead                      (CPF_Parm)
@@ -6798,13 +6798,13 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStatsByRank(class UOnlineStatsRead* S
 	uFnReadOnlineStatsByRank->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadOnlineStatsByRank, &ReadOnlineStatsByRank_Params, nullptr);
 	uFnReadOnlineStatsByRank->FunctionFlags |= 0x400;
-	uFnReadOnlineStatsByRank->iNative = 26869;
+	uFnReadOnlineStatsByRank->iNative = 26867;
 
 	return ReadOnlineStatsByRank_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStatsForFriends
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26872])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26870])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -6828,13 +6828,13 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStatsForFriends(uint8_t LocalUserNum,
 	uFnReadOnlineStatsForFriends->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadOnlineStatsForFriends, &ReadOnlineStatsForFriends_Params, nullptr);
 	uFnReadOnlineStatsForFriends->FunctionFlags |= 0x400;
-	uFnReadOnlineStatsForFriends->iNative = 26872;
+	uFnReadOnlineStatsForFriends->iNative = 26870;
 
 	return ReadOnlineStatsForFriends_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStats
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[26868])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[26866])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class UOnlineStatsRead*        StatsRead                      (CPF_Parm)
@@ -6858,7 +6858,7 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStats(class UOnlineStatsRead* StatsRe
 	uFnReadOnlineStats->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadOnlineStats, &ReadOnlineStats_Params, nullptr);
 	uFnReadOnlineStats->FunctionFlags |= 0x400;
-	uFnReadOnlineStats->iNative = 26868;
+	uFnReadOnlineStats->iNative = 26866;
 
 	memcpy_s(&Players, sizeof(Players), &ReadOnlineStats_Params.Players, sizeof(ReadOnlineStats_Params.Players));
 
@@ -6866,7 +6866,7 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStats(class UOnlineStatsRead* StatsRe
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetSpeechRecognitionObject
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28157])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28155])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -6890,13 +6890,13 @@ bool UOnlineSubsystemSteamworks::SetSpeechRecognitionObject(uint8_t LocalUserNum
 	uFnSetSpeechRecognitionObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetSpeechRecognitionObject, &SetSpeechRecognitionObject_Params, nullptr);
 	uFnSetSpeechRecognitionObject->FunctionFlags |= 0x400;
-	uFnSetSpeechRecognitionObject->iNative = 28157;
+	uFnSetSpeechRecognitionObject->iNative = 28155;
 
 	return SetSpeechRecognitionObject_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SelectVocabulary
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27663])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27661])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -6920,7 +6920,7 @@ bool UOnlineSubsystemSteamworks::SelectVocabulary(uint8_t LocalUserNum, int32_t 
 	uFnSelectVocabulary->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSelectVocabulary, &SelectVocabulary_Params, nullptr);
 	uFnSelectVocabulary->FunctionFlags |= 0x400;
-	uFnSelectVocabulary->iNative = 27663;
+	uFnSelectVocabulary->iNative = 27661;
 
 	return SelectVocabulary_Params.ReturnValue;
 };
@@ -6991,7 +6991,7 @@ void UOnlineSubsystemSteamworks::OnRecognitionComplete()
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetRecognitionResults
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21943])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21941])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7015,7 +7015,7 @@ bool UOnlineSubsystemSteamworks::GetRecognitionResults(uint8_t LocalUserNum, cla
 	uFnGetRecognitionResults->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetRecognitionResults, &GetRecognitionResults_Params, nullptr);
 	uFnGetRecognitionResults->FunctionFlags |= 0x400;
-	uFnGetRecognitionResults->iNative = 21943;
+	uFnGetRecognitionResults->iNative = 21941;
 
 	memcpy_s(&Words, sizeof(Words), &GetRecognitionResults_Params.Words, sizeof(GetRecognitionResults_Params.Words));
 
@@ -7023,7 +7023,7 @@ bool UOnlineSubsystemSteamworks::GetRecognitionResults(uint8_t LocalUserNum, cla
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StopSpeechRecognition
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28962])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28960])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7045,13 +7045,13 @@ bool UOnlineSubsystemSteamworks::StopSpeechRecognition(uint8_t LocalUserNum)
 	uFnStopSpeechRecognition->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopSpeechRecognition, &StopSpeechRecognition_Params, nullptr);
 	uFnStopSpeechRecognition->FunctionFlags |= 0x400;
-	uFnStopSpeechRecognition->iNative = 28962;
+	uFnStopSpeechRecognition->iNative = 28960;
 
 	return StopSpeechRecognition_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StartSpeechRecognition
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28834])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28832])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7073,13 +7073,13 @@ bool UOnlineSubsystemSteamworks::StartSpeechRecognition(uint8_t LocalUserNum)
 	uFnStartSpeechRecognition->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStartSpeechRecognition, &StartSpeechRecognition_Params, nullptr);
 	uFnStartSpeechRecognition->FunctionFlags |= 0x400;
-	uFnStartSpeechRecognition->iNative = 28834;
+	uFnStartSpeechRecognition->iNative = 28832;
 
 	return StartSpeechRecognition_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StopNetworkedVoice
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28958])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28956])
 // Parameter Info:
 // uint8_t                        LocalUserNum                   (CPF_Parm)
 
@@ -7100,11 +7100,11 @@ void UOnlineSubsystemSteamworks::StopNetworkedVoice(uint8_t LocalUserNum)
 	uFnStopNetworkedVoice->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopNetworkedVoice, &StopNetworkedVoice_Params, nullptr);
 	uFnStopNetworkedVoice->FunctionFlags |= 0x400;
-	uFnStopNetworkedVoice->iNative = 28958;
+	uFnStopNetworkedVoice->iNative = 28956;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StartNetworkedVoice
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28815])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28813])
 // Parameter Info:
 // uint8_t                        LocalUserNum                   (CPF_Parm)
 
@@ -7125,7 +7125,7 @@ void UOnlineSubsystemSteamworks::StartNetworkedVoice(uint8_t LocalUserNum)
 	uFnStartNetworkedVoice->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStartNetworkedVoice, &StartNetworkedVoice_Params, nullptr);
 	uFnStartNetworkedVoice->FunctionFlags |= 0x400;
-	uFnStartNetworkedVoice->iNative = 28815;
+	uFnStartNetworkedVoice->iNative = 28813;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearPlayerTalkingDelegate
@@ -7194,7 +7194,7 @@ void UOnlineSubsystemSteamworks::OnPlayerTalkingStateChange(const struct FUnique
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnmuteRemoteTalker
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29772])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29770])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7220,13 +7220,13 @@ bool UOnlineSubsystemSteamworks::UnmuteRemoteTalker(uint8_t LocalUserNum, const 
 	uFnUnmuteRemoteTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnmuteRemoteTalker, &UnmuteRemoteTalker_Params, nullptr);
 	uFnUnmuteRemoteTalker->FunctionFlags |= 0x400;
-	uFnUnmuteRemoteTalker->iNative = 29772;
+	uFnUnmuteRemoteTalker->iNative = 29770;
 
 	return UnmuteRemoteTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.MuteRemoteTalker
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[24390])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[24388])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7252,13 +7252,13 @@ bool UOnlineSubsystemSteamworks::MuteRemoteTalker(uint8_t LocalUserNum, const st
 	uFnMuteRemoteTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMuteRemoteTalker, &MuteRemoteTalker_Params, nullptr);
 	uFnMuteRemoteTalker->FunctionFlags |= 0x400;
-	uFnMuteRemoteTalker->iNative = 24390;
+	uFnMuteRemoteTalker->iNative = 24388;
 
 	return MuteRemoteTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetRemoteTalkerPriority
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28120])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28118])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7284,13 +7284,13 @@ bool UOnlineSubsystemSteamworks::SetRemoteTalkerPriority(uint8_t LocalUserNum, c
 	uFnSetRemoteTalkerPriority->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetRemoteTalkerPriority, &SetRemoteTalkerPriority_Params, nullptr);
 	uFnSetRemoteTalkerPriority->FunctionFlags |= 0x400;
-	uFnSetRemoteTalkerPriority->iNative = 28120;
+	uFnSetRemoteTalkerPriority->iNative = 28118;
 
 	return SetRemoteTalkerPriority_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsHeadsetPresent
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22908])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22906])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7312,13 +7312,13 @@ bool UOnlineSubsystemSteamworks::IsHeadsetPresent(uint8_t LocalUserNum)
 	uFnIsHeadsetPresent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsHeadsetPresent, &IsHeadsetPresent_Params, nullptr);
 	uFnIsHeadsetPresent->FunctionFlags |= 0x400;
-	uFnIsHeadsetPresent->iNative = 22908;
+	uFnIsHeadsetPresent->iNative = 22906;
 
 	return IsHeadsetPresent_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsRemotePlayerTalking
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22964])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22962])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            PlayerID                       (CPF_Parm)
@@ -7340,13 +7340,13 @@ bool UOnlineSubsystemSteamworks::IsRemotePlayerTalking(const struct FUniqueNetId
 	uFnIsRemotePlayerTalking->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRemotePlayerTalking, &IsRemotePlayerTalking_Params, nullptr);
 	uFnIsRemotePlayerTalking->FunctionFlags |= 0x400;
-	uFnIsRemotePlayerTalking->iNative = 22964;
+	uFnIsRemotePlayerTalking->iNative = 22962;
 
 	return IsRemotePlayerTalking_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsLocalPlayerTalking
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22929])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22927])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7368,13 +7368,13 @@ bool UOnlineSubsystemSteamworks::IsLocalPlayerTalking(uint8_t LocalUserNum)
 	uFnIsLocalPlayerTalking->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLocalPlayerTalking, &IsLocalPlayerTalking_Params, nullptr);
 	uFnIsLocalPlayerTalking->FunctionFlags |= 0x400;
-	uFnIsLocalPlayerTalking->iNative = 22929;
+	uFnIsLocalPlayerTalking->iNative = 22927;
 
 	return IsLocalPlayerTalking_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnregisterRemoteTalker
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29788])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29786])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            PlayerID                       (CPF_Parm)
@@ -7396,13 +7396,13 @@ bool UOnlineSubsystemSteamworks::UnregisterRemoteTalker(const struct FUniqueNetI
 	uFnUnregisterRemoteTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnregisterRemoteTalker, &UnregisterRemoteTalker_Params, nullptr);
 	uFnUnregisterRemoteTalker->FunctionFlags |= 0x400;
-	uFnUnregisterRemoteTalker->iNative = 29788;
+	uFnUnregisterRemoteTalker->iNative = 29786;
 
 	return UnregisterRemoteTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterRemoteTalker
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27024])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27022])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            PlayerID                       (CPF_Parm)
@@ -7424,13 +7424,13 @@ bool UOnlineSubsystemSteamworks::RegisterRemoteTalker(const struct FUniqueNetId&
 	uFnRegisterRemoteTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegisterRemoteTalker, &RegisterRemoteTalker_Params, nullptr);
 	uFnRegisterRemoteTalker->FunctionFlags |= 0x400;
-	uFnRegisterRemoteTalker->iNative = 27024;
+	uFnRegisterRemoteTalker->iNative = 27022;
 
 	return RegisterRemoteTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnregisterLocalTalker
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29781])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29779])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7452,13 +7452,13 @@ bool UOnlineSubsystemSteamworks::UnregisterLocalTalker(uint8_t LocalUserNum)
 	uFnUnregisterLocalTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnregisterLocalTalker, &UnregisterLocalTalker_Params, nullptr);
 	uFnUnregisterLocalTalker->FunctionFlags |= 0x400;
-	uFnUnregisterLocalTalker->iNative = 29781;
+	uFnUnregisterLocalTalker->iNative = 29779;
 
 	return UnregisterLocalTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterLocalTalker
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27016])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27014])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7480,13 +7480,13 @@ bool UOnlineSubsystemSteamworks::RegisterLocalTalker(uint8_t LocalUserNum)
 	uFnRegisterLocalTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegisterLocalTalker, &RegisterLocalTalker_Params, nullptr);
 	uFnRegisterLocalTalker->FunctionFlags |= 0x400;
-	uFnRegisterLocalTalker->iNative = 27016;
+	uFnRegisterLocalTalker->iNative = 27014;
 
 	return RegisterLocalTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetFriendsList
-// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21754])
+// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21752])
 // Parameter Info:
 // EOnlineEnumerationReadState    ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7514,7 +7514,7 @@ EOnlineEnumerationReadState UOnlineSubsystemSteamworks::GetFriendsList(uint8_t L
 	uFnGetFriendsList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetFriendsList, &GetFriendsList_Params, nullptr);
 	uFnGetFriendsList->FunctionFlags |= 0x400;
-	uFnGetFriendsList->iNative = 21754;
+	uFnGetFriendsList->iNative = 21752;
 
 	memcpy_s(&Friends, sizeof(Friends), &GetFriendsList_Params.Friends, sizeof(GetFriendsList_Params.Friends));
 
@@ -7589,7 +7589,7 @@ void UOnlineSubsystemSteamworks::OnReadFriendsComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadFriendsList
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26864])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26862])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7615,7 +7615,7 @@ bool UOnlineSubsystemSteamworks::ReadFriendsList(uint8_t LocalUserNum, int32_t C
 	uFnReadFriendsList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadFriendsList, &ReadFriendsList_Params, nullptr);
 	uFnReadFriendsList->FunctionFlags |= 0x400;
-	uFnReadFriendsList->iNative = 26864;
+	uFnReadFriendsList->iNative = 26862;
 
 	return ReadFriendsList_Params.ReturnValue;
 };
@@ -8005,7 +8005,7 @@ void UOnlineSubsystemSteamworks::OnWriteProfileSettingsComplete(uint8_t LocalUse
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteProfileSettings
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30360])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30358])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8029,7 +8029,7 @@ bool UOnlineSubsystemSteamworks::WriteProfileSettings(uint8_t LocalUserNum, clas
 	uFnWriteProfileSettings->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteProfileSettings, &WriteProfileSettings_Params, nullptr);
 	uFnWriteProfileSettings->FunctionFlags |= 0x400;
-	uFnWriteProfileSettings->iNative = 30360;
+	uFnWriteProfileSettings->iNative = 30358;
 
 	return WriteProfileSettings_Params.ReturnValue;
 };
@@ -8128,7 +8128,7 @@ void UOnlineSubsystemSteamworks::OnReadProfileSettingsComplete(uint8_t LocalUser
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadProfileSettings
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26879])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26877])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8152,7 +8152,7 @@ bool UOnlineSubsystemSteamworks::ReadProfileSettings(uint8_t LocalUserNum, class
 	uFnReadProfileSettings->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadProfileSettings, &ReadProfileSettings_Params, nullptr);
 	uFnReadProfileSettings->FunctionFlags |= 0x400;
-	uFnReadProfileSettings->iNative = 26879;
+	uFnReadProfileSettings->iNative = 26877;
 
 	return ReadProfileSettings_Params.ReturnValue;
 };
@@ -8425,7 +8425,7 @@ bool UOnlineSubsystemSteamworks::IsMuted(uint8_t LocalUserNum, const struct FUni
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AreAnyFriends
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[15050])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[15048])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8449,7 +8449,7 @@ bool UOnlineSubsystemSteamworks::AreAnyFriends(uint8_t LocalUserNum, class TArra
 	uFnAreAnyFriends->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAreAnyFriends, &AreAnyFriends_Params, nullptr);
 	uFnAreAnyFriends->FunctionFlags |= 0x400;
-	uFnAreAnyFriends->iNative = 15050;
+	uFnAreAnyFriends->iNative = 15048;
 
 	memcpy_s(&Query, sizeof(Query), &AreAnyFriends_Params.Query, sizeof(AreAnyFriends_Params.Query));
 
@@ -8457,7 +8457,7 @@ bool UOnlineSubsystemSteamworks::AreAnyFriends(uint8_t LocalUserNum, class TArra
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsFriend
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22902])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22900])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8481,7 +8481,7 @@ bool UOnlineSubsystemSteamworks::IsFriend(uint8_t LocalUserNum, const struct FUn
 	uFnIsFriend->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsFriend, &IsFriend_Params, nullptr);
 	uFnIsFriend->FunctionFlags |= 0x400;
-	uFnIsFriend->iNative = 22902;
+	uFnIsFriend->iNative = 22900;
 
 	return IsFriend_Params.ReturnValue;
 };
@@ -8583,7 +8583,7 @@ EFeaturePrivilegeLevel UOnlineSubsystemSteamworks::CanDownloadUserContent(uint8_
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CanCommunicate
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18105])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18103])
 // Parameter Info:
 // EFeaturePrivilegeLevel         ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8605,13 +8605,13 @@ EFeaturePrivilegeLevel UOnlineSubsystemSteamworks::CanCommunicate(uint8_t LocalU
 	uFnCanCommunicate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCanCommunicate, &CanCommunicate_Params, nullptr);
 	uFnCanCommunicate->FunctionFlags |= 0x400;
-	uFnCanCommunicate->iNative = 18105;
+	uFnCanCommunicate->iNative = 18103;
 
 	return static_cast<EFeaturePrivilegeLevel>(CanCommunicate_Params.ReturnValue);
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CanPlayOnline
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18114])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18112])
 // Parameter Info:
 // EFeaturePrivilegeLevel         ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8633,7 +8633,7 @@ EFeaturePrivilegeLevel UOnlineSubsystemSteamworks::CanPlayOnline(uint8_t LocalUs
 	uFnCanPlayOnline->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCanPlayOnline, &CanPlayOnline_Params, nullptr);
 	uFnCanPlayOnline->FunctionFlags |= 0x400;
-	uFnCanPlayOnline->iNative = 18114;
+	uFnCanPlayOnline->iNative = 18112;
 
 	return static_cast<EFeaturePrivilegeLevel>(CanPlayOnline_Params.ReturnValue);
 };
@@ -8834,7 +8834,7 @@ void UOnlineSubsystemSteamworks::OnLogoutCompleted(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.Logout
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[23599])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[23597])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8856,7 +8856,7 @@ bool UOnlineSubsystemSteamworks::Logout(uint8_t LocalUserNum)
 	uFnLogout->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLogout, &Logout_Params, nullptr);
 	uFnLogout->FunctionFlags |= 0x400;
-	uFnLogout->iNative = 23599;
+	uFnLogout->iNative = 23597;
 
 	return Logout_Params.ReturnValue;
 };
@@ -8931,7 +8931,7 @@ void UOnlineSubsystemSteamworks::OnLoginFailed(uint8_t LocalUserNum, EOnlineServ
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AutoLogin
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[15157])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[15155])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -8951,7 +8951,7 @@ bool UOnlineSubsystemSteamworks::AutoLogin()
 	uFnAutoLogin->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAutoLogin, &AutoLogin_Params, nullptr);
 	uFnAutoLogin->FunctionFlags |= 0x400;
-	uFnAutoLogin->iNative = 15157;
+	uFnAutoLogin->iNative = 15155;
 
 	return AutoLogin_Params.ReturnValue;
 };
@@ -8991,7 +8991,7 @@ bool UOnlineSubsystemSteamworks::Login(uint8_t LocalUserNum, const class FString
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowLoginUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28317])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28315])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bShowOnlineOnly                (CPF_OptionalParm | CPF_Parm)
@@ -9013,7 +9013,7 @@ bool UOnlineSubsystemSteamworks::ShowLoginUI(bool bShowOnlineOnly)
 	uFnShowLoginUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowLoginUI, &ShowLoginUI_Params, nullptr);
 	uFnShowLoginUI->FunctionFlags |= 0x400;
-	uFnShowLoginUI->iNative = 28317;
+	uFnShowLoginUI->iNative = 28315;
 
 	return ShowLoginUI_Params.ReturnValue;
 };

@@ -30,10 +30,10 @@
 #define CONST_LOCAL_MATERIAL_POOL_NUM                               1
 #define CONST_MESH_SET_NUM                                          8
 #define CONST_MESH_CONTROL_NUM                                      5
-#define CONST_MESH_SET_DEFAULT                                      0
-#define CONST_MESH_SET_ALLOFF                                       0
-#define CONST_MESH_SET_ALLON                                        0
-#define CONST_BODY_MESH_NAME                                        0
+#define CONST_MESH_SET_DEFAULT                                      ''
+#define CONST_MESH_SET_ALLOFF                                       ''
+#define CONST_MESH_SET_ALLON                                        ''
+#define CONST_BODY_MESH_NAME                                        ''
 #define CONST_EFFECT_MAX                                            4
 #define CONST_ColorOrderColorMax                                    3
 #define CONST_INCOME_SOUND_COMPONENT_NUM                            3
@@ -57,20 +57,20 @@
 #define CONST_EffectMaxNum                                          2
 #define CONST_GCReqCountThreshold                                   3
 #define CONST_TimeLimitVal                                          3
-#define CONST_MainState_Finish                                      0
-#define CONST_MainState_ModeSelect                                  0
-#define CONST_MainState_CharaSelect                                 0
-#define CONST_MainState_StartDemo                                   0
-#define CONST_PlayerState_ReturnToMainMenu                          0
-#define CONST_PlayerState_Finish                                    0
-#define CONST_PlayerState_BGSelect                                  0
-#define CONST_PlayerState_CustomMenu                                0
-#define CONST_PlayerState_TrialSelect                               0
-#define CONST_PlayerState_CharaSelect                               0
-#define CONST_PlayerState_PrepareCharaSelect                        0
-#define CONST_PlayerState_CardLoad                                  0
-#define CONST_PlayerState_InitCardLoad                              0
-#define CONST_PlayerState_Wait                                      0
+#define CONST_MainState_Finish                                      ''
+#define CONST_MainState_ModeSelect                                  ''
+#define CONST_MainState_CharaSelect                                 ''
+#define CONST_MainState_StartDemo                                   ''
+#define CONST_PlayerState_ReturnToMainMenu                          ''
+#define CONST_PlayerState_Finish                                    ''
+#define CONST_PlayerState_BGSelect                                  ''
+#define CONST_PlayerState_CustomMenu                                ''
+#define CONST_PlayerState_TrialSelect                               ''
+#define CONST_PlayerState_CharaSelect                               ''
+#define CONST_PlayerState_PrepareCharaSelect                        ''
+#define CONST_PlayerState_CardLoad                                  ''
+#define CONST_PlayerState_InitCardLoad                              ''
+#define CONST_PlayerState_Wait                                      ''
 #define CONST_ChallengeBGColorIndex                                 1
 #define CONST_AsyncLoadCharaCacheNum_0                              3
 #define CONST_AsyncLoadColorCacheNum_0                              4
@@ -78,31 +78,31 @@
 #define CONST_EffectMaxNum_0                                        2
 #define CONST_GCReqCountThreshold_0                                 3
 #define CONST_TimeLimitVal_0                                        5
-#define CONST_MainState_Finish_0                                    0
-#define CONST_MainState_RannyuToSelect                              0
-#define CONST_MainState_MOMStage                                    0
-#define CONST_MainState_MOMMain                                     0
-#define CONST_MainState_MOMHelp                                     0
-#define CONST_MainState_MOMPreset                                   0
-#define CONST_MainState_ModeSelect_0                                0
-#define CONST_MainState_CharaSelect_0                               0
-#define CONST_MainState_StartDemo_0                                 0
-#define CONST_PlayerState_ReturnToMainMenu_0                        0
-#define CONST_PlayerState_Finish_0                                  0
-#define CONST_PlayerState_BGSelect_0                                0
-#define CONST_PlayerState_CustomMenu_0                              0
-#define CONST_PlayerState_HandicapSetting                           0
-#define CONST_PlayerState_TrialSelect_0                             0
-#define CONST_PlayerState_CharaSelect_0                             0
-#define CONST_PlayerState_PrepareCharaSelect_0                      0
-#define CONST_PlayerState_StyleSelectExe                            0
-#define CONST_PlayerState_StyleSelect                               0
-#define CONST_PlayerState_SkipCheckExe                              0
-#define CONST_PlayerState_SkipCheck                                 0
-#define CONST_PlayerState_QuestConfirm                              0
-#define CONST_PlayerState_CardLoad_0                                0
-#define CONST_PlayerState_InitCardLoad_0                            0
-#define CONST_PlayerState_Wait_0                                    0
+#define CONST_MainState_Finish_0                                    ''
+#define CONST_MainState_RannyuToSelect                              ''
+#define CONST_MainState_MOMStage                                    ''
+#define CONST_MainState_MOMMain                                     ''
+#define CONST_MainState_MOMHelp                                     ''
+#define CONST_MainState_MOMPreset                                   ''
+#define CONST_MainState_ModeSelect_0                                ''
+#define CONST_MainState_CharaSelect_0                               ''
+#define CONST_MainState_StartDemo_0                                 ''
+#define CONST_PlayerState_ReturnToMainMenu_0                        ''
+#define CONST_PlayerState_Finish_0                                  ''
+#define CONST_PlayerState_BGSelect_0                                ''
+#define CONST_PlayerState_CustomMenu_0                              ''
+#define CONST_PlayerState_HandicapSetting                           ''
+#define CONST_PlayerState_TrialSelect_0                             ''
+#define CONST_PlayerState_CharaSelect_0                             ''
+#define CONST_PlayerState_PrepareCharaSelect_0                      ''
+#define CONST_PlayerState_StyleSelectExe                            ''
+#define CONST_PlayerState_StyleSelect                               ''
+#define CONST_PlayerState_SkipCheckExe                              ''
+#define CONST_PlayerState_SkipCheck                                 ''
+#define CONST_PlayerState_QuestConfirm                              ''
+#define CONST_PlayerState_CardLoad_0                                ''
+#define CONST_PlayerState_InitCardLoad_0                            ''
+#define CONST_PlayerState_Wait_0                                    ''
 #define CONST_CountDownStartTime                                    1
 #define CONST_GLY_ART_NUM                                           3
 #define CONST_GLY_MOVIE_NUM                                         5
@@ -875,6 +875,17 @@ enum class ECHARASEL_STATE : uint8_t
 
 // Enum REDGame.REDGfxMoviePlayer_MenuCharaSelect.ECharaPictureState
 enum class ECharaPictureState : uint8_t
+{
+	CharaPictureState_Null                             = 0,
+	CharaPictureState_Normal                           = 1,
+	CharaPictureState_Hide                             = 2,
+	CharaPictureState_Decide                           = 3,
+	CharaPictureState_Fade                             = 4,
+	CharaPictureState_END                              = 5
+};
+
+// Enum REDGame.REDGfxMoviePlayer_MenuCharaSelect_AC20.ECharaPictureState
+enum class ECharaPictureState_0 : uint8_t
 {
 	CharaPictureState_Null                             = 0,
 	CharaPictureState_Normal                           = 1,

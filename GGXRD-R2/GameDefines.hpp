@@ -750,7 +750,7 @@ public:
 	uint64_t Flags; // 0x0000 (0x0008)
 	int32_t Index; // 0x0008 (0x0004)
 	class FNameEntry* HashNext; // 0x000C (0x0004)
-	char Name[0x40]; // 0x0010 (0x0001)
+	char Name[0x400]; // 0x0010 (0x0001)
 
 public:
 	FNameEntry() : Flags(0), Index(-1), HashNext(nullptr) {}
