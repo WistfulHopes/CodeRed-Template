@@ -15,4 +15,5 @@ public:
 public:
 	void UpdateSettings();
 	void DoAThing();
+	void GetRoomMembers();
 };

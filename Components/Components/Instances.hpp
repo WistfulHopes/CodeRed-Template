@@ -238,6 +238,7 @@ private:
 	class AHUD* I_AHUD;
 	class UGameViewportClient* I_UGameViewportClient;
 	class APlayerController* I_APlayerController;
+	class UREDGfxMoviePlayer_MenuNetworkRoom* I_UREDGfxMoviePlayer_MenuNetworkRoom;
 
 public: // Use these functions to access these specific class instances, they will be set automatically; always remember to null check!
 	class UEngine* IUEngine();
@@ -248,12 +249,14 @@ public: // Use these functions to access these specific class instances, they wi
 	class UGameViewportClient* IUGameViewportClient();
 	class ULocalPlayer* IULocalPlayer();
 	class APlayerController* IAPlayerController();
+	class UREDGfxMoviePlayer_MenuNetworkRoom* IUREDGfxMoviePlayer_MenuNetworkRoom();
 
 public: // These should only be used by function hooks, do not manually call these.
 	void SetCanvas(class UCanvas* canvas);
 	void SetHUD(class AHUD* hud);
 	void SetGameViewportClient(class UGameViewportClient* viewportClient);
 	void SetPlayerController(class APlayerController* playerController);
+	void SetMenuNetworkRoom(class UREDGfxMoviePlayer_MenuNetworkRoom* menuNetworkRoom);
 	void Initialize(); // Initialize classes that can't be grabbed from function hooks.
 };
 

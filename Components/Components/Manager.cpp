@@ -1246,6 +1246,8 @@ void ManagerComponent::Initialize()
 	CreateVariable("placeholder_do_thing", VariableIds::PLACEHOLDER_DO_THING);
 	CreateVariable("placeholder_can_do_thing", VariableIds::PLACEHOLDER_ENABLED);
 	CreateVariable("placeholder_some_value", VariableIds::PLACEHOLDER_SOME_VALUE);
+	
+	CreateVariable("get_room_members", VariableIds::NETWORK_GET_ROOM_MEMBERS);
 
 	// Assigning the "STATES_CasualMatch" and "STATES_RankedMatch" flags, so this module will only be able to be used in casual or ranked games.
 	CreateModule<PlaceholderModule>(new PlaceholderModule("Paceholder", "An example module.", States::STATES_CasualMatch | States::STATES_RankedMatch), PlaceholderMod);
@@ -1264,11 +1266,14 @@ void ManagerComponent::Initialize()
 		// Integer setting that has a minimum value of "0" and a maximum value of "100".
 		CreateSetting(new Setting(VariableIds::PLACEHOLDER_SOME_VALUE, SettingTypes::TYPE_INT, "Some random integer value with a custom range.", "0", true))->SetIntRange(0, 100)->BindCallback([&](){ PlaceholderMod->UpdateSettings(); });
 
+		// When someone uses the command "get_room_members", this will print all room members.
+		CreateCommand(new Command(VariableIds::NETWORK_GET_ROOM_MEMBERS, "Gets the current room members."))->BindCallback([&](){ PlaceholderMod->GetRoomMembers(); });
+
 		PlaceholderMod->UpdateSettings();
 	}
 	else
 	{
-		Console.Error(GetNameFormatted() + "Error: Failed to initialize \"Paceholder\"!");
+		Console.Error(GetNameFormatted() + "Error: Failed to initialize \"Placeholder\"!");
 	}
 
 	Console.Write(GetNameFormatted() + std::to_string(m_commands.size()) + " Command(s) Initialized!");

@@ -35,7 +35,9 @@ enum class VariableIds : int32_t
 	// User created variables.
 	PLACEHOLDER_DO_THING,
 	PLACEHOLDER_ENABLED,
-	PLACEHOLDER_SOME_VALUE
+	PLACEHOLDER_SOME_VALUE,
+	
+	NETWORK_GET_ROOM_MEMBERS,
 };
 
 class Setting

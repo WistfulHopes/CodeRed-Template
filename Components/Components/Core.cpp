@@ -40,8 +40,9 @@ void CoreComponent::InitializeGlobals(HMODULE hModule)
 	{
 		// You can use either a pattern for Process Event or its place in the VfTable index (not both).
 		void** unrealVTable = reinterpret_cast<void**>(UObject::StaticClass()->VfTableObject.Dummy);
-		EventsComponent::AttachDetour(reinterpret_cast<ProcessEventType>(unrealVTable[64])); // Index method.
-		//EventsComponent::AttachDetour(reinterpret_cast<ProcessEventType>(Memory::FindPattern(GetModuleHandleW(NULL), ProcessEvent_Pattern, ProcessEvent_Mask))); // Find pattern method.
+		//EventsComponent::AttachDetour(reinterpret_cast<ProcessEventType>(unrealVTable[100])); // Index method.
+
+		EventsComponent::AttachDetour(reinterpret_cast<ProcessEventType>(CodeRed::Memory::FindPattern(GetModuleHandleW(NULL), ProcessEvent_Pattern, ProcessEvent_Mask))); // Find pattern method.
 
 		Console.Notify("[Core Module] Entry Point " + CodeRed::Format::ToHex(reinterpret_cast<void*>(entryPoint)));
 		Console.Notify("[Core Module] Global Objects: " + CodeRed::Format::ToHex(GObjects));

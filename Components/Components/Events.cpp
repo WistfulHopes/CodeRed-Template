@@ -130,6 +130,14 @@ void HooksComponent::PlayerControllerTick(PreEvent& event)
 	}
 }
 
+void HooksComponent::MenuNetworkRoomUpdate(PreEvent& event)
+{
+	if (event.Caller())
+	{
+		Instances.SetMenuNetworkRoom(event.GetCaller<UREDGfxMoviePlayer_MenuNetworkRoom>());
+	}
+}
+
 // Post Hooks
 
 class HooksComponent Hooks{};
@@ -406,10 +414,11 @@ void EventsComponent::Initialize()
 	HookEventPre("Function Engine.HUD.PostRender", [&](PreEvent& event) { Hooks.HUDPostRender(event); });
 	HookEventPre("Function Engine.GameViewportClient.PostRender", [&](PreEvent& event) { Hooks.GameViewPortPostRender(event); });
 	HookEventPre("Function Engine.PlayerController.PlayerTick", [&](PreEvent& event) { Hooks.PlayerControllerTick(event); });
+	HookEventPre("Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OnUpdate", [&](PreEvent& event) { Hooks.MenuNetworkRoomUpdate(event); });
 
 	// Post Hooks
 
-	Console.Write(GetNameFormatted() + std::to_string(m_blacklisted.size()) + " Backlisted Event(s)!");
+	Console.Write(GetNameFormatted() + std::to_string(m_blacklisted.size()) + " Blacklisted Event(s)!");
 	Console.Write(GetNameFormatted() + std::to_string(m_preHooks.size()) + " Pre-Hook(s) Initialized!");
 	Console.Write(GetNameFormatted() + std::to_string(m_postHooks.size()) + " Post-Hook(s) Initialized!");
 }

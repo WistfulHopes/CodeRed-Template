@@ -27,3 +27,22 @@ void PlaceholderModule::DoAThing()
 		}
 	}
 }
+
+void PlaceholderModule::GetRoomMembers()
+{
+	if (IsInitialized() && IsAllowed())
+	{
+		auto NetworkRoom = Instances.IUREDGfxMoviePlayer_MenuNetworkRoom();
+		if (!NetworkRoom)
+		{
+			Console.Notify("No room active!");
+			return;
+		}
+
+		Console.Notify("Getting current room members...");
+		for (auto FocusInfo : NetworkRoom->FocusInfo)
+		{
+			Console.Notify("Member: " + FocusInfo.FocusName.ToString());
+		}
+	}
+}

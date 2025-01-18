@@ -331,6 +331,9 @@ enum EClassCastFlag : uint32_t
 #define GObjects_Offset		(uintptr_t)0x16C4300
 // GNames
 #define GNames_Offset		(uintptr_t)0x16C42D0
+// Process Event
+#define ProcessEvent_Pattern	(const uint8_t*)"\x10\x11\x12\x00\x00\x00\x13"
+#define ProcessEvent_Mask		(const char*)"xxx???x"
 
 /*
 # ========================================================================================= #
@@ -750,7 +753,7 @@ public:
 	uint64_t Flags; // 0x0000 (0x0008)
 	int32_t Index; // 0x0008 (0x0004)
 	class FNameEntry* HashNext; // 0x000C (0x0004)
-	char Name[0x400]; // 0x0010 (0x0001)
+	char Name[0x40]; // 0x0010 (0x0001)
 
 public:
 	FNameEntry() : Flags(0), Index(-1), HashNext(nullptr) {}
