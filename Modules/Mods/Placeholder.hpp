@@ -13,7 +13,11 @@ public:
 	~PlaceholderModule() override;
 
 public:
-	void UpdateSettings();
+	void OnCreateVariables() override;
+	void OnSettingChanged() override;
+	void OnCanvasDraw(class UCanvas* unrealCanvas) override;
+
+public:
 	void DoAThing();
 	void GetRoomMembers();
 };

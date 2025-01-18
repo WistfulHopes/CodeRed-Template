@@ -1,13 +1,52 @@
 #pragma once
 /*
+    Changes in v1.5.2:
+    - Added a new "Time::FromEpoch" function in "Time.hpp/cpp" which converts a epoch timestamp into the "Time" class.
+    - Fixed the rotate functions in "Math.hpp/cpp" using "RADIANS_TO_ROTATION" instead of "DEGREES_TO_RADIANS" for applying rotation, also remade them to be more clear of what they do.
+
+    Changes in v1.5.1:
+    - BREAKING: Renamed the "Timestamp::FormatStandard" function to "Timestamp::FormatClock" in "Time.hpp/cpp".
+    - Added a new "Time::FromEpoch" function for the time class that parses an epoch timestamp in "Time.hpp/cpp".
+    - Added two new timestamp format functions "Timestamp::FormatUTCSimple" and "Timestamp::FormatUTCExtended" in "Time.hpp/cpp".
+    - Added two new helper functions "ConsoleComponent::CreateTimestampUTCSimple" and "ConsoleComponent::CreateTimestampUTCExtended" in "Console.hpp/cpp".
+
+    Changes in v1.5.0:
+    - Added a new "ManagerComponent::OnCanvasDraw" function to control all the individual canvas drawing functions for each module, this should be called by your hud render function.
+    - Added a new virtual void "Module::OnCreateVariables" for modules where you can create module specific settings or commands instead of putting them all in the "ManagerComponent::Initialize()" function. This is called by the "ManagerComponent::CreateModule" function in "Manager.cpp".
+    - Changed the "UpdateSettings" function from the placeholdder mod to be a virtual void and renamed it to "OnSettingChanged", this should be called by your function when its value has changed.
+    - Added a new virtual void "Module::OnCanvasDraw" for modules, this is called by the new "ManagerComponent::OnCanvasDraw" function in "Manager.cpp".
+    - The "ManagerComponent::OnTick" function is now called by the new "ManagerComponent::OnCanvasDraw" function in "Manager.cpp".
+
+     Changes in v1.4.9:
+    - Added two new settings for commands called "IsLocked" and "NeedsArgs", locked prevents the command from being called, and needs args states that the command requires some sort of argument to be passed through. Setting this false means arguments are optional for the command.
+    - Added a new "Variable" class which both the "Setting" and "Command" class now inherit from, this stores the variable and internal flags / permissions for said variable.
+    - Added two new internal constants, "VARIABLE_NAME_LENGTH" and "VARIABLE_VALUE_LENGTH", in Manager.cpp" which let you set the max length for variable values and names.
+    - BREAKING: Made the "ManagerComponent::CreateVariable" functon private, as a result the "CreateCommand" and "CreateSetting" now require an additional argument for creating them for their names.
+    - BREAKING: Got rid of all the optional constructors for the "Setting" class in "Manager.hpp/cpp", you should now call the setter functions to bind specific callbacks or set permissions.
+    - BREAKING: Renamed the "IsSearchable" function for the command and setting classes to to "IsHidden" in "Manager.hpp/cpp".
+    - BREAKING: Renamed the "Command::BindCallback" function to "Command::BindStringCallback" in "Manager.hpp/cpp".
+    - BREAKING: Renamed the "Setting::IsModifiable" function and member fields to "IsLocked", which is now set by flags in the new "Variable" base class.
+
+    Changes in v1.4.8:
+    - Added a new internal queue system in "Manager.hpp/cpp" which allows console commands to be safely called from any thread.
+    - Added extra safety checking for the "Setting::InRange" function in "Manager.cpp".
+    - Changed the "ManagerComponent::UnrealCommand" in "Manager.cpp" to be more efficient.
+    - BREAKING: Renamed all the "SettingTypes" enum values in "Manager.hpp", also added support for Int64's.
+    - BREAKING: Renamed all the "CommandTypes" enum values in "Manager.hpp".
+    - BREAKING: Renamed all the "Setting::SetInt" functions to "Setting::SetInt32" in "Manager.hpp/cpp", this applies to the get, set, and range functions.
+
+    Changes in v1.4.7:
+    - Added extra null checking and safety checks for both "Instances.hpp/cpp" and "Events.cpp".
+    - Removed the "MarkForDestroy" loop in "Instances.cpp" in the deconstructor, if they were already deleted by the game then this would be accessing random memory addresses (which is bad).
+
     Changes in v1.4.6:
     - Added two new functions "ProcessBefore" and "ProcessAfter" to "Events.hpp/cpp" to more easily process function hooks, this makes detouring multiple things such as process event and call function easier.
     - Added a new atomic bool to "EventsComponent" to prevent a thread racing issue when hooking functions.
 
     Changes in v1.4.5:
     - Wrapped all the extensions and helper classes in a new "CodeRed" namespace, this is to prevent possible naming conflicts with other libraries.
-    - Renamed the "ThreadTypes" enum values as well as moved the whole enum from "Manager.hpp" to "Module.hpp".
-    - Removed the "UnrealMemory.hpp/cpp" files from "Extensions".
+    - BREAKING: Removed the "UnrealMemory.hpp/cpp" files from "Extensions" as it was unnecessary to have in the first place.
+    - BREAKING: Renamed the "ThreadTypes" enum values as well as moved the whole enum from "Manager.hpp" to "Module.hpp".
 
     Changes in v1.4.4:
     - Changed the member variables and functions in "Manager.hpp" being static to just normal, I can't remember why I made them static in the first place.
@@ -118,8 +157,8 @@
     Changes in v1.2.7:
     - Added four new functions in "Formatting.hpp", "IsStringNumber", "IsStringFloat", "EraseAllChars", and "RemoveAllChars".
     - Fixed a bug in the "SetValue" function that prevented some setitng types from applying in "Manager.cpp".
-    - Renamed the function "AddToQueue" to "QueueCommand" and changed the "CommandQueue" to use a new custom class in "Manager.hpp/cpp".
     - Made the "DecimalToHex" function have a fill of 6 now in "Colors.cpp".
+    - BREAKING: Renamed the function "AddToQueue" to "QueueCommand" and changed the "CommandQueue" to use a new custom class in "Manager.hpp/cpp".
 
     Changes in v1.2.6:
     - Fixed functions still going through Process Event if their detour was set to false if there were multiple voids bound to the same function.
@@ -140,11 +179,11 @@
 
     Changes in v1.2.4:
     - Made the static function/class maps in "Instances.hpp" private, to access their contents you should use the new "FindStaticClass" and "FindStaticFunction" functions in the same file.
-    - Added/renamed functions in the "GameState.hpp/cpp" files and made them more organized.
     - Fixed "GameStateComponent" not having the new virtual "OnCreate" and "OnDestory" functions.
     - Changed the hook functions in "Events.cpp" to use the new "FindStaticFunction" functions from "Instances.hpp".
     - Changed grabbing the actor in the "UnrealCommand" to grab its default instance, instead of a random one in "Manager.cpp".
     - Changed the pointer check for setting instances to the "Instances.cpp" file, and modified "Events.cpp" to show this.
+    - BREAKING: Added/renamed functions in the "GameState.hpp/cpp" files and made them more organized.
 
     Changes in v1.2.3:
     - Added an argument callback option for the "Setting" class in "Manager.hpp", works similar to the "Command" classes arugment callback but the argument is the string value of the setting.
@@ -168,7 +207,7 @@
     - Added the "AttachDetour" and "DetachDetour" functions in "Events.hpp", this is now called from "InitializeGlobals" in "Core.cpp".
     - Moved the detaching Process Event from "CoreComponent"'s deconstructor to "EventsComponent"'s deconstuctor in "Events.cpp".
     - Made "WriteToLog" default to "true" in "Console.cpp".
-    - Renamed "FColorList" to "GColorList" in "Colors.hpp".
+    - BREAKING: "FColorList" to "GColorList" in "Colors.hpp".
 
     Changes in v1.2.0:
     - Added an extra null check for creating commands, settings, and modules in "Manager.cpp".
@@ -196,7 +235,7 @@
     - Added the "MarkForDestory" function in "Instances.hpp", and updated the PlaceholderSDK to accommodate this.
     - Fixed the "GetVector3DValue" function for the "Setting" class in "Manager.cpp", it still passed the type check even if it were a "TYPE_VECTOR_2D".
     - Changed some cast types for the template functions in "Instances.hpp".
-    - Renamed some of the example settings in "Manager.cpp".
+    - BREAKING: some of the example settings in "Manager.cpp".
 
     Changes in v1.1.6:
     - Changed how settings and commands names are stored, in their classes they are now identified by an enum value; their names are assigned in the constructor for the "ManagerComponent" in "Manager.cpp".
@@ -210,18 +249,18 @@
     Changes in v1.1.5:
     - Changed all function hooks to use the new "PreEvent" and "PostEvent" classes, they have neat template functions that auto recast for you as well as an option to not detour the function through Process Event.
     - Removed the "ParseArguments" and "SplitArguments" functions in "Manager.hpp" and instead moved it to the "Format" namespace in "Formatting.hpp".
-    - Renamed the "Functions" namespace to "Hooks" in "Events.hpp".
-    - Renamed the "Queue" vector in "Manager.hpp" to "CommandQueue".
     - Moved the function hook typedefs in "Events.hpp" to inside the "EventsComponent" class.
+    - BREAKING: the "Functions" namespace to "Hooks" in "Events.hpp".
+    - BREAKING: the "Queue" vector in "Manager.hpp" to "CommandQueue".
 
     Changes in v1.1.4:
     - Added the "CreateInstance" function in "Instances.hpp", this allows you to create new objects of any type and have it be added to the GObjects table.
     - Added the "ResetSetting" function to "Manager.hpp", resets a setting to its original default value.
     - Added the "PrintModule" function to "Manager.hpp", prints out a modules information to the console.
     - Remade how Modules, Settings, and Commands are created. Please see the changes in "Manager.hpp" and "Manager.cpp" for examples.
-    - Renamed the unreal rotator function in "Math.hpp" to RotateUnreal.
-    - Renamed some of the "States" enum names in "GameState.hpp" to include "STATE_" in front, because we are purposefully not making this enum an enum class.
     - Added template flags to the PlaceholderSDK.
+    - BREAKING: Renamed the unreal rotator function in "Math.hpp" to RotateUnreal.
+    - BREAKING: Renamed some of the "States" enum names in "GameState.hpp" to include "STATE_" in front, because we are purposefully not making this enum an enum class.
 
     Changes in v1.1.3:
     - Renamed the project from CodeRedUniversal to CodeRedTemplate.
@@ -239,9 +278,9 @@
     Changes in v1.1.1:
     - Added a "Quat" class in "Math.cpp", along with a bunch of defines/math helpers.
     - Added "Get" functions to the FRainbowColor class, this copies the data but guarantees you can't modify the original structs by mistake.
-    - Renamed all "CR" math classes to just normal structs in "Math.hpp", also added extra math functions and operators for already exsiting classes.
-    - Renamed all "CR" color classes to just normal structs in "Colors.hpp", also added some extra operators for them.
     - Updated the placeholder sdk with the new math structs so the project can compile.
+    - BREAKING: Renamed all "CR" math classes to just normal structs in "Math.hpp", also added extra math functions and operators for already exsiting classes.
+    - BREAKING: Renamed all "CR" color classes to just normal structs in "Colors.hpp", also added some extra operators for them.
 
     Changes in v1.1.0:
     - Added a "WhitelistEvent" function in "Events.hpp".
