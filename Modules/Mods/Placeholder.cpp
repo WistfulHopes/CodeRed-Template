@@ -116,8 +116,5 @@ void PlaceholderModule::GetRoomMembers()
 				Console.Notify("Member: " + OnlineInterface->UniqueNetIdToPlayerName(Member.PlayerUID).ToString());
 			}
 		}
-		
-		auto GameCommon = Instances.GetInstanceOf<UREDGameCommon>();
-		Console.Notify("Test " + std::to_string((int)GameCommon->GetGameMode()));
 	}
 }
