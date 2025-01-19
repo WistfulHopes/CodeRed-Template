@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -72,7 +71,7 @@ struct UFacebookWindows_execFacebookRequestCallback_Params
 };
 
 // Function WinDrv.FacebookWindows.ProcessFacebookRequest
-// [0x00020400]  (iNative[33200])
+// [0x00020400]  (iNative[33202])
 struct UFacebookWindows_execProcessFacebookRequest_Params
 {
 	class FString                                      Payload;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -114,14 +113,14 @@ struct UFacebookWindows_execInit_Params
 };
 
 // Function WinDrv.HttpRequestWindows.ProcessRequest
-// [0x00020400]  (iNative[26499])
+// [0x00020400]  (iNative[26501])
 struct UHttpRequestWindows_execProcessRequest_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function WinDrv.HttpRequestWindows.SetHeader
-// [0x00020400]  (iNative[27997])
+// [0x00020400]  (iNative[27999])
 struct UHttpRequestWindows_execSetHeader_Params
 {
 	class FString                                      HeaderName;                                       // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -130,7 +129,7 @@ struct UHttpRequestWindows_execSetHeader_Params
 };
 
 // Function WinDrv.HttpRequestWindows.SetContentAsString
-// [0x00020400]  (iNative[27931])
+// [0x00020400]  (iNative[27933])
 struct UHttpRequestWindows_execSetContentAsString_Params
 {
 	class FString                                      ContentString;                                    // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -138,7 +137,7 @@ struct UHttpRequestWindows_execSetContentAsString_Params
 };
 
 // Function WinDrv.HttpRequestWindows.SetContent
-// [0x00420400]  (iNative[27930])
+// [0x00420400]  (iNative[27932])
 struct UHttpRequestWindows_execSetContent_Params
 {
 	class TArray<uint8_t>                              ContentPayload;                                   // 0x0000 (0x000C) [0x0000000000400182] (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -146,7 +145,7 @@ struct UHttpRequestWindows_execSetContent_Params
 };
 
 // Function WinDrv.HttpRequestWindows.SetURL
-// [0x00020400]  (iNative[28188])
+// [0x00020400]  (iNative[28190])
 struct UHttpRequestWindows_execSetURL_Params
 {
 	class FString                                      URL;                                              // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -154,7 +153,7 @@ struct UHttpRequestWindows_execSetURL_Params
 };
 
 // Function WinDrv.HttpRequestWindows.SetVerb
-// [0x00020400]  (iNative[28197])
+// [0x00020400]  (iNative[28199])
 struct UHttpRequestWindows_execSetVerb_Params
 {
 	class FString                                      Verb;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -162,42 +161,42 @@ struct UHttpRequestWindows_execSetVerb_Params
 };
 
 // Function WinDrv.HttpRequestWindows.GetVerb
-// [0x00020400]  (iNative[22065])
+// [0x00020400]  (iNative[22067])
 struct UHttpRequestWindows_execGetVerb_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function WinDrv.HttpRequestWindows.GetContent
-// [0x00420400]  (iNative[21673])
+// [0x00420400]  (iNative[21675])
 struct UHttpRequestWindows_execGetContent_Params
 {
 	class TArray<uint8_t>                              Content;                                          // 0x0000 (0x000C) [0x0000000000400180] (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 };
 
 // Function WinDrv.HttpRequestWindows.GetURL
-// [0x00020400]  (iNative[22054])
+// [0x00020400]  (iNative[22056])
 struct UHttpRequestWindows_execGetURL_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function WinDrv.HttpRequestWindows.GetContentLength
-// [0x00020400]  (iNative[21675])
+// [0x00020400]  (iNative[21677])
 struct UHttpRequestWindows_execGetContentLength_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function WinDrv.HttpRequestWindows.GetContentType
-// [0x00020400]  (iNative[21679])
+// [0x00020400]  (iNative[21681])
 struct UHttpRequestWindows_execGetContentType_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function WinDrv.HttpRequestWindows.GetURLParameter
-// [0x00020400]  (iNative[22056])
+// [0x00020400]  (iNative[22058])
 struct UHttpRequestWindows_execGetURLParameter_Params
 {
 	class FString                                      ParameterName;                                    // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -205,14 +204,14 @@ struct UHttpRequestWindows_execGetURLParameter_Params
 };
 
 // Function WinDrv.HttpRequestWindows.GetHeaders
-// [0x00020400]  (iNative[21772])
+// [0x00020400]  (iNative[21774])
 struct UHttpRequestWindows_execGetHeaders_Params
 {
 	class TArray<class FString>                        ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function WinDrv.HttpRequestWindows.GetHeader
-// [0x00020400]  (iNative[21771])
+// [0x00020400]  (iNative[21773])
 struct UHttpRequestWindows_execGetHeader_Params
 {
 	class FString                                      HeaderName;                                       // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -220,49 +219,49 @@ struct UHttpRequestWindows_execGetHeader_Params
 };
 
 // Function WinDrv.HttpResponseWindows.GetResponseCode
-// [0x00020400]  (iNative[21951])
+// [0x00020400]  (iNative[21953])
 struct UHttpResponseWindows_execGetResponseCode_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function WinDrv.HttpResponseWindows.GetContentAsString
-// [0x00020400]  (iNative[21674])
+// [0x00020400]  (iNative[21676])
 struct UHttpResponseWindows_execGetContentAsString_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function WinDrv.HttpResponseWindows.GetContent
-// [0x00420400]  (iNative[21673])
+// [0x00420400]  (iNative[21675])
 struct UHttpResponseWindows_execGetContent_Params
 {
 	class TArray<uint8_t>                              Content;                                          // 0x0000 (0x000C) [0x0000000000400180] (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 };
 
 // Function WinDrv.HttpResponseWindows.GetURL
-// [0x00020400]  (iNative[22054])
+// [0x00020400]  (iNative[22056])
 struct UHttpResponseWindows_execGetURL_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function WinDrv.HttpResponseWindows.GetContentLength
-// [0x00020400]  (iNative[21675])
+// [0x00020400]  (iNative[21677])
 struct UHttpResponseWindows_execGetContentLength_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function WinDrv.HttpResponseWindows.GetContentType
-// [0x00020400]  (iNative[21679])
+// [0x00020400]  (iNative[21681])
 struct UHttpResponseWindows_execGetContentType_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function WinDrv.HttpResponseWindows.GetURLParameter
-// [0x00020400]  (iNative[22056])
+// [0x00020400]  (iNative[22058])
 struct UHttpResponseWindows_execGetURLParameter_Params
 {
 	class FString                                      ParameterName;                                    // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -270,14 +269,14 @@ struct UHttpResponseWindows_execGetURLParameter_Params
 };
 
 // Function WinDrv.HttpResponseWindows.GetHeaders
-// [0x00020400]  (iNative[21772])
+// [0x00020400]  (iNative[21774])
 struct UHttpResponseWindows_execGetHeaders_Params
 {
 	class TArray<class FString>                        ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function WinDrv.HttpResponseWindows.GetHeader
-// [0x00020400]  (iNative[21771])
+// [0x00020400]  (iNative[21773])
 struct UHttpResponseWindows_execGetHeader_Params
 {
 	class FString                                      HeaderName;                                       // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)

@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -121,7 +120,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEAUTHINTERFACESTEAMWORKS));
+			uClassPointer = UObject::FindClass("Class OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks");
 		}
 
 		return uClassPointer;
@@ -165,7 +164,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+			uClassPointer = UObject::FindClass("Class OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks");
 		}
 
 		return uClassPointer;
@@ -228,7 +227,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+			uClassPointer = UObject::FindClass("Class OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks");
 		}
 
 		return uClassPointer;
@@ -441,7 +440,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+			uClassPointer = UObject::FindClass("Class OnlineSubsystemSteamworks.OnlineSubsystemSteamworks");
 		}
 
 		return uClassPointer;
@@ -738,7 +737,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_IPNETDRIVERSTEAMWORKS));
+			uClassPointer = UObject::FindClass("Class OnlineSubsystemSteamworks.IpNetDriverSteamworks");
 		}
 
 		return uClassPointer;
@@ -759,7 +758,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_IPNETCONNECTIONSTEAMWORKS));
+			uClassPointer = UObject::FindClass("Class OnlineSubsystemSteamworks.IpNetConnectionSteamworks");
 		}
 
 		return uClassPointer;

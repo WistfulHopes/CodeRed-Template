@@ -122,6 +122,7 @@ void ConsoleComponent::Initialize(const std::filesystem::path& directory, const 
 #ifdef CONSOLE_WINDOW
 	AllocConsole();
 	freopen_s(&m_outputFile, "CONOUT$", "w", stdout);
+	freopen_s(&m_outputFile, "CONIN$", "r", stdin);
 	ShowWindow(GetConsoleWindow(), SW_SHOW);
 	m_outputHandle = GetStdHandle(STD_OUTPUT_HANDLE);
 #endif

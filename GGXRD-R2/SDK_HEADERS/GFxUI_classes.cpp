@@ -36,7 +36,7 @@ bool UGFxFSCmdHandler::eventFSCommand(class UGFxMoviePlayer* Movie, class UGFxEv
 
 	if (!uFnFSCommand)
 	{
-		uFnFSCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXFSCMDHANDLER));
+		uFnFSCommand = UFunction::FindFunction("Function GFxUI.GFxFSCmdHandler.FSCommand");
 	}
 
 	UGFxFSCmdHandler_eventFSCommand_Params FSCommand_Params;
@@ -52,7 +52,7 @@ bool UGFxFSCmdHandler::eventFSCommand(class UGFxMoviePlayer* Movie, class UGFxEv
 };
 
 // Function GFxUI.GFxInteraction.CloseAllMoviePlayers
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31912])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31914])
 // Parameter Info:
 
 void UGFxInteraction::CloseAllMoviePlayers()
@@ -61,21 +61,17 @@ void UGFxInteraction::CloseAllMoviePlayers()
 
 	if (!uFnCloseAllMoviePlayers)
 	{
-		uFnCloseAllMoviePlayers = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXINTERACTION));
+		uFnCloseAllMoviePlayers = UFunction::FindFunction("Function GFxUI.GFxInteraction.CloseAllMoviePlayers");
 	}
 
 	UGFxInteraction_execCloseAllMoviePlayers_Params CloseAllMoviePlayers_Params;
 	memset(&CloseAllMoviePlayers_Params, 0, sizeof(CloseAllMoviePlayers_Params));
 
-	uFnCloseAllMoviePlayers->iNative = 0;
-	uFnCloseAllMoviePlayers->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCloseAllMoviePlayers, &CloseAllMoviePlayers_Params, nullptr);
-	uFnCloseAllMoviePlayers->FunctionFlags |= 0x400;
-	uFnCloseAllMoviePlayers->iNative = 31912;
 };
 
 // Function GFxUI.GFxInteraction.NotifySplitscreenLayoutChanged
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[24921])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[24923])
 // Parameter Info:
 
 void UGFxInteraction::NotifySplitscreenLayoutChanged()
@@ -84,21 +80,17 @@ void UGFxInteraction::NotifySplitscreenLayoutChanged()
 
 	if (!uFnNotifySplitscreenLayoutChanged)
 	{
-		uFnNotifySplitscreenLayoutChanged = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXINTERACTION));
+		uFnNotifySplitscreenLayoutChanged = UFunction::FindFunction("Function GFxUI.GFxInteraction.NotifySplitscreenLayoutChanged");
 	}
 
 	UGFxInteraction_execNotifySplitscreenLayoutChanged_Params NotifySplitscreenLayoutChanged_Params;
 	memset(&NotifySplitscreenLayoutChanged_Params, 0, sizeof(NotifySplitscreenLayoutChanged_Params));
 
-	uFnNotifySplitscreenLayoutChanged->iNative = 0;
-	uFnNotifySplitscreenLayoutChanged->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNotifySplitscreenLayoutChanged, &NotifySplitscreenLayoutChanged_Params, nullptr);
-	uFnNotifySplitscreenLayoutChanged->FunctionFlags |= 0x400;
-	uFnNotifySplitscreenLayoutChanged->iNative = 24921;
 };
 
 // Function GFxUI.GFxInteraction.NotifyPlayerRemoved
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[24915])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[24917])
 // Parameter Info:
 // int32_t                        PlayerIndex                    (CPF_Parm)
 // class ULocalPlayer*            RemovedPlayer                  (CPF_Parm)
@@ -109,7 +101,7 @@ void UGFxInteraction::NotifyPlayerRemoved(int32_t PlayerIndex, class ULocalPlaye
 
 	if (!uFnNotifyPlayerRemoved)
 	{
-		uFnNotifyPlayerRemoved = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXINTERACTION));
+		uFnNotifyPlayerRemoved = UFunction::FindFunction("Function GFxUI.GFxInteraction.NotifyPlayerRemoved");
 	}
 
 	UGFxInteraction_execNotifyPlayerRemoved_Params NotifyPlayerRemoved_Params;
@@ -117,15 +109,11 @@ void UGFxInteraction::NotifyPlayerRemoved(int32_t PlayerIndex, class ULocalPlaye
 	memcpy_s(&NotifyPlayerRemoved_Params.PlayerIndex, sizeof(NotifyPlayerRemoved_Params.PlayerIndex), &PlayerIndex, sizeof(PlayerIndex));
 	NotifyPlayerRemoved_Params.RemovedPlayer = RemovedPlayer;
 
-	uFnNotifyPlayerRemoved->iNative = 0;
-	uFnNotifyPlayerRemoved->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNotifyPlayerRemoved, &NotifyPlayerRemoved_Params, nullptr);
-	uFnNotifyPlayerRemoved->FunctionFlags |= 0x400;
-	uFnNotifyPlayerRemoved->iNative = 24915;
 };
 
 // Function GFxUI.GFxInteraction.NotifyPlayerAdded
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[24914])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[24916])
 // Parameter Info:
 // int32_t                        PlayerIndex                    (CPF_Parm)
 // class ULocalPlayer*            AddedPlayer                    (CPF_Parm)
@@ -136,7 +124,7 @@ void UGFxInteraction::NotifyPlayerAdded(int32_t PlayerIndex, class ULocalPlayer*
 
 	if (!uFnNotifyPlayerAdded)
 	{
-		uFnNotifyPlayerAdded = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXINTERACTION));
+		uFnNotifyPlayerAdded = UFunction::FindFunction("Function GFxUI.GFxInteraction.NotifyPlayerAdded");
 	}
 
 	UGFxInteraction_execNotifyPlayerAdded_Params NotifyPlayerAdded_Params;
@@ -144,11 +132,7 @@ void UGFxInteraction::NotifyPlayerAdded(int32_t PlayerIndex, class ULocalPlayer*
 	memcpy_s(&NotifyPlayerAdded_Params.PlayerIndex, sizeof(NotifyPlayerAdded_Params.PlayerIndex), &PlayerIndex, sizeof(PlayerIndex));
 	NotifyPlayerAdded_Params.AddedPlayer = AddedPlayer;
 
-	uFnNotifyPlayerAdded->iNative = 0;
-	uFnNotifyPlayerAdded->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNotifyPlayerAdded, &NotifyPlayerAdded_Params, nullptr);
-	uFnNotifyPlayerAdded->FunctionFlags |= 0x400;
-	uFnNotifyPlayerAdded->iNative = 24914;
 };
 
 // Function GFxUI.GFxInteraction.NotifyGameSessionEnded
@@ -161,21 +145,17 @@ void UGFxInteraction::NotifyGameSessionEnded()
 
 	if (!uFnNotifyGameSessionEnded)
 	{
-		uFnNotifyGameSessionEnded = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXINTERACTION));
+		uFnNotifyGameSessionEnded = UFunction::FindFunction("Function GFxUI.GFxInteraction.NotifyGameSessionEnded");
 	}
 
 	UGFxInteraction_execNotifyGameSessionEnded_Params NotifyGameSessionEnded_Params;
 	memset(&NotifyGameSessionEnded_Params, 0, sizeof(NotifyGameSessionEnded_Params));
 
-	uFnNotifyGameSessionEnded->iNative = 0;
-	uFnNotifyGameSessionEnded->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNotifyGameSessionEnded, &NotifyGameSessionEnded_Params, nullptr);
-	uFnNotifyGameSessionEnded->FunctionFlags |= 0x400;
-	uFnNotifyGameSessionEnded->iNative = 12804;
 };
 
 // Function GFxUI.GFxInteraction.GetFocusMovie
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31960])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31962])
 // Parameter Info:
 // class UGFxMoviePlayer*         ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        ControllerId                   (CPF_Parm)
@@ -186,24 +166,20 @@ class UGFxMoviePlayer* UGFxInteraction::GetFocusMovie(int32_t ControllerId)
 
 	if (!uFnGetFocusMovie)
 	{
-		uFnGetFocusMovie = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXINTERACTION));
+		uFnGetFocusMovie = UFunction::FindFunction("Function GFxUI.GFxInteraction.GetFocusMovie");
 	}
 
 	UGFxInteraction_execGetFocusMovie_Params GetFocusMovie_Params;
 	memset(&GetFocusMovie_Params, 0, sizeof(GetFocusMovie_Params));
 	memcpy_s(&GetFocusMovie_Params.ControllerId, sizeof(GetFocusMovie_Params.ControllerId), &ControllerId, sizeof(ControllerId));
 
-	uFnGetFocusMovie->iNative = 0;
-	uFnGetFocusMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetFocusMovie, &GetFocusMovie_Params, nullptr);
-	uFnGetFocusMovie->FunctionFlags |= 0x400;
-	uFnGetFocusMovie->iNative = 31960;
 
 	return GetFocusMovie_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.UpdateSplitscreenLayout
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32120])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32122])
 // Parameter Info:
 
 void UGFxMoviePlayer::UpdateSplitscreenLayout()
@@ -212,17 +188,13 @@ void UGFxMoviePlayer::UpdateSplitscreenLayout()
 
 	if (!uFnUpdateSplitscreenLayout)
 	{
-		uFnUpdateSplitscreenLayout = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnUpdateSplitscreenLayout = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.UpdateSplitscreenLayout");
 	}
 
 	UGFxMoviePlayer_execUpdateSplitscreenLayout_Params UpdateSplitscreenLayout_Params;
 	memset(&UpdateSplitscreenLayout_Params, 0, sizeof(UpdateSplitscreenLayout_Params));
 
-	uFnUpdateSplitscreenLayout->iNative = 0;
-	uFnUpdateSplitscreenLayout->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateSplitscreenLayout, &UpdateSplitscreenLayout_Params, nullptr);
-	uFnUpdateSplitscreenLayout->FunctionFlags |= 0x400;
-	uFnUpdateSplitscreenLayout->iNative = 32120;
 };
 
 // Function GFxUI.GFxMoviePlayer.ApplyPriorityVisibilityEffect
@@ -236,7 +208,7 @@ void UGFxMoviePlayer::ApplyPriorityVisibilityEffect(bool bRemoveEffect)
 
 	if (!uFnApplyPriorityVisibilityEffect)
 	{
-		uFnApplyPriorityVisibilityEffect = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnApplyPriorityVisibilityEffect = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ApplyPriorityVisibilityEffect");
 	}
 
 	UGFxMoviePlayer_execApplyPriorityVisibilityEffect_Params ApplyPriorityVisibilityEffect_Params;
@@ -257,7 +229,7 @@ void UGFxMoviePlayer::ApplyPriorityBlurEffect(bool bRemoveEffect)
 
 	if (!uFnApplyPriorityBlurEffect)
 	{
-		uFnApplyPriorityBlurEffect = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnApplyPriorityBlurEffect = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ApplyPriorityBlurEffect");
 	}
 
 	UGFxMoviePlayer_execApplyPriorityBlurEffect_Params ApplyPriorityBlurEffect_Params;
@@ -279,7 +251,7 @@ void UGFxMoviePlayer::eventApplyPriorityEffect(bool bRequestedBlurState, bool bR
 
 	if (!uFnApplyPriorityEffect)
 	{
-		uFnApplyPriorityEffect = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnApplyPriorityEffect = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ApplyPriorityEffect");
 	}
 
 	UGFxMoviePlayer_eventApplyPriorityEffect_Params ApplyPriorityEffect_Params;
@@ -302,7 +274,7 @@ void UGFxMoviePlayer::PlaySoundFromTheme(const class FName& EventName, const cla
 
 	if (!uFnPlaySoundFromTheme)
 	{
-		uFnPlaySoundFromTheme = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnPlaySoundFromTheme = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.PlaySoundFromTheme");
 	}
 
 	UGFxMoviePlayer_execPlaySoundFromTheme_Params PlaySoundFromTheme_Params;
@@ -324,7 +296,7 @@ void UGFxMoviePlayer::eventOnFocusLost(int32_t LocalPlayerIndex)
 
 	if (!uFnOnFocusLost)
 	{
-		uFnOnFocusLost = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnOnFocusLost = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.OnFocusLost");
 	}
 
 	UGFxMoviePlayer_eventOnFocusLost_Params OnFocusLost_Params;
@@ -345,7 +317,7 @@ void UGFxMoviePlayer::eventOnFocusGained(int32_t LocalPlayerIndex)
 
 	if (!uFnOnFocusGained)
 	{
-		uFnOnFocusGained = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnOnFocusGained = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.OnFocusGained");
 	}
 
 	UGFxMoviePlayer_eventOnFocusGained_Params OnFocusGained_Params;
@@ -366,7 +338,7 @@ void UGFxMoviePlayer::ConsoleCommand(const class FString& Command)
 
 	if (!uFnConsoleCommand)
 	{
-		uFnConsoleCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnConsoleCommand = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ConsoleCommand");
 	}
 
 	UGFxMoviePlayer_execConsoleCommand_Params ConsoleCommand_Params;
@@ -387,7 +359,7 @@ class APlayerController* UGFxMoviePlayer::eventGetPC()
 
 	if (!uFnGetPC)
 	{
-		uFnGetPC = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetPC = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetPC");
 	}
 
 	UGFxMoviePlayer_eventGetPC_Params GetPC_Params;
@@ -409,7 +381,7 @@ class ULocalPlayer* UGFxMoviePlayer::eventGetLP()
 
 	if (!uFnGetLP)
 	{
-		uFnGetLP = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetLP = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetLP");
 	}
 
 	UGFxMoviePlayer_eventGetLP_Params GetLP_Params;
@@ -431,7 +403,7 @@ void UGFxMoviePlayer::Init(class ULocalPlayer* LocPlay)
 
 	if (!uFnInit)
 	{
-		uFnInit = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnInit = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.Init");
 	}
 
 	UGFxMoviePlayer_execInit_Params Init_Params;
@@ -442,7 +414,7 @@ void UGFxMoviePlayer::Init(class ULocalPlayer* LocPlay)
 };
 
 // Function GFxUI.GFxMoviePlayer.SetWidgetPathBinding
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32090])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32092])
 // Parameter Info:
 // class UGFxObject*              WidgetToBind                   (CPF_Parm)
 // class FName                    Path                           (CPF_Parm)
@@ -453,7 +425,7 @@ void UGFxMoviePlayer::SetWidgetPathBinding(class UGFxObject* WidgetToBind, const
 
 	if (!uFnSetWidgetPathBinding)
 	{
-		uFnSetWidgetPathBinding = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetWidgetPathBinding = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetWidgetPathBinding");
 	}
 
 	UGFxMoviePlayer_execSetWidgetPathBinding_Params SetWidgetPathBinding_Params;
@@ -461,11 +433,7 @@ void UGFxMoviePlayer::SetWidgetPathBinding(class UGFxObject* WidgetToBind, const
 	SetWidgetPathBinding_Params.WidgetToBind = WidgetToBind;
 	memcpy_s(&SetWidgetPathBinding_Params.Path, sizeof(SetWidgetPathBinding_Params.Path), &Path, sizeof(Path));
 
-	uFnSetWidgetPathBinding->iNative = 0;
-	uFnSetWidgetPathBinding->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetWidgetPathBinding, &SetWidgetPathBinding_Params, nullptr);
-	uFnSetWidgetPathBinding->FunctionFlags |= 0x400;
-	uFnSetWidgetPathBinding->iNative = 32090;
 };
 
 // Function GFxUI.GFxMoviePlayer.PostWidgetInit
@@ -478,7 +446,7 @@ void UGFxMoviePlayer::eventPostWidgetInit()
 
 	if (!uFnPostWidgetInit)
 	{
-		uFnPostWidgetInit = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnPostWidgetInit = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.PostWidgetInit");
 	}
 
 	UGFxMoviePlayer_eventPostWidgetInit_Params PostWidgetInit_Params;
@@ -501,7 +469,7 @@ bool UGFxMoviePlayer::eventWidgetUnloaded(const class FName& WidgetName, const c
 
 	if (!uFnWidgetUnloaded)
 	{
-		uFnWidgetUnloaded = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnWidgetUnloaded = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.WidgetUnloaded");
 	}
 
 	UGFxMoviePlayer_eventWidgetUnloaded_Params WidgetUnloaded_Params;
@@ -529,7 +497,7 @@ bool UGFxMoviePlayer::eventWidgetInitialized(const class FName& WidgetName, cons
 
 	if (!uFnWidgetInitialized)
 	{
-		uFnWidgetInitialized = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnWidgetInitialized = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.WidgetInitialized");
 	}
 
 	UGFxMoviePlayer_eventWidgetInitialized_Params WidgetInitialized_Params;
@@ -544,7 +512,7 @@ bool UGFxMoviePlayer::eventWidgetInitialized(const class FName& WidgetName, cons
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptConstructor
-// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31822])
+// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31824])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  ClassName                      (CPF_Parm | CPF_NeedCtorLink)
@@ -555,24 +523,20 @@ class UGFxObject* UGFxMoviePlayer::ActionScriptConstructor(const class FString& 
 
 	if (!uFnActionScriptConstructor)
 	{
-		uFnActionScriptConstructor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnActionScriptConstructor = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ActionScriptConstructor");
 	}
 
 	UGFxMoviePlayer_execActionScriptConstructor_Params ActionScriptConstructor_Params;
 	memset(&ActionScriptConstructor_Params, 0, sizeof(ActionScriptConstructor_Params));
 	memcpy_s(&ActionScriptConstructor_Params.ClassName, sizeof(ActionScriptConstructor_Params.ClassName), &ClassName, sizeof(ClassName));
 
-	uFnActionScriptConstructor->iNative = 0;
-	uFnActionScriptConstructor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptConstructor, &ActionScriptConstructor_Params, nullptr);
-	uFnActionScriptConstructor->FunctionFlags |= 0x400;
-	uFnActionScriptConstructor->iNative = 31822;
 
 	return ActionScriptConstructor_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptObject
-// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31825])
+// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31827])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -583,24 +547,20 @@ class UGFxObject* UGFxMoviePlayer::ActionScriptObject(const class FString& Path)
 
 	if (!uFnActionScriptObject)
 	{
-		uFnActionScriptObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnActionScriptObject = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ActionScriptObject");
 	}
 
 	UGFxMoviePlayer_execActionScriptObject_Params ActionScriptObject_Params;
 	memset(&ActionScriptObject_Params, 0, sizeof(ActionScriptObject_Params));
 	memcpy_s(&ActionScriptObject_Params.Path, sizeof(ActionScriptObject_Params.Path), &Path, sizeof(Path));
 
-	uFnActionScriptObject->iNative = 0;
-	uFnActionScriptObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptObject, &ActionScriptObject_Params, nullptr);
-	uFnActionScriptObject->FunctionFlags |= 0x400;
-	uFnActionScriptObject->iNative = 31825;
 
 	return ActionScriptObject_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptString
-// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31828])
+// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31830])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -611,24 +571,20 @@ class FString UGFxMoviePlayer::ActionScriptString(const class FString& Path)
 
 	if (!uFnActionScriptString)
 	{
-		uFnActionScriptString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnActionScriptString = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ActionScriptString");
 	}
 
 	UGFxMoviePlayer_execActionScriptString_Params ActionScriptString_Params;
 	memset(&ActionScriptString_Params, 0, sizeof(ActionScriptString_Params));
 	memcpy_s(&ActionScriptString_Params.Path, sizeof(ActionScriptString_Params.Path), &Path, sizeof(Path));
 
-	uFnActionScriptString->iNative = 0;
-	uFnActionScriptString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptString, &ActionScriptString_Params, nullptr);
-	uFnActionScriptString->FunctionFlags |= 0x400;
-	uFnActionScriptString->iNative = 31828;
 
 	return ActionScriptString_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptFloat
-// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31823])
+// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31825])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -639,24 +595,20 @@ float UGFxMoviePlayer::ActionScriptFloat(const class FString& Path)
 
 	if (!uFnActionScriptFloat)
 	{
-		uFnActionScriptFloat = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnActionScriptFloat = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ActionScriptFloat");
 	}
 
 	UGFxMoviePlayer_execActionScriptFloat_Params ActionScriptFloat_Params;
 	memset(&ActionScriptFloat_Params, 0, sizeof(ActionScriptFloat_Params));
 	memcpy_s(&ActionScriptFloat_Params.Path, sizeof(ActionScriptFloat_Params.Path), &Path, sizeof(Path));
 
-	uFnActionScriptFloat->iNative = 0;
-	uFnActionScriptFloat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptFloat, &ActionScriptFloat_Params, nullptr);
-	uFnActionScriptFloat->FunctionFlags |= 0x400;
-	uFnActionScriptFloat->iNative = 31823;
 
 	return ActionScriptFloat_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptInt
-// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31824])
+// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31826])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -667,24 +619,20 @@ int32_t UGFxMoviePlayer::ActionScriptInt(const class FString& Path)
 
 	if (!uFnActionScriptInt)
 	{
-		uFnActionScriptInt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnActionScriptInt = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ActionScriptInt");
 	}
 
 	UGFxMoviePlayer_execActionScriptInt_Params ActionScriptInt_Params;
 	memset(&ActionScriptInt_Params, 0, sizeof(ActionScriptInt_Params));
 	memcpy_s(&ActionScriptInt_Params.Path, sizeof(ActionScriptInt_Params.Path), &Path, sizeof(Path));
 
-	uFnActionScriptInt->iNative = 0;
-	uFnActionScriptInt->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptInt, &ActionScriptInt_Params, nullptr);
-	uFnActionScriptInt->FunctionFlags |= 0x400;
-	uFnActionScriptInt->iNative = 31824;
 
 	return ActionScriptInt_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptVoid
-// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31829])
+// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31831])
 // Parameter Info:
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
 
@@ -694,22 +642,18 @@ void UGFxMoviePlayer::ActionScriptVoid(const class FString& Path)
 
 	if (!uFnActionScriptVoid)
 	{
-		uFnActionScriptVoid = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnActionScriptVoid = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ActionScriptVoid");
 	}
 
 	UGFxMoviePlayer_execActionScriptVoid_Params ActionScriptVoid_Params;
 	memset(&ActionScriptVoid_Params, 0, sizeof(ActionScriptVoid_Params));
 	memcpy_s(&ActionScriptVoid_Params.Path, sizeof(ActionScriptVoid_Params.Path), &Path, sizeof(Path));
 
-	uFnActionScriptVoid->iNative = 0;
-	uFnActionScriptVoid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptVoid, &ActionScriptVoid_Params, nullptr);
-	uFnActionScriptVoid->FunctionFlags |= 0x400;
-	uFnActionScriptVoid->iNative = 31829;
 };
 
 // Function GFxUI.GFxMoviePlayer.Invoke
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32000])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32002])
 // Parameter Info:
 // struct FASValue                ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  method                         (CPF_Parm | CPF_NeedCtorLink)
@@ -721,7 +665,7 @@ struct FASValue UGFxMoviePlayer::Invoke(const class FString& method, const class
 
 	if (!uFnInvoke)
 	{
-		uFnInvoke = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnInvoke = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.Invoke");
 	}
 
 	UGFxMoviePlayer_execInvoke_Params Invoke_Params;
@@ -729,17 +673,13 @@ struct FASValue UGFxMoviePlayer::Invoke(const class FString& method, const class
 	memcpy_s(&Invoke_Params.method, sizeof(Invoke_Params.method), &method, sizeof(method));
 	memcpy_s(&Invoke_Params.args, sizeof(Invoke_Params.args), &args, sizeof(args));
 
-	uFnInvoke->iNative = 0;
-	uFnInvoke->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInvoke, &Invoke_Params, nullptr);
-	uFnInvoke->FunctionFlags |= 0x400;
-	uFnInvoke->iNative = 32000;
 
 	return Invoke_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptSetFunction
-// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31826])
+// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31828])
 // Parameter Info:
 // class UGFxObject*              Object                         (CPF_Parm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -750,7 +690,7 @@ void UGFxMoviePlayer::ActionScriptSetFunction(class UGFxObject* Object, const cl
 
 	if (!uFnActionScriptSetFunction)
 	{
-		uFnActionScriptSetFunction = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnActionScriptSetFunction = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ActionScriptSetFunction");
 	}
 
 	UGFxMoviePlayer_execActionScriptSetFunction_Params ActionScriptSetFunction_Params;
@@ -758,15 +698,11 @@ void UGFxMoviePlayer::ActionScriptSetFunction(class UGFxObject* Object, const cl
 	ActionScriptSetFunction_Params.Object = Object;
 	memcpy_s(&ActionScriptSetFunction_Params.Member, sizeof(ActionScriptSetFunction_Params.Member), &Member, sizeof(Member));
 
-	uFnActionScriptSetFunction->iNative = 0;
-	uFnActionScriptSetFunction->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptSetFunction, &ActionScriptSetFunction_Params, nullptr);
-	uFnActionScriptSetFunction->FunctionFlags |= 0x400;
-	uFnActionScriptSetFunction->iNative = 31826;
 };
 
 // Function GFxUI.GFxMoviePlayer.CreateArray
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31914])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31916])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -776,23 +712,19 @@ class UGFxObject* UGFxMoviePlayer::CreateArray()
 
 	if (!uFnCreateArray)
 	{
-		uFnCreateArray = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnCreateArray = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.CreateArray");
 	}
 
 	UGFxMoviePlayer_execCreateArray_Params CreateArray_Params;
 	memset(&CreateArray_Params, 0, sizeof(CreateArray_Params));
 
-	uFnCreateArray->iNative = 0;
-	uFnCreateArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateArray, &CreateArray_Params, nullptr);
-	uFnCreateArray->FunctionFlags |= 0x400;
-	uFnCreateArray->iNative = 31914;
 
 	return CreateArray_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.CreateObject
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31916])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31918])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  ASClass                        (CPF_Parm | CPF_NeedCtorLink)
@@ -805,7 +737,7 @@ class UGFxObject* UGFxMoviePlayer::CreateObject(const class FString& ASClass, cl
 
 	if (!uFnCreateObject)
 	{
-		uFnCreateObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnCreateObject = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.CreateObject");
 	}
 
 	UGFxMoviePlayer_execCreateObject_Params CreateObject_Params;
@@ -814,17 +746,13 @@ class UGFxObject* UGFxMoviePlayer::CreateObject(const class FString& ASClass, cl
 	CreateObject_Params.Type = Type;
 	memcpy_s(&CreateObject_Params.args, sizeof(CreateObject_Params.args), &args, sizeof(args));
 
-	uFnCreateObject->iNative = 0;
-	uFnCreateObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateObject, &CreateObject_Params, nullptr);
-	uFnCreateObject->FunctionFlags |= 0x400;
-	uFnCreateObject->iNative = 31916;
 
 	return CreateObject_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableStringArray
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32085])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32087])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -837,7 +765,7 @@ bool UGFxMoviePlayer::SetVariableStringArray(const class FString& Path, int32_t 
 
 	if (!uFnSetVariableStringArray)
 	{
-		uFnSetVariableStringArray = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetVariableStringArray = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetVariableStringArray");
 	}
 
 	UGFxMoviePlayer_execSetVariableStringArray_Params SetVariableStringArray_Params;
@@ -846,17 +774,13 @@ bool UGFxMoviePlayer::SetVariableStringArray(const class FString& Path, int32_t 
 	memcpy_s(&SetVariableStringArray_Params.Index, sizeof(SetVariableStringArray_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetVariableStringArray_Params.Arg, sizeof(SetVariableStringArray_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnSetVariableStringArray->iNative = 0;
-	uFnSetVariableStringArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVariableStringArray, &SetVariableStringArray_Params, nullptr);
-	uFnSetVariableStringArray->FunctionFlags |= 0x400;
-	uFnSetVariableStringArray->iNative = 32085;
 
 	return SetVariableStringArray_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableFloatArray
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32079])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32081])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -869,7 +793,7 @@ bool UGFxMoviePlayer::SetVariableFloatArray(const class FString& Path, int32_t I
 
 	if (!uFnSetVariableFloatArray)
 	{
-		uFnSetVariableFloatArray = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetVariableFloatArray = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetVariableFloatArray");
 	}
 
 	UGFxMoviePlayer_execSetVariableFloatArray_Params SetVariableFloatArray_Params;
@@ -878,17 +802,13 @@ bool UGFxMoviePlayer::SetVariableFloatArray(const class FString& Path, int32_t I
 	memcpy_s(&SetVariableFloatArray_Params.Index, sizeof(SetVariableFloatArray_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetVariableFloatArray_Params.Arg, sizeof(SetVariableFloatArray_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnSetVariableFloatArray->iNative = 0;
-	uFnSetVariableFloatArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVariableFloatArray, &SetVariableFloatArray_Params, nullptr);
-	uFnSetVariableFloatArray->FunctionFlags |= 0x400;
-	uFnSetVariableFloatArray->iNative = 32079;
 
 	return SetVariableFloatArray_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableIntArray
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32081])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32083])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -901,7 +821,7 @@ bool UGFxMoviePlayer::SetVariableIntArray(const class FString& Path, int32_t Ind
 
 	if (!uFnSetVariableIntArray)
 	{
-		uFnSetVariableIntArray = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetVariableIntArray = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetVariableIntArray");
 	}
 
 	UGFxMoviePlayer_execSetVariableIntArray_Params SetVariableIntArray_Params;
@@ -910,17 +830,13 @@ bool UGFxMoviePlayer::SetVariableIntArray(const class FString& Path, int32_t Ind
 	memcpy_s(&SetVariableIntArray_Params.Index, sizeof(SetVariableIntArray_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetVariableIntArray_Params.Arg, sizeof(SetVariableIntArray_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnSetVariableIntArray->iNative = 0;
-	uFnSetVariableIntArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVariableIntArray, &SetVariableIntArray_Params, nullptr);
-	uFnSetVariableIntArray->FunctionFlags |= 0x400;
-	uFnSetVariableIntArray->iNative = 32081;
 
 	return SetVariableIntArray_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableArray
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32077])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32079])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -933,7 +849,7 @@ bool UGFxMoviePlayer::SetVariableArray(const class FString& Path, int32_t Index,
 
 	if (!uFnSetVariableArray)
 	{
-		uFnSetVariableArray = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetVariableArray = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetVariableArray");
 	}
 
 	UGFxMoviePlayer_execSetVariableArray_Params SetVariableArray_Params;
@@ -942,17 +858,13 @@ bool UGFxMoviePlayer::SetVariableArray(const class FString& Path, int32_t Index,
 	memcpy_s(&SetVariableArray_Params.Index, sizeof(SetVariableArray_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetVariableArray_Params.Arg, sizeof(SetVariableArray_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnSetVariableArray->iNative = 0;
-	uFnSetVariableArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVariableArray, &SetVariableArray_Params, nullptr);
-	uFnSetVariableArray->FunctionFlags |= 0x400;
-	uFnSetVariableArray->iNative = 32077;
 
 	return SetVariableArray_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableStringArray
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[31971])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[31973])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -965,7 +877,7 @@ bool UGFxMoviePlayer::GetVariableStringArray(const class FString& Path, int32_t 
 
 	if (!uFnGetVariableStringArray)
 	{
-		uFnGetVariableStringArray = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVariableStringArray = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVariableStringArray");
 	}
 
 	UGFxMoviePlayer_execGetVariableStringArray_Params GetVariableStringArray_Params;
@@ -974,11 +886,7 @@ bool UGFxMoviePlayer::GetVariableStringArray(const class FString& Path, int32_t 
 	memcpy_s(&GetVariableStringArray_Params.Index, sizeof(GetVariableStringArray_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&GetVariableStringArray_Params.Arg, sizeof(GetVariableStringArray_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnGetVariableStringArray->iNative = 0;
-	uFnGetVariableStringArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVariableStringArray, &GetVariableStringArray_Params, nullptr);
-	uFnGetVariableStringArray->FunctionFlags |= 0x400;
-	uFnGetVariableStringArray->iNative = 31971;
 
 	memcpy_s(&Arg, sizeof(Arg), &GetVariableStringArray_Params.Arg, sizeof(GetVariableStringArray_Params.Arg));
 
@@ -986,7 +894,7 @@ bool UGFxMoviePlayer::GetVariableStringArray(const class FString& Path, int32_t 
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableFloatArray
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[31965])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[31967])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -999,7 +907,7 @@ bool UGFxMoviePlayer::GetVariableFloatArray(const class FString& Path, int32_t I
 
 	if (!uFnGetVariableFloatArray)
 	{
-		uFnGetVariableFloatArray = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVariableFloatArray = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVariableFloatArray");
 	}
 
 	UGFxMoviePlayer_execGetVariableFloatArray_Params GetVariableFloatArray_Params;
@@ -1008,11 +916,7 @@ bool UGFxMoviePlayer::GetVariableFloatArray(const class FString& Path, int32_t I
 	memcpy_s(&GetVariableFloatArray_Params.Index, sizeof(GetVariableFloatArray_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&GetVariableFloatArray_Params.Arg, sizeof(GetVariableFloatArray_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnGetVariableFloatArray->iNative = 0;
-	uFnGetVariableFloatArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVariableFloatArray, &GetVariableFloatArray_Params, nullptr);
-	uFnGetVariableFloatArray->FunctionFlags |= 0x400;
-	uFnGetVariableFloatArray->iNative = 31965;
 
 	memcpy_s(&Arg, sizeof(Arg), &GetVariableFloatArray_Params.Arg, sizeof(GetVariableFloatArray_Params.Arg));
 
@@ -1020,7 +924,7 @@ bool UGFxMoviePlayer::GetVariableFloatArray(const class FString& Path, int32_t I
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableIntArray
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[31967])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[31969])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -1033,7 +937,7 @@ bool UGFxMoviePlayer::GetVariableIntArray(const class FString& Path, int32_t Ind
 
 	if (!uFnGetVariableIntArray)
 	{
-		uFnGetVariableIntArray = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVariableIntArray = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVariableIntArray");
 	}
 
 	UGFxMoviePlayer_execGetVariableIntArray_Params GetVariableIntArray_Params;
@@ -1042,11 +946,7 @@ bool UGFxMoviePlayer::GetVariableIntArray(const class FString& Path, int32_t Ind
 	memcpy_s(&GetVariableIntArray_Params.Index, sizeof(GetVariableIntArray_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&GetVariableIntArray_Params.Arg, sizeof(GetVariableIntArray_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnGetVariableIntArray->iNative = 0;
-	uFnGetVariableIntArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVariableIntArray, &GetVariableIntArray_Params, nullptr);
-	uFnGetVariableIntArray->FunctionFlags |= 0x400;
-	uFnGetVariableIntArray->iNative = 31967;
 
 	memcpy_s(&Arg, sizeof(Arg), &GetVariableIntArray_Params.Arg, sizeof(GetVariableIntArray_Params.Arg));
 
@@ -1054,7 +954,7 @@ bool UGFxMoviePlayer::GetVariableIntArray(const class FString& Path, int32_t Ind
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableArray
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[31963])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[31965])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -1067,7 +967,7 @@ bool UGFxMoviePlayer::GetVariableArray(const class FString& Path, int32_t Index,
 
 	if (!uFnGetVariableArray)
 	{
-		uFnGetVariableArray = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVariableArray = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVariableArray");
 	}
 
 	UGFxMoviePlayer_execGetVariableArray_Params GetVariableArray_Params;
@@ -1076,11 +976,7 @@ bool UGFxMoviePlayer::GetVariableArray(const class FString& Path, int32_t Index,
 	memcpy_s(&GetVariableArray_Params.Index, sizeof(GetVariableArray_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&GetVariableArray_Params.Arg, sizeof(GetVariableArray_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnGetVariableArray->iNative = 0;
-	uFnGetVariableArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVariableArray, &GetVariableArray_Params, nullptr);
-	uFnGetVariableArray->FunctionFlags |= 0x400;
-	uFnGetVariableArray->iNative = 31963;
 
 	memcpy_s(&Arg, sizeof(Arg), &GetVariableArray_Params.Arg, sizeof(GetVariableArray_Params.Arg));
 
@@ -1088,7 +984,7 @@ bool UGFxMoviePlayer::GetVariableArray(const class FString& Path, int32_t Index,
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableObject
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32083])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32085])
 // Parameter Info:
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
 // class UGFxObject*              Object                         (CPF_Parm)
@@ -1099,7 +995,7 @@ void UGFxMoviePlayer::SetVariableObject(const class FString& Path, class UGFxObj
 
 	if (!uFnSetVariableObject)
 	{
-		uFnSetVariableObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetVariableObject = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetVariableObject");
 	}
 
 	UGFxMoviePlayer_execSetVariableObject_Params SetVariableObject_Params;
@@ -1107,15 +1003,11 @@ void UGFxMoviePlayer::SetVariableObject(const class FString& Path, class UGFxObj
 	memcpy_s(&SetVariableObject_Params.Path, sizeof(SetVariableObject_Params.Path), &Path, sizeof(Path));
 	SetVariableObject_Params.Object = Object;
 
-	uFnSetVariableObject->iNative = 0;
-	uFnSetVariableObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVariableObject, &SetVariableObject_Params, nullptr);
-	uFnSetVariableObject->FunctionFlags |= 0x400;
-	uFnSetVariableObject->iNative = 32083;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableString
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32084])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32086])
 // Parameter Info:
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
 // class FString                  S                              (CPF_Parm | CPF_NeedCtorLink)
@@ -1126,7 +1018,7 @@ void UGFxMoviePlayer::SetVariableString(const class FString& Path, const class F
 
 	if (!uFnSetVariableString)
 	{
-		uFnSetVariableString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetVariableString = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetVariableString");
 	}
 
 	UGFxMoviePlayer_execSetVariableString_Params SetVariableString_Params;
@@ -1134,15 +1026,11 @@ void UGFxMoviePlayer::SetVariableString(const class FString& Path, const class F
 	memcpy_s(&SetVariableString_Params.Path, sizeof(SetVariableString_Params.Path), &Path, sizeof(Path));
 	memcpy_s(&SetVariableString_Params.S, sizeof(SetVariableString_Params.S), &S, sizeof(S));
 
-	uFnSetVariableString->iNative = 0;
-	uFnSetVariableString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVariableString, &SetVariableString_Params, nullptr);
-	uFnSetVariableString->FunctionFlags |= 0x400;
-	uFnSetVariableString->iNative = 32084;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableInt
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32080])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32082])
 // Parameter Info:
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
 // int32_t                        I                              (CPF_Parm)
@@ -1153,7 +1041,7 @@ void UGFxMoviePlayer::SetVariableInt(const class FString& Path, int32_t I)
 
 	if (!uFnSetVariableInt)
 	{
-		uFnSetVariableInt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetVariableInt = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetVariableInt");
 	}
 
 	UGFxMoviePlayer_execSetVariableInt_Params SetVariableInt_Params;
@@ -1161,15 +1049,11 @@ void UGFxMoviePlayer::SetVariableInt(const class FString& Path, int32_t I)
 	memcpy_s(&SetVariableInt_Params.Path, sizeof(SetVariableInt_Params.Path), &Path, sizeof(Path));
 	memcpy_s(&SetVariableInt_Params.I, sizeof(SetVariableInt_Params.I), &I, sizeof(I));
 
-	uFnSetVariableInt->iNative = 0;
-	uFnSetVariableInt->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVariableInt, &SetVariableInt_Params, nullptr);
-	uFnSetVariableInt->FunctionFlags |= 0x400;
-	uFnSetVariableInt->iNative = 32080;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableNumber
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32082])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32084])
 // Parameter Info:
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
 // float                          F                              (CPF_Parm)
@@ -1180,7 +1064,7 @@ void UGFxMoviePlayer::SetVariableNumber(const class FString& Path, float F)
 
 	if (!uFnSetVariableNumber)
 	{
-		uFnSetVariableNumber = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetVariableNumber = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetVariableNumber");
 	}
 
 	UGFxMoviePlayer_execSetVariableNumber_Params SetVariableNumber_Params;
@@ -1188,15 +1072,11 @@ void UGFxMoviePlayer::SetVariableNumber(const class FString& Path, float F)
 	memcpy_s(&SetVariableNumber_Params.Path, sizeof(SetVariableNumber_Params.Path), &Path, sizeof(Path));
 	memcpy_s(&SetVariableNumber_Params.F, sizeof(SetVariableNumber_Params.F), &F, sizeof(F));
 
-	uFnSetVariableNumber->iNative = 0;
-	uFnSetVariableNumber->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVariableNumber, &SetVariableNumber_Params, nullptr);
-	uFnSetVariableNumber->FunctionFlags |= 0x400;
-	uFnSetVariableNumber->iNative = 32082;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableBool
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32078])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32080])
 // Parameter Info:
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
 // uint32_t                       B                              (CPF_Parm)
@@ -1207,7 +1087,7 @@ void UGFxMoviePlayer::SetVariableBool(const class FString& Path, bool B)
 
 	if (!uFnSetVariableBool)
 	{
-		uFnSetVariableBool = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetVariableBool = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetVariableBool");
 	}
 
 	UGFxMoviePlayer_execSetVariableBool_Params SetVariableBool_Params;
@@ -1215,15 +1095,11 @@ void UGFxMoviePlayer::SetVariableBool(const class FString& Path, bool B)
 	memcpy_s(&SetVariableBool_Params.Path, sizeof(SetVariableBool_Params.Path), &Path, sizeof(Path));
 	SetVariableBool_Params.B = B;
 
-	uFnSetVariableBool->iNative = 0;
-	uFnSetVariableBool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVariableBool, &SetVariableBool_Params, nullptr);
-	uFnSetVariableBool->FunctionFlags |= 0x400;
-	uFnSetVariableBool->iNative = 32078;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32076])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32078])
 // Parameter Info:
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
 // struct FASValue                Arg                            (CPF_Parm | CPF_NeedCtorLink)
@@ -1234,7 +1110,7 @@ void UGFxMoviePlayer::SetVariable(const class FString& Path, const struct FASVal
 
 	if (!uFnSetVariable)
 	{
-		uFnSetVariable = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetVariable = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetVariable");
 	}
 
 	UGFxMoviePlayer_execSetVariable_Params SetVariable_Params;
@@ -1242,15 +1118,11 @@ void UGFxMoviePlayer::SetVariable(const class FString& Path, const struct FASVal
 	memcpy_s(&SetVariable_Params.Path, sizeof(SetVariable_Params.Path), &Path, sizeof(Path));
 	memcpy_s(&SetVariable_Params.Arg, sizeof(SetVariable_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnSetVariable->iNative = 0;
-	uFnSetVariable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVariable, &SetVariable_Params, nullptr);
-	uFnSetVariable->FunctionFlags |= 0x400;
-	uFnSetVariable->iNative = 32076;
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableObject
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31969])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31971])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -1262,7 +1134,7 @@ class UGFxObject* UGFxMoviePlayer::GetVariableObject(const class FString& Path, 
 
 	if (!uFnGetVariableObject)
 	{
-		uFnGetVariableObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVariableObject = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVariableObject");
 	}
 
 	UGFxMoviePlayer_execGetVariableObject_Params GetVariableObject_Params;
@@ -1270,17 +1142,13 @@ class UGFxObject* UGFxMoviePlayer::GetVariableObject(const class FString& Path, 
 	memcpy_s(&GetVariableObject_Params.Path, sizeof(GetVariableObject_Params.Path), &Path, sizeof(Path));
 	GetVariableObject_Params.Type = Type;
 
-	uFnGetVariableObject->iNative = 0;
-	uFnGetVariableObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVariableObject, &GetVariableObject_Params, nullptr);
-	uFnGetVariableObject->FunctionFlags |= 0x400;
-	uFnGetVariableObject->iNative = 31969;
 
 	return GetVariableObject_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableString
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31970])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31972])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -1291,24 +1159,20 @@ class FString UGFxMoviePlayer::GetVariableString(const class FString& Path)
 
 	if (!uFnGetVariableString)
 	{
-		uFnGetVariableString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVariableString = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVariableString");
 	}
 
 	UGFxMoviePlayer_execGetVariableString_Params GetVariableString_Params;
 	memset(&GetVariableString_Params, 0, sizeof(GetVariableString_Params));
 	memcpy_s(&GetVariableString_Params.Path, sizeof(GetVariableString_Params.Path), &Path, sizeof(Path));
 
-	uFnGetVariableString->iNative = 0;
-	uFnGetVariableString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVariableString, &GetVariableString_Params, nullptr);
-	uFnGetVariableString->FunctionFlags |= 0x400;
-	uFnGetVariableString->iNative = 31970;
 
 	return GetVariableString_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableInt
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31966])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31968])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -1319,24 +1183,20 @@ int32_t UGFxMoviePlayer::GetVariableInt(const class FString& Path)
 
 	if (!uFnGetVariableInt)
 	{
-		uFnGetVariableInt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVariableInt = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVariableInt");
 	}
 
 	UGFxMoviePlayer_execGetVariableInt_Params GetVariableInt_Params;
 	memset(&GetVariableInt_Params, 0, sizeof(GetVariableInt_Params));
 	memcpy_s(&GetVariableInt_Params.Path, sizeof(GetVariableInt_Params.Path), &Path, sizeof(Path));
 
-	uFnGetVariableInt->iNative = 0;
-	uFnGetVariableInt->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVariableInt, &GetVariableInt_Params, nullptr);
-	uFnGetVariableInt->FunctionFlags |= 0x400;
-	uFnGetVariableInt->iNative = 31966;
 
 	return GetVariableInt_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableNumber
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31968])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31970])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -1347,24 +1207,20 @@ float UGFxMoviePlayer::GetVariableNumber(const class FString& Path)
 
 	if (!uFnGetVariableNumber)
 	{
-		uFnGetVariableNumber = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVariableNumber = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVariableNumber");
 	}
 
 	UGFxMoviePlayer_execGetVariableNumber_Params GetVariableNumber_Params;
 	memset(&GetVariableNumber_Params, 0, sizeof(GetVariableNumber_Params));
 	memcpy_s(&GetVariableNumber_Params.Path, sizeof(GetVariableNumber_Params.Path), &Path, sizeof(Path));
 
-	uFnGetVariableNumber->iNative = 0;
-	uFnGetVariableNumber->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVariableNumber, &GetVariableNumber_Params, nullptr);
-	uFnGetVariableNumber->FunctionFlags |= 0x400;
-	uFnGetVariableNumber->iNative = 31968;
 
 	return GetVariableNumber_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableBool
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31964])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31966])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -1375,24 +1231,20 @@ bool UGFxMoviePlayer::GetVariableBool(const class FString& Path)
 
 	if (!uFnGetVariableBool)
 	{
-		uFnGetVariableBool = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVariableBool = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVariableBool");
 	}
 
 	UGFxMoviePlayer_execGetVariableBool_Params GetVariableBool_Params;
 	memset(&GetVariableBool_Params, 0, sizeof(GetVariableBool_Params));
 	memcpy_s(&GetVariableBool_Params.Path, sizeof(GetVariableBool_Params.Path), &Path, sizeof(Path));
 
-	uFnGetVariableBool->iNative = 0;
-	uFnGetVariableBool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVariableBool, &GetVariableBool_Params, nullptr);
-	uFnGetVariableBool->FunctionFlags |= 0x400;
-	uFnGetVariableBool->iNative = 31964;
 
 	return GetVariableBool_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariable
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31962])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31964])
 // Parameter Info:
 // struct FASValue                ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -1403,24 +1255,20 @@ struct FASValue UGFxMoviePlayer::GetVariable(const class FString& Path)
 
 	if (!uFnGetVariable)
 	{
-		uFnGetVariable = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVariable = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVariable");
 	}
 
 	UGFxMoviePlayer_execGetVariable_Params GetVariable_Params;
 	memset(&GetVariable_Params, 0, sizeof(GetVariable_Params));
 	memcpy_s(&GetVariable_Params.Path, sizeof(GetVariable_Params.Path), &Path, sizeof(Path));
 
-	uFnGetVariable->iNative = 0;
-	uFnGetVariable->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVariable, &GetVariable_Params, nullptr);
-	uFnGetVariable->FunctionFlags |= 0x400;
-	uFnGetVariable->iNative = 31962;
 
 	return GetVariable_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.GetAVMVersion
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31939])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31941])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -1430,17 +1278,13 @@ int32_t UGFxMoviePlayer::GetAVMVersion()
 
 	if (!uFnGetAVMVersion)
 	{
-		uFnGetAVMVersion = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetAVMVersion = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetAVMVersion");
 	}
 
 	UGFxMoviePlayer_execGetAVMVersion_Params GetAVMVersion_Params;
 	memset(&GetAVMVersion_Params, 0, sizeof(GetAVMVersion_Params));
 
-	uFnGetAVMVersion->iNative = 0;
-	uFnGetAVMVersion->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetAVMVersion, &GetAVMVersion_Params, nullptr);
-	uFnGetAVMVersion->FunctionFlags |= 0x400;
-	uFnGetAVMVersion->iNative = 31939;
 
 	return GetAVMVersion_Params.ReturnValue;
 };
@@ -1459,7 +1303,7 @@ bool UGFxMoviePlayer::eventFilterButtonInput(int32_t ControllerId, const class F
 
 	if (!uFnFilterButtonInput)
 	{
-		uFnFilterButtonInput = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnFilterButtonInput = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.FilterButtonInput");
 	}
 
 	UGFxMoviePlayer_eventFilterButtonInput_Params FilterButtonInput_Params;
@@ -1474,7 +1318,7 @@ bool UGFxMoviePlayer::eventFilterButtonInput(int32_t ControllerId, const class F
 };
 
 // Function GFxUI.GFxMoviePlayer.FlushPlayerInput
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21156])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21158])
 // Parameter Info:
 // uint32_t                       capturekeysonly                (CPF_Parm)
 
@@ -1484,22 +1328,18 @@ void UGFxMoviePlayer::FlushPlayerInput(bool capturekeysonly)
 
 	if (!uFnFlushPlayerInput)
 	{
-		uFnFlushPlayerInput = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnFlushPlayerInput = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.FlushPlayerInput");
 	}
 
 	UGFxMoviePlayer_execFlushPlayerInput_Params FlushPlayerInput_Params;
 	memset(&FlushPlayerInput_Params, 0, sizeof(FlushPlayerInput_Params));
 	FlushPlayerInput_Params.capturekeysonly = capturekeysonly;
 
-	uFnFlushPlayerInput->iNative = 0;
-	uFnFlushPlayerInput->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFlushPlayerInput, &FlushPlayerInput_Params, nullptr);
-	uFnFlushPlayerInput->FunctionFlags |= 0x400;
-	uFnFlushPlayerInput->iNative = 21156;
 };
 
 // Function GFxUI.GFxMoviePlayer.ClearFocusIgnoreKeys
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31910])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31912])
 // Parameter Info:
 
 void UGFxMoviePlayer::ClearFocusIgnoreKeys()
@@ -1508,21 +1348,17 @@ void UGFxMoviePlayer::ClearFocusIgnoreKeys()
 
 	if (!uFnClearFocusIgnoreKeys)
 	{
-		uFnClearFocusIgnoreKeys = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnClearFocusIgnoreKeys = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ClearFocusIgnoreKeys");
 	}
 
 	UGFxMoviePlayer_execClearFocusIgnoreKeys_Params ClearFocusIgnoreKeys_Params;
 	memset(&ClearFocusIgnoreKeys_Params, 0, sizeof(ClearFocusIgnoreKeys_Params));
 
-	uFnClearFocusIgnoreKeys->iNative = 0;
-	uFnClearFocusIgnoreKeys->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearFocusIgnoreKeys, &ClearFocusIgnoreKeys_Params, nullptr);
-	uFnClearFocusIgnoreKeys->FunctionFlags |= 0x400;
-	uFnClearFocusIgnoreKeys->iNative = 31910;
 };
 
 // Function GFxUI.GFxMoviePlayer.AddFocusIgnoreKey
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31832])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31834])
 // Parameter Info:
 // class FName                    Key                            (CPF_Parm)
 
@@ -1532,22 +1368,18 @@ void UGFxMoviePlayer::AddFocusIgnoreKey(const class FName& Key)
 
 	if (!uFnAddFocusIgnoreKey)
 	{
-		uFnAddFocusIgnoreKey = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnAddFocusIgnoreKey = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.AddFocusIgnoreKey");
 	}
 
 	UGFxMoviePlayer_execAddFocusIgnoreKey_Params AddFocusIgnoreKey_Params;
 	memset(&AddFocusIgnoreKey_Params, 0, sizeof(AddFocusIgnoreKey_Params));
 	memcpy_s(&AddFocusIgnoreKey_Params.Key, sizeof(AddFocusIgnoreKey_Params.Key), &Key, sizeof(Key));
 
-	uFnAddFocusIgnoreKey->iNative = 0;
-	uFnAddFocusIgnoreKey->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAddFocusIgnoreKey, &AddFocusIgnoreKey_Params, nullptr);
-	uFnAddFocusIgnoreKey->FunctionFlags |= 0x400;
-	uFnAddFocusIgnoreKey->iNative = 31832;
 };
 
 // Function GFxUI.GFxMoviePlayer.ClearCaptureKeys
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31909])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31911])
 // Parameter Info:
 
 void UGFxMoviePlayer::ClearCaptureKeys()
@@ -1556,21 +1388,17 @@ void UGFxMoviePlayer::ClearCaptureKeys()
 
 	if (!uFnClearCaptureKeys)
 	{
-		uFnClearCaptureKeys = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnClearCaptureKeys = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ClearCaptureKeys");
 	}
 
 	UGFxMoviePlayer_execClearCaptureKeys_Params ClearCaptureKeys_Params;
 	memset(&ClearCaptureKeys_Params, 0, sizeof(ClearCaptureKeys_Params));
 
-	uFnClearCaptureKeys->iNative = 0;
-	uFnClearCaptureKeys->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearCaptureKeys, &ClearCaptureKeys_Params, nullptr);
-	uFnClearCaptureKeys->FunctionFlags |= 0x400;
-	uFnClearCaptureKeys->iNative = 31909;
 };
 
 // Function GFxUI.GFxMoviePlayer.AddCaptureKey
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31830])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31832])
 // Parameter Info:
 // class FName                    Key                            (CPF_Parm)
 
@@ -1580,22 +1408,18 @@ void UGFxMoviePlayer::AddCaptureKey(const class FName& Key)
 
 	if (!uFnAddCaptureKey)
 	{
-		uFnAddCaptureKey = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnAddCaptureKey = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.AddCaptureKey");
 	}
 
 	UGFxMoviePlayer_execAddCaptureKey_Params AddCaptureKey_Params;
 	memset(&AddCaptureKey_Params, 0, sizeof(AddCaptureKey_Params));
 	memcpy_s(&AddCaptureKey_Params.Key, sizeof(AddCaptureKey_Params.Key), &Key, sizeof(Key));
 
-	uFnAddCaptureKey->iNative = 0;
-	uFnAddCaptureKey->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAddCaptureKey, &AddCaptureKey_Params, nullptr);
-	uFnAddCaptureKey->FunctionFlags |= 0x400;
-	uFnAddCaptureKey->iNative = 31830;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetMovieCanReceiveInput
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32069])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32071])
 // Parameter Info:
 // uint32_t                       bCanReceiveInput               (CPF_Parm)
 
@@ -1605,22 +1429,18 @@ void UGFxMoviePlayer::SetMovieCanReceiveInput(bool bCanReceiveInput)
 
 	if (!uFnSetMovieCanReceiveInput)
 	{
-		uFnSetMovieCanReceiveInput = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetMovieCanReceiveInput = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetMovieCanReceiveInput");
 	}
 
 	UGFxMoviePlayer_execSetMovieCanReceiveInput_Params SetMovieCanReceiveInput_Params;
 	memset(&SetMovieCanReceiveInput_Params, 0, sizeof(SetMovieCanReceiveInput_Params));
 	SetMovieCanReceiveInput_Params.bCanReceiveInput = bCanReceiveInput;
 
-	uFnSetMovieCanReceiveInput->iNative = 0;
-	uFnSetMovieCanReceiveInput->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetMovieCanReceiveInput, &SetMovieCanReceiveInput_Params, nullptr);
-	uFnSetMovieCanReceiveInput->FunctionFlags |= 0x400;
-	uFnSetMovieCanReceiveInput->iNative = 32069;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetMovieCanReceiveFocus
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32068])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32070])
 // Parameter Info:
 // uint32_t                       bCanReceiveFocus               (CPF_Parm)
 
@@ -1630,22 +1450,18 @@ void UGFxMoviePlayer::SetMovieCanReceiveFocus(bool bCanReceiveFocus)
 
 	if (!uFnSetMovieCanReceiveFocus)
 	{
-		uFnSetMovieCanReceiveFocus = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetMovieCanReceiveFocus = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetMovieCanReceiveFocus");
 	}
 
 	UGFxMoviePlayer_execSetMovieCanReceiveFocus_Params SetMovieCanReceiveFocus_Params;
 	memset(&SetMovieCanReceiveFocus_Params, 0, sizeof(SetMovieCanReceiveFocus_Params));
 	SetMovieCanReceiveFocus_Params.bCanReceiveFocus = bCanReceiveFocus;
 
-	uFnSetMovieCanReceiveFocus->iNative = 0;
-	uFnSetMovieCanReceiveFocus->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetMovieCanReceiveFocus, &SetMovieCanReceiveFocus_Params, nullptr);
-	uFnSetMovieCanReceiveFocus->FunctionFlags |= 0x400;
-	uFnSetMovieCanReceiveFocus->iNative = 32068;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetPerspective3D
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[32071])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[32073])
 // Parameter Info:
 // struct FMatrix                 matPersp                       (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -1655,24 +1471,20 @@ void UGFxMoviePlayer::SetPerspective3D(struct FMatrix& matPersp)
 
 	if (!uFnSetPerspective3D)
 	{
-		uFnSetPerspective3D = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetPerspective3D = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetPerspective3D");
 	}
 
 	UGFxMoviePlayer_execSetPerspective3D_Params SetPerspective3D_Params;
 	memset(&SetPerspective3D_Params, 0, sizeof(SetPerspective3D_Params));
 	memcpy_s(&SetPerspective3D_Params.matPersp, sizeof(SetPerspective3D_Params.matPersp), &matPersp, sizeof(matPersp));
 
-	uFnSetPerspective3D->iNative = 0;
-	uFnSetPerspective3D->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPerspective3D, &SetPerspective3D_Params, nullptr);
-	uFnSetPerspective3D->FunctionFlags |= 0x400;
-	uFnSetPerspective3D->iNative = 32071;
 
 	memcpy_s(&matPersp, sizeof(matPersp), &SetPerspective3D_Params.matPersp, sizeof(SetPerspective3D_Params.matPersp));
 };
 
 // Function GFxUI.GFxMoviePlayer.SetView3D
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[32086])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[32088])
 // Parameter Info:
 // struct FMatrix                 matView                        (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -1682,24 +1494,20 @@ void UGFxMoviePlayer::SetView3D(struct FMatrix& matView)
 
 	if (!uFnSetView3D)
 	{
-		uFnSetView3D = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetView3D = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetView3D");
 	}
 
 	UGFxMoviePlayer_execSetView3D_Params SetView3D_Params;
 	memset(&SetView3D_Params, 0, sizeof(SetView3D_Params));
 	memcpy_s(&SetView3D_Params.matView, sizeof(SetView3D_Params.matView), &matView, sizeof(matView));
 
-	uFnSetView3D->iNative = 0;
-	uFnSetView3D->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetView3D, &SetView3D_Params, nullptr);
-	uFnSetView3D->FunctionFlags |= 0x400;
-	uFnSetView3D->iNative = 32086;
 
 	memcpy_s(&matView, sizeof(matView), &SetView3D_Params.matView, sizeof(SetView3D_Params.matView));
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVisibleFrameRect
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[31973])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[31975])
 // Parameter Info:
 // float                          x0                             (CPF_Parm | CPF_OutParm)
 // float                          y0                             (CPF_Parm | CPF_OutParm)
@@ -1712,7 +1520,7 @@ void UGFxMoviePlayer::GetVisibleFrameRect(float& x0, float& y0, float& X1, float
 
 	if (!uFnGetVisibleFrameRect)
 	{
-		uFnGetVisibleFrameRect = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetVisibleFrameRect = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetVisibleFrameRect");
 	}
 
 	UGFxMoviePlayer_execGetVisibleFrameRect_Params GetVisibleFrameRect_Params;
@@ -1722,11 +1530,7 @@ void UGFxMoviePlayer::GetVisibleFrameRect(float& x0, float& y0, float& X1, float
 	memcpy_s(&GetVisibleFrameRect_Params.X1, sizeof(GetVisibleFrameRect_Params.X1), &X1, sizeof(X1));
 	memcpy_s(&GetVisibleFrameRect_Params.Y1, sizeof(GetVisibleFrameRect_Params.Y1), &Y1, sizeof(Y1));
 
-	uFnGetVisibleFrameRect->iNative = 0;
-	uFnGetVisibleFrameRect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVisibleFrameRect, &GetVisibleFrameRect_Params, nullptr);
-	uFnGetVisibleFrameRect->FunctionFlags |= 0x400;
-	uFnGetVisibleFrameRect->iNative = 31973;
 
 	memcpy_s(&x0, sizeof(x0), &GetVisibleFrameRect_Params.x0, sizeof(GetVisibleFrameRect_Params.x0));
 	memcpy_s(&y0, sizeof(y0), &GetVisibleFrameRect_Params.y0, sizeof(GetVisibleFrameRect_Params.y0));
@@ -1735,7 +1539,7 @@ void UGFxMoviePlayer::GetVisibleFrameRect(float& x0, float& y0, float& X1, float
 };
 
 // Function GFxUI.GFxMoviePlayer.SetAlignment
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32039])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32041])
 // Parameter Info:
 // EGFxAlign                      A                              (CPF_Parm)
 
@@ -1745,22 +1549,18 @@ void UGFxMoviePlayer::SetAlignment(EGFxAlign A)
 
 	if (!uFnSetAlignment)
 	{
-		uFnSetAlignment = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetAlignment = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetAlignment");
 	}
 
 	UGFxMoviePlayer_execSetAlignment_Params SetAlignment_Params;
 	memset(&SetAlignment_Params, 0, sizeof(SetAlignment_Params));
 	memcpy_s(&SetAlignment_Params.A, sizeof(SetAlignment_Params.A), &A, sizeof(A));
 
-	uFnSetAlignment->iNative = 0;
-	uFnSetAlignment->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetAlignment, &SetAlignment_Params, nullptr);
-	uFnSetAlignment->FunctionFlags |= 0x400;
-	uFnSetAlignment->iNative = 32039;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetViewScaleMode
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32088])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32090])
 // Parameter Info:
 // EGFxScaleMode                  SM                             (CPF_Parm)
 
@@ -1770,22 +1570,18 @@ void UGFxMoviePlayer::SetViewScaleMode(EGFxScaleMode SM)
 
 	if (!uFnSetViewScaleMode)
 	{
-		uFnSetViewScaleMode = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetViewScaleMode = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetViewScaleMode");
 	}
 
 	UGFxMoviePlayer_execSetViewScaleMode_Params SetViewScaleMode_Params;
 	memset(&SetViewScaleMode_Params, 0, sizeof(SetViewScaleMode_Params));
 	memcpy_s(&SetViewScaleMode_Params.SM, sizeof(SetViewScaleMode_Params.SM), &SM, sizeof(SM));
 
-	uFnSetViewScaleMode->iNative = 0;
-	uFnSetViewScaleMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetViewScaleMode, &SetViewScaleMode_Params, nullptr);
-	uFnSetViewScaleMode->FunctionFlags |= 0x400;
-	uFnSetViewScaleMode->iNative = 32088;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetViewport
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32087])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32089])
 // Parameter Info:
 // int32_t                        X                              (CPF_Parm)
 // int32_t                        Y                              (CPF_Parm)
@@ -1798,7 +1594,7 @@ void UGFxMoviePlayer::SetViewport(int32_t X, int32_t Y, int32_t Width, int32_t H
 
 	if (!uFnSetViewport)
 	{
-		uFnSetViewport = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetViewport = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetViewport");
 	}
 
 	UGFxMoviePlayer_execSetViewport_Params SetViewport_Params;
@@ -1808,15 +1604,11 @@ void UGFxMoviePlayer::SetViewport(int32_t X, int32_t Y, int32_t Width, int32_t H
 	memcpy_s(&SetViewport_Params.Width, sizeof(SetViewport_Params.Width), &Width, sizeof(Width));
 	memcpy_s(&SetViewport_Params.Height, sizeof(SetViewport_Params.Height), &Height, sizeof(Height));
 
-	uFnSetViewport->iNative = 0;
-	uFnSetViewport->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetViewport, &SetViewport_Params, nullptr);
-	uFnSetViewport->FunctionFlags |= 0x400;
-	uFnSetViewport->iNative = 32087;
 };
 
 // Function GFxUI.GFxMoviePlayer.GetGameViewportClient
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31961])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31963])
 // Parameter Info:
 // class UGameViewportClient*     ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -1826,23 +1618,19 @@ class UGameViewportClient* UGFxMoviePlayer::GetGameViewportClient()
 
 	if (!uFnGetGameViewportClient)
 	{
-		uFnGetGameViewportClient = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnGetGameViewportClient = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.GetGameViewportClient");
 	}
 
 	UGFxMoviePlayer_execGetGameViewportClient_Params GetGameViewportClient_Params;
 	memset(&GetGameViewportClient_Params, 0, sizeof(GetGameViewportClient_Params));
 
-	uFnGetGameViewportClient->iNative = 0;
-	uFnGetGameViewportClient->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetGameViewportClient, &GetGameViewportClient_Params, nullptr);
-	uFnGetGameViewportClient->FunctionFlags |= 0x400;
-	uFnGetGameViewportClient->iNative = 31961;
 
 	return GetGameViewportClient_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetPriority
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32072])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32074])
 // Parameter Info:
 // uint8_t                        NewPriority                    (CPF_Parm)
 
@@ -1852,22 +1640,18 @@ void UGFxMoviePlayer::SetPriority(uint8_t NewPriority)
 
 	if (!uFnSetPriority)
 	{
-		uFnSetPriority = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetPriority = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetPriority");
 	}
 
 	UGFxMoviePlayer_execSetPriority_Params SetPriority_Params;
 	memset(&SetPriority_Params, 0, sizeof(SetPriority_Params));
 	memcpy_s(&SetPriority_Params.NewPriority, sizeof(SetPriority_Params.NewPriority), &NewPriority, sizeof(NewPriority));
 
-	uFnSetPriority->iNative = 0;
-	uFnSetPriority->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPriority, &SetPriority_Params, nullptr);
-	uFnSetPriority->FunctionFlags |= 0x400;
-	uFnSetPriority->iNative = 32072;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetExternalTexture
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32063])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32065])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Resource                       (CPF_Parm | CPF_NeedCtorLink)
@@ -1879,7 +1663,7 @@ bool UGFxMoviePlayer::SetExternalTexture(const class FString& Resource, class UT
 
 	if (!uFnSetExternalTexture)
 	{
-		uFnSetExternalTexture = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetExternalTexture = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetExternalTexture");
 	}
 
 	UGFxMoviePlayer_execSetExternalTexture_Params SetExternalTexture_Params;
@@ -1887,11 +1671,7 @@ bool UGFxMoviePlayer::SetExternalTexture(const class FString& Resource, class UT
 	memcpy_s(&SetExternalTexture_Params.Resource, sizeof(SetExternalTexture_Params.Resource), &Resource, sizeof(Resource));
 	SetExternalTexture_Params.Texture = Texture;
 
-	uFnSetExternalTexture->iNative = 0;
-	uFnSetExternalTexture->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetExternalTexture, &SetExternalTexture_Params, nullptr);
-	uFnSetExternalTexture->FunctionFlags |= 0x400;
-	uFnSetExternalTexture->iNative = 32063;
 
 	return SetExternalTexture_Params.ReturnValue;
 };
@@ -1907,7 +1687,7 @@ void UGFxMoviePlayer::SetExternalInterface(class UObject* H)
 
 	if (!uFnSetExternalInterface)
 	{
-		uFnSetExternalInterface = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetExternalInterface = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetExternalInterface");
 	}
 
 	UGFxMoviePlayer_execSetExternalInterface_Params SetExternalInterface_Params;
@@ -1918,7 +1698,7 @@ void UGFxMoviePlayer::SetExternalInterface(class UObject* H)
 };
 
 // Function GFxUI.GFxMoviePlayer.SetTimingMode
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32075])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32077])
 // Parameter Info:
 // EGFxTimingMode                 Mode                           (CPF_Parm)
 
@@ -1928,18 +1708,14 @@ void UGFxMoviePlayer::SetTimingMode(EGFxTimingMode Mode)
 
 	if (!uFnSetTimingMode)
 	{
-		uFnSetTimingMode = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetTimingMode = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetTimingMode");
 	}
 
 	UGFxMoviePlayer_execSetTimingMode_Params SetTimingMode_Params;
 	memset(&SetTimingMode_Params, 0, sizeof(SetTimingMode_Params));
 	memcpy_s(&SetTimingMode_Params.Mode, sizeof(SetTimingMode_Params.Mode), &Mode, sizeof(Mode));
 
-	uFnSetTimingMode->iNative = 0;
-	uFnSetTimingMode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetTimingMode, &SetTimingMode_Params, nullptr);
-	uFnSetTimingMode->FunctionFlags |= 0x400;
-	uFnSetTimingMode->iNative = 32075;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetMovieInfo
@@ -1953,7 +1729,7 @@ void UGFxMoviePlayer::SetMovieInfo(class USwfMovie* Data)
 
 	if (!uFnSetMovieInfo)
 	{
-		uFnSetMovieInfo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetMovieInfo = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetMovieInfo");
 	}
 
 	UGFxMoviePlayer_execSetMovieInfo_Params SetMovieInfo_Params;
@@ -1973,7 +1749,7 @@ void UGFxMoviePlayer::eventConditionalClearPause()
 
 	if (!uFnConditionalClearPause)
 	{
-		uFnConditionalClearPause = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnConditionalClearPause = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.ConditionalClearPause");
 	}
 
 	UGFxMoviePlayer_eventConditionalClearPause_Params ConditionalClearPause_Params;
@@ -1992,7 +1768,7 @@ void UGFxMoviePlayer::eventOnCleanup()
 
 	if (!uFnOnCleanup)
 	{
-		uFnOnCleanup = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnOnCleanup = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.OnCleanup");
 	}
 
 	UGFxMoviePlayer_eventOnCleanup_Params OnCleanup_Params;
@@ -2011,7 +1787,7 @@ void UGFxMoviePlayer::eventOnClose()
 
 	if (!uFnOnClose)
 	{
-		uFnOnClose = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnOnClose = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.OnClose");
 	}
 
 	UGFxMoviePlayer_eventOnClose_Params OnClose_Params;
@@ -2021,7 +1797,7 @@ void UGFxMoviePlayer::eventOnClose()
 };
 
 // Function GFxUI.GFxMoviePlayer.Close
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31911])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31913])
 // Parameter Info:
 // uint32_t                       Unload                         (CPF_OptionalParm | CPF_Parm)
 
@@ -2031,22 +1807,18 @@ void UGFxMoviePlayer::Close(bool Unload)
 
 	if (!uFnClose)
 	{
-		uFnClose = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnClose = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.Close");
 	}
 
 	UGFxMoviePlayer_execClose_Params Close_Params;
 	memset(&Close_Params, 0, sizeof(Close_Params));
 	Close_Params.Unload = Unload;
 
-	uFnClose->iNative = 0;
-	uFnClose->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClose, &Close_Params, nullptr);
-	uFnClose->FunctionFlags |= 0x400;
-	uFnClose->iNative = 31911;
 };
 
 // Function GFxUI.GFxMoviePlayer.SetPause
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28078])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28080])
 // Parameter Info:
 // uint32_t                       bPausePlayback                 (CPF_OptionalParm | CPF_Parm)
 
@@ -2056,18 +1828,14 @@ void UGFxMoviePlayer::SetPause(bool bPausePlayback)
 
 	if (!uFnSetPause)
 	{
-		uFnSetPause = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnSetPause = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.SetPause");
 	}
 
 	UGFxMoviePlayer_execSetPause_Params SetPause_Params;
 	memset(&SetPause_Params, 0, sizeof(SetPause_Params));
 	SetPause_Params.bPausePlayback = bPausePlayback;
 
-	uFnSetPause->iNative = 0;
-	uFnSetPause->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPause, &SetPause_Params, nullptr);
-	uFnSetPause->FunctionFlags |= 0x400;
-	uFnSetPause->iNative = 28078;
 };
 
 // Function GFxUI.GFxMoviePlayer.OnPostAdvance
@@ -2081,7 +1849,7 @@ void UGFxMoviePlayer::OnPostAdvance(float DeltaTime)
 
 	if (!uFnOnPostAdvance)
 	{
-		uFnOnPostAdvance = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnOnPostAdvance = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.OnPostAdvance");
 	}
 
 	UGFxMoviePlayer_execOnPostAdvance_Params OnPostAdvance_Params;
@@ -2092,7 +1860,7 @@ void UGFxMoviePlayer::OnPostAdvance(float DeltaTime)
 };
 
 // Function GFxUI.GFxMoviePlayer.PostAdvance
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32026])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32028])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 
@@ -2102,22 +1870,18 @@ void UGFxMoviePlayer::PostAdvance(float DeltaTime)
 
 	if (!uFnPostAdvance)
 	{
-		uFnPostAdvance = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnPostAdvance = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.PostAdvance");
 	}
 
 	UGFxMoviePlayer_execPostAdvance_Params PostAdvance_Params;
 	memset(&PostAdvance_Params, 0, sizeof(PostAdvance_Params));
 	memcpy_s(&PostAdvance_Params.DeltaTime, sizeof(PostAdvance_Params.DeltaTime), &DeltaTime, sizeof(DeltaTime));
 
-	uFnPostAdvance->iNative = 0;
-	uFnPostAdvance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPostAdvance, &PostAdvance_Params, nullptr);
-	uFnPostAdvance->FunctionFlags |= 0x400;
-	uFnPostAdvance->iNative = 32026;
 };
 
 // Function GFxUI.GFxMoviePlayer.Advance
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31833])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31835])
 // Parameter Info:
 // float                          Time                           (CPF_Parm)
 
@@ -2127,18 +1891,14 @@ void UGFxMoviePlayer::Advance(float Time)
 
 	if (!uFnAdvance)
 	{
-		uFnAdvance = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnAdvance = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.Advance");
 	}
 
 	UGFxMoviePlayer_execAdvance_Params Advance_Params;
 	memset(&Advance_Params, 0, sizeof(Advance_Params));
 	memcpy_s(&Advance_Params.Time, sizeof(Advance_Params.Time), &Time, sizeof(Time));
 
-	uFnAdvance->iNative = 0;
-	uFnAdvance->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAdvance, &Advance_Params, nullptr);
-	uFnAdvance->FunctionFlags |= 0x400;
-	uFnAdvance->iNative = 31833;
 };
 
 // Function GFxUI.GFxMoviePlayer.Start
@@ -2153,18 +1913,14 @@ bool UGFxMoviePlayer::eventStart(bool StartPaused)
 
 	if (!uFnStart)
 	{
-		uFnStart = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+		uFnStart = UFunction::FindFunction("Function GFxUI.GFxMoviePlayer.Start");
 	}
 
 	UGFxMoviePlayer_eventStart_Params Start_Params;
 	memset(&Start_Params, 0, sizeof(Start_Params));
 	Start_Params.StartPaused = StartPaused;
 
-	uFnStart->iNative = 0;
-	uFnStart->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStart, &Start_Params, nullptr);
-	uFnStart->FunctionFlags |= 0x400;
-	uFnStart->iNative = 13142;
 
 	return Start_Params.ReturnValue;
 };
@@ -2183,7 +1939,7 @@ bool UGFxObject::eventWidgetUnloaded(const class FName& WidgetName, const class 
 
 	if (!uFnWidgetUnloaded)
 	{
-		uFnWidgetUnloaded = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnWidgetUnloaded = UFunction::FindFunction("Function GFxUI.GFxObject.WidgetUnloaded");
 	}
 
 	UGFxObject_eventWidgetUnloaded_Params WidgetUnloaded_Params;
@@ -2211,7 +1967,7 @@ bool UGFxObject::eventWidgetInitialized(const class FName& WidgetName, const cla
 
 	if (!uFnWidgetInitialized)
 	{
-		uFnWidgetInitialized = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnWidgetInitialized = UFunction::FindFunction("Function GFxUI.GFxObject.WidgetInitialized");
 	}
 
 	UGFxObject_eventWidgetInitialized_Params WidgetInitialized_Params;
@@ -2226,7 +1982,7 @@ bool UGFxObject::eventWidgetInitialized(const class FName& WidgetName, const cla
 };
 
 // Function GFxUI.GFxObject.AttachMovie
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31866])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31868])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  symbolname                     (CPF_Parm | CPF_NeedCtorLink)
@@ -2240,7 +1996,7 @@ class UGFxObject* UGFxObject::AttachMovie(const class FString& symbolname, const
 
 	if (!uFnAttachMovie)
 	{
-		uFnAttachMovie = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnAttachMovie = UFunction::FindFunction("Function GFxUI.GFxObject.AttachMovie");
 	}
 
 	UGFxObject_execAttachMovie_Params AttachMovie_Params;
@@ -2250,17 +2006,13 @@ class UGFxObject* UGFxObject::AttachMovie(const class FString& symbolname, const
 	memcpy_s(&AttachMovie_Params.Depth, sizeof(AttachMovie_Params.Depth), &Depth, sizeof(Depth));
 	AttachMovie_Params.Type = Type;
 
-	uFnAttachMovie->iNative = 0;
-	uFnAttachMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAttachMovie, &AttachMovie_Params, nullptr);
-	uFnAttachMovie->FunctionFlags |= 0x400;
-	uFnAttachMovie->iNative = 31866;
 
 	return AttachMovie_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.CreateEmptyMovieClip
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31915])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31917])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  instancename                   (CPF_Parm | CPF_NeedCtorLink)
@@ -2273,7 +2025,7 @@ class UGFxObject* UGFxObject::CreateEmptyMovieClip(const class FString& instance
 
 	if (!uFnCreateEmptyMovieClip)
 	{
-		uFnCreateEmptyMovieClip = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnCreateEmptyMovieClip = UFunction::FindFunction("Function GFxUI.GFxObject.CreateEmptyMovieClip");
 	}
 
 	UGFxObject_execCreateEmptyMovieClip_Params CreateEmptyMovieClip_Params;
@@ -2282,17 +2034,13 @@ class UGFxObject* UGFxObject::CreateEmptyMovieClip(const class FString& instance
 	memcpy_s(&CreateEmptyMovieClip_Params.Depth, sizeof(CreateEmptyMovieClip_Params.Depth), &Depth, sizeof(Depth));
 	CreateEmptyMovieClip_Params.Type = Type;
 
-	uFnCreateEmptyMovieClip->iNative = 0;
-	uFnCreateEmptyMovieClip->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateEmptyMovieClip, &CreateEmptyMovieClip_Params, nullptr);
-	uFnCreateEmptyMovieClip->FunctionFlags |= 0x400;
-	uFnCreateEmptyMovieClip->iNative = 31915;
 
 	return CreateEmptyMovieClip_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GotoAndStopI
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31983])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31985])
 // Parameter Info:
 // int32_t                        frame                          (CPF_Parm)
 
@@ -2302,22 +2050,18 @@ void UGFxObject::GotoAndStopI(int32_t frame)
 
 	if (!uFnGotoAndStopI)
 	{
-		uFnGotoAndStopI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGotoAndStopI = UFunction::FindFunction("Function GFxUI.GFxObject.GotoAndStopI");
 	}
 
 	UGFxObject_execGotoAndStopI_Params GotoAndStopI_Params;
 	memset(&GotoAndStopI_Params, 0, sizeof(GotoAndStopI_Params));
 	memcpy_s(&GotoAndStopI_Params.frame, sizeof(GotoAndStopI_Params.frame), &frame, sizeof(frame));
 
-	uFnGotoAndStopI->iNative = 0;
-	uFnGotoAndStopI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGotoAndStopI, &GotoAndStopI_Params, nullptr);
-	uFnGotoAndStopI->FunctionFlags |= 0x400;
-	uFnGotoAndStopI->iNative = 31983;
 };
 
 // Function GFxUI.GFxObject.GotoAndStop
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31982])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31984])
 // Parameter Info:
 // class FString                  frame                          (CPF_Parm | CPF_NeedCtorLink)
 
@@ -2327,22 +2071,18 @@ void UGFxObject::GotoAndStop(const class FString& frame)
 
 	if (!uFnGotoAndStop)
 	{
-		uFnGotoAndStop = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGotoAndStop = UFunction::FindFunction("Function GFxUI.GFxObject.GotoAndStop");
 	}
 
 	UGFxObject_execGotoAndStop_Params GotoAndStop_Params;
 	memset(&GotoAndStop_Params, 0, sizeof(GotoAndStop_Params));
 	memcpy_s(&GotoAndStop_Params.frame, sizeof(GotoAndStop_Params.frame), &frame, sizeof(frame));
 
-	uFnGotoAndStop->iNative = 0;
-	uFnGotoAndStop->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGotoAndStop, &GotoAndStop_Params, nullptr);
-	uFnGotoAndStop->FunctionFlags |= 0x400;
-	uFnGotoAndStop->iNative = 31982;
 };
 
 // Function GFxUI.GFxObject.GotoAndPlayI
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31981])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31983])
 // Parameter Info:
 // int32_t                        frame                          (CPF_Parm)
 
@@ -2352,22 +2092,18 @@ void UGFxObject::GotoAndPlayI(int32_t frame)
 
 	if (!uFnGotoAndPlayI)
 	{
-		uFnGotoAndPlayI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGotoAndPlayI = UFunction::FindFunction("Function GFxUI.GFxObject.GotoAndPlayI");
 	}
 
 	UGFxObject_execGotoAndPlayI_Params GotoAndPlayI_Params;
 	memset(&GotoAndPlayI_Params, 0, sizeof(GotoAndPlayI_Params));
 	memcpy_s(&GotoAndPlayI_Params.frame, sizeof(GotoAndPlayI_Params.frame), &frame, sizeof(frame));
 
-	uFnGotoAndPlayI->iNative = 0;
-	uFnGotoAndPlayI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGotoAndPlayI, &GotoAndPlayI_Params, nullptr);
-	uFnGotoAndPlayI->FunctionFlags |= 0x400;
-	uFnGotoAndPlayI->iNative = 31981;
 };
 
 // Function GFxUI.GFxObject.GotoAndPlay
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31980])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31982])
 // Parameter Info:
 // class FString                  frame                          (CPF_Parm | CPF_NeedCtorLink)
 
@@ -2377,22 +2113,18 @@ void UGFxObject::GotoAndPlay(const class FString& frame)
 
 	if (!uFnGotoAndPlay)
 	{
-		uFnGotoAndPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGotoAndPlay = UFunction::FindFunction("Function GFxUI.GFxObject.GotoAndPlay");
 	}
 
 	UGFxObject_execGotoAndPlay_Params GotoAndPlay_Params;
 	memset(&GotoAndPlay_Params, 0, sizeof(GotoAndPlay_Params));
 	memcpy_s(&GotoAndPlay_Params.frame, sizeof(GotoAndPlay_Params.frame), &frame, sizeof(frame));
 
-	uFnGotoAndPlay->iNative = 0;
-	uFnGotoAndPlay->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGotoAndPlay, &GotoAndPlay_Params, nullptr);
-	uFnGotoAndPlay->FunctionFlags |= 0x400;
-	uFnGotoAndPlay->iNative = 31980;
 };
 
 // Function GFxUI.GFxObject.ActionScriptArray
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31821])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31823])
 // Parameter Info:
 // class TArray<class UGFxObject*> ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -2403,24 +2135,20 @@ class TArray<class UGFxObject*> UGFxObject::ActionScriptArray(const class FStrin
 
 	if (!uFnActionScriptArray)
 	{
-		uFnActionScriptArray = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnActionScriptArray = UFunction::FindFunction("Function GFxUI.GFxObject.ActionScriptArray");
 	}
 
 	UGFxObject_execActionScriptArray_Params ActionScriptArray_Params;
 	memset(&ActionScriptArray_Params, 0, sizeof(ActionScriptArray_Params));
 	memcpy_s(&ActionScriptArray_Params.Path, sizeof(ActionScriptArray_Params.Path), &Path, sizeof(Path));
 
-	uFnActionScriptArray->iNative = 0;
-	uFnActionScriptArray->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptArray, &ActionScriptArray_Params, nullptr);
-	uFnActionScriptArray->FunctionFlags |= 0x400;
-	uFnActionScriptArray->iNative = 31821;
 
 	return ActionScriptArray_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.ActionScriptObject
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31825])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31827])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Path                           (CPF_Parm | CPF_NeedCtorLink)
@@ -2431,24 +2159,20 @@ class UGFxObject* UGFxObject::ActionScriptObject(const class FString& Path)
 
 	if (!uFnActionScriptObject)
 	{
-		uFnActionScriptObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnActionScriptObject = UFunction::FindFunction("Function GFxUI.GFxObject.ActionScriptObject");
 	}
 
 	UGFxObject_execActionScriptObject_Params ActionScriptObject_Params;
 	memset(&ActionScriptObject_Params, 0, sizeof(ActionScriptObject_Params));
 	memcpy_s(&ActionScriptObject_Params.Path, sizeof(ActionScriptObject_Params.Path), &Path, sizeof(Path));
 
-	uFnActionScriptObject->iNative = 0;
-	uFnActionScriptObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptObject, &ActionScriptObject_Params, nullptr);
-	uFnActionScriptObject->FunctionFlags |= 0x400;
-	uFnActionScriptObject->iNative = 31825;
 
 	return ActionScriptObject_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.ActionScriptString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31828])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31830])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  method                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2459,24 +2183,20 @@ class FString UGFxObject::ActionScriptString(const class FString& method)
 
 	if (!uFnActionScriptString)
 	{
-		uFnActionScriptString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnActionScriptString = UFunction::FindFunction("Function GFxUI.GFxObject.ActionScriptString");
 	}
 
 	UGFxObject_execActionScriptString_Params ActionScriptString_Params;
 	memset(&ActionScriptString_Params, 0, sizeof(ActionScriptString_Params));
 	memcpy_s(&ActionScriptString_Params.method, sizeof(ActionScriptString_Params.method), &method, sizeof(method));
 
-	uFnActionScriptString->iNative = 0;
-	uFnActionScriptString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptString, &ActionScriptString_Params, nullptr);
-	uFnActionScriptString->FunctionFlags |= 0x400;
-	uFnActionScriptString->iNative = 31828;
 
 	return ActionScriptString_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.ActionScriptFloat
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31823])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31825])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  method                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2487,24 +2207,20 @@ float UGFxObject::ActionScriptFloat(const class FString& method)
 
 	if (!uFnActionScriptFloat)
 	{
-		uFnActionScriptFloat = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnActionScriptFloat = UFunction::FindFunction("Function GFxUI.GFxObject.ActionScriptFloat");
 	}
 
 	UGFxObject_execActionScriptFloat_Params ActionScriptFloat_Params;
 	memset(&ActionScriptFloat_Params, 0, sizeof(ActionScriptFloat_Params));
 	memcpy_s(&ActionScriptFloat_Params.method, sizeof(ActionScriptFloat_Params.method), &method, sizeof(method));
 
-	uFnActionScriptFloat->iNative = 0;
-	uFnActionScriptFloat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptFloat, &ActionScriptFloat_Params, nullptr);
-	uFnActionScriptFloat->FunctionFlags |= 0x400;
-	uFnActionScriptFloat->iNative = 31823;
 
 	return ActionScriptFloat_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.ActionScriptInt
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31824])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31826])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  method                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2515,24 +2231,20 @@ int32_t UGFxObject::ActionScriptInt(const class FString& method)
 
 	if (!uFnActionScriptInt)
 	{
-		uFnActionScriptInt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnActionScriptInt = UFunction::FindFunction("Function GFxUI.GFxObject.ActionScriptInt");
 	}
 
 	UGFxObject_execActionScriptInt_Params ActionScriptInt_Params;
 	memset(&ActionScriptInt_Params, 0, sizeof(ActionScriptInt_Params));
 	memcpy_s(&ActionScriptInt_Params.method, sizeof(ActionScriptInt_Params.method), &method, sizeof(method));
 
-	uFnActionScriptInt->iNative = 0;
-	uFnActionScriptInt->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptInt, &ActionScriptInt_Params, nullptr);
-	uFnActionScriptInt->FunctionFlags |= 0x400;
-	uFnActionScriptInt->iNative = 31824;
 
 	return ActionScriptInt_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.ActionScriptVoid
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31829])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31831])
 // Parameter Info:
 // class FString                  method                         (CPF_Parm | CPF_NeedCtorLink)
 
@@ -2542,22 +2254,18 @@ void UGFxObject::ActionScriptVoid(const class FString& method)
 
 	if (!uFnActionScriptVoid)
 	{
-		uFnActionScriptVoid = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnActionScriptVoid = UFunction::FindFunction("Function GFxUI.GFxObject.ActionScriptVoid");
 	}
 
 	UGFxObject_execActionScriptVoid_Params ActionScriptVoid_Params;
 	memset(&ActionScriptVoid_Params, 0, sizeof(ActionScriptVoid_Params));
 	memcpy_s(&ActionScriptVoid_Params.method, sizeof(ActionScriptVoid_Params.method), &method, sizeof(method));
 
-	uFnActionScriptVoid->iNative = 0;
-	uFnActionScriptVoid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptVoid, &ActionScriptVoid_Params, nullptr);
-	uFnActionScriptVoid->FunctionFlags |= 0x400;
-	uFnActionScriptVoid->iNative = 31829;
 };
 
 // Function GFxUI.GFxObject.Invoke
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32000])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32002])
 // Parameter Info:
 // struct FASValue                ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2569,7 +2277,7 @@ struct FASValue UGFxObject::Invoke(const class FString& Member, const class TArr
 
 	if (!uFnInvoke)
 	{
-		uFnInvoke = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnInvoke = UFunction::FindFunction("Function GFxUI.GFxObject.Invoke");
 	}
 
 	UGFxObject_execInvoke_Params Invoke_Params;
@@ -2577,17 +2285,13 @@ struct FASValue UGFxObject::Invoke(const class FString& Member, const class TArr
 	memcpy_s(&Invoke_Params.Member, sizeof(Invoke_Params.Member), &Member, sizeof(Member));
 	memcpy_s(&Invoke_Params.args, sizeof(Invoke_Params.args), &args, sizeof(args));
 
-	uFnInvoke->iNative = 0;
-	uFnInvoke->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInvoke, &Invoke_Params, nullptr);
-	uFnInvoke->FunctionFlags |= 0x400;
-	uFnInvoke->iNative = 32000;
 
 	return Invoke_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.ActionScriptSetFunctionOn
-// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31827])
+// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31829])
 // Parameter Info:
 // class UGFxObject*              Target                         (CPF_Parm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2598,7 +2302,7 @@ void UGFxObject::ActionScriptSetFunctionOn(class UGFxObject* Target, const class
 
 	if (!uFnActionScriptSetFunctionOn)
 	{
-		uFnActionScriptSetFunctionOn = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnActionScriptSetFunctionOn = UFunction::FindFunction("Function GFxUI.GFxObject.ActionScriptSetFunctionOn");
 	}
 
 	UGFxObject_execActionScriptSetFunctionOn_Params ActionScriptSetFunctionOn_Params;
@@ -2606,15 +2310,11 @@ void UGFxObject::ActionScriptSetFunctionOn(class UGFxObject* Target, const class
 	ActionScriptSetFunctionOn_Params.Target = Target;
 	memcpy_s(&ActionScriptSetFunctionOn_Params.Member, sizeof(ActionScriptSetFunctionOn_Params.Member), &Member, sizeof(Member));
 
-	uFnActionScriptSetFunctionOn->iNative = 0;
-	uFnActionScriptSetFunctionOn->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptSetFunctionOn, &ActionScriptSetFunctionOn_Params, nullptr);
-	uFnActionScriptSetFunctionOn->FunctionFlags |= 0x400;
-	uFnActionScriptSetFunctionOn->iNative = 31827;
 };
 
 // Function GFxUI.GFxObject.ActionScriptSetFunction
-// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31826])
+// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[31828])
 // Parameter Info:
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
 
@@ -2624,22 +2324,18 @@ void UGFxObject::ActionScriptSetFunction(const class FString& Member)
 
 	if (!uFnActionScriptSetFunction)
 	{
-		uFnActionScriptSetFunction = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnActionScriptSetFunction = UFunction::FindFunction("Function GFxUI.GFxObject.ActionScriptSetFunction");
 	}
 
 	UGFxObject_execActionScriptSetFunction_Params ActionScriptSetFunction_Params;
 	memset(&ActionScriptSetFunction_Params, 0, sizeof(ActionScriptSetFunction_Params));
 	memcpy_s(&ActionScriptSetFunction_Params.Member, sizeof(ActionScriptSetFunction_Params.Member), &Member, sizeof(Member));
 
-	uFnActionScriptSetFunction->iNative = 0;
-	uFnActionScriptSetFunction->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActionScriptSetFunction, &ActionScriptSetFunction_Params, nullptr);
-	uFnActionScriptSetFunction->FunctionFlags |= 0x400;
-	uFnActionScriptSetFunction->iNative = 31826;
 };
 
 // Function GFxUI.GFxObject.SetElementMemberString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32057])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32059])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2651,7 +2347,7 @@ void UGFxObject::SetElementMemberString(int32_t Index, const class FString& Memb
 
 	if (!uFnSetElementMemberString)
 	{
-		uFnSetElementMemberString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementMemberString = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementMemberString");
 	}
 
 	UGFxObject_execSetElementMemberString_Params SetElementMemberString_Params;
@@ -2660,15 +2356,11 @@ void UGFxObject::SetElementMemberString(int32_t Index, const class FString& Memb
 	memcpy_s(&SetElementMemberString_Params.Member, sizeof(SetElementMemberString_Params.Member), &Member, sizeof(Member));
 	memcpy_s(&SetElementMemberString_Params.S, sizeof(SetElementMemberString_Params.S), &S, sizeof(S));
 
-	uFnSetElementMemberString->iNative = 0;
-	uFnSetElementMemberString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementMemberString, &SetElementMemberString_Params, nullptr);
-	uFnSetElementMemberString->FunctionFlags |= 0x400;
-	uFnSetElementMemberString->iNative = 32057;
 };
 
 // Function GFxUI.GFxObject.SetElementMemberInt
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32055])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32057])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2680,7 +2372,7 @@ void UGFxObject::SetElementMemberInt(int32_t Index, const class FString& Member,
 
 	if (!uFnSetElementMemberInt)
 	{
-		uFnSetElementMemberInt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementMemberInt = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementMemberInt");
 	}
 
 	UGFxObject_execSetElementMemberInt_Params SetElementMemberInt_Params;
@@ -2689,15 +2381,11 @@ void UGFxObject::SetElementMemberInt(int32_t Index, const class FString& Member,
 	memcpy_s(&SetElementMemberInt_Params.Member, sizeof(SetElementMemberInt_Params.Member), &Member, sizeof(Member));
 	memcpy_s(&SetElementMemberInt_Params.I, sizeof(SetElementMemberInt_Params.I), &I, sizeof(I));
 
-	uFnSetElementMemberInt->iNative = 0;
-	uFnSetElementMemberInt->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementMemberInt, &SetElementMemberInt_Params, nullptr);
-	uFnSetElementMemberInt->FunctionFlags |= 0x400;
-	uFnSetElementMemberInt->iNative = 32055;
 };
 
 // Function GFxUI.GFxObject.SetElementMemberFloat
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32054])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32056])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2709,7 +2397,7 @@ void UGFxObject::SetElementMemberFloat(int32_t Index, const class FString& Membe
 
 	if (!uFnSetElementMemberFloat)
 	{
-		uFnSetElementMemberFloat = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementMemberFloat = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementMemberFloat");
 	}
 
 	UGFxObject_execSetElementMemberFloat_Params SetElementMemberFloat_Params;
@@ -2718,15 +2406,11 @@ void UGFxObject::SetElementMemberFloat(int32_t Index, const class FString& Membe
 	memcpy_s(&SetElementMemberFloat_Params.Member, sizeof(SetElementMemberFloat_Params.Member), &Member, sizeof(Member));
 	memcpy_s(&SetElementMemberFloat_Params.F, sizeof(SetElementMemberFloat_Params.F), &F, sizeof(F));
 
-	uFnSetElementMemberFloat->iNative = 0;
-	uFnSetElementMemberFloat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementMemberFloat, &SetElementMemberFloat_Params, nullptr);
-	uFnSetElementMemberFloat->FunctionFlags |= 0x400;
-	uFnSetElementMemberFloat->iNative = 32054;
 };
 
 // Function GFxUI.GFxObject.SetElementMemberBool
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32053])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32055])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2738,7 +2422,7 @@ void UGFxObject::SetElementMemberBool(int32_t Index, const class FString& Member
 
 	if (!uFnSetElementMemberBool)
 	{
-		uFnSetElementMemberBool = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementMemberBool = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementMemberBool");
 	}
 
 	UGFxObject_execSetElementMemberBool_Params SetElementMemberBool_Params;
@@ -2747,15 +2431,11 @@ void UGFxObject::SetElementMemberBool(int32_t Index, const class FString& Member
 	memcpy_s(&SetElementMemberBool_Params.Member, sizeof(SetElementMemberBool_Params.Member), &Member, sizeof(Member));
 	SetElementMemberBool_Params.B = B;
 
-	uFnSetElementMemberBool->iNative = 0;
-	uFnSetElementMemberBool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementMemberBool, &SetElementMemberBool_Params, nullptr);
-	uFnSetElementMemberBool->FunctionFlags |= 0x400;
-	uFnSetElementMemberBool->iNative = 32053;
 };
 
 // Function GFxUI.GFxObject.SetElementMemberObject
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32056])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32058])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2767,7 +2447,7 @@ void UGFxObject::SetElementMemberObject(int32_t Index, const class FString& Memb
 
 	if (!uFnSetElementMemberObject)
 	{
-		uFnSetElementMemberObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementMemberObject = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementMemberObject");
 	}
 
 	UGFxObject_execSetElementMemberObject_Params SetElementMemberObject_Params;
@@ -2776,15 +2456,11 @@ void UGFxObject::SetElementMemberObject(int32_t Index, const class FString& Memb
 	memcpy_s(&SetElementMemberObject_Params.Member, sizeof(SetElementMemberObject_Params.Member), &Member, sizeof(Member));
 	SetElementMemberObject_Params.val = val;
 
-	uFnSetElementMemberObject->iNative = 0;
-	uFnSetElementMemberObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementMemberObject, &SetElementMemberObject_Params, nullptr);
-	uFnSetElementMemberObject->FunctionFlags |= 0x400;
-	uFnSetElementMemberObject->iNative = 32056;
 };
 
 // Function GFxUI.GFxObject.SetElementMember
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32052])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32054])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2796,7 +2472,7 @@ void UGFxObject::SetElementMember(int32_t Index, const class FString& Member, co
 
 	if (!uFnSetElementMember)
 	{
-		uFnSetElementMember = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementMember = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementMember");
 	}
 
 	UGFxObject_execSetElementMember_Params SetElementMember_Params;
@@ -2805,15 +2481,11 @@ void UGFxObject::SetElementMember(int32_t Index, const class FString& Member, co
 	memcpy_s(&SetElementMember_Params.Member, sizeof(SetElementMember_Params.Member), &Member, sizeof(Member));
 	memcpy_s(&SetElementMember_Params.Arg, sizeof(SetElementMember_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnSetElementMember->iNative = 0;
-	uFnSetElementMember->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementMember, &SetElementMember_Params, nullptr);
-	uFnSetElementMember->FunctionFlags |= 0x400;
-	uFnSetElementMember->iNative = 32052;
 };
 
 // Function GFxUI.GFxObject.GetElementMemberString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31956])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31958])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // int32_t                        Index                          (CPF_Parm)
@@ -2825,7 +2497,7 @@ class FString UGFxObject::GetElementMemberString(int32_t Index, const class FStr
 
 	if (!uFnGetElementMemberString)
 	{
-		uFnGetElementMemberString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementMemberString = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementMemberString");
 	}
 
 	UGFxObject_execGetElementMemberString_Params GetElementMemberString_Params;
@@ -2833,17 +2505,13 @@ class FString UGFxObject::GetElementMemberString(int32_t Index, const class FStr
 	memcpy_s(&GetElementMemberString_Params.Index, sizeof(GetElementMemberString_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&GetElementMemberString_Params.Member, sizeof(GetElementMemberString_Params.Member), &Member, sizeof(Member));
 
-	uFnGetElementMemberString->iNative = 0;
-	uFnGetElementMemberString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementMemberString, &GetElementMemberString_Params, nullptr);
-	uFnGetElementMemberString->FunctionFlags |= 0x400;
-	uFnGetElementMemberString->iNative = 31956;
 
 	return GetElementMemberString_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElementMemberInt
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31954])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31956])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -2855,7 +2523,7 @@ int32_t UGFxObject::GetElementMemberInt(int32_t Index, const class FString& Memb
 
 	if (!uFnGetElementMemberInt)
 	{
-		uFnGetElementMemberInt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementMemberInt = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementMemberInt");
 	}
 
 	UGFxObject_execGetElementMemberInt_Params GetElementMemberInt_Params;
@@ -2863,17 +2531,13 @@ int32_t UGFxObject::GetElementMemberInt(int32_t Index, const class FString& Memb
 	memcpy_s(&GetElementMemberInt_Params.Index, sizeof(GetElementMemberInt_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&GetElementMemberInt_Params.Member, sizeof(GetElementMemberInt_Params.Member), &Member, sizeof(Member));
 
-	uFnGetElementMemberInt->iNative = 0;
-	uFnGetElementMemberInt->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementMemberInt, &GetElementMemberInt_Params, nullptr);
-	uFnGetElementMemberInt->FunctionFlags |= 0x400;
-	uFnGetElementMemberInt->iNative = 31954;
 
 	return GetElementMemberInt_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElementMemberFloat
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31953])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31955])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -2885,7 +2549,7 @@ float UGFxObject::GetElementMemberFloat(int32_t Index, const class FString& Memb
 
 	if (!uFnGetElementMemberFloat)
 	{
-		uFnGetElementMemberFloat = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementMemberFloat = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementMemberFloat");
 	}
 
 	UGFxObject_execGetElementMemberFloat_Params GetElementMemberFloat_Params;
@@ -2893,17 +2557,13 @@ float UGFxObject::GetElementMemberFloat(int32_t Index, const class FString& Memb
 	memcpy_s(&GetElementMemberFloat_Params.Index, sizeof(GetElementMemberFloat_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&GetElementMemberFloat_Params.Member, sizeof(GetElementMemberFloat_Params.Member), &Member, sizeof(Member));
 
-	uFnGetElementMemberFloat->iNative = 0;
-	uFnGetElementMemberFloat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementMemberFloat, &GetElementMemberFloat_Params, nullptr);
-	uFnGetElementMemberFloat->FunctionFlags |= 0x400;
-	uFnGetElementMemberFloat->iNative = 31953;
 
 	return GetElementMemberFloat_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElementMemberBool
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31952])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31954])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -2915,7 +2575,7 @@ bool UGFxObject::GetElementMemberBool(int32_t Index, const class FString& Member
 
 	if (!uFnGetElementMemberBool)
 	{
-		uFnGetElementMemberBool = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementMemberBool = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementMemberBool");
 	}
 
 	UGFxObject_execGetElementMemberBool_Params GetElementMemberBool_Params;
@@ -2923,17 +2583,13 @@ bool UGFxObject::GetElementMemberBool(int32_t Index, const class FString& Member
 	memcpy_s(&GetElementMemberBool_Params.Index, sizeof(GetElementMemberBool_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&GetElementMemberBool_Params.Member, sizeof(GetElementMemberBool_Params.Member), &Member, sizeof(Member));
 
-	uFnGetElementMemberBool->iNative = 0;
-	uFnGetElementMemberBool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementMemberBool, &GetElementMemberBool_Params, nullptr);
-	uFnGetElementMemberBool->FunctionFlags |= 0x400;
-	uFnGetElementMemberBool->iNative = 31952;
 
 	return GetElementMemberBool_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElementMemberObject
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31955])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31957])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -2946,7 +2602,7 @@ class UGFxObject* UGFxObject::GetElementMemberObject(int32_t Index, const class 
 
 	if (!uFnGetElementMemberObject)
 	{
-		uFnGetElementMemberObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementMemberObject = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementMemberObject");
 	}
 
 	UGFxObject_execGetElementMemberObject_Params GetElementMemberObject_Params;
@@ -2955,17 +2611,13 @@ class UGFxObject* UGFxObject::GetElementMemberObject(int32_t Index, const class 
 	memcpy_s(&GetElementMemberObject_Params.Member, sizeof(GetElementMemberObject_Params.Member), &Member, sizeof(Member));
 	GetElementMemberObject_Params.Type = Type;
 
-	uFnGetElementMemberObject->iNative = 0;
-	uFnGetElementMemberObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementMemberObject, &GetElementMemberObject_Params, nullptr);
-	uFnGetElementMemberObject->FunctionFlags |= 0x400;
-	uFnGetElementMemberObject->iNative = 31955;
 
 	return GetElementMemberObject_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElementMember
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31951])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31953])
 // Parameter Info:
 // struct FASValue                ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // int32_t                        Index                          (CPF_Parm)
@@ -2977,7 +2629,7 @@ struct FASValue UGFxObject::GetElementMember(int32_t Index, const class FString&
 
 	if (!uFnGetElementMember)
 	{
-		uFnGetElementMember = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementMember = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementMember");
 	}
 
 	UGFxObject_execGetElementMember_Params GetElementMember_Params;
@@ -2985,17 +2637,13 @@ struct FASValue UGFxObject::GetElementMember(int32_t Index, const class FString&
 	memcpy_s(&GetElementMember_Params.Index, sizeof(GetElementMember_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&GetElementMember_Params.Member, sizeof(GetElementMember_Params.Member), &Member, sizeof(Member));
 
-	uFnGetElementMember->iNative = 0;
-	uFnGetElementMember->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementMember, &GetElementMember_Params, nullptr);
-	uFnGetElementMember->FunctionFlags |= 0x400;
-	uFnGetElementMember->iNative = 31951;
 
 	return GetElementMember_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.SetElementColorTransform
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32047])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32049])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // struct FASColorTransform       cxform                         (CPF_Parm)
@@ -3006,7 +2654,7 @@ void UGFxObject::SetElementColorTransform(int32_t Index, const struct FASColorTr
 
 	if (!uFnSetElementColorTransform)
 	{
-		uFnSetElementColorTransform = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementColorTransform = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementColorTransform");
 	}
 
 	UGFxObject_execSetElementColorTransform_Params SetElementColorTransform_Params;
@@ -3014,15 +2662,11 @@ void UGFxObject::SetElementColorTransform(int32_t Index, const struct FASColorTr
 	memcpy_s(&SetElementColorTransform_Params.Index, sizeof(SetElementColorTransform_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetElementColorTransform_Params.cxform, sizeof(SetElementColorTransform_Params.cxform), &cxform, sizeof(cxform));
 
-	uFnSetElementColorTransform->iNative = 0;
-	uFnSetElementColorTransform->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementColorTransform, &SetElementColorTransform_Params, nullptr);
-	uFnSetElementColorTransform->FunctionFlags |= 0x400;
-	uFnSetElementColorTransform->iNative = 32047;
 };
 
 // Function GFxUI.GFxObject.SetElementPosition
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32059])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32061])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // float                          X                              (CPF_Parm)
@@ -3034,7 +2678,7 @@ void UGFxObject::SetElementPosition(int32_t Index, float X, float Y)
 
 	if (!uFnSetElementPosition)
 	{
-		uFnSetElementPosition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementPosition = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementPosition");
 	}
 
 	UGFxObject_execSetElementPosition_Params SetElementPosition_Params;
@@ -3043,15 +2687,11 @@ void UGFxObject::SetElementPosition(int32_t Index, float X, float Y)
 	memcpy_s(&SetElementPosition_Params.X, sizeof(SetElementPosition_Params.X), &X, sizeof(X));
 	memcpy_s(&SetElementPosition_Params.Y, sizeof(SetElementPosition_Params.Y), &Y, sizeof(Y));
 
-	uFnSetElementPosition->iNative = 0;
-	uFnSetElementPosition->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementPosition, &SetElementPosition_Params, nullptr);
-	uFnSetElementPosition->FunctionFlags |= 0x400;
-	uFnSetElementPosition->iNative = 32059;
 };
 
 // Function GFxUI.GFxObject.SetElementVisible
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32061])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32063])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // uint32_t                       Visible                        (CPF_Parm)
@@ -3062,7 +2702,7 @@ void UGFxObject::SetElementVisible(int32_t Index, bool Visible)
 
 	if (!uFnSetElementVisible)
 	{
-		uFnSetElementVisible = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementVisible = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementVisible");
 	}
 
 	UGFxObject_execSetElementVisible_Params SetElementVisible_Params;
@@ -3070,15 +2710,11 @@ void UGFxObject::SetElementVisible(int32_t Index, bool Visible)
 	memcpy_s(&SetElementVisible_Params.Index, sizeof(SetElementVisible_Params.Index), &Index, sizeof(Index));
 	SetElementVisible_Params.Visible = Visible;
 
-	uFnSetElementVisible->iNative = 0;
-	uFnSetElementVisible->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementVisible, &SetElementVisible_Params, nullptr);
-	uFnSetElementVisible->FunctionFlags |= 0x400;
-	uFnSetElementVisible->iNative = 32061;
 };
 
 // Function GFxUI.GFxObject.SetElementDisplayMatrix
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32049])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32051])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // struct FMatrix                 M                              (CPF_Parm)
@@ -3089,7 +2725,7 @@ void UGFxObject::SetElementDisplayMatrix(int32_t Index, const struct FMatrix& M)
 
 	if (!uFnSetElementDisplayMatrix)
 	{
-		uFnSetElementDisplayMatrix = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementDisplayMatrix = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementDisplayMatrix");
 	}
 
 	UGFxObject_execSetElementDisplayMatrix_Params SetElementDisplayMatrix_Params;
@@ -3097,15 +2733,11 @@ void UGFxObject::SetElementDisplayMatrix(int32_t Index, const struct FMatrix& M)
 	memcpy_s(&SetElementDisplayMatrix_Params.Index, sizeof(SetElementDisplayMatrix_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetElementDisplayMatrix_Params.M, sizeof(SetElementDisplayMatrix_Params.M), &M, sizeof(M));
 
-	uFnSetElementDisplayMatrix->iNative = 0;
-	uFnSetElementDisplayMatrix->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementDisplayMatrix, &SetElementDisplayMatrix_Params, nullptr);
-	uFnSetElementDisplayMatrix->FunctionFlags |= 0x400;
-	uFnSetElementDisplayMatrix->iNative = 32049;
 };
 
 // Function GFxUI.GFxObject.SetElementDisplayInfo
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32048])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32050])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // struct FASDisplayInfo          D                              (CPF_Parm)
@@ -3116,7 +2748,7 @@ void UGFxObject::SetElementDisplayInfo(int32_t Index, const struct FASDisplayInf
 
 	if (!uFnSetElementDisplayInfo)
 	{
-		uFnSetElementDisplayInfo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementDisplayInfo = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementDisplayInfo");
 	}
 
 	UGFxObject_execSetElementDisplayInfo_Params SetElementDisplayInfo_Params;
@@ -3124,15 +2756,11 @@ void UGFxObject::SetElementDisplayInfo(int32_t Index, const struct FASDisplayInf
 	memcpy_s(&SetElementDisplayInfo_Params.Index, sizeof(SetElementDisplayInfo_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetElementDisplayInfo_Params.D, sizeof(SetElementDisplayInfo_Params.D), &D, sizeof(D));
 
-	uFnSetElementDisplayInfo->iNative = 0;
-	uFnSetElementDisplayInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementDisplayInfo, &SetElementDisplayInfo_Params, nullptr);
-	uFnSetElementDisplayInfo->FunctionFlags |= 0x400;
-	uFnSetElementDisplayInfo->iNative = 32048;
 };
 
 // Function GFxUI.GFxObject.GetElementDisplayMatrix
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31948])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31950])
 // Parameter Info:
 // struct FMatrix                 ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -3143,24 +2771,20 @@ struct FMatrix UGFxObject::GetElementDisplayMatrix(int32_t Index)
 
 	if (!uFnGetElementDisplayMatrix)
 	{
-		uFnGetElementDisplayMatrix = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementDisplayMatrix = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementDisplayMatrix");
 	}
 
 	UGFxObject_execGetElementDisplayMatrix_Params GetElementDisplayMatrix_Params;
 	memset(&GetElementDisplayMatrix_Params, 0, sizeof(GetElementDisplayMatrix_Params));
 	memcpy_s(&GetElementDisplayMatrix_Params.Index, sizeof(GetElementDisplayMatrix_Params.Index), &Index, sizeof(Index));
 
-	uFnGetElementDisplayMatrix->iNative = 0;
-	uFnGetElementDisplayMatrix->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementDisplayMatrix, &GetElementDisplayMatrix_Params, nullptr);
-	uFnGetElementDisplayMatrix->FunctionFlags |= 0x400;
-	uFnGetElementDisplayMatrix->iNative = 31948;
 
 	return GetElementDisplayMatrix_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElementDisplayInfo
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31947])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31949])
 // Parameter Info:
 // struct FASDisplayInfo          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -3171,24 +2795,20 @@ struct FASDisplayInfo UGFxObject::GetElementDisplayInfo(int32_t Index)
 
 	if (!uFnGetElementDisplayInfo)
 	{
-		uFnGetElementDisplayInfo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementDisplayInfo = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementDisplayInfo");
 	}
 
 	UGFxObject_execGetElementDisplayInfo_Params GetElementDisplayInfo_Params;
 	memset(&GetElementDisplayInfo_Params, 0, sizeof(GetElementDisplayInfo_Params));
 	memcpy_s(&GetElementDisplayInfo_Params.Index, sizeof(GetElementDisplayInfo_Params.Index), &Index, sizeof(Index));
 
-	uFnGetElementDisplayInfo->iNative = 0;
-	uFnGetElementDisplayInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementDisplayInfo, &GetElementDisplayInfo_Params, nullptr);
-	uFnGetElementDisplayInfo->FunctionFlags |= 0x400;
-	uFnGetElementDisplayInfo->iNative = 31947;
 
 	return GetElementDisplayInfo_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.SetElementString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32060])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32062])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // class FString                  S                              (CPF_Parm | CPF_NeedCtorLink)
@@ -3199,7 +2819,7 @@ void UGFxObject::SetElementString(int32_t Index, const class FString& S)
 
 	if (!uFnSetElementString)
 	{
-		uFnSetElementString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementString = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementString");
 	}
 
 	UGFxObject_execSetElementString_Params SetElementString_Params;
@@ -3207,15 +2827,11 @@ void UGFxObject::SetElementString(int32_t Index, const class FString& S)
 	memcpy_s(&SetElementString_Params.Index, sizeof(SetElementString_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetElementString_Params.S, sizeof(SetElementString_Params.S), &S, sizeof(S));
 
-	uFnSetElementString->iNative = 0;
-	uFnSetElementString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementString, &SetElementString_Params, nullptr);
-	uFnSetElementString->FunctionFlags |= 0x400;
-	uFnSetElementString->iNative = 32060;
 };
 
 // Function GFxUI.GFxObject.SetElementInt
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32051])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32053])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // int32_t                        I                              (CPF_Parm)
@@ -3226,7 +2842,7 @@ void UGFxObject::SetElementInt(int32_t Index, int32_t I)
 
 	if (!uFnSetElementInt)
 	{
-		uFnSetElementInt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementInt = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementInt");
 	}
 
 	UGFxObject_execSetElementInt_Params SetElementInt_Params;
@@ -3234,15 +2850,11 @@ void UGFxObject::SetElementInt(int32_t Index, int32_t I)
 	memcpy_s(&SetElementInt_Params.Index, sizeof(SetElementInt_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetElementInt_Params.I, sizeof(SetElementInt_Params.I), &I, sizeof(I));
 
-	uFnSetElementInt->iNative = 0;
-	uFnSetElementInt->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementInt, &SetElementInt_Params, nullptr);
-	uFnSetElementInt->FunctionFlags |= 0x400;
-	uFnSetElementInt->iNative = 32051;
 };
 
 // Function GFxUI.GFxObject.SetElementFloat
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32050])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32052])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // float                          F                              (CPF_Parm)
@@ -3253,7 +2865,7 @@ void UGFxObject::SetElementFloat(int32_t Index, float F)
 
 	if (!uFnSetElementFloat)
 	{
-		uFnSetElementFloat = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementFloat = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementFloat");
 	}
 
 	UGFxObject_execSetElementFloat_Params SetElementFloat_Params;
@@ -3261,15 +2873,11 @@ void UGFxObject::SetElementFloat(int32_t Index, float F)
 	memcpy_s(&SetElementFloat_Params.Index, sizeof(SetElementFloat_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetElementFloat_Params.F, sizeof(SetElementFloat_Params.F), &F, sizeof(F));
 
-	uFnSetElementFloat->iNative = 0;
-	uFnSetElementFloat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementFloat, &SetElementFloat_Params, nullptr);
-	uFnSetElementFloat->FunctionFlags |= 0x400;
-	uFnSetElementFloat->iNative = 32050;
 };
 
 // Function GFxUI.GFxObject.SetElementBool
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32046])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32048])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // uint32_t                       B                              (CPF_Parm)
@@ -3280,7 +2888,7 @@ void UGFxObject::SetElementBool(int32_t Index, bool B)
 
 	if (!uFnSetElementBool)
 	{
-		uFnSetElementBool = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementBool = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementBool");
 	}
 
 	UGFxObject_execSetElementBool_Params SetElementBool_Params;
@@ -3288,15 +2896,11 @@ void UGFxObject::SetElementBool(int32_t Index, bool B)
 	memcpy_s(&SetElementBool_Params.Index, sizeof(SetElementBool_Params.Index), &Index, sizeof(Index));
 	SetElementBool_Params.B = B;
 
-	uFnSetElementBool->iNative = 0;
-	uFnSetElementBool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementBool, &SetElementBool_Params, nullptr);
-	uFnSetElementBool->FunctionFlags |= 0x400;
-	uFnSetElementBool->iNative = 32046;
 };
 
 // Function GFxUI.GFxObject.SetElementObject
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32058])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32060])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // class UGFxObject*              val                            (CPF_Parm)
@@ -3307,7 +2911,7 @@ void UGFxObject::SetElementObject(int32_t Index, class UGFxObject* val)
 
 	if (!uFnSetElementObject)
 	{
-		uFnSetElementObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElementObject = UFunction::FindFunction("Function GFxUI.GFxObject.SetElementObject");
 	}
 
 	UGFxObject_execSetElementObject_Params SetElementObject_Params;
@@ -3315,15 +2919,11 @@ void UGFxObject::SetElementObject(int32_t Index, class UGFxObject* val)
 	memcpy_s(&SetElementObject_Params.Index, sizeof(SetElementObject_Params.Index), &Index, sizeof(Index));
 	SetElementObject_Params.val = val;
 
-	uFnSetElementObject->iNative = 0;
-	uFnSetElementObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElementObject, &SetElementObject_Params, nullptr);
-	uFnSetElementObject->FunctionFlags |= 0x400;
-	uFnSetElementObject->iNative = 32058;
 };
 
 // Function GFxUI.GFxObject.SetElement
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32045])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32047])
 // Parameter Info:
 // int32_t                        Index                          (CPF_Parm)
 // struct FASValue                Arg                            (CPF_Parm | CPF_NeedCtorLink)
@@ -3334,7 +2934,7 @@ void UGFxObject::SetElement(int32_t Index, const struct FASValue& Arg)
 
 	if (!uFnSetElement)
 	{
-		uFnSetElement = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetElement = UFunction::FindFunction("Function GFxUI.GFxObject.SetElement");
 	}
 
 	UGFxObject_execSetElement_Params SetElement_Params;
@@ -3342,15 +2942,11 @@ void UGFxObject::SetElement(int32_t Index, const struct FASValue& Arg)
 	memcpy_s(&SetElement_Params.Index, sizeof(SetElement_Params.Index), &Index, sizeof(Index));
 	memcpy_s(&SetElement_Params.Arg, sizeof(SetElement_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnSetElement->iNative = 0;
-	uFnSetElement->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetElement, &SetElement_Params, nullptr);
-	uFnSetElement->FunctionFlags |= 0x400;
-	uFnSetElement->iNative = 32045;
 };
 
 // Function GFxUI.GFxObject.GetElementString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31958])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31960])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // int32_t                        Index                          (CPF_Parm)
@@ -3361,24 +2957,20 @@ class FString UGFxObject::GetElementString(int32_t Index)
 
 	if (!uFnGetElementString)
 	{
-		uFnGetElementString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementString = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementString");
 	}
 
 	UGFxObject_execGetElementString_Params GetElementString_Params;
 	memset(&GetElementString_Params, 0, sizeof(GetElementString_Params));
 	memcpy_s(&GetElementString_Params.Index, sizeof(GetElementString_Params.Index), &Index, sizeof(Index));
 
-	uFnGetElementString->iNative = 0;
-	uFnGetElementString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementString, &GetElementString_Params, nullptr);
-	uFnGetElementString->FunctionFlags |= 0x400;
-	uFnGetElementString->iNative = 31958;
 
 	return GetElementString_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElementInt
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31950])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31952])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -3389,24 +2981,20 @@ int32_t UGFxObject::GetElementInt(int32_t Index)
 
 	if (!uFnGetElementInt)
 	{
-		uFnGetElementInt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementInt = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementInt");
 	}
 
 	UGFxObject_execGetElementInt_Params GetElementInt_Params;
 	memset(&GetElementInt_Params, 0, sizeof(GetElementInt_Params));
 	memcpy_s(&GetElementInt_Params.Index, sizeof(GetElementInt_Params.Index), &Index, sizeof(Index));
 
-	uFnGetElementInt->iNative = 0;
-	uFnGetElementInt->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementInt, &GetElementInt_Params, nullptr);
-	uFnGetElementInt->FunctionFlags |= 0x400;
-	uFnGetElementInt->iNative = 31950;
 
 	return GetElementInt_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElementFloat
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31949])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31951])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -3417,24 +3005,20 @@ float UGFxObject::GetElementFloat(int32_t Index)
 
 	if (!uFnGetElementFloat)
 	{
-		uFnGetElementFloat = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementFloat = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementFloat");
 	}
 
 	UGFxObject_execGetElementFloat_Params GetElementFloat_Params;
 	memset(&GetElementFloat_Params, 0, sizeof(GetElementFloat_Params));
 	memcpy_s(&GetElementFloat_Params.Index, sizeof(GetElementFloat_Params.Index), &Index, sizeof(Index));
 
-	uFnGetElementFloat->iNative = 0;
-	uFnGetElementFloat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementFloat, &GetElementFloat_Params, nullptr);
-	uFnGetElementFloat->FunctionFlags |= 0x400;
-	uFnGetElementFloat->iNative = 31949;
 
 	return GetElementFloat_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElementBool
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31946])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31948])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -3445,24 +3029,20 @@ bool UGFxObject::GetElementBool(int32_t Index)
 
 	if (!uFnGetElementBool)
 	{
-		uFnGetElementBool = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementBool = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementBool");
 	}
 
 	UGFxObject_execGetElementBool_Params GetElementBool_Params;
 	memset(&GetElementBool_Params, 0, sizeof(GetElementBool_Params));
 	memcpy_s(&GetElementBool_Params.Index, sizeof(GetElementBool_Params.Index), &Index, sizeof(Index));
 
-	uFnGetElementBool->iNative = 0;
-	uFnGetElementBool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementBool, &GetElementBool_Params, nullptr);
-	uFnGetElementBool->FunctionFlags |= 0x400;
-	uFnGetElementBool->iNative = 31946;
 
 	return GetElementBool_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElementObject
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31957])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[31959])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        Index                          (CPF_Parm)
@@ -3474,7 +3054,7 @@ class UGFxObject* UGFxObject::GetElementObject(int32_t Index, class UClass* Type
 
 	if (!uFnGetElementObject)
 	{
-		uFnGetElementObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElementObject = UFunction::FindFunction("Function GFxUI.GFxObject.GetElementObject");
 	}
 
 	UGFxObject_execGetElementObject_Params GetElementObject_Params;
@@ -3482,17 +3062,13 @@ class UGFxObject* UGFxObject::GetElementObject(int32_t Index, class UClass* Type
 	memcpy_s(&GetElementObject_Params.Index, sizeof(GetElementObject_Params.Index), &Index, sizeof(Index));
 	GetElementObject_Params.Type = Type;
 
-	uFnGetElementObject->iNative = 0;
-	uFnGetElementObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElementObject, &GetElementObject_Params, nullptr);
-	uFnGetElementObject->FunctionFlags |= 0x400;
-	uFnGetElementObject->iNative = 31957;
 
 	return GetElementObject_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetElement
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31945])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31947])
 // Parameter Info:
 // struct FASValue                ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // int32_t                        Index                          (CPF_Parm)
@@ -3503,24 +3079,20 @@ struct FASValue UGFxObject::GetElement(int32_t Index)
 
 	if (!uFnGetElement)
 	{
-		uFnGetElement = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetElement = UFunction::FindFunction("Function GFxUI.GFxObject.GetElement");
 	}
 
 	UGFxObject_execGetElement_Params GetElement_Params;
 	memset(&GetElement_Params, 0, sizeof(GetElement_Params));
 	memcpy_s(&GetElement_Params.Index, sizeof(GetElement_Params.Index), &Index, sizeof(Index));
 
-	uFnGetElement->iNative = 0;
-	uFnGetElement->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetElement, &GetElement_Params, nullptr);
-	uFnGetElement->FunctionFlags |= 0x400;
-	uFnGetElement->iNative = 31945;
 
 	return GetElement_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.SetText
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[32074])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[32076])
 // Parameter Info:
 // class FString                  Text                           (CPF_Parm | CPF_CoerceParm | CPF_NeedCtorLink)
 // class UTranslationContext*     InContext                      (CPF_OptionalParm | CPF_Parm)
@@ -3531,7 +3103,7 @@ void UGFxObject::SetText(const class FString& Text, class UTranslationContext* I
 
 	if (!uFnSetText)
 	{
-		uFnSetText = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetText = UFunction::FindFunction("Function GFxUI.GFxObject.SetText");
 	}
 
 	UGFxObject_execSetText_Params SetText_Params;
@@ -3539,11 +3111,7 @@ void UGFxObject::SetText(const class FString& Text, class UTranslationContext* I
 	memcpy_s(&SetText_Params.Text, sizeof(SetText_Params.Text), &Text, sizeof(Text));
 	SetText_Params.InContext = InContext;
 
-	uFnSetText->iNative = 0;
-	uFnSetText->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetText, &SetText_Params, nullptr);
-	uFnSetText->FunctionFlags |= 0x400;
-	uFnSetText->iNative = 32074;
 };
 
 // Function GFxUI.GFxObject.GetText
@@ -3557,23 +3125,19 @@ class FString UGFxObject::GetText()
 
 	if (!uFnGetText)
 	{
-		uFnGetText = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetText = UFunction::FindFunction("Function GFxUI.GFxObject.GetText");
 	}
 
 	UGFxObject_execGetText_Params GetText_Params;
 	memset(&GetText_Params, 0, sizeof(GetText_Params));
 
-	uFnGetText->iNative = 0;
-	uFnGetText->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetText, &GetText_Params, nullptr);
-	uFnGetText->FunctionFlags |= 0x400;
-	uFnGetText->iNative = 13295;
 
 	return GetText_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetVisible
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31972])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31974])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3583,23 +3147,19 @@ bool UGFxObject::GetVisible()
 
 	if (!uFnGetVisible)
 	{
-		uFnGetVisible = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetVisible = UFunction::FindFunction("Function GFxUI.GFxObject.GetVisible");
 	}
 
 	UGFxObject_execGetVisible_Params GetVisible_Params;
 	memset(&GetVisible_Params, 0, sizeof(GetVisible_Params));
 
-	uFnGetVisible->iNative = 0;
-	uFnGetVisible->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVisible, &GetVisible_Params, nullptr);
-	uFnGetVisible->FunctionFlags |= 0x400;
-	uFnGetVisible->iNative = 31972;
 
 	return GetVisible_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.SetVisible
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32089])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32091])
 // Parameter Info:
 // uint32_t                       Visible                        (CPF_Parm)
 
@@ -3609,22 +3169,18 @@ void UGFxObject::SetVisible(bool Visible)
 
 	if (!uFnSetVisible)
 	{
-		uFnSetVisible = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetVisible = UFunction::FindFunction("Function GFxUI.GFxObject.SetVisible");
 	}
 
 	UGFxObject_execSetVisible_Params SetVisible_Params;
 	memset(&SetVisible_Params, 0, sizeof(SetVisible_Params));
 	SetVisible_Params.Visible = Visible;
 
-	uFnSetVisible->iNative = 0;
-	uFnSetVisible->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVisible, &SetVisible_Params, nullptr);
-	uFnSetVisible->FunctionFlags |= 0x400;
-	uFnSetVisible->iNative = 32089;
 };
 
 // Function GFxUI.GFxObject.SetDisplayMatrix3D
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32044])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32046])
 // Parameter Info:
 // struct FMatrix                 M                              (CPF_Parm)
 
@@ -3634,22 +3190,18 @@ void UGFxObject::SetDisplayMatrix3D(const struct FMatrix& M)
 
 	if (!uFnSetDisplayMatrix3D)
 	{
-		uFnSetDisplayMatrix3D = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetDisplayMatrix3D = UFunction::FindFunction("Function GFxUI.GFxObject.SetDisplayMatrix3D");
 	}
 
 	UGFxObject_execSetDisplayMatrix3D_Params SetDisplayMatrix3D_Params;
 	memset(&SetDisplayMatrix3D_Params, 0, sizeof(SetDisplayMatrix3D_Params));
 	memcpy_s(&SetDisplayMatrix3D_Params.M, sizeof(SetDisplayMatrix3D_Params.M), &M, sizeof(M));
 
-	uFnSetDisplayMatrix3D->iNative = 0;
-	uFnSetDisplayMatrix3D->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDisplayMatrix3D, &SetDisplayMatrix3D_Params, nullptr);
-	uFnSetDisplayMatrix3D->FunctionFlags |= 0x400;
-	uFnSetDisplayMatrix3D->iNative = 32044;
 };
 
 // Function GFxUI.GFxObject.SetDisplayMatrix
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32043])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32045])
 // Parameter Info:
 // struct FMatrix                 M                              (CPF_Parm)
 
@@ -3659,22 +3211,18 @@ void UGFxObject::SetDisplayMatrix(const struct FMatrix& M)
 
 	if (!uFnSetDisplayMatrix)
 	{
-		uFnSetDisplayMatrix = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetDisplayMatrix = UFunction::FindFunction("Function GFxUI.GFxObject.SetDisplayMatrix");
 	}
 
 	UGFxObject_execSetDisplayMatrix_Params SetDisplayMatrix_Params;
 	memset(&SetDisplayMatrix_Params, 0, sizeof(SetDisplayMatrix_Params));
 	memcpy_s(&SetDisplayMatrix_Params.M, sizeof(SetDisplayMatrix_Params.M), &M, sizeof(M));
 
-	uFnSetDisplayMatrix->iNative = 0;
-	uFnSetDisplayMatrix->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDisplayMatrix, &SetDisplayMatrix_Params, nullptr);
-	uFnSetDisplayMatrix->FunctionFlags |= 0x400;
-	uFnSetDisplayMatrix->iNative = 32043;
 };
 
 // Function GFxUI.GFxObject.SetColorTransform
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32041])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32043])
 // Parameter Info:
 // struct FASColorTransform       cxform                         (CPF_Parm)
 
@@ -3684,22 +3232,18 @@ void UGFxObject::SetColorTransform(const struct FASColorTransform& cxform)
 
 	if (!uFnSetColorTransform)
 	{
-		uFnSetColorTransform = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetColorTransform = UFunction::FindFunction("Function GFxUI.GFxObject.SetColorTransform");
 	}
 
 	UGFxObject_execSetColorTransform_Params SetColorTransform_Params;
 	memset(&SetColorTransform_Params, 0, sizeof(SetColorTransform_Params));
 	memcpy_s(&SetColorTransform_Params.cxform, sizeof(SetColorTransform_Params.cxform), &cxform, sizeof(cxform));
 
-	uFnSetColorTransform->iNative = 0;
-	uFnSetColorTransform->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetColorTransform, &SetColorTransform_Params, nullptr);
-	uFnSetColorTransform->FunctionFlags |= 0x400;
-	uFnSetColorTransform->iNative = 32041;
 };
 
 // Function GFxUI.GFxObject.SetPosition
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28092])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28094])
 // Parameter Info:
 // float                          X                              (CPF_Parm)
 // float                          Y                              (CPF_Parm)
@@ -3710,7 +3254,7 @@ void UGFxObject::SetPosition(float X, float Y)
 
 	if (!uFnSetPosition)
 	{
-		uFnSetPosition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetPosition = UFunction::FindFunction("Function GFxUI.GFxObject.SetPosition");
 	}
 
 	UGFxObject_execSetPosition_Params SetPosition_Params;
@@ -3718,15 +3262,11 @@ void UGFxObject::SetPosition(float X, float Y)
 	memcpy_s(&SetPosition_Params.X, sizeof(SetPosition_Params.X), &X, sizeof(X));
 	memcpy_s(&SetPosition_Params.Y, sizeof(SetPosition_Params.Y), &Y, sizeof(Y));
 
-	uFnSetPosition->iNative = 0;
-	uFnSetPosition->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetPosition, &SetPosition_Params, nullptr);
-	uFnSetPosition->FunctionFlags |= 0x400;
-	uFnSetPosition->iNative = 28092;
 };
 
 // Function GFxUI.GFxObject.SetDisplayInfo
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32042])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32044])
 // Parameter Info:
 // struct FASDisplayInfo          D                              (CPF_Parm)
 
@@ -3736,22 +3276,18 @@ void UGFxObject::SetDisplayInfo(const struct FASDisplayInfo& D)
 
 	if (!uFnSetDisplayInfo)
 	{
-		uFnSetDisplayInfo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetDisplayInfo = UFunction::FindFunction("Function GFxUI.GFxObject.SetDisplayInfo");
 	}
 
 	UGFxObject_execSetDisplayInfo_Params SetDisplayInfo_Params;
 	memset(&SetDisplayInfo_Params, 0, sizeof(SetDisplayInfo_Params));
 	memcpy_s(&SetDisplayInfo_Params.D, sizeof(SetDisplayInfo_Params.D), &D, sizeof(D));
 
-	uFnSetDisplayInfo->iNative = 0;
-	uFnSetDisplayInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetDisplayInfo, &SetDisplayInfo_Params, nullptr);
-	uFnSetDisplayInfo->FunctionFlags |= 0x400;
-	uFnSetDisplayInfo->iNative = 32042;
 };
 
 // Function GFxUI.GFxObject.GetDisplayMatrix3D
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31944])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31946])
 // Parameter Info:
 // struct FMatrix                 ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3761,23 +3297,19 @@ struct FMatrix UGFxObject::GetDisplayMatrix3D()
 
 	if (!uFnGetDisplayMatrix3D)
 	{
-		uFnGetDisplayMatrix3D = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetDisplayMatrix3D = UFunction::FindFunction("Function GFxUI.GFxObject.GetDisplayMatrix3D");
 	}
 
 	UGFxObject_execGetDisplayMatrix3D_Params GetDisplayMatrix3D_Params;
 	memset(&GetDisplayMatrix3D_Params, 0, sizeof(GetDisplayMatrix3D_Params));
 
-	uFnGetDisplayMatrix3D->iNative = 0;
-	uFnGetDisplayMatrix3D->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetDisplayMatrix3D, &GetDisplayMatrix3D_Params, nullptr);
-	uFnGetDisplayMatrix3D->FunctionFlags |= 0x400;
-	uFnGetDisplayMatrix3D->iNative = 31944;
 
 	return GetDisplayMatrix3D_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetDisplayMatrix
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31943])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31945])
 // Parameter Info:
 // struct FMatrix                 ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3787,23 +3319,19 @@ struct FMatrix UGFxObject::GetDisplayMatrix()
 
 	if (!uFnGetDisplayMatrix)
 	{
-		uFnGetDisplayMatrix = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetDisplayMatrix = UFunction::FindFunction("Function GFxUI.GFxObject.GetDisplayMatrix");
 	}
 
 	UGFxObject_execGetDisplayMatrix_Params GetDisplayMatrix_Params;
 	memset(&GetDisplayMatrix_Params, 0, sizeof(GetDisplayMatrix_Params));
 
-	uFnGetDisplayMatrix->iNative = 0;
-	uFnGetDisplayMatrix->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetDisplayMatrix, &GetDisplayMatrix_Params, nullptr);
-	uFnGetDisplayMatrix->FunctionFlags |= 0x400;
-	uFnGetDisplayMatrix->iNative = 31943;
 
 	return GetDisplayMatrix_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetColorTransform
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31941])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31943])
 // Parameter Info:
 // struct FASColorTransform       ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3813,23 +3341,19 @@ struct FASColorTransform UGFxObject::GetColorTransform()
 
 	if (!uFnGetColorTransform)
 	{
-		uFnGetColorTransform = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetColorTransform = UFunction::FindFunction("Function GFxUI.GFxObject.GetColorTransform");
 	}
 
 	UGFxObject_execGetColorTransform_Params GetColorTransform_Params;
 	memset(&GetColorTransform_Params, 0, sizeof(GetColorTransform_Params));
 
-	uFnGetColorTransform->iNative = 0;
-	uFnGetColorTransform->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetColorTransform, &GetColorTransform_Params, nullptr);
-	uFnGetColorTransform->FunctionFlags |= 0x400;
-	uFnGetColorTransform->iNative = 31941;
 
 	return GetColorTransform_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetPosition
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21901])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21903])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // float                          X                              (CPF_Parm | CPF_OutParm)
@@ -3841,7 +3365,7 @@ bool UGFxObject::GetPosition(float& X, float& Y)
 
 	if (!uFnGetPosition)
 	{
-		uFnGetPosition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetPosition = UFunction::FindFunction("Function GFxUI.GFxObject.GetPosition");
 	}
 
 	UGFxObject_execGetPosition_Params GetPosition_Params;
@@ -3849,11 +3373,7 @@ bool UGFxObject::GetPosition(float& X, float& Y)
 	memcpy_s(&GetPosition_Params.X, sizeof(GetPosition_Params.X), &X, sizeof(X));
 	memcpy_s(&GetPosition_Params.Y, sizeof(GetPosition_Params.Y), &Y, sizeof(Y));
 
-	uFnGetPosition->iNative = 0;
-	uFnGetPosition->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPosition, &GetPosition_Params, nullptr);
-	uFnGetPosition->FunctionFlags |= 0x400;
-	uFnGetPosition->iNative = 21901;
 
 	memcpy_s(&X, sizeof(X), &GetPosition_Params.X, sizeof(GetPosition_Params.X));
 	memcpy_s(&Y, sizeof(Y), &GetPosition_Params.Y, sizeof(GetPosition_Params.Y));
@@ -3862,7 +3382,7 @@ bool UGFxObject::GetPosition(float& X, float& Y)
 };
 
 // Function GFxUI.GFxObject.GetDisplayInfo
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31942])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31944])
 // Parameter Info:
 // struct FASDisplayInfo          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3872,23 +3392,19 @@ struct FASDisplayInfo UGFxObject::GetDisplayInfo()
 
 	if (!uFnGetDisplayInfo)
 	{
-		uFnGetDisplayInfo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetDisplayInfo = UFunction::FindFunction("Function GFxUI.GFxObject.GetDisplayInfo");
 	}
 
 	UGFxObject_execGetDisplayInfo_Params GetDisplayInfo_Params;
 	memset(&GetDisplayInfo_Params, 0, sizeof(GetDisplayInfo_Params));
 
-	uFnGetDisplayInfo->iNative = 0;
-	uFnGetDisplayInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetDisplayInfo, &GetDisplayInfo_Params, nullptr);
-	uFnGetDisplayInfo->FunctionFlags |= 0x400;
-	uFnGetDisplayInfo->iNative = 31942;
 
 	return GetDisplayInfo_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.TranslateString
-// [0x00026400] (FUNC_Native | FUNC_Static | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[32116])
+// [0x00026400] (FUNC_Native | FUNC_Static | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[32118])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  StringToTranslate              (CPF_Parm | CPF_NeedCtorLink)
@@ -3900,7 +3416,7 @@ class FString UGFxObject::TranslateString(const class FString& StringToTranslate
 
 	if (!uFnTranslateString)
 	{
-		uFnTranslateString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnTranslateString = UFunction::FindFunction("Function GFxUI.GFxObject.TranslateString");
 	}
 
 	UGFxObject_execTranslateString_Params TranslateString_Params;
@@ -3908,17 +3424,13 @@ class FString UGFxObject::TranslateString(const class FString& StringToTranslate
 	memcpy_s(&TranslateString_Params.StringToTranslate, sizeof(TranslateString_Params.StringToTranslate), &StringToTranslate, sizeof(StringToTranslate));
 	TranslateString_Params.InContext = InContext;
 
-	uFnTranslateString->iNative = 0;
-	uFnTranslateString->FunctionFlags &= ~0x400;
 	UGFxObject::StaticClass()->ProcessEvent(uFnTranslateString, &TranslateString_Params, nullptr);
-	uFnTranslateString->FunctionFlags |= 0x400;
-	uFnTranslateString->iNative = 32116;
 
 	return TranslateString_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.SetFunction
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32065])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32067])
 // Parameter Info:
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
 // class UObject*                 context                        (CPF_Parm)
@@ -3930,7 +3442,7 @@ void UGFxObject::SetFunction(const class FString& Member, class UObject* context
 
 	if (!uFnSetFunction)
 	{
-		uFnSetFunction = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetFunction = UFunction::FindFunction("Function GFxUI.GFxObject.SetFunction");
 	}
 
 	UGFxObject_execSetFunction_Params SetFunction_Params;
@@ -3939,15 +3451,11 @@ void UGFxObject::SetFunction(const class FString& Member, class UObject* context
 	SetFunction_Params.context = context;
 	memcpy_s(&SetFunction_Params.fname, sizeof(SetFunction_Params.fname), &fname, sizeof(fname));
 
-	uFnSetFunction->iNative = 0;
-	uFnSetFunction->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetFunction, &SetFunction_Params, nullptr);
-	uFnSetFunction->FunctionFlags |= 0x400;
-	uFnSetFunction->iNative = 32065;
 };
 
 // Function GFxUI.GFxObject.SetObject
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28060])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28062])
 // Parameter Info:
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
 // class UGFxObject*              val                            (CPF_Parm)
@@ -3958,7 +3466,7 @@ void UGFxObject::SetObject(const class FString& Member, class UGFxObject* val)
 
 	if (!uFnSetObject)
 	{
-		uFnSetObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetObject = UFunction::FindFunction("Function GFxUI.GFxObject.SetObject");
 	}
 
 	UGFxObject_execSetObject_Params SetObject_Params;
@@ -3966,15 +3474,11 @@ void UGFxObject::SetObject(const class FString& Member, class UGFxObject* val)
 	memcpy_s(&SetObject_Params.Member, sizeof(SetObject_Params.Member), &Member, sizeof(Member));
 	SetObject_Params.val = val;
 
-	uFnSetObject->iNative = 0;
-	uFnSetObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetObject, &SetObject_Params, nullptr);
-	uFnSetObject->FunctionFlags |= 0x400;
-	uFnSetObject->iNative = 28060;
 };
 
 // Function GFxUI.GFxObject.SetString
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[32073])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[32075])
 // Parameter Info:
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
 // class FString                  S                              (CPF_Parm | CPF_NeedCtorLink)
@@ -3986,7 +3490,7 @@ void UGFxObject::SetString(const class FString& Member, const class FString& S, 
 
 	if (!uFnSetString)
 	{
-		uFnSetString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetString = UFunction::FindFunction("Function GFxUI.GFxObject.SetString");
 	}
 
 	UGFxObject_execSetString_Params SetString_Params;
@@ -3995,15 +3499,11 @@ void UGFxObject::SetString(const class FString& Member, const class FString& S, 
 	memcpy_s(&SetString_Params.S, sizeof(SetString_Params.S), &S, sizeof(S));
 	SetString_Params.InContext = InContext;
 
-	uFnSetString->iNative = 0;
-	uFnSetString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetString, &SetString_Params, nullptr);
-	uFnSetString->FunctionFlags |= 0x400;
-	uFnSetString->iNative = 32073;
 };
 
 // Function GFxUI.GFxObject.SetInt
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32066])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32068])
 // Parameter Info:
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
 // int32_t                        I                              (CPF_Parm)
@@ -4014,7 +3514,7 @@ void UGFxObject::SetInt(const class FString& Member, int32_t I)
 
 	if (!uFnSetInt)
 	{
-		uFnSetInt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetInt = UFunction::FindFunction("Function GFxUI.GFxObject.SetInt");
 	}
 
 	UGFxObject_execSetInt_Params SetInt_Params;
@@ -4022,15 +3522,11 @@ void UGFxObject::SetInt(const class FString& Member, int32_t I)
 	memcpy_s(&SetInt_Params.Member, sizeof(SetInt_Params.Member), &Member, sizeof(Member));
 	memcpy_s(&SetInt_Params.I, sizeof(SetInt_Params.I), &I, sizeof(I));
 
-	uFnSetInt->iNative = 0;
-	uFnSetInt->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetInt, &SetInt_Params, nullptr);
-	uFnSetInt->FunctionFlags |= 0x400;
-	uFnSetInt->iNative = 32066;
 };
 
 // Function GFxUI.GFxObject.SetFloat
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32064])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32066])
 // Parameter Info:
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
 // float                          F                              (CPF_Parm)
@@ -4041,7 +3537,7 @@ void UGFxObject::SetFloat(const class FString& Member, float F)
 
 	if (!uFnSetFloat)
 	{
-		uFnSetFloat = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetFloat = UFunction::FindFunction("Function GFxUI.GFxObject.SetFloat");
 	}
 
 	UGFxObject_execSetFloat_Params SetFloat_Params;
@@ -4049,15 +3545,11 @@ void UGFxObject::SetFloat(const class FString& Member, float F)
 	memcpy_s(&SetFloat_Params.Member, sizeof(SetFloat_Params.Member), &Member, sizeof(Member));
 	memcpy_s(&SetFloat_Params.F, sizeof(SetFloat_Params.F), &F, sizeof(F));
 
-	uFnSetFloat->iNative = 0;
-	uFnSetFloat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetFloat, &SetFloat_Params, nullptr);
-	uFnSetFloat->FunctionFlags |= 0x400;
-	uFnSetFloat->iNative = 32064;
 };
 
 // Function GFxUI.GFxObject.SetBool
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32040])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[32042])
 // Parameter Info:
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
 // uint32_t                       B                              (CPF_Parm)
@@ -4068,7 +3560,7 @@ void UGFxObject::SetBool(const class FString& Member, bool B)
 
 	if (!uFnSetBool)
 	{
-		uFnSetBool = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSetBool = UFunction::FindFunction("Function GFxUI.GFxObject.SetBool");
 	}
 
 	UGFxObject_execSetBool_Params SetBool_Params;
@@ -4076,15 +3568,11 @@ void UGFxObject::SetBool(const class FString& Member, bool B)
 	memcpy_s(&SetBool_Params.Member, sizeof(SetBool_Params.Member), &Member, sizeof(Member));
 	SetBool_Params.B = B;
 
-	uFnSetBool->iNative = 0;
-	uFnSetBool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetBool, &SetBool_Params, nullptr);
-	uFnSetBool->FunctionFlags |= 0x400;
-	uFnSetBool->iNative = 32040;
 };
 
 // Function GFxUI.GFxObject.Set
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27841])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27843])
 // Parameter Info:
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
 // struct FASValue                Arg                            (CPF_Parm | CPF_NeedCtorLink)
@@ -4095,7 +3583,7 @@ void UGFxObject::Set(const class FString& Member, const struct FASValue& Arg)
 
 	if (!uFnSet)
 	{
-		uFnSet = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnSet = UFunction::FindFunction("Function GFxUI.GFxObject.Set");
 	}
 
 	UGFxObject_execSet_Params Set_Params;
@@ -4103,15 +3591,11 @@ void UGFxObject::Set(const class FString& Member, const struct FASValue& Arg)
 	memcpy_s(&Set_Params.Member, sizeof(Set_Params.Member), &Member, sizeof(Member));
 	memcpy_s(&Set_Params.Arg, sizeof(Set_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnSet->iNative = 0;
-	uFnSet->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSet, &Set_Params, nullptr);
-	uFnSet->FunctionFlags |= 0x400;
-	uFnSet->iNative = 27841;
 };
 
 // Function GFxUI.GFxObject.GetObject
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[21856])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[21858])
 // Parameter Info:
 // class UGFxObject*              ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -4123,7 +3607,7 @@ class UGFxObject* UGFxObject::GetObjectW(const class FString& Member, class UCla
 
 	if (!uFnGetObjectW)
 	{
-		uFnGetObjectW = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetObjectW = UFunction::FindFunction("Function GFxUI.GFxObject.GetObject");
 	}
 
 	UGFxObject_execGetObjectW_Params GetObjectW_Params;
@@ -4131,17 +3615,13 @@ class UGFxObject* UGFxObject::GetObjectW(const class FString& Member, class UCla
 	memcpy_s(&GetObjectW_Params.Member, sizeof(GetObjectW_Params.Member), &Member, sizeof(Member));
 	GetObjectW_Params.Type = Type;
 
-	uFnGetObjectW->iNative = 0;
-	uFnGetObjectW->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetObjectW, &GetObjectW_Params, nullptr);
-	uFnGetObjectW->FunctionFlags |= 0x400;
-	uFnGetObjectW->iNative = 21856;
 
 	return GetObjectW_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetString
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21999])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22001])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -4152,24 +3632,20 @@ class FString UGFxObject::GetString(const class FString& Member)
 
 	if (!uFnGetString)
 	{
-		uFnGetString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetString = UFunction::FindFunction("Function GFxUI.GFxObject.GetString");
 	}
 
 	UGFxObject_execGetString_Params GetString_Params;
 	memset(&GetString_Params, 0, sizeof(GetString_Params));
 	memcpy_s(&GetString_Params.Member, sizeof(GetString_Params.Member), &Member, sizeof(Member));
 
-	uFnGetString->iNative = 0;
-	uFnGetString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetString, &GetString_Params, nullptr);
-	uFnGetString->FunctionFlags |= 0x400;
-	uFnGetString->iNative = 21999;
 
 	return GetString_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetInt
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21779])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21781])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -4180,24 +3656,20 @@ int32_t UGFxObject::GetInt(const class FString& Member)
 
 	if (!uFnGetInt)
 	{
-		uFnGetInt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetInt = UFunction::FindFunction("Function GFxUI.GFxObject.GetInt");
 	}
 
 	UGFxObject_execGetInt_Params GetInt_Params;
 	memset(&GetInt_Params, 0, sizeof(GetInt_Params));
 	memcpy_s(&GetInt_Params.Member, sizeof(GetInt_Params.Member), &Member, sizeof(Member));
 
-	uFnGetInt->iNative = 0;
-	uFnGetInt->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetInt, &GetInt_Params, nullptr);
-	uFnGetInt->FunctionFlags |= 0x400;
-	uFnGetInt->iNative = 21779;
 
 	return GetInt_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetFloat
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21735])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21737])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -4208,24 +3680,20 @@ float UGFxObject::GetFloat(const class FString& Member)
 
 	if (!uFnGetFloat)
 	{
-		uFnGetFloat = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetFloat = UFunction::FindFunction("Function GFxUI.GFxObject.GetFloat");
 	}
 
 	UGFxObject_execGetFloat_Params GetFloat_Params;
 	memset(&GetFloat_Params, 0, sizeof(GetFloat_Params));
 	memcpy_s(&GetFloat_Params.Member, sizeof(GetFloat_Params.Member), &Member, sizeof(Member));
 
-	uFnGetFloat->iNative = 0;
-	uFnGetFloat->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetFloat, &GetFloat_Params, nullptr);
-	uFnGetFloat->FunctionFlags |= 0x400;
-	uFnGetFloat->iNative = 21735;
 
 	return GetFloat_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.GetBool
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31940])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31942])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -4236,24 +3704,20 @@ bool UGFxObject::GetBool(const class FString& Member)
 
 	if (!uFnGetBool)
 	{
-		uFnGetBool = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGetBool = UFunction::FindFunction("Function GFxUI.GFxObject.GetBool");
 	}
 
 	UGFxObject_execGetBool_Params GetBool_Params;
 	memset(&GetBool_Params, 0, sizeof(GetBool_Params));
 	memcpy_s(&GetBool_Params.Member, sizeof(GetBool_Params.Member), &Member, sizeof(Member));
 
-	uFnGetBool->iNative = 0;
-	uFnGetBool->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetBool, &GetBool_Params, nullptr);
-	uFnGetBool->FunctionFlags |= 0x400;
-	uFnGetBool->iNative = 31940;
 
 	return GetBool_Params.ReturnValue;
 };
 
 // Function GFxUI.GFxObject.Get
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31938])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[31940])
 // Parameter Info:
 // struct FASValue                ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  Member                         (CPF_Parm | CPF_NeedCtorLink)
@@ -4264,18 +3728,14 @@ struct FASValue UGFxObject::Get(const class FString& Member)
 
 	if (!uFnGet)
 	{
-		uFnGet = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+		uFnGet = UFunction::FindFunction("Function GFxUI.GFxObject.Get");
 	}
 
 	UGFxObject_execGet_Params Get_Params;
 	memset(&Get_Params, 0, sizeof(Get_Params));
 	memcpy_s(&Get_Params.Member, sizeof(Get_Params.Member), &Member, sizeof(Member));
 
-	uFnGet->iNative = 0;
-	uFnGet->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGet, &Get_Params, nullptr);
-	uFnGet->FunctionFlags |= 0x400;
-	uFnGet->iNative = 31938;
 
 	return Get_Params.ReturnValue;
 };
@@ -4291,7 +3751,7 @@ bool UGFxAction_CloseMovie::eventIsValidLevelSequenceObject()
 
 	if (!uFnIsValidLevelSequenceObject)
 	{
-		uFnIsValidLevelSequenceObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_CLOSEMOVIE));
+		uFnIsValidLevelSequenceObject = UFunction::FindFunction("Function GFxUI.GFxAction_CloseMovie.IsValidLevelSequenceObject");
 	}
 
 	UGFxAction_CloseMovie_eventIsValidLevelSequenceObject_Params IsValidLevelSequenceObject_Params;
@@ -4313,7 +3773,7 @@ bool UGFxAction_GetVariable::eventIsValidLevelSequenceObject()
 
 	if (!uFnIsValidLevelSequenceObject)
 	{
-		uFnIsValidLevelSequenceObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_GETVARIABLE));
+		uFnIsValidLevelSequenceObject = UFunction::FindFunction("Function GFxUI.GFxAction_GetVariable.IsValidLevelSequenceObject");
 	}
 
 	UGFxAction_GetVariable_eventIsValidLevelSequenceObject_Params IsValidLevelSequenceObject_Params;
@@ -4335,7 +3795,7 @@ bool UGFxAction_Invoke::eventIsValidLevelSequenceObject()
 
 	if (!uFnIsValidLevelSequenceObject)
 	{
-		uFnIsValidLevelSequenceObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_INVOKE));
+		uFnIsValidLevelSequenceObject = UFunction::FindFunction("Function GFxUI.GFxAction_Invoke.IsValidLevelSequenceObject");
 	}
 
 	UGFxAction_Invoke_eventIsValidLevelSequenceObject_Params IsValidLevelSequenceObject_Params;
@@ -4357,7 +3817,7 @@ bool UGFxAction_OpenMovie::eventIsValidLevelSequenceObject()
 
 	if (!uFnIsValidLevelSequenceObject)
 	{
-		uFnIsValidLevelSequenceObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_OPENMOVIE));
+		uFnIsValidLevelSequenceObject = UFunction::FindFunction("Function GFxUI.GFxAction_OpenMovie.IsValidLevelSequenceObject");
 	}
 
 	UGFxAction_OpenMovie_eventIsValidLevelSequenceObject_Params IsValidLevelSequenceObject_Params;
@@ -4379,7 +3839,7 @@ bool UGFxAction_SetVariable::eventIsValidLevelSequenceObject()
 
 	if (!uFnIsValidLevelSequenceObject)
 	{
-		uFnIsValidLevelSequenceObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_SETVARIABLE));
+		uFnIsValidLevelSequenceObject = UFunction::FindFunction("Function GFxUI.GFxAction_SetVariable.IsValidLevelSequenceObject");
 	}
 
 	UGFxAction_SetVariable_eventIsValidLevelSequenceObject_Params IsValidLevelSequenceObject_Params;
@@ -4405,7 +3865,7 @@ bool UGFxFSCmdHandler_Kismet::eventFSCommand(class UGFxMoviePlayer* Movie, class
 
 	if (!uFnFSCommand)
 	{
-		uFnFSCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXFSCMDHANDLER_KISMET));
+		uFnFSCommand = UFunction::FindFunction("Function GFxUI.GFxFSCmdHandler_Kismet.FSCommand");
 	}
 
 	UGFxFSCmdHandler_Kismet_eventFSCommand_Params FSCommand_Params;
@@ -4415,11 +3875,7 @@ bool UGFxFSCmdHandler_Kismet::eventFSCommand(class UGFxMoviePlayer* Movie, class
 	memcpy_s(&FSCommand_Params.Cmd, sizeof(FSCommand_Params.Cmd), &Cmd, sizeof(Cmd));
 	memcpy_s(&FSCommand_Params.Arg, sizeof(FSCommand_Params.Arg), &Arg, sizeof(Arg));
 
-	uFnFSCommand->iNative = 0;
-	uFnFSCommand->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFSCommand, &FSCommand_Params, nullptr);
-	uFnFSCommand->FunctionFlags |= 0x400;
-	uFnFSCommand->iNative = 13133;
 
 	return FSCommand_Params.ReturnValue;
 };
@@ -4435,7 +3891,7 @@ void UGFxClikWidget::ASRemoveAllEventListeners(const class FString& Event)
 
 	if (!uFnASRemoveAllEventListeners)
 	{
-		uFnASRemoveAllEventListeners = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXCLIKWIDGET));
+		uFnASRemoveAllEventListeners = UFunction::FindFunction("Function GFxUI.GFxClikWidget.ASRemoveAllEventListeners");
 	}
 
 	UGFxClikWidget_execASRemoveAllEventListeners_Params ASRemoveAllEventListeners_Params;
@@ -4460,7 +3916,7 @@ void UGFxClikWidget::AS3AddEventListener(const class FString& Type, class UGFxOb
 
 	if (!uFnAS3AddEventListener)
 	{
-		uFnAS3AddEventListener = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXCLIKWIDGET));
+		uFnAS3AddEventListener = UFunction::FindFunction("Function GFxUI.GFxClikWidget.AS3AddEventListener");
 	}
 
 	UGFxClikWidget_execAS3AddEventListener_Params AS3AddEventListener_Params;
@@ -4487,7 +3943,7 @@ void UGFxClikWidget::ASAddEventListener(const class FString& Type, class UGFxObj
 
 	if (!uFnASAddEventListener)
 	{
-		uFnASAddEventListener = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXCLIKWIDGET));
+		uFnASAddEventListener = UFunction::FindFunction("Function GFxUI.GFxClikWidget.ASAddEventListener");
 	}
 
 	UGFxClikWidget_execASAddEventListener_Params ASAddEventListener_Params;
@@ -4512,7 +3968,7 @@ void UGFxClikWidget::SetListener(class UGFxObject* O, const class FString& Membe
 
 	if (!uFnSetListener)
 	{
-		uFnSetListener = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXCLIKWIDGET));
+		uFnSetListener = UFunction::FindFunction("Function GFxUI.GFxClikWidget.SetListener");
 	}
 
 	UGFxClikWidget_execSetListener_Params SetListener_Params;
@@ -4536,7 +3992,7 @@ class FString UGFxClikWidget::GetEventStringFromTypename(const class FName& Type
 
 	if (!uFnGetEventStringFromTypename)
 	{
-		uFnGetEventStringFromTypename = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXCLIKWIDGET));
+		uFnGetEventStringFromTypename = UFunction::FindFunction("Function GFxUI.GFxClikWidget.GetEventStringFromTypename");
 	}
 
 	UGFxClikWidget_execGetEventStringFromTypename_Params GetEventStringFromTypename_Params;
@@ -4559,7 +4015,7 @@ void UGFxClikWidget::RemoveAllEventListeners(const class FString& Event)
 
 	if (!uFnRemoveAllEventListeners)
 	{
-		uFnRemoveAllEventListeners = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXCLIKWIDGET));
+		uFnRemoveAllEventListeners = UFunction::FindFunction("Function GFxUI.GFxClikWidget.RemoveAllEventListeners");
 	}
 
 	UGFxClikWidget_execRemoveAllEventListeners_Params RemoveAllEventListeners_Params;
@@ -4584,7 +4040,7 @@ void UGFxClikWidget::AddEventListener(const class FName& Type, const struct FScr
 
 	if (!uFnAddEventListener)
 	{
-		uFnAddEventListener = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXCLIKWIDGET));
+		uFnAddEventListener = UFunction::FindFunction("Function GFxUI.GFxClikWidget.AddEventListener");
 	}
 
 	UGFxClikWidget_execAddEventListener_Params AddEventListener_Params;
@@ -4609,7 +4065,7 @@ void UGFxClikWidget::EventListener(const struct FEventData& Data)
 
 	if (!uFnEventListener)
 	{
-		uFnEventListener = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXCLIKWIDGET));
+		uFnEventListener = UFunction::FindFunction("Function GFxUI.GFxClikWidget.EventListener");
 	}
 
 	UGFxClikWidget_execEventListener_Params EventListener_Params;

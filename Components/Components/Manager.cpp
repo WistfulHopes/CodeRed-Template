@@ -1388,7 +1388,7 @@ void ManagerComponent::UnrealCommand(std::string unrealCommand, bool bPrintToCon
 			Console.Write(GetNameFormatted() + "Executing unreal command \"" + unrealCommand + "\".");
 		}
 
-		defaultActor->ConsoleCommand(unrealCommand.c_str(), false); // May need your own function to convert std::string to FString if your game uses wchar_t.
+		defaultActor->ConsoleCommand(unrealCommand, false); // May need your own function to convert std::string to FString if your game uses wchar_t.
 	}
 }
 
@@ -1539,7 +1539,7 @@ std::shared_ptr<Setting> ManagerComponent::GetSetting(VariableIds variable)
 void ManagerComponent::Initialize()
 {
 	// Assigning the "STATES_CasualMatch" and "STATES_RankedMatch" flags, so this module will only be able to be used in casual or ranked games.
-	CreateModule<PlaceholderModule>(new PlaceholderModule("Paceholder", "An example module.", States::STATES_CasualMatch | States::STATES_RankedMatch), PlaceholderMod);
+	CreateModule<PlaceholderModule>(new PlaceholderModule("Placeholder", "An example module.", STATES_All), PlaceholderMod);
 	
 	CreateCommand("reset_setting", new Command(VariableIds::MANAGER_RESET_SETTING, "Reset a setting to its default/original value."))->BindStringCallback([&](const std::string& arguments) { ResetSetting(arguments); });
 	CreateCommand("unreal_command", new Command(VariableIds::MANAGER_UNREAL_COMMAND, "Execute a Unreal Engine 3 command with the given arguments."))->BindStringCallback([&](const std::string& arguments) { UnrealCommand(arguments); });

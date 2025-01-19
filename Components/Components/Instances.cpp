@@ -11,7 +11,6 @@ void InstancesComponent::OnCreate()
 	I_AHUD = nullptr;
 	I_UGameViewportClient = nullptr;
 	I_APlayerController = nullptr;
-	I_UREDGfxMoviePlayer_MenuNetworkRoom = nullptr;
 }
 
 void InstancesComponent::OnDestroy() {}
@@ -144,11 +143,6 @@ class APlayerController* InstancesComponent::IAPlayerController()
 	return I_APlayerController;
 }
 
-class UREDGfxMoviePlayer_MenuNetworkRoom* InstancesComponent::IUREDGfxMoviePlayer_MenuNetworkRoom()
-{
-	return I_UREDGfxMoviePlayer_MenuNetworkRoom;
-}
-
 void InstancesComponent::SetCanvas(class UCanvas* canvas)
 {
 	if (I_UCanvas != canvas)
@@ -178,14 +172,6 @@ void InstancesComponent::SetPlayerController(class APlayerController* playerCont
 	if (I_APlayerController != playerController)
 	{
 		I_APlayerController = playerController;
-	}
-}
-
-void InstancesComponent::SetMenuNetworkRoom(class UREDGfxMoviePlayer_MenuNetworkRoom* menuNetworkRoom)
-{
-	if (I_UREDGfxMoviePlayer_MenuNetworkRoom != menuNetworkRoom)
-	{
-		I_UREDGfxMoviePlayer_MenuNetworkRoom = menuNetworkRoom;
 	}
 }
 

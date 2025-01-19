@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -116,7 +115,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXENGINE));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxEngine");
 		}
 
 		return uClassPointer;
@@ -137,7 +136,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXFSCMDHANDLER));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxFSCmdHandler");
 		}
 
 		return uClassPointer;
@@ -161,7 +160,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXINTERACTION));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxInteraction");
 		}
 
 		return uClassPointer;
@@ -236,7 +235,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXMOVIEPLAYER));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxMoviePlayer");
 		}
 
 		return uClassPointer;
@@ -334,7 +333,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXOBJECT));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxObject");
 		}
 
 		return uClassPointer;
@@ -435,7 +434,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXRAWDATA));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxRawData");
 		}
 
 		return uClassPointer;
@@ -469,7 +468,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_SWFMOVIE));
+			uClassPointer = UObject::FindClass("Class GFxUI.SwfMovie");
 		}
 
 		return uClassPointer;
@@ -490,7 +489,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_FLASHMOVIE));
+			uClassPointer = UObject::FindClass("Class GFxUI.FlashMovie");
 		}
 
 		return uClassPointer;
@@ -513,7 +512,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_CLOSEMOVIE));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxAction_CloseMovie");
 		}
 
 		return uClassPointer;
@@ -537,7 +536,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_GETVARIABLE));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxAction_GetVariable");
 		}
 
 		return uClassPointer;
@@ -562,7 +561,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_INVOKE));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxAction_Invoke");
 		}
 
 		return uClassPointer;
@@ -596,7 +595,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_OPENMOVIE));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxAction_OpenMovie");
 		}
 
 		return uClassPointer;
@@ -620,7 +619,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_SETCAPTUREKEYS));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxAction_SetCaptureKeys");
 		}
 
 		return uClassPointer;
@@ -643,7 +642,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXACTION_SETVARIABLE));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxAction_SetVariable");
 		}
 
 		return uClassPointer;
@@ -668,7 +667,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXEVENT_FSCOMMAND));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxEvent_FSCommand");
 		}
 
 		return uClassPointer;
@@ -689,7 +688,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXFSCMDHANDLER_KISMET));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxFSCmdHandler_Kismet");
 		}
 
 		return uClassPointer;
@@ -712,7 +711,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GFXUI_GFXCLIKWIDGET));
+			uClassPointer = UObject::FindClass("Class GFxUI.GFxClikWidget");
 		}
 
 		return uClassPointer;

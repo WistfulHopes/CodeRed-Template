@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -1581,7 +1580,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_ANIMATIONCOMPRESSIONALGORITHM_CUTSCENE));
+			uClassPointer = UObject::FindClass("Class REDGame.AnimationCompressionAlgorithm_CutScene");
 		}
 
 		return uClassPointer;
@@ -1602,7 +1601,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_ANIMATIONCOMPRESSIONALGORITHM_MULTIPLESOFFIVEKEY));
+			uClassPointer = UObject::FindClass("Class REDGame.AnimationCompressionAlgorithm_MultiplesOfFiveKey");
 		}
 
 		return uClassPointer;
@@ -1623,7 +1622,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_ANIMATIONCOMPRESSIONALGORITHM_REDAUTOMATIC));
+			uClassPointer = UObject::FindClass("Class REDGame.AnimationCompressionAlgorithm_REDAutomatic");
 		}
 
 		return uClassPointer;
@@ -1652,7 +1651,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDACTOR_CHECKDOF));
+			uClassPointer = UObject::FindClass("Class REDGame.REDActor_CheckDOF");
 		}
 
 		return uClassPointer;
@@ -1692,7 +1691,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDACTOR_GLAREEFFECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDActor_GlareEffect");
 		}
 
 		return uClassPointer;
@@ -1730,7 +1729,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDACTOR_PAUSEMENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDActor_PauseMenu");
 		}
 
 		return uClassPointer;
@@ -1755,7 +1754,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDACTOR_POSTUPDATER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDActor_PostUpdater");
 		}
 
 		return uClassPointer;
@@ -1794,7 +1793,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDACTOR_RADIALBLUR));
+			uClassPointer = UObject::FindClass("Class REDGame.REDActor_RadialBlur");
 		}
 
 		return uClassPointer;
@@ -1823,7 +1822,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDADVPRESETCAMERAARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAdvPresetCameraArray");
 		}
 
 		return uClassPointer;
@@ -1846,7 +1845,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDADVSCENEDATA));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAdvSceneData");
 		}
 
 		return uClassPointer;
@@ -1876,7 +1875,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODEBLENDLIST));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeBlendList");
 		}
 
 		return uClassPointer;
@@ -1898,7 +1897,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODEBLENDPERBONE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeBlendPerBone");
 		}
 
 		return uClassPointer;
@@ -1928,7 +1927,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODEBLENDADVFACE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeBlendAdvFace");
 		}
 
 		return uClassPointer;
@@ -1958,7 +1957,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODEBLENDADVHAIR));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeBlendAdvHair");
 		}
 
 		return uClassPointer;
@@ -1991,7 +1990,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODEBLENDEYEBLINK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeBlendEyeBlink");
 		}
 
 		return uClassPointer;
@@ -2033,7 +2032,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODEBLENDLIP));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeBlendLip");
 		}
 
 		return uClassPointer;
@@ -2077,7 +2076,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODESCARFSYSTEM));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeScarfSystem");
 		}
 
 		return uClassPointer;
@@ -2104,7 +2103,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODELIMITEDBLENDSLOT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeLimitedBlendSlot");
 		}
 
 		return uClassPointer;
@@ -2138,7 +2137,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODELOOKATBATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeLookAtBattle");
 		}
 
 		return uClassPointer;
@@ -2170,7 +2169,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODESEQUENCE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeSequence");
 		}
 
 		return uClassPointer;
@@ -2197,7 +2196,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNODESEQUENCEMANUALTICK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNodeSequenceManualTick");
 		}
 
 		return uClassPointer;
@@ -2219,7 +2218,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMNOTIFY_ANIMELOOP));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimNotify_AnimeLoop");
 		}
 
 		return uClassPointer;
@@ -2241,7 +2240,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMSETARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimSetArray");
 		}
 
 		return uClassPointer;
@@ -2262,7 +2261,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMTREE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimTree");
 		}
 
 		return uClassPointer;
@@ -2289,7 +2288,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANYWHEREDISP));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnywhereDisp");
 		}
 
 		return uClassPointer;
@@ -2324,7 +2323,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDARCADESCRIPT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDArcadeScript");
 		}
 
 		return uClassPointer;
@@ -2368,7 +2367,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDASYNCLOADPACKAGEMANAGER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAsyncLoadPackageManager");
 		}
 
 		return uClassPointer;
@@ -2397,7 +2396,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDBGMATERIALCONTROLLER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDBGMaterialController");
 		}
 
 		return uClassPointer;
@@ -2423,7 +2422,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERA_ADV));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCamera_Adv");
 		}
 
 		return uClassPointer;
@@ -2450,7 +2449,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERA_CHARASELECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCamera_CharaSelect");
 		}
 
 		return uClassPointer;
@@ -2475,7 +2474,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERA_DIGITALFIGURE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCamera_DigitalFigure");
 		}
 
 		return uClassPointer;
@@ -2502,7 +2501,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERAANIMARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCameraAnimArray");
 		}
 
 		return uClassPointer;
@@ -2525,7 +2524,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERAOFFSETDATAARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCameraOffsetDataArray");
 		}
 
 		return uClassPointer;
@@ -2551,7 +2550,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCHARAASSET));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCharaAsset");
 		}
 
 		return uClassPointer;
@@ -2572,7 +2571,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCHARAASSETLOADER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCharaAssetLoader");
 		}
 
 		return uClassPointer;
@@ -2600,7 +2599,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCHEATMANAGER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCheatManager");
 		}
 
 		return uClassPointer;
@@ -2625,7 +2624,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCHEATMANAGER_BATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCheatManager_Battle");
 		}
 
 		return uClassPointer;
@@ -2650,7 +2649,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCONTROLMODULE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDControlModule");
 		}
 
 		return uClassPointer;
@@ -2677,7 +2676,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCONTROLMODULE_ADV));
+			uClassPointer = UObject::FindClass("Class REDGame.REDControlModule_Adv");
 		}
 
 		return uClassPointer;
@@ -2709,7 +2708,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCONTROLMODULE_BATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDControlModule_Battle");
 		}
 
 		return uClassPointer;
@@ -2737,7 +2736,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCONTROLMODULE_DIGITALFIGURE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDControlModule_DigitalFigure");
 		}
 
 		return uClassPointer;
@@ -2764,7 +2763,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCONTROLMODULE_LOBBY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDControlModule_Lobby");
 		}
 
 		return uClassPointer;
@@ -2790,7 +2789,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDDEBUGCAMERACONTROLLER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDDebugCameraController");
 		}
 
 		return uClassPointer;
@@ -2818,7 +2817,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDDOWNLOADABLECONTENTMANAGER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDDownloadableContentManager");
 		}
 
 		return uClassPointer;
@@ -2843,7 +2842,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDEASYCHARASELECTACTOR));
+			uClassPointer = UObject::FindClass("Class REDGame.REDEasyCharaSelectActor");
 		}
 
 		return uClassPointer;
@@ -2867,7 +2866,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDEFFECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDEffect");
 		}
 
 		return uClassPointer;
@@ -2890,7 +2889,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDEFFECTMATERIALINFO));
+			uClassPointer = UObject::FindClass("Class REDGame.REDEffectMaterialInfo");
 		}
 
 		return uClassPointer;
@@ -2915,7 +2914,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDEFFECTPAWNPOOL));
+			uClassPointer = UObject::FindClass("Class REDGame.REDEffectPawnPool");
 		}
 
 		return uClassPointer;
@@ -2946,7 +2945,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDEFFECTPAWNPOOL_ADV));
+			uClassPointer = UObject::FindClass("Class REDGame.REDEffectPawnPool_Adv");
 		}
 
 		return uClassPointer;
@@ -2970,7 +2969,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDEMITTERPOOL));
+			uClassPointer = UObject::FindClass("Class REDGame.REDEmitterPool");
 		}
 
 		return uClassPointer;
@@ -3064,7 +3063,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMECOMMON));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameCommon");
 		}
 
 		return uClassPointer;
@@ -3219,7 +3218,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMECOMMON_DEFINE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameCommon_Define");
 		}
 
 		return uClassPointer;
@@ -3242,7 +3241,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMECOMMON_PACKAGE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameCommon_Package");
 		}
 
 		return uClassPointer;
@@ -3294,7 +3293,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMECOMMON_PLAYERINFO));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameCommon_PlayerInfo");
 		}
 
 		return uClassPointer;
@@ -3371,7 +3370,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo");
 		}
 
 		return uClassPointer;
@@ -3483,7 +3482,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_ADV));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Adv");
 		}
 
 		return uClassPointer;
@@ -3532,7 +3531,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_DIGITALFIGURE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_DigitalFigure");
 		}
 
 		return uClassPointer;
@@ -3584,7 +3583,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_ENDING));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Ending");
 		}
 
 		return uClassPointer;
@@ -3621,7 +3620,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_INTERLUDEDRAMA));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_InterludeDrama");
 		}
 
 		return uClassPointer;
@@ -3654,7 +3653,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_MENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Menu");
 		}
 
 		return uClassPointer;
@@ -3681,7 +3680,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_BOOTSEQUENCE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_BootSequence");
 		}
 
 		return uClassPointer;
@@ -3708,7 +3707,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_LIBRARY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Library");
 		}
 
 		return uClassPointer;
@@ -3753,7 +3752,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_LOBBYBASE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_LobbyBase");
 		}
 
 		return uClassPointer;
@@ -3787,7 +3786,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_FISHING));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Fishing");
 		}
 
 		return uClassPointer;
@@ -3819,7 +3818,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_LOBBY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Lobby");
 		}
 
 		return uClassPointer;
@@ -3846,7 +3845,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_MAINMENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_MainMenu");
 		}
 
 		return uClassPointer;
@@ -3871,7 +3870,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_MAINMENU20));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_MainMenu20");
 		}
 
 		return uClassPointer;
@@ -3894,7 +3893,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_NETWORKMENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_NetworkMenu");
 		}
 
 		return uClassPointer;
@@ -3927,7 +3926,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_STORYSTAFFROLL));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_StoryStaffRoll");
 		}
 
 		return uClassPointer;
@@ -3952,7 +3951,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_TESTMODE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_TestMode");
 		}
 
 		return uClassPointer;
@@ -3981,7 +3980,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEONLINELOBBYINTERFACESTEAMWORKS));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameOnlineLobbyInterfaceSteamworks");
 		}
 
 		return uClassPointer;
@@ -4042,7 +4041,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMESTATSBASE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameStatsBase");
 		}
 
 		return uClassPointer;
@@ -4083,7 +4082,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMESTATS));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameStats");
 		}
 
 		return uClassPointer;
@@ -4110,7 +4109,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEVIEWPORTCLIENT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameViewportClient");
 		}
 
 		return uClassPointer;
@@ -4150,7 +4149,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMovieArray");
 		}
 
 		return uClassPointer;
@@ -4178,7 +4177,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEMANAGER_BATTLEHUD));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMovieManager_BattleHUD");
 		}
 
 		return uClassPointer;
@@ -4254,7 +4253,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEMANAGER_NETWORK_BASE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMovieManager_Network_Base");
 		}
 
 		return uClassPointer;
@@ -4311,7 +4310,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEMANAGER_NETWORK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMovieManager_Network");
 		}
 
 		return uClassPointer;
@@ -4355,7 +4354,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer");
 		}
 
 		return uClassPointer;
@@ -4396,7 +4395,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_BATTLEHAIKU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_BattleHaiku");
 		}
 
 		return uClassPointer;
@@ -4477,7 +4476,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_BATTLEHUD));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_BattleHUD");
 		}
 
 		return uClassPointer;
@@ -4561,7 +4560,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_BATTLEDOWNSIDE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_BattleDownside");
 		}
 
 		return uClassPointer;
@@ -4635,7 +4634,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_BATTLEMIDDLEF));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_BattleMiddleF");
 		}
 
 		return uClassPointer;
@@ -4689,7 +4688,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_BATTLEUPSIDE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_BattleUpside");
 		}
 
 		return uClassPointer;
@@ -4792,7 +4791,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_BATTLERESULTMEDAL));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_BattleResultMedal");
 		}
 
 		return uClassPointer;
@@ -4837,7 +4836,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_BATTLERESULTWINDOW));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_BattleResultWindow");
 		}
 
 		return uClassPointer;
@@ -4919,7 +4918,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_BG_ARENA));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_BG_Arena");
 		}
 
 		return uClassPointer;
@@ -4954,7 +4953,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_CHATWINDOW));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_ChatWindow");
 		}
 
 		return uClassPointer;
@@ -4997,7 +4996,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENU_BASE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_Menu_Base");
 		}
 
 		return uClassPointer;
@@ -5145,7 +5144,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_MENU_DEBUGCHARASELECT));
+			uClassPointer = UObject::FindClass("Class REDGame.Menu_DebugCharaSelect");
 		}
 
 		return uClassPointer;
@@ -5174,7 +5173,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUBRIEFING));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuBriefing");
 		}
 
 		return uClassPointer;
@@ -5203,7 +5202,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUCHARASELECTBASE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuCharaSelectBase");
 		}
 
 		return uClassPointer;
@@ -5313,7 +5312,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUMODESELECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuModeSelect");
 		}
 
 		return uClassPointer;
@@ -5358,7 +5357,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUMOMPRESET));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuMOMPreset");
 		}
 
 		return uClassPointer;
@@ -5402,7 +5401,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUQUESTLIST));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuQuestList");
 		}
 
 		return uClassPointer;
@@ -5434,7 +5433,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUREADCARD));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuReadCard");
 		}
 
 		return uClassPointer;
@@ -5496,7 +5495,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUCONTINUE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuContinue");
 		}
 
 		return uClassPointer;
@@ -5525,7 +5524,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUDEBUGMENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuDebugMenu");
 		}
 
 		return uClassPointer;
@@ -5580,7 +5579,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUGALLERY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuGallery");
 		}
 
 		return uClassPointer;
@@ -5649,7 +5648,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUGAMEOVER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuGameOver");
 		}
 
 		return uClassPointer;
@@ -5685,7 +5684,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUINTERLUDE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuInterlude");
 		}
 
 		return uClassPointer;
@@ -5745,7 +5744,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUMAINMENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuMainMenu");
 		}
 
 		return uClassPointer;
@@ -5842,7 +5841,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUMAINMENU20));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuMainMenu20");
 		}
 
 		return uClassPointer;
@@ -5939,7 +5938,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUMAINMENUSCENE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuMainMenuScene");
 		}
 
 		return uClassPointer;
@@ -5968,7 +5967,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORK_BASE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetwork_Base");
 		}
 
 		return uClassPointer;
@@ -6023,7 +6022,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORKINIT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetworkInit");
 		}
 
 		return uClassPointer;
@@ -6078,7 +6077,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORKINVITE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetworkInvite");
 		}
 
 		return uClassPointer;
@@ -6130,7 +6129,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORKLOBBY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetworkLobby");
 		}
 
 		return uClassPointer;
@@ -6222,7 +6221,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORKLOBBYSELECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect");
 		}
 
 		return uClassPointer;
@@ -6299,7 +6298,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORKRANKBOARD));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetworkRankBoard");
 		}
 
 		return uClassPointer;
@@ -6353,7 +6352,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORKROOM));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetworkRoom");
 		}
 
 		return uClassPointer;
@@ -6453,7 +6452,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORKROOMAC20));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20");
 		}
 
 		return uClassPointer;
@@ -6550,7 +6549,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORKSEARCH));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetworkSearch");
 		}
 
 		return uClassPointer;
@@ -6621,7 +6620,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORKTOPMENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu");
 		}
 
 		return uClassPointer;
@@ -6675,7 +6674,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNETWORKWELCOME));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNetworkWelcome");
 		}
 
 		return uClassPointer;
@@ -6715,7 +6714,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENURANKING));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuRanking");
 		}
 
 		return uClassPointer;
@@ -6780,7 +6779,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUREPLAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuReplay");
 		}
 
 		return uClassPointer;
@@ -6847,7 +6846,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUSTAFFROLL));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuStaffRoll");
 		}
 
 		return uClassPointer;
@@ -6895,7 +6894,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUSTAFFROLL25));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuStaffRoll25");
 		}
 
 		return uClassPointer;
@@ -6928,7 +6927,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUSTORY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuStory");
 		}
 
 		return uClassPointer;
@@ -6971,7 +6970,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUTITLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuTitle");
 		}
 
 		return uClassPointer;
@@ -7029,7 +7028,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUTOURNAMENTLIST));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuTournamentList");
 		}
 
 		return uClassPointer;
@@ -7065,7 +7064,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUTOURNAMENTMISC));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuTournamentMisc");
 		}
 
 		return uClassPointer;
@@ -7095,7 +7094,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_NEWCHALLENGER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_NewChallenger");
 		}
 
 		return uClassPointer;
@@ -7119,7 +7118,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDHUD));
+			uClassPointer = UObject::FindClass("Class REDGame.REDHUD");
 		}
 
 		return uClassPointer;
@@ -7176,7 +7175,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDHUD_BATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDHUD_Battle");
 		}
 
 		return uClassPointer;
@@ -7248,7 +7247,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDMATERIALLINK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDMaterialLink");
 		}
 
 		return uClassPointer;
@@ -7270,7 +7269,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDMATERIALSETARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDMaterialSetArray");
 		}
 
 		return uClassPointer;
@@ -7297,7 +7296,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDMESHPOOL));
+			uClassPointer = UObject::FindClass("Class REDGame.REDMeshPool");
 		}
 
 		return uClassPointer;
@@ -7328,7 +7327,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDMOMITEM));
+			uClassPointer = UObject::FindClass("Class REDGame.REDMOMItem");
 		}
 
 		return uClassPointer;
@@ -7350,7 +7349,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDNAMEDOBJECTARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDNamedObjectArray");
 		}
 
 		return uClassPointer;
@@ -7372,7 +7371,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPARTICLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDParticle");
 		}
 
 		return uClassPointer;
@@ -7395,7 +7394,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPARTICLECOLORINFO));
+			uClassPointer = UObject::FindClass("Class REDGame.REDParticleColorInfo");
 		}
 
 		return uClassPointer;
@@ -7419,7 +7418,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPARTICLEMATERIALINFO));
+			uClassPointer = UObject::FindClass("Class REDGame.REDParticleMaterialInfo");
 		}
 
 		return uClassPointer;
@@ -7442,7 +7441,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPARTICLEMODULECHANGEBOUNDSSCALE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDParticleModuleChangeBoundsScale");
 		}
 
 		return uClassPointer;
@@ -7465,7 +7464,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPARTICLEMODULECOLORBYNAME));
+			uClassPointer = UObject::FindClass("Class REDGame.REDParticleModuleColorByName");
 		}
 
 		return uClassPointer;
@@ -7488,7 +7487,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPARTICLEMODULECOLOROVERLIFE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDParticleModuleColorOverLife");
 		}
 
 		return uClassPointer;
@@ -7511,7 +7510,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPARTICLEMODULEMATERIALBYNAME));
+			uClassPointer = UObject::FindClass("Class REDGame.REDParticleModuleMaterialByName");
 		}
 
 		return uClassPointer;
@@ -7532,7 +7531,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN_CAMERAATTACH));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn_CameraAttach");
 		}
 
 		return uClassPointer;
@@ -7556,7 +7555,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWNMATERIALS));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawnMaterials");
 		}
 
 		return uClassPointer;
@@ -7581,7 +7580,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPLAYERCONTROLLER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPlayerController");
 		}
 
 		return uClassPointer;
@@ -7617,7 +7616,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPLAYERCONTROLLER_ADV));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPlayerController_Adv");
 		}
 
 		return uClassPointer;
@@ -7640,7 +7639,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPLAYERCONTROLLER_DIGITALFIGURE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPlayerController_DigitalFigure");
 		}
 
 		return uClassPointer;
@@ -7671,7 +7670,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPOINTLIGHTMANAGER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPointLightManager");
 		}
 
 		return uClassPointer;
@@ -7712,7 +7711,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSCENECOLORSETTINGS));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSceneColorSettings");
 		}
 
 		return uClassPointer;
@@ -7733,7 +7732,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_ACCESSOBJECTLIST));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_AccessObjectList");
 		}
 
 		return uClassPointer;
@@ -7756,7 +7755,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_ADVSEARCHPAWN));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_AdvSearchPawn");
 		}
 
 		return uClassPointer;
@@ -7779,7 +7778,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_BADGEACTION));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_BadgeAction");
 		}
 
 		return uClassPointer;
@@ -7800,7 +7799,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_BGEVENTFINISH));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_BGEventFinish");
 		}
 
 		return uClassPointer;
@@ -7825,7 +7824,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_BGFLOORATTRIBUTE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_BGFloorAttribute");
 		}
 
 		return uClassPointer;
@@ -7854,7 +7853,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_CHANGEANIMNODELOOKATBATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_ChangeAnimNodeLookAtBattle");
 		}
 
 		return uClassPointer;
@@ -7881,7 +7880,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_CREATEPARTICLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_CreateParticle");
 		}
 
 		return uClassPointer;
@@ -7902,7 +7901,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_DELETEPARTICLEFAST));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_DeleteParticleFast");
 		}
 
 		return uClassPointer;
@@ -7923,7 +7922,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_ENTRYEVENTFINISH));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_EntryEventFinish");
 		}
 
 		return uClassPointer;
@@ -7947,7 +7946,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_FLIPBOOKFRAME));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_FlipBookFrame");
 		}
 
 		return uClassPointer;
@@ -7970,7 +7969,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_GETCHARACOLORID));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_GetCharaColorID");
 		}
 
 		return uClassPointer;
@@ -7991,7 +7990,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_INTERP));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_Interp");
 		}
 
 		return uClassPointer;
@@ -8016,7 +8015,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_MITV_SETVECTORSTARTTIME));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_MITV_SetVectorStartTime");
 		}
 
 		return uClassPointer;
@@ -8041,7 +8040,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_MULTISEQUENCE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_MultiSequence");
 		}
 
 		return uClassPointer;
@@ -8062,7 +8061,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_PAUSEPARTICLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_PauseParticle");
 		}
 
 		return uClassPointer;
@@ -8084,7 +8083,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_PLAYCAMERAANIM));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_PlayCameraAnim");
 		}
 
 		return uClassPointer;
@@ -8108,7 +8107,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_PLAYMOVIE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_PlayMovie");
 		}
 
 		return uClassPointer;
@@ -8130,7 +8129,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_POSITIONMIRROR));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_PositionMirror");
 		}
 
 		return uClassPointer;
@@ -8152,7 +8151,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_REDINTERP));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_REDInterp");
 		}
 
 		return uClassPointer;
@@ -8176,7 +8175,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_REMAINDERINT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_RemainderInt");
 		}
 
 		return uClassPointer;
@@ -8198,7 +8197,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_SETCHARATOLOOKATBATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_SetCharaToLookAtBattle");
 		}
 
 		return uClassPointer;
@@ -8222,7 +8221,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_SETPAWNTOLOOKATBATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_SetPawnToLookAtBattle");
 		}
 
 		return uClassPointer;
@@ -8247,7 +8246,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_SUBTITLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_Subtitle");
 		}
 
 		return uClassPointer;
@@ -8276,7 +8275,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_SUBTITLE_INTERLUDE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_Subtitle_Interlude");
 		}
 
 		return uClassPointer;
@@ -8297,7 +8296,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQACT_TOGGLEAMBIENTSOUND));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqAct_ToggleAmbientSound");
 		}
 
 		return uClassPointer;
@@ -8320,7 +8319,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_CHARACHECK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_CharaCheck");
 		}
 
 		return uClassPointer;
@@ -8344,7 +8343,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_CHARACHECK2));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_CharaCheck2");
 		}
 
 		return uClassPointer;
@@ -8368,7 +8367,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_COMPARESTRING));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_CompareString");
 		}
 
 		return uClassPointer;
@@ -8391,7 +8390,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_ENTRYEVENTCHARACHECK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_EntryEventCharaCheck");
 		}
 
 		return uClassPointer;
@@ -8414,7 +8413,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_FINALROUNDCHECK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_FinalRoundCheck");
 		}
 
 		return uClassPointer;
@@ -8436,7 +8435,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_MAINPLAYERCHECK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_MainPlayerCheck");
 		}
 
 		return uClassPointer;
@@ -8460,7 +8459,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_PAWNCHARACHECK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_PawnCharaCheck");
 		}
 
 		return uClassPointer;
@@ -8482,7 +8481,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_PAWNCHARADEADCHECK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_PawnCharaDeadCheck");
 		}
 
 		return uClassPointer;
@@ -8504,7 +8503,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_PAWNMAINPLAYERCHECK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_PawnMainPlayerCheck");
 		}
 
 		return uClassPointer;
@@ -8526,7 +8525,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_SPEEDMODEOPTION));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_SpeedModeOption");
 		}
 
 		return uClassPointer;
@@ -8548,7 +8547,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_SWITCHATTACKLEVEL));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_SwitchAttackLevel");
 		}
 
 		return uClassPointer;
@@ -8570,7 +8569,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_SWITCHDIR));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_SwitchDir");
 		}
 
 		return uClassPointer;
@@ -8591,7 +8590,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_SWITCHEVENTMAINPLAYER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_SwitchEventMainPlayer");
 		}
 
 		return uClassPointer;
@@ -8614,7 +8613,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQCOND_SWITCHWEIGHT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqCond_SwitchWeight");
 		}
 
 		return uClassPointer;
@@ -8648,7 +8647,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_BGEFFECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_BGEffect");
 		}
 
 		return uClassPointer;
@@ -8674,7 +8673,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENTMANAGER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEventManager");
 		}
 
 		return uClassPointer;
@@ -8706,7 +8705,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSOUNDCUEARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSoundCueArray");
 		}
 
 		return uClassPointer;
@@ -8728,7 +8727,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSOUNDLIPSYNCARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSoundLipsyncArray");
 		}
 
 		return uClassPointer;
@@ -8752,7 +8751,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSOUNDPLAYER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSoundPlayer");
 		}
 
 		return uClassPointer;
@@ -8779,7 +8778,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSOUNDPLAYERUNIQUE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSoundPlayerUnique");
 		}
 
 		return uClassPointer;
@@ -8806,7 +8805,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDTEXTURE2DARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDTexture2DArray");
 		}
 
 		return uClassPointer;
@@ -8837,7 +8836,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDTMSCONFIG));
+			uClassPointer = UObject::FindClass("Class REDGame.REDTMSConfig");
 		}
 
 		return uClassPointer;
@@ -8863,7 +8862,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDWINCAMERAPOS));
+			uClassPointer = UObject::FindClass("Class REDGame.REDWinCameraPos");
 		}
 
 		return uClassPointer;
@@ -8889,7 +8888,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDASSETBASE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAssetBase");
 		}
 
 		return uClassPointer;
@@ -8910,7 +8909,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDASSETADVSCRIPT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAssetAdvScript");
 		}
 
 		return uClassPointer;
@@ -8931,7 +8930,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDASSETADVTEXT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAssetAdvText");
 		}
 
 		return uClassPointer;
@@ -8954,7 +8953,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDASSETBINARY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAssetBinary");
 		}
 
 		return uClassPointer;
@@ -8975,7 +8974,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDASSETCHARASCRIPT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAssetCharaScript");
 		}
 
 		return uClassPointer;
@@ -8996,7 +8995,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDASSETCOLLISION));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAssetCollision");
 		}
 
 		return uClassPointer;
@@ -9017,7 +9016,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDASSETEVENTSCRIPT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAssetEventScript");
 		}
 
 		return uClassPointer;
@@ -9038,7 +9037,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDASSETLIPSYNC));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAssetLipSync");
 		}
 
 		return uClassPointer;
@@ -9059,7 +9058,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDASSETLOCALIZETEXT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAssetLocalizeText");
 		}
 
 		return uClassPointer;
@@ -9081,7 +9080,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDANIMARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDAnimArray");
 		}
 
 		return uClassPointer;
@@ -9140,7 +9139,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_BATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Battle");
 		}
 
 		return uClassPointer;
@@ -9228,7 +9227,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDMESHARRAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDMeshArray");
 		}
 
 		return uClassPointer;
@@ -9320,7 +9319,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn");
 		}
 
 		return uClassPointer;
@@ -9453,7 +9452,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDDEBUGPAUSE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDDebugPause");
 		}
 
 		return uClassPointer;
@@ -9487,7 +9486,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN_ADJLIGHTDIR));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn_AdjLightDir");
 		}
 
 		return uClassPointer;
@@ -9541,7 +9540,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN_ADVAVATAR));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn_AdvAvatar");
 		}
 
 		return uClassPointer;
@@ -9590,7 +9589,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN_DIGITALFIGUREAVATAR));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn_DigitalFigureAvatar");
 		}
 
 		return uClassPointer;
@@ -9622,7 +9621,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN_EFFECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn_Effect");
 		}
 
 		return uClassPointer;
@@ -9659,7 +9658,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN_ADVEFFECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn_AdvEffect");
 		}
 
 		return uClassPointer;
@@ -9686,7 +9685,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN_MATINEE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn_Matinee");
 		}
 
 		return uClassPointer;
@@ -9735,7 +9734,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN_PLAYER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn_Player");
 		}
 
 		return uClassPointer;
@@ -9772,7 +9771,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPLAYERCONTROLLER_BATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPlayerController_Battle");
 		}
 
 		return uClassPointer;
@@ -9799,7 +9798,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERA));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCamera");
 		}
 
 		return uClassPointer;
@@ -9849,7 +9848,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERA_BATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCamera_Battle");
 		}
 
 		return uClassPointer;
@@ -9916,7 +9915,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERA_LOBBY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCamera_Lobby");
 		}
 
 		return uClassPointer;
@@ -9941,7 +9940,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERASHAKEPATTERNS));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCameraShakePatterns");
 		}
 
 		return uClassPointer;
@@ -9969,7 +9968,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_MENU_DEBUGTOP));
+			uClassPointer = UObject::FindClass("Class REDGame.Menu_DebugTop");
 		}
 
 		return uClassPointer;
@@ -10010,7 +10009,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDACTOR_BATTLEBACKWORDHUD));
+			uClassPointer = UObject::FindClass("Class REDGame.REDActor_BattleBackwordHUD");
 		}
 
 		return uClassPointer;
@@ -10036,7 +10035,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDACTOR_CHECKPOINTLIGHT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDActor_CheckPointLight");
 		}
 
 		return uClassPointer;
@@ -10059,7 +10058,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWNPLAYERFACTORY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawnPlayerFactory");
 		}
 
 		return uClassPointer;
@@ -10088,7 +10087,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERAMODULE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCameraModule");
 		}
 
 		return uClassPointer;
@@ -10118,7 +10117,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERAMODULE_BATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCameraModule_Battle");
 		}
 
 		return uClassPointer;
@@ -10141,7 +10140,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCAMERA_INTERLUDEDRAMA));
+			uClassPointer = UObject::FindClass("Class REDGame.REDCamera_InterludeDrama");
 		}
 
 		return uClassPointer;
@@ -10164,7 +10163,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDCONTROLMODULE_MENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDControlModule_Menu");
 		}
 
 		return uClassPointer;
@@ -10188,7 +10187,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDDEBUGCAMERAHUD));
+			uClassPointer = UObject::FindClass("Class REDGame.REDDebugCameraHUD");
 		}
 
 		return uClassPointer;
@@ -10211,7 +10210,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDEASYCHARASELECTDEFINE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDEasyCharaSelectDefine");
 		}
 
 		return uClassPointer;
@@ -10245,7 +10244,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUSTAGESELECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuStageSelect");
 		}
 
 		return uClassPointer;
@@ -10295,7 +10294,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMECOMMON_SCENE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameCommon_Scene");
 		}
 
 		return uClassPointer;
@@ -10317,7 +10316,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_ACTIONSNAP));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_ActionSnap");
 		}
 
 		return uClassPointer;
@@ -10355,7 +10354,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPLAYERCONTROLLER_ACTIONSNAP));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPlayerController_ActionSnap");
 		}
 
 		return uClassPointer;
@@ -10384,7 +10383,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN_ADVLIGHT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn_AdvLight");
 		}
 
 		return uClassPointer;
@@ -10406,7 +10405,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPAWN_ADVCAMERA));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPawn_AdvCamera");
 		}
 
 		return uClassPointer;
@@ -10429,7 +10428,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_ADVBATTLEBGLOAD));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_AdvBattleBGLoad");
 		}
 
 		return uClassPointer;
@@ -10451,7 +10450,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_ADVKISMETEVENTSTART));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_AdvKismetEventStart");
 		}
 
 		return uClassPointer;
@@ -10475,7 +10474,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPREBATTLEEVENTMANAGER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPreBattleEventManager");
 		}
 
 		return uClassPointer;
@@ -10504,7 +10503,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPLAYERCONTROLLER_MENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPlayerController_Menu");
 		}
 
 		return uClassPointer;
@@ -10526,7 +10525,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_BRIEFING));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Briefing");
 		}
 
 		return uClassPointer;
@@ -10548,7 +10547,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_CHARASELECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_CharaSelect");
 		}
 
 		return uClassPointer;
@@ -10570,7 +10569,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPLAYERCONTROLLER_CHARASELECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPlayerController_CharaSelect");
 		}
 
 		return uClassPointer;
@@ -10591,7 +10590,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDLOBBYCOLLISIONACTOR_FLOOR));
+			uClassPointer = UObject::FindClass("Class REDGame.REDLobbyCollisionActor_Floor");
 		}
 
 		return uClassPointer;
@@ -10613,7 +10612,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDLOBBYCOLLISIONACTOR_RECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDLobbyCollisionActor_Rect");
 		}
 
 		return uClassPointer;
@@ -10638,7 +10637,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDLOBBYCOLLISIONACTOR_CIRCLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDLobbyCollisionActor_Circle");
 		}
 
 		return uClassPointer;
@@ -10664,7 +10663,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDLOBBYCOLLISIONACTOR_KYOUTAI));
+			uClassPointer = UObject::FindClass("Class REDGame.REDLobbyCollisionActor_Kyoutai");
 		}
 
 		return uClassPointer;
@@ -10691,7 +10690,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDLOBBYCOLLISIONACTOR_WALL));
+			uClassPointer = UObject::FindClass("Class REDGame.REDLobbyCollisionActor_Wall");
 		}
 
 		return uClassPointer;
@@ -10714,7 +10713,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPLAYERCONTROLLER_LOBBY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPlayerController_Lobby");
 		}
 
 		return uClassPointer;
@@ -10735,7 +10734,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_GALLERY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Gallery");
 		}
 
 		return uClassPointer;
@@ -10761,7 +10760,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPLAYERCONTROLLER_INTERLUDEDRAMA));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPlayerController_InterludeDrama");
 		}
 
 		return uClassPointer;
@@ -10782,7 +10781,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUBG));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuBG");
 		}
 
 		return uClassPointer;
@@ -10812,7 +10811,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_PREINTERLUDE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_PreInterlude");
 		}
 
 		return uClassPointer;
@@ -10836,7 +10835,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_REPLAY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Replay");
 		}
 
 		return uClassPointer;
@@ -10859,7 +10858,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_STORYMENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_StoryMenu");
 		}
 
 		return uClassPointer;
@@ -10881,7 +10880,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUSTAFFROLL_STORY));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuStaffRoll_Story");
 		}
 
 		return uClassPointer;
@@ -10903,7 +10902,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMEINFO_TITLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameInfo_Title");
 		}
 
 		return uClassPointer;
@@ -10925,7 +10924,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMESTATSREADER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameStatsReader");
 		}
 
 		return uClassPointer;
@@ -10946,7 +10945,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGAMESTATSWRITER));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGameStatsWriter");
 		}
 
 		return uClassPointer;
@@ -10967,7 +10966,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEARRAY_BATTLE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMovieArray_Battle");
 		}
 
 		return uClassPointer;
@@ -10996,7 +10995,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEMANAGER_NETWORKFORMAINMENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMovieManager_NetworkForMainmenu");
 		}
 
 		return uClassPointer;
@@ -11049,7 +11048,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_BATTLERESULTWINDOW_AC));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_BattleResultWindow_AC");
 		}
 
 		return uClassPointer;
@@ -11077,7 +11076,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUCHARAINTRO));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuCharaIntro");
 		}
 
 		return uClassPointer;
@@ -11141,7 +11140,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUCHARASELECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuCharaSelect");
 		}
 
 		return uClassPointer;
@@ -11226,7 +11225,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUCHARASELECTFRONT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuCharaSelectFront");
 		}
 
 		return uClassPointer;
@@ -11322,7 +11321,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUCHARASELECT_AC20));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuCharaSelect_AC20");
 		}
 
 		return uClassPointer;
@@ -11465,7 +11464,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUSTYLESELECT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuStyleSelect");
 		}
 
 		return uClassPointer;
@@ -11515,7 +11514,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUMOMMEDAL));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuMOMMedal");
 		}
 
 		return uClassPointer;
@@ -11541,7 +11540,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUNEWS));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuNews");
 		}
 
 		return uClassPointer;
@@ -11564,7 +11563,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_MENUSTAGEINTRO));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_MenuStageIntro");
 		}
 
 		return uClassPointer;
@@ -11589,7 +11588,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDGFXMOVIEPLAYER_PAUSEMENU));
+			uClassPointer = UObject::FindClass("Class REDGame.REDGfxMoviePlayer_PauseMenu");
 		}
 
 		return uClassPointer;
@@ -11615,7 +11614,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDLOBBYCOLLISIONACTOR_CIRCLE2));
+			uClassPointer = UObject::FindClass("Class REDGame.REDLobbyCollisionActor_Circle2");
 		}
 
 		return uClassPointer;
@@ -11636,7 +11635,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDLOBBYCOLLISIONACTOR_WALL2));
+			uClassPointer = UObject::FindClass("Class REDGame.REDLobbyCollisionActor_Wall2");
 		}
 
 		return uClassPointer;
@@ -11657,7 +11656,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPLAYERINPUT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPlayerInput");
 		}
 
 		return uClassPointer;
@@ -11680,7 +11679,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDPORTAL));
+			uClassPointer = UObject::FindClass("Class REDGame.REDPortal");
 		}
 
 		return uClassPointer;
@@ -11703,7 +11702,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_ENTRYEVENTSTART));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_EntryEventStart");
 		}
 
 		return uClassPointer;
@@ -11724,7 +11723,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_BGEVENTSTART));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_BGEventStart");
 		}
 
 		return uClassPointer;
@@ -11745,7 +11744,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_BGEFFECTATTACK));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_BGEffectAttack");
 		}
 
 		return uClassPointer;
@@ -11766,7 +11765,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_BGEFFECTDAMAGE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_BGEffectDamage");
 		}
 
 		return uClassPointer;
@@ -11787,7 +11786,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_BGEFFECTDOWN));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_BGEffectDown");
 		}
 
 		return uClassPointer;
@@ -11811,7 +11810,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_BGEFFECTPOSITION));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_BGEffectPosition");
 		}
 
 		return uClassPointer;
@@ -11833,7 +11832,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_BGEFFECTSHAKEFLOOR));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_BGEffectShakeFloor");
 		}
 
 		return uClassPointer;
@@ -11857,7 +11856,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_PLAYERBASE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_PlayerBase");
 		}
 
 		return uClassPointer;
@@ -11880,7 +11879,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_PLAYERBATTLESTART));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_PlayerBattleStart");
 		}
 
 		return uClassPointer;
@@ -11903,7 +11902,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_PLAYERDRAW));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_PlayerDraw");
 		}
 
 		return uClassPointer;
@@ -11925,7 +11924,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_PLAYERKAKUSEI));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_PlayerKakusei");
 		}
 
 		return uClassPointer;
@@ -11948,7 +11947,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_PLAYERLOSE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_PlayerLose");
 		}
 
 		return uClassPointer;
@@ -11970,7 +11969,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_PLAYERMATCHRESULT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_PlayerMatchResult");
 		}
 
 		return uClassPointer;
@@ -11991,7 +11990,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_PLAYERMATCHWIN));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_PlayerMatchWin");
 		}
 
 		return uClassPointer;
@@ -12015,7 +12014,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_PLAYERRIGHTORLEFT));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_PlayerRightOrLeft");
 		}
 
 		return uClassPointer;
@@ -12040,7 +12039,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_PLAYERROUNDCHANGE));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_PlayerRoundChange");
 		}
 
 		return uClassPointer;
@@ -12064,7 +12063,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAME_REDSEQEVENT_PLAYERWIN));
+			uClassPointer = UObject::FindClass("Class REDGame.REDSeqEvent_PlayerWin");
 		}
 
 		return uClassPointer;

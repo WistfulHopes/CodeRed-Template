@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -34,19 +33,19 @@ struct UGFxFSCmdHandler_eventFSCommand_Params
 };
 
 // Function GFxUI.GFxInteraction.CloseAllMoviePlayers
-// [0x00020400]  (iNative[31912])
+// [0x00020400]  (iNative[31914])
 struct UGFxInteraction_execCloseAllMoviePlayers_Params
 {
 };
 
 // Function GFxUI.GFxInteraction.NotifySplitscreenLayoutChanged
-// [0x00020400]  (iNative[24921])
+// [0x00020400]  (iNative[24923])
 struct UGFxInteraction_execNotifySplitscreenLayoutChanged_Params
 {
 };
 
 // Function GFxUI.GFxInteraction.NotifyPlayerRemoved
-// [0x00020400]  (iNative[24915])
+// [0x00020400]  (iNative[24917])
 struct UGFxInteraction_execNotifyPlayerRemoved_Params
 {
 	int32_t                                            PlayerIndex;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -54,7 +53,7 @@ struct UGFxInteraction_execNotifyPlayerRemoved_Params
 };
 
 // Function GFxUI.GFxInteraction.NotifyPlayerAdded
-// [0x00020400]  (iNative[24914])
+// [0x00020400]  (iNative[24916])
 struct UGFxInteraction_execNotifyPlayerAdded_Params
 {
 	int32_t                                            PlayerIndex;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -68,7 +67,7 @@ struct UGFxInteraction_execNotifyGameSessionEnded_Params
 };
 
 // Function GFxUI.GFxInteraction.GetFocusMovie
-// [0x00020400]  (iNative[31960])
+// [0x00020400]  (iNative[31962])
 struct UGFxInteraction_execGetFocusMovie_Params
 {
 	int32_t                                            ControllerId;                                     // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -76,7 +75,7 @@ struct UGFxInteraction_execGetFocusMovie_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.UpdateSplitscreenLayout
-// [0x00020400]  (iNative[32120])
+// [0x00020400]  (iNative[32122])
 struct UGFxMoviePlayer_execUpdateSplitscreenLayout_Params
 {
 };
@@ -159,7 +158,7 @@ struct UGFxMoviePlayer_execInit_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetWidgetPathBinding
-// [0x00020401]  (iNative[32090])
+// [0x00020401]  (iNative[32092])
 struct UGFxMoviePlayer_execSetWidgetPathBinding_Params
 {
 	class UGFxObject*                                  WidgetToBind;                                     // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -193,7 +192,7 @@ struct UGFxMoviePlayer_eventWidgetInitialized_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptConstructor
-// [0x00080401]  (iNative[31822])
+// [0x00080401]  (iNative[31824])
 struct UGFxMoviePlayer_execActionScriptConstructor_Params
 {
 	class FString                                      ClassName;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -201,7 +200,7 @@ struct UGFxMoviePlayer_execActionScriptConstructor_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptObject
-// [0x00080401]  (iNative[31825])
+// [0x00080401]  (iNative[31827])
 struct UGFxMoviePlayer_execActionScriptObject_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -209,7 +208,7 @@ struct UGFxMoviePlayer_execActionScriptObject_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptString
-// [0x00080401]  (iNative[31828])
+// [0x00080401]  (iNative[31830])
 struct UGFxMoviePlayer_execActionScriptString_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -217,7 +216,7 @@ struct UGFxMoviePlayer_execActionScriptString_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptFloat
-// [0x00080401]  (iNative[31823])
+// [0x00080401]  (iNative[31825])
 struct UGFxMoviePlayer_execActionScriptFloat_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -225,7 +224,7 @@ struct UGFxMoviePlayer_execActionScriptFloat_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptInt
-// [0x00080401]  (iNative[31824])
+// [0x00080401]  (iNative[31826])
 struct UGFxMoviePlayer_execActionScriptInt_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -233,14 +232,14 @@ struct UGFxMoviePlayer_execActionScriptInt_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptVoid
-// [0x00080401]  (iNative[31829])
+// [0x00080401]  (iNative[31831])
 struct UGFxMoviePlayer_execActionScriptVoid_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function GFxUI.GFxMoviePlayer.Invoke
-// [0x00020400]  (iNative[32000])
+// [0x00020400]  (iNative[32002])
 struct UGFxMoviePlayer_execInvoke_Params
 {
 	class FString                                      method;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -249,7 +248,7 @@ struct UGFxMoviePlayer_execInvoke_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.ActionScriptSetFunction
-// [0x00080401]  (iNative[31826])
+// [0x00080401]  (iNative[31828])
 struct UGFxMoviePlayer_execActionScriptSetFunction_Params
 {
 	class UGFxObject*                                  Object;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -257,14 +256,14 @@ struct UGFxMoviePlayer_execActionScriptSetFunction_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.CreateArray
-// [0x00020400]  (iNative[31914])
+// [0x00020400]  (iNative[31916])
 struct UGFxMoviePlayer_execCreateArray_Params
 {
 	class UGFxObject*                                  ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function GFxUI.GFxMoviePlayer.CreateObject
-// [0x00024400]  (iNative[31916])
+// [0x00024400]  (iNative[31918])
 struct UGFxMoviePlayer_execCreateObject_Params
 {
 	class FString                                      ASClass;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -274,7 +273,7 @@ struct UGFxMoviePlayer_execCreateObject_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableStringArray
-// [0x00020400]  (iNative[32085])
+// [0x00020400]  (iNative[32087])
 struct UGFxMoviePlayer_execSetVariableStringArray_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -284,7 +283,7 @@ struct UGFxMoviePlayer_execSetVariableStringArray_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableFloatArray
-// [0x00020400]  (iNative[32079])
+// [0x00020400]  (iNative[32081])
 struct UGFxMoviePlayer_execSetVariableFloatArray_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -294,7 +293,7 @@ struct UGFxMoviePlayer_execSetVariableFloatArray_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableIntArray
-// [0x00020400]  (iNative[32081])
+// [0x00020400]  (iNative[32083])
 struct UGFxMoviePlayer_execSetVariableIntArray_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -304,7 +303,7 @@ struct UGFxMoviePlayer_execSetVariableIntArray_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableArray
-// [0x00020400]  (iNative[32077])
+// [0x00020400]  (iNative[32079])
 struct UGFxMoviePlayer_execSetVariableArray_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -314,7 +313,7 @@ struct UGFxMoviePlayer_execSetVariableArray_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableStringArray
-// [0x00420400]  (iNative[31971])
+// [0x00420400]  (iNative[31973])
 struct UGFxMoviePlayer_execGetVariableStringArray_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -324,7 +323,7 @@ struct UGFxMoviePlayer_execGetVariableStringArray_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableFloatArray
-// [0x00420400]  (iNative[31965])
+// [0x00420400]  (iNative[31967])
 struct UGFxMoviePlayer_execGetVariableFloatArray_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -334,7 +333,7 @@ struct UGFxMoviePlayer_execGetVariableFloatArray_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableIntArray
-// [0x00420400]  (iNative[31967])
+// [0x00420400]  (iNative[31969])
 struct UGFxMoviePlayer_execGetVariableIntArray_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -344,7 +343,7 @@ struct UGFxMoviePlayer_execGetVariableIntArray_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableArray
-// [0x00420400]  (iNative[31963])
+// [0x00420400]  (iNative[31965])
 struct UGFxMoviePlayer_execGetVariableArray_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -354,7 +353,7 @@ struct UGFxMoviePlayer_execGetVariableArray_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableObject
-// [0x00020400]  (iNative[32083])
+// [0x00020400]  (iNative[32085])
 struct UGFxMoviePlayer_execSetVariableObject_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -362,7 +361,7 @@ struct UGFxMoviePlayer_execSetVariableObject_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableString
-// [0x00020400]  (iNative[32084])
+// [0x00020400]  (iNative[32086])
 struct UGFxMoviePlayer_execSetVariableString_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -370,7 +369,7 @@ struct UGFxMoviePlayer_execSetVariableString_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableInt
-// [0x00020400]  (iNative[32080])
+// [0x00020400]  (iNative[32082])
 struct UGFxMoviePlayer_execSetVariableInt_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -378,7 +377,7 @@ struct UGFxMoviePlayer_execSetVariableInt_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableNumber
-// [0x00020400]  (iNative[32082])
+// [0x00020400]  (iNative[32084])
 struct UGFxMoviePlayer_execSetVariableNumber_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -386,7 +385,7 @@ struct UGFxMoviePlayer_execSetVariableNumber_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariableBool
-// [0x00020400]  (iNative[32078])
+// [0x00020400]  (iNative[32080])
 struct UGFxMoviePlayer_execSetVariableBool_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -394,7 +393,7 @@ struct UGFxMoviePlayer_execSetVariableBool_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetVariable
-// [0x00020400]  (iNative[32076])
+// [0x00020400]  (iNative[32078])
 struct UGFxMoviePlayer_execSetVariable_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -402,7 +401,7 @@ struct UGFxMoviePlayer_execSetVariable_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableObject
-// [0x00024400]  (iNative[31969])
+// [0x00024400]  (iNative[31971])
 struct UGFxMoviePlayer_execGetVariableObject_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -411,7 +410,7 @@ struct UGFxMoviePlayer_execGetVariableObject_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableString
-// [0x00020400]  (iNative[31970])
+// [0x00020400]  (iNative[31972])
 struct UGFxMoviePlayer_execGetVariableString_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -419,7 +418,7 @@ struct UGFxMoviePlayer_execGetVariableString_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableInt
-// [0x00020400]  (iNative[31966])
+// [0x00020400]  (iNative[31968])
 struct UGFxMoviePlayer_execGetVariableInt_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -427,7 +426,7 @@ struct UGFxMoviePlayer_execGetVariableInt_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableNumber
-// [0x00020400]  (iNative[31968])
+// [0x00020400]  (iNative[31970])
 struct UGFxMoviePlayer_execGetVariableNumber_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -435,7 +434,7 @@ struct UGFxMoviePlayer_execGetVariableNumber_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariableBool
-// [0x00020400]  (iNative[31964])
+// [0x00020400]  (iNative[31966])
 struct UGFxMoviePlayer_execGetVariableBool_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -443,7 +442,7 @@ struct UGFxMoviePlayer_execGetVariableBool_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVariable
-// [0x00020400]  (iNative[31962])
+// [0x00020400]  (iNative[31964])
 struct UGFxMoviePlayer_execGetVariable_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -451,7 +450,7 @@ struct UGFxMoviePlayer_execGetVariable_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetAVMVersion
-// [0x00020400]  (iNative[31939])
+// [0x00020400]  (iNative[31941])
 struct UGFxMoviePlayer_execGetAVMVersion_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -468,68 +467,68 @@ struct UGFxMoviePlayer_eventFilterButtonInput_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.FlushPlayerInput
-// [0x00020401]  (iNative[21156])
+// [0x00020401]  (iNative[21158])
 struct UGFxMoviePlayer_execFlushPlayerInput_Params
 {
 	uint32_t                                           capturekeysonly : 1;                              // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function GFxUI.GFxMoviePlayer.ClearFocusIgnoreKeys
-// [0x00020401]  (iNative[31910])
+// [0x00020401]  (iNative[31912])
 struct UGFxMoviePlayer_execClearFocusIgnoreKeys_Params
 {
 };
 
 // Function GFxUI.GFxMoviePlayer.AddFocusIgnoreKey
-// [0x00020401]  (iNative[31832])
+// [0x00020401]  (iNative[31834])
 struct UGFxMoviePlayer_execAddFocusIgnoreKey_Params
 {
 	class FName                                        Key;                                              // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxMoviePlayer.ClearCaptureKeys
-// [0x00020401]  (iNative[31909])
+// [0x00020401]  (iNative[31911])
 struct UGFxMoviePlayer_execClearCaptureKeys_Params
 {
 };
 
 // Function GFxUI.GFxMoviePlayer.AddCaptureKey
-// [0x00020401]  (iNative[31830])
+// [0x00020401]  (iNative[31832])
 struct UGFxMoviePlayer_execAddCaptureKey_Params
 {
 	class FName                                        Key;                                              // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxMoviePlayer.SetMovieCanReceiveInput
-// [0x00020401]  (iNative[32069])
+// [0x00020401]  (iNative[32071])
 struct UGFxMoviePlayer_execSetMovieCanReceiveInput_Params
 {
 	uint32_t                                           bCanReceiveInput : 1;                             // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function GFxUI.GFxMoviePlayer.SetMovieCanReceiveFocus
-// [0x00020401]  (iNative[32068])
+// [0x00020401]  (iNative[32070])
 struct UGFxMoviePlayer_execSetMovieCanReceiveFocus_Params
 {
 	uint32_t                                           bCanReceiveFocus : 1;                             // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function GFxUI.GFxMoviePlayer.SetPerspective3D
-// [0x00420401]  (iNative[32071])
+// [0x00420401]  (iNative[32073])
 struct UGFxMoviePlayer_execSetPerspective3D_Params
 {
 	struct FMatrix                                     matPersp;                                         // 0x0000 (0x0040) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function GFxUI.GFxMoviePlayer.SetView3D
-// [0x00420401]  (iNative[32086])
+// [0x00420401]  (iNative[32088])
 struct UGFxMoviePlayer_execSetView3D_Params
 {
 	struct FMatrix                                     matView;                                          // 0x0000 (0x0040) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function GFxUI.GFxMoviePlayer.GetVisibleFrameRect
-// [0x00420401]  (iNative[31973])
+// [0x00420401]  (iNative[31975])
 struct UGFxMoviePlayer_execGetVisibleFrameRect_Params
 {
 	float                                              x0;                                               // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -539,21 +538,21 @@ struct UGFxMoviePlayer_execGetVisibleFrameRect_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetAlignment
-// [0x00020401]  (iNative[32039])
+// [0x00020401]  (iNative[32041])
 struct UGFxMoviePlayer_execSetAlignment_Params
 {
 	uint8_t                                            A;                                                // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxMoviePlayer.SetViewScaleMode
-// [0x00020401]  (iNative[32088])
+// [0x00020401]  (iNative[32090])
 struct UGFxMoviePlayer_execSetViewScaleMode_Params
 {
 	uint8_t                                            SM;                                               // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxMoviePlayer.SetViewport
-// [0x00020401]  (iNative[32087])
+// [0x00020401]  (iNative[32089])
 struct UGFxMoviePlayer_execSetViewport_Params
 {
 	int32_t                                            X;                                                // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -563,21 +562,21 @@ struct UGFxMoviePlayer_execSetViewport_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.GetGameViewportClient
-// [0x00020401]  (iNative[31961])
+// [0x00020401]  (iNative[31963])
 struct UGFxMoviePlayer_execGetGameViewportClient_Params
 {
 	class UGameViewportClient*                         ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function GFxUI.GFxMoviePlayer.SetPriority
-// [0x00020400]  (iNative[32072])
+// [0x00020400]  (iNative[32074])
 struct UGFxMoviePlayer_execSetPriority_Params
 {
 	uint8_t                                            NewPriority;                                      // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxMoviePlayer.SetExternalTexture
-// [0x00020400]  (iNative[32063])
+// [0x00020400]  (iNative[32065])
 struct UGFxMoviePlayer_execSetExternalTexture_Params
 {
 	class FString                                      Resource;                                         // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -593,7 +592,7 @@ struct UGFxMoviePlayer_execSetExternalInterface_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.SetTimingMode
-// [0x00020400]  (iNative[32075])
+// [0x00020400]  (iNative[32077])
 struct UGFxMoviePlayer_execSetTimingMode_Params
 {
 	uint8_t                                            Mode;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -626,14 +625,14 @@ struct UGFxMoviePlayer_eventOnClose_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.Close
-// [0x00024401]  (iNative[31911])
+// [0x00024401]  (iNative[31913])
 struct UGFxMoviePlayer_execClose_Params
 {
 	uint32_t                                           Unload : 1;                                       // 0x0000 (0x0004) [0x0000000000000090] [0x00000001] (CPF_OptionalParm | CPF_Parm)
 };
 
 // Function GFxUI.GFxMoviePlayer.SetPause
-// [0x00024400]  (iNative[28078])
+// [0x00024400]  (iNative[28080])
 struct UGFxMoviePlayer_execSetPause_Params
 {
 	uint32_t                                           bPausePlayback : 1;                               // 0x0000 (0x0004) [0x0000000000000090] [0x00000001] (CPF_OptionalParm | CPF_Parm)
@@ -647,14 +646,14 @@ struct UGFxMoviePlayer_execOnPostAdvance_Params
 };
 
 // Function GFxUI.GFxMoviePlayer.PostAdvance
-// [0x00020400]  (iNative[32026])
+// [0x00020400]  (iNative[32028])
 struct UGFxMoviePlayer_execPostAdvance_Params
 {
 	float                                              DeltaTime;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxMoviePlayer.Advance
-// [0x00020401]  (iNative[31833])
+// [0x00020401]  (iNative[31835])
 struct UGFxMoviePlayer_execAdvance_Params
 {
 	float                                              Time;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -689,7 +688,7 @@ struct UGFxObject_eventWidgetInitialized_Params
 };
 
 // Function GFxUI.GFxObject.AttachMovie
-// [0x00024401]  (iNative[31866])
+// [0x00024401]  (iNative[31868])
 struct UGFxObject_execAttachMovie_Params
 {
 	class FString                                      symbolname;                                       // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -700,7 +699,7 @@ struct UGFxObject_execAttachMovie_Params
 };
 
 // Function GFxUI.GFxObject.CreateEmptyMovieClip
-// [0x00024401]  (iNative[31915])
+// [0x00024401]  (iNative[31917])
 struct UGFxObject_execCreateEmptyMovieClip_Params
 {
 	class FString                                      instancename;                                     // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -710,35 +709,35 @@ struct UGFxObject_execCreateEmptyMovieClip_Params
 };
 
 // Function GFxUI.GFxObject.GotoAndStopI
-// [0x00020401]  (iNative[31983])
+// [0x00020401]  (iNative[31985])
 struct UGFxObject_execGotoAndStopI_Params
 {
 	int32_t                                            frame;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxObject.GotoAndStop
-// [0x00020401]  (iNative[31982])
+// [0x00020401]  (iNative[31984])
 struct UGFxObject_execGotoAndStop_Params
 {
 	class FString                                      frame;                                            // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function GFxUI.GFxObject.GotoAndPlayI
-// [0x00020401]  (iNative[31981])
+// [0x00020401]  (iNative[31983])
 struct UGFxObject_execGotoAndPlayI_Params
 {
 	int32_t                                            frame;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxObject.GotoAndPlay
-// [0x00020401]  (iNative[31980])
+// [0x00020401]  (iNative[31982])
 struct UGFxObject_execGotoAndPlay_Params
 {
 	class FString                                      frame;                                            // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function GFxUI.GFxObject.ActionScriptArray
-// [0x00020401]  (iNative[31821])
+// [0x00020401]  (iNative[31823])
 struct UGFxObject_execActionScriptArray_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -746,7 +745,7 @@ struct UGFxObject_execActionScriptArray_Params
 };
 
 // Function GFxUI.GFxObject.ActionScriptObject
-// [0x00020401]  (iNative[31825])
+// [0x00020401]  (iNative[31827])
 struct UGFxObject_execActionScriptObject_Params
 {
 	class FString                                      Path;                                             // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -754,7 +753,7 @@ struct UGFxObject_execActionScriptObject_Params
 };
 
 // Function GFxUI.GFxObject.ActionScriptString
-// [0x00020401]  (iNative[31828])
+// [0x00020401]  (iNative[31830])
 struct UGFxObject_execActionScriptString_Params
 {
 	class FString                                      method;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -762,7 +761,7 @@ struct UGFxObject_execActionScriptString_Params
 };
 
 // Function GFxUI.GFxObject.ActionScriptFloat
-// [0x00020401]  (iNative[31823])
+// [0x00020401]  (iNative[31825])
 struct UGFxObject_execActionScriptFloat_Params
 {
 	class FString                                      method;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -770,7 +769,7 @@ struct UGFxObject_execActionScriptFloat_Params
 };
 
 // Function GFxUI.GFxObject.ActionScriptInt
-// [0x00020401]  (iNative[31824])
+// [0x00020401]  (iNative[31826])
 struct UGFxObject_execActionScriptInt_Params
 {
 	class FString                                      method;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -778,14 +777,14 @@ struct UGFxObject_execActionScriptInt_Params
 };
 
 // Function GFxUI.GFxObject.ActionScriptVoid
-// [0x00020401]  (iNative[31829])
+// [0x00020401]  (iNative[31831])
 struct UGFxObject_execActionScriptVoid_Params
 {
 	class FString                                      method;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function GFxUI.GFxObject.Invoke
-// [0x00020401]  (iNative[32000])
+// [0x00020401]  (iNative[32002])
 struct UGFxObject_execInvoke_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -794,7 +793,7 @@ struct UGFxObject_execInvoke_Params
 };
 
 // Function GFxUI.GFxObject.ActionScriptSetFunctionOn
-// [0x00080401]  (iNative[31827])
+// [0x00080401]  (iNative[31829])
 struct UGFxObject_execActionScriptSetFunctionOn_Params
 {
 	class UGFxObject*                                  Target;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -802,14 +801,14 @@ struct UGFxObject_execActionScriptSetFunctionOn_Params
 };
 
 // Function GFxUI.GFxObject.ActionScriptSetFunction
-// [0x00080401]  (iNative[31826])
+// [0x00080401]  (iNative[31828])
 struct UGFxObject_execActionScriptSetFunction_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function GFxUI.GFxObject.SetElementMemberString
-// [0x00020401]  (iNative[32057])
+// [0x00020401]  (iNative[32059])
 struct UGFxObject_execSetElementMemberString_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -818,7 +817,7 @@ struct UGFxObject_execSetElementMemberString_Params
 };
 
 // Function GFxUI.GFxObject.SetElementMemberInt
-// [0x00020401]  (iNative[32055])
+// [0x00020401]  (iNative[32057])
 struct UGFxObject_execSetElementMemberInt_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -827,7 +826,7 @@ struct UGFxObject_execSetElementMemberInt_Params
 };
 
 // Function GFxUI.GFxObject.SetElementMemberFloat
-// [0x00020401]  (iNative[32054])
+// [0x00020401]  (iNative[32056])
 struct UGFxObject_execSetElementMemberFloat_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -836,7 +835,7 @@ struct UGFxObject_execSetElementMemberFloat_Params
 };
 
 // Function GFxUI.GFxObject.SetElementMemberBool
-// [0x00020401]  (iNative[32053])
+// [0x00020401]  (iNative[32055])
 struct UGFxObject_execSetElementMemberBool_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -845,7 +844,7 @@ struct UGFxObject_execSetElementMemberBool_Params
 };
 
 // Function GFxUI.GFxObject.SetElementMemberObject
-// [0x00020401]  (iNative[32056])
+// [0x00020401]  (iNative[32058])
 struct UGFxObject_execSetElementMemberObject_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -854,7 +853,7 @@ struct UGFxObject_execSetElementMemberObject_Params
 };
 
 // Function GFxUI.GFxObject.SetElementMember
-// [0x00020401]  (iNative[32052])
+// [0x00020401]  (iNative[32054])
 struct UGFxObject_execSetElementMember_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -863,7 +862,7 @@ struct UGFxObject_execSetElementMember_Params
 };
 
 // Function GFxUI.GFxObject.GetElementMemberString
-// [0x00020401]  (iNative[31956])
+// [0x00020401]  (iNative[31958])
 struct UGFxObject_execGetElementMemberString_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -872,7 +871,7 @@ struct UGFxObject_execGetElementMemberString_Params
 };
 
 // Function GFxUI.GFxObject.GetElementMemberInt
-// [0x00020401]  (iNative[31954])
+// [0x00020401]  (iNative[31956])
 struct UGFxObject_execGetElementMemberInt_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -881,7 +880,7 @@ struct UGFxObject_execGetElementMemberInt_Params
 };
 
 // Function GFxUI.GFxObject.GetElementMemberFloat
-// [0x00020401]  (iNative[31953])
+// [0x00020401]  (iNative[31955])
 struct UGFxObject_execGetElementMemberFloat_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -890,7 +889,7 @@ struct UGFxObject_execGetElementMemberFloat_Params
 };
 
 // Function GFxUI.GFxObject.GetElementMemberBool
-// [0x00020401]  (iNative[31952])
+// [0x00020401]  (iNative[31954])
 struct UGFxObject_execGetElementMemberBool_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -899,7 +898,7 @@ struct UGFxObject_execGetElementMemberBool_Params
 };
 
 // Function GFxUI.GFxObject.GetElementMemberObject
-// [0x00024401]  (iNative[31955])
+// [0x00024401]  (iNative[31957])
 struct UGFxObject_execGetElementMemberObject_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -909,7 +908,7 @@ struct UGFxObject_execGetElementMemberObject_Params
 };
 
 // Function GFxUI.GFxObject.GetElementMember
-// [0x00020401]  (iNative[31951])
+// [0x00020401]  (iNative[31953])
 struct UGFxObject_execGetElementMember_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -918,7 +917,7 @@ struct UGFxObject_execGetElementMember_Params
 };
 
 // Function GFxUI.GFxObject.SetElementColorTransform
-// [0x00020401]  (iNative[32047])
+// [0x00020401]  (iNative[32049])
 struct UGFxObject_execSetElementColorTransform_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -926,7 +925,7 @@ struct UGFxObject_execSetElementColorTransform_Params
 };
 
 // Function GFxUI.GFxObject.SetElementPosition
-// [0x00020401]  (iNative[32059])
+// [0x00020401]  (iNative[32061])
 struct UGFxObject_execSetElementPosition_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -935,7 +934,7 @@ struct UGFxObject_execSetElementPosition_Params
 };
 
 // Function GFxUI.GFxObject.SetElementVisible
-// [0x00020401]  (iNative[32061])
+// [0x00020401]  (iNative[32063])
 struct UGFxObject_execSetElementVisible_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -943,7 +942,7 @@ struct UGFxObject_execSetElementVisible_Params
 };
 
 // Function GFxUI.GFxObject.SetElementDisplayMatrix
-// [0x00020401]  (iNative[32049])
+// [0x00020401]  (iNative[32051])
 struct UGFxObject_execSetElementDisplayMatrix_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -951,7 +950,7 @@ struct UGFxObject_execSetElementDisplayMatrix_Params
 };
 
 // Function GFxUI.GFxObject.SetElementDisplayInfo
-// [0x00020401]  (iNative[32048])
+// [0x00020401]  (iNative[32050])
 struct UGFxObject_execSetElementDisplayInfo_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -959,7 +958,7 @@ struct UGFxObject_execSetElementDisplayInfo_Params
 };
 
 // Function GFxUI.GFxObject.GetElementDisplayMatrix
-// [0x00020401]  (iNative[31948])
+// [0x00020401]  (iNative[31950])
 struct UGFxObject_execGetElementDisplayMatrix_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -967,7 +966,7 @@ struct UGFxObject_execGetElementDisplayMatrix_Params
 };
 
 // Function GFxUI.GFxObject.GetElementDisplayInfo
-// [0x00020401]  (iNative[31947])
+// [0x00020401]  (iNative[31949])
 struct UGFxObject_execGetElementDisplayInfo_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -975,7 +974,7 @@ struct UGFxObject_execGetElementDisplayInfo_Params
 };
 
 // Function GFxUI.GFxObject.SetElementString
-// [0x00020401]  (iNative[32060])
+// [0x00020401]  (iNative[32062])
 struct UGFxObject_execSetElementString_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -983,7 +982,7 @@ struct UGFxObject_execSetElementString_Params
 };
 
 // Function GFxUI.GFxObject.SetElementInt
-// [0x00020401]  (iNative[32051])
+// [0x00020401]  (iNative[32053])
 struct UGFxObject_execSetElementInt_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -991,7 +990,7 @@ struct UGFxObject_execSetElementInt_Params
 };
 
 // Function GFxUI.GFxObject.SetElementFloat
-// [0x00020401]  (iNative[32050])
+// [0x00020401]  (iNative[32052])
 struct UGFxObject_execSetElementFloat_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -999,7 +998,7 @@ struct UGFxObject_execSetElementFloat_Params
 };
 
 // Function GFxUI.GFxObject.SetElementBool
-// [0x00020401]  (iNative[32046])
+// [0x00020401]  (iNative[32048])
 struct UGFxObject_execSetElementBool_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1007,7 +1006,7 @@ struct UGFxObject_execSetElementBool_Params
 };
 
 // Function GFxUI.GFxObject.SetElementObject
-// [0x00020401]  (iNative[32058])
+// [0x00020401]  (iNative[32060])
 struct UGFxObject_execSetElementObject_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1015,7 +1014,7 @@ struct UGFxObject_execSetElementObject_Params
 };
 
 // Function GFxUI.GFxObject.SetElement
-// [0x00020401]  (iNative[32045])
+// [0x00020401]  (iNative[32047])
 struct UGFxObject_execSetElement_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1023,7 +1022,7 @@ struct UGFxObject_execSetElement_Params
 };
 
 // Function GFxUI.GFxObject.GetElementString
-// [0x00020401]  (iNative[31958])
+// [0x00020401]  (iNative[31960])
 struct UGFxObject_execGetElementString_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1031,7 +1030,7 @@ struct UGFxObject_execGetElementString_Params
 };
 
 // Function GFxUI.GFxObject.GetElementInt
-// [0x00020401]  (iNative[31950])
+// [0x00020401]  (iNative[31952])
 struct UGFxObject_execGetElementInt_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1039,7 +1038,7 @@ struct UGFxObject_execGetElementInt_Params
 };
 
 // Function GFxUI.GFxObject.GetElementFloat
-// [0x00020401]  (iNative[31949])
+// [0x00020401]  (iNative[31951])
 struct UGFxObject_execGetElementFloat_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1047,7 +1046,7 @@ struct UGFxObject_execGetElementFloat_Params
 };
 
 // Function GFxUI.GFxObject.GetElementBool
-// [0x00020401]  (iNative[31946])
+// [0x00020401]  (iNative[31948])
 struct UGFxObject_execGetElementBool_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1055,7 +1054,7 @@ struct UGFxObject_execGetElementBool_Params
 };
 
 // Function GFxUI.GFxObject.GetElementObject
-// [0x00024401]  (iNative[31957])
+// [0x00024401]  (iNative[31959])
 struct UGFxObject_execGetElementObject_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1064,7 +1063,7 @@ struct UGFxObject_execGetElementObject_Params
 };
 
 // Function GFxUI.GFxObject.GetElement
-// [0x00020401]  (iNative[31945])
+// [0x00020401]  (iNative[31947])
 struct UGFxObject_execGetElement_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1072,7 +1071,7 @@ struct UGFxObject_execGetElement_Params
 };
 
 // Function GFxUI.GFxObject.SetText
-// [0x00024401]  (iNative[32074])
+// [0x00024401]  (iNative[32076])
 struct UGFxObject_execSetText_Params
 {
 	class FString                                      Text;                                             // 0x0000 (0x000C) [0x0000000000400880] (CPF_Parm | CPF_CoerceParm | CPF_NeedCtorLink)
@@ -1087,42 +1086,42 @@ struct UGFxObject_execGetText_Params
 };
 
 // Function GFxUI.GFxObject.GetVisible
-// [0x00020401]  (iNative[31972])
+// [0x00020401]  (iNative[31974])
 struct UGFxObject_execGetVisible_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function GFxUI.GFxObject.SetVisible
-// [0x00020401]  (iNative[32089])
+// [0x00020401]  (iNative[32091])
 struct UGFxObject_execSetVisible_Params
 {
 	uint32_t                                           Visible : 1;                                      // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function GFxUI.GFxObject.SetDisplayMatrix3D
-// [0x00020401]  (iNative[32044])
+// [0x00020401]  (iNative[32046])
 struct UGFxObject_execSetDisplayMatrix3D_Params
 {
 	struct FMatrix                                     M;                                                // 0x0000 (0x0040) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxObject.SetDisplayMatrix
-// [0x00020401]  (iNative[32043])
+// [0x00020401]  (iNative[32045])
 struct UGFxObject_execSetDisplayMatrix_Params
 {
 	struct FMatrix                                     M;                                                // 0x0000 (0x0040) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxObject.SetColorTransform
-// [0x00020401]  (iNative[32041])
+// [0x00020401]  (iNative[32043])
 struct UGFxObject_execSetColorTransform_Params
 {
 	struct FASColorTransform                           cxform;                                           // 0x0000 (0x0020) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxObject.SetPosition
-// [0x00020401]  (iNative[28092])
+// [0x00020401]  (iNative[28094])
 struct UGFxObject_execSetPosition_Params
 {
 	float                                              X;                                                // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1130,35 +1129,35 @@ struct UGFxObject_execSetPosition_Params
 };
 
 // Function GFxUI.GFxObject.SetDisplayInfo
-// [0x00020401]  (iNative[32042])
+// [0x00020401]  (iNative[32044])
 struct UGFxObject_execSetDisplayInfo_Params
 {
 	struct FASDisplayInfo                              D;                                                // 0x0000 (0x002C) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function GFxUI.GFxObject.GetDisplayMatrix3D
-// [0x00020401]  (iNative[31944])
+// [0x00020401]  (iNative[31946])
 struct UGFxObject_execGetDisplayMatrix3D_Params
 {
 	struct FMatrix                                     ReturnValue;                                      // 0x0000 (0x0040) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function GFxUI.GFxObject.GetDisplayMatrix
-// [0x00020401]  (iNative[31943])
+// [0x00020401]  (iNative[31945])
 struct UGFxObject_execGetDisplayMatrix_Params
 {
 	struct FMatrix                                     ReturnValue;                                      // 0x0000 (0x0040) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function GFxUI.GFxObject.GetColorTransform
-// [0x00020401]  (iNative[31941])
+// [0x00020401]  (iNative[31943])
 struct UGFxObject_execGetColorTransform_Params
 {
 	struct FASColorTransform                           ReturnValue;                                      // 0x0000 (0x0020) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function GFxUI.GFxObject.GetPosition
-// [0x00420401]  (iNative[21901])
+// [0x00420401]  (iNative[21903])
 struct UGFxObject_execGetPosition_Params
 {
 	float                                              X;                                                // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -1167,14 +1166,14 @@ struct UGFxObject_execGetPosition_Params
 };
 
 // Function GFxUI.GFxObject.GetDisplayInfo
-// [0x00020401]  (iNative[31942])
+// [0x00020401]  (iNative[31944])
 struct UGFxObject_execGetDisplayInfo_Params
 {
 	struct FASDisplayInfo                              ReturnValue;                                      // 0x0000 (0x002C) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function GFxUI.GFxObject.TranslateString
-// [0x00026400]  (iNative[32116])
+// [0x00026400]  (iNative[32118])
 struct UGFxObject_execTranslateString_Params
 {
 	class FString                                      StringToTranslate;                                // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1183,7 +1182,7 @@ struct UGFxObject_execTranslateString_Params
 };
 
 // Function GFxUI.GFxObject.SetFunction
-// [0x00020401]  (iNative[32065])
+// [0x00020401]  (iNative[32067])
 struct UGFxObject_execSetFunction_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1192,7 +1191,7 @@ struct UGFxObject_execSetFunction_Params
 };
 
 // Function GFxUI.GFxObject.SetObject
-// [0x00020401]  (iNative[28060])
+// [0x00020401]  (iNative[28062])
 struct UGFxObject_execSetObject_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1200,7 +1199,7 @@ struct UGFxObject_execSetObject_Params
 };
 
 // Function GFxUI.GFxObject.SetString
-// [0x00024401]  (iNative[32073])
+// [0x00024401]  (iNative[32075])
 struct UGFxObject_execSetString_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1209,7 +1208,7 @@ struct UGFxObject_execSetString_Params
 };
 
 // Function GFxUI.GFxObject.SetInt
-// [0x00020401]  (iNative[32066])
+// [0x00020401]  (iNative[32068])
 struct UGFxObject_execSetInt_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1217,7 +1216,7 @@ struct UGFxObject_execSetInt_Params
 };
 
 // Function GFxUI.GFxObject.SetFloat
-// [0x00020401]  (iNative[32064])
+// [0x00020401]  (iNative[32066])
 struct UGFxObject_execSetFloat_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1225,7 +1224,7 @@ struct UGFxObject_execSetFloat_Params
 };
 
 // Function GFxUI.GFxObject.SetBool
-// [0x00020401]  (iNative[32040])
+// [0x00020401]  (iNative[32042])
 struct UGFxObject_execSetBool_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1233,7 +1232,7 @@ struct UGFxObject_execSetBool_Params
 };
 
 // Function GFxUI.GFxObject.Set
-// [0x00020401]  (iNative[27841])
+// [0x00020401]  (iNative[27843])
 struct UGFxObject_execSet_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1241,7 +1240,7 @@ struct UGFxObject_execSet_Params
 };
 
 // Function GFxUI.GFxObject.GetObject
-// [0x00024401]  (iNative[21856])
+// [0x00024401]  (iNative[21858])
 struct UGFxObject_execGetObjectW_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1250,7 +1249,7 @@ struct UGFxObject_execGetObjectW_Params
 };
 
 // Function GFxUI.GFxObject.GetString
-// [0x00020401]  (iNative[21999])
+// [0x00020401]  (iNative[22001])
 struct UGFxObject_execGetString_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1258,7 +1257,7 @@ struct UGFxObject_execGetString_Params
 };
 
 // Function GFxUI.GFxObject.GetInt
-// [0x00020401]  (iNative[21779])
+// [0x00020401]  (iNative[21781])
 struct UGFxObject_execGetInt_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1266,7 +1265,7 @@ struct UGFxObject_execGetInt_Params
 };
 
 // Function GFxUI.GFxObject.GetFloat
-// [0x00020401]  (iNative[21735])
+// [0x00020401]  (iNative[21737])
 struct UGFxObject_execGetFloat_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1274,7 +1273,7 @@ struct UGFxObject_execGetFloat_Params
 };
 
 // Function GFxUI.GFxObject.GetBool
-// [0x00020401]  (iNative[31940])
+// [0x00020401]  (iNative[31942])
 struct UGFxObject_execGetBool_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -1282,7 +1281,7 @@ struct UGFxObject_execGetBool_Params
 };
 
 // Function GFxUI.GFxObject.Get
-// [0x00020401]  (iNative[31938])
+// [0x00020401]  (iNative[31940])
 struct UGFxObject_execGet_Params
 {
 	class FString                                      Member;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)

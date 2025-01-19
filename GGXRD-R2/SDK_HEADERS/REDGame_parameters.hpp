@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -30,7 +29,7 @@ struct AREDActor_CheckDOF_eventTick_Params
 };
 
 // Function REDGame.REDActor_CheckDOF.SetDOFInfoPositionNative
-// [0x00020400]  (iNative[39734])
+// [0x00020400]  (iNative[39736])
 struct AREDActor_CheckDOF_execSetDOFInfoPositionNative_Params
 {
 	float                                              InnerRadius;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -38,7 +37,7 @@ struct AREDActor_CheckDOF_execSetDOFInfoPositionNative_Params
 };
 
 // Function REDGame.REDActor_CheckDOF.SetDOFInfoDistanceNative
-// [0x00020400]  (iNative[39732])
+// [0x00020400]  (iNative[39734])
 struct AREDActor_CheckDOF_execSetDOFInfoDistanceNative_Params
 {
 	float                                              InnerRadius;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -46,7 +45,7 @@ struct AREDActor_CheckDOF_execSetDOFInfoDistanceNative_Params
 };
 
 // Function REDGame.REDActor_CheckDOF.SetDOFInfoFocusTypeNative
-// [0x00020400]  (iNative[39733])
+// [0x00020400]  (iNative[39735])
 struct AREDActor_CheckDOF_execSetDOFInfoFocusTypeNative_Params
 {
 	uint8_t                                            Type;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -69,7 +68,7 @@ struct AREDActor_CheckDOF_execSetupCamera_Params
 };
 
 // Function REDGame.REDActor_CheckDOF.NativeTick
-// [0x00020400]  (iNative[38511])
+// [0x00020400]  (iNative[38513])
 struct AREDActor_CheckDOF_execNativeTick_Params
 {
 	float                                              DeltaTime;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -84,26 +83,26 @@ struct AREDActor_GlareEffect_execInitialize_Params
 };
 
 // Function REDGame.REDActor_GlareEffect.UpdateMaterialParameter
-// [0x00020401]  (iNative[40774])
+// [0x00020401]  (iNative[40776])
 struct AREDActor_GlareEffect_execUpdateMaterialParameter_Params
 {
 };
 
 // Function REDGame.REDActor_GlareEffect.UpdateTransform
-// [0x00420401]  (iNative[40875])
+// [0x00420401]  (iNative[40877])
 struct AREDActor_GlareEffect_execUpdateTransform_Params
 {
 	struct FTPOV                                       POV;                                              // 0x0000 (0x001C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDActor_GlareEffect.UpdateParameter
-// [0x00020401]  (iNative[40798])
+// [0x00020401]  (iNative[40800])
 struct AREDActor_GlareEffect_execUpdateParameter_Params
 {
 };
 
 // Function REDGame.REDActor_GlareEffect.SetAlphaToF
-// [0x00020401]  (iNative[39686])
+// [0x00020401]  (iNative[39688])
 struct AREDActor_GlareEffect_execSetAlphaToF_Params
 {
 	float                                              StartAlpha;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -112,7 +111,7 @@ struct AREDActor_GlareEffect_execSetAlphaToF_Params
 };
 
 // Function REDGame.REDActor_GlareEffect.SetAlphaTo
-// [0x00020401]  (iNative[39685])
+// [0x00020401]  (iNative[39687])
 struct AREDActor_GlareEffect_execSetAlphaTo_Params
 {
 	int32_t                                            StartAlpha;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -121,41 +120,41 @@ struct AREDActor_GlareEffect_execSetAlphaTo_Params
 };
 
 // Function REDGame.REDActor_GlareEffect.SetAlpha
-// [0x00020401]  (iNative[39683])
+// [0x00020401]  (iNative[39685])
 struct AREDActor_GlareEffect_execSetAlpha_Params
 {
 	int32_t                                            inAlpha;                                          // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDActor_GlareEffect.SetAlphaF
-// [0x00020401]  (iNative[39684])
+// [0x00020401]  (iNative[39686])
 struct AREDActor_GlareEffect_execSetAlphaF_Params
 {
 	float                                              inAlpha;                                          // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDActor_GlareEffect.SetColor
-// [0x00420401]  (iNative[39709])
+// [0x00420401]  (iNative[39711])
 struct AREDActor_GlareEffect_execSetColor_Params
 {
 	struct FColor                                      InColor;                                          // 0x0000 (0x0004) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDActor_GlareEffect.SetColorF
-// [0x00420401]  (iNative[39710])
+// [0x00420401]  (iNative[39712])
 struct AREDActor_GlareEffect_execSetColorF_Params
 {
 	struct FLinearColor                                InColor;                                          // 0x0000 (0x0010) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDActor_GlareEffect.ResetColor
-// [0x00020401]  (iNative[27179])
+// [0x00020401]  (iNative[27181])
 struct AREDActor_GlareEffect_execResetColor_Params
 {
 };
 
 // Function REDGame.REDActor_GlareEffect.SetScale
-// [0x00020401]  (iNative[28130])
+// [0x00020401]  (iNative[28132])
 struct AREDActor_GlareEffect_execSetScale_Params
 {
 	float                                              X;                                                // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -163,14 +162,14 @@ struct AREDActor_GlareEffect_execSetScale_Params
 };
 
 // Function REDGame.REDActor_GlareEffect.SetDisp
-// [0x00020401]  (iNative[39726])
+// [0x00020401]  (iNative[39728])
 struct AREDActor_GlareEffect_execSetDisp_Params
 {
 	uint32_t                                           bDispOn : 1;                                      // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDActor_GlareEffect.SetOffset
-// [0x00020401]  (iNative[39784])
+// [0x00020401]  (iNative[39786])
 struct AREDActor_GlareEffect_execSetOffset_Params
 {
 	float                                              X;                                                // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -199,7 +198,7 @@ struct AREDActor_PauseMenu_execActivatePause_Params
 };
 
 // Function REDGame.REDActor_PauseMenu.PauseUpdate
-// [0x00020400]  (iNative[38903])
+// [0x00020400]  (iNative[38905])
 struct AREDActor_PauseMenu_execPauseUpdate_Params
 {
 };
@@ -212,7 +211,7 @@ struct AREDActor_PostUpdater_eventTick_Params
 };
 
 // Function REDGame.REDActor_PostUpdater.UpdateMaterialParam
-// [0x00020400]  (iNative[40772])
+// [0x00020400]  (iNative[40774])
 struct AREDActor_PostUpdater_execUpdateMaterialParam_Params
 {
 };
@@ -239,20 +238,20 @@ struct AREDActor_RadialBlur_execSetupCamera_Params
 };
 
 // Function REDGame.REDActor_RadialBlur.UpdateDraw
-// [0x00020401]  (iNative[40647])
+// [0x00020401]  (iNative[40649])
 struct AREDActor_RadialBlur_execUpdateDraw_Params
 {
 };
 
 // Function REDGame.REDActor_RadialBlur.NativeTick
-// [0x00020401]  (iNative[38511])
+// [0x00020401]  (iNative[38513])
 struct AREDActor_RadialBlur_execNativeTick_Params
 {
 	float                                              DeltaTime;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDActor_RadialBlur.End
-// [0x00020401]  (iNative[20354])
+// [0x00020401]  (iNative[20356])
 struct AREDActor_RadialBlur_execEnd_Params
 {
 	uint32_t                                           immediate : 1;                                    // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -273,7 +272,7 @@ struct AREDActor_RadialBlur_execStart_Params
 };
 
 // Function REDGame.REDAdvSceneData.GetSECue
-// [0x00020400]  (iNative[37163])
+// [0x00020400]  (iNative[37165])
 struct UREDAdvSceneData_execGetSECue_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -281,7 +280,7 @@ struct UREDAdvSceneData_execGetSECue_Params
 };
 
 // Function REDGame.REDAnimNodeBlendList.ChangeAnimSeq
-// [0x00020400]  (iNative[36088])
+// [0x00020400]  (iNative[36090])
 struct UREDAnimNodeBlendList_execChangeAnimSeq_Params
 {
 	class FName                                        SeqName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -292,13 +291,13 @@ struct UREDAnimNodeBlendList_execChangeAnimSeq_Params
 };
 
 // Function REDGame.REDAnimNodeBlendAdvFace.UpdateBlendAnim
-// [0x00020400]  (iNative[40602])
+// [0x00020400]  (iNative[40604])
 struct UREDAnimNodeBlendAdvFace_execUpdateBlendAnim_Params
 {
 };
 
 // Function REDGame.REDAnimNodeBlendAdvFace.ChangeFace
-// [0x00020400]  (iNative[36094])
+// [0x00020400]  (iNative[36096])
 struct UREDAnimNodeBlendAdvFace_execChangeFace_Params
 {
 	int32_t                                            InFaceType;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -309,13 +308,13 @@ struct UREDAnimNodeBlendAdvFace_execChangeFace_Params
 };
 
 // Function REDGame.REDAnimNodeBlendAdvHair.UpdateBlendAnim
-// [0x00020400]  (iNative[40602])
+// [0x00020400]  (iNative[40604])
 struct UREDAnimNodeBlendAdvHair_execUpdateBlendAnim_Params
 {
 };
 
 // Function REDGame.REDAnimNodeBlendAdvHair.SetHair
-// [0x00020400]  (iNative[39752])
+// [0x00020400]  (iNative[39754])
 struct UREDAnimNodeBlendAdvHair_execSetHair_Params
 {
 	class FString                                      AnimName;                                         // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -334,13 +333,13 @@ struct UREDAnimNodeBlendEyeBlink_execUpdate_Params
 };
 
 // Function REDGame.REDAnimNodeBlendEyeBlink.StopBlink
-// [0x00020400]  (iNative[40097])
+// [0x00020400]  (iNative[40099])
 struct UREDAnimNodeBlendEyeBlink_execStopBlink_Params
 {
 };
 
 // Function REDGame.REDAnimNodeBlendEyeBlink.PlayBlink
-// [0x00024400]  (iNative[38961])
+// [0x00024400]  (iNative[38963])
 struct UREDAnimNodeBlendEyeBlink_execPlayBlink_Params
 {
 	uint32_t                                           Linear : 1;                                       // 0x0000 (0x0004) [0x0000000000000090] [0x00000001] (CPF_OptionalParm | CPF_Parm)
@@ -349,7 +348,7 @@ struct UREDAnimNodeBlendEyeBlink_execPlayBlink_Params
 };
 
 // Function REDGame.REDAnimNodeBlendEyeBlink.SetBlendTarget
-// [0x00020400]  (iNative[27889])
+// [0x00020400]  (iNative[27891])
 struct UREDAnimNodeBlendEyeBlink_execSetBlendTarget_Params
 {
 	float                                              BlendTarget;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -363,14 +362,14 @@ struct UREDAnimNodeBlendLip_execUpdate_Params
 };
 
 // Function REDGame.REDAnimNodeBlendLip.ChangeMouthSeqNodeIndex
-// [0x00020400]  (iNative[36101])
+// [0x00020400]  (iNative[36103])
 struct UREDAnimNodeBlendLip_execChangeMouthSeqNodeIndex_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDAnimNodeBlendLip.ChangeMouthSeqNode
-// [0x00020400]  (iNative[36100])
+// [0x00020400]  (iNative[36102])
 struct UREDAnimNodeBlendLip_execChangeMouthSeqNode_Params
 {
 	class FName                                        MouthNodeName;                                    // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -397,7 +396,7 @@ struct UREDAnimNodeBlendLip_execStopLip_Params
 };
 
 // Function REDGame.REDAnimNodeBlendLip.PlayLip
-// [0x00024400]  (iNative[39033])
+// [0x00024400]  (iNative[39035])
 struct UREDAnimNodeBlendLip_execPlayLip_Params
 {
 	int32_t                                            Type;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -407,14 +406,14 @@ struct UREDAnimNodeBlendLip_execPlayLip_Params
 };
 
 // Function REDGame.REDAnimNodeBlendLip.ChangeMouthType
-// [0x00020400]  (iNative[36102])
+// [0x00020400]  (iNative[36104])
 struct UREDAnimNodeBlendLip_execChangeMouthType_Params
 {
 	int32_t                                            Type;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDAnimNodeBlendLip.SetBlendTarget
-// [0x00020400]  (iNative[27889])
+// [0x00020400]  (iNative[27891])
 struct UREDAnimNodeBlendLip_execSetBlendTarget_Params
 {
 	float                                              BlendTarget;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -422,28 +421,28 @@ struct UREDAnimNodeBlendLip_execSetBlendTarget_Params
 };
 
 // Function REDGame.REDAnimNodeScarfSystem.UpdateScarfSystem
-// [0x00020400]  (iNative[40838])
+// [0x00020400]  (iNative[40840])
 struct UREDAnimNodeScarfSystem_execUpdateScarfSystem_Params
 {
 	uint32_t                                           bStopShrink : 1;                                  // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDAnimNodeScarfSystem.StopScarfSystem
-// [0x00020400]  (iNative[40102])
+// [0x00020400]  (iNative[40104])
 struct UREDAnimNodeScarfSystem_execStopScarfSystem_Params
 {
 	int32_t                                            BlendFrame;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDAnimNodeScarfSystem.StartScarfSystem
-// [0x00020400]  (iNative[40030])
+// [0x00020400]  (iNative[40032])
 struct UREDAnimNodeScarfSystem_execStartScarfSystem_Params
 {
 	int32_t                                            BlendFrame;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDAnimNodeSequence.JumpCutSceneAnimeFrame
-// [0x00020400]  (iNative[37947])
+// [0x00020400]  (iNative[37949])
 struct UREDAnimNodeSequence_execJumpCutSceneAnimeFrame_Params
 {
 	float                                              frame;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -457,34 +456,34 @@ struct UREDAnimNodeSequence_execIsAnimeEnd_Params
 };
 
 // Function REDGame.REDAnimNodeSequence.SetAnimeFrame
-// [0x00020400]  (iNative[39688])
+// [0x00020400]  (iNative[39690])
 struct UREDAnimNodeSequence_execSetAnimeFrame_Params
 {
 	int32_t                                            frame;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDAnimNodeSequence.StepAnime
-// [0x00020400]  (iNative[40088])
+// [0x00020400]  (iNative[40090])
 struct UREDAnimNodeSequence_execStepAnime_Params
 {
 	int32_t                                            frame;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDAnimNodeSequence.SetAnim
-// [0x00020400]  (iNative[27869])
+// [0x00020400]  (iNative[27871])
 struct UREDAnimNodeSequence_execSetAnim_Params
 {
 	class FName                                        Sequence;                                         // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDAnimTree.ZeroScale
-// [0x00020401]  (iNative[41037])
+// [0x00020401]  (iNative[41039])
 struct UREDAnimTree_execZeroScale_Params
 {
 };
 
 // Function REDGame.REDAnimTree.ResetScaleController
-// [0x00020401]  (iNative[39386])
+// [0x00020401]  (iNative[39388])
 struct UREDAnimTree_execResetScaleController_Params
 {
 };
@@ -508,26 +507,26 @@ struct UREDAnywhereDisp_eventInitialize_Params
 };
 
 // Function REDGame.REDAnywhereDisp.UpdateFreeTrialInfomation
-// [0x00020400]  (iNative[40676])
+// [0x00020400]  (iNative[40678])
 struct UREDAnywhereDisp_execUpdateFreeTrialInfomation_Params
 {
 };
 
 // Function REDGame.REDAnywhereDisp.UpdateNewChallengerDraw
-// [0x00020400]  (iNative[40792])
+// [0x00020400]  (iNative[40794])
 struct UREDAnywhereDisp_execUpdateNewChallengerDraw_Params
 {
 };
 
 // Function REDGame.REDAnywhereDisp.IsNewChallengerDrawEnd
-// [0x00020400]  (iNative[37744])
+// [0x00020400]  (iNative[37746])
 struct UREDAnywhereDisp_execIsNewChallengerDrawEnd_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDAnywhereDisp.RequestNewChallengerDraw
-// [0x00020400]  (iNative[39368])
+// [0x00020400]  (iNative[39370])
 struct UREDAnywhereDisp_execRequestNewChallengerDraw_Params
 {
 };
@@ -779,7 +778,7 @@ struct UREDBGMaterialController_execUpdate_Params
 };
 
 // Function REDGame.REDBGMaterialController.SetBrightness
-// [0x00020400]  (iNative[39699])
+// [0x00020400]  (iNative[39701])
 struct UREDBGMaterialController_execSetBrightness_Params
 {
 	float                                              Brightness;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -827,20 +826,20 @@ struct AREDCamera_Adv_execDisplayDebug_Params
 };
 
 // Function REDGame.REDCamera_Adv.UpdatePawnCameraParam
-// [0x00420400]  (iNative[40802])
+// [0x00420400]  (iNative[40804])
 struct AREDCamera_Adv_execUpdatePawnCameraParam_Params
 {
 	struct FTPOV                                       POV;                                              // 0x0000 (0x001C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDCamera_Adv.UpdatePawnMaterialInstance
-// [0x00020400]  (iNative[40805])
+// [0x00020400]  (iNative[40807])
 struct AREDCamera_Adv_execUpdatePawnMaterialInstance_Params
 {
 };
 
 // Function REDGame.REDCamera_Adv.UpdateCameraAnimLight
-// [0x00020400]  (iNative[40609])
+// [0x00020400]  (iNative[40611])
 struct AREDCamera_Adv_execUpdateCameraAnimLight_Params
 {
 };
@@ -866,13 +865,13 @@ struct AREDCamera_CharaSelect_execDisplayDebug_Params
 };
 
 // Function REDGame.REDCamera_CharaSelect.UpdatePawnMaterialInstance
-// [0x00020400]  (iNative[40805])
+// [0x00020400]  (iNative[40807])
 struct AREDCamera_CharaSelect_execUpdatePawnMaterialInstance_Params
 {
 };
 
 // Function REDGame.REDCamera_CharaSelect.UpdatePawnCameraParam
-// [0x00420400]  (iNative[40802])
+// [0x00420400]  (iNative[40804])
 struct AREDCamera_CharaSelect_execUpdatePawnCameraParam_Params
 {
 	struct FTPOV                                       POV;                                              // 0x0000 (0x001C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -899,20 +898,20 @@ struct AREDCamera_DigitalFigure_execDisplayDebug_Params
 };
 
 // Function REDGame.REDCamera_DigitalFigure.UpdatePawnCameraParam
-// [0x00420400]  (iNative[40802])
+// [0x00420400]  (iNative[40804])
 struct AREDCamera_DigitalFigure_execUpdatePawnCameraParam_Params
 {
 	struct FTPOV                                       POV;                                              // 0x0000 (0x001C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDCamera_DigitalFigure.UpdatePawnMaterialInstance
-// [0x00020400]  (iNative[40805])
+// [0x00020400]  (iNative[40807])
 struct AREDCamera_DigitalFigure_execUpdatePawnMaterialInstance_Params
 {
 };
 
 // Function REDGame.REDCamera_DigitalFigure.UpdateCameraAnimLight
-// [0x00020400]  (iNative[40609])
+// [0x00020400]  (iNative[40611])
 struct AREDCamera_DigitalFigure_execUpdateCameraAnimLight_Params
 {
 };
@@ -936,7 +935,7 @@ struct UREDCameraOffsetDataArray_execAddOffsetData_Params
 };
 
 // Function REDGame.REDCharaAssetLoader.CheckExistPackage
-// [0x00422401]  (iNative[36194])
+// [0x00422401]  (iNative[36196])
 struct UREDCharaAssetLoader_execCheckExistPackage_Params
 {
 	struct FSpawnPlayerInfo                            Info;                                             // 0x0000 (0x0064) [0x0000000000400182] (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -944,7 +943,7 @@ struct UREDCharaAssetLoader_execCheckExistPackage_Params
 };
 
 // Function REDGame.REDCharaAssetLoader.GetPackageNamesForDrama
-// [0x00422401]  (iNative[37124])
+// [0x00422401]  (iNative[37126])
 struct UREDCharaAssetLoader_execGetPackageNamesForDrama_Params
 {
 	struct FSpawnPlayerInfo                            Info;                                             // 0x0000 (0x0064) [0x0000000000400182] (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -954,7 +953,7 @@ struct UREDCharaAssetLoader_execGetPackageNamesForDrama_Params
 };
 
 // Function REDGame.REDCharaAssetLoader.GetPackageNamesForMOM
-// [0x00422401]  (iNative[37125])
+// [0x00422401]  (iNative[37127])
 struct UREDCharaAssetLoader_execGetPackageNamesForMOM_Params
 {
 	struct FSpawnPlayerInfo                            Info;                                             // 0x0000 (0x0064) [0x0000000000400182] (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -962,7 +961,7 @@ struct UREDCharaAssetLoader_execGetPackageNamesForMOM_Params
 };
 
 // Function REDGame.REDCharaAssetLoader.LoadAssets
-// [0x00422401]  (iNative[38015])
+// [0x00422401]  (iNative[38017])
 struct UREDCharaAssetLoader_execLoadAssets_Params
 {
 	class UObject*                                     outerObject;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -972,7 +971,7 @@ struct UREDCharaAssetLoader_execLoadAssets_Params
 };
 
 // Function REDGame.REDCharaAssetLoader.GetPackageNamesSimple
-// [0x00422401]  (iNative[37127])
+// [0x00422401]  (iNative[37129])
 struct UREDCharaAssetLoader_execGetPackageNamesSimple_Params
 {
 	struct FSpawnPlayerInfo                            Info;                                             // 0x0000 (0x0064) [0x0000000000400182] (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -981,7 +980,7 @@ struct UREDCharaAssetLoader_execGetPackageNamesSimple_Params
 };
 
 // Function REDGame.REDCharaAssetLoader.GetPackageNamesForOnlyDrama
-// [0x00422401]  (iNative[37126])
+// [0x00422401]  (iNative[37128])
 struct UREDCharaAssetLoader_execGetPackageNamesForOnlyDrama_Params
 {
 	struct FSpawnPlayerInfo                            Info;                                             // 0x0000 (0x0064) [0x0000000000400182] (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -989,7 +988,7 @@ struct UREDCharaAssetLoader_execGetPackageNamesForOnlyDrama_Params
 };
 
 // Function REDGame.REDCharaAssetLoader.GetPackageNames
-// [0x00422401]  (iNative[37123])
+// [0x00422401]  (iNative[37125])
 struct UREDCharaAssetLoader_execGetPackageNames_Params
 {
 	struct FSpawnPlayerInfo                            Info;                                             // 0x0000 (0x0064) [0x0000000000400182] (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -1006,7 +1005,7 @@ struct UREDCheatManager_execTwitter_Params
 };
 
 // Function REDGame.REDCheatManager.TwitterControl
-// [0x00420400]  (iNative[40292])
+// [0x00420400]  (iNative[40294])
 struct UREDCheatManager_execTwitterControl_Params
 {
 	class FString                                      Exec;                                             // 0x0000 (0x000C) [0x0000000000400180] (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -1115,35 +1114,35 @@ struct UREDControlModule_Adv_execGetBaseAimRotation_Params
 };
 
 // Function REDGame.REDControlModule_Adv.GetInnerCameraFov
-// [0x00020400]  (iNative[37072])
+// [0x00020400]  (iNative[37074])
 struct UREDControlModule_Adv_execGetInnerCameraFov_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDControlModule_Adv.GetInnerCameraRot
-// [0x00420400]  (iNative[37074])
+// [0x00420400]  (iNative[37076])
 struct UREDControlModule_Adv_execGetInnerCameraRot_Params
 {
 	struct FRotator                                    Rotation;                                         // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDControlModule_Adv.GetInnerCameraPos
-// [0x00420400]  (iNative[37073])
+// [0x00420400]  (iNative[37075])
 struct UREDControlModule_Adv_execGetInnerCameraPos_Params
 {
 	struct FVector                                     Location;                                         // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDControlModule_Battle.UpdateRotation
-// [0x00020400]  (iNative[29848])
+// [0x00020400]  (iNative[29850])
 struct UREDControlModule_Battle_execUpdateRotation_Params
 {
 	float                                              DeltaTime;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDControlModule_Battle.ProcessMove
-// [0x00020400]  (iNative[26498])
+// [0x00020400]  (iNative[26500])
 struct UREDControlModule_Battle_execProcessMove_Params
 {
 	float                                              DeltaTime;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1161,7 +1160,7 @@ struct UREDControlModule_Battle_execGetBaseAimRotation_Params
 };
 
 // Function REDGame.REDControlModule_Battle.SetCameraOffset
-// [0x00420400]  (iNative[39700])
+// [0x00420400]  (iNative[39702])
 struct UREDControlModule_Battle_execSetCameraOffset_Params
 {
 	struct FVector                                     InLocationOffset;                                 // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -1169,7 +1168,7 @@ struct UREDControlModule_Battle_execSetCameraOffset_Params
 };
 
 // Function REDGame.REDControlModule_Battle.GetCameraOffset
-// [0x00420400]  (iNative[37012])
+// [0x00420400]  (iNative[37014])
 struct UREDControlModule_Battle_execGetCameraOffset_Params
 {
 	struct FVector                                     Location;                                         // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -1177,14 +1176,14 @@ struct UREDControlModule_Battle_execGetCameraOffset_Params
 };
 
 // Function REDGame.REDControlModule_Battle.GetInnerCameraRot
-// [0x00420400]  (iNative[37074])
+// [0x00420400]  (iNative[37076])
 struct UREDControlModule_Battle_execGetInnerCameraRot_Params
 {
 	struct FRotator                                    Rotation;                                         // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDControlModule_Battle.GetInnerCameraPos
-// [0x00420400]  (iNative[37073])
+// [0x00420400]  (iNative[37075])
 struct UREDControlModule_Battle_execGetInnerCameraPos_Params
 {
 	struct FVector                                     Location;                                         // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -1219,21 +1218,21 @@ struct UREDControlModule_DigitalFigure_execGetBaseAimRotation_Params
 };
 
 // Function REDGame.REDControlModule_DigitalFigure.GetInnerCameraFov
-// [0x00020400]  (iNative[37072])
+// [0x00020400]  (iNative[37074])
 struct UREDControlModule_DigitalFigure_execGetInnerCameraFov_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDControlModule_DigitalFigure.GetInnerCameraRot
-// [0x00420400]  (iNative[37074])
+// [0x00420400]  (iNative[37076])
 struct UREDControlModule_DigitalFigure_execGetInnerCameraRot_Params
 {
 	struct FRotator                                    Rotation;                                         // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDControlModule_DigitalFigure.GetInnerCameraPos
-// [0x00420400]  (iNative[37073])
+// [0x00420400]  (iNative[37075])
 struct UREDControlModule_DigitalFigure_execGetInnerCameraPos_Params
 {
 	struct FVector                                     Location;                                         // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -1260,14 +1259,14 @@ struct UREDControlModule_Lobby_execProcessMove_Params
 };
 
 // Function REDGame.REDControlModule_Lobby.GetInnerCameraRot
-// [0x00420400]  (iNative[37074])
+// [0x00420400]  (iNative[37076])
 struct UREDControlModule_Lobby_execGetInnerCameraRot_Params
 {
 	struct FRotator                                    Rotation;                                         // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDControlModule_Lobby.GetInnerCameraPos
-// [0x00420400]  (iNative[37073])
+// [0x00420400]  (iNative[37075])
 struct UREDControlModule_Lobby_execGetInnerCameraPos_Params
 {
 	struct FVector                                     Location;                                         // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -1280,14 +1279,14 @@ struct AREDDebugCameraController_execDebugCameraTransformCopyToClipboard_Params
 };
 
 // Function REDGame.REDDebugCameraController.NativeDebugCameraTransformCopyToClipboard
-// [0x00020400]  (iNative[38509])
+// [0x00020400]  (iNative[38511])
 struct AREDDebugCameraController_execNativeDebugCameraTransformCopyToClipboard_Params
 {
 	class AREDPawn_Player*                             P1;                                               // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDDebugCameraController.ForceMouseUnlock
-// [0x00020400]  (iNative[36890])
+// [0x00020400]  (iNative[36892])
 struct AREDDebugCameraController_execForceMouseUnlock_Params
 {
 	uint32_t                                           bUnlock : 1;                                      // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -1323,7 +1322,7 @@ struct AREDDebugCameraController_execGetPlayer_Params
 };
 
 // Function REDGame.REDDebugCameraController.UpdateLocal
-// [0x00020400]  (iNative[40760])
+// [0x00020400]  (iNative[40762])
 struct AREDDebugCameraController_execUpdateLocal_Params
 {
 };
@@ -1341,7 +1340,7 @@ struct UREDDownloadableContentManager_eventRefreshDLCFromNative_Params
 };
 
 // Function REDGame.REDDownloadableContentManager.DLCPathChange
-// [0x00020400]  (iNative[36567])
+// [0x00020400]  (iNative[36569])
 struct UREDDownloadableContentManager_execDLCPathChange_Params
 {
 };
@@ -1366,7 +1365,7 @@ struct AREDEasyCharaSelectActor_execGetCharaNameID_Params
 };
 
 // Function REDGame.REDEffect.SpawnEffect
-// [0x00020400]  (iNative[39940])
+// [0x00020400]  (iNative[39942])
 struct UREDEffect_execSpawnEffect_Params
 {
 	class FName                                        EffectName;                                       // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -1376,7 +1375,7 @@ struct UREDEffect_execSpawnEffect_Params
 };
 
 // Function REDGame.REDEffectMaterialInfo.GetPawnMaterialFromEffectName
-// [0x00020400]  (iNative[37131])
+// [0x00020400]  (iNative[37133])
 struct UREDEffectMaterialInfo_execGetPawnMaterialFromEffectName_Params
 {
 	class FName                                        EffectName;                                       // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -1384,14 +1383,14 @@ struct UREDEffectMaterialInfo_execGetPawnMaterialFromEffectName_Params
 };
 
 // Function REDGame.REDEffectPawnPool.ReturnEffectPawn
-// [0x00020400]  (iNative[39400])
+// [0x00020400]  (iNative[39402])
 struct UREDEffectPawnPool_execReturnEffectPawn_Params
 {
 	class AREDPawn_Effect*                             EffectPawn;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDEffectPawnPool.GetPooledEffectPawn
-// [0x00020400]  (iNative[37141])
+// [0x00020400]  (iNative[37143])
 struct UREDEffectPawnPool_execGetPooledEffectPawn_Params
 {
 	class AREDPawn_Effect*                             ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -1430,26 +1429,26 @@ struct UREDEffectPawnPool_execInitPool_Params
 };
 
 // Function REDGame.REDEffectPawnPool.UpdateLightVector
-// [0x00020400]  (iNative[40749])
+// [0x00020400]  (iNative[40751])
 struct UREDEffectPawnPool_execUpdateLightVector_Params
 {
 };
 
 // Function REDGame.REDEffectPawnPool.UpdateMaterialInstanceParam
-// [0x00020400]  (iNative[40770])
+// [0x00020400]  (iNative[40772])
 struct UREDEffectPawnPool_execUpdateMaterialInstanceParam_Params
 {
 };
 
 // Function REDGame.REDEffectPawnPool.UpdateLightVectorFromLightAnime
-// [0x00420400]  (iNative[40750])
+// [0x00420400]  (iNative[40752])
 struct UREDEffectPawnPool_execUpdateLightVectorFromLightAnime_Params
 {
 	struct FVector                                     LightVector;                                      // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDEffectPawnPool.UpdateCameraParam
-// [0x00420400]  (iNative[40611])
+// [0x00420400]  (iNative[40613])
 struct UREDEffectPawnPool_execUpdateCameraParam_Params
 {
 	struct FVector                                     CameraDir;                                        // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -1457,14 +1456,14 @@ struct UREDEffectPawnPool_execUpdateCameraParam_Params
 };
 
 // Function REDGame.REDEmitterPool.OnParticleSystemFinishedWithColorOverride
-// [0x00020400]  (iNative[38817])
+// [0x00020400]  (iNative[38819])
 struct AREDEmitterPool_execOnParticleSystemFinishedWithColorOverride_Params
 {
 	class UParticleSystemComponent*                    PSC;                                              // 0x0000 (0x0004) [0x0000000004000080] (CPF_Parm | CPF_EditInline)
 };
 
 // Function REDGame.REDEmitterPool.SetupMaterialForColorOverrideParticle
-// [0x00020400]  (iNative[39842])
+// [0x00020400]  (iNative[39844])
 struct AREDEmitterPool_execSetupMaterialForColorOverrideParticle_Params
 {
 	class UParticleSystemComponent*                    PSC;                                              // 0x0000 (0x0004) [0x0000000004000080] (CPF_Parm | CPF_EditInline)
@@ -1486,7 +1485,7 @@ struct AREDEmitterPool_eventSpawnEmitter_Params
 };
 
 // Function REDGame.REDEmitterPool.ResetMaterialInterface
-// [0x00020400]  (iNative[39384])
+// [0x00020400]  (iNative[39386])
 struct AREDEmitterPool_execResetMaterialInterface_Params
 {
 };
@@ -1498,7 +1497,7 @@ struct AREDEmitterPool_execRoundReset_Params
 };
 
 // Function REDGame.REDEmitterPool.InitPool
-// [0x00020400]  (iNative[37540])
+// [0x00020400]  (iNative[37542])
 struct AREDEmitterPool_execInitPool_Params
 {
 };
@@ -1578,35 +1577,35 @@ struct UREDGameCommon_eventNarrationChangeRequest_Params
 };
 
 // Function REDGame.REDGameCommon.SetPlaySoundPadSpeaker
-// [0x00020400]  (iNative[39793])
+// [0x00020400]  (iNative[39795])
 struct UREDGameCommon_execSetPlaySoundPadSpeaker_Params
 {
 	int32_t                                            PadID;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameCommon.SetCurrentNarrationCharaID
-// [0x00020400]  (iNative[39717])
+// [0x00020400]  (iNative[39719])
 struct UREDGameCommon_execSetCurrentNarrationCharaID_Params
 {
 	int32_t                                            svID;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameCommon.GetCurrentNarrationCharaID
-// [0x00020400]  (iNative[37038])
+// [0x00020400]  (iNative[37040])
 struct UREDGameCommon_execGetCurrentNarrationCharaID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGameCommon.GetMainQuadrant
-// [0x00020400]  (iNative[37092])
+// [0x00020400]  (iNative[37094])
 struct UREDGameCommon_execGetMainQuadrant_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.GetControllerName
-// [0x00020400]  (iNative[37029])
+// [0x00020400]  (iNative[37031])
 struct UREDGameCommon_execGetControllerName_Params
 {
 	int32_t                                            ControllerId;                                     // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1614,7 +1613,7 @@ struct UREDGameCommon_execGetControllerName_Params
 };
 
 // Function REDGame.REDGameCommon.IsUsePS3Controller
-// [0x00020400]  (iNative[37924])
+// [0x00020400]  (iNative[37926])
 struct UREDGameCommon_execIsUsePS3Controller_Params
 {
 	int32_t                                            ControllerId;                                     // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1622,7 +1621,7 @@ struct UREDGameCommon_execIsUsePS3Controller_Params
 };
 
 // Function REDGame.REDGameCommon.IsControllerConnected
-// [0x00020400]  (iNative[22879])
+// [0x00020400]  (iNative[22881])
 struct UREDGameCommon_execIsControllerConnected_Params
 {
 	int32_t                                            ControllerId;                                     // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1630,14 +1629,14 @@ struct UREDGameCommon_execIsControllerConnected_Params
 };
 
 // Function REDGame.REDGameCommon.ResetLightBarColor
-// [0x00020400]  (iNative[39382])
+// [0x00020400]  (iNative[39384])
 struct UREDGameCommon_execResetLightBarColor_Params
 {
 	int32_t                                            ControllerId;                                     // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameCommon.SetLightBarColor
-// [0x00020400]  (iNative[39761])
+// [0x00020400]  (iNative[39763])
 struct UREDGameCommon_execSetLightBarColor_Params
 {
 	int32_t                                            ControllerId;                                     // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1645,7 +1644,7 @@ struct UREDGameCommon_execSetLightBarColor_Params
 };
 
 // Function REDGame.REDGameCommon.DrawStatusIcon_Sub
-// [0x00020400]  (iNative[36603])
+// [0x00020400]  (iNative[36605])
 struct UREDGameCommon_execDrawStatusIcon_Sub_Params
 {
 	int32_t                                            Type;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -1656,107 +1655,107 @@ struct UREDGameCommon_execDrawStatusIcon_Sub_Params
 };
 
 // Function REDGame.REDGameCommon.DispNowSaving
-// [0x00020400]  (iNative[36561])
+// [0x00020400]  (iNative[36563])
 struct UREDGameCommon_execDispNowSaving_Params
 {
 };
 
 // Function REDGame.REDGameCommon.DispNowConnecting
-// [0x00020400]  (iNative[36559])
+// [0x00020400]  (iNative[36561])
 struct UREDGameCommon_execDispNowConnecting_Params
 {
 };
 
 // Function REDGame.REDGameCommon.DispNowLoading
-// [0x00020400]  (iNative[36560])
+// [0x00020400]  (iNative[36562])
 struct UREDGameCommon_execDispNowLoading_Params
 {
 };
 
 // Function REDGame.REDGameCommon.DrawStatusIcon
-// [0x00020400]  (iNative[36602])
+// [0x00020400]  (iNative[36604])
 struct UREDGameCommon_execDrawStatusIcon_Params
 {
 };
 
 // Function REDGame.REDGameCommon.UpdateStatusIcon
-// [0x00020400]  (iNative[40859])
+// [0x00020400]  (iNative[40861])
 struct UREDGameCommon_execUpdateStatusIcon_Params
 {
 };
 
 // Function REDGame.REDGameCommon.IsSteam
-// [0x00022401]  (iNative[37870])
+// [0x00022401]  (iNative[37872])
 struct UREDGameCommon_execIsSteam_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsRevelator2_Option_ForBattle
-// [0x00022401]  (iNative[37827])
+// [0x00022401]  (iNative[37829])
 struct UREDGameCommon_execIsRevelator2_Option_ForBattle_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsRevelator2_Option
-// [0x00022401]  (iNative[37826])
+// [0x00022401]  (iNative[37828])
 struct UREDGameCommon_execIsRevelator2_Option_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsRevelator2_DLC
-// [0x00022401]  (iNative[37825])
+// [0x00022401]  (iNative[37827])
 struct UREDGameCommon_execIsRevelator2_DLC_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsEarlyAccess
-// [0x00022401]  (iNative[37641])
+// [0x00022401]  (iNative[37643])
 struct UREDGameCommon_execIsEarlyAccess_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsEnableTournament
-// [0x00022401]  (iNative[37645])
+// [0x00022401]  (iNative[37647])
 struct UREDGameCommon_execIsEnableTournament_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsCHNRom
-// [0x00022401]  (iNative[37620])
+// [0x00022401]  (iNative[37622])
 struct UREDGameCommon_execIsCHNRom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsAksysMB
-// [0x00022401]  (iNative[37591])
+// [0x00022401]  (iNative[37593])
 struct UREDGameCommon_execIsAksysMB_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsPSPlusTrial
-// [0x00022401]  (iNative[37794])
+// [0x00022401]  (iNative[37796])
 struct UREDGameCommon_execIsPSPlusTrial_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsConsumer
-// [0x00022401]  (iNative[37626])
+// [0x00022401]  (iNative[37628])
 struct UREDGameCommon_execIsConsumer_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsE3Rom
-// [0x00022401]  (iNative[37640])
+// [0x00022401]  (iNative[37642])
 struct UREDGameCommon_execIsE3Rom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -1769,7 +1768,7 @@ struct UREDGameCommon_execLocationTest_SetupInfo_Params
 };
 
 // Function REDGame.REDGameCommon.IsLocationTest
-// [0x00022401]  (iNative[37712])
+// [0x00022401]  (iNative[37714])
 struct UREDGameCommon_execIsLocationTest_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -1792,19 +1791,19 @@ struct UREDGameCommon_eventRegistExternalTexture2DArray_Params
 };
 
 // Function REDGame.REDGameCommon.ClearInterludeAssets
-// [0x00020401]  (iNative[36222])
+// [0x00020401]  (iNative[36224])
 struct UREDGameCommon_execClearInterludeAssets_Params
 {
 };
 
 // Function REDGame.REDGameCommon.LockInterludeAssets
-// [0x00020401]  (iNative[38084])
+// [0x00020401]  (iNative[38086])
 struct UREDGameCommon_execLockInterludeAssets_Params
 {
 };
 
 // Function REDGame.REDGameCommon.GetInstance
-// [0x00022401]  (iNative[37075])
+// [0x00022401]  (iNative[37077])
 struct UREDGameCommon_execGetInstance_Params
 {
 	class UREDGameCommon*                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -1902,7 +1901,7 @@ struct UREDGameCommon_eventArcadeMode_StepStage_Params
 };
 
 // Function REDGame.REDGameCommon.IsPlayerColorExChara
-// [0x00020401]  (iNative[37769])
+// [0x00020401]  (iNative[37771])
 struct UREDGameCommon_execIsPlayerColorExChara_Params
 {
 	class FString                                      exCharaID;                                        // 0x0000 (0x000C) [0x0000000000400082] (CPF_Const | CPF_Parm | CPF_NeedCtorLink)
@@ -1910,7 +1909,7 @@ struct UREDGameCommon_execIsPlayerColorExChara_Params
 };
 
 // Function REDGame.REDGameCommon.GetPlayerColorExCharaMaterial
-// [0x00020401]  (iNative[37135])
+// [0x00020401]  (iNative[37137])
 struct UREDGameCommon_execGetPlayerColorExCharaMaterial_Params
 {
 	class FString                                      exCharaID;                                        // 0x0000 (0x000C) [0x0000000000400082] (CPF_Const | CPF_Parm | CPF_NeedCtorLink)
@@ -1918,7 +1917,7 @@ struct UREDGameCommon_execGetPlayerColorExCharaMaterial_Params
 };
 
 // Function REDGame.REDGameCommon.GetPlayerColorExCharaMatPackage
-// [0x00020401]  (iNative[37136])
+// [0x00020401]  (iNative[37138])
 struct UREDGameCommon_execGetPlayerColorExCharaMatPackage_Params
 {
 	class FString                                      exCharaID;                                        // 0x0000 (0x000C) [0x0000000000400082] (CPF_Const | CPF_Parm | CPF_NeedCtorLink)
@@ -1926,7 +1925,7 @@ struct UREDGameCommon_execGetPlayerColorExCharaMatPackage_Params
 };
 
 // Function REDGame.REDGameCommon.ArcadeMode_IsDarkColor
-// [0x00020401]  (iNative[35442])
+// [0x00020401]  (iNative[35444])
 struct UREDGameCommon_execArcadeMode_IsDarkColor_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2021,7 +2020,7 @@ struct UREDGameCommon_execInitializeCharaSelectParam_Params
 };
 
 // Function REDGame.REDGameCommon.GetCostumeName
-// [0x00020401]  (iNative[37033])
+// [0x00020401]  (iNative[37035])
 struct UREDGameCommon_execGetCostumeName_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -2030,7 +2029,7 @@ struct UREDGameCommon_execGetCostumeName_Params
 };
 
 // Function REDGame.REDGameCommon.IsSelectableCostume
-// [0x00024401]  (iNative[37843])
+// [0x00024401]  (iNative[37845])
 struct UREDGameCommon_execIsSelectableCostume_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -2040,7 +2039,7 @@ struct UREDGameCommon_execIsSelectableCostume_Params
 };
 
 // Function REDGame.REDGameCommon.GetCostumeNum
-// [0x00024401]  (iNative[37034])
+// [0x00024401]  (iNative[37036])
 struct UREDGameCommon_execGetCostumeNum_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -2049,7 +2048,7 @@ struct UREDGameCommon_execGetCostumeNum_Params
 };
 
 // Function REDGame.REDGameCommon.GetCostumeMaxNum
-// [0x00020401]  (iNative[37032])
+// [0x00020401]  (iNative[37034])
 struct UREDGameCommon_execGetCostumeMaxNum_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -2057,7 +2056,7 @@ struct UREDGameCommon_execGetCostumeMaxNum_Params
 };
 
 // Function REDGame.REDGameCommon.GetDefaultCostumeID
-// [0x00020401]  (iNative[37054])
+// [0x00020401]  (iNative[37056])
 struct UREDGameCommon_execGetDefaultCostumeID_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -2065,7 +2064,7 @@ struct UREDGameCommon_execGetDefaultCostumeID_Params
 };
 
 // Function REDGame.REDGameCommon.IsPlayableChara
-// [0x00020401]  (iNative[37767])
+// [0x00020401]  (iNative[37769])
 struct UREDGameCommon_execIsPlayableChara_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -2073,69 +2072,69 @@ struct UREDGameCommon_execIsPlayableChara_Params
 };
 
 // Function REDGame.REDGameCommon.IsNeedChallengeModeUI
-// [0x00020400]  (iNative[37738])
+// [0x00020400]  (iNative[37740])
 struct UREDGameCommon_execIsNeedChallengeModeUI_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.FreeTrial_SetupInfo
-// [0x00020401]  (iNative[36911])
+// [0x00020401]  (iNative[36913])
 struct UREDGameCommon_execFreeTrial_SetupInfo_Params
 {
 };
 
 // Function REDGame.REDGameCommon.IsFreeTrialPlay
-// [0x00020400]  (iNative[37670])
+// [0x00020400]  (iNative[37672])
 struct UREDGameCommon_execIsFreeTrialPlay_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.SetFreeTrialPlay
-// [0x00020400]  (iNative[39749])
+// [0x00020400]  (iNative[39751])
 struct UREDGameCommon_execSetFreeTrialPlay_Params
 {
 	uint32_t                                           Src : 1;                                          // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGameCommon.IsEnableFreeTrial
-// [0x00020400]  (iNative[37642])
+// [0x00020400]  (iNative[37644])
 struct UREDGameCommon_execIsEnableFreeTrial_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsSelectDFMode
-// [0x00020400]  (iNative[37846])
+// [0x00020400]  (iNative[37848])
 struct UREDGameCommon_execIsSelectDFMode_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsInRoom
-// [0x00020400]  (iNative[37691])
+// [0x00020400]  (iNative[37693])
 struct UREDGameCommon_execIsInRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsInLobby
-// [0x00020400]  (iNative[37690])
+// [0x00020400]  (iNative[37692])
 struct UREDGameCommon_execIsInLobby_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.GetVoiceLanguage
-// [0x00020400]  (iNative[37193])
+// [0x00020400]  (iNative[37195])
 struct UREDGameCommon_execGetVoiceLanguage_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGameCommon.IsHandicapEnableMode
-// [0x00020400]  (iNative[37682])
+// [0x00020400]  (iNative[37684])
 struct UREDGameCommon_execIsHandicapEnableMode_Params
 {
 	uint8_t                                            Mode;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2143,7 +2142,7 @@ struct UREDGameCommon_execIsHandicapEnableMode_Params
 };
 
 // Function REDGame.REDGameCommon.IsSelectableBGM_Native
-// [0x00020400]  (iNative[37841])
+// [0x00020400]  (iNative[37843])
 struct UREDGameCommon_execIsSelectableBGM_Native_Params
 {
 	uint8_t                                            Id;                                               // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2151,7 +2150,7 @@ struct UREDGameCommon_execIsSelectableBGM_Native_Params
 };
 
 // Function REDGame.REDGameCommon.IsOnlyDramaBattle
-// [0x00020400]  (iNative[37756])
+// [0x00020400]  (iNative[37758])
 struct UREDGameCommon_execIsOnlyDramaBattle_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -2165,13 +2164,13 @@ struct UREDGameCommon_execIsDramaBattle_Params
 };
 
 // Function REDGame.REDGameCommon.PreBattleLoadSetup
-// [0x00020400]  (iNative[39096])
+// [0x00020400]  (iNative[39098])
 struct UREDGameCommon_execPreBattleLoadSetup_Params
 {
 };
 
 // Function REDGame.REDGameCommon.GetCardInfo
-// [0x00420400]  (iNative[37013])
+// [0x00420400]  (iNative[37015])
 struct UREDGameCommon_execGetCardInfo_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2185,7 +2184,7 @@ struct UREDGameCommon_execGetCardInfo_Params
 };
 
 // Function REDGame.REDGameCommon.SetupColorAndVoice
-// [0x00024401]  (iNative[39829])
+// [0x00024401]  (iNative[39831])
 struct UREDGameCommon_execSetupColorAndVoice_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2195,26 +2194,26 @@ struct UREDGameCommon_execSetupColorAndVoice_Params
 };
 
 // Function REDGame.REDGameCommon.SetupNewChallenger
-// [0x00020401]  (iNative[39848])
+// [0x00020401]  (iNative[39850])
 struct UREDGameCommon_execSetupNewChallenger_Params
 {
 };
 
 // Function REDGame.REDGameCommon.CheckNewChallenger
-// [0x00020401]  (iNative[36202])
+// [0x00020401]  (iNative[36204])
 struct UREDGameCommon_execCheckNewChallenger_Params
 {
 };
 
 // Function REDGame.REDGameCommon.SparringMode_SetupInfo
-// [0x00020401]  (iNative[39937])
+// [0x00020401]  (iNative[39939])
 struct UREDGameCommon_execSparringMode_SetupInfo_Params
 {
 	uint32_t                                           isEnemySet : 1;                                   // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGameCommon.ArcadeMode_SetupInfo
-// [0x00020401]  (iNative[35444])
+// [0x00020401]  (iNative[35446])
 struct UREDGameCommon_execArcadeMode_SetupInfo_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2222,14 +2221,14 @@ struct UREDGameCommon_execArcadeMode_SetupInfo_Params
 };
 
 // Function REDGame.REDGameCommon.GetVersionSuffix
-// [0x00020401]  (iNative[37190])
+// [0x00020401]  (iNative[37192])
 struct UREDGameCommon_execGetVersionSuffix_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGameCommon.REDRand
-// [0x00022401]  (iNative[39300])
+// [0x00022401]  (iNative[39302])
 struct UREDGameCommon_execREDRand_Params
 {
 	int32_t                                            Max;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -2237,21 +2236,21 @@ struct UREDGameCommon_execREDRand_Params
 };
 
 // Function REDGame.REDGameCommon.IsMOMEnable
-// [0x00020401]  (iNative[37727])
+// [0x00020401]  (iNative[37729])
 struct UREDGameCommon_execIsMOMEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.IsSparringEnable
-// [0x00020401]  (iNative[37863])
+// [0x00020401]  (iNative[37865])
 struct UREDGameCommon_execIsSparringEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.GetBGMIDFromCharaID
-// [0x00020401]  (iNative[37007])
+// [0x00020401]  (iNative[37009])
 struct UREDGameCommon_execGetBGMIDFromCharaID_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -2260,7 +2259,7 @@ struct UREDGameCommon_execGetBGMIDFromCharaID_Params
 };
 
 // Function REDGame.REDGameCommon.GetBGIDFromCharaID
-// [0x00020401]  (iNative[37005])
+// [0x00020401]  (iNative[37007])
 struct UREDGameCommon_execGetBGIDFromCharaID_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -2268,7 +2267,7 @@ struct UREDGameCommon_execGetBGIDFromCharaID_Params
 };
 
 // Function REDGame.REDGameCommon.GetStaticTexture
-// [0x00024401]  (iNative[37179])
+// [0x00024401]  (iNative[37181])
 struct UREDGameCommon_execGetStaticTexture_Params
 {
 	class FString                                      texName;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -2277,42 +2276,42 @@ struct UREDGameCommon_execGetStaticTexture_Params
 };
 
 // Function REDGame.REDGameCommon.IsUseCircleToAccept
-// [0x00020401]  (iNative[37922])
+// [0x00020401]  (iNative[37924])
 struct UREDGameCommon_execIsUseCircleToAccept_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.GetAnywhereDisp
-// [0x00020401]  (iNative[37001])
+// [0x00020401]  (iNative[37003])
 struct UREDGameCommon_execGetAnywhereDisp_Params
 {
 	class UREDAnywhereDisp*                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.GetProfileFont
-// [0x00020401]  (iNative[37143])
+// [0x00020401]  (iNative[37145])
 struct UREDGameCommon_execGetProfileFont_Params
 {
 	class UFont*                                       ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.GetStaticREDFont
-// [0x00020401]  (iNative[37178])
+// [0x00020401]  (iNative[37180])
 struct UREDGameCommon_execGetStaticREDFont_Params
 {
 	class UFont*                                       ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.GetStaticFont
-// [0x00020401]  (iNative[37177])
+// [0x00020401]  (iNative[37179])
 struct UREDGameCommon_execGetStaticFont_Params
 {
 	class UFont*                                       ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.GetBGMString
-// [0x00020401]  (iNative[37008])
+// [0x00020401]  (iNative[37010])
 struct UREDGameCommon_execGetBGMString_Params
 {
 	uint8_t                                            Id;                                               // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2320,28 +2319,28 @@ struct UREDGameCommon_execGetBGMString_Params
 };
 
 // Function REDGame.REDGameCommon.GetBGMID
-// [0x00020401]  (iNative[37006])
+// [0x00020401]  (iNative[37008])
 struct UREDGameCommon_execGetBGMID_Params
 {
 	uint8_t                                            ReturnValue;                                      // 0x0000 (0x0001) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.SetBGMID
-// [0x00020401]  (iNative[39697])
+// [0x00020401]  (iNative[39699])
 struct UREDGameCommon_execSetBGMID_Params
 {
 	uint8_t                                            Id;                                               // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameCommon.GetCurrentBGString
-// [0x00020401]  (iNative[37037])
+// [0x00020401]  (iNative[37039])
 struct UREDGameCommon_execGetCurrentBGString_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGameCommon.GetBGString
-// [0x00020401]  (iNative[37009])
+// [0x00020401]  (iNative[37011])
 struct UREDGameCommon_execGetBGString_Params
 {
 	uint8_t                                            Id;                                               // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2349,56 +2348,56 @@ struct UREDGameCommon_execGetBGString_Params
 };
 
 // Function REDGame.REDGameCommon.GetBGID
-// [0x00020401]  (iNative[37004])
+// [0x00020401]  (iNative[37006])
 struct UREDGameCommon_execGetBGID_Params
 {
 	uint8_t                                            ReturnValue;                                      // 0x0000 (0x0001) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.SetBGID
-// [0x00020401]  (iNative[39695])
+// [0x00020401]  (iNative[39697])
 struct UREDGameCommon_execSetBGID_Params
 {
 	uint8_t                                            Id;                                               // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameCommon.GetGameMode
-// [0x00020401]  (iNative[37062])
+// [0x00020401]  (iNative[37064])
 struct UREDGameCommon_execGetGameMode_Params
 {
 	uint8_t                                            ReturnValue;                                      // 0x0000 (0x0001) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.SetGameMode
-// [0x00020401]  (iNative[39750])
+// [0x00020401]  (iNative[39752])
 struct UREDGameCommon_execSetGameMode_Params
 {
 	uint8_t                                            Id;                                               // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameCommon.GetAnotherPlayer
-// [0x00020401]  (iNative[37000])
+// [0x00020401]  (iNative[37002])
 struct UREDGameCommon_execGetAnotherPlayer_Params
 {
 	uint8_t                                            ReturnValue;                                      // 0x0000 (0x0001) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.GetMainPlayer
-// [0x00020401]  (iNative[37090])
+// [0x00020401]  (iNative[37092])
 struct UREDGameCommon_execGetMainPlayer_Params
 {
 	uint8_t                                            ReturnValue;                                      // 0x0000 (0x0001) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.SetMainPlayer
-// [0x00020401]  (iNative[39769])
+// [0x00020401]  (iNative[39771])
 struct UREDGameCommon_execSetMainPlayer_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameCommon.IsGamePlaying
-// [0x00020401]  (iNative[37675])
+// [0x00020401]  (iNative[37677])
 struct UREDGameCommon_execIsGamePlaying_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2406,7 +2405,7 @@ struct UREDGameCommon_execIsGamePlaying_Params
 };
 
 // Function REDGame.REDGameCommon.SetPlayerState
-// [0x00020401]  (iNative[39792])
+// [0x00020401]  (iNative[39794])
 struct UREDGameCommon_execSetPlayerState_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2414,7 +2413,7 @@ struct UREDGameCommon_execSetPlayerState_Params
 };
 
 // Function REDGame.REDGameCommon.GetPadID
-// [0x00020401]  (iNative[37128])
+// [0x00020401]  (iNative[37130])
 struct UREDGameCommon_execGetPadID_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2422,7 +2421,7 @@ struct UREDGameCommon_execGetPadID_Params
 };
 
 // Function REDGame.REDGameCommon.SetPadID
-// [0x00020401]  (iNative[39785])
+// [0x00020401]  (iNative[39787])
 struct UREDGameCommon_execSetPadID_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2430,7 +2429,7 @@ struct UREDGameCommon_execSetPadID_Params
 };
 
 // Function REDGame.REDGameCommon.IsCPU
-// [0x00020401]  (iNative[37630])
+// [0x00020401]  (iNative[37632])
 struct UREDGameCommon_execIsCPU_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2438,7 +2437,7 @@ struct UREDGameCommon_execIsCPU_Params
 };
 
 // Function REDGame.REDGameCommon.SetCPU
-// [0x00020401]  (iNative[39715])
+// [0x00020401]  (iNative[39717])
 struct UREDGameCommon_execSetCPU_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2446,7 +2445,7 @@ struct UREDGameCommon_execSetCPU_Params
 };
 
 // Function REDGame.REDGameCommon.GetStageNoForDrama
-// [0x00020401]  (iNative[37172])
+// [0x00020401]  (iNative[37174])
 struct UREDGameCommon_execGetStageNoForDrama_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2454,7 +2453,7 @@ struct UREDGameCommon_execGetStageNoForDrama_Params
 };
 
 // Function REDGame.REDGameCommon.GetCostumeID
-// [0x00020401]  (iNative[37031])
+// [0x00020401]  (iNative[37033])
 struct UREDGameCommon_execGetCostumeID_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2462,7 +2461,7 @@ struct UREDGameCommon_execGetCostumeID_Params
 };
 
 // Function REDGame.REDGameCommon.GetVoiceID
-// [0x00020401]  (iNative[37192])
+// [0x00020401]  (iNative[37194])
 struct UREDGameCommon_execGetVoiceID_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2470,7 +2469,7 @@ struct UREDGameCommon_execGetVoiceID_Params
 };
 
 // Function REDGame.REDGameCommon.GetColorID
-// [0x00020401]  (iNative[37021])
+// [0x00020401]  (iNative[37023])
 struct UREDGameCommon_execGetColorID_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2486,7 +2485,7 @@ struct UREDGameCommon_execGetCharaID_Params
 };
 
 // Function REDGame.REDGameCommon.SetCostumeID
-// [0x00020401]  (iNative[39713])
+// [0x00020401]  (iNative[39715])
 struct UREDGameCommon_execSetCostumeID_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2494,7 +2493,7 @@ struct UREDGameCommon_execSetCostumeID_Params
 };
 
 // Function REDGame.REDGameCommon.SetVoiceID
-// [0x00020401]  (iNative[39863])
+// [0x00020401]  (iNative[39865])
 struct UREDGameCommon_execSetVoiceID_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2502,7 +2501,7 @@ struct UREDGameCommon_execSetVoiceID_Params
 };
 
 // Function REDGame.REDGameCommon.SetColorID
-// [0x00020401]  (iNative[39711])
+// [0x00020401]  (iNative[39713])
 struct UREDGameCommon_execSetColorID_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2510,7 +2509,7 @@ struct UREDGameCommon_execSetColorID_Params
 };
 
 // Function REDGame.REDGameCommon.SetCharaID
-// [0x00020401]  (iNative[39706])
+// [0x00020401]  (iNative[39708])
 struct UREDGameCommon_execSetCharaID_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2518,14 +2517,14 @@ struct UREDGameCommon_execSetCharaID_Params
 };
 
 // Function REDGame.REDGameCommon.GetMainPlayerInfo
-// [0x00020401]  (iNative[37091])
+// [0x00020401]  (iNative[37093])
 struct UREDGameCommon_execGetMainPlayerInfo_Params
 {
 	class UREDGameCommon_PlayerInfo*                   ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameCommon.GetPlayerInfo
-// [0x00020401]  (iNative[34036])
+// [0x00020401]  (iNative[34038])
 struct UREDGameCommon_execGetPlayerInfo_Params
 {
 	uint8_t                                            PlayerID;                                         // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -2632,14 +2631,14 @@ struct AREDGameInfo_execCreateDepthViewPostProcess_Params
 };
 
 // Function REDGame.REDGameInfo.RestoreDispDepthBufferMaterial
-// [0x00020400]  (iNative[39390])
+// [0x00020400]  (iNative[39392])
 struct AREDGameInfo_execRestoreDispDepthBufferMaterial_Params
 {
 	class UPostProcessChain*                           PP;                                               // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameInfo.SetDispDepthBufferParam
-// [0x00420400]  (iNative[39727])
+// [0x00420400]  (iNative[39729])
 struct AREDGameInfo_execSetDispDepthBufferParam_Params
 {
 	class UPostProcessChain*                           PP;                                               // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -2927,74 +2926,74 @@ struct AREDGameInfo_eventRestartLevel_Params
 };
 
 // Function REDGame.REDGameInfo.UpdateDOF
-// [0x00020401]  (iNative[40646])
+// [0x00020401]  (iNative[40648])
 struct AREDGameInfo_execUpdateDOF_Params
 {
 };
 
 // Function REDGame.REDGameInfo.SetDOFParameterFocusPosition
-// [0x00020401]  (iNative[39737])
+// [0x00020401]  (iNative[39739])
 struct AREDGameInfo_execSetDOFParameterFocusPosition_Params
 {
 	struct FVector                                     Position;                                         // 0x0000 (0x000C) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameInfo.SetDOFParameterFocusDistance
-// [0x00020401]  (iNative[39736])
+// [0x00020401]  (iNative[39738])
 struct AREDGameInfo_execSetDOFParameterFocusDistance_Params
 {
 	float                                              Distance;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameInfo.SetDOFParameterInnerRadius
-// [0x00024401]  (iNative[39738])
+// [0x00024401]  (iNative[39740])
 struct AREDGameInfo_execSetDOFParameterInnerRadius_Params
 {
 	float                                              InnerRadius;                                      // 0x0000 (0x0004) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
 };
 
 // Function REDGame.REDGameInfo.SetDOFParameterKernelSize
-// [0x00024401]  (iNative[39739])
+// [0x00024401]  (iNative[39741])
 struct AREDGameInfo_execSetDOFParameterKernelSize_Params
 {
 	float                                              KernelSize;                                       // 0x0000 (0x0004) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
 };
 
 // Function REDGame.REDGameInfo.SetDOFParameterFalloff
-// [0x00024401]  (iNative[39735])
+// [0x00024401]  (iNative[39737])
 struct AREDGameInfo_execSetDOFParameterFalloff_Params
 {
 	float                                              Falloff;                                          // 0x0000 (0x0004) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
 };
 
 // Function REDGame.REDGameInfo.SwitchDOF
-// [0x00020401]  (iNative[40148])
+// [0x00020401]  (iNative[40150])
 struct AREDGameInfo_execSwitchDOF_Params
 {
 	uint32_t                                           bOn : 1;                                          // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGameInfo.GetUberPostProcessEffect
-// [0x00020401]  (iNative[37187])
+// [0x00020401]  (iNative[37189])
 struct AREDGameInfo_execGetUberPostProcessEffect_Params
 {
 	class UUberPostProcessEffect*                      ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameInfo.ContrastEffectUpdateDraw
-// [0x00020401]  (iNative[36307])
+// [0x00020401]  (iNative[36309])
 struct AREDGameInfo_execContrastEffectUpdateDraw_Params
 {
 };
 
 // Function REDGame.REDGameInfo.ContrastEffectUpdate
-// [0x00020401]  (iNative[36306])
+// [0x00020401]  (iNative[36308])
 struct AREDGameInfo_execContrastEffectUpdate_Params
 {
 };
 
 // Function REDGame.REDGameInfo.ContrastEffect
-// [0x00024401]  (iNative[13506])
+// [0x00024401]  (iNative[13510])
 struct AREDGameInfo_execContrastEffect_Params
 {
 	int32_t                                            frame;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -3004,7 +3003,7 @@ struct AREDGameInfo_execContrastEffect_Params
 };
 
 // Function REDGame.REDGameInfo.SwitchDiffusionFilter2
-// [0x00024401]  (iNative[40146])
+// [0x00024401]  (iNative[40148])
 struct AREDGameInfo_execSwitchDiffusionFilter2_Params
 {
 	uint32_t                                           On : 1;                                           // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -3014,13 +3013,13 @@ struct AREDGameInfo_execSwitchDiffusionFilter2_Params
 };
 
 // Function REDGame.REDGameInfo.StopTutorialNarration
-// [0x00020401]  (iNative[40106])
+// [0x00020401]  (iNative[40108])
 struct AREDGameInfo_execStopTutorialNarration_Params
 {
 };
 
 // Function REDGame.REDGameInfo.PlayTutorialNarration
-// [0x00024401]  (iNative[39046])
+// [0x00024401]  (iNative[39048])
 struct AREDGameInfo_execPlayTutorialNarration_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -3028,7 +3027,7 @@ struct AREDGameInfo_execPlayTutorialNarration_Params
 };
 
 // Function REDGame.REDGameInfo.PlayPadSpeakerNarration
-// [0x00024401]  (iNative[39036])
+// [0x00024401]  (iNative[39038])
 struct AREDGameInfo_execPlayPadSpeakerNarration_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -3037,7 +3036,7 @@ struct AREDGameInfo_execPlayPadSpeakerNarration_Params
 };
 
 // Function REDGame.REDGameInfo.PlayPadSpeakerCommonSE
-// [0x00024401]  (iNative[39035])
+// [0x00024401]  (iNative[39037])
 struct AREDGameInfo_execPlayPadSpeakerCommonSE_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -3046,7 +3045,7 @@ struct AREDGameInfo_execPlayPadSpeakerCommonSE_Params
 };
 
 // Function REDGame.REDGameInfo.PlayNarration
-// [0x00024401]  (iNative[39034])
+// [0x00024401]  (iNative[39036])
 struct AREDGameInfo_execPlayNarration_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -3054,7 +3053,7 @@ struct AREDGameInfo_execPlayNarration_Params
 };
 
 // Function REDGame.REDGameInfo.PlayCommonSE_WithPos
-// [0x00420401]  (iNative[38966])
+// [0x00420401]  (iNative[38968])
 struct AREDGameInfo_execPlayCommonSE_WithPos_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -3062,7 +3061,7 @@ struct AREDGameInfo_execPlayCommonSE_WithPos_Params
 };
 
 // Function REDGame.REDGameInfo.PlayCommonSE
-// [0x00024401]  (iNative[38965])
+// [0x00024401]  (iNative[38967])
 struct AREDGameInfo_execPlayCommonSE_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -3070,7 +3069,7 @@ struct AREDGameInfo_execPlayCommonSE_Params
 };
 
 // Function REDGame.REDGameInfo.SetPlaySoundPadSpeaker
-// [0x00020401]  (iNative[39793])
+// [0x00020401]  (iNative[39795])
 struct AREDGameInfo_execSetPlaySoundPadSpeaker_Params
 {
 	int32_t                                            PadID;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -3095,7 +3094,7 @@ struct AREDGameInfo_eventChangeSoundMode_Params
 };
 
 // Function REDGame.REDGameInfo.CreateCommonParticle
-// [0x00420401]  (iNative[36328])
+// [0x00420401]  (iNative[36330])
 struct AREDGameInfo_execCreateCommonParticle_Params
 {
 	struct FParticleArg                                Arg;                                              // 0x0000 (0x006C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -3103,21 +3102,21 @@ struct AREDGameInfo_execCreateCommonParticle_Params
 };
 
 // Function REDGame.REDGameInfo.SetNoLinkObjParticleDisp
-// [0x00020400]  (iNative[39781])
+// [0x00020400]  (iNative[39783])
 struct AREDGameInfo_execSetNoLinkObjParticleDisp_Params
 {
 	uint32_t                                           bDisp : 1;                                        // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGameInfo.GetParticleSpeed
-// [0x00020400]  (iNative[37130])
+// [0x00020400]  (iNative[37132])
 struct AREDGameInfo_execGetParticleSpeed_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameInfo.SetParticleSpeed
-// [0x00020400]  (iNative[39787])
+// [0x00020400]  (iNative[39789])
 struct AREDGameInfo_execSetParticleSpeed_Params
 {
 	float                                              Speed;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -3196,7 +3195,7 @@ struct AREDGameInfo_execStepToggle_Params
 };
 
 // Function REDGame.REDGameInfo.UpdateSceneLightSettings
-// [0x00020400]  (iNative[40840])
+// [0x00020400]  (iNative[40842])
 struct AREDGameInfo_execUpdateSceneLightSettings_Params
 {
 };
@@ -3260,53 +3259,53 @@ struct AREDGameInfo_execSetupSpawnPlayerInfo_Params
 };
 
 // Function REDGame.REDGameInfo.UpdateControllerConnectStatus
-// [0x00020400]  (iNative[40630])
+// [0x00020400]  (iNative[40632])
 struct AREDGameInfo_execUpdateControllerConnectStatus_Params
 {
 };
 
 // Function REDGame.REDGameInfo.IsEnableRedirectPS3toPS4Input
-// [0x00020400]  (iNative[37644])
+// [0x00020400]  (iNative[37646])
 struct AREDGameInfo_execIsEnableRedirectPS3toPS4Input_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameInfo.IS_DEBUG_ON
-// [0x00020400]  (iNative[37587])
+// [0x00020400]  (iNative[37589])
 struct AREDGameInfo_execIS_DEBUG_ON_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameInfo.IsUsePS3Assets
-// [0x00022400]  (iNative[37923])
+// [0x00022400]  (iNative[37925])
 struct AREDGameInfo_execIsUsePS3Assets_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameInfo.SceneFinalize
-// [0x00020400]  (iNative[39469])
+// [0x00020400]  (iNative[39471])
 struct AREDGameInfo_execSceneFinalize_Params
 {
 };
 
 // Function REDGame.REDGameInfo.SceneInitialize
-// [0x00020400]  (iNative[39471])
+// [0x00020400]  (iNative[39473])
 struct AREDGameInfo_execSceneInitialize_Params
 {
 };
 
 // Function REDGame.REDGameInfo.IsAsyncLoading
-// [0x00020401]  (iNative[37597])
+// [0x00020401]  (iNative[37599])
 struct AREDGameInfo_execIsAsyncLoading_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameInfo.IsPauseGame
-// [0x00020401]  (iNative[37766])
+// [0x00020401]  (iNative[37768])
 struct AREDGameInfo_execIsPauseGame_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -3320,14 +3319,14 @@ struct AREDGameInfo_execPauserTick_Params
 };
 
 // Function REDGame.REDGameInfo.SetupInternalHUDPtr
-// [0x00020401]  (iNative[39836])
+// [0x00020401]  (iNative[39838])
 struct AREDGameInfo_execSetupInternalHUDPtr_Params
 {
 	class AHUD*                                        HUD;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameInfo.InitializeNetworkTextureList
-// [0x00020400]  (iNative[37527])
+// [0x00020400]  (iNative[37529])
 struct AREDGameInfo_execInitializeNetworkTextureList_Params
 {
 	class UREDTexture2DArray*                          TextureList;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -3523,25 +3522,25 @@ struct AREDGameInfo_Adv_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_Adv.UpdatePause
-// [0x00020400]  (iNative[40799])
+// [0x00020400]  (iNative[40801])
 struct AREDGameInfo_Adv_execUpdatePause_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Adv.UpdateScene
-// [0x00020400]  (iNative[40839])
+// [0x00020400]  (iNative[40841])
 struct AREDGameInfo_Adv_execUpdateScene_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Adv.SceneFinalize
-// [0x00020400]  (iNative[39469])
+// [0x00020400]  (iNative[39471])
 struct AREDGameInfo_Adv_execSceneFinalize_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Adv.SceneInitialize
-// [0x00020400]  (iNative[39471])
+// [0x00020400]  (iNative[39473])
 struct AREDGameInfo_Adv_execSceneInitialize_Params
 {
 };
@@ -3710,37 +3709,37 @@ struct AREDGameInfo_DigitalFigure_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.UpdatePause
-// [0x00020400]  (iNative[40799])
+// [0x00020400]  (iNative[40801])
 struct AREDGameInfo_DigitalFigure_execUpdatePause_Params
 {
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.UpdateNative
-// [0x00020400]  (iNative[40788])
+// [0x00020400]  (iNative[40790])
 struct AREDGameInfo_DigitalFigure_execUpdateNative_Params
 {
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.SceneFinalize
-// [0x00020400]  (iNative[39469])
+// [0x00020400]  (iNative[39471])
 struct AREDGameInfo_DigitalFigure_execSceneFinalize_Params
 {
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.SceneInitialize_AfterFileLoad
-// [0x00020400]  (iNative[39472])
+// [0x00020400]  (iNative[39474])
 struct AREDGameInfo_DigitalFigure_execSceneInitialize_AfterFileLoad_Params
 {
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.SceneInitialize
-// [0x00020400]  (iNative[39471])
+// [0x00020400]  (iNative[39473])
 struct AREDGameInfo_DigitalFigure_execSceneInitialize_Params
 {
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.PlaySoundCue
-// [0x00020400]  (iNative[39041])
+// [0x00020400]  (iNative[39043])
 struct AREDGameInfo_DigitalFigure_execPlaySoundCue_Params
 {
 	class USoundCue*                                   Cue;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -3748,7 +3747,7 @@ struct AREDGameInfo_DigitalFigure_execPlaySoundCue_Params
 };
 
 // Function REDGame.REDGameInfo_DigitalFigure.GetPlayBGMID
-// [0x00020400]  (iNative[37132])
+// [0x00020400]  (iNative[37134])
 struct AREDGameInfo_DigitalFigure_execGetPlayBGMID_Params
 {
 	uint8_t                                            ReturnValue;                                      // 0x0000 (0x0001) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -3792,37 +3791,37 @@ struct AREDGameInfo_Ending_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_Ending.UpdateDraw
-// [0x00020400]  (iNative[40647])
+// [0x00020400]  (iNative[40649])
 struct AREDGameInfo_Ending_execUpdateDraw_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Ending.UpdateMain
-// [0x00020400]  (iNative[40761])
+// [0x00020400]  (iNative[40763])
 struct AREDGameInfo_Ending_execUpdateMain_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Ending.SceneFinalize
-// [0x00020400]  (iNative[39469])
+// [0x00020400]  (iNative[39471])
 struct AREDGameInfo_Ending_execSceneFinalize_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Ending.SceneInitialize
-// [0x00020400]  (iNative[39471])
+// [0x00020400]  (iNative[39473])
 struct AREDGameInfo_Ending_execSceneInitialize_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Ending.StopSubtitle
-// [0x00020400]  (iNative[40105])
+// [0x00020400]  (iNative[40107])
 struct AREDGameInfo_Ending_execStopSubtitle_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Ending.UpdatePause
-// [0x00020400]  (iNative[40799])
+// [0x00020400]  (iNative[40801])
 struct AREDGameInfo_Ending_execUpdatePause_Params
 {
 };
@@ -3860,51 +3859,51 @@ struct AREDGameInfo_InterludeDrama_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.InitPreLoad
-// [0x00020400]  (iNative[37541])
+// [0x00020400]  (iNative[37543])
 struct AREDGameInfo_InterludeDrama_execInitPreLoad_Params
 {
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.StopMovie
-// [0x00020400]  (iNative[28955])
+// [0x00020400]  (iNative[28957])
 struct AREDGameInfo_InterludeDrama_execStopMovie_Params
 {
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.SetNewChallengerEnableFlag
-// [0x00020400]  (iNative[39780])
+// [0x00020400]  (iNative[39782])
 struct AREDGameInfo_InterludeDrama_execSetNewChallengerEnableFlag_Params
 {
 	uint32_t                                           flag : 1;                                         // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.CheckSkipInput
-// [0x00020400]  (iNative[36207])
+// [0x00020400]  (iNative[36209])
 struct AREDGameInfo_InterludeDrama_execCheckSkipInput_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.UpdateDraw
-// [0x00020400]  (iNative[40647])
+// [0x00020400]  (iNative[40649])
 struct AREDGameInfo_InterludeDrama_execUpdateDraw_Params
 {
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.UpdateMain
-// [0x00020400]  (iNative[40761])
+// [0x00020400]  (iNative[40763])
 struct AREDGameInfo_InterludeDrama_execUpdateMain_Params
 {
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.SceneFinalize
-// [0x00020400]  (iNative[39469])
+// [0x00020400]  (iNative[39471])
 struct AREDGameInfo_InterludeDrama_execSceneFinalize_Params
 {
 };
 
 // Function REDGame.REDGameInfo_InterludeDrama.SceneInitialize
-// [0x00020400]  (iNative[39471])
+// [0x00020400]  (iNative[39473])
 struct AREDGameInfo_InterludeDrama_execSceneInitialize_Params
 {
 };
@@ -3935,7 +3934,7 @@ struct AREDGameInfo_Menu_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_Menu.GetLocalizeString
-// [0x00020401]  (iNative[37089])
+// [0x00020401]  (iNative[37091])
 struct AREDGameInfo_Menu_execGetLocalizeString_Params
 {
 	class FString                                      WidgetName;                                       // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -3943,7 +3942,7 @@ struct AREDGameInfo_Menu_execGetLocalizeString_Params
 };
 
 // Function REDGame.REDGameInfo_Menu.UpdatePause
-// [0x00020400]  (iNative[40799])
+// [0x00020400]  (iNative[40801])
 struct AREDGameInfo_Menu_execUpdatePause_Params
 {
 };
@@ -3971,7 +3970,7 @@ struct AREDGameInfo_BootSequence_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_BootSequence.BootSequence
-// [0x00020400]  (iNative[35887])
+// [0x00020400]  (iNative[35889])
 struct AREDGameInfo_BootSequence_execBootSequence_Params
 {
 };
@@ -4000,25 +3999,25 @@ struct AREDGameInfo_Library_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_Library.execRelease
-// [0x00020400]  (iNative[36779])
+// [0x00020400]  (iNative[36781])
 struct AREDGameInfo_Library_execexecRelease_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Library.execDrawNative
-// [0x00020400]  (iNative[36774])
+// [0x00020400]  (iNative[36776])
 struct AREDGameInfo_Library_execexecDrawNative_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Library.execUpdateNative
-// [0x00020400]  (iNative[36782])
+// [0x00020400]  (iNative[36784])
 struct AREDGameInfo_Library_execexecUpdateNative_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Library.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct AREDGameInfo_Library_execInitializeNative_Params
 {
 };
@@ -4110,7 +4109,7 @@ struct AREDGameInfo_LobbyBase_execCollisionData_Update_Params
 };
 
 // Function REDGame.REDGameInfo_LobbyBase.CheckEvent
-// [0x00420400]  (iNative[36193])
+// [0x00420400]  (iNative[36195])
 struct AREDGameInfo_LobbyBase_execCheckEvent_Params
 {
 	struct FVector2D                                   pos;                                              // 0x0000 (0x0008) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -4121,7 +4120,7 @@ struct AREDGameInfo_LobbyBase_execCheckEvent_Params
 };
 
 // Function REDGame.REDGameInfo_LobbyBase.CheckCollision_Rect
-// [0x00420400]  (iNative[36187])
+// [0x00420400]  (iNative[36189])
 struct AREDGameInfo_LobbyBase_execCheckCollision_Rect_Params
 {
 	struct FVector2D                                   prevpos;                                          // 0x0000 (0x0008) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -4132,7 +4131,7 @@ struct AREDGameInfo_LobbyBase_execCheckCollision_Rect_Params
 };
 
 // Function REDGame.REDGameInfo_LobbyBase.CheckCollision_Circle
-// [0x00420400]  (iNative[36186])
+// [0x00420400]  (iNative[36188])
 struct AREDGameInfo_LobbyBase_execCheckCollision_Circle_Params
 {
 	struct FVector2D                                   pos;                                              // 0x0000 (0x0008) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -4142,7 +4141,7 @@ struct AREDGameInfo_LobbyBase_execCheckCollision_Circle_Params
 };
 
 // Function REDGame.REDGameInfo_LobbyBase.CheckCollision_Wall
-// [0x00420400]  (iNative[36188])
+// [0x00420400]  (iNative[36190])
 struct AREDGameInfo_LobbyBase_execCheckCollision_Wall_Params
 {
 	struct FVector2D                                   pos;                                              // 0x0000 (0x0008) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -4184,25 +4183,25 @@ struct AREDGameInfo_Fishing_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_Fishing.UpdateDrawNative
-// [0x00020400]  (iNative[40650])
+// [0x00020400]  (iNative[40652])
 struct AREDGameInfo_Fishing_execUpdateDrawNative_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Fishing.UpdateNative
-// [0x00020400]  (iNative[40788])
+// [0x00020400]  (iNative[40790])
 struct AREDGameInfo_Fishing_execUpdateNative_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Fishing.FinalizeNative
-// [0x00020400]  (iNative[36840])
+// [0x00020400]  (iNative[36842])
 struct AREDGameInfo_Fishing_execFinalizeNative_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Fishing.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct AREDGameInfo_Fishing_execInitializeNative_Params
 {
 };
@@ -4307,31 +4306,31 @@ struct AREDGameInfo_NetworkMenu_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_NetworkMenu.UpdateDraw
-// [0x00020400]  (iNative[40647])
+// [0x00020400]  (iNative[40649])
 struct AREDGameInfo_NetworkMenu_execUpdateDraw_Params
 {
 };
 
 // Function REDGame.REDGameInfo_NetworkMenu.UpdateMain
-// [0x00020400]  (iNative[40761])
+// [0x00020400]  (iNative[40763])
 struct AREDGameInfo_NetworkMenu_execUpdateMain_Params
 {
 };
 
 // Function REDGame.REDGameInfo_NetworkMenu.SceneFinalize
-// [0x00020400]  (iNative[39469])
+// [0x00020400]  (iNative[39471])
 struct AREDGameInfo_NetworkMenu_execSceneFinalize_Params
 {
 };
 
 // Function REDGame.REDGameInfo_NetworkMenu.SceneInitialize
-// [0x00020400]  (iNative[39471])
+// [0x00020400]  (iNative[39473])
 struct AREDGameInfo_NetworkMenu_execSceneInitialize_Params
 {
 };
 
 // Function REDGame.REDGameInfo_NetworkMenu.UpdatePause
-// [0x00020400]  (iNative[40799])
+// [0x00020400]  (iNative[40801])
 struct AREDGameInfo_NetworkMenu_execUpdatePause_Params
 {
 };
@@ -4361,7 +4360,7 @@ struct AREDGameInfo_StoryStaffRoll_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_StoryStaffRoll.UpdatePause
-// [0x00020400]  (iNative[40799])
+// [0x00020400]  (iNative[40801])
 struct AREDGameInfo_StoryStaffRoll_execUpdatePause_Params
 {
 };
@@ -4394,19 +4393,19 @@ struct AREDGameInfo_TestMode_eventInitGame_Params
 };
 
 // Function REDGame.REDGameInfo_TestMode.UpdateTestMode
-// [0x00020401]  (iNative[40866])
+// [0x00020401]  (iNative[40868])
 struct AREDGameInfo_TestMode_execUpdateTestMode_Params
 {
 };
 
 // Function REDGame.REDGameInfo_TestMode.FinalizeTestMode
-// [0x00020401]  (iNative[36842])
+// [0x00020401]  (iNative[36844])
 struct AREDGameInfo_TestMode_execFinalizeTestMode_Params
 {
 };
 
 // Function REDGame.REDGameInfo_TestMode.InitializeTestMode
-// [0x00020401]  (iNative[37532])
+// [0x00020401]  (iNative[37534])
 struct AREDGameInfo_TestMode_execInitializeTestMode_Params
 {
 };
@@ -4563,7 +4562,7 @@ struct UREDGameOnlineLobbyInterfaceSteamworks_eventInitialize_Params
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyKickedNative
-// [0x00020400]  (iNative[38058])
+// [0x00020400]  (iNative[38060])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyKickedNative_Params
 {
 	int32_t                                            LobbyIndex;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -4571,7 +4570,7 @@ struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyKickedNative_Params
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyInviteCompleteNative
-// [0x00020400]  (iNative[38056])
+// [0x00020400]  (iNative[38058])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyInviteCompleteNative_Params
 {
 	struct FUniqueNetId                                LobbyId;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -4580,7 +4579,7 @@ struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyInviteCompleteNative_Para
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyReceiveBinaryDataNative
-// [0x00020400]  (iNative[38066])
+// [0x00020400]  (iNative[38068])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyReceiveBinaryDataNative_Params
 {
 	int32_t                                            LobbyIndex;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -4590,7 +4589,7 @@ struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyReceiveBinaryDataNative_P
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyReceiveMessageNative
-// [0x00020400]  (iNative[38068])
+// [0x00020400]  (iNative[38070])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyReceiveMessageNative_Params
 {
 	int32_t                                            LobbyIndex;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -4600,7 +4599,7 @@ struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyReceiveMessageNative_Para
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyMemberSettingsUpdateNative
-// [0x00020400]  (iNative[38060])
+// [0x00020400]  (iNative[38062])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyMemberSettingsUpdateNative_Params
 {
 	int32_t                                            LobbyIndex;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -4608,7 +4607,7 @@ struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyMemberSettingsUpdateNativ
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbyMemberStatusUpdateNative
-// [0x00020400]  (iNative[38062])
+// [0x00020400]  (iNative[38064])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyMemberStatusUpdateNative_Params
 {
 	int32_t                                            LobbyIndex;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -4618,14 +4617,14 @@ struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbyMemberStatusUpdateNative_
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.LobbySettingsUpdateNative
-// [0x00020400]  (iNative[38074])
+// [0x00020400]  (iNative[38076])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execLobbySettingsUpdateNative_Params
 {
 	int32_t                                            LobbyIndex;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.JoinLobbyCompleteNative
-// [0x00020400]  (iNative[37944])
+// [0x00020400]  (iNative[37946])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execJoinLobbyCompleteNative_Params
 {
 	uint32_t                                           bWasSuccessful : 1;                               // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -4635,7 +4634,7 @@ struct UREDGameOnlineLobbyInterfaceSteamworks_execJoinLobbyCompleteNative_Params
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.FindLobbiesCompleteNative
-// [0x00020400]  (iNative[36852])
+// [0x00020400]  (iNative[36854])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execFindLobbiesCompleteNative_Params
 {
 	uint32_t                                           bWasSuccessful : 1;                               // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -4643,7 +4642,7 @@ struct UREDGameOnlineLobbyInterfaceSteamworks_execFindLobbiesCompleteNative_Para
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.CreateLobbyCompleteNative
-// [0x00020400]  (iNative[36331])
+// [0x00020400]  (iNative[36333])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execCreateLobbyCompleteNative_Params
 {
 	uint32_t                                           bWasSuccessful : 1;                               // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -4652,26 +4651,26 @@ struct UREDGameOnlineLobbyInterfaceSteamworks_execCreateLobbyCompleteNative_Para
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.CleanupNative
-// [0x00020400]  (iNative[36220])
+// [0x00020400]  (iNative[36222])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execCleanupNative_Params
 {
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.JoinedLobbyId
-// [0x00020400]  (iNative[37942])
+// [0x00020400]  (iNative[37944])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execJoinedLobbyId_Params
 {
 	struct FUniqueNetId                                ReturnValue;                                      // 0x0000 (0x0008) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameOnlineLobbyInterfaceSteamworks.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct UREDGameOnlineLobbyInterfaceSteamworks_execInitializeNative_Params
 {
 };
 
 // Function REDGame.REDGameStatsBase.FlushStatsCompleteNative
-// [0x00020400]  (iNative[36880])
+// [0x00020400]  (iNative[36882])
 struct UREDGameStatsBase_execFlushStatsCompleteNative_Params
 {
 };
@@ -4693,7 +4692,7 @@ struct UREDGameStatsBase_execWriteStats_Params
 };
 
 // Function REDGame.REDGameStatsBase.AchievementDoneNative
-// [0x00020400]  (iNative[35361])
+// [0x00020400]  (iNative[35363])
 struct UREDGameStatsBase_execAchievementDoneNative_Params
 {
 	int32_t                                            unlockedAchievementId;                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -4800,7 +4799,7 @@ struct UREDGameStatsBase_eventUpdate_Params
 };
 
 // Function REDGame.REDGameStatsBase.ReadStatsCompleteNative
-// [0x00020400]  (iNative[39228])
+// [0x00020400]  (iNative[39230])
 struct UREDGameStatsBase_execReadStatsCompleteNative_Params
 {
 };
@@ -4852,7 +4851,7 @@ struct UREDGameStatsBase_execGetLP_Params
 };
 
 // Function REDGame.REDGameStats.ReadStatsCompleteNative
-// [0x00020400]  (iNative[39228])
+// [0x00020400]  (iNative[39230])
 struct UREDGameStats_execReadStatsCompleteNative_Params
 {
 };
@@ -4878,7 +4877,7 @@ struct UREDGameViewportClient_execPostRender_Params
 };
 
 // Function REDGame.REDGameViewportClient.UpdateFade
-// [0x00020400]  (iNative[40670])
+// [0x00020400]  (iNative[40672])
 struct UREDGameViewportClient_execUpdateFade_Params
 {
 };
@@ -4924,45 +4923,45 @@ struct UREDGameViewportClient_execFadeIn_Params
 };
 
 // Function REDGame.REDGameViewportClient.PostDrawUpdate
-// [0x00020401]  (iNative[39082])
+// [0x00020401]  (iNative[39084])
 struct UREDGameViewportClient_execPostDrawUpdate_Params
 {
 };
 
 // Function REDGame.REDGameViewportClient.PostUpdate
-// [0x00020401]  (iNative[26345])
+// [0x00020401]  (iNative[26347])
 struct UREDGameViewportClient_execPostUpdate_Params
 {
 };
 
 // Function REDGame.REDGameViewportClient.UpdateFade_Tick
-// [0x00020401]  (iNative[40671])
+// [0x00020401]  (iNative[40673])
 struct UREDGameViewportClient_execUpdateFade_Tick_Params
 {
 };
 
 // Function REDGame.REDGameViewportClient.DrawFade
-// [0x00020401]  (iNative[36600])
+// [0x00020401]  (iNative[36602])
 struct UREDGameViewportClient_execDrawFade_Params
 {
 };
 
 // Function REDGame.REDGameViewportClient.FlushDebugDraw
-// [0x00020401]  (iNative[36877])
+// [0x00020401]  (iNative[36879])
 struct UREDGameViewportClient_execFlushDebugDraw_Params
 {
 	class UCanvas*                                     Canvas;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameViewportClient.FlushRender2D
-// [0x00020401]  (iNative[36878])
+// [0x00020401]  (iNative[36880])
 struct UREDGameViewportClient_execFlushRender2D_Params
 {
 	class UCanvas*                                     Canvas;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMovieArray.SetDispFromCategory
-// [0x00020400]  (iNative[39728])
+// [0x00020400]  (iNative[39730])
 struct UREDGfxMovieArray_execSetDispFromCategory_Params
 {
 	uint32_t                                           disp : 1;                                         // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -5457,7 +5456,7 @@ struct UREDGfxMovieManager_BattleHUD_execResetOnRound_Params
 };
 
 // Function REDGame.REDGfxMovieManager_BattleHUD.AddBattleHUD
-// [0x00020400]  (iNative[35375])
+// [0x00020400]  (iNative[35377])
 struct UREDGfxMovieManager_BattleHUD_execAddBattleHUD_Params
 {
 	class UREDGfxMoviePlayer_BattleHUD*                HUD;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -5470,14 +5469,14 @@ struct UREDGfxMovieManager_BattleHUD_execInitializeParam_Params
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsTournamentLobby
-// [0x00020400]  (iNative[37883])
+// [0x00020400]  (iNative[37885])
 struct UREDGfxMovieManager_Network_Base_execIsTournamentLobby_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsTournamentLeaveLobbyForce
-// [0x00420400]  (iNative[37882])
+// [0x00420400]  (iNative[37884])
 struct UREDGfxMovieManager_Network_Base_execIsTournamentLeaveLobbyForce_Params
 {
 	class FString                                      ErrMsgID;                                         // 0x0000 (0x000C) [0x0000000000400180] (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -5485,14 +5484,14 @@ struct UREDGfxMovieManager_Network_Base_execIsTournamentLeaveLobbyForce_Params
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsTournamentGotoRoom
-// [0x00020400]  (iNative[37881])
+// [0x00020400]  (iNative[37883])
 struct UREDGfxMovieManager_Network_Base_execIsTournamentGotoRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsAsyncLoading
-// [0x00020400]  (iNative[37597])
+// [0x00020400]  (iNative[37599])
 struct UREDGfxMovieManager_Network_Base_execIsAsyncLoading_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -5506,79 +5505,79 @@ struct UREDGfxMovieManager_Network_Base_execGetRandomBGM_Params
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.SetupRandomBGM
-// [0x00020400]  (iNative[39849])
+// [0x00020400]  (iNative[39851])
 struct UREDGfxMovieManager_Network_Base_execSetupRandomBGM_Params
 {
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsSilentBGM
-// [0x00020400]  (iNative[37854])
+// [0x00020400]  (iNative[37856])
 struct UREDGfxMovieManager_Network_Base_execIsSilentBGM_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsNormalBGM
-// [0x00020400]  (iNative[37751])
+// [0x00020400]  (iNative[37753])
 struct UREDGfxMovieManager_Network_Base_execIsNormalBGM_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsRandomBGM
-// [0x00020400]  (iNative[37803])
+// [0x00020400]  (iNative[37805])
 struct UREDGfxMovieManager_Network_Base_execIsRandomBGM_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.UpdateCheckWeakErrorInRoom
-// [0x00020400]  (iNative[40619])
+// [0x00020400]  (iNative[40621])
 struct UREDGfxMovieManager_Network_Base_execUpdateCheckWeakErrorInRoom_Params
 {
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsInLobby
-// [0x00020400]  (iNative[37690])
+// [0x00020400]  (iNative[37692])
 struct UREDGfxMovieManager_Network_Base_execIsInLobby_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.ErrorNetwork
-// [0x00020400]  (iNative[36733])
+// [0x00020400]  (iNative[36735])
 struct UREDGfxMovieManager_Network_Base_execErrorNetwork_Params
 {
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct UREDGfxMovieManager_Network_Base_execInitializeNative_Params
 {
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.SetupWelcomeScene
-// [0x00020400]  (iNative[39862])
+// [0x00020400]  (iNative[39864])
 struct UREDGfxMovieManager_Network_Base_execSetupWelcomeScene_Params
 {
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.GetSystemErrorMessageID
-// [0x00020400]  (iNative[37180])
+// [0x00020400]  (iNative[37182])
 struct UREDGfxMovieManager_Network_Base_execGetSystemErrorMessageID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.IsAnySystemError
-// [0x00020400]  (iNative[37595])
+// [0x00020400]  (iNative[37597])
 struct UREDGfxMovieManager_Network_Base_execIsAnySystemError_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUp_CheckReturnVal
-// [0x00020400]  (iNative[39060])
+// [0x00020400]  (iNative[39062])
 struct UREDGfxMovieManager_Network_Base_execPopUp_CheckReturnVal_Params
 {
 	int32_t                                            Handle;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -5586,7 +5585,7 @@ struct UREDGfxMovieManager_Network_Base_execPopUp_CheckReturnVal_Params
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUp_OpenYesNo
-// [0x00020400]  (iNative[39065])
+// [0x00020400]  (iNative[39067])
 struct UREDGfxMovieManager_Network_Base_execPopUp_OpenYesNo_Params
 {
 	class FString                                      messegaID;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -5594,35 +5593,35 @@ struct UREDGfxMovieManager_Network_Base_execPopUp_OpenYesNo_Params
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.MenuWindow_IsActiveAny
-// [0x00020400]  (iNative[38280])
+// [0x00020400]  (iNative[38282])
 struct UREDGfxMovieManager_Network_Base_execMenuWindow_IsActiveAny_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUpErr_IsActive
-// [0x00020400]  (iNative[39067])
+// [0x00020400]  (iNative[39069])
 struct UREDGfxMovieManager_Network_Base_execPopUpErr_IsActive_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUpErr_OpenOK
-// [0x00020400]  (iNative[39068])
+// [0x00020400]  (iNative[39070])
 struct UREDGfxMovieManager_Network_Base_execPopUpErr_OpenOK_Params
 {
 	class FString                                      messegaID;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUp_IsActive
-// [0x00020400]  (iNative[39062])
+// [0x00020400]  (iNative[39064])
 struct UREDGfxMovieManager_Network_Base_execPopUp_IsActive_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMovieManager_Network_Base.PopUp_OpenOK
-// [0x00020400]  (iNative[39063])
+// [0x00020400]  (iNative[39065])
 struct UREDGfxMovieManager_Network_Base_execPopUp_OpenOK_Params
 {
 	class FString                                      messegaID;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -5797,7 +5796,7 @@ struct UREDGfxMoviePlayer_execREDPC_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer.GetLocalizeStaffRoll
-// [0x00020401]  (iNative[37088])
+// [0x00020401]  (iNative[37090])
 struct UREDGfxMoviePlayer_execGetLocalizeStaffRoll_Params
 {
 	class FString                                      Id;                                               // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -5806,7 +5805,7 @@ struct UREDGfxMoviePlayer_execGetLocalizeStaffRoll_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer.GetLocalizeString
-// [0x00020401]  (iNative[37089])
+// [0x00020401]  (iNative[37091])
 struct UREDGfxMoviePlayer_execGetLocalizeString_Params
 {
 	class FString                                      WidgetName;                                       // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -5814,7 +5813,7 @@ struct UREDGfxMoviePlayer_execGetLocalizeString_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer.SetDispFromCategory
-// [0x00020401]  (iNative[39728])
+// [0x00020401]  (iNative[39730])
 struct UREDGfxMoviePlayer_execSetDispFromCategory_Params
 {
 	uint32_t                                           disp : 1;                                         // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -5926,7 +5925,7 @@ struct UREDGfxMoviePlayer_BattleHaiku_execStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleHUD.ChangeMCColor
-// [0x00020400]  (iNative[36098])
+// [0x00020400]  (iNative[36100])
 struct UREDGfxMoviePlayer_BattleHUD_execChangeMCColor_Params
 {
 	class UGFxObject*                                  pMC;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -6382,7 +6381,7 @@ struct UREDGfxMoviePlayer_BattleHUD_execResetOnRound_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleHUD.GetPlayerPosX
-// [0x00020400]  (iNative[37139])
+// [0x00020400]  (iNative[37141])
 struct UREDGfxMoviePlayer_BattleHUD_execGetPlayerPosX_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -6390,19 +6389,19 @@ struct UREDGfxMoviePlayer_BattleHUD_execGetPlayerPosX_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDBurst
-// [0x00020400]  (iNative[40702])
+// [0x00020400]  (iNative[40704])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDBurst_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDDangerDamage
-// [0x00020400]  (iNative[40703])
+// [0x00020400]  (iNative[40705])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDDangerDamage_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.SetDangerDamage
-// [0x00020400]  (iNative[39723])
+// [0x00020400]  (iNative[39725])
 struct UREDGfxMoviePlayer_BattleDownside_execSetDangerDamage_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -6410,13 +6409,13 @@ struct UREDGfxMoviePlayer_BattleDownside_execSetDangerDamage_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDNegaPenaPos
-// [0x00020400]  (iNative[40707])
+// [0x00020400]  (iNative[40709])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDNegaPenaPos_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateNegaPenaPos
-// [0x00020400]  (iNative[40789])
+// [0x00020400]  (iNative[40791])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateNegaPenaPos_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -6425,26 +6424,26 @@ struct UREDGfxMoviePlayer_BattleDownside_execUpdateNegaPenaPos_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDNegaPena
-// [0x00020400]  (iNative[40706])
+// [0x00020400]  (iNative[40708])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDNegaPena_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.ReqHUDNegativePenalty
-// [0x00020400]  (iNative[39348])
+// [0x00020400]  (iNative[39350])
 struct UREDGfxMoviePlayer_BattleDownside_execReqHUDNegativePenalty_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDNegativeDanger
-// [0x00020400]  (iNative[40708])
+// [0x00020400]  (iNative[40710])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDNegativeDanger_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.SetHUDNegativeDangerDisp
-// [0x00020400]  (iNative[39756])
+// [0x00020400]  (iNative[39758])
 struct UREDGfxMoviePlayer_BattleDownside_execSetHUDNegativeDangerDisp_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -6453,14 +6452,14 @@ struct UREDGfxMoviePlayer_BattleDownside_execSetHUDNegativeDangerDisp_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.SetHUDExGaugeActive
-// [0x00020400]  (iNative[39755])
+// [0x00020400]  (iNative[39757])
 struct UREDGfxMoviePlayer_BattleDownside_execSetHUDExGaugeActive_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDExGauge
-// [0x00020400]  (iNative[40705])
+// [0x00020400]  (iNative[40707])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDExGauge_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -6473,25 +6472,25 @@ struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDExGauge_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateExGaugeTrig
-// [0x00020400]  (iNative[40665])
+// [0x00020400]  (iNative[40667])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateExGaugeTrig_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateExGaugeActive
-// [0x00020400]  (iNative[40664])
+// [0x00020400]  (iNative[40666])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateExGaugeActive_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDDangerTime
-// [0x00020400]  (iNative[40704])
+// [0x00020400]  (iNative[40706])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDDangerTime_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.SetHUDDangerTimeMC
-// [0x00020400]  (iNative[39754])
+// [0x00020400]  (iNative[39756])
 struct UREDGfxMoviePlayer_BattleDownside_execSetHUDDangerTimeMC_Params
 {
 	class UGFxObject*                                  mc;                                               // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -6499,7 +6498,7 @@ struct UREDGfxMoviePlayer_BattleDownside_execSetHUDDangerTimeMC_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.ChangeTensionCoverColor
-// [0x00020400]  (iNative[36104])
+// [0x00020400]  (iNative[36106])
 struct UREDGfxMoviePlayer_BattleDownside_execChangeTensionCoverColor_Params
 {
 	int32_t                                            MulColor;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -6507,26 +6506,26 @@ struct UREDGfxMoviePlayer_BattleDownside_execChangeTensionCoverColor_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDTensionState
-// [0x00020400]  (iNative[40711])
+// [0x00020400]  (iNative[40713])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDTensionState_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDTensGaugeColor
-// [0x00020400]  (iNative[40709])
+// [0x00020400]  (iNative[40711])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDTensGaugeColor_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateHUDTension
-// [0x00020400]  (iNative[40710])
+// [0x00020400]  (iNative[40712])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateHUDTension_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleDownside.UpdateAll
-// [0x00020400]  (iNative[40593])
+// [0x00020400]  (iNative[40595])
 struct UREDGfxMoviePlayer_BattleDownside_execUpdateAll_Params
 {
 };
@@ -6854,7 +6853,7 @@ struct UREDGfxMoviePlayer_BattleMiddleF_execMovieStartInternal_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateBurstSealIcon
-// [0x00020400]  (iNative[40605])
+// [0x00020400]  (iNative[40607])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateBurstSealIcon_Params
 {
 	int32_t                                            Side;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -6863,20 +6862,20 @@ struct UREDGfxMoviePlayer_BattleUpside_execUpdateBurstSealIcon_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateDispBurstSeal
-// [0x00020400]  (iNative[40644])
+// [0x00020400]  (iNative[40646])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateDispBurstSeal_Params
 {
 	int32_t                                            Side;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateHUDBurst
-// [0x00020400]  (iNative[40702])
+// [0x00020400]  (iNative[40704])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateHUDBurst_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.SetTimer
-// [0x00020400]  (iNative[28175])
+// [0x00020400]  (iNative[28177])
 struct UREDGfxMoviePlayer_BattleUpside_execSetTimer_Params
 {
 	int32_t                                            digit1;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -6886,19 +6885,19 @@ struct UREDGfxMoviePlayer_BattleUpside_execSetTimer_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateHUDTimer
-// [0x00020400]  (iNative[40712])
+// [0x00020400]  (iNative[40714])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateHUDTimer_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.JKOUpdate
-// [0x00020400]  (iNative[37940])
+// [0x00020400]  (iNative[37942])
 struct UREDGfxMoviePlayer_BattleUpside_execJKOUpdate_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.JKOUpdateGauge
-// [0x00420400]  (iNative[37941])
+// [0x00420400]  (iNative[37943])
 struct UREDGfxMoviePlayer_BattleUpside_execJKOUpdateGauge_Params
 {
 	struct FJKOGaugeMC                                 mc;                                               // 0x0000 (0x0024) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -6906,82 +6905,82 @@ struct UREDGfxMoviePlayer_BattleUpside_execJKOUpdateGauge_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateDangerTime
-// [0x00020400]  (iNative[40640])
+// [0x00020400]  (iNative[40642])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateDangerTime_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateDangerDamage
-// [0x00020400]  (iNative[40639])
+// [0x00020400]  (iNative[40641])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateDangerDamage_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateDanger
-// [0x00020400]  (iNative[40638])
+// [0x00020400]  (iNative[40640])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateDanger_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateGBLight
-// [0x00020400]  (iNative[40689])
+// [0x00020400]  (iNative[40691])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateGBLight_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateRoundNumIcon
-// [0x00020400]  (iNative[40835])
+// [0x00020400]  (iNative[40837])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateRoundNumIcon_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateHPGaugeMulti
-// [0x00020400]  (iNative[40701])
+// [0x00020400]  (iNative[40703])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateHPGaugeMulti_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateHPGaugeColor
-// [0x00020400]  (iNative[40700])
+// [0x00020400]  (iNative[40702])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateHPGaugeColor_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateHideCombo
-// [0x00020400]  (iNative[40699])
+// [0x00020400]  (iNative[40701])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateHideCombo_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateComboEffect
-// [0x00020400]  (iNative[40622])
+// [0x00020400]  (iNative[40624])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateComboEffect_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateComboAS
-// [0x00020400]  (iNative[40621])
+// [0x00020400]  (iNative[40623])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateComboAS_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.HideComboAS
-// [0x00420400]  (iNative[37436])
+// [0x00420400]  (iNative[37438])
 struct UREDGfxMoviePlayer_BattleUpside_execHideComboAS_Params
 {
 	struct FMiddlePlateMC                              mc;                                               // 0x0000 (0x00C4) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.ShowComboAS
-// [0x00420400]  (iNative[39890])
+// [0x00420400]  (iNative[39892])
 struct UREDGfxMoviePlayer_BattleUpside_execShowComboAS_Params
 {
 	struct FMiddlePlateMC                              mc;                                               // 0x0000 (0x00C4) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.UpdateAll
-// [0x00020400]  (iNative[40593])
+// [0x00020400]  (iNative[40595])
 struct UREDGfxMoviePlayer_BattleUpside_execUpdateAll_Params
 {
 };
@@ -7272,7 +7271,7 @@ struct UREDGfxMoviePlayer_BattleUpside_execHideCombo_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.ShowComboSub
-// [0x00020400]  (iNative[39891])
+// [0x00020400]  (iNative[39893])
 struct UREDGfxMoviePlayer_BattleUpside_execShowComboSub_Params
 {
 	int32_t                                            combo;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -7286,7 +7285,7 @@ struct UREDGfxMoviePlayer_BattleUpside_execShowComboSub_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.ComboEffect
-// [0x00020400]  (iNative[36269])
+// [0x00020400]  (iNative[36271])
 struct UREDGfxMoviePlayer_BattleUpside_execComboEffect_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -7329,7 +7328,7 @@ struct UREDGfxMoviePlayer_BattleUpside_execUpdateHP_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.GetBattleVersion
-// [0x00020400]  (iNative[37003])
+// [0x00020400]  (iNative[37005])
 struct UREDGfxMoviePlayer_BattleUpside_execGetBattleVersion_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -7418,7 +7417,7 @@ struct UREDGfxMoviePlayer_BattleUpside_execInitializeMiddlePlate_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleUpside.GetScore
-// [0x00020400]  (iNative[37160])
+// [0x00020400]  (iNative[37162])
 struct UREDGfxMoviePlayer_BattleUpside_execGetScore_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -7954,7 +7953,7 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execSetWindowEnable_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsTrig_Right
-// [0x00020400]  (iNative[37911])
+// [0x00020400]  (iNative[37913])
 struct UREDGfxMoviePlayer_BattleResultWindow_execIsTrig_Right_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -7962,7 +7961,7 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execIsTrig_Right_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsTrig_Left
-// [0x00020400]  (iNative[37902])
+// [0x00020400]  (iNative[37904])
 struct UREDGfxMoviePlayer_BattleResultWindow_execIsTrig_Left_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -7970,7 +7969,7 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execIsTrig_Left_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsRep_Down
-// [0x00020400]  (iNative[37817])
+// [0x00020400]  (iNative[37819])
 struct UREDGfxMoviePlayer_BattleResultWindow_execIsRep_Down_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -7978,7 +7977,7 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execIsRep_Down_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsRep_Up
-// [0x00020400]  (iNative[37821])
+// [0x00020400]  (iNative[37823])
 struct UREDGfxMoviePlayer_BattleResultWindow_execIsRep_Up_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8001,21 +8000,21 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execMovieStartInternal_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.DemoteLightBar
-// [0x00020400]  (iNative[36525])
+// [0x00020400]  (iNative[36527])
 struct UREDGfxMoviePlayer_BattleResultWindow_execDemoteLightBar_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.PromoteLightBar
-// [0x00020400]  (iNative[39148])
+// [0x00020400]  (iNative[39150])
 struct UREDGfxMoviePlayer_BattleResultWindow_execPromoteLightBar_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsTrig_Right_Indiv
-// [0x00020400]  (iNative[37913])
+// [0x00020400]  (iNative[37915])
 struct UREDGfxMoviePlayer_BattleResultWindow_execIsTrig_Right_Indiv_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8023,7 +8022,7 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execIsTrig_Right_Indiv_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsTrig_Left_Indiv
-// [0x00020400]  (iNative[37904])
+// [0x00020400]  (iNative[37906])
 struct UREDGfxMoviePlayer_BattleResultWindow_execIsTrig_Left_Indiv_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8031,7 +8030,7 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execIsTrig_Left_Indiv_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsRep_Down_Indiv
-// [0x00020400]  (iNative[37818])
+// [0x00020400]  (iNative[37820])
 struct UREDGfxMoviePlayer_BattleResultWindow_execIsRep_Down_Indiv_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8039,7 +8038,7 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execIsRep_Down_Indiv_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.IsRep_Up_Indiv
-// [0x00020400]  (iNative[37822])
+// [0x00020400]  (iNative[37824])
 struct UREDGfxMoviePlayer_BattleResultWindow_execIsRep_Up_Indiv_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8047,7 +8046,7 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execIsRep_Up_Indiv_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.GetRankFromExp
-// [0x00020400]  (iNative[37146])
+// [0x00020400]  (iNative[37148])
 struct UREDGfxMoviePlayer_BattleResultWindow_execGetRankFromExp_Params
 {
 	int32_t                                            Exp;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8055,7 +8054,7 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execGetRankFromExp_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.GetRankExpAll
-// [0x00020400]  (iNative[37145])
+// [0x00020400]  (iNative[37147])
 struct UREDGfxMoviePlayer_BattleResultWindow_execGetRankExpAll_Params
 {
 	int32_t                                            Rank;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8063,7 +8062,7 @@ struct UREDGfxMoviePlayer_BattleResultWindow_execGetRankExpAll_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BattleResultWindow.GetNextRankExp
-// [0x00020400]  (iNative[37117])
+// [0x00020400]  (iNative[37119])
 struct UREDGfxMoviePlayer_BattleResultWindow_execGetNextRankExp_Params
 {
 	int32_t                                            Rank;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8113,13 +8112,13 @@ struct UREDGfxMoviePlayer_BG_Arena_execStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BG_Arena.UpdateScroll
-// [0x00020400]  (iNative[34841])
+// [0x00020400]  (iNative[34843])
 struct UREDGfxMoviePlayer_BG_Arena_execUpdateScroll_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_BG_Arena.GetPlayerInfo
-// [0x00420400]  (iNative[34036])
+// [0x00420400]  (iNative[34038])
 struct UREDGfxMoviePlayer_BG_Arena_execGetPlayerInfo_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8135,14 +8134,14 @@ struct UREDGfxMoviePlayer_BG_Arena_execGetPlayerInfo_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_BG_Arena.GetShopName
-// [0x00020400]  (iNative[37167])
+// [0x00020400]  (iNative[37169])
 struct UREDGfxMoviePlayer_BG_Arena_execGetShopName_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_BG_Arena.GetTitleName
-// [0x00020400]  (iNative[37186])
+// [0x00020400]  (iNative[37188])
 struct UREDGfxMoviePlayer_BG_Arena_execGetTitleName_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
@@ -8211,13 +8210,13 @@ struct UREDGfxMoviePlayer_ChatWindow_execCallSetupFocusedForm_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_ChatWindow.OnStop
-// [0x00020400]  (iNative[38820])
+// [0x00020400]  (iNative[38822])
 struct UREDGfxMoviePlayer_ChatWindow_execOnStop_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_ChatWindow.OnStart
-// [0x00020400]  (iNative[38818])
+// [0x00020400]  (iNative[38820])
 struct UREDGfxMoviePlayer_ChatWindow_execOnStart_Params
 {
 };
@@ -8229,13 +8228,13 @@ struct UREDGfxMoviePlayer_ChatWindow_execOnCleanup_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_ChatWindow.OnStartup
-// [0x00020400]  (iNative[38819])
+// [0x00020400]  (iNative[38821])
 struct UREDGfxMoviePlayer_ChatWindow_execOnStartup_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_ChatWindow.setPasswordMode
-// [0x00020400]  (iNative[39788])
+// [0x00020400]  (iNative[39790])
 struct UREDGfxMoviePlayer_ChatWindow_execsetPasswordMode_Params
 {
 	uint32_t                                           _isPassword : 1;                                  // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -8294,7 +8293,7 @@ struct UREDGfxMoviePlayer_Menu_Base_eventWidgetInitialized_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsLoadedPackages
-// [0x00020400]  (iNative[37702])
+// [0x00020400]  (iNative[37704])
 struct UREDGfxMoviePlayer_Menu_Base_execIsLoadedPackages_Params
 {
 	class FString                                      packageNames;                                     // 0x0000 (0x000C) [0x0000000000400082] (CPF_Const | CPF_Parm | CPF_NeedCtorLink)
@@ -8311,7 +8310,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execLoadPackages_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPS4Controller
-// [0x00020400]  (iNative[37793])
+// [0x00020400]  (iNative[37795])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPS4Controller_Params
 {
 	int32_t                                            PadID;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8462,7 +8461,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execCommonSE_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.DebugRectDraw
-// [0x00024400]  (iNative[36427])
+// [0x00024400]  (iNative[36429])
 struct UREDGfxMoviePlayer_Menu_Base_execDebugRectDraw_Params
 {
 	struct FVector2D                                   LU;                                               // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -8474,13 +8473,13 @@ struct UREDGfxMoviePlayer_Menu_Base_execDebugRectDraw_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.DebugMainMenuOpen
-// [0x00020400]  (iNative[36421])
+// [0x00020400]  (iNative[36423])
 struct UREDGfxMoviePlayer_Menu_Base_execDebugMainMenuOpen_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.DebugText2
-// [0x00024400]  (iNative[36428])
+// [0x00024400]  (iNative[36430])
 struct UREDGfxMoviePlayer_Menu_Base_execDebugText2_Params
 {
 	int32_t                                            X;                                                // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8493,7 +8492,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execDebugText2_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.DebugText
-// [0x00024400]  (iNative[19313])
+// [0x00024400]  (iNative[19315])
 struct UREDGfxMoviePlayer_Menu_Base_execDebugText_Params
 {
 	int32_t                                            X;                                                // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8504,7 +8503,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execDebugText_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Timer2Digit
-// [0x00420400]  (iNative[40231])
+// [0x00420400]  (iNative[40233])
 struct UREDGfxMoviePlayer_Menu_Base_execTimer2Digit_Params
 {
 	int32_t                                            Time;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8515,7 +8514,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execTimer2Digit_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.SlideMessage
-// [0x00024400]  (iNative[39913])
+// [0x00024400]  (iNative[39915])
 struct UREDGfxMoviePlayer_Menu_Base_execSlideMessage_Params
 {
 	class FString                                      MessageId;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -8523,7 +8522,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execSlideMessage_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_OpenOK_CustomMessage
-// [0x00020400]  (iNative[39064])
+// [0x00020400]  (iNative[39066])
 struct UREDGfxMoviePlayer_Menu_Base_execPopUp_OpenOK_CustomMessage_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8532,20 +8531,20 @@ struct UREDGfxMoviePlayer_Menu_Base_execPopUp_OpenOK_CustomMessage_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_Close
-// [0x00020400]  (iNative[39061])
+// [0x00020400]  (iNative[39063])
 struct UREDGfxMoviePlayer_Menu_Base_execPopUp_Close_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_IsActive
-// [0x00020400]  (iNative[39062])
+// [0x00020400]  (iNative[39064])
 struct UREDGfxMoviePlayer_Menu_Base_execPopUp_IsActive_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_CheckReturnVal
-// [0x00020400]  (iNative[39060])
+// [0x00020400]  (iNative[39062])
 struct UREDGfxMoviePlayer_Menu_Base_execPopUp_CheckReturnVal_Params
 {
 	int32_t                                            Handle;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8553,7 +8552,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execPopUp_CheckReturnVal_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_OpenYesNo
-// [0x00020400]  (iNative[39065])
+// [0x00020400]  (iNative[39067])
 struct UREDGfxMoviePlayer_Menu_Base_execPopUp_OpenYesNo_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8562,7 +8561,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execPopUp_OpenYesNo_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.PopUp_OpenOK
-// [0x00020400]  (iNative[39063])
+// [0x00020400]  (iNative[39065])
 struct UREDGfxMoviePlayer_Menu_Base_execPopUp_OpenOK_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8571,21 +8570,21 @@ struct UREDGfxMoviePlayer_Menu_Base_execPopUp_OpenOK_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Account_IsBannedNetwork
-// [0x00020400]  (iNative[35355])
+// [0x00020400]  (iNative[35357])
 struct UREDGfxMoviePlayer_Menu_Base_execAccount_IsBannedNetwork_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Account_IsBannedChat
-// [0x00020400]  (iNative[35354])
+// [0x00020400]  (iNative[35356])
 struct UREDGfxMoviePlayer_Menu_Base_execAccount_IsBannedChat_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.DrawCreditFont
-// [0x00020400]  (iNative[36598])
+// [0x00020400]  (iNative[36600])
 struct UREDGfxMoviePlayer_Menu_Base_execDrawCreditFont_Params
 {
 	int32_t                                            X;                                                // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8596,35 +8595,35 @@ struct UREDGfxMoviePlayer_Menu_Base_execDrawCreditFont_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_SetHidden
-// [0x00020400]  (iNative[36343])
+// [0x00020400]  (iNative[36345])
 struct UREDGfxMoviePlayer_Menu_Base_execCredit_SetHidden_Params
 {
 	uint32_t                                           flag : 1;                                         // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_ContinueGame
-// [0x00020400]  (iNative[36337])
+// [0x00020400]  (iNative[36339])
 struct UREDGfxMoviePlayer_Menu_Base_execCredit_ContinueGame_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_StartGame
-// [0x00020400]  (iNative[36344])
+// [0x00020400]  (iNative[36346])
 struct UREDGfxMoviePlayer_Menu_Base_execCredit_StartGame_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_IsFreePlay
-// [0x00020400]  (iNative[36341])
+// [0x00020400]  (iNative[36343])
 struct UREDGfxMoviePlayer_Menu_Base_execCredit_IsFreePlay_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_IsCoinZero
-// [0x00020400]  (iNative[36338])
+// [0x00020400]  (iNative[36340])
 struct UREDGfxMoviePlayer_Menu_Base_execCredit_IsCoinZero_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8632,7 +8631,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execCredit_IsCoinZero_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_IsInsertCoin
-// [0x00020400]  (iNative[36342])
+// [0x00020400]  (iNative[36344])
 struct UREDGfxMoviePlayer_Menu_Base_execCredit_IsInsertCoin_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8640,7 +8639,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execCredit_IsInsertCoin_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_IsEnough_Continue
-// [0x00020400]  (iNative[36340])
+// [0x00020400]  (iNative[36342])
 struct UREDGfxMoviePlayer_Menu_Base_execCredit_IsEnough_Continue_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8648,7 +8647,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execCredit_IsEnough_Continue_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.Credit_IsEnough
-// [0x00020400]  (iNative[36339])
+// [0x00020400]  (iNative[36341])
 struct UREDGfxMoviePlayer_Menu_Base_execCredit_IsEnough_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8692,21 +8691,21 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_AnyBtn_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsUIExclusive
-// [0x00020400]  (iNative[37919])
+// [0x00020400]  (iNative[37921])
 struct UREDGfxMoviePlayer_Menu_Base_execIsUIExclusive_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.GetPadNum
-// [0x00020400]  (iNative[37129])
+// [0x00020400]  (iNative[37131])
 struct UREDGfxMoviePlayer_Menu_Base_execGetPadNum_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.GetPlayerPadID
-// [0x00020400]  (iNative[37138])
+// [0x00020400]  (iNative[37140])
 struct UREDGfxMoviePlayer_Menu_Base_execGetPlayerPadID_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8714,7 +8713,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execGetPlayerPadID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.SetPlayerPadID
-// [0x00020400]  (iNative[39791])
+// [0x00020400]  (iNative[39793])
 struct UREDGfxMoviePlayer_Menu_Base_execSetPlayerPadID_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -8722,7 +8721,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execSetPlayerPadID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Right_FromPad
-// [0x00020400]  (iNative[37912])
+// [0x00020400]  (iNative[37914])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Right_FromPad_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8730,7 +8729,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Right_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Left_FromPad
-// [0x00020400]  (iNative[37903])
+// [0x00020400]  (iNative[37905])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Left_FromPad_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8738,7 +8737,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Left_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Down_FromPad
-// [0x00020400]  (iNative[37899])
+// [0x00020400]  (iNative[37901])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Down_FromPad_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8746,7 +8745,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Down_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Up_FromPad
-// [0x00020400]  (iNative[37915])
+// [0x00020400]  (iNative[37917])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Up_FromPad_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8754,7 +8753,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Up_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_NG_FromPad
-// [0x00020400]  (iNative[37906])
+// [0x00020400]  (iNative[37908])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_NG_FromPad_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8762,7 +8761,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_NG_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_OK_FromPad
-// [0x00020400]  (iNative[37908])
+// [0x00020400]  (iNative[37910])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_OK_FromPad_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8770,7 +8769,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_OK_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Right_FromPad
-// [0x00020400]  (iNative[37787])
+// [0x00020400]  (iNative[37789])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Right_FromPad_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8778,7 +8777,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Right_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Left_FromPad
-// [0x00020400]  (iNative[37782])
+// [0x00020400]  (iNative[37784])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Left_FromPad_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8786,7 +8785,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Left_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Down_FromPad
-// [0x00020400]  (iNative[37778])
+// [0x00020400]  (iNative[37780])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Down_FromPad_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8794,7 +8793,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Down_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Up_FromPad
-// [0x00020400]  (iNative[37789])
+// [0x00020400]  (iNative[37791])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Up_FromPad_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8802,7 +8801,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Up_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Btn_Without1_FromPad
-// [0x00020400]  (iNative[37776])
+// [0x00020400]  (iNative[37778])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Btn_Without1_FromPad_Params
 {
 	int32_t                                            PadID;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8810,7 +8809,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Btn_Without1_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Btn1_FromPad
-// [0x00020400]  (iNative[37775])
+// [0x00020400]  (iNative[37777])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Btn1_FromPad_Params
 {
 	int32_t                                            PadID;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8818,7 +8817,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Btn1_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_BtnBack_FromPad
-// [0x00020400]  (iNative[37895])
+// [0x00020400]  (iNative[37897])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_BtnBack_FromPad_Params
 {
 	int32_t                                            PadID;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8826,7 +8825,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_BtnBack_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_AnyBtn_FromPad
-// [0x00020400]  (iNative[37887])
+// [0x00020400]  (iNative[37889])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_AnyBtn_FromPad_Params
 {
 	int32_t                                            PadID;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8834,7 +8833,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_AnyBtn_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_BtnStart_FromPad
-// [0x00020400]  (iNative[37897])
+// [0x00020400]  (iNative[37899])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_BtnStart_FromPad_Params
 {
 	int32_t                                            PadID;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -8842,7 +8841,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_BtnStart_FromPad_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn6
-// [0x00024400]  (iNative[37894])
+// [0x00024400]  (iNative[37896])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn6_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8850,7 +8849,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn6_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn5
-// [0x00024400]  (iNative[37893])
+// [0x00024400]  (iNative[37895])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn5_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8858,7 +8857,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn5_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn4
-// [0x00024400]  (iNative[37892])
+// [0x00024400]  (iNative[37894])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn4_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8866,7 +8865,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn4_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn3
-// [0x00024400]  (iNative[37891])
+// [0x00024400]  (iNative[37893])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn3_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8874,7 +8873,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn3_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn2
-// [0x00024400]  (iNative[37890])
+// [0x00024400]  (iNative[37892])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn2_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8882,7 +8881,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn2_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Btn1
-// [0x00024400]  (iNative[37889])
+// [0x00024400]  (iNative[37891])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn1_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8890,7 +8889,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Btn1_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPull_R2
-// [0x00024400]  (iNative[37798])
+// [0x00024400]  (iNative[37800])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPull_R2_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8898,7 +8897,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPull_R2_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPull_L2
-// [0x00024400]  (iNative[37796])
+// [0x00024400]  (iNative[37798])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPull_L2_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8906,7 +8905,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPull_L2_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPull_R1
-// [0x00024400]  (iNative[37797])
+// [0x00024400]  (iNative[37799])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPull_R1_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8914,7 +8913,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPull_R1_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPull_L1
-// [0x00024400]  (iNative[37795])
+// [0x00024400]  (iNative[37797])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPull_L1_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8922,7 +8921,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPull_L1_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_R2
-// [0x00024400]  (iNative[37785])
+// [0x00024400]  (iNative[37787])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_R2_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8930,7 +8929,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_R2_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_L2
-// [0x00024400]  (iNative[37780])
+// [0x00024400]  (iNative[37782])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_L2_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8938,7 +8937,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_L2_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_R1
-// [0x00024400]  (iNative[37784])
+// [0x00024400]  (iNative[37786])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_R1_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8946,7 +8945,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_R1_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_L1
-// [0x00024400]  (iNative[37779])
+// [0x00024400]  (iNative[37781])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_L1_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8954,7 +8953,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_L1_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_L2
-// [0x00024400]  (iNative[37901])
+// [0x00024400]  (iNative[37903])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_L2_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8962,7 +8961,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_L2_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_L1
-// [0x00024400]  (iNative[37900])
+// [0x00024400]  (iNative[37902])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_L1_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8970,7 +8969,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_L1_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_R2
-// [0x00024400]  (iNative[37910])
+// [0x00024400]  (iNative[37912])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_R2_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8978,7 +8977,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_R2_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_R1
-// [0x00024400]  (iNative[37909])
+// [0x00024400]  (iNative[37911])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_R1_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8986,7 +8985,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_R1_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_A
-// [0x00024400]  (iNative[37885])
+// [0x00024400]  (iNative[37887])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_A_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -8994,7 +8993,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_A_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_X
-// [0x00024400]  (iNative[37916])
+// [0x00024400]  (iNative[37918])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_X_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9002,7 +9001,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_X_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Y
-// [0x00024400]  (iNative[37917])
+// [0x00024400]  (iNative[37919])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Y_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9010,7 +9009,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Y_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_B
-// [0x00024400]  (iNative[37888])
+// [0x00024400]  (iNative[37890])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_B_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9018,7 +9017,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_B_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_OK
-// [0x00024400]  (iNative[37783])
+// [0x00024400]  (iNative[37785])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_OK_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9026,7 +9025,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_OK_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_BtnStart
-// [0x00024400]  (iNative[37896])
+// [0x00024400]  (iNative[37898])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_BtnStart_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9034,7 +9033,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_BtnStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_NG
-// [0x00024400]  (iNative[37905])
+// [0x00024400]  (iNative[37907])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_NG_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9042,7 +9041,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_NG_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_OK
-// [0x00024400]  (iNative[37907])
+// [0x00024400]  (iNative[37909])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_OK_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9050,7 +9049,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_OK_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Right
-// [0x00024400]  (iNative[37911])
+// [0x00024400]  (iNative[37913])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Right_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9058,7 +9057,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Right_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Left
-// [0x00024400]  (iNative[37902])
+// [0x00024400]  (iNative[37904])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Left_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9066,7 +9065,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Left_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Down
-// [0x00024400]  (iNative[37898])
+// [0x00024400]  (iNative[37900])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Down_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9074,7 +9073,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Down_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsTrig_Up
-// [0x00024400]  (iNative[37914])
+// [0x00024400]  (iNative[37916])
 struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Up_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9082,7 +9081,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsTrig_Up_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Right
-// [0x00024400]  (iNative[37786])
+// [0x00024400]  (iNative[37788])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Right_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9090,7 +9089,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Right_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Left
-// [0x00024400]  (iNative[37781])
+// [0x00024400]  (iNative[37783])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Left_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9098,7 +9097,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Left_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Down
-// [0x00024400]  (iNative[37777])
+// [0x00024400]  (iNative[37779])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Down_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9106,7 +9105,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Down_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsPress_Up
-// [0x00024400]  (iNative[37788])
+// [0x00024400]  (iNative[37790])
 struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Up_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9114,7 +9113,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsPress_Up_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsRep_Right
-// [0x00024400]  (iNative[37820])
+// [0x00024400]  (iNative[37822])
 struct UREDGfxMoviePlayer_Menu_Base_execIsRep_Right_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9122,7 +9121,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsRep_Right_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsRep_Left
-// [0x00024400]  (iNative[37819])
+// [0x00024400]  (iNative[37821])
 struct UREDGfxMoviePlayer_Menu_Base_execIsRep_Left_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9130,7 +9129,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsRep_Left_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsRep_Down
-// [0x00024400]  (iNative[37817])
+// [0x00024400]  (iNative[37819])
 struct UREDGfxMoviePlayer_Menu_Base_execIsRep_Down_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9138,7 +9137,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsRep_Down_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsRep_Up
-// [0x00024400]  (iNative[37821])
+// [0x00024400]  (iNative[37823])
 struct UREDGfxMoviePlayer_Menu_Base_execIsRep_Up_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -9146,42 +9145,42 @@ struct UREDGfxMoviePlayer_Menu_Base_execIsRep_Up_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.EnableOnUpdateDraw
-// [0x00020400]  (iNative[36669])
+// [0x00020400]  (iNative[36671])
 struct UREDGfxMoviePlayer_Menu_Base_execEnableOnUpdateDraw_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsSceneChanging
-// [0x00020400]  (iNative[37834])
+// [0x00020400]  (iNative[37836])
 struct UREDGfxMoviePlayer_Menu_Base_execIsSceneChanging_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.SceneChangeRequest
-// [0x00020400]  (iNative[39467])
+// [0x00020400]  (iNative[39469])
 struct UREDGfxMoviePlayer_Menu_Base_execSceneChangeRequest_Params
 {
 	uint8_t                                            SceneID;                                          // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.GetMainQuadrant
-// [0x00020400]  (iNative[37092])
+// [0x00020400]  (iNative[37094])
 struct UREDGfxMoviePlayer_Menu_Base_execGetMainQuadrant_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsEventMode
-// [0x00020400]  (iNative[37654])
+// [0x00020400]  (iNative[37656])
 struct UREDGfxMoviePlayer_Menu_Base_execIsEventMode_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.SetNewChallengerEnableFlag
-// [0x00020400]  (iNative[39780])
+// [0x00020400]  (iNative[39782])
 struct UREDGfxMoviePlayer_Menu_Base_execSetNewChallengerEnableFlag_Params
 {
 	uint32_t                                           flag : 1;                                         // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -9194,7 +9193,7 @@ struct UREDGfxMoviePlayer_Menu_Base_execInitialize_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_Menu_Base.IsEditor
-// [0x00020400]  (iNative[13916])
+// [0x00020400]  (iNative[13918])
 struct UREDGfxMoviePlayer_Menu_Base_execIsEditor_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -9249,25 +9248,25 @@ struct UMenu_DebugCharaSelect_execOnInitialize_Params
 };
 
 // Function REDGame.Menu_DebugCharaSelect.UpdateDrawMenu
-// [0x00020400]  (iNative[40649])
+// [0x00020400]  (iNative[40651])
 struct UMenu_DebugCharaSelect_execUpdateDrawMenu_Params
 {
 };
 
 // Function REDGame.Menu_DebugCharaSelect.UpdateMenu
-// [0x00020400]  (iNative[40780])
+// [0x00020400]  (iNative[40782])
 struct UMenu_DebugCharaSelect_execUpdateMenu_Params
 {
 };
 
 // Function REDGame.Menu_DebugCharaSelect.FinishMenu
-// [0x00020400]  (iNative[36860])
+// [0x00020400]  (iNative[36862])
 struct UMenu_DebugCharaSelect_execFinishMenu_Params
 {
 };
 
 // Function REDGame.Menu_DebugCharaSelect.InitMenu
-// [0x00020400]  (iNative[37536])
+// [0x00020400]  (iNative[37538])
 struct UMenu_DebugCharaSelect_execInitMenu_Params
 {
 };
@@ -9292,25 +9291,25 @@ struct UREDGfxMoviePlayer_MenuBriefing_execOnInitialize_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuBriefing.UpdateDrawMenu
-// [0x00020400]  (iNative[40649])
+// [0x00020400]  (iNative[40651])
 struct UREDGfxMoviePlayer_MenuBriefing_execUpdateDrawMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuBriefing.UpdateMenu
-// [0x00020400]  (iNative[40780])
+// [0x00020400]  (iNative[40782])
 struct UREDGfxMoviePlayer_MenuBriefing_execUpdateMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuBriefing.InitMenu
-// [0x00020400]  (iNative[37536])
+// [0x00020400]  (iNative[37538])
 struct UREDGfxMoviePlayer_MenuBriefing_execInitMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.DebugGetCharaModelOffset
-// [0x00420400]  (iNative[36420])
+// [0x00420400]  (iNative[36422])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execDebugGetCharaModelOffset_Params
 {
 	struct FVector                                     pos;                                              // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -9318,25 +9317,25 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execDebugGetCharaModelOffset_Param
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.UpdateDrawNative
-// [0x00020400]  (iNative[40650])
+// [0x00020400]  (iNative[40652])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execUpdateDrawNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.UpdateNative
-// [0x00020400]  (iNative[40788])
+// [0x00020400]  (iNative[40790])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execUpdateNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execInitializeNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsNewQuestExist
-// [0x00020400]  (iNative[37746])
+// [0x00020400]  (iNative[37748])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsNewQuestExist_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9344,7 +9343,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsNewQuestExist_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.CharaID_Int
-// [0x00020400]  (iNative[36144])
+// [0x00020400]  (iNative[36146])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execCharaID_Int_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -9352,7 +9351,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execCharaID_Int_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMysetData
-// [0x00420400]  (iNative[37113])
+// [0x00420400]  (iNative[37115])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMysetData_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9360,7 +9359,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMysetData_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetCardStyleType
-// [0x00020400]  (iNative[37014])
+// [0x00020400]  (iNative[37016])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetCardStyleType_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9368,7 +9367,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetCardStyleType_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SetCardStyleType
-// [0x00020400]  (iNative[39702])
+// [0x00020400]  (iNative[39704])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSetCardStyleType_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9376,7 +9375,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSetCardStyleType_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsSkipAll
-// [0x00020400]  (iNative[37858])
+// [0x00020400]  (iNative[37860])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsSkipAll_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9384,7 +9383,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsSkipAll_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.PopUpTimer_OpenOK
-// [0x00024400]  (iNative[39071])
+// [0x00024400]  (iNative[39073])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execPopUpTimer_OpenOK_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9402,7 +9401,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_eventExternalMOMSetEnemyCursor_Par
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMBonus
-// [0x00020400]  (iNative[37726])
+// [0x00020400]  (iNative[37728])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMBonus_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9410,7 +9409,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMBonus_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMSelectableChara
-// [0x00020400]  (iNative[37732])
+// [0x00020400]  (iNative[37734])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMSelectableChara_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -9418,7 +9417,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMSelectableChara_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMTrigOK
-// [0x00020400]  (iNative[37735])
+// [0x00020400]  (iNative[37737])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMTrigOK_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9426,14 +9425,14 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMTrigOK_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMSetPresetType
-// [0x00020400]  (iNative[38401])
+// [0x00020400]  (iNative[38403])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMSetPresetType_Params
 {
 	int32_t                                            Type;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMOMStarType
-// [0x00020400]  (iNative[37111])
+// [0x00020400]  (iNative[37113])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMOMStarType_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -9441,7 +9440,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMOMStarType_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMGetMedalYama
-// [0x00420400]  (iNative[38382])
+// [0x00420400]  (iNative[38384])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMGetMedalYama_Params
 {
 	float                                              baseVal;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -9450,69 +9449,69 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMGetMedalYama_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMGetTimeCount
-// [0x00020400]  (iNative[38383])
+// [0x00020400]  (iNative[38385])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMGetTimeCount_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMGetBGColorIndex
-// [0x00020400]  (iNative[38380])
+// [0x00020400]  (iNative[38382])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMGetBGColorIndex_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMGetEnemyCharaID
-// [0x00020400]  (iNative[38381])
+// [0x00020400]  (iNative[38383])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMGetEnemyCharaID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMSetEnemyCharaID
-// [0x00020400]  (iNative[38400])
+// [0x00020400]  (iNative[38402])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMSetEnemyCharaID_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMStageSelectCancel
-// [0x00020400]  (iNative[37733])
+// [0x00020400]  (iNative[37735])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMStageSelectCancel_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMStageSelect
-// [0x00020400]  (iNative[38403])
+// [0x00020400]  (iNative[38405])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMStageSelect_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMMenuCloseAll
-// [0x00020400]  (iNative[38392])
+// [0x00020400]  (iNative[38394])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMMenuCloseAll_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMStarted
-// [0x00020400]  (iNative[37734])
+// [0x00020400]  (iNative[37736])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMStarted_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.FinishMOMHelpDisp
-// [0x00020400]  (iNative[36861])
+// [0x00020400]  (iNative[36863])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execFinishMOMHelpDisp_Params
 {
 	uint8_t                                            flag;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMHelpDisp
-// [0x00020400]  (iNative[37728])
+// [0x00020400]  (iNative[37730])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMHelpDisp_Params
 {
 	uint8_t                                            flag;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9520,39 +9519,39 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMHelpDisp_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsMOMPresetDisp
-// [0x00020400]  (iNative[37731])
+// [0x00020400]  (iNative[37733])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsMOMPresetDisp_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMSceneDraw
-// [0x00020400]  (iNative[38395])
+// [0x00020400]  (iNative[38397])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMSceneDraw_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMSceneUpdate
-// [0x00020400]  (iNative[38397])
+// [0x00020400]  (iNative[38399])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMSceneUpdate_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.MOMSceneInit
-// [0x00020400]  (iNative[38396])
+// [0x00020400]  (iNative[38398])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execMOMSceneInit_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SetupArcadeStoryDrama
-// [0x00020400]  (iNative[39816])
+// [0x00020400]  (iNative[39818])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSetupArcadeStoryDrama_Params
 {
 	uint8_t                                            BattleDramaID;                                    // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SaveMemoryCostumeID
-// [0x00020400]  (iNative[39458])
+// [0x00020400]  (iNative[39460])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSaveMemoryCostumeID_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9561,7 +9560,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSaveMemoryCostumeID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SaveMemoryStylish
-// [0x00020400]  (iNative[39459])
+// [0x00020400]  (iNative[39461])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSaveMemoryStylish_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9569,7 +9568,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSaveMemoryStylish_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryCostumeID
-// [0x00020400]  (iNative[37099])
+// [0x00020400]  (iNative[37101])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryCostumeID_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9578,7 +9577,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryCostumeID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryStylish
-// [0x00020400]  (iNative[37100])
+// [0x00020400]  (iNative[37102])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryStylish_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9586,7 +9585,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryStylish_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SaveMemoryBGIDAndBGMID
-// [0x00020400]  (iNative[39456])
+// [0x00020400]  (iNative[39458])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSaveMemoryBGIDAndBGMID_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9595,7 +9594,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSaveMemoryBGIDAndBGMID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SaveMemoryCharaIDAndColorID
-// [0x00020400]  (iNative[39457])
+// [0x00020400]  (iNative[39459])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSaveMemoryCharaIDAndColorID_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9604,7 +9603,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSaveMemoryCharaIDAndColorID_Pa
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryBGMID
-// [0x00020400]  (iNative[37096])
+// [0x00020400]  (iNative[37098])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryBGMID_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9612,7 +9611,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryBGMID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryBGID
-// [0x00020400]  (iNative[37095])
+// [0x00020400]  (iNative[37097])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryBGID_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9620,7 +9619,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryBGID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryColorID
-// [0x00020400]  (iNative[37098])
+// [0x00020400]  (iNative[37100])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryColorID_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9629,7 +9628,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryColorID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetMemoryCharaID
-// [0x00020400]  (iNative[37097])
+// [0x00020400]  (iNative[37099])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryCharaID_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9637,7 +9636,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetMemoryCharaID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsKeyConfig_Active
-// [0x00020400]  (iNative[37695])
+// [0x00020400]  (iNative[37697])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsKeyConfig_Active_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9645,7 +9644,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsKeyConfig_Active_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.KeyConfig_GetType
-// [0x00020400]  (iNative[37951])
+// [0x00020400]  (iNative[37953])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execKeyConfig_GetType_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9653,14 +9652,14 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execKeyConfig_GetType_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.KeyConfig_Open
-// [0x00020400]  (iNative[37952])
+// [0x00020400]  (iNative[37954])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execKeyConfig_Open_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.Network_IsStylish
-// [0x00024400]  (iNative[38730])
+// [0x00024400]  (iNative[38732])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execNetwork_IsStylish_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -9671,7 +9670,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execNetwork_IsStylish_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.Network_GetCostumeID
-// [0x00024400]  (iNative[38729])
+// [0x00024400]  (iNative[38731])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execNetwork_GetCostumeID_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -9682,7 +9681,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execNetwork_GetCostumeID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.Network_GetColorID
-// [0x00024400]  (iNative[38728])
+// [0x00024400]  (iNative[38730])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execNetwork_GetColorID_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -9693,7 +9692,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execNetwork_GetColorID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.Network_SetMyChara
-// [0x00024400]  (iNative[38731])
+// [0x00024400]  (iNative[38733])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execNetwork_SetMyChara_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -9709,21 +9708,21 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execNetwork_SetMyChara_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsEvent_StageSelectLock
-// [0x00020400]  (iNative[37653])
+// [0x00020400]  (iNative[37655])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsEvent_StageSelectLock_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsEvent_StageSelectEnable
-// [0x00020400]  (iNative[37652])
+// [0x00020400]  (iNative[37654])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsEvent_StageSelectEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.TrialGetAchievementRate
-// [0x00420400]  (iNative[40284])
+// [0x00420400]  (iNative[40286])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execTrialGetAchievementRate_Params
 {
 	int32_t                                            Num;                                              // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -9731,28 +9730,28 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execTrialGetAchievementRate_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.TrialGetEnemyChara
-// [0x00020400]  (iNative[40285])
+// [0x00020400]  (iNative[40287])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execTrialGetEnemyChara_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.TrialSelectNG
-// [0x00020400]  (iNative[40287])
+// [0x00020400]  (iNative[40289])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execTrialSelectNG_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.TrialSelectOK
-// [0x00020400]  (iNative[40288])
+// [0x00020400]  (iNative[40290])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execTrialSelectOK_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.TrialSelectOpen
-// [0x00020400]  (iNative[40289])
+// [0x00020400]  (iNative[40291])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execTrialSelectOpen_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9760,14 +9759,14 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execTrialSelectOpen_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetColorMax
-// [0x00020400]  (iNative[37022])
+// [0x00020400]  (iNative[37024])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetColorMax_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetVicinityColor
-// [0x00420400]  (iNative[37191])
+// [0x00420400]  (iNative[37193])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetVicinityColor_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9780,7 +9779,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetVicinityColor_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsForbiddenCustomMenuOK
-// [0x00020400]  (iNative[37666])
+// [0x00020400]  (iNative[37668])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsForbiddenCustomMenuOK_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9788,7 +9787,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsForbiddenCustomMenuOK_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.CloseCustomMenu
-// [0x00024400]  (iNative[36229])
+// [0x00024400]  (iNative[36231])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execCloseCustomMenu_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9796,7 +9795,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execCloseCustomMenu_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SetCustomMenuVal_KeyType
-// [0x00020400]  (iNative[39721])
+// [0x00020400]  (iNative[39723])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSetCustomMenuVal_KeyType_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9804,7 +9803,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSetCustomMenuVal_KeyType_Param
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SetCustomMenuVal_Color
-// [0x00020400]  (iNative[39720])
+// [0x00020400]  (iNative[39722])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSetCustomMenuVal_Color_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9812,7 +9811,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSetCustomMenuVal_Color_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetCustomMenuVal_KeyType
-// [0x00020400]  (iNative[37040])
+// [0x00020400]  (iNative[37042])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetCustomMenuVal_KeyType_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9820,7 +9819,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetCustomMenuVal_KeyType_Param
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetCustomMenuVal_Color
-// [0x00020400]  (iNative[37039])
+// [0x00020400]  (iNative[37041])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetCustomMenuVal_Color_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9828,7 +9827,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetCustomMenuVal_Color_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.OpenCustomMenu
-// [0x00020400]  (iNative[38827])
+// [0x00020400]  (iNative[38829])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execOpenCustomMenu_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9837,14 +9836,14 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execOpenCustomMenu_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.RequestInfoBar
-// [0x00020400]  (iNative[39367])
+// [0x00020400]  (iNative[39369])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execRequestInfoBar_Params
 {
 	class FString                                      TextID;                                           // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.DelayGarbageCollection
-// [0x00020400]  (iNative[36523])
+// [0x00020400]  (iNative[36525])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execDelayGarbageCollection_Params
 {
 };
@@ -9858,20 +9857,20 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_eventGetSelectCharaID_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.UpdateBookKeepingInfo
-// [0x00020400]  (iNative[40603])
+// [0x00020400]  (iNative[40605])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execUpdateBookKeepingInfo_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.UpdateCardInfoFromGameCommon
-// [0x00020400]  (iNative[40613])
+// [0x00020400]  (iNative[40615])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execUpdateCardInfoFromGameCommon_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.IsSelectableColor
-// [0x00020400]  (iNative[37842])
+// [0x00020400]  (iNative[37844])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsSelectableColor_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9881,7 +9880,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execIsSelectableColor_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetCostumeFromCard
-// [0x00020400]  (iNative[37030])
+// [0x00020400]  (iNative[37032])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetCostumeFromCard_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9890,7 +9889,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetCostumeFromCard_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetColorFromCard
-// [0x00020400]  (iNative[37020])
+// [0x00020400]  (iNative[37022])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetColorFromCard_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9905,7 +9904,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execCardFadeOut_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.InitCardLoad
-// [0x00020400]  (iNative[37510])
+// [0x00020400]  (iNative[37512])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execInitCardLoad_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9924,14 +9923,14 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execCommonSE_OK_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetKeyAllocationTypeNum
-// [0x00020400]  (iNative[37078])
+// [0x00020400]  (iNative[37080])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetKeyAllocationTypeNum_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.GetKeyAllocationType
-// [0x00020400]  (iNative[37077])
+// [0x00020400]  (iNative[37079])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetKeyAllocationType_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -9939,7 +9938,7 @@ struct UREDGfxMoviePlayer_MenuCharaSelectBase_execGetKeyAllocationType_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuCharaSelectBase.SetKeyAllocationType
-// [0x00020400]  (iNative[39760])
+// [0x00020400]  (iNative[39762])
 struct UREDGfxMoviePlayer_MenuCharaSelectBase_execSetKeyAllocationType_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10057,14 +10056,14 @@ struct UREDGfxMoviePlayer_MenuModeSelect_execCheckGameModeFromTestMode_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuModeSelect.MOM_GetModeSelectText
-// [0x00020400]  (iNative[38377])
+// [0x00020400]  (iNative[38379])
 struct UREDGfxMoviePlayer_MenuModeSelect_execMOM_GetModeSelectText_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuModeSelect.CheckGameModeVersion
-// [0x00020400]  (iNative[36199])
+// [0x00020400]  (iNative[36201])
 struct UREDGfxMoviePlayer_MenuModeSelect_execCheckGameModeVersion_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10073,7 +10072,7 @@ struct UREDGfxMoviePlayer_MenuModeSelect_execCheckGameModeVersion_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuModeSelect.GetSelectModeFromCard
-// [0x00020400]  (iNative[37164])
+// [0x00020400]  (iNative[37166])
 struct UREDGfxMoviePlayer_MenuModeSelect_execGetSelectModeFromCard_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10081,7 +10080,7 @@ struct UREDGfxMoviePlayer_MenuModeSelect_execGetSelectModeFromCard_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuModeSelect.SetSelectModeForCard
-// [0x00020400]  (iNative[39804])
+// [0x00020400]  (iNative[39806])
 struct UREDGfxMoviePlayer_MenuModeSelect_execSetSelectModeForCard_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10198,7 +10197,7 @@ struct UREDGfxMoviePlayer_MenuMOMPreset_execOpenMessageBox_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMOMPreset.DrawUpdateNative
-// [0x00020400]  (iNative[36605])
+// [0x00020400]  (iNative[36607])
 struct UREDGfxMoviePlayer_MenuMOMPreset_execDrawUpdateNative_Params
 {
 };
@@ -10276,7 +10275,7 @@ struct UREDGfxMoviePlayer_MenuQuestList_execStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuQuestList.GetQuestList
-// [0x00420400]  (iNative[37144])
+// [0x00420400]  (iNative[37146])
 struct UREDGfxMoviePlayer_MenuQuestList_execGetQuestList_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10509,7 +10508,7 @@ struct UREDGfxMoviePlayer_MenuReadCard_execStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_ExclusiveError
-// [0x00020400]  (iNative[36180])
+// [0x00020400]  (iNative[36182])
 struct UREDGfxMoviePlayer_MenuReadCard_execCheck_ExclusiveError_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10517,21 +10516,21 @@ struct UREDGfxMoviePlayer_MenuReadCard_execCheck_ExclusiveError_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_Online
-// [0x00020400]  (iNative[36181])
+// [0x00020400]  (iNative[36183])
 struct UREDGfxMoviePlayer_MenuReadCard_execCheck_Online_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_SingleNode
-// [0x00020400]  (iNative[36184])
+// [0x00020400]  (iNative[36186])
 struct UREDGfxMoviePlayer_MenuReadCard_execCheck_SingleNode_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Req_SetupCard
-// [0x00020400]  (iNative[39345])
+// [0x00020400]  (iNative[39347])
 struct UREDGfxMoviePlayer_MenuReadCard_execReq_SetupCard_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10540,7 +10539,7 @@ struct UREDGfxMoviePlayer_MenuReadCard_execReq_SetupCard_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_EntryCard
-// [0x00420400]  (iNative[36179])
+// [0x00420400]  (iNative[36181])
 struct UREDGfxMoviePlayer_MenuReadCard_execCheck_EntryCard_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10549,14 +10548,14 @@ struct UREDGfxMoviePlayer_MenuReadCard_execCheck_EntryCard_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Req_EntryCard
-// [0x00020400]  (iNative[39342])
+// [0x00020400]  (iNative[39344])
 struct UREDGfxMoviePlayer_MenuReadCard_execReq_EntryCard_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_ReadCard
-// [0x00420400]  (iNative[36182])
+// [0x00420400]  (iNative[36184])
 struct UREDGfxMoviePlayer_MenuReadCard_execCheck_ReadCard_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10566,7 +10565,7 @@ struct UREDGfxMoviePlayer_MenuReadCard_execCheck_ReadCard_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Check_ReadCardStart
-// [0x00020400]  (iNative[36183])
+// [0x00020400]  (iNative[36185])
 struct UREDGfxMoviePlayer_MenuReadCard_execCheck_ReadCardStart_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10574,14 +10573,14 @@ struct UREDGfxMoviePlayer_MenuReadCard_execCheck_ReadCardStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Req_ReadCardSkip
-// [0x00020400]  (iNative[39343])
+// [0x00020400]  (iNative[39345])
 struct UREDGfxMoviePlayer_MenuReadCard_execReq_ReadCardSkip_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReadCard.Req_ReadCardStart
-// [0x00020400]  (iNative[39344])
+// [0x00020400]  (iNative[39346])
 struct UREDGfxMoviePlayer_MenuReadCard_execReq_ReadCardStart_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10665,19 +10664,19 @@ struct UREDGfxMoviePlayer_MenuDebugMenu_execOnInitialize_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuDebugMenu.UpdateDrawDebugMenu
-// [0x00020400]  (iNative[40648])
+// [0x00020400]  (iNative[40650])
 struct UREDGfxMoviePlayer_MenuDebugMenu_execUpdateDrawDebugMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuDebugMenu.UpdateDebugMenu
-// [0x00020400]  (iNative[40641])
+// [0x00020400]  (iNative[40643])
 struct UREDGfxMoviePlayer_MenuDebugMenu_execUpdateDebugMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuDebugMenu.InitDebugMenu
-// [0x00020400]  (iNative[37511])
+// [0x00020400]  (iNative[37513])
 struct UREDGfxMoviePlayer_MenuDebugMenu_execInitDebugMenu_Params
 {
 };
@@ -10851,7 +10850,7 @@ struct UREDGfxMoviePlayer_MenuGallery_eventGetFactorPrice_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.PopUp_OpenYesNo_Custom
-// [0x00020400]  (iNative[39066])
+// [0x00020400]  (iNative[39068])
 struct UREDGfxMoviePlayer_MenuGallery_execPopUp_OpenYesNo_Custom_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -10860,20 +10859,20 @@ struct UREDGfxMoviePlayer_MenuGallery_execPopUp_OpenYesNo_Custom_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.SetupArcadeOPED
-// [0x00020400]  (iNative[39815])
+// [0x00020400]  (iNative[39817])
 struct UREDGfxMoviePlayer_MenuGallery_execSetupArcadeOPED_Params
 {
 	uint8_t                                            BattleDramaID;                                    // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.StopGalleryVoice
-// [0x00020400]  (iNative[40098])
+// [0x00020400]  (iNative[40100])
 struct UREDGfxMoviePlayer_MenuGallery_execStopGalleryVoice_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.PlayGalleryVoice
-// [0x00024400]  (iNative[39026])
+// [0x00024400]  (iNative[39028])
 struct UREDGfxMoviePlayer_MenuGallery_execPlayGalleryVoice_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -10881,13 +10880,13 @@ struct UREDGfxMoviePlayer_MenuGallery_execPlayGalleryVoice_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.StopMovie
-// [0x00020400]  (iNative[28955])
+// [0x00020400]  (iNative[28957])
 struct UREDGfxMoviePlayer_MenuGallery_execStopMovie_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.IsMoviePlaying
-// [0x00020400]  (iNative[37737])
+// [0x00020400]  (iNative[37739])
 struct UREDGfxMoviePlayer_MenuGallery_execIsMoviePlaying_Params
 {
 	class FString                                      MovieName;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -10895,7 +10894,7 @@ struct UREDGfxMoviePlayer_MenuGallery_execIsMoviePlaying_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.IsMovieFinish
-// [0x00020400]  (iNative[37736])
+// [0x00020400]  (iNative[37738])
 struct UREDGfxMoviePlayer_MenuGallery_execIsMovieFinish_Params
 {
 	class FString                                      MovieName;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -10903,14 +10902,14 @@ struct UREDGfxMoviePlayer_MenuGallery_execIsMovieFinish_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.StartMovie
-// [0x00020400]  (iNative[40024])
+// [0x00020400]  (iNative[40026])
 struct UREDGfxMoviePlayer_MenuGallery_execStartMovie_Params
 {
 	class FString                                      MovieName;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.CursorDraw
-// [0x00020400]  (iNative[36376])
+// [0x00020400]  (iNative[36378])
 struct UREDGfxMoviePlayer_MenuGallery_execCursorDraw_Params
 {
 	int32_t                                            X;                                                // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -10918,7 +10917,7 @@ struct UREDGfxMoviePlayer_MenuGallery_execCursorDraw_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.ThumbnailDraw
-// [0x00020400]  (iNative[40221])
+// [0x00020400]  (iNative[40223])
 struct UREDGfxMoviePlayer_MenuGallery_execThumbnailDraw_Params
 {
 	int32_t                                            Category;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -10929,13 +10928,13 @@ struct UREDGfxMoviePlayer_MenuGallery_execThumbnailDraw_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.ThumbnailMaskDraw
-// [0x00020400]  (iNative[40222])
+// [0x00020400]  (iNative[40224])
 struct UREDGfxMoviePlayer_MenuGallery_execThumbnailMaskDraw_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.UpdateViewerCurrent
-// [0x00020400]  (iNative[40880])
+// [0x00020400]  (iNative[40882])
 struct UREDGfxMoviePlayer_MenuGallery_execUpdateViewerCurrent_Params
 {
 	int32_t                                            Add;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -10943,7 +10942,7 @@ struct UREDGfxMoviePlayer_MenuGallery_execUpdateViewerCurrent_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.UpdateViewerAxis
-// [0x00020400]  (iNative[40879])
+// [0x00020400]  (iNative[40881])
 struct UREDGfxMoviePlayer_MenuGallery_execUpdateViewerAxis_Params
 {
 	float                                              X;                                                // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -10952,28 +10951,28 @@ struct UREDGfxMoviePlayer_MenuGallery_execUpdateViewerAxis_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.InitViewer
-// [0x00020400]  (iNative[37545])
+// [0x00020400]  (iNative[37547])
 struct UREDGfxMoviePlayer_MenuGallery_execInitViewer_Params
 {
 	class FString                                      PackageName;                                      // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.IsLoading
-// [0x00020400]  (iNative[37703])
+// [0x00020400]  (iNative[37705])
 struct UREDGfxMoviePlayer_MenuGallery_execIsLoading_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.PointPayment
-// [0x00020400]  (iNative[39054])
+// [0x00020400]  (iNative[39056])
 struct UREDGfxMoviePlayer_MenuGallery_execPointPayment_Params
 {
 	int32_t                                            Point;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.CheckPurchase
-// [0x00020400]  (iNative[36204])
+// [0x00020400]  (iNative[36206])
 struct UREDGfxMoviePlayer_MenuGallery_execCheckPurchase_Params
 {
 	int32_t                                            Point;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -10981,7 +10980,7 @@ struct UREDGfxMoviePlayer_MenuGallery_execCheckPurchase_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.UpdateFactorState
-// [0x00020400]  (iNative[40669])
+// [0x00020400]  (iNative[40671])
 struct UREDGfxMoviePlayer_MenuGallery_execUpdateFactorState_Params
 {
 	int32_t                                            Category;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -10990,7 +10989,7 @@ struct UREDGfxMoviePlayer_MenuGallery_execUpdateFactorState_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.CheckFactorDecision
-// [0x00020400]  (iNative[36195])
+// [0x00020400]  (iNative[36197])
 struct UREDGfxMoviePlayer_MenuGallery_execCheckFactorDecision_Params
 {
 	int32_t                                            Category;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -10999,7 +10998,7 @@ struct UREDGfxMoviePlayer_MenuGallery_execCheckFactorDecision_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.GetUserOpenPer
-// [0x00420400]  (iNative[37189])
+// [0x00420400]  (iNative[37191])
 struct UREDGfxMoviePlayer_MenuGallery_execGetUserOpenPer_Params
 {
 	int32_t                                            Open;                                             // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -11008,35 +11007,35 @@ struct UREDGfxMoviePlayer_MenuGallery_execGetUserOpenPer_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.GetUserHavePoint
-// [0x00020400]  (iNative[37188])
+// [0x00020400]  (iNative[37190])
 struct UREDGfxMoviePlayer_MenuGallery_execGetUserHavePoint_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execViewer
-// [0x00020400]  (iNative[36783])
+// [0x00020400]  (iNative[36785])
 struct UREDGfxMoviePlayer_MenuGallery_execexecViewer_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execScrollBar
-// [0x00020400]  (iNative[36781])
+// [0x00020400]  (iNative[36783])
 struct UREDGfxMoviePlayer_MenuGallery_execexecScrollBar_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execCtrlBar
-// [0x00020400]  (iNative[36773])
+// [0x00020400]  (iNative[36775])
 struct UREDGfxMoviePlayer_MenuGallery_execexecCtrlBar_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execInfoBar
-// [0x00020400]  (iNative[36778])
+// [0x00020400]  (iNative[36780])
 struct UREDGfxMoviePlayer_MenuGallery_execexecInfoBar_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -11045,7 +11044,7 @@ struct UREDGfxMoviePlayer_MenuGallery_execexecInfoBar_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execFactorName
-// [0x00020400]  (iNative[36776])
+// [0x00020400]  (iNative[36778])
 struct UREDGfxMoviePlayer_MenuGallery_execexecFactorName_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -11053,14 +11052,14 @@ struct UREDGfxMoviePlayer_MenuGallery_execexecFactorName_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.execDrawNative
-// [0x00020400]  (iNative[36774])
+// [0x00020400]  (iNative[36776])
 struct UREDGfxMoviePlayer_MenuGallery_execexecDrawNative_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGallery.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct UREDGfxMoviePlayer_MenuGallery_execInitializeNative_Params
 {
 };
@@ -11086,19 +11085,19 @@ struct UREDGfxMoviePlayer_MenuGameOver_execOnInitialize_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGameOver.EndMenu
-// [0x00020400]  (iNative[36682])
+// [0x00020400]  (iNative[36684])
 struct UREDGfxMoviePlayer_MenuGameOver_execEndMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGameOver.UpdateMenu
-// [0x00020400]  (iNative[40780])
+// [0x00020400]  (iNative[40782])
 struct UREDGfxMoviePlayer_MenuGameOver_execUpdateMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuGameOver.InitMenu
-// [0x00020400]  (iNative[37536])
+// [0x00020400]  (iNative[37538])
 struct UREDGfxMoviePlayer_MenuGameOver_execInitMenu_Params
 {
 };
@@ -11197,61 +11196,61 @@ struct UREDGfxMoviePlayer_MenuInterlude_execBGMRequest_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsPlayerPlateDebug
-// [0x00020400]  (iNative[37772])
+// [0x00020400]  (iNative[37774])
 struct UREDGfxMoviePlayer_MenuInterlude_execIsPlayerPlateDebug_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.MOM_FinishDispBaseRule
-// [0x00020400]  (iNative[38376])
+// [0x00020400]  (iNative[38378])
 struct UREDGfxMoviePlayer_MenuInterlude_execMOM_FinishDispBaseRule_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.MOM_IsDispBaseRule
-// [0x00020400]  (iNative[38378])
+// [0x00020400]  (iNative[38380])
 struct UREDGfxMoviePlayer_MenuInterlude_execMOM_IsDispBaseRule_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsVSLoadComplete
-// [0x00020400]  (iNative[37926])
+// [0x00020400]  (iNative[37928])
 struct UREDGfxMoviePlayer_MenuInterlude_execIsVSLoadComplete_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.UpdateVSLoadPercent
-// [0x00020400]  (iNative[40882])
+// [0x00020400]  (iNative[40884])
 struct UREDGfxMoviePlayer_MenuInterlude_execUpdateVSLoadPercent_Params
 {
 	int32_t                                            Percent;                                          // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.RankMatch_IsUploadRCodeEnd
-// [0x00020400]  (iNative[39203])
+// [0x00020400]  (iNative[39205])
 struct UREDGfxMoviePlayer_MenuInterlude_execRankMatch_IsUploadRCodeEnd_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.RankMatch_UploadRCode
-// [0x00020400]  (iNative[39204])
+// [0x00020400]  (iNative[39206])
 struct UREDGfxMoviePlayer_MenuInterlude_execRankMatch_UploadRCode_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsRankMatchBattle
-// [0x00020400]  (iNative[37809])
+// [0x00020400]  (iNative[37811])
 struct UREDGfxMoviePlayer_MenuInterlude_execIsRankMatchBattle_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsNinteisen
-// [0x00020400]  (iNative[37749])
+// [0x00020400]  (iNative[37751])
 struct UREDGfxMoviePlayer_MenuInterlude_execIsNinteisen_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -11259,19 +11258,19 @@ struct UREDGfxMoviePlayer_MenuInterlude_execIsNinteisen_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.VSStartTrigger
-// [0x00020400]  (iNative[40984])
+// [0x00020400]  (iNative[40986])
 struct UREDGfxMoviePlayer_MenuInterlude_execVSStartTrigger_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.UpdateDraw
-// [0x00020400]  (iNative[40647])
+// [0x00020400]  (iNative[40649])
 struct UREDGfxMoviePlayer_MenuInterlude_execUpdateDraw_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsRankdownMatch
-// [0x00020400]  (iNative[37805])
+// [0x00020400]  (iNative[37807])
 struct UREDGfxMoviePlayer_MenuInterlude_execIsRankdownMatch_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -11279,7 +11278,7 @@ struct UREDGfxMoviePlayer_MenuInterlude_execIsRankdownMatch_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsRankupMatch
-// [0x00020400]  (iNative[37813])
+// [0x00020400]  (iNative[37815])
 struct UREDGfxMoviePlayer_MenuInterlude_execIsRankupMatch_Params
 {
 	uint8_t                                            Player;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -11287,14 +11286,14 @@ struct UREDGfxMoviePlayer_MenuInterlude_execIsRankupMatch_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.ProcAsyncLoading
-// [0x00020401]  (iNative[39144])
+// [0x00020401]  (iNative[39146])
 struct UREDGfxMoviePlayer_MenuInterlude_execProcAsyncLoading_Params
 {
 	float                                              Time;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuInterlude.IsAsyncLoading
-// [0x00020401]  (iNative[37597])
+// [0x00020401]  (iNative[37599])
 struct UREDGfxMoviePlayer_MenuInterlude_execIsAsyncLoading_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -11583,7 +11582,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu_execsetupMainFocus_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncTournament
-// [0x00420400]  (iNative[40687])
+// [0x00420400]  (iNative[40689])
 struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncTournament_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -11592,7 +11591,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncTournament_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncLinkStore
-// [0x00020400]  (iNative[40681])
+// [0x00020400]  (iNative[40683])
 struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncLinkStore_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -11600,7 +11599,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncLinkStore_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncMOM
-// [0x00020400]  (iNative[40682])
+// [0x00020400]  (iNative[40684])
 struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncMOM_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -11608,7 +11607,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncMOM_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncReplay
-// [0x00020400]  (iNative[40684])
+// [0x00020400]  (iNative[40686])
 struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncReplay_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -11616,7 +11615,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncReplay_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncStory2
-// [0x00420400]  (iNative[40686])
+// [0x00420400]  (iNative[40688])
 struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncStory2_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -11625,7 +11624,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncStory2_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UpdateFuncStory
-// [0x00020400]  (iNative[40685])
+// [0x00020400]  (iNative[40687])
 struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncStory_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -11633,35 +11632,35 @@ struct UREDGfxMoviePlayer_MenuMainMenu_execUpdateFuncStory_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsR2LobbyEnable
-// [0x00020400]  (iNative[37801])
+// [0x00020400]  (iNative[37803])
 struct UREDGfxMoviePlayer_MenuMainMenu_execIsR2LobbyEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsRankMatchEntry
-// [0x00020400]  (iNative[37811])
+// [0x00020400]  (iNative[37813])
 struct UREDGfxMoviePlayer_MenuMainMenu_execIsRankMatchEntry_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsGalleryPlayEnable
-// [0x00020400]  (iNative[37674])
+// [0x00020400]  (iNative[37676])
 struct UREDGfxMoviePlayer_MenuMainMenu_execIsGalleryPlayEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsStoryPlayEnable
-// [0x00020400]  (iNative[37872])
+// [0x00020400]  (iNative[37874])
 struct UREDGfxMoviePlayer_MenuMainMenu_execIsStoryPlayEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsModeDecisionEnable
-// [0x00020400]  (iNative[37724])
+// [0x00020400]  (iNative[37726])
 struct UREDGfxMoviePlayer_MenuMainMenu_execIsModeDecisionEnable_Params
 {
 	int32_t                                            Main;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -11670,92 +11669,92 @@ struct UREDGfxMoviePlayer_MenuMainMenu_execIsModeDecisionEnable_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsRegionJP_MainMenu
-// [0x00020400]  (iNative[37816])
+// [0x00020400]  (iNative[37818])
 struct UREDGfxMoviePlayer_MenuMainMenu_execIsRegionJP_MainMenu_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.LinkStoreJumpPopup
-// [0x00020400]  (iNative[38007])
+// [0x00020400]  (iNative[38009])
 struct UREDGfxMoviePlayer_MenuMainMenu_execLinkStoreJumpPopup_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.UnLockMessagePopup
-// [0x00020400]  (iNative[40584])
+// [0x00020400]  (iNative[40586])
 struct UREDGfxMoviePlayer_MenuMainMenu_execUnLockMessagePopup_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.CheckRespectDisablePopup
-// [0x00020400]  (iNative[36205])
+// [0x00020400]  (iNative[36207])
 struct UREDGfxMoviePlayer_MenuMainMenu_execCheckRespectDisablePopup_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.IsRespectEnable
-// [0x00020400]  (iNative[37824])
+// [0x00020400]  (iNative[37826])
 struct UREDGfxMoviePlayer_MenuMainMenu_execIsRespectEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.ModeDecisionLightBar
-// [0x00020400]  (iNative[38358])
+// [0x00020400]  (iNative[38360])
 struct UREDGfxMoviePlayer_MenuMainMenu_execModeDecisionLightBar_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.SetupCardData
-// [0x00020400]  (iNative[39823])
+// [0x00020400]  (iNative[39825])
 struct UREDGfxMoviePlayer_MenuMainMenu_execSetupCardData_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.PopUpMenuInit
-// [0x00020400]  (iNative[39070])
+// [0x00020400]  (iNative[39072])
 struct UREDGfxMoviePlayer_MenuMainMenu_execPopUpMenuInit_Params
 {
 	int32_t                                            Type;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.execCtrlBar
-// [0x00020400]  (iNative[36773])
+// [0x00020400]  (iNative[36775])
 struct UREDGfxMoviePlayer_MenuMainMenu_execexecCtrlBar_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.execInfoBar
-// [0x00020400]  (iNative[36778])
+// [0x00020400]  (iNative[36780])
 struct UREDGfxMoviePlayer_MenuMainMenu_execexecInfoBar_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.execDrawNative
-// [0x00020400]  (iNative[36774])
+// [0x00020400]  (iNative[36776])
 struct UREDGfxMoviePlayer_MenuMainMenu_execexecDrawNative_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.execUpdateNative
-// [0x00020400]  (iNative[36782])
+// [0x00020400]  (iNative[36784])
 struct UREDGfxMoviePlayer_MenuMainMenu_execexecUpdateNative_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.InitializeInMainMenu
-// [0x00020400]  (iNative[37522])
+// [0x00020400]  (iNative[37524])
 struct UREDGfxMoviePlayer_MenuMainMenu_execInitializeInMainMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct UREDGfxMoviePlayer_MenuMainMenu_execInitializeNative_Params
 {
 };
@@ -12259,7 +12258,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu20_execStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.IsNewMMIndex
-// [0x00020400]  (iNative[37745])
+// [0x00020400]  (iNative[37747])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execIsNewMMIndex_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -12267,7 +12266,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu20_execIsNewMMIndex_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.IsModeDecisionEnable
-// [0x00020400]  (iNative[37724])
+// [0x00020400]  (iNative[37726])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execIsModeDecisionEnable_Params
 {
 	int32_t                                            Main;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -12276,26 +12275,26 @@ struct UREDGfxMoviePlayer_MenuMainMenu20_execIsModeDecisionEnable_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.IsRespectEnable
-// [0x00020400]  (iNative[37824])
+// [0x00020400]  (iNative[37826])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execIsRespectEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.CheckFirstBattlePopup
-// [0x00020400]  (iNative[36196])
+// [0x00020400]  (iNative[36198])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execCheckFirstBattlePopup_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.FirstBattleSelect
-// [0x00020400]  (iNative[36865])
+// [0x00020400]  (iNative[36867])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execFirstBattleSelect_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.UpdateFuncFigure
-// [0x00020400]  (iNative[40679])
+// [0x00020400]  (iNative[40681])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execUpdateFuncFigure_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -12303,7 +12302,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu20_execUpdateFuncFigure_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.UpdateFuncBattleConfig
-// [0x00420400]  (iNative[40678])
+// [0x00420400]  (iNative[40680])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execUpdateFuncBattleConfig_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -12313,7 +12312,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu20_execUpdateFuncBattleConfig_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.UpdateFuncNews
-// [0x00020400]  (iNative[40683])
+// [0x00020400]  (iNative[40685])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execUpdateFuncNews_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -12321,7 +12320,7 @@ struct UREDGfxMoviePlayer_MenuMainMenu20_execUpdateFuncNews_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.UpdateFuncIdleEA
-// [0x00420400]  (iNative[40680])
+// [0x00420400]  (iNative[40682])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execUpdateFuncIdleEA_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -12330,41 +12329,41 @@ struct UREDGfxMoviePlayer_MenuMainMenu20_execUpdateFuncIdleEA_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.execDrawNews
-// [0x00020400]  (iNative[36775])
+// [0x00020400]  (iNative[36777])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execexecDrawNews_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.execCtrlBar
-// [0x00020400]  (iNative[36773])
+// [0x00020400]  (iNative[36775])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execexecCtrlBar_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.execDrawNative
-// [0x00020400]  (iNative[36774])
+// [0x00020400]  (iNative[36776])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execexecDrawNative_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.execUpdateNative
-// [0x00020400]  (iNative[36782])
+// [0x00020400]  (iNative[36784])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execexecUpdateNative_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.InitializeInMainMenu
-// [0x00020400]  (iNative[37522])
+// [0x00020400]  (iNative[37524])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execInitializeInMainMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuMainMenu20.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct UREDGfxMoviePlayer_MenuMainMenu20_execInitializeNative_Params
 {
 };
@@ -12509,74 +12508,74 @@ struct UREDGfxMoviePlayer_MenuNetwork_Base_execStartMenu_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.IsCancelRankMatchEntry
-// [0x00020400]  (iNative[37614])
+// [0x00020400]  (iNative[37616])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execIsCancelRankMatchEntry_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.CancelRankMatchEntry
-// [0x00020400]  (iNative[36064])
+// [0x00020400]  (iNative[36066])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execCancelRankMatchEntry_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.IsRankMatchEntry
-// [0x00020400]  (iNative[37811])
+// [0x00020400]  (iNative[37813])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execIsRankMatchEntry_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.RealtimeMultiPlayNotify
-// [0x00020400]  (iNative[39230])
+// [0x00020400]  (iNative[39232])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execRealtimeMultiPlayNotify_Params
 {
 	uint32_t                                           isAsync : 1;                                      // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.IsBannedChat
-// [0x00020400]  (iNative[37598])
+// [0x00020400]  (iNative[37600])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execIsBannedChat_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.IsDisableLobby
-// [0x00020400]  (iNative[37636])
+// [0x00020400]  (iNative[37638])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execIsDisableLobby_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.IsWaitMessageActive
-// [0x00020400]  (iNative[37927])
+// [0x00020400]  (iNative[37929])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execIsWaitMessageActive_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.StopWaitMessage
-// [0x00020400]  (iNative[40109])
+// [0x00020400]  (iNative[40111])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execStopWaitMessage_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.ReqWaitMessage
-// [0x00020400]  (iNative[39370])
+// [0x00020400]  (iNative[39372])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execReqWaitMessage_Params
 {
 	class FString                                      MessageId;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.MenuWindoeCloseAll
-// [0x00020400]  (iNative[38279])
+// [0x00020400]  (iNative[38281])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execMenuWindoeCloseAll_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.UpdateTextChatInput
-// [0x00020400]  (iNative[40867])
+// [0x00020400]  (iNative[40869])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execUpdateTextChatInput_Params
 {
 	uint32_t                                           IsLobby : 1;                                      // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -12584,7 +12583,7 @@ struct UREDGfxMoviePlayer_MenuNetwork_Base_execUpdateTextChatInput_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetwork_Base.InitTextChat
-// [0x00020400]  (iNative[37544])
+// [0x00020400]  (iNative[37546])
 struct UREDGfxMoviePlayer_MenuNetwork_Base_execInitTextChat_Params
 {
 };
@@ -12722,21 +12721,21 @@ struct UREDGfxMoviePlayer_MenuNetworkInit_execIsFromInvite_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.GetSealingNetworkMessage
-// [0x00020400]  (iNative[37162])
+// [0x00020400]  (iNative[37164])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execGetSealingNetworkMessage_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.SetInitializeNetworkFlag
-// [0x00020400]  (iNative[39757])
+// [0x00020400]  (iNative[39759])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execSetInitializeNetworkFlag_Params
 {
 	uint32_t                                           flag : 1;                                         // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.UpdateRcode
-// [0x00420400]  (iNative[40815])
+// [0x00420400]  (iNative[40817])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execUpdateRcode_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -12745,28 +12744,28 @@ struct UREDGfxMoviePlayer_MenuNetworkInit_execUpdateRcode_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.IsBannedChatMessageRunning
-// [0x00020400]  (iNative[37599])
+// [0x00020400]  (iNative[37601])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execIsBannedChatMessageRunning_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.ReqBannedChatMessage
-// [0x00020400]  (iNative[39346])
+// [0x00020400]  (iNative[39348])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execReqBannedChatMessage_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.GetInitErrorMessageID
-// [0x00020400]  (iNative[37071])
+// [0x00020400]  (iNative[37073])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execGetInitErrorMessageID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.IsInitializing
-// [0x00420400]  (iNative[37689])
+// [0x00420400]  (iNative[37691])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execIsInitializing_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -12776,35 +12775,35 @@ struct UREDGfxMoviePlayer_MenuNetworkInit_execIsInitializing_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.ReqInitializeError
-// [0x00020400]  (iNative[39350])
+// [0x00020400]  (iNative[39352])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execReqInitializeError_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.ReqInitialize
-// [0x00020400]  (iNative[39349])
+// [0x00020400]  (iNative[39351])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execReqInitialize_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.IsSignInDialogRunning
-// [0x00020400]  (iNative[37853])
+// [0x00020400]  (iNative[37855])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execIsSignInDialogRunning_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.ReqSignInDialog
-// [0x00020400]  (iNative[39356])
+// [0x00020400]  (iNative[39358])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execReqSignInDialog_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInit.IsPreWait
-// [0x00020400]  (iNative[37790])
+// [0x00020400]  (iNative[37792])
 struct UREDGfxMoviePlayer_MenuNetworkInit_execIsPreWait_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -12910,7 +12909,7 @@ struct UREDGfxMoviePlayer_MenuNetworkInvite_execStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.GetRoomGameVersion
-// [0x00420400]  (iNative[37157])
+// [0x00420400]  (iNative[37159])
 struct UREDGfxMoviePlayer_MenuNetworkInvite_execGetRoomGameVersion_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -12918,20 +12917,20 @@ struct UREDGfxMoviePlayer_MenuNetworkInvite_execGetRoomGameVersion_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.InviteDone
-// [0x00020400]  (iNative[37586])
+// [0x00020400]  (iNative[37588])
 struct UREDGfxMoviePlayer_MenuNetworkInvite_execInviteDone_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.GetErrorMessageID
-// [0x00020400]  (iNative[37057])
+// [0x00020400]  (iNative[37059])
 struct UREDGfxMoviePlayer_MenuNetworkInvite_execGetErrorMessageID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.IsJoinSessionRunning
-// [0x00420400]  (iNative[37694])
+// [0x00420400]  (iNative[37696])
 struct UREDGfxMoviePlayer_MenuNetworkInvite_execIsJoinSessionRunning_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -12939,21 +12938,21 @@ struct UREDGfxMoviePlayer_MenuNetworkInvite_execIsJoinSessionRunning_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.JoinSession
-// [0x00020400]  (iNative[37946])
+// [0x00020400]  (iNative[37948])
 struct UREDGfxMoviePlayer_MenuNetworkInvite_execJoinSession_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.ChangeVersion
-// [0x00020400]  (iNative[36105])
+// [0x00020400]  (iNative[36107])
 struct UREDGfxMoviePlayer_MenuNetworkInvite_execChangeVersion_Params
 {
 	uint32_t                                           bRev2 : 1;                                        // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkInvite.CheckVersion
-// [0x00420400]  (iNative[36210])
+// [0x00420400]  (iNative[36212])
 struct UREDGfxMoviePlayer_MenuNetworkInvite_execCheckVersion_Params
 {
 	int32_t                                            VersionRev2;                                      // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -13229,34 +13228,34 @@ struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsFromCharaSelect_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateLobbyChatDisableMessage
-// [0x00020400]  (iNative[40753])
+// [0x00020400]  (iNative[40755])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateLobbyChatDisableMessage_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsForceLobbyExitCall
-// [0x00020400]  (iNative[37667])
+// [0x00020400]  (iNative[37669])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsForceLobbyExitCall_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.TournamentShowBattler
-// [0x00020400]  (iNative[40276])
+// [0x00020400]  (iNative[40278])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execTournamentShowBattler_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsTournamentLobby
-// [0x00020400]  (iNative[37883])
+// [0x00020400]  (iNative[37885])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsTournamentLobby_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateLobbyRoomJoinNative
-// [0x00420400]  (iNative[40759])
+// [0x00420400]  (iNative[40761])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateLobbyRoomJoinNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -13268,14 +13267,14 @@ struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateLobbyRoomJoinNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateInputTournament
-// [0x00020400]  (iNative[40721])
+// [0x00020400]  (iNative[40723])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateInputTournament_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateInputNative
-// [0x00420400]  (iNative[40720])
+// [0x00420400]  (iNative[40722])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateInputNative_Params
 {
 	int32_t                                            IsLobbyMenu;                                      // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -13288,7 +13287,7 @@ struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateInputNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateEntryCancelConfirmNative
-// [0x00420400]  (iNative[40656])
+// [0x00420400]  (iNative[40658])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateEntryCancelConfirmNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -13297,7 +13296,7 @@ struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateEntryCancelConfirmNative_Pa
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateLeaveLobbyConfirmNative
-// [0x00420400]  (iNative[40740])
+// [0x00420400]  (iNative[40742])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateLeaveLobbyConfirmNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -13306,45 +13305,45 @@ struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateLeaveLobbyConfirmNative_Par
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsLeaveLobby
-// [0x00020400]  (iNative[37697])
+// [0x00020400]  (iNative[37699])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsLeaveLobby_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.LeaveLobby
-// [0x00020400]  (iNative[35118])
+// [0x00020400]  (iNative[35120])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execLeaveLobby_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsLeaveRoom
-// [0x00020400]  (iNative[37698])
+// [0x00020400]  (iNative[37700])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsLeaveRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.LeaveRoom
-// [0x00020400]  (iNative[37983])
+// [0x00020400]  (iNative[37985])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execLeaveRoom_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.OpenRoomMenuFromSearch
-// [0x00020400]  (iNative[38842])
+// [0x00020400]  (iNative[38844])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execOpenRoomMenuFromSearch_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.OpenRoomMenuFromCharaSelect
-// [0x00020400]  (iNative[38841])
+// [0x00020400]  (iNative[38843])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execOpenRoomMenuFromCharaSelect_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsLobbyMenuRunning
-// [0x00420400]  (iNative[37709])
+// [0x00420400]  (iNative[37711])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsLobbyMenuRunning_Params
 {
 	int32_t                                            IsCreate;                                         // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -13359,13 +13358,13 @@ struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsLobbyMenuRunning_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.OpenLobbyMenu
-// [0x00020400]  (iNative[38831])
+// [0x00020400]  (iNative[38833])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execOpenLobbyMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsCreatingLobbyRoom
-// [0x00420400]  (iNative[37632])
+// [0x00420400]  (iNative[37634])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsCreatingLobbyRoom_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -13373,14 +13372,14 @@ struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsCreatingLobbyRoom_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.CreateLobbyRoom
-// [0x00020400]  (iNative[36332])
+// [0x00020400]  (iNative[36334])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execCreateLobbyRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsCreatingRoom
-// [0x00420400]  (iNative[37633])
+// [0x00420400]  (iNative[37635])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsCreatingRoom_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -13388,46 +13387,46 @@ struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsCreatingRoom_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.CreateRoom
-// [0x00020400]  (iNative[36335])
+// [0x00020400]  (iNative[36337])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execCreateRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsGotoRoomFromLobbyMenu
-// [0x00020400]  (iNative[37681])
+// [0x00020400]  (iNative[37683])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsGotoRoomFromLobbyMenu_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.IsExistRoom
-// [0x00020400]  (iNative[37659])
+// [0x00020400]  (iNative[37661])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execIsExistRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateDrawMenu
-// [0x00020400]  (iNative[40649])
+// [0x00020400]  (iNative[40651])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateDrawMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.UpdateMenu
-// [0x00020400]  (iNative[40780])
+// [0x00020400]  (iNative[40782])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execUpdateMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.OnCloseNative
-// [0x00020400]  (iNative[38811])
+// [0x00020400]  (iNative[38813])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execOnCloseNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobby.InitMenu
-// [0x00020400]  (iNative[37536])
+// [0x00020400]  (iNative[37538])
 struct UREDGfxMoviePlayer_MenuNetworkLobby_execInitMenu_Params
 {
 };
@@ -13616,13 +13615,13 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.UpdateScrollWindow
-// [0x00020400]  (iNative[40842])
+// [0x00020400]  (iNative[40844])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execUpdateScrollWindow_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.UpdatePrevLobby_Native
-// [0x00420400]  (iNative[40807])
+// [0x00420400]  (iNative[40809])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execUpdatePrevLobby_Native_Params
 {
 	uint32_t                                           IsTrigger : 1;                                    // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -13633,21 +13632,21 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execUpdatePrevLobby_Native_Para
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.CloseScrollWindow
-// [0x00020400]  (iNative[36233])
+// [0x00020400]  (iNative[36235])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execCloseScrollWindow_Params
 {
 	uint8_t                                            Type;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.OpenScrollWindow
-// [0x00020400]  (iNative[38843])
+// [0x00020400]  (iNative[38845])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execOpenScrollWindow_Params
 {
 	uint8_t                                            Type;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ScrollUpdate
-// [0x00420400]  (iNative[39479])
+// [0x00420400]  (iNative[39481])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execScrollUpdate_Params
 {
 	uint8_t                                            Type;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -13656,7 +13655,7 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execScrollUpdate_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ScrollInit
-// [0x00020400]  (iNative[39477])
+// [0x00020400]  (iNative[39479])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execScrollInit_Params
 {
 	uint8_t                                            Type;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -13666,14 +13665,14 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execScrollInit_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.GetJoinLobbyErrorMessageID
-// [0x00020400]  (iNative[37076])
+// [0x00020400]  (iNative[37078])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execGetJoinLobbyErrorMessageID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsJoinLobby
-// [0x00420400]  (iNative[37693])
+// [0x00420400]  (iNative[37695])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsJoinLobby_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -13681,7 +13680,7 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsJoinLobby_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ReqJoinLobby
-// [0x00020400]  (iNative[39351])
+// [0x00020400]  (iNative[39353])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execReqJoinLobby_Params
 {
 	int32_t                                            Cursor;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -13689,7 +13688,7 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execReqJoinLobby_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsSelectableLobby
-// [0x00020400]  (iNative[37844])
+// [0x00020400]  (iNative[37846])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsSelectableLobby_Params
 {
 	int32_t                                            Cursor;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -13697,7 +13696,7 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsSelectableLobby_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.SelectWorld
-// [0x00020400]  (iNative[39669])
+// [0x00020400]  (iNative[39671])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execSelectWorld_Params
 {
 	int32_t                                            Cursor;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -13705,21 +13704,21 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execSelectWorld_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.SelectServer
-// [0x00020400]  (iNative[39668])
+// [0x00020400]  (iNative[39670])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execSelectServer_Params
 {
 	int32_t                                            Cursor;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.GetLobbyInitErrorMessageID
-// [0x00020400]  (iNative[37087])
+// [0x00020400]  (iNative[37089])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execGetLobbyInitErrorMessageID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsLobbyInit
-// [0x00420400]  (iNative[37707])
+// [0x00420400]  (iNative[37709])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsLobbyInit_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -13727,21 +13726,21 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsLobbyInit_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ReqLobbyInit
-// [0x00020400]  (iNative[39352])
+// [0x00020400]  (iNative[39354])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execReqLobbyInit_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.GetWorldInitErrorMessageID
-// [0x00020400]  (iNative[37194])
+// [0x00020400]  (iNative[37196])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execGetWorldInitErrorMessageID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsWorldInit
-// [0x00420400]  (iNative[37930])
+// [0x00420400]  (iNative[37932])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsWorldInit_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -13749,14 +13748,14 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsWorldInit_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ReqWorldInit
-// [0x00020400]  (iNative[39371])
+// [0x00020400]  (iNative[39373])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execReqWorldInit_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsSelectableServer
-// [0x00020400]  (iNative[37845])
+// [0x00020400]  (iNative[37847])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsSelectableServer_Params
 {
 	int32_t                                            ServerIndex;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -13764,14 +13763,14 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsSelectableServer_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.GetServerInitErrorMessageID
-// [0x00020400]  (iNative[37165])
+// [0x00020400]  (iNative[37167])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execGetServerInitErrorMessageID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsServerInit
-// [0x00420400]  (iNative[37848])
+// [0x00420400]  (iNative[37850])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsServerInit_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -13779,53 +13778,53 @@ struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsServerInit_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.ReqServerInit
-// [0x00020400]  (iNative[39355])
+// [0x00020400]  (iNative[39357])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execReqServerInit_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsInLobby
-// [0x00020400]  (iNative[37690])
+// [0x00020400]  (iNative[37692])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsInLobby_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.SetupLobbySelected
-// [0x00020400]  (iNative[39837])
+// [0x00020400]  (iNative[39839])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execSetupLobbySelected_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsLobbySelected
-// [0x00020400]  (iNative[37711])
+// [0x00020400]  (iNative[37713])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsLobbySelected_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.IsEventRobbyEnable
-// [0x00020400]  (iNative[37655])
+// [0x00020400]  (iNative[37657])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execIsEventRobbyEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.UpdateDrawMenu
-// [0x00020400]  (iNative[40649])
+// [0x00020400]  (iNative[40651])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execUpdateDrawMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.OnCloseNative
-// [0x00020400]  (iNative[38811])
+// [0x00020400]  (iNative[38813])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execOnCloseNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkLobbySelect.InitMenu
-// [0x00020400]  (iNative[37536])
+// [0x00020400]  (iNative[37538])
 struct UREDGfxMoviePlayer_MenuNetworkLobbySelect_execInitMenu_Params
 {
 };
@@ -13891,26 +13890,26 @@ struct UREDGfxMoviePlayer_MenuNetworkRankBoard_execStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRankBoard.UpdateDrawNative
-// [0x00020400]  (iNative[40650])
+// [0x00020400]  (iNative[40652])
 struct UREDGfxMoviePlayer_MenuNetworkRankBoard_execUpdateDrawNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRankBoard.UpdateMainNative
-// [0x00020400]  (iNative[40766])
+// [0x00020400]  (iNative[40768])
 struct UREDGfxMoviePlayer_MenuNetworkRankBoard_execUpdateMainNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRankBoard.FinalizeNative
-// [0x00020400]  (iNative[36840])
+// [0x00020400]  (iNative[36842])
 struct UREDGfxMoviePlayer_MenuNetworkRankBoard_execFinalizeNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRankBoard.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct UREDGfxMoviePlayer_MenuNetworkRankBoard_execInitializeNative_Params
 {
 };
@@ -14186,61 +14185,61 @@ struct UREDGfxMoviePlayer_MenuNetworkRoom_eventHideBG_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsBreakupSoon
-// [0x00020400]  (iNative[37610])
+// [0x00020400]  (iNative[37612])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsBreakupSoon_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsLeaveLobby
-// [0x00020400]  (iNative[37697])
+// [0x00020400]  (iNative[37699])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsLeaveLobby_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.LeaveLobby
-// [0x00020400]  (iNative[35118])
+// [0x00020400]  (iNative[35120])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execLeaveLobby_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsTournamentForceLeaveRoom
-// [0x00020400]  (iNative[37880])
+// [0x00020400]  (iNative[37882])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsTournamentForceLeaveRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsTournamentForceBattleReady
-// [0x00020400]  (iNative[37879])
+// [0x00020400]  (iNative[37881])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsTournamentForceBattleReady_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsTournamentRoom
-// [0x00020400]  (iNative[37884])
+// [0x00020400]  (iNative[37886])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsTournamentRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsLobbyRoom
-// [0x00020400]  (iNative[37710])
+// [0x00020400]  (iNative[37712])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsLobbyRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.SwitchLobby
-// [0x00020400]  (iNative[40149])
+// [0x00020400]  (iNative[40151])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execSwitchLobby_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.GetRoomState
-// [0x00420400]  (iNative[37158])
+// [0x00420400]  (iNative[37160])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execGetRoomState_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -14249,21 +14248,21 @@ struct UREDGfxMoviePlayer_MenuNetworkRoom_execGetRoomState_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.GetRoomErrorMessageID
-// [0x00020400]  (iNative[37156])
+// [0x00020400]  (iNative[37158])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execGetRoomErrorMessageID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsRoomError
-// [0x00020400]  (iNative[37831])
+// [0x00020400]  (iNative[37833])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsRoomError_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateGotoBattleNative
-// [0x00420400]  (iNative[40693])
+// [0x00420400]  (iNative[40695])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execUpdateGotoBattleNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -14271,7 +14270,7 @@ struct UREDGfxMoviePlayer_MenuNetworkRoom_execUpdateGotoBattleNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateRoomErrorNative
-// [0x00020400]  (iNative[40831])
+// [0x00020400]  (iNative[40833])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execUpdateRoomErrorNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -14279,7 +14278,7 @@ struct UREDGfxMoviePlayer_MenuNetworkRoom_execUpdateRoomErrorNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateLeaveRoomConfirmNative
-// [0x00420400]  (iNative[40743])
+// [0x00420400]  (iNative[40745])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execUpdateLeaveRoomConfirmNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -14288,27 +14287,27 @@ struct UREDGfxMoviePlayer_MenuNetworkRoom_execUpdateLeaveRoomConfirmNative_Param
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.RoomInfo_MemberMax
-// [0x00020400]  (iNative[39418])
+// [0x00020400]  (iNative[39420])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execRoomInfo_MemberMax_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateMemberInfo
-// [0x00020400]  (iNative[40779])
+// [0x00020400]  (iNative[40781])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execUpdateMemberInfo_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsContactMenuExit
-// [0x00020400]  (iNative[37627])
+// [0x00020400]  (iNative[37629])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsContactMenuExit_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OpenContactMenu
-// [0x00020400]  (iNative[38826])
+// [0x00020400]  (iNative[38828])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execOpenContactMenu_Params
 {
 	uint8_t                                            Type;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -14318,13 +14317,13 @@ struct UREDGfxMoviePlayer_MenuNetworkRoom_execOpenContactMenu_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OpenEasyTextChat
-// [0x00020400]  (iNative[38829])
+// [0x00020400]  (iNative[38831])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execOpenEasyTextChat_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsRoomMenuExit
-// [0x00420400]  (iNative[37832])
+// [0x00420400]  (iNative[37834])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsRoomMenuExit_Params
 {
 	int32_t                                            IsLeaveRoom;                                      // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -14333,92 +14332,92 @@ struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsRoomMenuExit_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OpenRoomMenu
-// [0x00020400]  (iNative[38840])
+// [0x00020400]  (iNative[38842])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execOpenRoomMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.BackToWaitRoom
-// [0x00020400]  (iNative[35525])
+// [0x00020400]  (iNative[35527])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execBackToWaitRoom_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.SendBattleReadyCancel
-// [0x00020400]  (iNative[39678])
+// [0x00020400]  (iNative[39680])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execSendBattleReadyCancel_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsSendingBattleReady
-// [0x00020400]  (iNative[37847])
+// [0x00020400]  (iNative[37849])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsSendingBattleReady_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.SendBattleReady
-// [0x00020400]  (iNative[39677])
+// [0x00020400]  (iNative[39679])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execSendBattleReady_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsLeaveRoom
-// [0x00020400]  (iNative[37698])
+// [0x00020400]  (iNative[37700])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsLeaveRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.LeaveRoom
-// [0x00020400]  (iNative[37983])
+// [0x00020400]  (iNative[37985])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execLeaveRoom_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.GotoBattle
-// [0x00020400]  (iNative[37404])
+// [0x00020400]  (iNative[37406])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execGotoBattle_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.GetMySlotIndex
-// [0x00020400]  (iNative[37114])
+// [0x00020400]  (iNative[37116])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execGetMySlotIndex_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsBattleReadyInputEnable
-// [0x00020400]  (iNative[37603])
+// [0x00020400]  (iNative[37605])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsBattleReadyInputEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsBattleReady
-// [0x00020400]  (iNative[37602])
+// [0x00020400]  (iNative[37604])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsBattleReady_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsNeedGotoBattle
-// [0x00020400]  (iNative[37739])
+// [0x00020400]  (iNative[37741])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsNeedGotoBattle_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsSitBattleConsole
-// [0x00020400]  (iNative[37855])
+// [0x00020400]  (iNative[37857])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsSitBattleConsole_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsSlotIsMine
-// [0x00020400]  (iNative[37861])
+// [0x00020400]  (iNative[37863])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsSlotIsMine_Params
 {
 	int32_t                                            SlotIndex;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -14426,39 +14425,39 @@ struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsSlotIsMine_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.IsHost
-// [0x00020400]  (iNative[37685])
+// [0x00020400]  (iNative[37687])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execIsHost_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.TextChat_IsFullScreen
-// [0x00020400]  (iNative[40205])
+// [0x00020400]  (iNative[40207])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execTextChat_IsFullScreen_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateDrawMenu
-// [0x00020400]  (iNative[40649])
+// [0x00020400]  (iNative[40651])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execUpdateDrawMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.UpdateMenu
-// [0x00020400]  (iNative[40780])
+// [0x00020400]  (iNative[40782])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execUpdateMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OnCloseNative
-// [0x00020400]  (iNative[38811])
+// [0x00020400]  (iNative[38813])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execOnCloseNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.InitMenu
-// [0x00020400]  (iNative[37536])
+// [0x00020400]  (iNative[37538])
 struct UREDGfxMoviePlayer_MenuNetworkRoom_execInitMenu_Params
 {
 };
@@ -14655,75 +14654,75 @@ struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsIMEFormOpen_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.GetKyoutaiMaxNum
-// [0x00020400]  (iNative[37081])
+// [0x00020400]  (iNative[37083])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execGetKyoutaiMaxNum_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsBreakupSoon
-// [0x00020400]  (iNative[37610])
+// [0x00020400]  (iNative[37612])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsBreakupSoon_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsLeaveLobby
-// [0x00020400]  (iNative[37697])
+// [0x00020400]  (iNative[37699])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsLeaveLobby_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.LeaveLobby
-// [0x00020400]  (iNative[35118])
+// [0x00020400]  (iNative[35120])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execLeaveLobby_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsTournamentForceLeaveRoom
-// [0x00020400]  (iNative[37880])
+// [0x00020400]  (iNative[37882])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsTournamentForceLeaveRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsTournamentForceBattleReady
-// [0x00020400]  (iNative[37879])
+// [0x00020400]  (iNative[37881])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsTournamentForceBattleReady_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsTournamentRoom
-// [0x00020400]  (iNative[37884])
+// [0x00020400]  (iNative[37886])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsTournamentRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.SwitchLobby
-// [0x00020400]  (iNative[40149])
+// [0x00020400]  (iNative[40151])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execSwitchLobby_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.GetRoomErrorMessageID
-// [0x00020400]  (iNative[37156])
+// [0x00020400]  (iNative[37158])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execGetRoomErrorMessageID_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsRoomError
-// [0x00020400]  (iNative[37831])
+// [0x00020400]  (iNative[37833])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsRoomError_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateGotoBattleNative
-// [0x00420400]  (iNative[40693])
+// [0x00420400]  (iNative[40695])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execUpdateGotoBattleNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -14731,7 +14730,7 @@ struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execUpdateGotoBattleNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateRoomErrorNative
-// [0x00020400]  (iNative[40831])
+// [0x00020400]  (iNative[40833])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execUpdateRoomErrorNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -14739,7 +14738,7 @@ struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execUpdateRoomErrorNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateLeaveRoomConfirmNative
-// [0x00420400]  (iNative[40743])
+// [0x00420400]  (iNative[40745])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execUpdateLeaveRoomConfirmNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -14748,14 +14747,14 @@ struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execUpdateLeaveRoomConfirmNative_P
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsContactMenuExit
-// [0x00020400]  (iNative[37627])
+// [0x00020400]  (iNative[37629])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsContactMenuExit_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.OpenContactMenu
-// [0x00020400]  (iNative[38826])
+// [0x00020400]  (iNative[38828])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execOpenContactMenu_Params
 {
 	uint8_t                                            Type;                                             // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
@@ -14765,13 +14764,13 @@ struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execOpenContactMenu_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.OpenEasyTextChat
-// [0x00020400]  (iNative[38829])
+// [0x00020400]  (iNative[38831])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execOpenEasyTextChat_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsRoomMenuExit
-// [0x00420400]  (iNative[37832])
+// [0x00420400]  (iNative[37834])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsRoomMenuExit_Params
 {
 	int32_t                                            IsLeaveRoom;                                      // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -14781,92 +14780,92 @@ struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsRoomMenuExit_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.OpenRoomMenu
-// [0x00020400]  (iNative[38840])
+// [0x00020400]  (iNative[38842])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execOpenRoomMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.BackToWaitRoom
-// [0x00020400]  (iNative[35525])
+// [0x00020400]  (iNative[35527])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execBackToWaitRoom_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.SendBattleReadyCancel
-// [0x00020400]  (iNative[39678])
+// [0x00020400]  (iNative[39680])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execSendBattleReadyCancel_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsSendingBattleReady
-// [0x00020400]  (iNative[37847])
+// [0x00020400]  (iNative[37849])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsSendingBattleReady_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.SendBattleReady
-// [0x00020400]  (iNative[39677])
+// [0x00020400]  (iNative[39679])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execSendBattleReady_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsLeaveRoom
-// [0x00020400]  (iNative[37698])
+// [0x00020400]  (iNative[37700])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsLeaveRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.LeaveRoom
-// [0x00020400]  (iNative[37983])
+// [0x00020400]  (iNative[37985])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execLeaveRoom_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.GotoBattle
-// [0x00020400]  (iNative[37404])
+// [0x00020400]  (iNative[37406])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execGotoBattle_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.GetMySlotIndex
-// [0x00020400]  (iNative[37114])
+// [0x00020400]  (iNative[37116])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execGetMySlotIndex_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsBattleReadyInputEnable
-// [0x00020400]  (iNative[37603])
+// [0x00020400]  (iNative[37605])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsBattleReadyInputEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsBattleReady
-// [0x00020400]  (iNative[37602])
+// [0x00020400]  (iNative[37604])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsBattleReady_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsNeedGotoBattle
-// [0x00020400]  (iNative[37739])
+// [0x00020400]  (iNative[37741])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsNeedGotoBattle_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsSitBattleConsole
-// [0x00020400]  (iNative[37855])
+// [0x00020400]  (iNative[37857])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsSitBattleConsole_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsSlotIsMine
-// [0x00020400]  (iNative[37861])
+// [0x00020400]  (iNative[37863])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsSlotIsMine_Params
 {
 	int32_t                                            SlotIndex;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -14874,27 +14873,27 @@ struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsSlotIsMine_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.IsHost
-// [0x00020400]  (iNative[37685])
+// [0x00020400]  (iNative[37687])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execIsHost_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.TextChat_IsFullScreen
-// [0x00020400]  (iNative[40205])
+// [0x00020400]  (iNative[40207])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execTextChat_IsFullScreen_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateDrawMenu
-// [0x00020400]  (iNative[40649])
+// [0x00020400]  (iNative[40651])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execUpdateDrawMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateInput
-// [0x00420400]  (iNative[40719])
+// [0x00420400]  (iNative[40721])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execUpdateInput_Params
 {
 	int32_t                                            BattleReady;                                      // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -14905,19 +14904,19 @@ struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execUpdateInput_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.UpdateMenu
-// [0x00020400]  (iNative[40780])
+// [0x00020400]  (iNative[40782])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execUpdateMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.OnCloseNative
-// [0x00020400]  (iNative[38811])
+// [0x00020400]  (iNative[38813])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execOnCloseNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkRoomAC20.InitMenu
-// [0x00020400]  (iNative[37536])
+// [0x00020400]  (iNative[37538])
 struct UREDGfxMoviePlayer_MenuNetworkRoomAC20_execInitMenu_Params
 {
 };
@@ -15086,19 +15085,19 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execSetReturnLobbyState_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.ReturnLobbyNative
-// [0x00020400]  (iNative[39401])
+// [0x00020400]  (iNative[39403])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execReturnLobbyNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateDrawNative
-// [0x00020400]  (iNative[40650])
+// [0x00020400]  (iNative[40652])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateDrawNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateJoinPasswordMissNative
-// [0x00020400]  (iNative[40733])
+// [0x00020400]  (iNative[40735])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateJoinPasswordMissNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -15106,7 +15105,7 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateJoinPasswordMissNative_Par
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateJoinPasswordNative
-// [0x00420400]  (iNative[40734])
+// [0x00420400]  (iNative[40736])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateJoinPasswordNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -15116,7 +15115,7 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateJoinPasswordNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateJoinErrorNative
-// [0x00020400]  (iNative[40728])
+// [0x00020400]  (iNative[40730])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateJoinErrorNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -15124,7 +15123,7 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateJoinErrorNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateReturnLobbyNative
-// [0x00420400]  (iNative[40825])
+// [0x00420400]  (iNative[40827])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateReturnLobbyNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -15133,7 +15132,7 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateReturnLobbyNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateJoinConfirmNative
-// [0x00420400]  (iNative[40726])
+// [0x00420400]  (iNative[40728])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateJoinConfirmNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -15142,7 +15141,7 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateJoinConfirmNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.UpdateResultScroll
-// [0x00020400]  (iNative[40822])
+// [0x00020400]  (iNative[40824])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateResultScroll_Params
 {
 	uint32_t                                           bUpHold : 1;                                      // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -15151,20 +15150,20 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execUpdateResultScroll_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.OpenMOMKinshiMenu
-// [0x00020400]  (iNative[38835])
+// [0x00020400]  (iNative[38837])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execOpenMOMKinshiMenu_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.OpenRankMatchMenu
-// [0x00020400]  (iNative[38839])
+// [0x00020400]  (iNative[38841])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execOpenRankMatchMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.IsQosLimitProcess
-// [0x00020400]  (iNative[37800])
+// [0x00020400]  (iNative[37802])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execIsQosLimitProcess_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -15172,7 +15171,7 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execIsQosLimitProcess_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.IsQosLimitClear
-// [0x00020400]  (iNative[37799])
+// [0x00020400]  (iNative[37801])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execIsQosLimitClear_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -15180,7 +15179,7 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execIsQosLimitClear_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.IsJoiningRoom
-// [0x00420400]  (iNative[37692])
+// [0x00420400]  (iNative[37694])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execIsJoiningRoom_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -15188,7 +15187,7 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execIsJoiningRoom_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.JoinRoom
-// [0x00020400]  (iNative[37945])
+// [0x00020400]  (iNative[37947])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execJoinRoom_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -15196,7 +15195,7 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execJoinRoom_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.IsPasswordRoom
-// [0x00020400]  (iNative[37764])
+// [0x00020400]  (iNative[37766])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execIsPasswordRoom_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -15204,14 +15203,14 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execIsPasswordRoom_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.SetupResultList
-// [0x00020400]  (iNative[39850])
+// [0x00020400]  (iNative[39852])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execSetupResultList_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.IsSearchingRoom
-// [0x00420400]  (iNative[37837])
+// [0x00420400]  (iNative[37839])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execIsSearchingRoom_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -15219,20 +15218,20 @@ struct UREDGfxMoviePlayer_MenuNetworkSearch_execIsSearchingRoom_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.SearchRoom
-// [0x00020400]  (iNative[39656])
+// [0x00020400]  (iNative[39658])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execSearchRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.FinalizeNative
-// [0x00020400]  (iNative[36840])
+// [0x00020400]  (iNative[36842])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execFinalizeNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkSearch.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct UREDGfxMoviePlayer_MenuNetworkSearch_execInitializeNative_Params
 {
 };
@@ -15396,21 +15395,21 @@ struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.GetSavedCursor
-// [0x00020400]  (iNative[37159])
+// [0x00020400]  (iNative[37161])
 struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execGetSavedCursor_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.SaveCursor
-// [0x00020400]  (iNative[39455])
+// [0x00020400]  (iNative[39457])
 struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execSaveCursor_Params
 {
 	int32_t                                            Cursor;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.IsCheckPlus
-// [0x00420400]  (iNative[37619])
+// [0x00420400]  (iNative[37621])
 struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execIsCheckPlus_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -15418,7 +15417,7 @@ struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execIsCheckPlus_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.CheckPlus
-// [0x00420400]  (iNative[36203])
+// [0x00420400]  (iNative[36205])
 struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execCheckPlus_Params
 {
 	int32_t                                            IsNotNeed;                                        // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -15426,7 +15425,7 @@ struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execCheckPlus_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.IsCreatingRoom
-// [0x00420400]  (iNative[37633])
+// [0x00420400]  (iNative[37635])
 struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execIsCreatingRoom_Params
 {
 	int32_t                                            isError;                                          // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -15434,14 +15433,14 @@ struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execIsCreatingRoom_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.CreateRoom
-// [0x00020400]  (iNative[36335])
+// [0x00020400]  (iNative[36337])
 struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execCreateRoom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.IsPlayerMatchEnd
-// [0x00420400]  (iNative[37770])
+// [0x00420400]  (iNative[37772])
 struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execIsPlayerMatchEnd_Params
 {
 	int32_t                                            IsCreate;                                         // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -15450,13 +15449,13 @@ struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execIsPlayerMatchEnd_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.OpenPlayerMatch
-// [0x00020400]  (iNative[38836])
+// [0x00020400]  (iNative[38838])
 struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execOpenPlayerMatch_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.IsRankMatchEnd
-// [0x00420400]  (iNative[37810])
+// [0x00420400]  (iNative[37812])
 struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execIsRankMatchEnd_Params
 {
 	int32_t                                            IsSearch;                                         // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -15464,7 +15463,7 @@ struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execIsRankMatchEnd_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkTopMenu.OpenRankMatch
-// [0x00020400]  (iNative[38838])
+// [0x00020400]  (iNative[38840])
 struct UREDGfxMoviePlayer_MenuNetworkTopMenu_execOpenRankMatch_Params
 {
 };
@@ -15523,13 +15522,13 @@ struct UREDGfxMoviePlayer_MenuNetworkWelcome_execStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkWelcome.DrawNative
-// [0x00020400]  (iNative[36601])
+// [0x00020400]  (iNative[36603])
 struct UREDGfxMoviePlayer_MenuNetworkWelcome_execDrawNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkWelcome.UpdateNative
-// [0x00420400]  (iNative[40788])
+// [0x00420400]  (iNative[40790])
 struct UREDGfxMoviePlayer_MenuNetworkWelcome_execUpdateNative_Params
 {
 	uint32_t                                           bTrigger : 1;                                     // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -15538,7 +15537,7 @@ struct UREDGfxMoviePlayer_MenuNetworkWelcome_execUpdateNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuNetworkWelcome.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct UREDGfxMoviePlayer_MenuNetworkWelcome_execInitializeNative_Params
 {
 };
@@ -15802,14 +15801,14 @@ struct UREDGfxMoviePlayer_MenuRanking_execGetStateList_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.Debug_GetForceState
-// [0x00020400]  (iNative[36415])
+// [0x00020400]  (iNative[36417])
 struct UREDGfxMoviePlayer_MenuRanking_execDebug_GetForceState_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.SortRank
-// [0x00420400]  (iNative[39926])
+// [0x00420400]  (iNative[39928])
 struct UREDGfxMoviePlayer_MenuRanking_execSortRank_Params
 {
 	class TArray<int32_t>                              outIndexList;                                     // 0x0000 (0x000C) [0x0000000000400180] (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -15817,14 +15816,14 @@ struct UREDGfxMoviePlayer_MenuRanking_execSortRank_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetRankingGroup
-// [0x00020400]  (iNative[37147])
+// [0x00020400]  (iNative[37149])
 struct UREDGfxMoviePlayer_MenuRanking_execGetRankingGroup_Params
 {
 	uint8_t                                            ReturnValue;                                      // 0x0000 (0x0001) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_QuestScore
-// [0x00420400]  (iNative[37044])
+// [0x00420400]  (iNative[37046])
 struct UREDGfxMoviePlayer_MenuRanking_execGetData_QuestScore_Params
 {
 	int32_t                                            Rank;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -15834,7 +15833,7 @@ struct UREDGfxMoviePlayer_MenuRanking_execGetData_QuestScore_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_MOMScore
-// [0x00420400]  (iNative[37043])
+// [0x00420400]  (iNative[37045])
 struct UREDGfxMoviePlayer_MenuRanking_execGetData_MOMScore_Params
 {
 	int32_t                                            Rank;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -15845,7 +15844,7 @@ struct UREDGfxMoviePlayer_MenuRanking_execGetData_MOMScore_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_StraightWins
-// [0x00420400]  (iNative[37047])
+// [0x00420400]  (iNative[37049])
 struct UREDGfxMoviePlayer_MenuRanking_execGetData_StraightWins_Params
 {
 	int32_t                                            Rank;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -15855,7 +15854,7 @@ struct UREDGfxMoviePlayer_MenuRanking_execGetData_StraightWins_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_RRChara
-// [0x00420400]  (iNative[37046])
+// [0x00420400]  (iNative[37048])
 struct UREDGfxMoviePlayer_MenuRanking_execGetData_RRChara_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -15866,7 +15865,7 @@ struct UREDGfxMoviePlayer_MenuRanking_execGetData_RRChara_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_RRAll
-// [0x00420400]  (iNative[37045])
+// [0x00420400]  (iNative[37047])
 struct UREDGfxMoviePlayer_MenuRanking_execGetData_RRAll_Params
 {
 	int32_t                                            Rank;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -15877,7 +15876,7 @@ struct UREDGfxMoviePlayer_MenuRanking_execGetData_RRAll_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_WinsChara
-// [0x00420400]  (iNative[37050])
+// [0x00420400]  (iNative[37052])
 struct UREDGfxMoviePlayer_MenuRanking_execGetData_WinsChara_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -15888,7 +15887,7 @@ struct UREDGfxMoviePlayer_MenuRanking_execGetData_WinsChara_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_WinsAll
-// [0x00420400]  (iNative[37049])
+// [0x00420400]  (iNative[37051])
 struct UREDGfxMoviePlayer_MenuRanking_execGetData_WinsAll_Params
 {
 	int32_t                                            Rank;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -15898,7 +15897,7 @@ struct UREDGfxMoviePlayer_MenuRanking_execGetData_WinsAll_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_Diagram
-// [0x00420400]  (iNative[37042])
+// [0x00420400]  (iNative[37044])
 struct UREDGfxMoviePlayer_MenuRanking_execGetData_Diagram_Params
 {
 	class FString                                      CharaID1;                                         // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -15907,7 +15906,7 @@ struct UREDGfxMoviePlayer_MenuRanking_execGetData_Diagram_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.GetData_UseCount
-// [0x00420400]  (iNative[37048])
+// [0x00420400]  (iNative[37050])
 struct UREDGfxMoviePlayer_MenuRanking_execGetData_UseCount_Params
 {
 	class FString                                      CharaID;                                          // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -15915,20 +15914,20 @@ struct UREDGfxMoviePlayer_MenuRanking_execGetData_UseCount_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.IsRankingAccessFinish
-// [0x00020400]  (iNative[37807])
+// [0x00020400]  (iNative[37809])
 struct UREDGfxMoviePlayer_MenuRanking_execIsRankingAccessFinish_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.RequestRankingAccess
-// [0x00020400]  (iNative[39369])
+// [0x00020400]  (iNative[39371])
 struct UREDGfxMoviePlayer_MenuRanking_execRequestRankingAccess_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuRanking.InitMenu
-// [0x00020400]  (iNative[37536])
+// [0x00020400]  (iNative[37538])
 struct UREDGfxMoviePlayer_MenuRanking_execInitMenu_Params
 {
 };
@@ -16032,13 +16031,13 @@ struct UREDGfxMoviePlayer_MenuReplay_execsetupStorageText_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.ChengeCreateSort
-// [0x00020400]  (iNative[36211])
+// [0x00020400]  (iNative[36213])
 struct UREDGfxMoviePlayer_MenuReplay_execChengeCreateSort_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.IsFilterChenge
-// [0x00020400]  (iNative[37663])
+// [0x00020400]  (iNative[37665])
 struct UREDGfxMoviePlayer_MenuReplay_execIsFilterChenge_Params
 {
 	int32_t                                            Filter;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -16046,7 +16045,7 @@ struct UREDGfxMoviePlayer_MenuReplay_execIsFilterChenge_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.GetReplayListNum
-// [0x00020400]  (iNative[37153])
+// [0x00020400]  (iNative[37155])
 struct UREDGfxMoviePlayer_MenuReplay_execGetReplayListNum_Params
 {
 	int32_t                                            Category;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -16054,88 +16053,88 @@ struct UREDGfxMoviePlayer_MenuReplay_execGetReplayListNum_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.IsOnlineStorageEnable
-// [0x00020400]  (iNative[37755])
+// [0x00020400]  (iNative[37757])
 struct UREDGfxMoviePlayer_MenuReplay_execIsOnlineStorageEnable_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.IsLoadReplayList
-// [0x00020400]  (iNative[37704])
+// [0x00020400]  (iNative[37706])
 struct UREDGfxMoviePlayer_MenuReplay_execIsLoadReplayList_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.SetResultVisible
-// [0x00020400]  (iNative[39801])
+// [0x00020400]  (iNative[39803])
 struct UREDGfxMoviePlayer_MenuReplay_execSetResultVisible_Params
 {
 	uint32_t                                           flg : 1;                                          // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.FilterReplayList
-// [0x00020400]  (iNative[36838])
+// [0x00020400]  (iNative[36840])
 struct UREDGfxMoviePlayer_MenuReplay_execFilterReplayList_Params
 {
 	int32_t                                            Category;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.CheckCopyPopup
-// [0x00020400]  (iNative[36189])
+// [0x00020400]  (iNative[36191])
 struct UREDGfxMoviePlayer_MenuReplay_execCheckCopyPopup_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.ReplayDataCopy
-// [0x00020400]  (iNative[39340])
+// [0x00020400]  (iNative[39342])
 struct UREDGfxMoviePlayer_MenuReplay_execReplayDataCopy_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.IsReplayDataPlayError
-// [0x00020400]  (iNative[37823])
+// [0x00020400]  (iNative[37825])
 struct UREDGfxMoviePlayer_MenuReplay_execIsReplayDataPlayError_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.ReplayDataPlay
-// [0x00020400]  (iNative[39341])
+// [0x00020400]  (iNative[39343])
 struct UREDGfxMoviePlayer_MenuReplay_execReplayDataPlay_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.CheckSignOutPopup
-// [0x00020400]  (iNative[36206])
+// [0x00020400]  (iNative[36208])
 struct UREDGfxMoviePlayer_MenuReplay_execCheckSignOutPopup_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.PopUpMenuInit
-// [0x00020400]  (iNative[39070])
+// [0x00020400]  (iNative[39072])
 struct UREDGfxMoviePlayer_MenuReplay_execPopUpMenuInit_Params
 {
 	int32_t                                            Type;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execScrollBar
-// [0x00020400]  (iNative[36781])
+// [0x00020400]  (iNative[36783])
 struct UREDGfxMoviePlayer_MenuReplay_execexecScrollBar_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execCtrlBar
-// [0x00020400]  (iNative[36773])
+// [0x00020400]  (iNative[36775])
 struct UREDGfxMoviePlayer_MenuReplay_execexecCtrlBar_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execInfoBar
-// [0x00020400]  (iNative[36778])
+// [0x00020400]  (iNative[36780])
 struct UREDGfxMoviePlayer_MenuReplay_execexecInfoBar_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -16144,39 +16143,39 @@ struct UREDGfxMoviePlayer_MenuReplay_execexecInfoBar_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execReplayList
-// [0x00020400]  (iNative[36780])
+// [0x00020400]  (iNative[36782])
 struct UREDGfxMoviePlayer_MenuReplay_execexecReplayList_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execFilterText
-// [0x00020400]  (iNative[36777])
+// [0x00020400]  (iNative[36779])
 struct UREDGfxMoviePlayer_MenuReplay_execexecFilterText_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execDrawNative
-// [0x00020400]  (iNative[36774])
+// [0x00020400]  (iNative[36776])
 struct UREDGfxMoviePlayer_MenuReplay_execexecDrawNative_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.execUpdateNative
-// [0x00020400]  (iNative[36782])
+// [0x00020400]  (iNative[36784])
 struct UREDGfxMoviePlayer_MenuReplay_execexecUpdateNative_Params
 {
 	int32_t                                            State;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.FinalizeNative
-// [0x00020400]  (iNative[36840])
+// [0x00020400]  (iNative[36842])
 struct UREDGfxMoviePlayer_MenuReplay_execFinalizeNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuReplay.InitializeNative
-// [0x00020400]  (iNative[37525])
+// [0x00020400]  (iNative[37527])
 struct UREDGfxMoviePlayer_MenuReplay_execInitializeNative_Params
 {
 };
@@ -16394,7 +16393,7 @@ struct UREDGfxMoviePlayer_MenuStaffRoll_execIsSkipable_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStaffRoll.UpdateToBeContinueNative
-// [0x00020400]  (iNative[40871])
+// [0x00020400]  (iNative[40873])
 struct UREDGfxMoviePlayer_MenuStaffRoll_execUpdateToBeContinueNative_Params
 {
 	int32_t                                            stFrame;                                          // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -16409,13 +16408,13 @@ struct UREDGfxMoviePlayer_MenuStaffRoll_execUpdateToBeContinueNative_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStaffRoll.DelayGarbageCollection
-// [0x00020400]  (iNative[36523])
+// [0x00020400]  (iNative[36525])
 struct UREDGfxMoviePlayer_MenuStaffRoll_execDelayGarbageCollection_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStaffRoll.GetRecordAll
-// [0x00420400]  (iNative[37149])
+// [0x00420400]  (iNative[37151])
 struct UREDGfxMoviePlayer_MenuStaffRoll_execGetRecordAll_Params
 {
 	class FString                                      BadgeNum;                                         // 0x0000 (0x000C) [0x0000000000400180] (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -16425,7 +16424,7 @@ struct UREDGfxMoviePlayer_MenuStaffRoll_execGetRecordAll_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStaffRoll.GetStageRecord
-// [0x00420400]  (iNative[37174])
+// [0x00420400]  (iNative[37176])
 struct UREDGfxMoviePlayer_MenuStaffRoll_execGetStageRecord_Params
 {
 	int32_t                                            stage;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -16488,26 +16487,26 @@ struct UREDGfxMoviePlayer_MenuStory_eventIsStartAnimEnd_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStory.GetReadRatioString
-// [0x00020400]  (iNative[37148])
+// [0x00020400]  (iNative[37150])
 struct UREDGfxMoviePlayer_MenuStory_execGetReadRatioString_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStory.UpdateDrawMenu
-// [0x00020400]  (iNative[40649])
+// [0x00020400]  (iNative[40651])
 struct UREDGfxMoviePlayer_MenuStory_execUpdateDrawMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStory.UpdateMenu
-// [0x00020400]  (iNative[40780])
+// [0x00020400]  (iNative[40782])
 struct UREDGfxMoviePlayer_MenuStory_execUpdateMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuStory.InitMenu
-// [0x00020400]  (iNative[37536])
+// [0x00020400]  (iNative[37538])
 struct UREDGfxMoviePlayer_MenuStory_execInitMenu_Params
 {
 };
@@ -16620,52 +16619,52 @@ struct UREDGfxMoviePlayer_MenuTitle_execTitleStart_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.OnCloseNative
-// [0x00020400]  (iNative[38811])
+// [0x00020400]  (iNative[38813])
 struct UREDGfxMoviePlayer_MenuTitle_execOnCloseNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.OnUpdateNative
-// [0x00020400]  (iNative[38823])
+// [0x00020400]  (iNative[38825])
 struct UREDGfxMoviePlayer_MenuTitle_execOnUpdateNative_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.OnTitleStart
-// [0x00020400]  (iNative[38821])
+// [0x00020400]  (iNative[38823])
 struct UREDGfxMoviePlayer_MenuTitle_execOnTitleStart_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsUSRom
-// [0x00020400]  (iNative[37925])
+// [0x00020400]  (iNative[37927])
 struct UREDGfxMoviePlayer_MenuTitle_execIsUSRom_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsOpenPSPlusTrialMenuCancel
-// [0x00020400]  (iNative[37760])
+// [0x00020400]  (iNative[37762])
 struct UREDGfxMoviePlayer_MenuTitle_execIsOpenPSPlusTrialMenuCancel_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.OpenPSPlusTrialMenu
-// [0x00020400]  (iNative[38837])
+// [0x00020400]  (iNative[38839])
 struct UREDGfxMoviePlayer_MenuTitle_execOpenPSPlusTrialMenu_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.UpdateTrial
-// [0x00020400]  (iNative[40876])
+// [0x00020400]  (iNative[40878])
 struct UREDGfxMoviePlayer_MenuTitle_execUpdateTrial_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.GetCompanyLogoMovieName
-// [0x00420400]  (iNative[37027])
+// [0x00420400]  (iNative[37029])
 struct UREDGfxMoviePlayer_MenuTitle_execGetCompanyLogoMovieName_Params
 {
 	class FString                                      MovieName;                                        // 0x0000 (0x000C) [0x0000000000400180] (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -16673,54 +16672,54 @@ struct UREDGfxMoviePlayer_MenuTitle_execGetCompanyLogoMovieName_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsSkipOpeningMovie
-// [0x00020400]  (iNative[37860])
+// [0x00020400]  (iNative[37862])
 struct UREDGfxMoviePlayer_MenuTitle_execIsSkipOpeningMovie_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsSkipCompanyLogo
-// [0x00020400]  (iNative[37859])
+// [0x00020400]  (iNative[37861])
 struct UREDGfxMoviePlayer_MenuTitle_execIsSkipCompanyLogo_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsNoCard
-// [0x00020400]  (iNative[37750])
+// [0x00020400]  (iNative[37752])
 struct UREDGfxMoviePlayer_MenuTitle_execIsNoCard_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.SetDispRankingGroup
-// [0x00020400]  (iNative[39730])
+// [0x00020400]  (iNative[39732])
 struct UREDGfxMoviePlayer_MenuTitle_execSetDispRankingGroup_Params
 {
 	uint8_t                                            Group;                                            // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.StepNextScene
-// [0x00020400]  (iNative[40090])
+// [0x00020400]  (iNative[40092])
 struct UREDGfxMoviePlayer_MenuTitle_execStepNextScene_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.GetNextScene
-// [0x00020400]  (iNative[37118])
+// [0x00020400]  (iNative[37120])
 struct UREDGfxMoviePlayer_MenuTitle_execGetNextScene_Params
 {
 	uint8_t                                            ReturnValue;                                      // 0x0000 (0x0001) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.StopMovie
-// [0x00020400]  (iNative[28955])
+// [0x00020400]  (iNative[28957])
 struct UREDGfxMoviePlayer_MenuTitle_execStopMovie_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsMoviePlaying
-// [0x00020400]  (iNative[37737])
+// [0x00020400]  (iNative[37739])
 struct UREDGfxMoviePlayer_MenuTitle_execIsMoviePlaying_Params
 {
 	class FString                                      MovieName;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -16728,7 +16727,7 @@ struct UREDGfxMoviePlayer_MenuTitle_execIsMoviePlaying_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.IsMovieFinish
-// [0x00020400]  (iNative[37736])
+// [0x00020400]  (iNative[37738])
 struct UREDGfxMoviePlayer_MenuTitle_execIsMovieFinish_Params
 {
 	class FString                                      MovieName;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -16736,27 +16735,27 @@ struct UREDGfxMoviePlayer_MenuTitle_execIsMovieFinish_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.StartMovie
-// [0x00020400]  (iNative[40024])
+// [0x00020400]  (iNative[40026])
 struct UREDGfxMoviePlayer_MenuTitle_execStartMovie_Params
 {
 	class FString                                      MovieName;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.UpdateCardDisp
-// [0x00020400]  (iNative[40612])
+// [0x00020400]  (iNative[40614])
 struct UREDGfxMoviePlayer_MenuTitle_execUpdateCardDisp_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.UpdateMenuTitleDraw
-// [0x00020400]  (iNative[40781])
+// [0x00020400]  (iNative[40783])
 struct UREDGfxMoviePlayer_MenuTitle_execUpdateMenuTitleDraw_Params
 {
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTitle.InitMenuTitle
-// [0x00020400]  (iNative[37537])
+// [0x00020400]  (iNative[37539])
 struct UREDGfxMoviePlayer_MenuTitle_execInitMenuTitle_Params
 {
 };
@@ -16836,7 +16835,7 @@ struct UREDGfxMoviePlayer_MenuTournamentMisc_eventStopShowRanking_Params
 };
 
 // Function REDGame.REDGfxMoviePlayer_MenuTournamentMisc.ShowRankingEnd
-// [0x00020400]  (iNative[39901])
+// [0x00020400]  (iNative[39903])
 struct UREDGfxMoviePlayer_MenuTournamentMisc_execShowRankingEnd_Params
 {
 };
@@ -17048,14 +17047,14 @@ struct AREDHUD_execCleanUIForPauseScreen_Params
 };
 
 // Function REDGame.REDHUD.GetGameViewportClient
-// [0x00020400]  (iNative[31961])
+// [0x00020400]  (iNative[31963])
 struct AREDHUD_execGetGameViewportClient_Params
 {
 	class UGameViewportClient*                         ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDHUD.PostDispRoot
-// [0x00020400]  (iNative[39081])
+// [0x00020400]  (iNative[39083])
 struct AREDHUD_execPostDispRoot_Params
 {
 };
@@ -17075,7 +17074,7 @@ struct AREDHUD_Battle_execRVNRiseEffect_Params
 };
 
 // Function REDGame.REDHUD_Battle.JKOGhostGaugeDisp
-// [0x00020400]  (iNative[37939])
+// [0x00020400]  (iNative[37941])
 struct AREDHUD_Battle_execJKOGhostGaugeDisp_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17101,7 +17100,7 @@ struct AREDHUD_Battle_execBurstShake_Params
 };
 
 // Function REDGame.REDHUD_Battle.RequestBattleInfo
-// [0x00020400]  (iNative[39366])
+// [0x00020400]  (iNative[39368])
 struct AREDHUD_Battle_execRequestBattleInfo_Params
 {
 	int32_t                                            TextID;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17111,7 +17110,7 @@ struct AREDHUD_Battle_execRequestBattleInfo_Params
 };
 
 // Function REDGame.REDHUD_Battle.Guardmiss_m
-// [0x00020400]  (iNative[37413])
+// [0x00020400]  (iNative[37415])
 struct AREDHUD_Battle_execGuardmiss_m_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17121,7 +17120,7 @@ struct AREDHUD_Battle_execGuardmiss_m_Params
 };
 
 // Function REDGame.REDHUD_Battle.Guardmiss_u
-// [0x00020400]  (iNative[37414])
+// [0x00020400]  (iNative[37416])
 struct AREDHUD_Battle_execGuardmiss_u_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17131,7 +17130,7 @@ struct AREDHUD_Battle_execGuardmiss_u_Params
 };
 
 // Function REDGame.REDHUD_Battle.ShinSousaiDamage
-// [0x00020400]  (iNative[39880])
+// [0x00020400]  (iNative[39882])
 struct AREDHUD_Battle_execShinSousaiDamage_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17139,35 +17138,35 @@ struct AREDHUD_Battle_execShinSousaiDamage_Params
 };
 
 // Function REDGame.REDHUD_Battle.ShinSousai
-// [0x00020400]  (iNative[39879])
+// [0x00020400]  (iNative[39881])
 struct AREDHUD_Battle_execShinSousai_Params
 {
 	int32_t                                            frame;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDHUD_Battle.DispCockpitAll
-// [0x00020400]  (iNative[36550])
+// [0x00020400]  (iNative[36552])
 struct AREDHUD_Battle_execDispCockpitAll_Params
 {
 	uint32_t                                           disp : 1;                                         // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDHUD_Battle.DispCockpit
-// [0x00020400]  (iNative[36549])
+// [0x00020400]  (iNative[36551])
 struct AREDHUD_Battle_execDispCockpit_Params
 {
 	uint32_t                                           disp : 1;                                         // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDHUD_Battle.NegaPena
-// [0x00020400]  (iNative[38527])
+// [0x00020400]  (iNative[38529])
 struct AREDHUD_Battle_execNegaPena_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDHUD_Battle.ButtonRenda
-// [0x00020400]  (iNative[36029])
+// [0x00020400]  (iNative[36031])
 struct AREDHUD_Battle_execButtonRenda_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17178,7 +17177,7 @@ struct AREDHUD_Battle_execButtonRenda_Params
 };
 
 // Function REDGame.REDHUD_Battle.LeverGacha
-// [0x00020400]  (iNative[37993])
+// [0x00020400]  (iNative[37995])
 struct AREDHUD_Battle_execLeverGacha_Params
 {
 	int32_t                                            Player;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17343,7 +17342,7 @@ struct AREDHUD_Battle_execMatchResultWindow_StartShow_Params
 };
 
 // Function REDGame.REDHUD_Battle.UpdateCombo
-// [0x00020400]  (iNative[40620])
+// [0x00020400]  (iNative[40622])
 struct AREDHUD_Battle_execUpdateCombo_Params
 {
 	class AREDPawn*                                    player1;                                          // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17351,13 +17350,13 @@ struct AREDHUD_Battle_execUpdateCombo_Params
 };
 
 // Function REDGame.REDHUD_Battle.Update_Tick
-// [0x00020400]  (iNative[40592])
+// [0x00020400]  (iNative[40594])
 struct AREDHUD_Battle_execUpdate_Tick_Params
 {
 };
 
 // Function REDGame.REDHUD_Battle.UpdateAll
-// [0x00020400]  (iNative[40593])
+// [0x00020400]  (iNative[40595])
 struct AREDHUD_Battle_execUpdateAll_Params
 {
 };
@@ -17430,20 +17429,20 @@ struct AREDHUD_Battle_execIsMapCycleTransitioning_Params
 };
 
 // Function REDGame.REDHUD_Battle.SetupBeginPlay
-// [0x00020400]  (iNative[39818])
+// [0x00020400]  (iNative[39820])
 struct AREDHUD_Battle_execSetupBeginPlay_Params
 {
 };
 
 // Function REDGame.REDHUD_Battle.GetGameVersionString
-// [0x00020400]  (iNative[37063])
+// [0x00020400]  (iNative[37065])
 struct AREDHUD_Battle_execGetGameVersionString_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDHUD_Battle.GetDanToString
-// [0x00020400]  (iNative[37041])
+// [0x00020400]  (iNative[37043])
 struct AREDHUD_Battle_execGetDanToString_Params
 {
 	int32_t                                            Dan;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17451,7 +17450,7 @@ struct AREDHUD_Battle_execGetDanToString_Params
 };
 
 // Function REDGame.REDMaterialSetArray.GetMaterialDataIndexFromMeshName
-// [0x00020400]  (iNative[37093])
+// [0x00020400]  (iNative[37095])
 struct UREDMaterialSetArray_execGetMaterialDataIndexFromMeshName_Params
 {
 	class FName                                        MeshName;                                         // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -17473,19 +17472,19 @@ struct UREDMeshPool_execDisplayDebug_Params
 };
 
 // Function REDGame.REDMeshPool.ResetPool
-// [0x00020400]  (iNative[39385])
+// [0x00020400]  (iNative[39387])
 struct UREDMeshPool_execResetPool_Params
 {
 };
 
 // Function REDGame.REDMeshPool.InitPool
-// [0x00020400]  (iNative[37540])
+// [0x00020400]  (iNative[37542])
 struct UREDMeshPool_execInitPool_Params
 {
 };
 
 // Function REDGame.REDMeshPool.GetFreeMaterialInstanceConstant
-// [0x00024401]  (iNative[37060])
+// [0x00024401]  (iNative[37062])
 struct UREDMeshPool_execGetFreeMaterialInstanceConstant_Params
 {
 	uint32_t                                           bCreateNewObject : 1;                             // 0x0000 (0x0004) [0x0000000000000090] [0x00000001] (CPF_OptionalParm | CPF_Parm)
@@ -17493,7 +17492,7 @@ struct UREDMeshPool_execGetFreeMaterialInstanceConstant_Params
 };
 
 // Function REDGame.REDMeshPool.GetFreeSkeletalMeshComponent
-// [0x00024401]  (iNative[37061])
+// [0x00024401]  (iNative[37063])
 struct UREDMeshPool_execGetFreeSkeletalMeshComponent_Params
 {
 	uint32_t                                           bCreateNewObject : 1;                             // 0x0000 (0x0004) [0x0000000000000090] [0x00000001] (CPF_OptionalParm | CPF_Parm)
@@ -17501,35 +17500,35 @@ struct UREDMeshPool_execGetFreeSkeletalMeshComponent_Params
 };
 
 // Function REDGame.REDMeshPool.ReturnToMaterialInstanceFromPawn
-// [0x00020401]  (iNative[39404])
+// [0x00020401]  (iNative[39406])
 struct UREDMeshPool_execReturnToMaterialInstanceFromPawn_Params
 {
 	class AREDPawn*                                    ReleasePawn;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDMeshPool.ReturnToSkeletalMeshComponentFromPawn
-// [0x00020401]  (iNative[39405])
+// [0x00020401]  (iNative[39407])
 struct UREDMeshPool_execReturnToSkeletalMeshComponentFromPawn_Params
 {
 	class AREDPawn*                                    ReleasePawn;                                      // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDMeshPool.FreeMaterialInstanceConstant
-// [0x00020401]  (iNative[36908])
+// [0x00020401]  (iNative[36910])
 struct UREDMeshPool_execFreeMaterialInstanceConstant_Params
 {
 	class UMaterialInstanceConstant*                   MIC;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDMeshPool.FreeSkeletalMeshComponent
-// [0x00020401]  (iNative[36909])
+// [0x00020401]  (iNative[36911])
 struct UREDMeshPool_execFreeSkeletalMeshComponent_Params
 {
 	class USkeletalMeshComponent*                      SKMeshComponent;                                  // 0x0000 (0x0004) [0x0000000004000080] (CPF_Parm | CPF_EditInline)
 };
 
 // Function REDGame.REDParticle.CreateParticle
-// [0x00420400]  (iNative[36334])
+// [0x00420400]  (iNative[36336])
 struct UREDParticle_execCreateParticle_Params
 {
 	class AActor*                                      Actor;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17538,7 +17537,7 @@ struct UREDParticle_execCreateParticle_Params
 };
 
 // Function REDGame.REDParticleMaterialInfo.Setup
-// [0x00020400]  (iNative[28186])
+// [0x00020400]  (iNative[28188])
 struct UREDParticleMaterialInfo_execSetup_Params
 {
 	class AREDPawn*                                    ParentPawn;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17546,7 +17545,7 @@ struct UREDParticleMaterialInfo_execSetup_Params
 };
 
 // Function REDGame.REDPawnMaterials.GetMaterialSetArrayFromPatternName
-// [0x00024400]  (iNative[37094])
+// [0x00024400]  (iNative[37096])
 struct UREDPawnMaterials_execGetMaterialSetArrayFromPatternName_Params
 {
 	class FName                                        PatternName;                                      // 0x0000 (0x0008) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -17655,7 +17654,7 @@ struct AREDPlayerController_execShowMenu_Params
 };
 
 // Function REDGame.REDPlayerController.IsOnlineRollback
-// [0x00020401]  (iNative[22936])
+// [0x00020401]  (iNative[22938])
 struct AREDPlayerController_execIsOnlineRollback_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -17668,7 +17667,7 @@ struct AREDPlayerController_Adv_eventPreBeginPlay_Params
 };
 
 // Function REDGame.REDPlayerController_Adv.InitPlayerController_Adv
-// [0x00020400]  (iNative[37538])
+// [0x00020400]  (iNative[37540])
 struct AREDPlayerController_Adv_execInitPlayerController_Adv_Params
 {
 };
@@ -17680,7 +17679,7 @@ struct AREDPlayerController_DigitalFigure_eventPreBeginPlay_Params
 };
 
 // Function REDGame.REDPlayerController_DigitalFigure.InitPlayerController_DigitalFigure
-// [0x00020400]  (iNative[37539])
+// [0x00020400]  (iNative[37541])
 struct AREDPlayerController_DigitalFigure_execInitPlayerController_DigitalFigure_Params
 {
 };
@@ -17694,20 +17693,20 @@ struct UREDPointLightManager_eventDebugDisp_Params
 };
 
 // Function REDGame.REDPointLightManager.PostUpdate
-// [0x00020400]  (iNative[26345])
+// [0x00020400]  (iNative[26347])
 struct UREDPointLightManager_execPostUpdate_Params
 {
 };
 
 // Function REDGame.REDPointLightManager.UpdateCalledOn
-// [0x00020400]  (iNative[40608])
+// [0x00020400]  (iNative[40610])
 struct UREDPointLightManager_execUpdateCalledOn_Params
 {
 	int32_t                                            Id;                                               // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPointLightManager.NativeDebugDisp
-// [0x00020400]  (iNative[38510])
+// [0x00020400]  (iNative[38512])
 struct UREDPointLightManager_execNativeDebugDisp_Params
 {
 	uint32_t                                           bDisp : 1;                                        // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -17721,7 +17720,7 @@ struct UREDPointLightManager_execTick_Params
 };
 
 // Function REDGame.REDPointLightManager.GetClosestPointLight
-// [0x00420400]  (iNative[37019])
+// [0x00420400]  (iNative[37021])
 struct UREDPointLightManager_execGetClosestPointLight_Params
 {
 	struct FVector                                     Location;                                         // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -17730,14 +17729,14 @@ struct UREDPointLightManager_execGetClosestPointLight_Params
 };
 
 // Function REDGame.REDPointLightManager.UnregistLight
-// [0x00020400]  (iNative[40586])
+// [0x00020400]  (iNative[40588])
 struct UREDPointLightManager_execUnregistLight_Params
 {
 	int32_t                                            Id;                                               // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPointLightManager.UpdateLight
-// [0x00420400]  (iNative[40747])
+// [0x00420400]  (iNative[40749])
 struct UREDPointLightManager_execUpdateLight_Params
 {
 	int32_t                                            Id;                                               // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17746,7 +17745,7 @@ struct UREDPointLightManager_execUpdateLight_Params
 };
 
 // Function REDGame.REDPointLightManager.UpdateLightDebug
-// [0x00420400]  (iNative[40748])
+// [0x00420400]  (iNative[40750])
 struct UREDPointLightManager_execUpdateLightDebug_Params
 {
 	int32_t                                            Id;                                               // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -17762,7 +17761,7 @@ struct UREDPointLightManager_execUpdateLightDebug_Params
 };
 
 // Function REDGame.REDPointLightManager.RegistLight
-// [0x00424400]  (iNative[39322])
+// [0x00424400]  (iNative[39324])
 struct UREDPointLightManager_execRegistLight_Params
 {
 	struct FVector                                     Location;                                         // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -17779,7 +17778,7 @@ struct UREDPointLightManager_execRegistLight_Params
 };
 
 // Function REDGame.REDPointLightManager.EnableLight
-// [0x00020400]  (iNative[36667])
+// [0x00020400]  (iNative[36669])
 struct UREDPointLightManager_execEnableLight_Params
 {
 	uint32_t                                           bEnable : 1;                                      // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -17814,7 +17813,7 @@ struct UREDSeqAct_ChangeAnimNodeLookAtBattle_eventActivateFunc_Params
 };
 
 // Function REDGame.REDSeqAct_SetCharaToLookAtBattle.GetCharaPawn
-// [0x00020400]  (iNative[37018])
+// [0x00020400]  (iNative[37020])
 struct UREDSeqAct_SetCharaToLookAtBattle_execGetCharaPawn_Params
 {
 	class FString                                      _CharaID;                                         // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -18004,7 +18003,7 @@ struct AREDSeqEventManager_execRequestEventBGEffect_Params
 };
 
 // Function REDGame.REDSeqEventManager.DrawBGAttributeRect
-// [0x00020400]  (iNative[36596])
+// [0x00020400]  (iNative[36598])
 struct AREDSeqEventManager_execDrawBGAttributeRect_Params
 {
 	class AHUD*                                        HUD;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -18015,7 +18014,7 @@ struct AREDSeqEventManager_execDrawBGAttributeRect_Params
 };
 
 // Function REDGame.REDSeqEventManager.DrawBGEffectRect
-// [0x00020400]  (iNative[36597])
+// [0x00020400]  (iNative[36599])
 struct AREDSeqEventManager_execDrawBGEffectRect_Params
 {
 	class AHUD*                                        HUD;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -18025,14 +18024,14 @@ struct AREDSeqEventManager_execDrawBGEffectRect_Params
 };
 
 // Function REDGame.REDSeqEventManager.ToUEPos
-// [0x00420400]  (iNative[40272])
+// [0x00420400]  (iNative[40274])
 struct AREDSeqEventManager_execToUEPos_Params
 {
 	struct FVector                                     Loc;                                              // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDSeqEventManager.IsBGEffectHit
-// [0x00020400]  (iNative[37604])
+// [0x00020400]  (iNative[37606])
 struct AREDSeqEventManager_execIsBGEffectHit_Params
 {
 	float                                              X1;                                               // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -18044,7 +18043,7 @@ struct AREDSeqEventManager_execIsBGEffectHit_Params
 };
 
 // Function REDGame.REDSoundLipsyncArray.GetLipsync
-// [0x00020400]  (iNative[37084])
+// [0x00020400]  (iNative[37086])
 struct UREDSoundLipsyncArray_execGetLipsync_Params
 {
 	class FName                                        Key;                                              // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -18052,7 +18051,7 @@ struct UREDSoundLipsyncArray_execGetLipsync_Params
 };
 
 // Function REDGame.REDSoundPlayer.PlayStaticSoundWithPos
-// [0x00420400]  (iNative[39045])
+// [0x00420400]  (iNative[39047])
 struct UREDSoundPlayer_execPlayStaticSoundWithPos_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -18060,7 +18059,7 @@ struct UREDSoundPlayer_execPlayStaticSoundWithPos_Params
 };
 
 // Function REDGame.REDSoundPlayer.PlayStaticSound
-// [0x00020400]  (iNative[39044])
+// [0x00020400]  (iNative[39046])
 struct UREDSoundPlayer_execPlayStaticSound_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -18075,7 +18074,7 @@ struct UREDSoundPlayer_execPlaySound_Params
 };
 
 // Function REDGame.REDSoundPlayer.GetSoundCue
-// [0x00080400]  (iNative[37169])
+// [0x00080400]  (iNative[37171])
 struct UREDSoundPlayer_execGetSoundCue_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -18083,7 +18082,7 @@ struct UREDSoundPlayer_execGetSoundCue_Params
 };
 
 // Function REDGame.REDSoundPlayerUnique.IsPlayingUniqueSound
-// [0x00024400]  (iNative[37774])
+// [0x00024400]  (iNative[37776])
 struct UREDSoundPlayerUnique_execIsPlayingUniqueSound_Params
 {
 	int32_t                                            ch;                                               // 0x0000 (0x0004) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -18091,14 +18090,14 @@ struct UREDSoundPlayerUnique_execIsPlayingUniqueSound_Params
 };
 
 // Function REDGame.REDSoundPlayerUnique.StopUniqueSound
-// [0x00024400]  (iNative[40107])
+// [0x00024400]  (iNative[40109])
 struct UREDSoundPlayerUnique_execStopUniqueSound_Params
 {
 	int32_t                                            ch;                                               // 0x0000 (0x0004) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
 };
 
 // Function REDGame.REDSoundPlayerUnique.PlayUniqueSound
-// [0x00024400]  (iNative[39048])
+// [0x00024400]  (iNative[39050])
 struct UREDSoundPlayerUnique_execPlayUniqueSound_Params
 {
 	class AActor*                                      Actor;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -18109,7 +18108,7 @@ struct UREDSoundPlayerUnique_execPlayUniqueSound_Params
 };
 
 // Function REDGame.REDSoundPlayerUnique.AttachComponent
-// [0x00020400]  (iNative[15081])
+// [0x00020400]  (iNative[15083])
 struct UREDSoundPlayerUnique_execAttachComponent_Params
 {
 	class AActor*                                      Actor;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -18123,7 +18122,7 @@ struct UREDSoundPlayerUnique_eventCreateAudioComponent_Params
 };
 
 // Function REDGame.REDTexture2DArray.GetTexture2D
-// [0x00020400]  (iNative[37185])
+// [0x00020400]  (iNative[37187])
 struct UREDTexture2DArray_execGetTexture2D_Params
 {
 	class FName                                        texName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -18138,7 +18137,7 @@ struct UREDTMSConfig_eventDispData_Params
 };
 
 // Function REDGame.REDAnimArray.GetAnimSet
-// [0x00020400]  (iNative[36998])
+// [0x00020400]  (iNative[37000])
 struct UREDAnimArray_execGetAnimSet_Params
 {
 	class FName                                        DataName;                                         // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -18146,7 +18145,7 @@ struct UREDAnimArray_execGetAnimSet_Params
 };
 
 // Function REDGame.REDAnimArray.GetAnimTree
-// [0x00020400]  (iNative[36999])
+// [0x00020400]  (iNative[37001])
 struct UREDAnimArray_execGetAnimTree_Params
 {
 	class FName                                        DataName;                                         // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -18154,7 +18153,7 @@ struct UREDAnimArray_execGetAnimTree_Params
 };
 
 // Function REDGame.REDAnimArray.GetAnimDataIndex
-// [0x00440401]  (iNative[36997])
+// [0x00440401]  (iNative[36999])
 struct UREDAnimArray_execGetAnimDataIndex_Params
 {
 	class FName                                        DataName;                                         // 0x0000 (0x0008) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -18244,7 +18243,7 @@ struct AREDGameInfo_Battle_execUpdateWaitAsyncLoading_Params
 };
 
 // Function REDGame.REDGameInfo_Battle.RenderUpdate2D
-// [0x00020400]  (iNative[39325])
+// [0x00020400]  (iNative[39327])
 struct AREDGameInfo_Battle_execRenderUpdate2D_Params
 {
 	class UCanvas*                                     Canvas;                                           // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -18371,20 +18370,20 @@ struct AREDGameInfo_Battle_eventBGFadeIn_Params
 };
 
 // Function REDGame.REDGameInfo_Battle.SetResultCamera
-// [0x00020400]  (iNative[39800])
+// [0x00020400]  (iNative[39802])
 struct AREDGameInfo_Battle_execSetResultCamera_Params
 {
 	uint8_t                                            Winner;                                           // 0x0000 (0x0001) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameInfo_Battle.UpdatePawnLightVector
-// [0x00020400]  (iNative[40804])
+// [0x00020400]  (iNative[40806])
 struct AREDGameInfo_Battle_execUpdatePawnLightVector_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Battle.UpdatePawnMaterialInstance
-// [0x00020400]  (iNative[40805])
+// [0x00020400]  (iNative[40807])
 struct AREDGameInfo_Battle_execUpdatePawnMaterialInstance_Params
 {
 };
@@ -18411,7 +18410,7 @@ struct AREDGameInfo_Battle_eventRoundReset_Params
 };
 
 // Function REDGame.REDGameInfo_Battle.RoundResetCommonPawn
-// [0x00020401]  (iNative[39447])
+// [0x00020401]  (iNative[39449])
 struct AREDGameInfo_Battle_execRoundResetCommonPawn_Params
 {
 };
@@ -18537,111 +18536,111 @@ struct AREDGameInfo_Battle_eventGameEnding_Params
 };
 
 // Function REDGame.REDGameInfo_Battle.IsDispCockpit
-// [0x00020400]  (iNative[37638])
+// [0x00020400]  (iNative[37640])
 struct AREDGameInfo_Battle_execIsDispCockpit_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameInfo_Battle.SetupDramaEffect
-// [0x00420400]  (iNative[39833])
+// [0x00420400]  (iNative[39835])
 struct AREDGameInfo_Battle_execSetupDramaEffect_Params
 {
 	class TArray<class FString>                        ExPackagenames;                                   // 0x0000 (0x000C) [0x0000000000400182] (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGameInfo_Battle.SetupMOMEffect
-// [0x00420400]  (iNative[39847])
+// [0x00420400]  (iNative[39849])
 struct AREDGameInfo_Battle_execSetupMOMEffect_Params
 {
 	class TArray<struct FSpawnPlayerInfo>              PlayerInfo;                                       // 0x0000 (0x000C) [0x0000000000400182] (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDGameInfo_Battle.GetBattleTimer
-// [0x00020400]  (iNative[37002])
+// [0x00020400]  (iNative[37004])
 struct AREDGameInfo_Battle_execGetBattleTimer_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDGameInfo_Battle.SceneFinalize
-// [0x00020400]  (iNative[39469])
+// [0x00020400]  (iNative[39471])
 struct AREDGameInfo_Battle_execSceneFinalize_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Battle.SceneInitialize
-// [0x00020400]  (iNative[39471])
+// [0x00020400]  (iNative[39473])
 struct AREDGameInfo_Battle_execSceneInitialize_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Battle.UpdateNetworkError
-// [0x00020400]  (iNative[40790])
+// [0x00020400]  (iNative[40792])
 struct AREDGameInfo_Battle_execUpdateNetworkError_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Battle.UpdateBattle
-// [0x00020400]  (iNative[40597])
+// [0x00020400]  (iNative[40599])
 struct AREDGameInfo_Battle_execUpdateBattle_Params
 {
 	float                                              DeltaTime;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameInfo_Battle.EndBattle
-// [0x00020400]  (iNative[36675])
+// [0x00020400]  (iNative[36677])
 struct AREDGameInfo_Battle_execEndBattle_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Battle.CleanupBattleInfo
-// [0x00020400]  (iNative[36218])
+// [0x00020400]  (iNative[36220])
 struct AREDGameInfo_Battle_execCleanupBattleInfo_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Battle.PostLogin_Internal
-// [0x00020400]  (iNative[39083])
+// [0x00020400]  (iNative[39085])
 struct AREDGameInfo_Battle_execPostLogin_Internal_Params
 {
 	class APlayerController*                           NewPlayer;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDGameInfo_Battle.PostBeginPlay_Internal
-// [0x00020400]  (iNative[39080])
+// [0x00020400]  (iNative[39082])
 struct AREDGameInfo_Battle_execPostBeginPlay_Internal_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Battle.PreBeginPlay_Internal
-// [0x00020400]  (iNative[39097])
+// [0x00020400]  (iNative[39099])
 struct AREDGameInfo_Battle_execPreBeginPlay_Internal_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Battle.SetupBattleInfo
-// [0x00020400]  (iNative[39817])
+// [0x00020400]  (iNative[39819])
 struct AREDGameInfo_Battle_execSetupBattleInfo_Params
 {
 };
 
 // Function REDGame.REDGameInfo_Battle.PostDispRoot
-// [0x00020401]  (iNative[39081])
+// [0x00020401]  (iNative[39083])
 struct AREDGameInfo_Battle_execPostDispRoot_Params
 {
 	class AHUD*                                        HUD;                                              // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn.SetMeshDamageLevel
-// [0x00020401]  (iNative[39774])
+// [0x00020401]  (iNative[39776])
 struct AREDPawn_execSetMeshDamageLevel_Params
 {
 	int32_t                                            Level;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn.GetExGaugeParam
-// [0x00420401]  (iNative[37058])
+// [0x00420401]  (iNative[37060])
 struct AREDPawn_execGetExGaugeParam_Params
 {
 	int32_t                                            Id;                                               // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -18649,7 +18648,7 @@ struct AREDPawn_execGetExGaugeParam_Params
 };
 
 // Function REDGame.REDPawn.GetOffscreenParam
-// [0x00420401]  (iNative[37120])
+// [0x00420401]  (iNative[37122])
 struct AREDPawn_execGetOffscreenParam_Params
 {
 	int32_t                                            PosX;                                             // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -18658,42 +18657,42 @@ struct AREDPawn_execGetOffscreenParam_Params
 };
 
 // Function REDGame.REDPawn.GetNegativeVal
-// [0x00020401]  (iNative[37115])
+// [0x00020401]  (iNative[37117])
 struct AREDPawn_execGetNegativeVal_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetTensionBalanceSpeed
-// [0x00020401]  (iNative[37182])
+// [0x00020401]  (iNative[37184])
 struct AREDPawn_execGetTensionBalanceSpeed_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.IsCounterHitByGuardBalance
-// [0x00020401]  (iNative[37629])
+// [0x00020401]  (iNative[37631])
 struct AREDPawn_execIsCounterHitByGuardBalance_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetGuardBalanceRed
-// [0x00020401]  (iNative[37065])
+// [0x00020401]  (iNative[37067])
 struct AREDPawn_execGetGuardBalanceRed_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetGuardBalance
-// [0x00020401]  (iNative[37064])
+// [0x00020401]  (iNative[37066])
 struct AREDPawn_execGetGuardBalance_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetImperfectComboLog
-// [0x00020401]  (iNative[37070])
+// [0x00020401]  (iNative[37072])
 struct AREDPawn_execGetImperfectComboLog_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -18701,98 +18700,98 @@ struct AREDPawn_execGetImperfectComboLog_Params
 };
 
 // Function REDGame.REDPawn.GetComboDamage
-// [0x00020401]  (iNative[37026])
+// [0x00020401]  (iNative[37028])
 struct AREDPawn_execGetComboDamage_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetComboCount
-// [0x00020401]  (iNative[37024])
+// [0x00020401]  (iNative[37026])
 struct AREDPawn_execGetComboCount_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetComboCountAddTime
-// [0x00020401]  (iNative[37025])
+// [0x00020401]  (iNative[37027])
 struct AREDPawn_execGetComboCountAddTime_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetComboBreakTime
-// [0x00020401]  (iNative[37023])
+// [0x00020401]  (iNative[37025])
 struct AREDPawn_execGetComboBreakTime_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.IsComboImperfect
-// [0x00020401]  (iNative[37621])
+// [0x00020401]  (iNative[37623])
 struct AREDPawn_execIsComboImperfect_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.IsComboTrigger
-// [0x00020401]  (iNative[37622])
+// [0x00020401]  (iNative[37624])
 struct AREDPawn_execIsComboTrigger_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.IsBurstSealed
-// [0x00020401]  (iNative[37611])
+// [0x00020401]  (iNative[37613])
 struct AREDPawn_execIsBurstSealed_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetBurstVal
-// [0x00020401]  (iNative[37010])
+// [0x00020401]  (iNative[37012])
 struct AREDPawn_execGetBurstVal_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetTensionState
-// [0x00020401]  (iNative[37184])
+// [0x00020401]  (iNative[37186])
 struct AREDPawn_execGetTensionState_Params
 {
 	class FString                                      ReturnValue;                                      // 0x0000 (0x000C) [0x0000000000400580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 };
 
 // Function REDGame.REDPawn.GetTensionColorIndex
-// [0x00020401]  (iNative[37183])
+// [0x00020401]  (iNative[37185])
 struct AREDPawn_execGetTensionColorIndex_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetTension
-// [0x00020401]  (iNative[37181])
+// [0x00020401]  (iNative[37183])
 struct AREDPawn_execGetTension_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetHitPointWhite
-// [0x00020401]  (iNative[37068])
+// [0x00020401]  (iNative[37070])
 struct AREDPawn_execGetHitPointWhite_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetHitPointRed
-// [0x00020401]  (iNative[37067])
+// [0x00020401]  (iNative[37069])
 struct AREDPawn_execGetHitPointRed_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn.GetHitPoint
-// [0x00020401]  (iNative[37066])
+// [0x00020401]  (iNative[37068])
 struct AREDPawn_execGetHitPoint_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -18844,7 +18843,7 @@ struct AREDPawn_eventStopCamera_Params
 };
 
 // Function REDGame.REDPawn.LookAtCamera
-// [0x00424401]  (iNative[38088])
+// [0x00424401]  (iNative[38090])
 struct AREDPawn_execLookAtCamera_Params
 {
 	class AREDPawn*                                    BasePawn;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -18893,7 +18892,7 @@ struct AREDPawn_eventMoveCameraPreset_Params
 };
 
 // Function REDGame.REDPawn.CommonSE
-// [0x00024401]  (iNative[36275])
+// [0x00024401]  (iNative[36277])
 struct AREDPawn_execCommonSE_Params
 {
 	class FName                                        cueName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -18901,14 +18900,14 @@ struct AREDPawn_execCommonSE_Params
 };
 
 // Function REDGame.REDPawn.GetSoundPlayLocation
-// [0x00420401]  (iNative[37170])
+// [0x00420401]  (iNative[37172])
 struct AREDPawn_execGetSoundPlayLocation_Params
 {
 	struct FVector                                     Loc;                                              // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDPawn.CreateCommonParticle
-// [0x00420401]  (iNative[36328])
+// [0x00420401]  (iNative[36330])
 struct AREDPawn_execCreateCommonParticle_Params
 {
 	struct FParticleArg                                Arg;                                              // 0x0000 (0x006C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -18916,7 +18915,7 @@ struct AREDPawn_execCreateCommonParticle_Params
 };
 
 // Function REDGame.REDPawn.ParticleMoveToSocket
-// [0x00420401]  (iNative[38890])
+// [0x00420401]  (iNative[38892])
 struct AREDPawn_execParticleMoveToSocket_Params
 {
 	class UParticleSystemComponent*                    PSC;                                              // 0x0000 (0x0004) [0x0000000004000080] (CPF_Parm | CPF_EditInline)
@@ -18925,7 +18924,7 @@ struct AREDPawn_execParticleMoveToSocket_Params
 };
 
 // Function REDGame.REDPawn.GetSocketLocationAndRotation
-// [0x00424401]  (iNative[37168])
+// [0x00424401]  (iNative[37170])
 struct AREDPawn_execGetSocketLocationAndRotation_Params
 {
 	class FName                                        SocketName;                                       // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -18946,20 +18945,20 @@ struct AREDPawn_eventTick_Params
 };
 
 // Function REDGame.REDPawn.NativeTick
-// [0x00020400]  (iNative[38511])
+// [0x00020400]  (iNative[38513])
 struct AREDPawn_execNativeTick_Params
 {
 	float                                              DeltaTime;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn.DebugTick
-// [0x00020401]  (iNative[36429])
+// [0x00020401]  (iNative[36431])
 struct AREDPawn_execDebugTick_Params
 {
 };
 
 // Function REDGame.REDPawn.UpdateBlendAnim
-// [0x00020400]  (iNative[40602])
+// [0x00020400]  (iNative[40604])
 struct AREDPawn_execUpdateBlendAnim_Params
 {
 };
@@ -18972,7 +18971,7 @@ struct AREDPawn_eventSetAutoUpdateBlendAnime_Params
 };
 
 // Function REDGame.REDPawn.GetModelDir
-// [0x00020401]  (iNative[37108])
+// [0x00020401]  (iNative[37110])
 struct AREDPawn_execGetModelDir_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -19033,7 +19032,7 @@ struct AREDPawn_eventCloseMouth_Params
 };
 
 // Function REDGame.REDPawn.ChangeMouth
-// [0x00020401]  (iNative[36099])
+// [0x00020401]  (iNative[36101])
 struct AREDPawn_execChangeMouth_Params
 {
 	class FName                                        MouthNodeName;                                    // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -19067,7 +19066,7 @@ struct AREDPawn_eventStartLip_Params
 };
 
 // Function REDGame.REDPawn.SetNonStepAnimUseDeltaSeconds
-// [0x00020401]  (iNative[39783])
+// [0x00020401]  (iNative[39785])
 struct AREDPawn_execSetNonStepAnimUseDeltaSeconds_Params
 {
 	uint32_t                                           On : 1;                                           // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -19081,48 +19080,48 @@ struct AREDPawn_execIsAnimeEnd_Params
 };
 
 // Function REDGame.REDPawn.SetStepAnimeMode
-// [0x00020401]  (iNative[39812])
+// [0x00020401]  (iNative[39814])
 struct AREDPawn_execSetStepAnimeMode_Params
 {
 	uint32_t                                           On : 1;                                           // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDPawn.SetNonStepAnimeFrame
-// [0x00020401]  (iNative[39782])
+// [0x00020401]  (iNative[39784])
 struct AREDPawn_execSetNonStepAnimeFrame_Params
 {
 	int32_t                                            frame;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn.SetAnimeFrame
-// [0x00020401]  (iNative[39688])
+// [0x00020401]  (iNative[39690])
 struct AREDPawn_execSetAnimeFrame_Params
 {
 	int32_t                                            frame;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn.StepAnime
-// [0x00024401]  (iNative[40088])
+// [0x00024401]  (iNative[40090])
 struct AREDPawn_execStepAnime_Params
 {
 	int32_t                                            StepFrame;                                        // 0x0000 (0x0004) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
 };
 
 // Function REDGame.REDPawn.StopAnimeSectionLoop
-// [0x00020401]  (iNative[40096])
+// [0x00020401]  (iNative[40098])
 struct AREDPawn_execStopAnimeSectionLoop_Params
 {
 };
 
 // Function REDGame.REDPawn.SetAnimeLoop
-// [0x00020401]  (iNative[39689])
+// [0x00020401]  (iNative[39691])
 struct AREDPawn_execSetAnimeLoop_Params
 {
 	uint32_t                                           flag : 1;                                         // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDPawn.PlayCutSceneAnime
-// [0x00020401]  (iNative[38967])
+// [0x00020401]  (iNative[38969])
 struct AREDPawn_execPlayCutSceneAnime_Params
 {
 	class FName                                        AnimSeqName;                                      // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -19131,7 +19130,7 @@ struct AREDPawn_execPlayCutSceneAnime_Params
 };
 
 // Function REDGame.REDPawn.ChangeAnime
-// [0x00020401]  (iNative[36085])
+// [0x00020401]  (iNative[36087])
 struct AREDPawn_execChangeAnime_Params
 {
 	class FName                                        AnimSeqName;                                      // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -19142,13 +19141,13 @@ struct AREDPawn_execChangeAnime_Params
 };
 
 // Function REDGame.REDPawn.UpdateNonStepAnime
-// [0x00020401]  (iNative[40793])
+// [0x00020401]  (iNative[40795])
 struct AREDPawn_execUpdateNonStepAnime_Params
 {
 };
 
 // Function REDGame.REDPawn.OnActionChange
-// [0x00020401]  (iNative[38808])
+// [0x00020401]  (iNative[38810])
 struct AREDPawn_execOnActionChange_Params
 {
 };
@@ -19199,7 +19198,7 @@ struct AREDPawn_execCalcCamera_Params
 };
 
 // Function REDGame.REDPawn.SetMaterialParamFloat
-// [0x00024401]  (iNative[39770])
+// [0x00024401]  (iNative[39772])
 struct AREDPawn_execSetMaterialParamFloat_Params
 {
 	class FName                                        ParamName;                                        // 0x0000 (0x0008) [0x0000000000000082] (CPF_Const | CPF_Parm)
@@ -19208,7 +19207,7 @@ struct AREDPawn_execSetMaterialParamFloat_Params
 };
 
 // Function REDGame.REDPawn.SetMaterialParamVector
-// [0x00424401]  (iNative[39771])
+// [0x00424401]  (iNative[39773])
 struct AREDPawn_execSetMaterialParamVector_Params
 {
 	class FName                                        ParamName;                                        // 0x0000 (0x0008) [0x0000000000000082] (CPF_Const | CPF_Parm)
@@ -19217,14 +19216,14 @@ struct AREDPawn_execSetMaterialParamVector_Params
 };
 
 // Function REDGame.REDPawn.AddExtraAnimArray
-// [0x00020401]  (iNative[35383])
+// [0x00020401]  (iNative[35385])
 struct AREDPawn_execAddExtraAnimArray_Params
 {
 	class UREDAnimArray*                               AnimInfo;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn.SetupMeshInstance
-// [0x00020400]  (iNative[39845])
+// [0x00020400]  (iNative[39847])
 struct AREDPawn_execSetupMeshInstance_Params
 {
 	class UREDMeshArray*                               MeshInfo;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -19233,20 +19232,20 @@ struct AREDPawn_execSetupMeshInstance_Params
 };
 
 // Function REDGame.REDPawn.SetupMaterialsForAdv
-// [0x00020401]  (iNative[39844])
+// [0x00020401]  (iNative[39846])
 struct AREDPawn_execSetupMaterialsForAdv_Params
 {
 };
 
 // Function REDGame.REDPawn.SetLoadingMaterials
-// [0x00020401]  (iNative[39766])
+// [0x00020401]  (iNative[39768])
 struct AREDPawn_execSetLoadingMaterials_Params
 {
 	class UREDPawnMaterials*                           Materials;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn.SetupMaterials
-// [0x00024401]  (iNative[39843])
+// [0x00024401]  (iNative[39845])
 struct AREDPawn_execSetupMaterials_Params
 {
 	class FName                                        Typename;                                         // 0x0000 (0x0008) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
@@ -19266,7 +19265,7 @@ struct AREDPawn_eventDestroyed_Params
 };
 
 // Function REDGame.REDPawn.ReusePawn
-// [0x00020401]  (iNative[39406])
+// [0x00020401]  (iNative[39408])
 struct AREDPawn_execReusePawn_Params
 {
 };
@@ -19278,21 +19277,21 @@ struct AREDPawn_eventResetOnGame_Params
 };
 
 // Function REDGame.REDPawn.SetSkeletonUpdateOnCellChange
-// [0x00020401]  (iNative[39807])
+// [0x00020401]  (iNative[39809])
 struct AREDPawn_execSetSkeletonUpdateOnCellChange_Params
 {
 	uint32_t                                           bUpdate : 1;                                      // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDPawn.DispMeshOff
-// [0x00020401]  (iNative[36557])
+// [0x00020401]  (iNative[36559])
 struct AREDPawn_execDispMeshOff_Params
 {
 	uint32_t                                           Off : 1;                                          // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDPawn.SetDispMesh
-// [0x00024401]  (iNative[39729])
+// [0x00024401]  (iNative[39731])
 struct AREDPawn_execSetDispMesh_Params
 {
 	uint32_t                                           On : 1;                                           // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -19300,32 +19299,32 @@ struct AREDPawn_execSetDispMesh_Params
 };
 
 // Function REDGame.REDPawn.ResetMaterialInstanceParam
-// [0x00020401]  (iNative[39383])
+// [0x00020401]  (iNative[39385])
 struct AREDPawn_execResetMaterialInstanceParam_Params
 {
 };
 
 // Function REDGame.REDPawn.UpdateMaterialInstanceParam
-// [0x00020401]  (iNative[40770])
+// [0x00020401]  (iNative[40772])
 struct AREDPawn_execUpdateMaterialInstanceParam_Params
 {
 };
 
 // Function REDGame.REDPawn.UpdateMaterialOnCharaSelect
-// [0x00420401]  (iNative[40771])
+// [0x00420401]  (iNative[40773])
 struct AREDPawn_execUpdateMaterialOnCharaSelect_Params
 {
 	float                                              inAddColor;                                       // 0x0000 (0x0004) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDPawn.UpdateMaterialParamDirection
-// [0x00020401]  (iNative[40773])
+// [0x00020401]  (iNative[40775])
 struct AREDPawn_execUpdateMaterialParamDirection_Params
 {
 };
 
 // Function REDGame.REDPawn.UpdateCameraParam
-// [0x00420401]  (iNative[40611])
+// [0x00420401]  (iNative[40613])
 struct AREDPawn_execUpdateCameraParam_Params
 {
 	struct FVector                                     InCameraDir;                                      // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -19333,20 +19332,20 @@ struct AREDPawn_execUpdateCameraParam_Params
 };
 
 // Function REDGame.REDPawn.UpdateLightVectorFromLightAnime
-// [0x00420401]  (iNative[40750])
+// [0x00420401]  (iNative[40752])
 struct AREDPawn_execUpdateLightVectorFromLightAnime_Params
 {
 	struct FVector                                     lightVec;                                         // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDPawn.UpdateLightVector
-// [0x00020401]  (iNative[40749])
+// [0x00020401]  (iNative[40751])
 struct AREDPawn_execUpdateLightVector_Params
 {
 };
 
 // Function REDGame.REDPawn.SetLightVector
-// [0x00020401]  (iNative[39763])
+// [0x00020401]  (iNative[39765])
 struct AREDPawn_execSetLightVector_Params
 {
 	int32_t                                            xsiDirX;                                          // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -19354,13 +19353,13 @@ struct AREDPawn_execSetLightVector_Params
 };
 
 // Function REDGame.REDPawn.SetDefaultLightVector
-// [0x00020401]  (iNative[39724])
+// [0x00020401]  (iNative[39726])
 struct AREDPawn_execSetDefaultLightVector_Params
 {
 };
 
 // Function REDGame.REDPawn.GetScreenSpaceZOffset
-// [0x00020401]  (iNative[37161])
+// [0x00020401]  (iNative[37163])
 struct AREDPawn_execGetScreenSpaceZOffset_Params
 {
 	float                                              ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -19381,45 +19380,45 @@ struct AREDPawn_eventSetEyeHeight_Params
 };
 
 // Function REDGame.REDPawn.ClearMeshSet
-// [0x00020401]  (iNative[36224])
+// [0x00020401]  (iNative[36226])
 struct AREDPawn_execClearMeshSet_Params
 {
 };
 
 // Function REDGame.REDPawn.ClearMeshControls
-// [0x00020401]  (iNative[36223])
+// [0x00020401]  (iNative[36225])
 struct AREDPawn_execClearMeshControls_Params
 {
 };
 
 // Function REDGame.REDPawn.RestoreMeshSet
-// [0x00020401]  (iNative[39391])
+// [0x00020401]  (iNative[39393])
 struct AREDPawn_execRestoreMeshSet_Params
 {
 };
 
 // Function REDGame.REDPawn.SaveMeshSet
-// [0x00020401]  (iNative[39460])
+// [0x00020401]  (iNative[39462])
 struct AREDPawn_execSaveMeshSet_Params
 {
 };
 
 // Function REDGame.REDPawn.SwitchMeshSet
-// [0x00020401]  (iNative[40150])
+// [0x00020401]  (iNative[40152])
 struct AREDPawn_execSwitchMeshSet_Params
 {
 	class FName                                        SetName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn.AddMeshSet
-// [0x00420401]  (iNative[35385])
+// [0x00420401]  (iNative[35387])
 struct AREDPawn_execAddMeshSet_Params
 {
 	struct FMeshSet                                    Set;                                              // 0x0000 (0x008C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDPawn.GetMeshSetIndexFromSetName
-// [0x00020401]  (iNative[37107])
+// [0x00020401]  (iNative[37109])
 struct AREDPawn_execGetMeshSetIndexFromSetName_Params
 {
 	class FName                                        SetName;                                          // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -19427,31 +19426,31 @@ struct AREDPawn_execGetMeshSetIndexFromSetName_Params
 };
 
 // Function REDGame.REDPawn.UpdateDispState
-// [0x00020401]  (iNative[40645])
+// [0x00020401]  (iNative[40647])
 struct AREDPawn_execUpdateDispState_Params
 {
 };
 
 // Function REDGame.REDPawn.FreeSkeletalMeshComponents
-// [0x00020401]  (iNative[36910])
+// [0x00020401]  (iNative[36912])
 struct AREDPawn_execFreeSkeletalMeshComponents_Params
 {
 };
 
 // Function REDGame.REDPawn.FreeLocalMaterialPool
-// [0x00020401]  (iNative[36907])
+// [0x00020401]  (iNative[36909])
 struct AREDPawn_execFreeLocalMaterialPool_Params
 {
 };
 
 // Function REDGame.REDPawn.InitLocalMaterialPool
-// [0x00020401]  (iNative[37533])
+// [0x00020401]  (iNative[37535])
 struct AREDPawn_execInitLocalMaterialPool_Params
 {
 };
 
 // Function REDGame.REDPawn.GetMeshControlIndexFromName
-// [0x00020401]  (iNative[37103])
+// [0x00020401]  (iNative[37105])
 struct AREDPawn_execGetMeshControlIndexFromName_Params
 {
 	class FName                                        MeshName;                                         // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -19459,7 +19458,7 @@ struct AREDPawn_execGetMeshControlIndexFromName_Params
 };
 
 // Function REDGame.REDPawn.GetMeshComponentFromIndex
-// [0x00020401]  (iNative[37102])
+// [0x00020401]  (iNative[37104])
 struct AREDPawn_execGetMeshComponentFromIndex_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -19467,7 +19466,7 @@ struct AREDPawn_execGetMeshComponentFromIndex_Params
 };
 
 // Function REDGame.REDPawn.GetMeshNum
-// [0x00020401]  (iNative[37106])
+// [0x00020401]  (iNative[37108])
 struct AREDPawn_execGetMeshNum_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -19484,7 +19483,7 @@ struct AREDDebugPause_eventPauserTick_Params
 };
 
 // Function REDGame.REDDebugPause.ToggleDoNotPause
-// [0x00020400]  (iNative[40264])
+// [0x00020400]  (iNative[40266])
 struct AREDDebugPause_execToggleDoNotPause_Params
 {
 };
@@ -19509,34 +19508,34 @@ struct AREDDebugPause_execStepToggle_Params
 };
 
 // Function REDGame.REDDebugPause.IsDoNotPause
-// [0x00020400]  (iNative[37639])
+// [0x00020400]  (iNative[37641])
 struct AREDDebugPause_execIsDoNotPause_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDDebugPause.IsShowDebugMenu
-// [0x00020400]  (iNative[37852])
+// [0x00020400]  (iNative[37854])
 struct AREDDebugPause_execIsShowDebugMenu_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDDebugPause.UpdateDebugMenu
-// [0x00020400]  (iNative[40641])
+// [0x00020400]  (iNative[40643])
 struct AREDDebugPause_execUpdateDebugMenu_Params
 {
 };
 
 // Function REDGame.REDDebugPause.SetGamePause
-// [0x00020400]  (iNative[39751])
+// [0x00020400]  (iNative[39753])
 struct AREDDebugPause_execSetGamePause_Params
 {
 	uint32_t                                           On : 1;                                           // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDDebugPause.ShowDebugMenu
-// [0x00020400]  (iNative[39893])
+// [0x00020400]  (iNative[39895])
 struct AREDDebugPause_execShowDebugMenu_Params
 {
 	uint32_t                                           Show : 1;                                         // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
@@ -19563,28 +19562,28 @@ struct AREDPawn_AdjLightDir_execDisplayDebug_Params
 };
 
 // Function REDGame.REDPawn_AdjLightDir.NativeTick
-// [0x00020400]  (iNative[38511])
+// [0x00020400]  (iNative[38513])
 struct AREDPawn_AdjLightDir_execNativeTick_Params
 {
 	float                                              DeltaTime;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn_AdjLightDir.IsDisp
-// [0x00020400]  (iNative[37637])
+// [0x00020400]  (iNative[37639])
 struct AREDPawn_AdjLightDir_execIsDisp_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn_AdjLightDir.GetDebugLightRotation
-// [0x00420400]  (iNative[37051])
+// [0x00420400]  (iNative[37053])
 struct AREDPawn_AdjLightDir_execGetDebugLightRotation_Params
 {
 	struct FRotator                                    Rot;                                              // 0x0000 (0x000C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDPawn_AdvAvatar.GetMotionLengthFrame
-// [0x00020400]  (iNative[37112])
+// [0x00020400]  (iNative[37114])
 struct AREDPawn_AdvAvatar_execGetMotionLengthFrame_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -19599,20 +19598,20 @@ struct AREDPawn_AdvAvatar_eventIsLipPlaying_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ResetFaceScaleController
-// [0x00020400]  (iNative[39378])
+// [0x00020400]  (iNative[39380])
 struct AREDPawn_AdvAvatar_execResetFaceScaleController_Params
 {
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetLipSyncType
-// [0x00020400]  (iNative[39765])
+// [0x00020400]  (iNative[39767])
 struct AREDPawn_AdvAvatar_execSetLipSyncType_Params
 {
 	class FName                                        Typename;                                         // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetExPosAndRot
-// [0x00420400]  (iNative[39742])
+// [0x00420400]  (iNative[39744])
 struct AREDPawn_AdvAvatar_execSetExPosAndRot_Params
 {
 	struct FVector                                     InExPos;                                          // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -19625,7 +19624,7 @@ struct AREDPawn_AdvAvatar_execSetExPosAndRot_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetLipPos
-// [0x00420400]  (iNative[39764])
+// [0x00420400]  (iNative[39766])
 struct AREDPawn_AdvAvatar_execSetLipPos_Params
 {
 	struct FVector                                     InLipPos;                                         // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -19633,7 +19632,7 @@ struct AREDPawn_AdvAvatar_execSetLipPos_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetEyePos
-// [0x00420400]  (iNative[39744])
+// [0x00420400]  (iNative[39746])
 struct AREDPawn_AdvAvatar_execSetEyePos_Params
 {
 	struct FVector                                     InEyePosL;                                        // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -19643,7 +19642,7 @@ struct AREDPawn_AdvAvatar_execSetEyePos_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetPupilScale
-// [0x00420400]  (iNative[39795])
+// [0x00420400]  (iNative[39797])
 struct AREDPawn_AdvAvatar_execSetPupilScale_Params
 {
 	struct FVector                                     InPupilScaleL;                                    // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -19651,19 +19650,19 @@ struct AREDPawn_AdvAvatar_execSetPupilScale_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.UpdateHand
-// [0x00020400]  (iNative[40697])
+// [0x00020400]  (iNative[40699])
 struct AREDPawn_AdvAvatar_execUpdateHand_Params
 {
 };
 
 // Function REDGame.REDPawn_AdvAvatar.UpdateHair
-// [0x00020400]  (iNative[40696])
+// [0x00020400]  (iNative[40698])
 struct AREDPawn_AdvAvatar_execUpdateHair_Params
 {
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetEyeRotation
-// [0x00420400]  (iNative[39745])
+// [0x00420400]  (iNative[39747])
 struct AREDPawn_AdvAvatar_execSetEyeRotation_Params
 {
 	struct FRotator                                    InEyeRotL;                                        // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -19671,26 +19670,26 @@ struct AREDPawn_AdvAvatar_execSetEyeRotation_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetNeckRotation
-// [0x00420400]  (iNative[39777])
+// [0x00420400]  (iNative[39779])
 struct AREDPawn_AdvAvatar_execSetNeckRotation_Params
 {
 	struct FRotator                                    InNeckRot;                                        // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDPawn_AdvAvatar.UpdateFace
-// [0x00020400]  (iNative[40668])
+// [0x00020400]  (iNative[40670])
 struct AREDPawn_AdvAvatar_execUpdateFace_Params
 {
 };
 
 // Function REDGame.REDPawn_AdvAvatar.UpdateBlendAnim
-// [0x00020400]  (iNative[40602])
+// [0x00020400]  (iNative[40604])
 struct AREDPawn_AdvAvatar_execUpdateBlendAnim_Params
 {
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ChangeAnimeAdv
-// [0x00020400]  (iNative[36086])
+// [0x00020400]  (iNative[36088])
 struct AREDPawn_AdvAvatar_execChangeAnimeAdv_Params
 {
 	class FName                                        AnimSeqName;                                      // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -19703,7 +19702,7 @@ struct AREDPawn_AdvAvatar_execChangeAnimeAdv_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ChangeHand
-// [0x00020400]  (iNative[36097])
+// [0x00020400]  (iNative[36099])
 struct AREDPawn_AdvAvatar_execChangeHand_Params
 {
 	int32_t                                            InHandType;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -19714,7 +19713,7 @@ struct AREDPawn_AdvAvatar_execChangeHand_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ChangeHair
-// [0x00020400]  (iNative[36096])
+// [0x00020400]  (iNative[36098])
 struct AREDPawn_AdvAvatar_execChangeHair_Params
 {
 	class FString                                      InHairAnim;                                       // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -19726,14 +19725,14 @@ struct AREDPawn_AdvAvatar_execChangeHair_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.UpdateEye
-// [0x00020400]  (iNative[40667])
+// [0x00020400]  (iNative[40669])
 struct AREDPawn_AdvAvatar_execUpdateEye_Params
 {
 	float                                              Blend;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ChangeFace
-// [0x00020400]  (iNative[36094])
+// [0x00020400]  (iNative[36096])
 struct AREDPawn_AdvAvatar_execChangeFace_Params
 {
 	int32_t                                            InFaceType;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -19751,7 +19750,7 @@ struct AREDPawn_AdvAvatar_eventRootMotionProcessed_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.ChangeShadowMaterialsForAdv
-// [0x00020401]  (iNative[36103])
+// [0x00020401]  (iNative[36105])
 struct AREDPawn_AdvAvatar_execChangeShadowMaterialsForAdv_Params
 {
 	class FString                                      CharaName;                                        // 0x0000 (0x000C) [0x0000000000400080] (CPF_Parm | CPF_NeedCtorLink)
@@ -19759,7 +19758,7 @@ struct AREDPawn_AdvAvatar_execChangeShadowMaterialsForAdv_Params
 };
 
 // Function REDGame.REDPawn_AdvAvatar.SetupMeshInstance
-// [0x00020400]  (iNative[39845])
+// [0x00020400]  (iNative[39847])
 struct AREDPawn_AdvAvatar_execSetupMeshInstance_Params
 {
 	class UREDMeshArray*                               MeshInfo;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -19768,7 +19767,7 @@ struct AREDPawn_AdvAvatar_execSetupMeshInstance_Params
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.SetEyeRotation
-// [0x00420400]  (iNative[39745])
+// [0x00420400]  (iNative[39747])
 struct AREDPawn_DigitalFigureAvatar_execSetEyeRotation_Params
 {
 	struct FRotator                                    InEyeRotL;                                        // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -19776,32 +19775,32 @@ struct AREDPawn_DigitalFigureAvatar_execSetEyeRotation_Params
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.GetMotionLengthFrame
-// [0x00020400]  (iNative[37112])
+// [0x00020400]  (iNative[37114])
 struct AREDPawn_DigitalFigureAvatar_execGetMotionLengthFrame_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.ResetFaceScaleController
-// [0x00020400]  (iNative[39378])
+// [0x00020400]  (iNative[39380])
 struct AREDPawn_DigitalFigureAvatar_execResetFaceScaleController_Params
 {
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.UpdateFace
-// [0x00020400]  (iNative[40668])
+// [0x00020400]  (iNative[40670])
 struct AREDPawn_DigitalFigureAvatar_execUpdateFace_Params
 {
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.UpdateBlendAnim
-// [0x00020400]  (iNative[40602])
+// [0x00020400]  (iNative[40604])
 struct AREDPawn_DigitalFigureAvatar_execUpdateBlendAnim_Params
 {
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.ChangeAnimeDF
-// [0x00020400]  (iNative[36087])
+// [0x00020400]  (iNative[36089])
 struct AREDPawn_DigitalFigureAvatar_execChangeAnimeDF_Params
 {
 	class FName                                        AnimSeqName;                                      // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -19814,7 +19813,7 @@ struct AREDPawn_DigitalFigureAvatar_execChangeAnimeDF_Params
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.ChangeFace
-// [0x00020400]  (iNative[36094])
+// [0x00020400]  (iNative[36096])
 struct AREDPawn_DigitalFigureAvatar_execChangeFace_Params
 {
 	int32_t                                            InFaceType;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -19832,7 +19831,7 @@ struct AREDPawn_DigitalFigureAvatar_eventRootMotionProcessed_Params
 };
 
 // Function REDGame.REDPawn_DigitalFigureAvatar.SetupMeshInstance
-// [0x00020400]  (iNative[39845])
+// [0x00020400]  (iNative[39847])
 struct AREDPawn_DigitalFigureAvatar_execSetupMeshInstance_Params
 {
 	class UREDMeshArray*                               MeshInfo;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -19860,20 +19859,20 @@ struct AREDPawn_Effect_execGetOwner_Params
 };
 
 // Function REDGame.REDPawn_AdvEffect.GetMotionLengthFrame
-// [0x00020400]  (iNative[37112])
+// [0x00020400]  (iNative[37114])
 struct AREDPawn_AdvEffect_execGetMotionLengthFrame_Params
 {
 	int32_t                                            ReturnValue;                                      // 0x0000 (0x0004) [0x0000000000000580] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDPawn_AdvEffect.UpdateBlendAnim
-// [0x00020400]  (iNative[40602])
+// [0x00020400]  (iNative[40604])
 struct AREDPawn_AdvEffect_execUpdateBlendAnim_Params
 {
 };
 
 // Function REDGame.REDPawn_AdvEffect.ChangeAnimeAdv
-// [0x00020400]  (iNative[36086])
+// [0x00020400]  (iNative[36088])
 struct AREDPawn_AdvEffect_execChangeAnimeAdv_Params
 {
 	class FName                                        AnimSeqName;                                      // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -19886,7 +19885,7 @@ struct AREDPawn_AdvEffect_execChangeAnimeAdv_Params
 };
 
 // Function REDGame.REDPawn_AdvEffect.SetExBoneScale
-// [0x00420400]  (iNative[39741])
+// [0x00420400]  (iNative[39743])
 struct AREDPawn_AdvEffect_execSetExBoneScale_Params
 {
 	struct FVector                                     InExBone0Scale;                                   // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -19897,7 +19896,7 @@ struct AREDPawn_AdvEffect_execSetExBoneScale_Params
 };
 
 // Function REDGame.REDPawn_AdvEffect.SetExPosAndRot
-// [0x00420400]  (iNative[39742])
+// [0x00420400]  (iNative[39744])
 struct AREDPawn_AdvEffect_execSetExPosAndRot_Params
 {
 	struct FVector                                     InExPos;                                          // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -19910,7 +19909,7 @@ struct AREDPawn_AdvEffect_execSetExPosAndRot_Params
 };
 
 // Function REDGame.REDPawn_AdvEffect.SetupMeshInstance
-// [0x00020400]  (iNative[39845])
+// [0x00020400]  (iNative[39847])
 struct AREDPawn_AdvEffect_execSetupMeshInstance_Params
 {
 	class UREDMeshArray*                               MeshInfo;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -19953,7 +19952,7 @@ struct AREDPawn_Matinee_eventBeginAnimControl_Params
 };
 
 // Function REDGame.REDPawn_Matinee.SetAnimPosition_Internal
-// [0x00020400]  (iNative[39691])
+// [0x00020400]  (iNative[39693])
 struct AREDPawn_Matinee_execSetAnimPosition_Internal_Params
 {
 	class FName                                        SlotName;                                         // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -19966,14 +19965,14 @@ struct AREDPawn_Matinee_execSetAnimPosition_Internal_Params
 };
 
 // Function REDGame.REDPawn_Matinee.FinishAnimControl_Internal
-// [0x00020400]  (iNative[36855])
+// [0x00020400]  (iNative[36857])
 struct AREDPawn_Matinee_execFinishAnimControl_Internal_Params
 {
 	class UInterpGroup*                                InInterpGroup;                                    // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn_Matinee.BeginAnimControl_Internal
-// [0x00020400]  (iNative[35696])
+// [0x00020400]  (iNative[35698])
 struct AREDPawn_Matinee_execBeginAnimControl_Internal_Params
 {
 	class UInterpGroup*                                InInterpGroup;                                    // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -19987,28 +19986,28 @@ struct AREDPawn_Player_eventTick_Params
 };
 
 // Function REDGame.REDPawn_Player.UpdateScarfSystem
-// [0x00020400]  (iNative[40838])
+// [0x00020400]  (iNative[40840])
 struct AREDPawn_Player_execUpdateScarfSystem_Params
 {
 	uint32_t                                           bStopShrink : 1;                                  // 0x0000 (0x0004) [0x0000000000000080] [0x00000001] (CPF_Parm)
 };
 
 // Function REDGame.REDPawn_Player.StopScarfSystem
-// [0x00020400]  (iNative[40102])
+// [0x00020400]  (iNative[40104])
 struct AREDPawn_Player_execStopScarfSystem_Params
 {
 	int32_t                                            BlendFrame;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn_Player.StartScarfSystem
-// [0x00020400]  (iNative[40030])
+// [0x00020400]  (iNative[40032])
 struct AREDPawn_Player_execStartScarfSystem_Params
 {
 	int32_t                                            BlendFrame;                                       // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDPawn_Player.SetupMeshInstance
-// [0x00020400]  (iNative[39845])
+// [0x00020400]  (iNative[39847])
 struct AREDPawn_Player_execSetupMeshInstance_Params
 {
 	class UREDMeshArray*                               MeshInfo;                                         // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -20023,14 +20022,14 @@ struct AREDPawn_Player_execAllocateSoundPlayer_Params
 };
 
 // Function REDGame.REDPawn_Player.StopVoice
-// [0x00024400]  (iNative[40108])
+// [0x00024400]  (iNative[40110])
 struct AREDPawn_Player_execStopVoice_Params
 {
 	int32_t                                            ch;                                               // 0x0000 (0x0004) [0x0000000000000090] (CPF_OptionalParm | CPF_Parm)
 };
 
 // Function REDGame.REDPawn_Player.PlayVoice
-// [0x00024400]  (iNative[39049])
+// [0x00024400]  (iNative[39051])
 struct AREDPawn_Player_execPlayVoice_Params
 {
 	class AREDPawn*                                    pPlayPawn;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -20042,7 +20041,7 @@ struct AREDPawn_Player_execPlayVoice_Params
 };
 
 // Function REDGame.REDPawn_Player.PlayPrivateSE
-// [0x00024400]  (iNative[39037])
+// [0x00024400]  (iNative[39039])
 struct AREDPawn_Player_execPlayPrivateSE_Params
 {
 	class AREDPawn*                                    pPlayPawn;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -20051,7 +20050,7 @@ struct AREDPawn_Player_execPlayPrivateSE_Params
 };
 
 // Function REDGame.REDPawn_Player.SpawnEffect
-// [0x00020400]  (iNative[39940])
+// [0x00020400]  (iNative[39942])
 struct AREDPawn_Player_execSpawnEffect_Params
 {
 	class FName                                        EffectName;                                       // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -20059,7 +20058,7 @@ struct AREDPawn_Player_execSpawnEffect_Params
 };
 
 // Function REDGame.REDPawn_Player.GetCameraAnim
-// [0x00020400]  (iNative[37011])
+// [0x00020400]  (iNative[37013])
 struct AREDPawn_Player_execGetCameraAnim_Params
 {
 	class FName                                        CameraName;                                       // 0x0000 (0x0008) [0x0000000000000080] (CPF_Parm)    
@@ -20108,7 +20107,7 @@ struct AREDPawn_Player_eventPlayCameraAnim_Params
 };
 
 // Function REDGame.REDPawn_Player.CreateSelfParticle
-// [0x00420400]  (iNative[36336])
+// [0x00420400]  (iNative[36338])
 struct AREDPawn_Player_execCreateSelfParticle_Params
 {
 	struct FParticleArg                                Arg;                                              // 0x0000 (0x006C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -20123,7 +20122,7 @@ struct AREDPawn_Player_execSetCharacterColor_Params
 };
 
 // Function REDGame.REDPlayerController_Battle.SetLocationAndRotation
-// [0x00020401]  (iNative[39767])
+// [0x00020401]  (iNative[39769])
 struct AREDPlayerController_Battle_execSetLocationAndRotation_Params
 {
 	struct FVector                                     NewLocation;                                      // 0x0000 (0x000C) [0x0000000000000080] (CPF_Parm)    
@@ -20177,7 +20176,7 @@ struct AREDCamera_execUpdateViewTarget_Params
 };
 
 // Function REDGame.REDCamera.UpdateAttachedPawnFromVT
-// [0x00420400]  (iNative[40595])
+// [0x00420400]  (iNative[40597])
 struct AREDCamera_execUpdateAttachedPawnFromVT_Params
 {
 	struct FTViewTarget                                VT;                                               // 0x0000 (0x002C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -20206,20 +20205,20 @@ struct AREDCamera_execPostBeginPlay_Params
 };
 
 // Function REDGame.REDCamera_Battle.UpdatePawnMaterialInstance
-// [0x00020400]  (iNative[40805])
+// [0x00020400]  (iNative[40807])
 struct AREDCamera_Battle_execUpdatePawnMaterialInstance_Params
 {
 };
 
 // Function REDGame.REDCamera_Battle.UpdatePawnCameraParam
-// [0x00420400]  (iNative[40802])
+// [0x00420400]  (iNative[40804])
 struct AREDCamera_Battle_execUpdatePawnCameraParam_Params
 {
 	struct FTPOV                                       POV;                                              // 0x0000 (0x001C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
 };
 
 // Function REDGame.REDCamera_Battle.UpdatePawnLightParam
-// [0x00420400]  (iNative[40803])
+// [0x00420400]  (iNative[40805])
 struct AREDCamera_Battle_execUpdatePawnLightParam_Params
 {
 	struct FVector                                     LightPos;                                         // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -20241,14 +20240,14 @@ struct AREDCamera_Battle_eventSetAutoUpdate_Params
 };
 
 // Function REDGame.REDCamera_Battle.UpdateFromREDGameInfo_Battle
-// [0x00020400]  (iNative[40677])
+// [0x00020400]  (iNative[40679])
 struct AREDCamera_Battle_execUpdateFromREDGameInfo_Battle_Params
 {
 	float                                              DeltaTime;                                        // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
 };
 
 // Function REDGame.REDCamera_Battle.UpdateViewTarget
-// [0x00420400]  (iNative[29861])
+// [0x00420400]  (iNative[29863])
 struct AREDCamera_Battle_execUpdateViewTarget_Params
 {
 	struct FTViewTarget                                OutVT;                                            // 0x0000 (0x002C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -20256,7 +20255,7 @@ struct AREDCamera_Battle_execUpdateViewTarget_Params
 };
 
 // Function REDGame.REDCamera_Battle.UpdateViewTargetNative
-// [0x00420400]  (iNative[40881])
+// [0x00420400]  (iNative[40883])
 struct AREDCamera_Battle_execUpdateViewTargetNative_Params
 {
 	struct FTViewTarget                                OutVT;                                            // 0x0000 (0x002C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -20264,7 +20263,7 @@ struct AREDCamera_Battle_execUpdateViewTargetNative_Params
 };
 
 // Function REDGame.REDCamera_Battle.CheckForceUIBackDraw
-// [0x00020400]  (iNative[36197])
+// [0x00020400]  (iNative[36199])
 struct AREDCamera_Battle_execCheckForceUIBackDraw_Params
 {
 	class AREDPawn*                                    reqPawn;                                          // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -20272,14 +20271,14 @@ struct AREDCamera_Battle_execCheckForceUIBackDraw_Params
 };
 
 // Function REDGame.REDCamera_Battle.IsForceUIBackDraw
-// [0x00020400]  (iNative[37669])
+// [0x00020400]  (iNative[37671])
 struct AREDCamera_Battle_execIsForceUIBackDraw_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDCamera_Battle.SetForceUIBackDraw
-// [0x00020400]  (iNative[39747])
+// [0x00020400]  (iNative[39749])
 struct AREDCamera_Battle_execSetForceUIBackDraw_Params
 {
 	class AREDPawn*                                    reqPawn;                                          // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -20287,7 +20286,7 @@ struct AREDCamera_Battle_execSetForceUIBackDraw_Params
 };
 
 // Function REDGame.REDCamera_Battle.BackupMainCamera
-// [0x00420400]  (iNative[35527])
+// [0x00420400]  (iNative[35529])
 struct AREDCamera_Battle_execBackupMainCamera_Params
 {
 	struct FTPOV                                       OutVT;                                            // 0x0000 (0x001C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -20436,7 +20435,7 @@ struct AREDCamera_Battle_eventUpdateBattleCamera_Params
 };
 
 // Function REDGame.REDCamera_Battle.UpdateBattleCamera_Func
-// [0x00420400]  (iNative[40598])
+// [0x00420400]  (iNative[40600])
 struct AREDCamera_Battle_execUpdateBattleCamera_Func_Params
 {
 	struct FTViewTarget                                OutVT;                                            // 0x0000 (0x002C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -20444,7 +20443,7 @@ struct AREDCamera_Battle_execUpdateBattleCamera_Func_Params
 };
 
 // Function REDGame.REDCamera_Battle.EyesViewPointToBaseViewPoint
-// [0x00420400]  (iNative[36817])
+// [0x00420400]  (iNative[36819])
 struct AREDCamera_Battle_execEyesViewPointToBaseViewPoint_Params
 {
 	struct FTPOV                                       EyeViewPoint;                                     // 0x0000 (0x001C) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -20452,7 +20451,7 @@ struct AREDCamera_Battle_execEyesViewPointToBaseViewPoint_Params
 };
 
 // Function REDGame.REDCamera_Battle.CalcCenterLocation
-// [0x00420400]  (iNative[36043])
+// [0x00420400]  (iNative[36045])
 struct AREDCamera_Battle_execCalcCenterLocation_Params
 {
 	struct FVector                                     OutVTLocation;                                    // 0x0000 (0x000C) [0x0000000000000182] (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -20480,13 +20479,13 @@ struct AREDCamera_Battle_eventPlayBattleCamera_Params
 };
 
 // Function REDGame.REDCamera_Battle.UpdateCameraOffset
-// [0x00020400]  (iNative[40610])
+// [0x00020400]  (iNative[40612])
 struct AREDCamera_Battle_execUpdateCameraOffset_Params
 {
 };
 
 // Function REDGame.REDCamera_Battle.GetReplayCameraNum
-// [0x00020400]  (iNative[37152])
+// [0x00020400]  (iNative[37154])
 struct AREDCamera_Battle_execGetReplayCameraNum_Params
 {
 	int32_t                                            Type;                                             // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -20494,7 +20493,7 @@ struct AREDCamera_Battle_execGetReplayCameraNum_Params
 };
 
 // Function REDGame.REDCamera_Battle.SetReplayCamera
-// [0x00020400]  (iNative[39799])
+// [0x00020400]  (iNative[39801])
 struct AREDCamera_Battle_execSetReplayCamera_Params
 {
 	int32_t                                            Index;                                            // 0x0000 (0x0004) [0x0000000000000080] (CPF_Parm)    
@@ -20531,7 +20530,7 @@ struct AREDCamera_Battle_execReset_Params
 };
 
 // Function REDGame.REDCamera_Battle.ResetForceUIBackDraw
-// [0x00020400]  (iNative[39379])
+// [0x00020400]  (iNative[39381])
 struct AREDCamera_Battle_execResetForceUIBackDraw_Params
 {
 };
@@ -20543,13 +20542,13 @@ struct AREDCamera_Battle_eventResetCamera_Params
 };
 
 // Function REDGame.REDCamera_Battle.ResetCameraNative
-// [0x00020400]  (iNative[39376])
+// [0x00020400]  (iNative[39378])
 struct AREDCamera_Battle_execResetCameraNative_Params
 {
 };
 
 // Function REDGame.REDCamera_Battle.SetPlayBattleCameraAnim
-// [0x00420400]  (iNative[39789])
+// [0x00420400]  (iNative[39791])
 struct AREDCamera_Battle_execSetPlayBattleCameraAnim_Params
 {
 	struct FPlayBattleCameraAnimInfo                   structToUpdate;                                   // 0x0000 (0x0024) [0x0000000000000180] (CPF_Parm | CPF_OutParm)
@@ -20575,14 +20574,14 @@ struct AREDCamera_Battle_execDisplayDebug_Params
 };
 
 // Function REDGame.REDCamera_Battle.IsOnlineRollback
-// [0x00020400]  (iNative[22936])
+// [0x00020400]  (iNative[22938])
 struct AREDCamera_Battle_execIsOnlineRollback_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 };
 
 // Function REDGame.REDCamera_Battle.IsStopBattle
-// [0x00020401]  (iNative[37871])
+// [0x00020401]  (iNative[37873])
 struct AREDCamera_Battle_execIsStopBattle_Params
 {
 	bool                                               ReturnValue : 1;                                  // 0x0000 (0x0004) [0x0000000000000580] [0x00000001] (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
@@ -20609,7 +20608,7 @@ struct AREDCamera_Lobby_execDisplayDebug_Params
 };
 
 // Function REDGame.REDCamera_Lobby.UpdatePawn_AfterCamera
-// [0x00020400]  (iNative[40801])
+// [0x00020400]  (iNative[40803])
 struct AREDCamera_Lobby_execUpdatePawn_AfterCamera_Params
 {
 };

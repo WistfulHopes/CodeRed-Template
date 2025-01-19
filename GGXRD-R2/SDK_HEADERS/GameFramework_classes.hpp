@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -202,7 +201,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DYNAMICSPRITECOMPONENT));
+			uClassPointer = UObject::FindClass("Class GameFramework.DynamicSpriteComponent");
 		}
 
 		return uClassPointer;
@@ -224,7 +223,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_FRAMEWORKGAME));
+			uClassPointer = UObject::FindClass("Class GameFramework.FrameworkGame");
 		}
 
 		return uClassPointer;
@@ -259,7 +258,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameAIController");
 		}
 
 		return uClassPointer;
@@ -307,7 +306,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameAICommand");
 		}
 
 		return uClassPointer;
@@ -353,7 +352,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECAMERABLOCKINGVOLUME));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCameraBlockingVolume");
 		}
 
 		return uClassPointer;
@@ -379,7 +378,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+			uClassPointer = UObject::FindClass("Class GameFramework.GamePlayerController");
 		}
 
 		return uClassPointer;
@@ -418,7 +417,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECHEATMANAGER));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCheatManager");
 		}
 
 		return uClassPointer;
@@ -545,7 +544,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdAgent");
 		}
 
 		return uClassPointer;
@@ -636,7 +635,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdAgentSkeletal");
 		}
 
 		return uClassPointer;
@@ -669,7 +668,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSM));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdAgentSM");
 		}
 
 		return uClassPointer;
@@ -712,7 +711,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdAgentBehavior");
 		}
 
 		return uClassPointer;
@@ -762,7 +761,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_PLAYANIMATION));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdBehavior_PlayAnimation");
 		}
 
 		return uClassPointer;
@@ -791,7 +790,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_RUNFROMPANIC));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdBehavior_RunFromPanic");
 		}
 
 		return uClassPointer;
@@ -819,7 +818,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITFORGROUP));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdBehavior_WaitForGroup");
 		}
 
 		return uClassPointer;
@@ -846,7 +845,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITINQUEUE));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdBehavior_WaitInQueue");
 		}
 
 		return uClassPointer;
@@ -874,7 +873,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDGROUP));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdGroup");
 		}
 
 		return uClassPointer;
@@ -899,7 +898,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDINFOVOLUME));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdInfoVolume");
 		}
 
 		return uClassPointer;
@@ -924,7 +923,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDINTERACTIONPOINT));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdInteractionPoint");
 		}
 
 		return uClassPointer;
@@ -951,7 +950,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIORPOINT));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdBehaviorPoint");
 		}
 
 		return uClassPointer;
@@ -1012,7 +1011,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdDestination");
 		}
 
 		return uClassPointer;
@@ -1056,7 +1055,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATIONQUEUEPOINT));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdDestinationQueuePoint");
 		}
 
 		return uClassPointer;
@@ -1100,7 +1099,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdPopulationManager");
 		}
 
 		return uClassPointer;
@@ -1150,7 +1149,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDREPLICATIONACTOR));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdReplicationActor");
 		}
 
 		return uClassPointer;
@@ -1172,7 +1171,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDSPAWNRELATIVEACTOR));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdSpawnRelativeActor");
 		}
 
 		return uClassPointer;
@@ -1193,7 +1192,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEDESTINATIONCONNRENDERINGCOMPONENT));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameDestinationConnRenderingComponent");
 		}
 
 		return uClassPointer;
@@ -1265,7 +1264,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSION));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameExplosion");
 		}
 
 		return uClassPointer;
@@ -1307,7 +1306,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameExplosionActor");
 		}
 
 		return uClassPointer;
@@ -1349,7 +1348,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPAWN));
+			uClassPointer = UObject::FindClass("Class GameFramework.GamePawn");
 		}
 
 		return uClassPointer;
@@ -1385,7 +1384,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+			uClassPointer = UObject::FindClass("Class GameFramework.DebugCameraController");
 		}
 
 		return uClassPointer;
@@ -1420,7 +1419,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETYPES));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameTypes");
 		}
 
 		return uClassPointer;
@@ -1467,7 +1466,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileHUD");
 		}
 
 		return uClassPointer;
@@ -1586,7 +1585,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEINPUTZONE));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileInputZone");
 		}
 
 		return uClassPointer;
@@ -1654,7 +1653,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECT));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuObject");
 		}
 
 		return uClassPointer;
@@ -1684,7 +1683,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUIMAGE));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuImage");
 		}
 
 		return uClassPointer;
@@ -1732,7 +1731,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuScene");
 		}
 
 		return uClassPointer;
@@ -1802,7 +1801,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobilePlayerInput");
 		}
 
 		return uClassPointer;
@@ -1861,7 +1860,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_NAVMESHGOAL_OUTOFVIEWFROM));
+			uClassPointer = UObject::FindClass("Class GameFramework.NavMeshGoal_OutOfViewFrom");
 		}
 
 		return uClassPointer;
@@ -1889,7 +1888,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_NAVMESHPATH_BIASAGAINSTPOLYSWITHINDISTANCEOFLOCATIONS));
+			uClassPointer = UObject::FindClass("Class GameFramework.NavMeshPath_BiasAgainstPolysWithinDistanceOfLocations");
 		}
 
 		return uClassPointer;
@@ -1912,7 +1911,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SECONDARYVIEWPORTCLIENT));
+			uClassPointer = UObject::FindClass("Class GameFramework.SecondaryViewportClient");
 		}
 
 		return uClassPointer;
@@ -1934,7 +1933,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILESECONDARYVIEWPORTCLIENT));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileSecondaryViewportClient");
 		}
 
 		return uClassPointer;
@@ -1959,7 +1958,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_CONTROLGAMEMOVIE));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_ControlGameMovie");
 		}
 
 		return uClassPointer;
@@ -1986,7 +1985,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_DEPROJECT));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_Deproject");
 		}
 
 		return uClassPointer;
@@ -2025,7 +2024,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_GAMECROWDPOPULATIONMANAGERTOGGLE));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_GameCrowdPopulationManagerToggle");
 		}
 
 		return uClassPointer;
@@ -2050,7 +2049,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_GAMECROWDSPAWNER));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_GameCrowdSpawner");
 		}
 
 		return uClassPointer;
@@ -2074,7 +2073,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_MOBILEADDINPUTZONES));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_MobileAddInputZones");
 		}
 
 		return uClassPointer;
@@ -2095,7 +2094,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_MOBILECLEARINPUTZONES));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_MobileClearInputZones");
 		}
 
 		return uClassPointer;
@@ -2117,7 +2116,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_MOBILEREMOVEINPUTZONE));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_MobileRemoveInputZone");
 		}
 
 		return uClassPointer;
@@ -2138,7 +2137,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_MOBILESAVELOADVALUE));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_MobileSaveLoadValue");
 		}
 
 		return uClassPointer;
@@ -2161,7 +2160,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_MODIFYPROPERTY));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_ModifyProperty");
 		}
 
 		return uClassPointer;
@@ -2192,7 +2191,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_PLAYAGENTANIMATION));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_PlayAgentAnimation");
 		}
 
 		return uClassPointer;
@@ -2215,7 +2214,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_CROWDAGENTREACHEDDESTINATION));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_CrowdAgentReachedDestination");
 		}
 
 		return uClassPointer;
@@ -2239,7 +2238,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_HUDRENDER));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_HudRender");
 		}
 
 		return uClassPointer;
@@ -2262,7 +2261,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILEBASE));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_MobileBase");
 		}
 
 		return uClassPointer;
@@ -2291,7 +2290,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILEMOTION));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_MobileMotion");
 		}
 
 		return uClassPointer;
@@ -2314,7 +2313,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILEZONEBASE));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_MobileZoneBase");
 		}
 
 		return uClassPointer;
@@ -2339,7 +2338,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILEBUTTON));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_MobileButton");
 		}
 
 		return uClassPointer;
@@ -2366,7 +2365,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILEINPUT));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_MobileInput");
 		}
 
 		return uClassPointer;
@@ -2390,7 +2389,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILELOOK));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_MobileLook");
 		}
 
 		return uClassPointer;
@@ -2416,7 +2415,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILERAWINPUT));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_MobileRawInput");
 		}
 
 		return uClassPointer;
@@ -2444,7 +2443,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILEOBJECTPICKER));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_MobileObjectPicker");
 		}
 
 		return uClassPointer;
@@ -2470,7 +2469,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILESWIPE));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_MobileSwipe");
 		}
 
 		return uClassPointer;
@@ -2497,7 +2496,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESKELCTRL_RECOIL));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameSkelCtrl_Recoil");
 		}
 
 		return uClassPointer;
@@ -2520,7 +2519,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECAMERABASE));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCameraBase");
 		}
 
 		return uClassPointer;
@@ -2601,7 +2600,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameThirdPersonCamera");
 		}
 
 		return uClassPointer;
@@ -2658,7 +2657,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+			uClassPointer = UObject::FindClass("Class GameFramework.GamePlayerCamera");
 		}
 
 		return uClassPointer;
@@ -2749,7 +2748,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameThirdPersonCameraMode");
 		}
 
 		return uClassPointer;
@@ -2786,7 +2785,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE_DEFAULT));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameThirdPersonCameraMode_Default");
 		}
 
 		return uClassPointer;
@@ -2821,7 +2820,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameSpecialMove");
 		}
 
 		return uClassPointer;
@@ -2870,7 +2869,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESTATEOBJECT));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameStateObject");
 		}
 
 		return uClassPointer;
@@ -2905,7 +2904,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESTATSAGGREGATOR));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameStatsAggregator");
 		}
 
 		return uClassPointer;
@@ -2930,7 +2929,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_TOGGLEMOUSECURSOR));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqAct_ToggleMouseCursor");
 		}
 
 		return uClassPointer;
@@ -2955,7 +2954,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEWAVEFORMS));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameWaveForms");
 		}
 
 		return uClassPointer;
@@ -2977,7 +2976,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERAHUD));
+			uClassPointer = UObject::FindClass("Class GameFramework.DebugCameraHUD");
 		}
 
 		return uClassPointer;
@@ -3001,7 +3000,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERAINPUT));
+			uClassPointer = UObject::FindClass("Class GameFramework.DebugCameraInput");
 		}
 
 		return uClassPointer;
@@ -3023,7 +3022,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDSPAWNERINTERFACE));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdSpawnerInterface");
 		}
 
 		return uClassPointer;
@@ -3046,7 +3045,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDSPAWNINTERFACE));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdSpawnInterface");
 		}
 
 		return uClassPointer;
@@ -3068,7 +3067,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DYNAMICGAMECROWDDESTINATION));
+			uClassPointer = UObject::FindClass("Class GameFramework.DynamicGameCrowdDestination");
 		}
 
 		return uClassPointer;
@@ -3100,7 +3099,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameAICmd_Hover_MoveToGoal");
 		}
 
 		return uClassPointer;
@@ -3142,7 +3141,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameAICmd_Hover_MoveToGoal_Mesh");
 		}
 
 		return uClassPointer;
@@ -3176,7 +3175,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWD_LISTOFAGENTS));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowd_ListOfAgents");
 		}
 
 		return uClassPointer;
@@ -3197,7 +3196,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDINTERACTIONDESTINATION));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameCrowdInteractionDestination");
 		}
 
 		return uClassPointer;
@@ -3237,7 +3236,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONCONTENT));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameExplosionContent");
 		}
 
 		return uClassPointer;
@@ -3259,7 +3258,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEFIXEDCAMERA));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameFixedCamera");
 		}
 
 		return uClassPointer;
@@ -3282,7 +3281,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEKACTORSPAWNABLEEFFECT));
+			uClassPointer = UObject::FindClass("Class GameFramework.GameKActorSpawnableEffect");
 		}
 
 		return uClassPointer;
@@ -3308,7 +3307,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERACONTROLLER));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileDebugCameraController");
 		}
 
 		return uClassPointer;
@@ -3334,7 +3333,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERAINPUT));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileDebugCameraInput");
 		}
 
 		return uClassPointer;
@@ -3357,7 +3356,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERAHUD));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileDebugCameraHUD");
 		}
 
 		return uClassPointer;
@@ -3386,7 +3385,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBAR));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuBar");
 		}
 
 		return uClassPointer;
@@ -3419,7 +3418,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBARITEM));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuBarItem");
 		}
 
 		return uClassPointer;
@@ -3446,7 +3445,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBUTTON));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuButton");
 		}
 
 		return uClassPointer;
@@ -3474,7 +3473,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUELEMENT));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuElement");
 		}
 
 		return uClassPointer;
@@ -3498,7 +3497,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUGAME));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuGame");
 		}
 
 		return uClassPointer;
@@ -3522,7 +3521,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUPLAYERCONTROLLER));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuPlayerController");
 		}
 
 		return uClassPointer;
@@ -3553,7 +3552,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuInventory");
 		}
 
 		return uClassPointer;
@@ -3597,7 +3596,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULABEL));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuLabel");
 		}
 
 		return uClassPointer;
@@ -3634,7 +3633,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuList");
 		}
 
 		return uClassPointer;
@@ -3672,7 +3671,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULISTITEM));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuListItem");
 		}
 
 		return uClassPointer;
@@ -3696,7 +3695,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECTPROXY));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileMenuObjectProxy");
 		}
 
 		return uClassPointer;
@@ -3722,7 +3721,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILETOUCHINPUTVOLUME));
+			uClassPointer = UObject::FindClass("Class GameFramework.MobileTouchInputVolume");
 		}
 
 		return uClassPointer;
@@ -3747,7 +3746,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILETOUCHINPUTVOLUME));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_MobileTouchInputVolume");
 		}
 
 		return uClassPointer;
@@ -3768,7 +3767,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_TOUCHABLEELEMENT3D));
+			uClassPointer = UObject::FindClass("Class GameFramework.TouchableElement3D");
 		}
 
 		return uClassPointer;
@@ -3794,7 +3793,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_PLAYERCOLLECTORGAME));
+			uClassPointer = UObject::FindClass("Class GameFramework.PlayerCollectorGame");
 		}
 
 		return uClassPointer;
@@ -3818,7 +3817,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_PMESTG_LEAVEADECALBASE));
+			uClassPointer = UObject::FindClass("Class GameFramework.PMESTG_LeaveADecalBase");
 		}
 
 		return uClassPointer;
@@ -3848,7 +3847,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_HUDRENDERIMAGE));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_HudRenderImage");
 		}
 
 		return uClassPointer;
@@ -3875,7 +3874,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_HUDRENDERTEXT));
+			uClassPointer = UObject::FindClass("Class GameFramework.SeqEvent_HudRenderText");
 		}
 
 		return uClassPointer;

@@ -1,16 +1,23 @@
+#define NOMINMAX
 #include "Placeholder.hpp"
+
+#include <future>
+
 #include "../Components/Includes.hpp"
 
+using namespace std::chrono_literals;
+ 
 PlaceholderModule::PlaceholderModule(const std::string& name, const std::string& description, uint32_t states) : Module(name, description, states)
 {
 	m_placeholder = false;
 	m_someValue = 0;
+	m_consoleInput = std::thread(&PlaceholderModule::GetConsoleInput, this);
 }
 
 PlaceholderModule::~PlaceholderModule() {}
 
 void PlaceholderModule::OnCreateVariables()
-{
+{	
 	// When someone uses the command "placeholder_do_thing", this will trigger the function "DoAThing" in "PlaceholderModule".
 	Manager.CreateCommand("placeholder_do_thing", new Command(VariableIds::PLACEHOLDER_DO_THING, "Calls the \"DoAThing\" function in the placeholder module."))->BindCallback([&]() { Manager.PlaceholderMod->OnSettingChanged(); });
 
@@ -43,6 +50,31 @@ void PlaceholderModule::OnCanvasDraw(class UCanvas* unrealCanvas)
 	}
 }
 
+static std::string GetInput()
+{    
+	std::string input;
+	getline(std::cin,input);
+	return input;
+}
+
+void PlaceholderModule::GetConsoleInput()
+{
+	std::future<std::string> future = std::async(GetInput);
+
+	std::future_status status;
+	do
+	{
+		status = future.wait_for(1s);
+	}
+	while (status != std::future_status::ready);
+
+	const std::string input = future.get();
+
+	Manager.ConsoleCommand(input);
+
+	GetConsoleInput();
+}
+
 void PlaceholderModule::DoAThing()
 {
 	if (IsInitialized() && IsAllowed())
@@ -62,17 +94,30 @@ void PlaceholderModule::GetRoomMembers()
 {
 	if (IsInitialized() && IsAllowed())
 	{
-		auto NetworkRoom = Instances.IUREDGfxMoviePlayer_MenuNetworkRoom();
-		if (!NetworkRoom)
+		auto LobbyInterface = Instances.GetInstanceOf<UOnlineLobbyInterfaceSteamworks>();
+		if (!LobbyInterface)
 		{
-			Console.Notify("No room active!");
+			Console.Error("Lobby interface invalid!");
 			return;
 		}
 
-		Console.Notify("Getting current room members...");
-		for (auto FocusInfo : NetworkRoom->FocusInfo)
+		auto OnlineInterface = Instances.GetInstanceOf<UOnlineSubsystemSteamworks>();
+		if (!OnlineInterface)
 		{
-			Console.Notify("Member: " + FocusInfo.FocusName.ToString());
+			Console.Error("Online interface invalid!");
+			return;
 		}
+		
+		Console.Notify("Getting current room members...");
+		for (auto ActiveLobby : LobbyInterface->ActiveLobbies)
+		{
+			for (auto Member : ActiveLobby.Members)
+			{
+				Console.Notify("Member: " + OnlineInterface->UniqueNetIdToPlayerName(Member.PlayerUID).ToString());
+			}
+		}
+		
+		auto GameCommon = Instances.GetInstanceOf<UREDGameCommon>();
+		Console.Notify("Test " + std::to_string((int)GameCommon->GetGameMode()));
 	}
 }

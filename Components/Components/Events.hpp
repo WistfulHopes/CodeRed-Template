@@ -61,12 +61,11 @@ public: // Pre Hooks
 	void HUDPostRender(PreEvent& event);
 	void GameViewPortPostRender(PreEvent& event);
 	void PlayerControllerTick(PreEvent& event);
-	void MenuNetworkRoomUpdate(PreEvent& event);
 };
 
 extern class HooksComponent Hooks;
 
-typedef void(*ProcessEventType)(class UObject*, class UFunction*, void*, void*); // Calling object, function, structure pointer with parameters, unused result
+typedef void(__thiscall *ProcessEventType)(class UObject*, class UFunction*, void*, void*); // Calling object, function, structure pointer with parameters, unused result
 
 // Manages everything related to hooking functions form Process Event, as well as detouring.
 class EventsComponent : public Component
@@ -93,7 +92,7 @@ public:
 	static bool IsDetoured();
 	static void AttachDetour(const ProcessEventType& detourFunction); // Redirects the process event virtual function to our own void, for us to manually process later to the typedef.
 	static void DetachDetour(); // Called by the deconstuctor, necessary for if your DLL gets intentionally (or unintentionally) unloaded before your game exits.
-	static void ProcessEventDetour(class UObject* caller, class UFunction* function, void* params, void* result); // Process event gets detoured to this function, then we manually proxy it through to "ProcessEvent".
+	static void __fastcall ProcessEventDetour(class UObject* caller, void* EDX, class UFunction* function, void* params, void* result); // Process event gets detoured to this function, then we manually proxy it through to "ProcessEvent".
 
 private:
 	static bool ProcessBefore(class UObject* caller, class UFunction* function, void* params, void* result);

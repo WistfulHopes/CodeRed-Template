@@ -32,7 +32,7 @@ class FString AGameAIController::eventGetActionString()
 
 	if (!uFnGetActionString)
 	{
-		uFnGetActionString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnGetActionString = UFunction::FindFunction("Function GameFramework.GameAIController.GetActionString");
 	}
 
 	AGameAIController_eventGetActionString_Params GetActionString_Params;
@@ -57,7 +57,7 @@ void AGameAIController::SetDesiredRotation(const struct FRotator& TargetDesiredR
 
 	if (!uFnSetDesiredRotation)
 	{
-		uFnSetDesiredRotation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnSetDesiredRotation = UFunction::FindFunction("Function GameFramework.GameAIController.SetDesiredRotation");
 	}
 
 	AGameAIController_execSetDesiredRotation_Params SetDesiredRotation_Params;
@@ -83,7 +83,7 @@ void AGameAIController::eventAILog_Internal(const class FString& LogText, const 
 
 	if (!uFnAILog_Internal)
 	{
-		uFnAILog_Internal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnAILog_Internal = UFunction::FindFunction("Function GameFramework.GameAIController.AILog_Internal");
 	}
 
 	AGameAIController_eventAILog_Internal_Params AILog_Internal_Params;
@@ -106,7 +106,7 @@ void AGameAIController::RecordDemoAILog(const class FString& LogText)
 
 	if (!uFnRecordDemoAILog)
 	{
-		uFnRecordDemoAILog = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnRecordDemoAILog = UFunction::FindFunction("Function GameFramework.GameAIController.RecordDemoAILog");
 	}
 
 	AGameAIController_execRecordDemoAILog_Params RecordDemoAILog_Params;
@@ -126,7 +126,7 @@ void AGameAIController::eventDestroyed()
 
 	if (!uFnDestroyed)
 	{
-		uFnDestroyed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnDestroyed = UFunction::FindFunction("Function GameFramework.GameAIController.Destroyed");
 	}
 
 	AGameAIController_eventDestroyed_Params Destroyed_Params;
@@ -145,7 +145,7 @@ void AGameAIController::ReachedIntermediateMoveGoal()
 
 	if (!uFnReachedIntermediateMoveGoal)
 	{
-		uFnReachedIntermediateMoveGoal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnReachedIntermediateMoveGoal = UFunction::FindFunction("Function GameFramework.GameAIController.ReachedIntermediateMoveGoal");
 	}
 
 	AGameAIController_execReachedIntermediateMoveGoal_Params ReachedIntermediateMoveGoal_Params;
@@ -164,7 +164,7 @@ void AGameAIController::ReachedMoveGoal()
 
 	if (!uFnReachedMoveGoal)
 	{
-		uFnReachedMoveGoal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnReachedMoveGoal = UFunction::FindFunction("Function GameFramework.GameAIController.ReachedMoveGoal");
 	}
 
 	AGameAIController_execReachedMoveGoal_Params ReachedMoveGoal_Params;
@@ -184,7 +184,7 @@ float AGameAIController::GetDestinationOffset()
 
 	if (!uFnGetDestinationOffset)
 	{
-		uFnGetDestinationOffset = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnGetDestinationOffset = UFunction::FindFunction("Function GameFramework.GameAIController.GetDestinationOffset");
 	}
 
 	AGameAIController_execGetDestinationOffset_Params GetDestinationOffset_Params;
@@ -196,7 +196,7 @@ float AGameAIController::GetDestinationOffset()
 };
 
 // Function GameFramework.GameAIController.GetAICommandInStack
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34013])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34015])
 // Parameter Info:
 // class UGameAICommand*          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class UClass*                  InClass                        (CPF_Const | CPF_Parm)
@@ -207,24 +207,20 @@ class UGameAICommand* AGameAIController::GetAICommandInStack(class UClass* InCla
 
 	if (!uFnGetAICommandInStack)
 	{
-		uFnGetAICommandInStack = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnGetAICommandInStack = UFunction::FindFunction("Function GameFramework.GameAIController.GetAICommandInStack");
 	}
 
 	AGameAIController_execGetAICommandInStack_Params GetAICommandInStack_Params;
 	memset(&GetAICommandInStack_Params, 0, sizeof(GetAICommandInStack_Params));
 	GetAICommandInStack_Params.InClass = InClass;
 
-	uFnGetAICommandInStack->iNative = 0;
-	uFnGetAICommandInStack->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetAICommandInStack, &GetAICommandInStack_Params, nullptr);
-	uFnGetAICommandInStack->FunctionFlags |= 0x400;
-	uFnGetAICommandInStack->iNative = 34013;
 
 	return GetAICommandInStack_Params.ReturnValue;
 };
 
 // Function GameFramework.GameAIController.FindCommandOfClass
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33921])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33923])
 // Parameter Info:
 // class UGameAICommand*          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_CoerceParm)
 // class UClass*                  SearchClass                    (CPF_Parm)
@@ -235,24 +231,20 @@ class UGameAICommand* AGameAIController::FindCommandOfClass(class UClass* Search
 
 	if (!uFnFindCommandOfClass)
 	{
-		uFnFindCommandOfClass = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnFindCommandOfClass = UFunction::FindFunction("Function GameFramework.GameAIController.FindCommandOfClass");
 	}
 
 	AGameAIController_execFindCommandOfClass_Params FindCommandOfClass_Params;
 	memset(&FindCommandOfClass_Params, 0, sizeof(FindCommandOfClass_Params));
 	FindCommandOfClass_Params.SearchClass = SearchClass;
 
-	uFnFindCommandOfClass->iNative = 0;
-	uFnFindCommandOfClass->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFindCommandOfClass, &FindCommandOfClass_Params, nullptr);
-	uFnFindCommandOfClass->FunctionFlags |= 0x400;
-	uFnFindCommandOfClass->iNative = 33921;
 
 	return FindCommandOfClass_Params.ReturnValue;
 };
 
 // Function GameFramework.GameAIController.DumpCommandStack
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33853])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33855])
 // Parameter Info:
 
 void AGameAIController::DumpCommandStack()
@@ -261,21 +253,17 @@ void AGameAIController::DumpCommandStack()
 
 	if (!uFnDumpCommandStack)
 	{
-		uFnDumpCommandStack = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnDumpCommandStack = UFunction::FindFunction("Function GameFramework.GameAIController.DumpCommandStack");
 	}
 
 	AGameAIController_execDumpCommandStack_Params DumpCommandStack_Params;
 	memset(&DumpCommandStack_Params, 0, sizeof(DumpCommandStack_Params));
 
-	uFnDumpCommandStack->iNative = 0;
-	uFnDumpCommandStack->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDumpCommandStack, &DumpCommandStack_Params, nullptr);
-	uFnDumpCommandStack->FunctionFlags |= 0x400;
-	uFnDumpCommandStack->iNative = 33853;
 };
 
 // Function GameFramework.GameAIController.CheckCommandCount
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33661])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33663])
 // Parameter Info:
 
 void AGameAIController::CheckCommandCount()
@@ -284,21 +272,17 @@ void AGameAIController::CheckCommandCount()
 
 	if (!uFnCheckCommandCount)
 	{
-		uFnCheckCommandCount = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnCheckCommandCount = UFunction::FindFunction("Function GameFramework.GameAIController.CheckCommandCount");
 	}
 
 	AGameAIController_execCheckCommandCount_Params CheckCommandCount_Params;
 	memset(&CheckCommandCount_Params, 0, sizeof(CheckCommandCount_Params));
 
-	uFnCheckCommandCount->iNative = 0;
-	uFnCheckCommandCount->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCheckCommandCount, &CheckCommandCount_Params, nullptr);
-	uFnCheckCommandCount->FunctionFlags |= 0x400;
-	uFnCheckCommandCount->iNative = 33661;
 };
 
 // Function GameFramework.GameAIController.GetActiveCommand
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34010])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34012])
 // Parameter Info:
 // class UGameAICommand*          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -308,23 +292,19 @@ class UGameAICommand* AGameAIController::GetActiveCommand()
 
 	if (!uFnGetActiveCommand)
 	{
-		uFnGetActiveCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnGetActiveCommand = UFunction::FindFunction("Function GameFramework.GameAIController.GetActiveCommand");
 	}
 
 	AGameAIController_execGetActiveCommand_Params GetActiveCommand_Params;
 	memset(&GetActiveCommand_Params, 0, sizeof(GetActiveCommand_Params));
 
-	uFnGetActiveCommand->iNative = 0;
-	uFnGetActiveCommand->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetActiveCommand, &GetActiveCommand_Params, nullptr);
-	uFnGetActiveCommand->FunctionFlags |= 0x400;
-	uFnGetActiveCommand->iNative = 34010;
 
 	return GetActiveCommand_Params.ReturnValue;
 };
 
 // Function GameFramework.GameAIController.AbortCommand
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[33219])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[33221])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class UGameAICommand*          AbortCmd                       (CPF_Parm)
@@ -336,7 +316,7 @@ bool AGameAIController::AbortCommand(class UGameAICommand* AbortCmd, class UClas
 
 	if (!uFnAbortCommand)
 	{
-		uFnAbortCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnAbortCommand = UFunction::FindFunction("Function GameFramework.GameAIController.AbortCommand");
 	}
 
 	AGameAIController_execAbortCommand_Params AbortCommand_Params;
@@ -344,17 +324,13 @@ bool AGameAIController::AbortCommand(class UGameAICommand* AbortCmd, class UClas
 	AbortCommand_Params.AbortCmd = AbortCmd;
 	AbortCommand_Params.AbortClass = AbortClass;
 
-	uFnAbortCommand->iNative = 0;
-	uFnAbortCommand->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAbortCommand, &AbortCommand_Params, nullptr);
-	uFnAbortCommand->FunctionFlags |= 0x400;
-	uFnAbortCommand->iNative = 33219;
 
 	return AbortCommand_Params.ReturnValue;
 };
 
 // Function GameFramework.GameAIController.PopCommand
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34469])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34471])
 // Parameter Info:
 // class UGameAICommand*          ToBePoppedCommand              (CPF_Parm)
 
@@ -364,22 +340,18 @@ void AGameAIController::PopCommand(class UGameAICommand* ToBePoppedCommand)
 
 	if (!uFnPopCommand)
 	{
-		uFnPopCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnPopCommand = UFunction::FindFunction("Function GameFramework.GameAIController.PopCommand");
 	}
 
 	AGameAIController_execPopCommand_Params PopCommand_Params;
 	memset(&PopCommand_Params, 0, sizeof(PopCommand_Params));
 	PopCommand_Params.ToBePoppedCommand = ToBePoppedCommand;
 
-	uFnPopCommand->iNative = 0;
-	uFnPopCommand->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPopCommand, &PopCommand_Params, nullptr);
-	uFnPopCommand->FunctionFlags |= 0x400;
-	uFnPopCommand->iNative = 34469;
 };
 
 // Function GameFramework.GameAIController.PushCommand
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34511])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34513])
 // Parameter Info:
 // class UGameAICommand*          NewCommand                     (CPF_Parm)
 
@@ -389,22 +361,18 @@ void AGameAIController::PushCommand(class UGameAICommand* NewCommand)
 
 	if (!uFnPushCommand)
 	{
-		uFnPushCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnPushCommand = UFunction::FindFunction("Function GameFramework.GameAIController.PushCommand");
 	}
 
 	AGameAIController_execPushCommand_Params PushCommand_Params;
 	memset(&PushCommand_Params, 0, sizeof(PushCommand_Params));
 	PushCommand_Params.NewCommand = NewCommand;
 
-	uFnPushCommand->iNative = 0;
-	uFnPushCommand->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPushCommand, &PushCommand_Params, nullptr);
-	uFnPushCommand->FunctionFlags |= 0x400;
-	uFnPushCommand->iNative = 34511;
 };
 
 // Function GameFramework.GameAIController.AllCommands
-// [0x00420405] (FUNC_Final | FUNC_Iterator | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[33282])
+// [0x00420405] (FUNC_Final | FUNC_Iterator | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[33284])
 // Parameter Info:
 // class UClass*                  BaseClass                      (CPF_Parm)
 // class UGameAICommand*          Cmd                            (CPF_Parm | CPF_OutParm)
@@ -415,7 +383,7 @@ void AGameAIController::AllCommands(class UClass* BaseClass, class UGameAIComman
 
 	if (!uFnAllCommands)
 	{
-		uFnAllCommands = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICONTROLLER));
+		uFnAllCommands = UFunction::FindFunction("Function GameFramework.GameAIController.AllCommands");
 	}
 
 	AGameAIController_execAllCommands_Params AllCommands_Params;
@@ -423,11 +391,7 @@ void AGameAIController::AllCommands(class UClass* BaseClass, class UGameAIComman
 	AllCommands_Params.BaseClass = BaseClass;
 	AllCommands_Params.Cmd = Cmd;
 
-	uFnAllCommands->iNative = 0;
-	uFnAllCommands->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAllCommands, &AllCommands_Params, nullptr);
-	uFnAllCommands->FunctionFlags |= 0x400;
-	uFnAllCommands->iNative = 33282;
 
 	Cmd = AllCommands_Params.Cmd;
 };
@@ -444,7 +408,7 @@ bool UGameAICommand::HandlePathObstruction(class AActor* BlockedBy)
 
 	if (!uFnHandlePathObstruction)
 	{
-		uFnHandlePathObstruction = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnHandlePathObstruction = UFunction::FindFunction("Function GameFramework.GameAICommand.HandlePathObstruction");
 	}
 
 	UGameAICommand_execHandlePathObstruction_Params HandlePathObstruction_Params;
@@ -469,7 +433,7 @@ bool UGameAICommand::MoveUnreachable(const struct FVector& AttemptedDest, class 
 
 	if (!uFnMoveUnreachable)
 	{
-		uFnMoveUnreachable = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnMoveUnreachable = UFunction::FindFunction("Function GameFramework.GameAICommand.MoveUnreachable");
 	}
 
 	UGameAICommand_execMoveUnreachable_Params MoveUnreachable_Params;
@@ -492,7 +456,7 @@ void UGameAICommand::NotifyNeedRepath()
 
 	if (!uFnNotifyNeedRepath)
 	{
-		uFnNotifyNeedRepath = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnNotifyNeedRepath = UFunction::FindFunction("Function GameFramework.GameAICommand.NotifyNeedRepath");
 	}
 
 	UGameAICommand_execNotifyNeedRepath_Params NotifyNeedRepath_Params;
@@ -512,7 +476,7 @@ class FString UGameAICommand::eventGetDebugVerboseText()
 
 	if (!uFnGetDebugVerboseText)
 	{
-		uFnGetDebugVerboseText = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnGetDebugVerboseText = UFunction::FindFunction("Function GameFramework.GameAICommand.GetDebugVerboseText");
 	}
 
 	UGameAICommand_eventGetDebugVerboseText_Params GetDebugVerboseText_Params;
@@ -535,7 +499,7 @@ void UGameAICommand::GetDebugOverheadText(class APlayerController* PC, class TAr
 
 	if (!uFnGetDebugOverheadText)
 	{
-		uFnGetDebugOverheadText = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnGetDebugOverheadText = UFunction::FindFunction("Function GameFramework.GameAICommand.GetDebugOverheadText");
 	}
 
 	UGameAICommand_execGetDebugOverheadText_Params GetDebugOverheadText_Params;
@@ -560,7 +524,7 @@ void UGameAICommand::eventDrawDebug(class AHUD* H, const class FName& Category)
 
 	if (!uFnDrawDebug)
 	{
-		uFnDrawDebug = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnDrawDebug = UFunction::FindFunction("Function GameFramework.GameAICommand.DrawDebug");
 	}
 
 	UGameAICommand_eventDrawDebug_Params DrawDebug_Params;
@@ -582,7 +546,7 @@ class FString UGameAICommand::eventGetDumpString()
 
 	if (!uFnGetDumpString)
 	{
-		uFnGetDumpString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnGetDumpString = UFunction::FindFunction("Function GameFramework.GameAICommand.GetDumpString");
 	}
 
 	UGameAICommand_eventGetDumpString_Params GetDumpString_Params;
@@ -604,7 +568,7 @@ void UGameAICommand::Resumed(const class FName& OldCommandName)
 
 	if (!uFnResumed)
 	{
-		uFnResumed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnResumed = UFunction::FindFunction("Function GameFramework.GameAICommand.Resumed");
 	}
 
 	UGameAICommand_execResumed_Params Resumed_Params;
@@ -625,7 +589,7 @@ void UGameAICommand::Paused(class UGameAICommand* NewCommand)
 
 	if (!uFnPaused)
 	{
-		uFnPaused = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnPaused = UFunction::FindFunction("Function GameFramework.GameAICommand.Paused");
 	}
 
 	UGameAICommand_execPaused_Params Paused_Params;
@@ -645,7 +609,7 @@ void UGameAICommand::Popped()
 
 	if (!uFnPopped)
 	{
-		uFnPopped = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnPopped = UFunction::FindFunction("Function GameFramework.GameAICommand.Popped");
 	}
 
 	UGameAICommand_execPopped_Params Popped_Params;
@@ -664,7 +628,7 @@ void UGameAICommand::Pushed()
 
 	if (!uFnPushed)
 	{
-		uFnPushed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnPushed = UFunction::FindFunction("Function GameFramework.GameAICommand.Pushed");
 	}
 
 	UGameAICommand_execPushed_Params Pushed_Params;
@@ -683,7 +647,7 @@ void UGameAICommand::PostPopped()
 
 	if (!uFnPostPopped)
 	{
-		uFnPostPopped = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnPostPopped = UFunction::FindFunction("Function GameFramework.GameAICommand.PostPopped");
 	}
 
 	UGameAICommand_execPostPopped_Params PostPopped_Params;
@@ -703,7 +667,7 @@ void UGameAICommand::PrePushed(class AGameAIController* AI)
 
 	if (!uFnPrePushed)
 	{
-		uFnPrePushed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnPrePushed = UFunction::FindFunction("Function GameFramework.GameAICommand.PrePushed");
 	}
 
 	UGameAICommand_execPrePushed_Params PrePushed_Params;
@@ -725,7 +689,7 @@ bool UGameAICommand::AllowStateTransitionTo(const class FName& StateName)
 
 	if (!uFnAllowStateTransitionTo)
 	{
-		uFnAllowStateTransitionTo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnAllowStateTransitionTo = UFunction::FindFunction("Function GameFramework.GameAICommand.AllowStateTransitionTo");
 	}
 
 	UGameAICommand_execAllowStateTransitionTo_Params AllowStateTransitionTo_Params;
@@ -749,7 +713,7 @@ bool UGameAICommand::AllowTransitionTo(class UClass* AttemptCommand)
 
 	if (!uFnAllowTransitionTo)
 	{
-		uFnAllowTransitionTo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnAllowTransitionTo = UFunction::FindFunction("Function GameFramework.GameAICommand.AllowTransitionTo");
 	}
 
 	UGameAICommand_execAllowTransitionTo_Params AllowTransitionTo_Params;
@@ -772,7 +736,7 @@ void UGameAICommand::Tick(float DeltaTime)
 
 	if (!uFnTick)
 	{
-		uFnTick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnTick = UFunction::FindFunction("Function GameFramework.GameAICommand.Tick");
 	}
 
 	UGameAICommand_execTick_Params Tick_Params;
@@ -783,7 +747,7 @@ void UGameAICommand::Tick(float DeltaTime)
 };
 
 // Function GameFramework.GameAICommand.ShouldIgnoreNotifies
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34658])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34660])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -793,17 +757,13 @@ bool UGameAICommand::ShouldIgnoreNotifies()
 
 	if (!uFnShouldIgnoreNotifies)
 	{
-		uFnShouldIgnoreNotifies = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnShouldIgnoreNotifies = UFunction::FindFunction("Function GameFramework.GameAICommand.ShouldIgnoreNotifies");
 	}
 
 	UGameAICommand_execShouldIgnoreNotifies_Params ShouldIgnoreNotifies_Params;
 	memset(&ShouldIgnoreNotifies_Params, 0, sizeof(ShouldIgnoreNotifies_Params));
 
-	uFnShouldIgnoreNotifies->iNative = 0;
-	uFnShouldIgnoreNotifies->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShouldIgnoreNotifies, &ShouldIgnoreNotifies_Params, nullptr);
-	uFnShouldIgnoreNotifies->FunctionFlags |= 0x400;
-	uFnShouldIgnoreNotifies->iNative = 34658;
 
 	return ShouldIgnoreNotifies_Params.ReturnValue;
 };
@@ -819,7 +779,7 @@ void UGameAICommand::eventInternalTick(float DeltaTime)
 
 	if (!uFnInternalTick)
 	{
-		uFnInternalTick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnInternalTick = UFunction::FindFunction("Function GameFramework.GameAICommand.InternalTick");
 	}
 
 	UGameAICommand_eventInternalTick_Params InternalTick_Params;
@@ -840,7 +800,7 @@ void UGameAICommand::eventInternalResumed(const class FName& OldCommandName)
 
 	if (!uFnInternalResumed)
 	{
-		uFnInternalResumed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnInternalResumed = UFunction::FindFunction("Function GameFramework.GameAICommand.InternalResumed");
 	}
 
 	UGameAICommand_eventInternalResumed_Params InternalResumed_Params;
@@ -861,7 +821,7 @@ void UGameAICommand::eventInternalPaused(class UGameAICommand* NewCommand)
 
 	if (!uFnInternalPaused)
 	{
-		uFnInternalPaused = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnInternalPaused = UFunction::FindFunction("Function GameFramework.GameAICommand.InternalPaused");
 	}
 
 	UGameAICommand_eventInternalPaused_Params InternalPaused_Params;
@@ -881,7 +841,7 @@ void UGameAICommand::eventInternalPopped()
 
 	if (!uFnInternalPopped)
 	{
-		uFnInternalPopped = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnInternalPopped = UFunction::FindFunction("Function GameFramework.GameAICommand.InternalPopped");
 	}
 
 	UGameAICommand_eventInternalPopped_Params InternalPopped_Params;
@@ -900,7 +860,7 @@ void UGameAICommand::eventInternalPushed()
 
 	if (!uFnInternalPushed)
 	{
-		uFnInternalPushed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnInternalPushed = UFunction::FindFunction("Function GameFramework.GameAICommand.InternalPushed");
 	}
 
 	UGameAICommand_eventInternalPushed_Params InternalPushed_Params;
@@ -920,7 +880,7 @@ void UGameAICommand::eventInternalPrePushed(class AGameAIController* AI)
 
 	if (!uFnInternalPrePushed)
 	{
-		uFnInternalPrePushed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnInternalPrePushed = UFunction::FindFunction("Function GameFramework.GameAICommand.InternalPrePushed");
 	}
 
 	UGameAICommand_eventInternalPrePushed_Params InternalPrePushed_Params;
@@ -942,7 +902,7 @@ bool UGameAICommand::InitCommand(class AGameAIController* AI)
 
 	if (!uFnInitCommand)
 	{
-		uFnInitCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnInitCommand = UFunction::FindFunction("Function GameFramework.GameAICommand.InitCommand");
 	}
 
 	UGameAICommand_execInitCommand_Params InitCommand_Params;
@@ -967,7 +927,7 @@ bool UGameAICommand::InitCommandUserActor(class AGameAIController* AI, class AAc
 
 	if (!uFnInitCommandUserActor)
 	{
-		uFnInitCommandUserActor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICOMMAND));
+		uFnInitCommandUserActor = UFunction::FindFunction("Function GameFramework.GameAICommand.InitCommandUserActor");
 	}
 
 	UGameAICommand_execInitCommandUserActor_Params InitCommandUserActor_Params;
@@ -994,7 +954,7 @@ void AGamePlayerController::ClientColorFade(const struct FColor& FadeColor, uint
 
 	if (!uFnClientColorFade)
 	{
-		uFnClientColorFade = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnClientColorFade = UFunction::FindFunction("Function GameFramework.GamePlayerController.ClientColorFade");
 	}
 
 	AGamePlayerController_execClientColorFade_Params ClientColorFade_Params;
@@ -1018,7 +978,7 @@ void AGamePlayerController::eventWarmupPause(bool bDesiredPauseState)
 
 	if (!uFnWarmupPause)
 	{
-		uFnWarmupPause = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnWarmupPause = UFunction::FindFunction("Function GameFramework.GamePlayerController.WarmupPause");
 	}
 
 	AGamePlayerController_eventWarmupPause_Params WarmupPause_Params;
@@ -1039,7 +999,7 @@ bool AGamePlayerController::CanUnpauseWarmup()
 
 	if (!uFnCanUnpauseWarmup)
 	{
-		uFnCanUnpauseWarmup = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnCanUnpauseWarmup = UFunction::FindFunction("Function GameFramework.GamePlayerController.CanUnpauseWarmup");
 	}
 
 	AGamePlayerController_execCanUnpauseWarmup_Params CanUnpauseWarmup_Params;
@@ -1051,7 +1011,7 @@ bool AGamePlayerController::CanUnpauseWarmup()
 };
 
 // Function GameFramework.GamePlayerController.GetCurrentMovie
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34018])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34020])
 // Parameter Info:
 // class FString                  MovieName                      (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 
@@ -1061,18 +1021,14 @@ void AGamePlayerController::GetCurrentMovie(class FString& MovieName)
 
 	if (!uFnGetCurrentMovie)
 	{
-		uFnGetCurrentMovie = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnGetCurrentMovie = UFunction::FindFunction("Function GameFramework.GamePlayerController.GetCurrentMovie");
 	}
 
 	AGamePlayerController_execGetCurrentMovie_Params GetCurrentMovie_Params;
 	memset(&GetCurrentMovie_Params, 0, sizeof(GetCurrentMovie_Params));
 	memcpy_s(&GetCurrentMovie_Params.MovieName, sizeof(GetCurrentMovie_Params.MovieName), &MovieName, sizeof(MovieName));
 
-	uFnGetCurrentMovie->iNative = 0;
-	uFnGetCurrentMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCurrentMovie, &GetCurrentMovie_Params, nullptr);
-	uFnGetCurrentMovie->FunctionFlags |= 0x400;
-	uFnGetCurrentMovie->iNative = 34018;
 
 	memcpy_s(&MovieName, sizeof(MovieName), &GetCurrentMovie_Params.MovieName, sizeof(GetCurrentMovie_Params.MovieName));
 };
@@ -1091,7 +1047,7 @@ void AGamePlayerController::eventClientStopMovie(float DelayInSeconds, bool bAll
 
 	if (!uFnClientStopMovie)
 	{
-		uFnClientStopMovie = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnClientStopMovie = UFunction::FindFunction("Function GameFramework.GamePlayerController.ClientStopMovie");
 	}
 
 	AGamePlayerController_eventClientStopMovie_Params ClientStopMovie_Params;
@@ -1101,11 +1057,7 @@ void AGamePlayerController::eventClientStopMovie(float DelayInSeconds, bool bAll
 	ClientStopMovie_Params.bForceStopNonSkippable = bForceStopNonSkippable;
 	ClientStopMovie_Params.bForceStopLoadingMovie = bForceStopLoadingMovie;
 
-	uFnClientStopMovie->iNative = 0;
-	uFnClientStopMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClientStopMovie, &ClientStopMovie_Params, nullptr);
-	uFnClientStopMovie->FunctionFlags |= 0x400;
-	uFnClientStopMovie->iNative = 13067;
 };
 
 // Function GameFramework.GamePlayerController.ClientPlayMovie
@@ -1124,7 +1076,7 @@ void AGamePlayerController::eventClientPlayMovie(const class FString& MovieName,
 
 	if (!uFnClientPlayMovie)
 	{
-		uFnClientPlayMovie = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnClientPlayMovie = UFunction::FindFunction("Function GameFramework.GamePlayerController.ClientPlayMovie");
 	}
 
 	AGamePlayerController_eventClientPlayMovie_Params ClientPlayMovie_Params;
@@ -1136,15 +1088,11 @@ void AGamePlayerController::eventClientPlayMovie(const class FString& MovieName,
 	ClientPlayMovie_Params.bPlayOnceFromStream = bPlayOnceFromStream;
 	ClientPlayMovie_Params.bOnlyBackButtonSkipsMovie = bOnlyBackButtonSkipsMovie;
 
-	uFnClientPlayMovie->iNative = 0;
-	uFnClientPlayMovie->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClientPlayMovie, &ClientPlayMovie_Params, nullptr);
-	uFnClientPlayMovie->FunctionFlags |= 0x400;
-	uFnClientPlayMovie->iNative = 13066;
 };
 
 // Function GameFramework.GamePlayerController.KeepPlayingLoadingMovie
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[34160])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[34162])
 // Parameter Info:
 
 void AGamePlayerController::KeepPlayingLoadingMovie()
@@ -1153,21 +1101,17 @@ void AGamePlayerController::KeepPlayingLoadingMovie()
 
 	if (!uFnKeepPlayingLoadingMovie)
 	{
-		uFnKeepPlayingLoadingMovie = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnKeepPlayingLoadingMovie = UFunction::FindFunction("Function GameFramework.GamePlayerController.KeepPlayingLoadingMovie");
 	}
 
 	AGamePlayerController_execKeepPlayingLoadingMovie_Params KeepPlayingLoadingMovie_Params;
 	memset(&KeepPlayingLoadingMovie_Params, 0, sizeof(KeepPlayingLoadingMovie_Params));
 
-	uFnKeepPlayingLoadingMovie->iNative = 0;
-	uFnKeepPlayingLoadingMovie->FunctionFlags &= ~0x400;
 	AGamePlayerController::StaticClass()->ProcessEvent(uFnKeepPlayingLoadingMovie, &KeepPlayingLoadingMovie_Params, nullptr);
-	uFnKeepPlayingLoadingMovie->FunctionFlags |= 0x400;
-	uFnKeepPlayingLoadingMovie->iNative = 34160;
 };
 
 // Function GameFramework.GamePlayerController.ShowLoadingMovie
-// [0x00026401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[34662])
+// [0x00026401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[34664])
 // Parameter Info:
 // uint32_t                       bShowMovie                     (CPF_Parm)
 // uint32_t                       bPauseAfterHide                (CPF_OptionalParm | CPF_Parm)
@@ -1181,7 +1125,7 @@ void AGamePlayerController::ShowLoadingMovie(bool bShowMovie, bool bPauseAfterHi
 
 	if (!uFnShowLoadingMovie)
 	{
-		uFnShowLoadingMovie = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnShowLoadingMovie = UFunction::FindFunction("Function GameFramework.GamePlayerController.ShowLoadingMovie");
 	}
 
 	AGamePlayerController_execShowLoadingMovie_Params ShowLoadingMovie_Params;
@@ -1192,11 +1136,7 @@ void AGamePlayerController::ShowLoadingMovie(bool bShowMovie, bool bPauseAfterHi
 	memcpy_s(&ShowLoadingMovie_Params.KeepPlayingDuration, sizeof(ShowLoadingMovie_Params.KeepPlayingDuration), &KeepPlayingDuration, sizeof(KeepPlayingDuration));
 	ShowLoadingMovie_Params.bOverridePreviousDelays = bOverridePreviousDelays;
 
-	uFnShowLoadingMovie->iNative = 0;
-	uFnShowLoadingMovie->FunctionFlags &= ~0x400;
 	AGamePlayerController::StaticClass()->ProcessEvent(uFnShowLoadingMovie, &ShowLoadingMovie_Params, nullptr);
-	uFnShowLoadingMovie->FunctionFlags |= 0x400;
-	uFnShowLoadingMovie->iNative = 34662;
 };
 
 // Function GameFramework.GamePlayerController.SetSoundMode
@@ -1210,7 +1150,7 @@ void AGamePlayerController::SetSoundMode(const class FName& InSoundModeName)
 
 	if (!uFnSetSoundMode)
 	{
-		uFnSetSoundMode = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnSetSoundMode = UFunction::FindFunction("Function GameFramework.GamePlayerController.SetSoundMode");
 	}
 
 	AGamePlayerController_execSetSoundMode_Params SetSoundMode_Params;
@@ -1232,7 +1172,7 @@ void AGamePlayerController::DoForceFeedbackForScreenShake(class UCameraShake* Sh
 
 	if (!uFnDoForceFeedbackForScreenShake)
 	{
-		uFnDoForceFeedbackForScreenShake = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnDoForceFeedbackForScreenShake = UFunction::FindFunction("Function GameFramework.GamePlayerController.DoForceFeedbackForScreenShake");
 	}
 
 	AGamePlayerController_execDoForceFeedbackForScreenShake_Params DoForceFeedbackForScreenShake_Params;
@@ -1254,7 +1194,7 @@ void AGamePlayerController::eventNotifyCrowdAgentInRadius(class AGameCrowdAgent*
 
 	if (!uFnNotifyCrowdAgentInRadius)
 	{
-		uFnNotifyCrowdAgentInRadius = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnNotifyCrowdAgentInRadius = UFunction::FindFunction("Function GameFramework.GamePlayerController.NotifyCrowdAgentInRadius");
 	}
 
 	AGamePlayerController_eventNotifyCrowdAgentInRadius_Params NotifyCrowdAgentInRadius_Params;
@@ -1274,7 +1214,7 @@ void AGamePlayerController::eventNotifyCrowdAgentRefresh()
 
 	if (!uFnNotifyCrowdAgentRefresh)
 	{
-		uFnNotifyCrowdAgentRefresh = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnNotifyCrowdAgentRefresh = UFunction::FindFunction("Function GameFramework.GamePlayerController.NotifyCrowdAgentRefresh");
 	}
 
 	AGamePlayerController_eventNotifyCrowdAgentRefresh_Params NotifyCrowdAgentRefresh_Params;
@@ -1294,7 +1234,7 @@ void AGamePlayerController::CrowdDebug(bool bEnabled)
 
 	if (!uFnCrowdDebug)
 	{
-		uFnCrowdDebug = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnCrowdDebug = UFunction::FindFunction("Function GameFramework.GamePlayerController.CrowdDebug");
 	}
 
 	AGamePlayerController_execCrowdDebug_Params CrowdDebug_Params;
@@ -1305,7 +1245,7 @@ void AGamePlayerController::CrowdDebug(bool bEnabled)
 };
 
 // Function GameFramework.GamePlayerController.GetUIPlayerIndex
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34041])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34043])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -1315,17 +1255,13 @@ int32_t AGamePlayerController::GetUIPlayerIndex()
 
 	if (!uFnGetUIPlayerIndex)
 	{
-		uFnGetUIPlayerIndex = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnGetUIPlayerIndex = UFunction::FindFunction("Function GameFramework.GamePlayerController.GetUIPlayerIndex");
 	}
 
 	AGamePlayerController_execGetUIPlayerIndex_Params GetUIPlayerIndex_Params;
 	memset(&GetUIPlayerIndex_Params, 0, sizeof(GetUIPlayerIndex_Params));
 
-	uFnGetUIPlayerIndex->iNative = 0;
-	uFnGetUIPlayerIndex->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetUIPlayerIndex, &GetUIPlayerIndex_Params, nullptr);
-	uFnGetUIPlayerIndex->FunctionFlags |= 0x400;
-	uFnGetUIPlayerIndex->iNative = 34041;
 
 	return GetUIPlayerIndex_Params.ReturnValue;
 };
@@ -1341,7 +1277,7 @@ void AGamePlayerController::OnToggleMouseCursor(class USeqAct_ToggleMouseCursor*
 
 	if (!uFnOnToggleMouseCursor)
 	{
-		uFnOnToggleMouseCursor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCONTROLLER));
+		uFnOnToggleMouseCursor = UFunction::FindFunction("Function GameFramework.GamePlayerController.OnToggleMouseCursor");
 	}
 
 	AGamePlayerController_execOnToggleMouseCursor_Params OnToggleMouseCursor_Params;
@@ -1364,7 +1300,7 @@ void UGameCheatManager::OnRequestComplete(class UHttpRequestInterface* OriginalR
 
 	if (!uFnOnRequestComplete)
 	{
-		uFnOnRequestComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECHEATMANAGER));
+		uFnOnRequestComplete = UFunction::FindFunction("Function GameFramework.GameCheatManager.OnRequestComplete");
 	}
 
 	UGameCheatManager_execOnRequestComplete_Params OnRequestComplete_Params;
@@ -1390,7 +1326,7 @@ void UGameCheatManager::TestHttp(const class FString& Verb, const class FString&
 
 	if (!uFnTestHttp)
 	{
-		uFnTestHttp = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECHEATMANAGER));
+		uFnTestHttp = UFunction::FindFunction("Function GameFramework.GameCheatManager.TestHttp");
 	}
 
 	UGameCheatManager_execTestHttp_Params TestHttp_Params;
@@ -1414,7 +1350,7 @@ void UGameCheatManager::EnableDebugCamera(bool bEnableDebugText)
 
 	if (!uFnEnableDebugCamera)
 	{
-		uFnEnableDebugCamera = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECHEATMANAGER));
+		uFnEnableDebugCamera = UFunction::FindFunction("Function GameFramework.GameCheatManager.EnableDebugCamera");
 	}
 
 	UGameCheatManager_execEnableDebugCamera_Params EnableDebugCamera_Params;
@@ -1435,7 +1371,7 @@ void UGameCheatManager::TeleportPawnToCamera(bool bToggleDebugCameraOff)
 
 	if (!uFnTeleportPawnToCamera)
 	{
-		uFnTeleportPawnToCamera = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECHEATMANAGER));
+		uFnTeleportPawnToCamera = UFunction::FindFunction("Function GameFramework.GameCheatManager.TeleportPawnToCamera");
 	}
 
 	UGameCheatManager_execTeleportPawnToCamera_Params TeleportPawnToCamera_Params;
@@ -1456,7 +1392,7 @@ void UGameCheatManager::ToggleDebugCamera(bool bDrawDebugText)
 
 	if (!uFnToggleDebugCamera)
 	{
-		uFnToggleDebugCamera = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECHEATMANAGER));
+		uFnToggleDebugCamera = UFunction::FindFunction("Function GameFramework.GameCheatManager.ToggleDebugCamera");
 	}
 
 	UGameCheatManager_execToggleDebugCamera_Params ToggleDebugCamera_Params;
@@ -1476,7 +1412,7 @@ void UGameCheatManager::PatchDebugCameraController()
 
 	if (!uFnPatchDebugCameraController)
 	{
-		uFnPatchDebugCameraController = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECHEATMANAGER));
+		uFnPatchDebugCameraController = UFunction::FindFunction("Function GameFramework.GameCheatManager.PatchDebugCameraController");
 	}
 
 	UGameCheatManager_execPatchDebugCameraController_Params PatchDebugCameraController_Params;
@@ -1495,7 +1431,7 @@ void AGameCrowdAgent::InitDebugColor()
 
 	if (!uFnInitDebugColor)
 	{
-		uFnInitDebugColor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnInitDebugColor = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.InitDebugColor");
 	}
 
 	AGameCrowdAgent_execInitDebugColor_Params InitDebugColor_Params;
@@ -1515,7 +1451,7 @@ class FString AGameCrowdAgent::GetBehaviorString()
 
 	if (!uFnGetBehaviorString)
 	{
-		uFnGetBehaviorString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnGetBehaviorString = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.GetBehaviorString");
 	}
 
 	AGameCrowdAgent_execGetBehaviorString_Params GetBehaviorString_Params;
@@ -1537,7 +1473,7 @@ class FString AGameCrowdAgent::GetDestString()
 
 	if (!uFnGetDestString)
 	{
-		uFnGetDestString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnGetDestString = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.GetDestString");
 	}
 
 	AGameCrowdAgent_execGetDestString_Params GetDestString_Params;
@@ -1562,7 +1498,7 @@ void AGameCrowdAgent::eventPostRenderFor(class APlayerController* PC, class UCan
 
 	if (!uFnPostRenderFor)
 	{
-		uFnPostRenderFor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnPostRenderFor = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.PostRenderFor");
 	}
 
 	AGameCrowdAgent_eventPostRenderFor_Params PostRenderFor_Params;
@@ -1576,7 +1512,7 @@ void AGameCrowdAgent::eventPostRenderFor(class APlayerController* PC, class UCan
 };
 
 // Function GameFramework.GameCrowdAgent.NativePostRenderFor
-// [0x00020500] (FUNC_Simulated | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[24466])
+// [0x00020500] (FUNC_Simulated | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[24468])
 // Parameter Info:
 // class APlayerController*       PC                             (CPF_Parm)
 // class UCanvas*                 Canvas                         (CPF_Parm)
@@ -1589,7 +1525,7 @@ void AGameCrowdAgent::NativePostRenderFor(class APlayerController* PC, class UCa
 
 	if (!uFnNativePostRenderFor)
 	{
-		uFnNativePostRenderFor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnNativePostRenderFor = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.NativePostRenderFor");
 	}
 
 	AGameCrowdAgent_execNativePostRenderFor_Params NativePostRenderFor_Params;
@@ -1599,11 +1535,7 @@ void AGameCrowdAgent::NativePostRenderFor(class APlayerController* PC, class UCa
 	memcpy_s(&NativePostRenderFor_Params.CameraPosition, sizeof(NativePostRenderFor_Params.CameraPosition), &CameraPosition, sizeof(CameraPosition));
 	memcpy_s(&NativePostRenderFor_Params.CameraDir, sizeof(NativePostRenderFor_Params.CameraDir), &CameraDir, sizeof(CameraDir));
 
-	uFnNativePostRenderFor->iNative = 0;
-	uFnNativePostRenderFor->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNativePostRenderFor, &NativePostRenderFor_Params, nullptr);
-	uFnNativePostRenderFor->FunctionFlags |= 0x400;
-	uFnNativePostRenderFor->iNative = 24466;
 };
 
 // Function GameFramework.GameCrowdAgent.GeneratePathToActor
@@ -1620,7 +1552,7 @@ struct FVector AGameCrowdAgent::eventGeneratePathToActor(class AActor* Goal, flo
 
 	if (!uFnGeneratePathToActor)
 	{
-		uFnGeneratePathToActor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnGeneratePathToActor = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.GeneratePathToActor");
 	}
 
 	AGameCrowdAgent_eventGeneratePathToActor_Params GeneratePathToActor_Params;
@@ -1644,7 +1576,7 @@ void AGameCrowdAgent::eventInitNavigationHandle()
 
 	if (!uFnInitNavigationHandle)
 	{
-		uFnInitNavigationHandle = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnInitNavigationHandle = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.InitNavigationHandle");
 	}
 
 	AGameCrowdAgent_eventInitNavigationHandle_Params InitNavigationHandle_Params;
@@ -1664,7 +1596,7 @@ void AGameCrowdAgent::eventOverlappedActorEvent(class AActor* A)
 
 	if (!uFnOverlappedActorEvent)
 	{
-		uFnOverlappedActorEvent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnOverlappedActorEvent = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.OverlappedActorEvent");
 	}
 
 	AGameCrowdAgent_eventOverlappedActorEvent_Params OverlappedActorEvent_Params;
@@ -1691,7 +1623,7 @@ void AGameCrowdAgent::TakeDamage(int32_t DamageAmount, class AController* EventI
 
 	if (!uFnTakeDamage)
 	{
-		uFnTakeDamage = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnTakeDamage = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.TakeDamage");
 	}
 
 	AGameCrowdAgent_execTakeDamage_Params TakeDamage_Params;
@@ -1717,7 +1649,7 @@ void AGameCrowdAgent::eventFireDeathEvent()
 
 	if (!uFnFireDeathEvent)
 	{
-		uFnFireDeathEvent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnFireDeathEvent = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.FireDeathEvent");
 	}
 
 	AGameCrowdAgent_eventFireDeathEvent_Params FireDeathEvent_Params;
@@ -1727,7 +1659,7 @@ void AGameCrowdAgent::eventFireDeathEvent()
 };
 
 // Function GameFramework.GameCrowdAgent.PlayDeath
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34458])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34460])
 // Parameter Info:
 // struct FVector                 KillMomentum                   (CPF_Parm)
 
@@ -1737,18 +1669,14 @@ void AGameCrowdAgent::PlayDeath(const struct FVector& KillMomentum)
 
 	if (!uFnPlayDeath)
 	{
-		uFnPlayDeath = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnPlayDeath = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.PlayDeath");
 	}
 
 	AGameCrowdAgent_execPlayDeath_Params PlayDeath_Params;
 	memset(&PlayDeath_Params, 0, sizeof(PlayDeath_Params));
 	memcpy_s(&PlayDeath_Params.KillMomentum, sizeof(PlayDeath_Params.KillMomentum), &KillMomentum, sizeof(KillMomentum));
 
-	uFnPlayDeath->iNative = 0;
-	uFnPlayDeath->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayDeath, &PlayDeath_Params, nullptr);
-	uFnPlayDeath->FunctionFlags |= 0x400;
-	uFnPlayDeath->iNative = 34458;
 };
 
 // Function GameFramework.GameCrowdAgent.UpdateIntermediatePoint
@@ -1762,7 +1690,7 @@ void AGameCrowdAgent::eventUpdateIntermediatePoint(class AActor* DestinationActo
 
 	if (!uFnUpdateIntermediatePoint)
 	{
-		uFnUpdateIntermediatePoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnUpdateIntermediatePoint = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.UpdateIntermediatePoint");
 	}
 
 	AGameCrowdAgent_eventUpdateIntermediatePoint_Params UpdateIntermediatePoint_Params;
@@ -1787,7 +1715,7 @@ bool AGameCrowdAgent::CalcCamera(float fDeltaTime, struct FVector& out_CamLoc, s
 
 	if (!uFnCalcCamera)
 	{
-		uFnCalcCamera = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnCalcCamera = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.CalcCamera");
 	}
 
 	AGameCrowdAgent_execCalcCamera_Params CalcCamera_Params;
@@ -1807,7 +1735,7 @@ bool AGameCrowdAgent::CalcCamera(float fDeltaTime, struct FVector& out_CamLoc, s
 };
 
 // Function GameFramework.GameCrowdAgent.IsIdle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34149])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34151])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -1817,23 +1745,19 @@ bool AGameCrowdAgent::IsIdle()
 
 	if (!uFnIsIdle)
 	{
-		uFnIsIdle = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnIsIdle = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.IsIdle");
 	}
 
 	AGameCrowdAgent_execIsIdle_Params IsIdle_Params;
 	memset(&IsIdle_Params, 0, sizeof(IsIdle_Params));
 
-	uFnIsIdle->iNative = 0;
-	uFnIsIdle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsIdle, &IsIdle_Params, nullptr);
-	uFnIsIdle->FunctionFlags |= 0x400;
-	uFnIsIdle->iNative = 34149;
 
 	return IsIdle_Params.ReturnValue;
 };
 
 // Function GameFramework.GameCrowdAgent.SetCurrentBehavior
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34636])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34638])
 // Parameter Info:
 // class UGameCrowdAgentBehavior* BehaviorArchetype              (CPF_Parm)
 
@@ -1843,18 +1767,14 @@ void AGameCrowdAgent::SetCurrentBehavior(class UGameCrowdAgentBehavior* Behavior
 
 	if (!uFnSetCurrentBehavior)
 	{
-		uFnSetCurrentBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnSetCurrentBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.SetCurrentBehavior");
 	}
 
 	AGameCrowdAgent_execSetCurrentBehavior_Params SetCurrentBehavior_Params;
 	memset(&SetCurrentBehavior_Params, 0, sizeof(SetCurrentBehavior_Params));
 	SetCurrentBehavior_Params.BehaviorArchetype = BehaviorArchetype;
 
-	uFnSetCurrentBehavior->iNative = 0;
-	uFnSetCurrentBehavior->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetCurrentBehavior, &SetCurrentBehavior_Params, nullptr);
-	uFnSetCurrentBehavior->FunctionFlags |= 0x400;
-	uFnSetCurrentBehavior->iNative = 34636;
 };
 
 // Function GameFramework.GameCrowdAgent.StopBehavior
@@ -1867,7 +1787,7 @@ void AGameCrowdAgent::eventStopBehavior()
 
 	if (!uFnStopBehavior)
 	{
-		uFnStopBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnStopBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.StopBehavior");
 	}
 
 	AGameCrowdAgent_eventStopBehavior_Params StopBehavior_Params;
@@ -1890,7 +1810,7 @@ void AGameCrowdAgent::eventHandleBehaviorEvent(ECrowdBehaviorEvent EventType, cl
 
 	if (!uFnHandleBehaviorEvent)
 	{
-		uFnHandleBehaviorEvent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnHandleBehaviorEvent = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.HandleBehaviorEvent");
 	}
 
 	AGameCrowdAgent_eventHandleBehaviorEvent_Params HandleBehaviorEvent_Params;
@@ -1914,7 +1834,7 @@ void AGameCrowdAgent::ActivateInstancedBehavior(class UGameCrowdAgentBehavior* N
 
 	if (!uFnActivateInstancedBehavior)
 	{
-		uFnActivateInstancedBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnActivateInstancedBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.ActivateInstancedBehavior");
 	}
 
 	AGameCrowdAgent_execActivateInstancedBehavior_Params ActivateInstancedBehavior_Params;
@@ -1936,7 +1856,7 @@ void AGameCrowdAgent::eventActivateBehavior(class UGameCrowdAgentBehavior* NewBe
 
 	if (!uFnActivateBehavior)
 	{
-		uFnActivateBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnActivateBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.ActivateBehavior");
 	}
 
 	AGameCrowdAgent_eventActivateBehavior_Params ActivateBehavior_Params;
@@ -1957,7 +1877,7 @@ void AGameCrowdAgent::ResetSeePlayer()
 
 	if (!uFnResetSeePlayer)
 	{
-		uFnResetSeePlayer = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnResetSeePlayer = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.ResetSeePlayer");
 	}
 
 	AGameCrowdAgent_execResetSeePlayer_Params ResetSeePlayer_Params;
@@ -1976,7 +1896,7 @@ void AGameCrowdAgent::TryRandomBehavior()
 
 	if (!uFnTryRandomBehavior)
 	{
-		uFnTryRandomBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnTryRandomBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.TryRandomBehavior");
 	}
 
 	AGameCrowdAgent_execTryRandomBehavior_Params TryRandomBehavior_Params;
@@ -1996,7 +1916,7 @@ void AGameCrowdAgent::eventNotifySeePlayer(class APlayerController* PC)
 
 	if (!uFnNotifySeePlayer)
 	{
-		uFnNotifySeePlayer = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnNotifySeePlayer = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.NotifySeePlayer");
 	}
 
 	AGameCrowdAgent_eventNotifySeePlayer_Params NotifySeePlayer_Params;
@@ -2016,7 +1936,7 @@ void AGameCrowdAgent::PlaySpawnBehavior()
 
 	if (!uFnPlaySpawnBehavior)
 	{
-		uFnPlaySpawnBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnPlaySpawnBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.PlaySpawnBehavior");
 	}
 
 	AGameCrowdAgent_execPlaySpawnBehavior_Params PlaySpawnBehavior_Params;
@@ -2035,7 +1955,7 @@ void AGameCrowdAgent::eventHandlePotentialAgentEncounter()
 
 	if (!uFnHandlePotentialAgentEncounter)
 	{
-		uFnHandlePotentialAgentEncounter = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnHandlePotentialAgentEncounter = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.HandlePotentialAgentEncounter");
 	}
 
 	AGameCrowdAgent_eventHandlePotentialAgentEncounter_Params HandlePotentialAgentEncounter_Params;
@@ -2054,7 +1974,7 @@ void AGameCrowdAgent::eventStopIdleAnimation()
 
 	if (!uFnStopIdleAnimation)
 	{
-		uFnStopIdleAnimation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnStopIdleAnimation = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.StopIdleAnimation");
 	}
 
 	AGameCrowdAgent_eventStopIdleAnimation_Params StopIdleAnimation_Params;
@@ -2073,7 +1993,7 @@ void AGameCrowdAgent::eventPlayIdleAnimation()
 
 	if (!uFnPlayIdleAnimation)
 	{
-		uFnPlayIdleAnimation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnPlayIdleAnimation = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.PlayIdleAnimation");
 	}
 
 	AGameCrowdAgent_eventPlayIdleAnimation_Params PlayIdleAnimation_Params;
@@ -2093,7 +2013,7 @@ void AGameCrowdAgent::OnPlayAgentAnimation(class USeqAct_PlayAgentAnimation* Act
 
 	if (!uFnOnPlayAgentAnimation)
 	{
-		uFnOnPlayAgentAnimation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnOnPlayAgentAnimation = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.OnPlayAgentAnimation");
 	}
 
 	AGameCrowdAgent_execOnPlayAgentAnimation_Params OnPlayAgentAnimation_Params;
@@ -2120,7 +2040,7 @@ void AGameCrowdAgent::InitializeAgent(class AActor* SpawnLoc, class AGameCrowdAg
 
 	if (!uFnInitializeAgent)
 	{
-		uFnInitializeAgent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnInitializeAgent = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.InitializeAgent");
 	}
 
 	AGameCrowdAgent_execInitializeAgent_Params InitializeAgent_Params;
@@ -2154,7 +2074,7 @@ struct FVector AGameCrowdAgent::GetAttemptedSpawnLocation(float Pct, const struc
 
 	if (!uFnGetAttemptedSpawnLocation)
 	{
-		uFnGetAttemptedSpawnLocation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnGetAttemptedSpawnLocation = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.GetAttemptedSpawnLocation");
 	}
 
 	AGameCrowdAgent_execGetAttemptedSpawnLocation_Params GetAttemptedSpawnLocation_Params;
@@ -2183,7 +2103,7 @@ void AGameCrowdAgent::SetLighting(bool bEnableLightEnvironment, const struct FLi
 
 	if (!uFnSetLighting)
 	{
-		uFnSetLighting = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnSetLighting = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.SetLighting");
 	}
 
 	AGameCrowdAgent_execSetLighting_Params SetLighting_Params;
@@ -2208,7 +2128,7 @@ void AGameCrowdAgent::DisplayDebug(class AHUD* HUD, float& out_YL, float& out_YP
 
 	if (!uFnDisplayDebug)
 	{
-		uFnDisplayDebug = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnDisplayDebug = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.DisplayDebug");
 	}
 
 	AGameCrowdAgent_execDisplayDebug_Params DisplayDebug_Params;
@@ -2233,7 +2153,7 @@ void AGameCrowdAgent::Destroyed()
 
 	if (!uFnDestroyed)
 	{
-		uFnDestroyed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnDestroyed = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.Destroyed");
 	}
 
 	AGameCrowdAgent_execDestroyed_Params Destroyed_Params;
@@ -2252,7 +2172,7 @@ void AGameCrowdAgent::ResetPooledAgent()
 
 	if (!uFnResetPooledAgent)
 	{
-		uFnResetPooledAgent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnResetPooledAgent = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.ResetPooledAgent");
 	}
 
 	AGameCrowdAgent_execResetPooledAgent_Params ResetPooledAgent_Params;
@@ -2271,7 +2191,7 @@ void AGameCrowdAgent::eventKillAgent()
 
 	if (!uFnKillAgent)
 	{
-		uFnKillAgent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnKillAgent = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.KillAgent");
 	}
 
 	AGameCrowdAgent_eventKillAgent_Params KillAgent_Params;
@@ -2290,7 +2210,7 @@ void AGameCrowdAgent::PostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.PostBeginPlay");
 	}
 
 	AGameCrowdAgent_execPostBeginPlay_Params PostBeginPlay_Params;
@@ -2309,7 +2229,7 @@ void AGameCrowdAgent::SetMaxSpeed()
 
 	if (!uFnSetMaxSpeed)
 	{
-		uFnSetMaxSpeed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnSetMaxSpeed = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.SetMaxSpeed");
 	}
 
 	AGameCrowdAgent_execSetMaxSpeed_Params SetMaxSpeed_Params;
@@ -2329,7 +2249,7 @@ void AGameCrowdAgent::eventSetCurrentDestination(class AGameCrowdDestination* Ne
 
 	if (!uFnSetCurrentDestination)
 	{
-		uFnSetCurrentDestination = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnSetCurrentDestination = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.SetCurrentDestination");
 	}
 
 	AGameCrowdAgent_eventSetCurrentDestination_Params SetCurrentDestination_Params;
@@ -2349,7 +2269,7 @@ void AGameCrowdAgent::eventWaitForGroupMembers()
 
 	if (!uFnWaitForGroupMembers)
 	{
-		uFnWaitForGroupMembers = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnWaitForGroupMembers = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.WaitForGroupMembers");
 	}
 
 	AGameCrowdAgent_eventWaitForGroupMembers_Params WaitForGroupMembers_Params;
@@ -2371,7 +2291,7 @@ bool AGameCrowdAgent::PickBehaviorFrom(const class TArray<struct FBehaviorEntry>
 
 	if (!uFnPickBehaviorFrom)
 	{
-		uFnPickBehaviorFrom = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnPickBehaviorFrom = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.PickBehaviorFrom");
 	}
 
 	AGameCrowdAgent_execPickBehaviorFrom_Params PickBehaviorFrom_Params;
@@ -2385,7 +2305,7 @@ bool AGameCrowdAgent::PickBehaviorFrom(const class TArray<struct FBehaviorEntry>
 };
 
 // Function GameFramework.GameCrowdAgent.IsPanicked
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34150])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34152])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -2395,17 +2315,13 @@ bool AGameCrowdAgent::IsPanicked()
 
 	if (!uFnIsPanicked)
 	{
-		uFnIsPanicked = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnIsPanicked = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.IsPanicked");
 	}
 
 	AGameCrowdAgent_execIsPanicked_Params IsPanicked_Params;
 	memset(&IsPanicked_Params, 0, sizeof(IsPanicked_Params));
 
-	uFnIsPanicked->iNative = 0;
-	uFnIsPanicked->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsPanicked, &IsPanicked_Params, nullptr);
-	uFnIsPanicked->FunctionFlags |= 0x400;
-	uFnIsPanicked->iNative = 34150;
 
 	return IsPanicked_Params.ReturnValue;
 };
@@ -2421,7 +2337,7 @@ void AGameCrowdAgent::eventFellOutOfWorld(class UClass* dmgType)
 
 	if (!uFnFellOutOfWorld)
 	{
-		uFnFellOutOfWorld = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnFellOutOfWorld = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.FellOutOfWorld");
 	}
 
 	AGameCrowdAgent_eventFellOutOfWorld_Params FellOutOfWorld_Params;
@@ -2432,7 +2348,7 @@ void AGameCrowdAgent::eventFellOutOfWorld(class UClass* dmgType)
 };
 
 // Function GameFramework.GameCrowdAgent.GetCollisionExtent
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21664])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21666])
 // Parameter Info:
 // struct FVector                 ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -2442,17 +2358,13 @@ struct FVector AGameCrowdAgent::GetCollisionExtent()
 
 	if (!uFnGetCollisionExtent)
 	{
-		uFnGetCollisionExtent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENT));
+		uFnGetCollisionExtent = UFunction::FindFunction("Function GameFramework.GameCrowdAgent.GetCollisionExtent");
 	}
 
 	AGameCrowdAgent_execGetCollisionExtent_Params GetCollisionExtent_Params;
 	memset(&GetCollisionExtent_Params, 0, sizeof(GetCollisionExtent_Params));
 
-	uFnGetCollisionExtent->iNative = 0;
-	uFnGetCollisionExtent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCollisionExtent, &GetCollisionExtent_Params, nullptr);
-	uFnGetCollisionExtent->FunctionFlags |= 0x400;
-	uFnGetCollisionExtent->iNative = 21664;
 
 	return GetCollisionExtent_Params.ReturnValue;
 };
@@ -2467,7 +2379,7 @@ void AGameCrowdAgentSkeletal::CreateAttachments()
 
 	if (!uFnCreateAttachments)
 	{
-		uFnCreateAttachments = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+		uFnCreateAttachments = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSkeletal.CreateAttachments");
 	}
 
 	AGameCrowdAgentSkeletal_execCreateAttachments_Params CreateAttachments_Params;
@@ -2489,7 +2401,7 @@ void AGameCrowdAgentSkeletal::eventOnAnimEnd(class UAnimNodeSequence* SeqNode, f
 
 	if (!uFnOnAnimEnd)
 	{
-		uFnOnAnimEnd = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+		uFnOnAnimEnd = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSkeletal.OnAnimEnd");
 	}
 
 	AGameCrowdAgentSkeletal_eventOnAnimEnd_Params OnAnimEnd_Params;
@@ -2511,7 +2423,7 @@ void AGameCrowdAgentSkeletal::eventStopIdleAnimation()
 
 	if (!uFnStopIdleAnimation)
 	{
-		uFnStopIdleAnimation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+		uFnStopIdleAnimation = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSkeletal.StopIdleAnimation");
 	}
 
 	AGameCrowdAgentSkeletal_eventStopIdleAnimation_Params StopIdleAnimation_Params;
@@ -2530,7 +2442,7 @@ void AGameCrowdAgentSkeletal::eventPlayIdleAnimation()
 
 	if (!uFnPlayIdleAnimation)
 	{
-		uFnPlayIdleAnimation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+		uFnPlayIdleAnimation = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSkeletal.PlayIdleAnimation");
 	}
 
 	AGameCrowdAgentSkeletal_eventPlayIdleAnimation_Params PlayIdleAnimation_Params;
@@ -2549,7 +2461,7 @@ void AGameCrowdAgentSkeletal::eventClearLatentAnimation()
 
 	if (!uFnClearLatentAnimation)
 	{
-		uFnClearLatentAnimation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+		uFnClearLatentAnimation = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSkeletal.ClearLatentAnimation");
 	}
 
 	AGameCrowdAgentSkeletal_eventClearLatentAnimation_Params ClearLatentAnimation_Params;
@@ -2569,7 +2481,7 @@ void AGameCrowdAgentSkeletal::OnPlayAgentAnimation(class USeqAct_PlayAgentAnimat
 
 	if (!uFnOnPlayAgentAnimation)
 	{
-		uFnOnPlayAgentAnimation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+		uFnOnPlayAgentAnimation = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSkeletal.OnPlayAgentAnimation");
 	}
 
 	AGameCrowdAgentSkeletal_execOnPlayAgentAnimation_Params OnPlayAgentAnimation_Params;
@@ -2580,7 +2492,7 @@ void AGameCrowdAgentSkeletal::OnPlayAgentAnimation(class USeqAct_PlayAgentAnimat
 };
 
 // Function GameFramework.GameCrowdAgentSkeletal.SetRootMotion
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34647])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34649])
 // Parameter Info:
 // uint32_t                       bRootMotionEnabled             (CPF_Parm)
 
@@ -2590,22 +2502,18 @@ void AGameCrowdAgentSkeletal::SetRootMotion(bool bRootMotionEnabled)
 
 	if (!uFnSetRootMotion)
 	{
-		uFnSetRootMotion = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+		uFnSetRootMotion = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSkeletal.SetRootMotion");
 	}
 
 	AGameCrowdAgentSkeletal_execSetRootMotion_Params SetRootMotion_Params;
 	memset(&SetRootMotion_Params, 0, sizeof(SetRootMotion_Params));
 	SetRootMotion_Params.bRootMotionEnabled = bRootMotionEnabled;
 
-	uFnSetRootMotion->iNative = 0;
-	uFnSetRootMotion->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetRootMotion, &SetRootMotion_Params, nullptr);
-	uFnSetRootMotion->FunctionFlags |= 0x400;
-	uFnSetRootMotion->iNative = 34647;
 };
 
 // Function GameFramework.GameCrowdAgentSkeletal.PlayDeath
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34458])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34460])
 // Parameter Info:
 // struct FVector                 KillMomentum                   (CPF_Parm)
 
@@ -2615,18 +2523,14 @@ void AGameCrowdAgentSkeletal::PlayDeath(const struct FVector& KillMomentum)
 
 	if (!uFnPlayDeath)
 	{
-		uFnPlayDeath = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+		uFnPlayDeath = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSkeletal.PlayDeath");
 	}
 
 	AGameCrowdAgentSkeletal_execPlayDeath_Params PlayDeath_Params;
 	memset(&PlayDeath_Params, 0, sizeof(PlayDeath_Params));
 	memcpy_s(&PlayDeath_Params.KillMomentum, sizeof(PlayDeath_Params.KillMomentum), &KillMomentum, sizeof(KillMomentum));
 
-	uFnPlayDeath->iNative = 0;
-	uFnPlayDeath->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayDeath, &PlayDeath_Params, nullptr);
-	uFnPlayDeath->FunctionFlags |= 0x400;
-	uFnPlayDeath->iNative = 34458;
 };
 
 // Function GameFramework.GameCrowdAgentSkeletal.SetLighting
@@ -2642,7 +2546,7 @@ void AGameCrowdAgentSkeletal::SetLighting(bool bEnableLightEnvironment, const st
 
 	if (!uFnSetLighting)
 	{
-		uFnSetLighting = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+		uFnSetLighting = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSkeletal.SetLighting");
 	}
 
 	AGameCrowdAgentSkeletal_execSetLighting_Params SetLighting_Params;
@@ -2664,7 +2568,7 @@ void AGameCrowdAgentSkeletal::PostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSKELETAL));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSkeletal.PostBeginPlay");
 	}
 
 	AGameCrowdAgentSkeletal_execPostBeginPlay_Params PostBeginPlay_Params;
@@ -2683,7 +2587,7 @@ void AGameCrowdAgentSM::StopBehavior()
 
 	if (!uFnStopBehavior)
 	{
-		uFnStopBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSM));
+		uFnStopBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSM.StopBehavior");
 	}
 
 	AGameCrowdAgentSM_execStopBehavior_Params StopBehavior_Params;
@@ -2704,7 +2608,7 @@ void AGameCrowdAgentSM::ActivateBehavior(class UGameCrowdAgentBehavior* NewBehav
 
 	if (!uFnActivateBehavior)
 	{
-		uFnActivateBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSM));
+		uFnActivateBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSM.ActivateBehavior");
 	}
 
 	AGameCrowdAgentSM_execActivateBehavior_Params ActivateBehavior_Params;
@@ -2726,7 +2630,7 @@ void AGameCrowdAgentSM::ChangeDebugColor(const struct FColor& InC)
 
 	if (!uFnChangeDebugColor)
 	{
-		uFnChangeDebugColor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSM));
+		uFnChangeDebugColor = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSM.ChangeDebugColor");
 	}
 
 	AGameCrowdAgentSM_execChangeDebugColor_Params ChangeDebugColor_Params;
@@ -2746,7 +2650,7 @@ void AGameCrowdAgentSM::InitDebugColor()
 
 	if (!uFnInitDebugColor)
 	{
-		uFnInitDebugColor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSM));
+		uFnInitDebugColor = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSM.InitDebugColor");
 	}
 
 	AGameCrowdAgentSM_execInitDebugColor_Params InitDebugColor_Params;
@@ -2765,7 +2669,7 @@ void AGameCrowdAgentSM::PostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTSM));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.GameCrowdAgentSM.PostBeginPlay");
 	}
 
 	AGameCrowdAgentSM_execPostBeginPlay_Params PostBeginPlay_Params;
@@ -2786,7 +2690,7 @@ bool UGameCrowdAgentBehavior::AllowBehaviorAt(class AGameCrowdDestination* Desti
 
 	if (!uFnAllowBehaviorAt)
 	{
-		uFnAllowBehaviorAt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnAllowBehaviorAt = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.AllowBehaviorAt");
 	}
 
 	UGameCrowdAgentBehavior_execAllowBehaviorAt_Params AllowBehaviorAt_Params;
@@ -2810,7 +2714,7 @@ bool UGameCrowdAgentBehavior::AllowThisDestination(class AGameCrowdDestination* 
 
 	if (!uFnAllowThisDestination)
 	{
-		uFnAllowThisDestination = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnAllowThisDestination = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.AllowThisDestination");
 	}
 
 	UGameCrowdAgentBehavior_execAllowThisDestination_Params AllowThisDestination_Params;
@@ -2833,7 +2737,7 @@ void UGameCrowdAgentBehavior::eventPropagateViralBehaviorTo(class AGameCrowdAgen
 
 	if (!uFnPropagateViralBehaviorTo)
 	{
-		uFnPropagateViralBehaviorTo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnPropagateViralBehaviorTo = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.PropagateViralBehaviorTo");
 	}
 
 	UGameCrowdAgentBehavior_eventPropagateViralBehaviorTo_Params PropagateViralBehaviorTo_Params;
@@ -2854,7 +2758,7 @@ class AActor* UGameCrowdAgentBehavior::GetBehaviorInstigator()
 
 	if (!uFnGetBehaviorInstigator)
 	{
-		uFnGetBehaviorInstigator = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnGetBehaviorInstigator = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.GetBehaviorInstigator");
 	}
 
 	UGameCrowdAgentBehavior_execGetBehaviorInstigator_Params GetBehaviorInstigator_Params;
@@ -2876,7 +2780,7 @@ void UGameCrowdAgentBehavior::ActivatedBy(class AActor* NewActionTarget)
 
 	if (!uFnActivatedBy)
 	{
-		uFnActivatedBy = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnActivatedBy = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.ActivatedBy");
 	}
 
 	UGameCrowdAgentBehavior_execActivatedBy_Params ActivatedBy_Params;
@@ -2897,7 +2801,7 @@ class AActor* UGameCrowdAgentBehavior::GetDestinationActor()
 
 	if (!uFnGetDestinationActor)
 	{
-		uFnGetDestinationActor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnGetDestinationActor = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.GetDestinationActor");
 	}
 
 	UGameCrowdAgentBehavior_execGetDestinationActor_Params GetDestinationActor_Params;
@@ -2919,7 +2823,7 @@ void UGameCrowdAgentBehavior::ChangingDestination(class AGameCrowdDestination* N
 
 	if (!uFnChangingDestination)
 	{
-		uFnChangingDestination = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnChangingDestination = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.ChangingDestination");
 	}
 
 	UGameCrowdAgentBehavior_execChangingDestination_Params ChangingDestination_Params;
@@ -2940,7 +2844,7 @@ class FString UGameCrowdAgentBehavior::GetBehaviorString()
 
 	if (!uFnGetBehaviorString)
 	{
-		uFnGetBehaviorString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnGetBehaviorString = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.GetBehaviorString");
 	}
 
 	UGameCrowdAgentBehavior_execGetBehaviorString_Params GetBehaviorString_Params;
@@ -2964,7 +2868,7 @@ void UGameCrowdAgentBehavior::eventOnAnimEnd(class UAnimNodeSequence* SeqNode, f
 
 	if (!uFnOnAnimEnd)
 	{
-		uFnOnAnimEnd = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnOnAnimEnd = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.OnAnimEnd");
 	}
 
 	UGameCrowdAgentBehavior_eventOnAnimEnd_Params OnAnimEnd_Params;
@@ -2986,7 +2890,7 @@ void UGameCrowdAgentBehavior::StopBehavior()
 
 	if (!uFnStopBehavior)
 	{
-		uFnStopBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnStopBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.StopBehavior");
 	}
 
 	UGameCrowdAgentBehavior_execStopBehavior_Params StopBehavior_Params;
@@ -3006,7 +2910,7 @@ void UGameCrowdAgentBehavior::InitBehavior(class AGameCrowdAgent* Agent)
 
 	if (!uFnInitBehavior)
 	{
-		uFnInitBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnInitBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.InitBehavior");
 	}
 
 	UGameCrowdAgentBehavior_execInitBehavior_Params InitBehavior_Params;
@@ -3017,7 +2921,7 @@ void UGameCrowdAgentBehavior::InitBehavior(class AGameCrowdAgent* Agent)
 };
 
 // Function GameFramework.GameCrowdAgentBehavior.HandleMovement
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34061])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34063])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3027,17 +2931,13 @@ bool UGameCrowdAgentBehavior::HandleMovement()
 
 	if (!uFnHandleMovement)
 	{
-		uFnHandleMovement = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnHandleMovement = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.HandleMovement");
 	}
 
 	UGameCrowdAgentBehavior_execHandleMovement_Params HandleMovement_Params;
 	memset(&HandleMovement_Params, 0, sizeof(HandleMovement_Params));
 
-	uFnHandleMovement->iNative = 0;
-	uFnHandleMovement->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnHandleMovement, &HandleMovement_Params, nullptr);
-	uFnHandleMovement->FunctionFlags |= 0x400;
-	uFnHandleMovement->iNative = 34061;
 
 	return HandleMovement_Params.ReturnValue;
 };
@@ -3052,7 +2952,7 @@ void UGameCrowdAgentBehavior::eventFinishedTargetRotation()
 
 	if (!uFnFinishedTargetRotation)
 	{
-		uFnFinishedTargetRotation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnFinishedTargetRotation = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.FinishedTargetRotation");
 	}
 
 	UGameCrowdAgentBehavior_eventFinishedTargetRotation_Params FinishedTargetRotation_Params;
@@ -3074,7 +2974,7 @@ bool UGameCrowdAgentBehavior::CanBeUsedBy(class AGameCrowdAgent* Agent, const st
 
 	if (!uFnCanBeUsedBy)
 	{
-		uFnCanBeUsedBy = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnCanBeUsedBy = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.CanBeUsedBy");
 	}
 
 	UGameCrowdAgentBehavior_execCanBeUsedBy_Params CanBeUsedBy_Params;
@@ -3098,22 +2998,18 @@ void UGameCrowdAgentBehavior::eventTick(float DeltaTime)
 
 	if (!uFnTick)
 	{
-		uFnTick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnTick = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.Tick");
 	}
 
 	UGameCrowdAgentBehavior_eventTick_Params Tick_Params;
 	memset(&Tick_Params, 0, sizeof(Tick_Params));
 	memcpy_s(&Tick_Params.DeltaTime, sizeof(Tick_Params.DeltaTime), &DeltaTime, sizeof(DeltaTime));
 
-	uFnTick->iNative = 0;
-	uFnTick->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnTick, &Tick_Params, nullptr);
-	uFnTick->FunctionFlags |= 0x400;
-	uFnTick->iNative = 317;
 };
 
 // Function GameFramework.GameCrowdAgentBehavior.ShouldEndIdle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34657])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34659])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3123,23 +3019,19 @@ bool UGameCrowdAgentBehavior::ShouldEndIdle()
 
 	if (!uFnShouldEndIdle)
 	{
-		uFnShouldEndIdle = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnShouldEndIdle = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.ShouldEndIdle");
 	}
 
 	UGameCrowdAgentBehavior_execShouldEndIdle_Params ShouldEndIdle_Params;
 	memset(&ShouldEndIdle_Params, 0, sizeof(ShouldEndIdle_Params));
 
-	uFnShouldEndIdle->iNative = 0;
-	uFnShouldEndIdle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShouldEndIdle, &ShouldEndIdle_Params, nullptr);
-	uFnShouldEndIdle->FunctionFlags |= 0x400;
-	uFnShouldEndIdle->iNative = 34657;
 
 	return ShouldEndIdle_Params.ReturnValue;
 };
 
 // Function GameFramework.GameCrowdAgentBehavior.TriggerCrowdBehavior
-// [0x00026400] (FUNC_Native | FUNC_Static | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[34807])
+// [0x00026400] (FUNC_Native | FUNC_Static | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[34809])
 // Parameter Info:
 // class AGameCrowdBehaviorPoint* ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // ECrowdBehaviorEvent            EventType                      (CPF_Parm)
@@ -3156,7 +3048,7 @@ class AGameCrowdBehaviorPoint* UGameCrowdAgentBehavior::TriggerCrowdBehavior(ECr
 
 	if (!uFnTriggerCrowdBehavior)
 	{
-		uFnTriggerCrowdBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDAGENTBEHAVIOR));
+		uFnTriggerCrowdBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdAgentBehavior.TriggerCrowdBehavior");
 	}
 
 	UGameCrowdAgentBehavior_execTriggerCrowdBehavior_Params TriggerCrowdBehavior_Params;
@@ -3169,11 +3061,7 @@ class AGameCrowdBehaviorPoint* UGameCrowdAgentBehavior::TriggerCrowdBehavior(ECr
 	TriggerCrowdBehavior_Params.BaseActor = BaseActor;
 	TriggerCrowdBehavior_Params.bRequireLOS = bRequireLOS;
 
-	uFnTriggerCrowdBehavior->iNative = 0;
-	uFnTriggerCrowdBehavior->FunctionFlags &= ~0x400;
 	UGameCrowdAgentBehavior::StaticClass()->ProcessEvent(uFnTriggerCrowdBehavior, &TriggerCrowdBehavior_Params, nullptr);
-	uFnTriggerCrowdBehavior->FunctionFlags |= 0x400;
-	uFnTriggerCrowdBehavior->iNative = 34807;
 
 	return TriggerCrowdBehavior_Params.ReturnValue;
 };
@@ -3189,7 +3077,7 @@ class FString UGameCrowdBehavior_PlayAnimation::GetBehaviorString()
 
 	if (!uFnGetBehaviorString)
 	{
-		uFnGetBehaviorString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_PLAYANIMATION));
+		uFnGetBehaviorString = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_PlayAnimation.GetBehaviorString");
 	}
 
 	UGameCrowdBehavior_PlayAnimation_execGetBehaviorString_Params GetBehaviorString_Params;
@@ -3210,7 +3098,7 @@ void UGameCrowdBehavior_PlayAnimation::StopBehavior()
 
 	if (!uFnStopBehavior)
 	{
-		uFnStopBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_PLAYANIMATION));
+		uFnStopBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_PlayAnimation.StopBehavior");
 	}
 
 	UGameCrowdBehavior_PlayAnimation_execStopBehavior_Params StopBehavior_Params;
@@ -3229,7 +3117,7 @@ void UGameCrowdBehavior_PlayAnimation::PlayAgentAnimationNow()
 
 	if (!uFnPlayAgentAnimationNow)
 	{
-		uFnPlayAgentAnimationNow = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_PLAYANIMATION));
+		uFnPlayAgentAnimationNow = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_PlayAnimation.PlayAgentAnimationNow");
 	}
 
 	UGameCrowdBehavior_PlayAnimation_execPlayAgentAnimationNow_Params PlayAgentAnimationNow_Params;
@@ -3251,7 +3139,7 @@ void UGameCrowdBehavior_PlayAnimation::eventOnAnimEnd(class UAnimNodeSequence* S
 
 	if (!uFnOnAnimEnd)
 	{
-		uFnOnAnimEnd = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_PLAYANIMATION));
+		uFnOnAnimEnd = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_PlayAnimation.OnAnimEnd");
 	}
 
 	UGameCrowdBehavior_PlayAnimation_eventOnAnimEnd_Params OnAnimEnd_Params;
@@ -3264,7 +3152,7 @@ void UGameCrowdBehavior_PlayAnimation::eventOnAnimEnd(class UAnimNodeSequence* S
 };
 
 // Function GameFramework.GameCrowdBehavior_PlayAnimation.SetSequenceOutput
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34650])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34652])
 // Parameter Info:
 
 void UGameCrowdBehavior_PlayAnimation::SetSequenceOutput()
@@ -3273,17 +3161,13 @@ void UGameCrowdBehavior_PlayAnimation::SetSequenceOutput()
 
 	if (!uFnSetSequenceOutput)
 	{
-		uFnSetSequenceOutput = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_PLAYANIMATION));
+		uFnSetSequenceOutput = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_PlayAnimation.SetSequenceOutput");
 	}
 
 	UGameCrowdBehavior_PlayAnimation_execSetSequenceOutput_Params SetSequenceOutput_Params;
 	memset(&SetSequenceOutput_Params, 0, sizeof(SetSequenceOutput_Params));
 
-	uFnSetSequenceOutput->iNative = 0;
-	uFnSetSequenceOutput->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetSequenceOutput, &SetSequenceOutput_Params, nullptr);
-	uFnSetSequenceOutput->FunctionFlags |= 0x400;
-	uFnSetSequenceOutput->iNative = 34650;
 };
 
 // Function GameFramework.GameCrowdBehavior_PlayAnimation.FinishedTargetRotation
@@ -3296,7 +3180,7 @@ void UGameCrowdBehavior_PlayAnimation::eventFinishedTargetRotation()
 
 	if (!uFnFinishedTargetRotation)
 	{
-		uFnFinishedTargetRotation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_PLAYANIMATION));
+		uFnFinishedTargetRotation = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_PlayAnimation.FinishedTargetRotation");
 	}
 
 	UGameCrowdBehavior_PlayAnimation_eventFinishedTargetRotation_Params FinishedTargetRotation_Params;
@@ -3316,7 +3200,7 @@ void UGameCrowdBehavior_PlayAnimation::InitBehavior(class AGameCrowdAgent* Agent
 
 	if (!uFnInitBehavior)
 	{
-		uFnInitBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_PLAYANIMATION));
+		uFnInitBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_PlayAnimation.InitBehavior");
 	}
 
 	UGameCrowdBehavior_PlayAnimation_execInitBehavior_Params InitBehavior_Params;
@@ -3337,7 +3221,7 @@ class FString UGameCrowdBehavior_RunFromPanic::GetBehaviorString()
 
 	if (!uFnGetBehaviorString)
 	{
-		uFnGetBehaviorString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_RUNFROMPANIC));
+		uFnGetBehaviorString = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_RunFromPanic.GetBehaviorString");
 	}
 
 	UGameCrowdBehavior_RunFromPanic_execGetBehaviorString_Params GetBehaviorString_Params;
@@ -3360,7 +3244,7 @@ bool UGameCrowdBehavior_RunFromPanic::AllowBehaviorAt(class AGameCrowdDestinatio
 
 	if (!uFnAllowBehaviorAt)
 	{
-		uFnAllowBehaviorAt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_RUNFROMPANIC));
+		uFnAllowBehaviorAt = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_RunFromPanic.AllowBehaviorAt");
 	}
 
 	UGameCrowdBehavior_RunFromPanic_execAllowBehaviorAt_Params AllowBehaviorAt_Params;
@@ -3384,7 +3268,7 @@ bool UGameCrowdBehavior_RunFromPanic::AllowThisDestination(class AGameCrowdDesti
 
 	if (!uFnAllowThisDestination)
 	{
-		uFnAllowThisDestination = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_RUNFROMPANIC));
+		uFnAllowThisDestination = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_RunFromPanic.AllowThisDestination");
 	}
 
 	UGameCrowdBehavior_RunFromPanic_execAllowThisDestination_Params AllowThisDestination_Params;
@@ -3407,7 +3291,7 @@ class AActor* UGameCrowdBehavior_RunFromPanic::GetBehaviorInstigator()
 
 	if (!uFnGetBehaviorInstigator)
 	{
-		uFnGetBehaviorInstigator = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_RUNFROMPANIC));
+		uFnGetBehaviorInstigator = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_RunFromPanic.GetBehaviorInstigator");
 	}
 
 	UGameCrowdBehavior_RunFromPanic_execGetBehaviorInstigator_Params GetBehaviorInstigator_Params;
@@ -3428,7 +3312,7 @@ void UGameCrowdBehavior_RunFromPanic::StopBehavior()
 
 	if (!uFnStopBehavior)
 	{
-		uFnStopBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_RUNFROMPANIC));
+		uFnStopBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_RunFromPanic.StopBehavior");
 	}
 
 	UGameCrowdBehavior_RunFromPanic_execStopBehavior_Params StopBehavior_Params;
@@ -3448,7 +3332,7 @@ void UGameCrowdBehavior_RunFromPanic::InitBehavior(class AGameCrowdAgent* Agent)
 
 	if (!uFnInitBehavior)
 	{
-		uFnInitBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_RUNFROMPANIC));
+		uFnInitBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_RunFromPanic.InitBehavior");
 	}
 
 	UGameCrowdBehavior_RunFromPanic_execInitBehavior_Params InitBehavior_Params;
@@ -3469,7 +3353,7 @@ void UGameCrowdBehavior_RunFromPanic::ActivatedBy(class AActor* NewActionTarget)
 
 	if (!uFnActivatedBy)
 	{
-		uFnActivatedBy = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_RUNFROMPANIC));
+		uFnActivatedBy = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_RunFromPanic.ActivatedBy");
 	}
 
 	UGameCrowdBehavior_RunFromPanic_execActivatedBy_Params ActivatedBy_Params;
@@ -3489,7 +3373,7 @@ void UGameCrowdBehavior_WaitForGroup::StopBehavior()
 
 	if (!uFnStopBehavior)
 	{
-		uFnStopBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITFORGROUP));
+		uFnStopBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_WaitForGroup.StopBehavior");
 	}
 
 	UGameCrowdBehavior_WaitForGroup_execStopBehavior_Params StopBehavior_Params;
@@ -3499,7 +3383,7 @@ void UGameCrowdBehavior_WaitForGroup::StopBehavior()
 };
 
 // Function GameFramework.GameCrowdBehavior_WaitForGroup.ShouldEndIdle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34657])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34659])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3509,17 +3393,13 @@ bool UGameCrowdBehavior_WaitForGroup::ShouldEndIdle()
 
 	if (!uFnShouldEndIdle)
 	{
-		uFnShouldEndIdle = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITFORGROUP));
+		uFnShouldEndIdle = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_WaitForGroup.ShouldEndIdle");
 	}
 
 	UGameCrowdBehavior_WaitForGroup_execShouldEndIdle_Params ShouldEndIdle_Params;
 	memset(&ShouldEndIdle_Params, 0, sizeof(ShouldEndIdle_Params));
 
-	uFnShouldEndIdle->iNative = 0;
-	uFnShouldEndIdle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShouldEndIdle, &ShouldEndIdle_Params, nullptr);
-	uFnShouldEndIdle->FunctionFlags |= 0x400;
-	uFnShouldEndIdle->iNative = 34657;
 
 	return ShouldEndIdle_Params.ReturnValue;
 };
@@ -3535,7 +3415,7 @@ class FString UGameCrowdBehavior_WaitForGroup::GetBehaviorString()
 
 	if (!uFnGetBehaviorString)
 	{
-		uFnGetBehaviorString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITFORGROUP));
+		uFnGetBehaviorString = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_WaitForGroup.GetBehaviorString");
 	}
 
 	UGameCrowdBehavior_WaitForGroup_execGetBehaviorString_Params GetBehaviorString_Params;
@@ -3557,7 +3437,7 @@ void UGameCrowdBehavior_WaitForGroup::InitBehavior(class AGameCrowdAgent* Agent)
 
 	if (!uFnInitBehavior)
 	{
-		uFnInitBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITFORGROUP));
+		uFnInitBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_WaitForGroup.InitBehavior");
 	}
 
 	UGameCrowdBehavior_WaitForGroup_execInitBehavior_Params InitBehavior_Params;
@@ -3577,7 +3457,7 @@ void UGameCrowdBehavior_WaitInQueue::StopBehavior()
 
 	if (!uFnStopBehavior)
 	{
-		uFnStopBehavior = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITINQUEUE));
+		uFnStopBehavior = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_WaitInQueue.StopBehavior");
 	}
 
 	UGameCrowdBehavior_WaitInQueue_execStopBehavior_Params StopBehavior_Params;
@@ -3587,7 +3467,7 @@ void UGameCrowdBehavior_WaitInQueue::StopBehavior()
 };
 
 // Function GameFramework.GameCrowdBehavior_WaitInQueue.ShouldEndIdle
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34657])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34659])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3597,17 +3477,13 @@ bool UGameCrowdBehavior_WaitInQueue::ShouldEndIdle()
 
 	if (!uFnShouldEndIdle)
 	{
-		uFnShouldEndIdle = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITINQUEUE));
+		uFnShouldEndIdle = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_WaitInQueue.ShouldEndIdle");
 	}
 
 	UGameCrowdBehavior_WaitInQueue_execShouldEndIdle_Params ShouldEndIdle_Params;
 	memset(&ShouldEndIdle_Params, 0, sizeof(ShouldEndIdle_Params));
 
-	uFnShouldEndIdle->iNative = 0;
-	uFnShouldEndIdle->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShouldEndIdle, &ShouldEndIdle_Params, nullptr);
-	uFnShouldEndIdle->FunctionFlags |= 0x400;
-	uFnShouldEndIdle->iNative = 34657;
 
 	return ShouldEndIdle_Params.ReturnValue;
 };
@@ -3623,7 +3499,7 @@ class FString UGameCrowdBehavior_WaitInQueue::GetBehaviorString()
 
 	if (!uFnGetBehaviorString)
 	{
-		uFnGetBehaviorString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITINQUEUE));
+		uFnGetBehaviorString = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_WaitInQueue.GetBehaviorString");
 	}
 
 	UGameCrowdBehavior_WaitInQueue_execGetBehaviorString_Params GetBehaviorString_Params;
@@ -3645,7 +3521,7 @@ class AActor* UGameCrowdBehavior_WaitInQueue::GetDestinationActor()
 
 	if (!uFnGetDestinationActor)
 	{
-		uFnGetDestinationActor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITINQUEUE));
+		uFnGetDestinationActor = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_WaitInQueue.GetDestinationActor");
 	}
 
 	UGameCrowdBehavior_WaitInQueue_execGetDestinationActor_Params GetDestinationActor_Params;
@@ -3667,7 +3543,7 @@ void UGameCrowdBehavior_WaitInQueue::ChangingDestination(class AGameCrowdDestina
 
 	if (!uFnChangingDestination)
 	{
-		uFnChangingDestination = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITINQUEUE));
+		uFnChangingDestination = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_WaitInQueue.ChangingDestination");
 	}
 
 	UGameCrowdBehavior_WaitInQueue_execChangingDestination_Params ChangingDestination_Params;
@@ -3678,7 +3554,7 @@ void UGameCrowdBehavior_WaitInQueue::ChangingDestination(class AGameCrowdDestina
 };
 
 // Function GameFramework.GameCrowdBehavior_WaitInQueue.HandleMovement
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34061])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34063])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3688,17 +3564,13 @@ bool UGameCrowdBehavior_WaitInQueue::HandleMovement()
 
 	if (!uFnHandleMovement)
 	{
-		uFnHandleMovement = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIOR_WAITINQUEUE));
+		uFnHandleMovement = UFunction::FindFunction("Function GameFramework.GameCrowdBehavior_WaitInQueue.HandleMovement");
 	}
 
 	UGameCrowdBehavior_WaitInQueue_execHandleMovement_Params HandleMovement_Params;
 	memset(&HandleMovement_Params, 0, sizeof(HandleMovement_Params));
 
-	uFnHandleMovement->iNative = 0;
-	uFnHandleMovement->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnHandleMovement, &HandleMovement_Params, nullptr);
-	uFnHandleMovement->FunctionFlags |= 0x400;
-	uFnHandleMovement->iNative = 34061;
 
 	return HandleMovement_Params.ReturnValue;
 };
@@ -3714,7 +3586,7 @@ void UGameCrowdGroup::UpdateDestinations(class AGameCrowdDestination* NewDestina
 
 	if (!uFnUpdateDestinations)
 	{
-		uFnUpdateDestinations = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDGROUP));
+		uFnUpdateDestinations = UFunction::FindFunction("Function GameFramework.GameCrowdGroup.UpdateDestinations");
 	}
 
 	UGameCrowdGroup_execUpdateDestinations_Params UpdateDestinations_Params;
@@ -3735,7 +3607,7 @@ void UGameCrowdGroup::RemoveMember(class AGameCrowdAgent* Agent)
 
 	if (!uFnRemoveMember)
 	{
-		uFnRemoveMember = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDGROUP));
+		uFnRemoveMember = UFunction::FindFunction("Function GameFramework.GameCrowdGroup.RemoveMember");
 	}
 
 	UGameCrowdGroup_execRemoveMember_Params RemoveMember_Params;
@@ -3756,7 +3628,7 @@ void UGameCrowdGroup::AddMember(class AGameCrowdAgent* Agent)
 
 	if (!uFnAddMember)
 	{
-		uFnAddMember = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDGROUP));
+		uFnAddMember = UFunction::FindFunction("Function GameFramework.GameCrowdGroup.AddMember");
 	}
 
 	UGameCrowdGroup_execAddMember_Params AddMember_Params;
@@ -3777,7 +3649,7 @@ void AGameCrowdInfoVolume::UnTouch(class AActor* Other)
 
 	if (!uFnUnTouch)
 	{
-		uFnUnTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDINFOVOLUME));
+		uFnUnTouch = UFunction::FindFunction("Function GameFramework.GameCrowdInfoVolume.UnTouch");
 	}
 
 	AGameCrowdInfoVolume_execUnTouch_Params UnTouch_Params;
@@ -3801,7 +3673,7 @@ void AGameCrowdInfoVolume::Touch(class AActor* Other, class UPrimitiveComponent*
 
 	if (!uFnTouch)
 	{
-		uFnTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDINFOVOLUME));
+		uFnTouch = UFunction::FindFunction("Function GameFramework.GameCrowdInfoVolume.Touch");
 	}
 
 	AGameCrowdInfoVolume_execTouch_Params Touch_Params;
@@ -3825,7 +3697,7 @@ void AGameCrowdInteractionPoint::OnToggle(class USeqAct_Toggle* Action)
 
 	if (!uFnOnToggle)
 	{
-		uFnOnToggle = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDINTERACTIONPOINT));
+		uFnOnToggle = UFunction::FindFunction("Function GameFramework.GameCrowdInteractionPoint.OnToggle");
 	}
 
 	AGameCrowdInteractionPoint_execOnToggle_Params OnToggle_Params;
@@ -3849,7 +3721,7 @@ void AGameCrowdBehaviorPoint::eventTouch(class AActor* Other, class UPrimitiveCo
 
 	if (!uFnTouch)
 	{
-		uFnTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIORPOINT));
+		uFnTouch = UFunction::FindFunction("Function GameFramework.GameCrowdBehaviorPoint.Touch");
 	}
 
 	AGameCrowdBehaviorPoint_eventTouch_Params Touch_Params;
@@ -3872,7 +3744,7 @@ void AGameCrowdBehaviorPoint::DestroySelf()
 
 	if (!uFnDestroySelf)
 	{
-		uFnDestroySelf = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIORPOINT));
+		uFnDestroySelf = UFunction::FindFunction("Function GameFramework.GameCrowdBehaviorPoint.DestroySelf");
 	}
 
 	AGameCrowdBehaviorPoint_execDestroySelf_Params DestroySelf_Params;
@@ -3891,7 +3763,7 @@ void AGameCrowdBehaviorPoint::eventPostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDBEHAVIORPOINT));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.GameCrowdBehaviorPoint.PostBeginPlay");
 	}
 
 	AGameCrowdBehaviorPoint_eventPostBeginPlay_Params PostBeginPlay_Params;
@@ -3912,7 +3784,7 @@ void AGameCrowdDestination::DrawDebug(bool bPresistent, class TArray<struct FCro
 
 	if (!uFnDrawDebug)
 	{
-		uFnDrawDebug = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnDrawDebug = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.DrawDebug");
 	}
 
 	AGameCrowdDestination_execDrawDebug_Params DrawDebug_Params;
@@ -3936,7 +3808,7 @@ float AGameCrowdDestination::GetDestinationRadius()
 
 	if (!uFnGetDestinationRadius)
 	{
-		uFnGetDestinationRadius = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnGetDestinationRadius = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.GetDestinationRadius");
 	}
 
 	AGameCrowdDestination_execGetDestinationRadius_Params GetDestinationRadius_Params;
@@ -3959,7 +3831,7 @@ void AGameCrowdDestination::PrioritizeSpawnPoint(float MaxSpawnDist, class TArra
 
 	if (!uFnPrioritizeSpawnPoint)
 	{
-		uFnPrioritizeSpawnPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnPrioritizeSpawnPoint = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.PrioritizeSpawnPoint");
 	}
 
 	AGameCrowdDestination_execPrioritizeSpawnPoint_Params PrioritizeSpawnPoint_Params;
@@ -3987,7 +3859,7 @@ bool AGameCrowdDestination::AnalyzeSpawnPoint(float MaxSpawnDistSq, bool bForceN
 
 	if (!uFnAnalyzeSpawnPoint)
 	{
-		uFnAnalyzeSpawnPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnAnalyzeSpawnPoint = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.AnalyzeSpawnPoint");
 	}
 
 	AGameCrowdDestination_execAnalyzeSpawnPoint_Params AnalyzeSpawnPoint_Params;
@@ -4017,7 +3889,7 @@ void AGameCrowdDestination::GetSpawnPosition(class USeqAct_GameCrowdSpawner* Spa
 
 	if (!uFnGetSpawnPosition)
 	{
-		uFnGetSpawnPosition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnGetSpawnPosition = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.GetSpawnPosition");
 	}
 
 	AGameCrowdDestination_execGetSpawnPosition_Params GetSpawnPosition_Params;
@@ -4043,7 +3915,7 @@ float AGameCrowdDestination::GetSpawnRadius()
 
 	if (!uFnGetSpawnRadius)
 	{
-		uFnGetSpawnRadius = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnGetSpawnRadius = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.GetSpawnRadius");
 	}
 
 	AGameCrowdDestination_execGetSpawnRadius_Params GetSpawnRadius_Params;
@@ -4066,7 +3938,7 @@ bool AGameCrowdDestination::eventAllowableDestinationFor(class AGameCrowdAgent* 
 
 	if (!uFnAllowableDestinationFor)
 	{
-		uFnAllowableDestinationFor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnAllowableDestinationFor = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.AllowableDestinationFor");
 	}
 
 	AGameCrowdDestination_eventAllowableDestinationFor_Params AllowableDestinationFor_Params;
@@ -4090,7 +3962,7 @@ bool AGameCrowdDestination::AtCapacity(uint8_t CheckCnt)
 
 	if (!uFnAtCapacity)
 	{
-		uFnAtCapacity = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnAtCapacity = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.AtCapacity");
 	}
 
 	AGameCrowdDestination_execAtCapacity_Params AtCapacity_Params;
@@ -4113,7 +3985,7 @@ void AGameCrowdDestination::eventIncrementCustomerCount(class AGameCrowdAgent* A
 
 	if (!uFnIncrementCustomerCount)
 	{
-		uFnIncrementCustomerCount = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnIncrementCustomerCount = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.IncrementCustomerCount");
 	}
 
 	AGameCrowdDestination_eventIncrementCustomerCount_Params IncrementCustomerCount_Params;
@@ -4134,7 +4006,7 @@ void AGameCrowdDestination::eventDecrementCustomerCount(class AGameCrowdAgent* D
 
 	if (!uFnDecrementCustomerCount)
 	{
-		uFnDecrementCustomerCount = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnDecrementCustomerCount = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.DecrementCustomerCount");
 	}
 
 	AGameCrowdDestination_eventDecrementCustomerCount_Params DecrementCustomerCount_Params;
@@ -4156,7 +4028,7 @@ void AGameCrowdDestination::PickNewDestinationFor(class AGameCrowdAgent* Agent, 
 
 	if (!uFnPickNewDestinationFor)
 	{
-		uFnPickNewDestinationFor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnPickNewDestinationFor = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.PickNewDestinationFor");
 	}
 
 	AGameCrowdDestination_execPickNewDestinationFor_Params PickNewDestinationFor_Params;
@@ -4178,7 +4050,7 @@ void AGameCrowdDestination::eventReachedDestination(class AGameCrowdAgent* Agent
 
 	if (!uFnReachedDestination)
 	{
-		uFnReachedDestination = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnReachedDestination = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.ReachedDestination");
 	}
 
 	AGameCrowdDestination_eventReachedDestination_Params ReachedDestination_Params;
@@ -4198,7 +4070,7 @@ void AGameCrowdDestination::Destroyed()
 
 	if (!uFnDestroyed)
 	{
-		uFnDestroyed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnDestroyed = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.Destroyed");
 	}
 
 	AGameCrowdDestination_execDestroyed_Params Destroyed_Params;
@@ -4217,7 +4089,7 @@ void AGameCrowdDestination::PostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.PostBeginPlay");
 	}
 
 	AGameCrowdDestination_execPostBeginPlay_Params PostBeginPlay_Params;
@@ -4227,7 +4099,7 @@ void AGameCrowdDestination::PostBeginPlay()
 };
 
 // Function GameFramework.GameCrowdDestination.ReachedByAgent
-// [0x00020500] (FUNC_Simulated | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34537])
+// [0x00020500] (FUNC_Simulated | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34539])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class AGameCrowdAgent*         Agent                          (CPF_Parm)
@@ -4240,7 +4112,7 @@ bool AGameCrowdDestination::ReachedByAgent(class AGameCrowdAgent* Agent, const s
 
 	if (!uFnReachedByAgent)
 	{
-		uFnReachedByAgent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATION));
+		uFnReachedByAgent = UFunction::FindFunction("Function GameFramework.GameCrowdDestination.ReachedByAgent");
 	}
 
 	AGameCrowdDestination_execReachedByAgent_Params ReachedByAgent_Params;
@@ -4249,11 +4121,7 @@ bool AGameCrowdDestination::ReachedByAgent(class AGameCrowdAgent* Agent, const s
 	memcpy_s(&ReachedByAgent_Params.TestPosition, sizeof(ReachedByAgent_Params.TestPosition), &TestPosition, sizeof(TestPosition));
 	ReachedByAgent_Params.bTestExactly = bTestExactly;
 
-	uFnReachedByAgent->iNative = 0;
-	uFnReachedByAgent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReachedByAgent, &ReachedByAgent_Params, nullptr);
-	uFnReachedByAgent->FunctionFlags |= 0x400;
-	uFnReachedByAgent->iNative = 34537;
 
 	return ReachedByAgent_Params.ReturnValue;
 };
@@ -4269,7 +4137,7 @@ bool AGameCrowdDestinationQueuePoint::HasCustomer()
 
 	if (!uFnHasCustomer)
 	{
-		uFnHasCustomer = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATIONQUEUEPOINT));
+		uFnHasCustomer = UFunction::FindFunction("Function GameFramework.GameCrowdDestinationQueuePoint.HasCustomer");
 	}
 
 	AGameCrowdDestinationQueuePoint_execHasCustomer_Params HasCustomer_Params;
@@ -4291,7 +4159,7 @@ void AGameCrowdDestinationQueuePoint::ClearQueue(class AGameCrowdAgent* OldCusto
 
 	if (!uFnClearQueue)
 	{
-		uFnClearQueue = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATIONQUEUEPOINT));
+		uFnClearQueue = UFunction::FindFunction("Function GameFramework.GameCrowdDestinationQueuePoint.ClearQueue");
 	}
 
 	AGameCrowdDestinationQueuePoint_execClearQueue_Params ClearQueue_Params;
@@ -4313,7 +4181,7 @@ void AGameCrowdDestinationQueuePoint::AddCustomer(class AGameCrowdAgent* NewCust
 
 	if (!uFnAddCustomer)
 	{
-		uFnAddCustomer = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATIONQUEUEPOINT));
+		uFnAddCustomer = UFunction::FindFunction("Function GameFramework.GameCrowdDestinationQueuePoint.AddCustomer");
 	}
 
 	AGameCrowdDestinationQueuePoint_execAddCustomer_Params AddCustomer_Params;
@@ -4334,7 +4202,7 @@ void AGameCrowdDestinationQueuePoint::ActuallyAdvance()
 
 	if (!uFnActuallyAdvance)
 	{
-		uFnActuallyAdvance = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATIONQUEUEPOINT));
+		uFnActuallyAdvance = UFunction::FindFunction("Function GameFramework.GameCrowdDestinationQueuePoint.ActuallyAdvance");
 	}
 
 	AGameCrowdDestinationQueuePoint_execActuallyAdvance_Params ActuallyAdvance_Params;
@@ -4354,7 +4222,7 @@ void AGameCrowdDestinationQueuePoint::AdvanceCustomerTo(class AGameCrowdInteract
 
 	if (!uFnAdvanceCustomerTo)
 	{
-		uFnAdvanceCustomerTo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATIONQUEUEPOINT));
+		uFnAdvanceCustomerTo = UFunction::FindFunction("Function GameFramework.GameCrowdDestinationQueuePoint.AdvanceCustomerTo");
 	}
 
 	AGameCrowdDestinationQueuePoint_execAdvanceCustomerTo_Params AdvanceCustomerTo_Params;
@@ -4375,7 +4243,7 @@ void AGameCrowdDestinationQueuePoint::eventReachedDestination(class AGameCrowdAg
 
 	if (!uFnReachedDestination)
 	{
-		uFnReachedDestination = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATIONQUEUEPOINT));
+		uFnReachedDestination = UFunction::FindFunction("Function GameFramework.GameCrowdDestinationQueuePoint.ReachedDestination");
 	}
 
 	AGameCrowdDestinationQueuePoint_eventReachedDestination_Params ReachedDestination_Params;
@@ -4396,7 +4264,7 @@ bool AGameCrowdDestinationQueuePoint::HasSpace()
 
 	if (!uFnHasSpace)
 	{
-		uFnHasSpace = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATIONQUEUEPOINT));
+		uFnHasSpace = UFunction::FindFunction("Function GameFramework.GameCrowdDestinationQueuePoint.HasSpace");
 	}
 
 	AGameCrowdDestinationQueuePoint_execHasSpace_Params HasSpace_Params;
@@ -4408,7 +4276,7 @@ bool AGameCrowdDestinationQueuePoint::HasSpace()
 };
 
 // Function GameFramework.GameCrowdDestinationQueuePoint.QueueReachedBy
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34523])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34525])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class AGameCrowdAgent*         Agent                          (CPF_Parm)
@@ -4420,7 +4288,7 @@ bool AGameCrowdDestinationQueuePoint::QueueReachedBy(class AGameCrowdAgent* Agen
 
 	if (!uFnQueueReachedBy)
 	{
-		uFnQueueReachedBy = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDDESTINATIONQUEUEPOINT));
+		uFnQueueReachedBy = UFunction::FindFunction("Function GameFramework.GameCrowdDestinationQueuePoint.QueueReachedBy");
 	}
 
 	AGameCrowdDestinationQueuePoint_execQueueReachedBy_Params QueueReachedBy_Params;
@@ -4428,11 +4296,7 @@ bool AGameCrowdDestinationQueuePoint::QueueReachedBy(class AGameCrowdAgent* Agen
 	QueueReachedBy_Params.Agent = Agent;
 	memcpy_s(&QueueReachedBy_Params.TestPosition, sizeof(QueueReachedBy_Params.TestPosition), &TestPosition, sizeof(TestPosition));
 
-	uFnQueueReachedBy->iNative = 0;
-	uFnQueueReachedBy->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnQueueReachedBy, &QueueReachedBy_Params, nullptr);
-	uFnQueueReachedBy->FunctionFlags |= 0x400;
-	uFnQueueReachedBy->iNative = 34523;
 
 	return QueueReachedBy_Params.ReturnValue;
 };
@@ -4452,7 +4316,7 @@ class AGameCrowdAgent* AGameCrowdPopulationManager::eventCreateNewAgent(class AG
 
 	if (!uFnCreateNewAgent)
 	{
-		uFnCreateNewAgent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnCreateNewAgent = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.CreateNewAgent");
 	}
 
 	AGameCrowdPopulationManager_eventCreateNewAgent_Params CreateNewAgent_Params;
@@ -4470,7 +4334,7 @@ class AGameCrowdAgent* AGameCrowdPopulationManager::eventCreateNewAgent(class AG
 };
 
 // Function GameFramework.GameCrowdPopulationManager.Warmup
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34878])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34880])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        WarmupNum                      (CPF_Parm)
@@ -4482,7 +4346,7 @@ bool AGameCrowdPopulationManager::Warmup(int32_t WarmupNum, struct FCrowdSpawnIn
 
 	if (!uFnWarmup)
 	{
-		uFnWarmup = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnWarmup = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.Warmup");
 	}
 
 	AGameCrowdPopulationManager_execWarmup_Params Warmup_Params;
@@ -4490,11 +4354,7 @@ bool AGameCrowdPopulationManager::Warmup(int32_t WarmupNum, struct FCrowdSpawnIn
 	memcpy_s(&Warmup_Params.WarmupNum, sizeof(Warmup_Params.WarmupNum), &WarmupNum, sizeof(WarmupNum));
 	memcpy_s(&Warmup_Params.Item, sizeof(Warmup_Params.Item), &Item, sizeof(Item));
 
-	uFnWarmup->iNative = 0;
-	uFnWarmup->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWarmup, &Warmup_Params, nullptr);
-	uFnWarmup->FunctionFlags |= 0x400;
-	uFnWarmup->iNative = 34878;
 
 	memcpy_s(&Item, sizeof(Item), &Warmup_Params.Item, sizeof(Warmup_Params.Item));
 
@@ -4502,7 +4362,7 @@ bool AGameCrowdPopulationManager::Warmup(int32_t WarmupNum, struct FCrowdSpawnIn
 };
 
 // Function GameFramework.GameCrowdPopulationManager.SpawnAgent
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34675])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34677])
 // Parameter Info:
 // class AGameCrowdAgent*         ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class AGameCrowdDestination*   SpawnLoc                       (CPF_Parm)
@@ -4514,7 +4374,7 @@ class AGameCrowdAgent* AGameCrowdPopulationManager::SpawnAgent(class AGameCrowdD
 
 	if (!uFnSpawnAgent)
 	{
-		uFnSpawnAgent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnSpawnAgent = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.SpawnAgent");
 	}
 
 	AGameCrowdPopulationManager_execSpawnAgent_Params SpawnAgent_Params;
@@ -4522,11 +4382,7 @@ class AGameCrowdAgent* AGameCrowdPopulationManager::SpawnAgent(class AGameCrowdD
 	SpawnAgent_Params.SpawnLoc = SpawnLoc;
 	memcpy_s(&SpawnAgent_Params.Item, sizeof(SpawnAgent_Params.Item), &Item, sizeof(Item));
 
-	uFnSpawnAgent->iNative = 0;
-	uFnSpawnAgent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSpawnAgent, &SpawnAgent_Params, nullptr);
-	uFnSpawnAgent->FunctionFlags |= 0x400;
-	uFnSpawnAgent->iNative = 34675;
 
 	memcpy_s(&Item, sizeof(Item), &SpawnAgent_Params.Item, sizeof(SpawnAgent_Params.Item));
 
@@ -4534,7 +4390,7 @@ class AGameCrowdAgent* AGameCrowdPopulationManager::SpawnAgent(class AGameCrowdD
 };
 
 // Function GameFramework.GameCrowdPopulationManager.SpawnAgentByIdx
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34676])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34678])
 // Parameter Info:
 // class AGameCrowdAgent*         ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        SpawnerIdx                     (CPF_Parm)
@@ -4546,7 +4402,7 @@ class AGameCrowdAgent* AGameCrowdPopulationManager::SpawnAgentByIdx(int32_t Spaw
 
 	if (!uFnSpawnAgentByIdx)
 	{
-		uFnSpawnAgentByIdx = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnSpawnAgentByIdx = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.SpawnAgentByIdx");
 	}
 
 	AGameCrowdPopulationManager_execSpawnAgentByIdx_Params SpawnAgentByIdx_Params;
@@ -4554,11 +4410,7 @@ class AGameCrowdAgent* AGameCrowdPopulationManager::SpawnAgentByIdx(int32_t Spaw
 	memcpy_s(&SpawnAgentByIdx_Params.SpawnerIdx, sizeof(SpawnAgentByIdx_Params.SpawnerIdx), &SpawnerIdx, sizeof(SpawnerIdx));
 	SpawnAgentByIdx_Params.SpawnLoc = SpawnLoc;
 
-	uFnSpawnAgentByIdx->iNative = 0;
-	uFnSpawnAgentByIdx->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSpawnAgentByIdx, &SpawnAgentByIdx_Params, nullptr);
-	uFnSpawnAgentByIdx->FunctionFlags |= 0x400;
-	uFnSpawnAgentByIdx->iNative = 34676;
 
 	return SpawnAgentByIdx_Params.ReturnValue;
 };
@@ -4576,7 +4428,7 @@ bool AGameCrowdPopulationManager::ValidateSpawnAt(class AGameCrowdDestination* C
 
 	if (!uFnValidateSpawnAt)
 	{
-		uFnValidateSpawnAt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnValidateSpawnAt = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.ValidateSpawnAt");
 	}
 
 	AGameCrowdPopulationManager_execValidateSpawnAt_Params ValidateSpawnAt_Params;
@@ -4603,7 +4455,7 @@ void AGameCrowdPopulationManager::AddPrioritizedSpawnPoint(class AGameCrowdDesti
 
 	if (!uFnAddPrioritizedSpawnPoint)
 	{
-		uFnAddPrioritizedSpawnPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnAddPrioritizedSpawnPoint = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.AddPrioritizedSpawnPoint");
 	}
 
 	AGameCrowdPopulationManager_execAddPrioritizedSpawnPoint_Params AddPrioritizedSpawnPoint_Params;
@@ -4629,7 +4481,7 @@ void AGameCrowdPopulationManager::AnalyzeSpawnPoints(int32_t StartIndex, int32_t
 
 	if (!uFnAnalyzeSpawnPoints)
 	{
-		uFnAnalyzeSpawnPoints = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnAnalyzeSpawnPoints = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.AnalyzeSpawnPoints");
 	}
 
 	AGameCrowdPopulationManager_execAnalyzeSpawnPoints_Params AnalyzeSpawnPoints_Params;
@@ -4655,7 +4507,7 @@ void AGameCrowdPopulationManager::eventPrioritizeSpawnPoints(float DeltaTime, st
 
 	if (!uFnPrioritizeSpawnPoints)
 	{
-		uFnPrioritizeSpawnPoints = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnPrioritizeSpawnPoints = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.PrioritizeSpawnPoints");
 	}
 
 	AGameCrowdPopulationManager_eventPrioritizeSpawnPoints_Params PrioritizeSpawnPoints_Params;
@@ -4669,7 +4521,7 @@ void AGameCrowdPopulationManager::eventPrioritizeSpawnPoints(float DeltaTime, st
 };
 
 // Function GameFramework.GameCrowdPopulationManager.StaticGetPlayerInfo
-// [0x00422500] (FUNC_Simulated | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34716])
+// [0x00422500] (FUNC_Simulated | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34718])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class TArray<struct FCrowdSpawnerPlayerInfo> out_PlayerInfo                 (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -4680,18 +4532,14 @@ bool AGameCrowdPopulationManager::StaticGetPlayerInfo(class TArray<struct FCrowd
 
 	if (!uFnStaticGetPlayerInfo)
 	{
-		uFnStaticGetPlayerInfo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnStaticGetPlayerInfo = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.StaticGetPlayerInfo");
 	}
 
 	AGameCrowdPopulationManager_execStaticGetPlayerInfo_Params StaticGetPlayerInfo_Params;
 	memset(&StaticGetPlayerInfo_Params, 0, sizeof(StaticGetPlayerInfo_Params));
 	memcpy_s(&StaticGetPlayerInfo_Params.out_PlayerInfo, sizeof(StaticGetPlayerInfo_Params.out_PlayerInfo), &out_PlayerInfo, sizeof(out_PlayerInfo));
 
-	uFnStaticGetPlayerInfo->iNative = 0;
-	uFnStaticGetPlayerInfo->FunctionFlags &= ~0x400;
 	AGameCrowdPopulationManager::StaticClass()->ProcessEvent(uFnStaticGetPlayerInfo, &StaticGetPlayerInfo_Params, nullptr);
-	uFnStaticGetPlayerInfo->FunctionFlags |= 0x400;
-	uFnStaticGetPlayerInfo->iNative = 34716;
 
 	memcpy_s(&out_PlayerInfo, sizeof(out_PlayerInfo), &StaticGetPlayerInfo_Params.out_PlayerInfo, sizeof(StaticGetPlayerInfo_Params.out_PlayerInfo));
 
@@ -4699,7 +4547,7 @@ bool AGameCrowdPopulationManager::StaticGetPlayerInfo(class TArray<struct FCrowd
 };
 
 // Function GameFramework.GameCrowdPopulationManager.GetPlayerInfo
-// [0x00020500] (FUNC_Simulated | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34036])
+// [0x00020500] (FUNC_Simulated | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34038])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -4709,17 +4557,13 @@ bool AGameCrowdPopulationManager::GetPlayerInfo()
 
 	if (!uFnGetPlayerInfo)
 	{
-		uFnGetPlayerInfo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnGetPlayerInfo = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.GetPlayerInfo");
 	}
 
 	AGameCrowdPopulationManager_execGetPlayerInfo_Params GetPlayerInfo_Params;
 	memset(&GetPlayerInfo_Params, 0, sizeof(GetPlayerInfo_Params));
 
-	uFnGetPlayerInfo->iNative = 0;
-	uFnGetPlayerInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetPlayerInfo, &GetPlayerInfo_Params, nullptr);
-	uFnGetPlayerInfo->FunctionFlags |= 0x400;
-	uFnGetPlayerInfo->iNative = 34036;
 
 	return GetPlayerInfo_Params.ReturnValue;
 };
@@ -4736,7 +4580,7 @@ class AGameCrowdDestination* AGameCrowdPopulationManager::eventPickSpawnPoint(st
 
 	if (!uFnPickSpawnPoint)
 	{
-		uFnPickSpawnPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnPickSpawnPoint = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.PickSpawnPoint");
 	}
 
 	AGameCrowdPopulationManager_eventPickSpawnPoint_Params PickSpawnPoint_Params;
@@ -4763,7 +4607,7 @@ bool AGameCrowdPopulationManager::eventUpdateSpawner(float DeltaTime, struct FCr
 
 	if (!uFnUpdateSpawner)
 	{
-		uFnUpdateSpawner = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnUpdateSpawner = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.UpdateSpawner");
 	}
 
 	AGameCrowdPopulationManager_eventUpdateSpawner_Params UpdateSpawner_Params;
@@ -4779,7 +4623,7 @@ bool AGameCrowdPopulationManager::eventUpdateSpawner(float DeltaTime, struct FCr
 };
 
 // Function GameFramework.GameCrowdPopulationManager.UpdateAllSpawners
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34830])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34832])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 
@@ -4789,18 +4633,14 @@ void AGameCrowdPopulationManager::UpdateAllSpawners(float DeltaTime)
 
 	if (!uFnUpdateAllSpawners)
 	{
-		uFnUpdateAllSpawners = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnUpdateAllSpawners = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.UpdateAllSpawners");
 	}
 
 	AGameCrowdPopulationManager_execUpdateAllSpawners_Params UpdateAllSpawners_Params;
 	memset(&UpdateAllSpawners_Params, 0, sizeof(UpdateAllSpawners_Params));
 	memcpy_s(&UpdateAllSpawners_Params.DeltaTime, sizeof(UpdateAllSpawners_Params.DeltaTime), &DeltaTime, sizeof(DeltaTime));
 
-	uFnUpdateAllSpawners->iNative = 0;
-	uFnUpdateAllSpawners->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateAllSpawners, &UpdateAllSpawners_Params, nullptr);
-	uFnUpdateAllSpawners->FunctionFlags |= 0x400;
-	uFnUpdateAllSpawners->iNative = 34830;
 };
 
 // Function GameFramework.GameCrowdPopulationManager.Tick
@@ -4814,7 +4654,7 @@ void AGameCrowdPopulationManager::Tick(float DeltaTime)
 
 	if (!uFnTick)
 	{
-		uFnTick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnTick = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.Tick");
 	}
 
 	AGameCrowdPopulationManager_execTick_Params Tick_Params;
@@ -4835,7 +4675,7 @@ bool AGameCrowdPopulationManager::ShouldDebugDestinations()
 
 	if (!uFnShouldDebugDestinations)
 	{
-		uFnShouldDebugDestinations = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnShouldDebugDestinations = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.ShouldDebugDestinations");
 	}
 
 	AGameCrowdPopulationManager_execShouldDebugDestinations_Params ShouldDebugDestinations_Params;
@@ -4857,7 +4697,7 @@ bool AGameCrowdPopulationManager::IsSpawningActive()
 
 	if (!uFnIsSpawningActive)
 	{
-		uFnIsSpawningActive = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnIsSpawningActive = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.IsSpawningActive");
 	}
 
 	AGameCrowdPopulationManager_execIsSpawningActive_Params IsSpawningActive_Params;
@@ -4881,7 +4721,7 @@ void AGameCrowdPopulationManager::DisplayDebug(class AHUD* HUD, float& out_YL, f
 
 	if (!uFnDisplayDebug)
 	{
-		uFnDisplayDebug = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnDisplayDebug = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.DisplayDebug");
 	}
 
 	AGameCrowdPopulationManager_execDisplayDebug_Params DisplayDebug_Params;
@@ -4907,7 +4747,7 @@ void AGameCrowdPopulationManager::AgentDestroyed(class AGameCrowdAgent* Agent)
 
 	if (!uFnAgentDestroyed)
 	{
-		uFnAgentDestroyed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnAgentDestroyed = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.AgentDestroyed");
 	}
 
 	AGameCrowdPopulationManager_execAgentDestroyed_Params AgentDestroyed_Params;
@@ -4927,7 +4767,7 @@ void AGameCrowdPopulationManager::eventFlushAllAgents()
 
 	if (!uFnFlushAllAgents)
 	{
-		uFnFlushAllAgents = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnFlushAllAgents = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.FlushAllAgents");
 	}
 
 	AGameCrowdPopulationManager_eventFlushAllAgents_Params FlushAllAgents_Params;
@@ -4947,7 +4787,7 @@ void AGameCrowdPopulationManager::eventFlushAgents(const struct FCrowdSpawnInfoI
 
 	if (!uFnFlushAgents)
 	{
-		uFnFlushAgents = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnFlushAgents = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.FlushAgents");
 	}
 
 	AGameCrowdPopulationManager_eventFlushAgents_Params FlushAgents_Params;
@@ -4969,7 +4809,7 @@ int32_t AGameCrowdPopulationManager::eventCreateSpawner(class USeqAct_GameCrowdP
 
 	if (!uFnCreateSpawner)
 	{
-		uFnCreateSpawner = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnCreateSpawner = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.CreateSpawner");
 	}
 
 	AGameCrowdPopulationManager_eventCreateSpawner_Params CreateSpawner_Params;
@@ -4992,7 +4832,7 @@ void AGameCrowdPopulationManager::SetCrowdInfoVolume(class AGameCrowdInfoVolume*
 
 	if (!uFnSetCrowdInfoVolume)
 	{
-		uFnSetCrowdInfoVolume = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnSetCrowdInfoVolume = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.SetCrowdInfoVolume");
 	}
 
 	AGameCrowdPopulationManager_execSetCrowdInfoVolume_Params SetCrowdInfoVolume_Params;
@@ -5013,7 +4853,7 @@ void AGameCrowdPopulationManager::RemoveSpawnPoint(class AGameCrowdDestination* 
 
 	if (!uFnRemoveSpawnPoint)
 	{
-		uFnRemoveSpawnPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnRemoveSpawnPoint = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.RemoveSpawnPoint");
 	}
 
 	AGameCrowdPopulationManager_execRemoveSpawnPoint_Params RemoveSpawnPoint_Params;
@@ -5034,7 +4874,7 @@ void AGameCrowdPopulationManager::AddSpawnPoint(class AGameCrowdDestination* GCD
 
 	if (!uFnAddSpawnPoint)
 	{
-		uFnAddSpawnPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnAddSpawnPoint = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.AddSpawnPoint");
 	}
 
 	AGameCrowdPopulationManager_execAddSpawnPoint_Params AddSpawnPoint_Params;
@@ -5054,7 +4894,7 @@ void AGameCrowdPopulationManager::eventNotifyPathChanged()
 
 	if (!uFnNotifyPathChanged)
 	{
-		uFnNotifyPathChanged = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnNotifyPathChanged = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.NotifyPathChanged");
 	}
 
 	AGameCrowdPopulationManager_eventNotifyPathChanged_Params NotifyPathChanged_Params;
@@ -5073,7 +4913,7 @@ void AGameCrowdPopulationManager::PostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDPOPULATIONMANAGER));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.GameCrowdPopulationManager.PostBeginPlay");
 	}
 
 	AGameCrowdPopulationManager_execPostBeginPlay_Params PostBeginPlay_Params;
@@ -5093,7 +4933,7 @@ void AGameCrowdReplicationActor::eventReplicatedEvent(const class FName& VarName
 
 	if (!uFnReplicatedEvent)
 	{
-		uFnReplicatedEvent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDREPLICATIONACTOR));
+		uFnReplicatedEvent = UFunction::FindFunction("Function GameFramework.GameCrowdReplicationActor.ReplicatedEvent");
 	}
 
 	AGameCrowdReplicationActor_eventReplicatedEvent_Params ReplicatedEvent_Params;
@@ -5116,7 +4956,7 @@ class UCameraShake* AGameExplosionActor::ChooseCameraShake(const struct FVector&
 
 	if (!uFnChooseCameraShake)
 	{
-		uFnChooseCameraShake = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnChooseCameraShake = UFunction::FindFunction("Function GameFramework.GameExplosionActor.ChooseCameraShake");
 	}
 
 	AGameExplosionActor_execChooseCameraShake_Params ChooseCameraShake_Params;
@@ -5139,7 +4979,7 @@ void AGameExplosionActor::SpawnCameraLensEffects()
 
 	if (!uFnSpawnCameraLensEffects)
 	{
-		uFnSpawnCameraLensEffects = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnSpawnCameraLensEffects = UFunction::FindFunction("Function GameFramework.GameExplosionActor.SpawnCameraLensEffects");
 	}
 
 	AGameExplosionActor_execSpawnCameraLensEffects_Params SpawnCameraLensEffects_Params;
@@ -5158,7 +4998,7 @@ void AGameExplosionActor::DoExplosionCameraEffects()
 
 	if (!uFnDoExplosionCameraEffects)
 	{
-		uFnDoExplosionCameraEffects = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnDoExplosionCameraEffects = UFunction::FindFunction("Function GameFramework.GameExplosionActor.DoExplosionCameraEffects");
 	}
 
 	AGameExplosionActor_execDoExplosionCameraEffects_Params DoExplosionCameraEffects_Params;
@@ -5177,7 +5017,7 @@ void AGameExplosionActor::DrawDebug()
 
 	if (!uFnDrawDebug)
 	{
-		uFnDrawDebug = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnDrawDebug = UFunction::FindFunction("Function GameFramework.GameExplosionActor.DrawDebug");
 	}
 
 	AGameExplosionActor_execDrawDebug_Params DrawDebug_Params;
@@ -5196,7 +5036,7 @@ void AGameExplosionActor::DelayedExplosionDamage()
 
 	if (!uFnDelayedExplosionDamage)
 	{
-		uFnDelayedExplosionDamage = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnDelayedExplosionDamage = UFunction::FindFunction("Function GameFramework.GameExplosionActor.DelayedExplosionDamage");
 	}
 
 	AGameExplosionActor_execDelayedExplosionDamage_Params DelayedExplosionDamage_Params;
@@ -5217,7 +5057,7 @@ void AGameExplosionActor::Explode(class UGameExplosion* NewExplosionTemplate, co
 
 	if (!uFnExplode)
 	{
-		uFnExplode = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnExplode = UFunction::FindFunction("Function GameFramework.GameExplosionActor.Explode");
 	}
 
 	AGameExplosionActor_execExplode_Params Explode_Params;
@@ -5238,7 +5078,7 @@ void AGameExplosionActor::SpawnExplosionFogVolume()
 
 	if (!uFnSpawnExplosionFogVolume)
 	{
-		uFnSpawnExplosionFogVolume = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnSpawnExplosionFogVolume = UFunction::FindFunction("Function GameFramework.GameExplosionActor.SpawnExplosionFogVolume");
 	}
 
 	AGameExplosionActor_execSpawnExplosionFogVolume_Params SpawnExplosionFogVolume_Params;
@@ -5257,7 +5097,7 @@ void AGameExplosionActor::SpawnExplosionDecal()
 
 	if (!uFnSpawnExplosionDecal)
 	{
-		uFnSpawnExplosionDecal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnSpawnExplosionDecal = UFunction::FindFunction("Function GameFramework.GameExplosionActor.SpawnExplosionDecal");
 	}
 
 	AGameExplosionActor_execSpawnExplosionDecal_Params SpawnExplosionDecal_Params;
@@ -5277,7 +5117,7 @@ void AGameExplosionActor::SpawnExplosionParticleSystem(class UParticleSystem* Te
 
 	if (!uFnSpawnExplosionParticleSystem)
 	{
-		uFnSpawnExplosionParticleSystem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnSpawnExplosionParticleSystem = UFunction::FindFunction("Function GameFramework.GameExplosionActor.SpawnExplosionParticleSystem");
 	}
 
 	AGameExplosionActor_execSpawnExplosionParticleSystem_Params SpawnExplosionParticleSystem_Params;
@@ -5298,7 +5138,7 @@ void AGameExplosionActor::UpdateExplosionTemplateWithPerMaterialFX(class UPhysic
 
 	if (!uFnUpdateExplosionTemplateWithPerMaterialFX)
 	{
-		uFnUpdateExplosionTemplateWithPerMaterialFX = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnUpdateExplosionTemplateWithPerMaterialFX = UFunction::FindFunction("Function GameFramework.GameExplosionActor.UpdateExplosionTemplateWithPerMaterialFX");
 	}
 
 	AGameExplosionActor_execUpdateExplosionTemplateWithPerMaterialFX_Params UpdateExplosionTemplateWithPerMaterialFX_Params;
@@ -5320,7 +5160,7 @@ void AGameExplosionActor::SpecialCringeEffectsFor(class AActor* Victim, float Vi
 
 	if (!uFnSpecialCringeEffectsFor)
 	{
-		uFnSpecialCringeEffectsFor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnSpecialCringeEffectsFor = UFunction::FindFunction("Function GameFramework.GameExplosionActor.SpecialCringeEffectsFor");
 	}
 
 	AGameExplosionActor_execSpecialCringeEffectsFor_Params SpecialCringeEffectsFor_Params;
@@ -5343,7 +5183,7 @@ void AGameExplosionActor::SpecialPawnEffectsFor(class AGamePawn* VictimPawn, flo
 
 	if (!uFnSpecialPawnEffectsFor)
 	{
-		uFnSpecialPawnEffectsFor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnSpecialPawnEffectsFor = UFunction::FindFunction("Function GameFramework.GameExplosionActor.SpecialPawnEffectsFor");
 	}
 
 	AGameExplosionActor_execSpecialPawnEffectsFor_Params SpecialPawnEffectsFor_Params;
@@ -5368,7 +5208,7 @@ float AGameExplosionActor::GetEffectCheckRadius(bool bCauseDamage, bool bCauseFr
 
 	if (!uFnGetEffectCheckRadius)
 	{
-		uFnGetEffectCheckRadius = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnGetEffectCheckRadius = UFunction::FindFunction("Function GameFramework.GameExplosionActor.GetEffectCheckRadius");
 	}
 
 	AGameExplosionActor_execGetEffectCheckRadius_Params GetEffectCheckRadius_Params;
@@ -5395,7 +5235,7 @@ bool AGameExplosionActor::DoExplosionDamage(bool bCauseDamage, bool bCauseEffect
 
 	if (!uFnDoExplosionDamage)
 	{
-		uFnDoExplosionDamage = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnDoExplosionDamage = UFunction::FindFunction("Function GameFramework.GameExplosionActor.DoExplosionDamage");
 	}
 
 	AGameExplosionActor_execDoExplosionDamage_Params DoExplosionDamage_Params;
@@ -5409,7 +5249,7 @@ bool AGameExplosionActor::DoExplosionDamage(bool bCauseDamage, bool bCauseEffect
 };
 
 // Function GameFramework.GameExplosionActor.BoxDistanceToPoint
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[33517])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[33519])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FVector                 Start                          (CPF_Parm)
@@ -5421,7 +5261,7 @@ float AGameExplosionActor::BoxDistanceToPoint(const struct FVector& Start, const
 
 	if (!uFnBoxDistanceToPoint)
 	{
-		uFnBoxDistanceToPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnBoxDistanceToPoint = UFunction::FindFunction("Function GameFramework.GameExplosionActor.BoxDistanceToPoint");
 	}
 
 	AGameExplosionActor_execBoxDistanceToPoint_Params BoxDistanceToPoint_Params;
@@ -5429,11 +5269,7 @@ float AGameExplosionActor::BoxDistanceToPoint(const struct FVector& Start, const
 	memcpy_s(&BoxDistanceToPoint_Params.Start, sizeof(BoxDistanceToPoint_Params.Start), &Start, sizeof(Start));
 	memcpy_s(&BoxDistanceToPoint_Params.BBox, sizeof(BoxDistanceToPoint_Params.BBox), &BBox, sizeof(BBox));
 
-	uFnBoxDistanceToPoint->iNative = 0;
-	uFnBoxDistanceToPoint->FunctionFlags &= ~0x400;
 	AGameExplosionActor::StaticClass()->ProcessEvent(uFnBoxDistanceToPoint, &BoxDistanceToPoint_Params, nullptr);
-	uFnBoxDistanceToPoint->FunctionFlags |= 0x400;
-	uFnBoxDistanceToPoint->iNative = 33517;
 
 	return BoxDistanceToPoint_Params.ReturnValue;
 };
@@ -5450,7 +5286,7 @@ bool AGameExplosionActor::IsBehindExplosion(class AActor* A)
 
 	if (!uFnIsBehindExplosion)
 	{
-		uFnIsBehindExplosion = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnIsBehindExplosion = UFunction::FindFunction("Function GameFramework.GameExplosionActor.IsBehindExplosion");
 	}
 
 	AGameExplosionActor_execIsBehindExplosion_Params IsBehindExplosion_Params;
@@ -5474,7 +5310,7 @@ bool AGameExplosionActor::DoFullDamageToActor(class AActor* Victim)
 
 	if (!uFnDoFullDamageToActor)
 	{
-		uFnDoFullDamageToActor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnDoFullDamageToActor = UFunction::FindFunction("Function GameFramework.GameExplosionActor.DoFullDamageToActor");
 	}
 
 	AGameExplosionActor_execDoFullDamageToActor_Params DoFullDamageToActor_Params;
@@ -5497,7 +5333,7 @@ class UPhysicalMaterial* AGameExplosionActor::GetPhysicalMaterial()
 
 	if (!uFnGetPhysicalMaterial)
 	{
-		uFnGetPhysicalMaterial = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnGetPhysicalMaterial = UFunction::FindFunction("Function GameFramework.GameExplosionActor.GetPhysicalMaterial");
 	}
 
 	AGameExplosionActor_execGetPhysicalMaterial_Params GetPhysicalMaterial_Params;
@@ -5518,7 +5354,7 @@ void AGameExplosionActor::eventPreBeginPlay()
 
 	if (!uFnPreBeginPlay)
 	{
-		uFnPreBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEEXPLOSIONACTOR));
+		uFnPreBeginPlay = UFunction::FindFunction("Function GameFramework.GameExplosionActor.PreBeginPlay");
 	}
 
 	AGameExplosionActor_eventPreBeginPlay_Params PreBeginPlay_Params;
@@ -5537,7 +5373,7 @@ void AGamePawn::ReattachMeshWithoutBeingSeen()
 
 	if (!uFnReattachMeshWithoutBeingSeen)
 	{
-		uFnReattachMeshWithoutBeingSeen = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPAWN));
+		uFnReattachMeshWithoutBeingSeen = UFunction::FindFunction("Function GameFramework.GamePawn.ReattachMeshWithoutBeingSeen");
 	}
 
 	AGamePawn_execReattachMeshWithoutBeingSeen_Params ReattachMeshWithoutBeingSeen_Params;
@@ -5556,7 +5392,7 @@ void AGamePawn::ReattachMesh()
 
 	if (!uFnReattachMesh)
 	{
-		uFnReattachMesh = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPAWN));
+		uFnReattachMesh = UFunction::FindFunction("Function GameFramework.GamePawn.ReattachMesh");
 	}
 
 	AGamePawn_execReattachMesh_Params ReattachMesh_Params;
@@ -5576,7 +5412,7 @@ void AGamePawn::eventUpdateShadowSettings(bool bInWantShadow)
 
 	if (!uFnUpdateShadowSettings)
 	{
-		uFnUpdateShadowSettings = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPAWN));
+		uFnUpdateShadowSettings = UFunction::FindFunction("Function GameFramework.GamePawn.UpdateShadowSettings");
 	}
 
 	AGamePawn_eventUpdateShadowSettings_Params UpdateShadowSettings_Params;
@@ -5587,7 +5423,7 @@ void AGamePawn::eventUpdateShadowSettings(bool bInWantShadow)
 };
 
 // Function GameFramework.DebugCameraController.ConsoleCommand
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[18832])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[18834])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  Command                        (CPF_Parm | CPF_NeedCtorLink)
@@ -5599,7 +5435,7 @@ class FString ADebugCameraController::ConsoleCommand(const class FString& Comman
 
 	if (!uFnConsoleCommand)
 	{
-		uFnConsoleCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnConsoleCommand = UFunction::FindFunction("Function GameFramework.DebugCameraController.ConsoleCommand");
 	}
 
 	ADebugCameraController_execConsoleCommand_Params ConsoleCommand_Params;
@@ -5607,11 +5443,7 @@ class FString ADebugCameraController::ConsoleCommand(const class FString& Comman
 	memcpy_s(&ConsoleCommand_Params.Command, sizeof(ConsoleCommand_Params.Command), &Command, sizeof(Command));
 	ConsoleCommand_Params.bWriteToLog = bWriteToLog;
 
-	uFnConsoleCommand->iNative = 0;
-	uFnConsoleCommand->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnConsoleCommand, &ConsoleCommand_Params, nullptr);
-	uFnConsoleCommand->FunctionFlags |= 0x400;
-	uFnConsoleCommand->iNative = 18832;
 
 	return ConsoleCommand_Params.ReturnValue;
 };
@@ -5626,7 +5458,7 @@ void ADebugCameraController::ShowDebugSelectedInfo()
 
 	if (!uFnShowDebugSelectedInfo)
 	{
-		uFnShowDebugSelectedInfo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnShowDebugSelectedInfo = UFunction::FindFunction("Function GameFramework.DebugCameraController.ShowDebugSelectedInfo");
 	}
 
 	ADebugCameraController_execShowDebugSelectedInfo_Params ShowDebugSelectedInfo_Params;
@@ -5651,7 +5483,7 @@ bool ADebugCameraController::NativeInputKey(int32_t ControllerId, const class FN
 
 	if (!uFnNativeInputKey)
 	{
-		uFnNativeInputKey = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnNativeInputKey = UFunction::FindFunction("Function GameFramework.DebugCameraController.NativeInputKey");
 	}
 
 	ADebugCameraController_execNativeInputKey_Params NativeInputKey_Params;
@@ -5677,7 +5509,7 @@ void ADebugCameraController::InitDebugInputSystem()
 
 	if (!uFnInitDebugInputSystem)
 	{
-		uFnInitDebugInputSystem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnInitDebugInputSystem = UFunction::FindFunction("Function GameFramework.DebugCameraController.InitDebugInputSystem");
 	}
 
 	ADebugCameraController_execInitDebugInputSystem_Params InitDebugInputSystem_Params;
@@ -5696,7 +5528,7 @@ void ADebugCameraController::DisableDebugCamera()
 
 	if (!uFnDisableDebugCamera)
 	{
-		uFnDisableDebugCamera = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnDisableDebugCamera = UFunction::FindFunction("Function GameFramework.DebugCameraController.DisableDebugCamera");
 	}
 
 	ADebugCameraController_execDisableDebugCamera_Params DisableDebugCamera_Params;
@@ -5715,7 +5547,7 @@ void ADebugCameraController::NormalSpeed()
 
 	if (!uFnNormalSpeed)
 	{
-		uFnNormalSpeed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnNormalSpeed = UFunction::FindFunction("Function GameFramework.DebugCameraController.NormalSpeed");
 	}
 
 	ADebugCameraController_execNormalSpeed_Params NormalSpeed_Params;
@@ -5734,7 +5566,7 @@ void ADebugCameraController::MoreSpeed()
 
 	if (!uFnMoreSpeed)
 	{
-		uFnMoreSpeed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnMoreSpeed = UFunction::FindFunction("Function GameFramework.DebugCameraController.MoreSpeed");
 	}
 
 	ADebugCameraController_execMoreSpeed_Params MoreSpeed_Params;
@@ -5753,7 +5585,7 @@ void ADebugCameraController::SetFreezeRendering()
 
 	if (!uFnSetFreezeRendering)
 	{
-		uFnSetFreezeRendering = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnSetFreezeRendering = UFunction::FindFunction("Function GameFramework.DebugCameraController.SetFreezeRendering");
 	}
 
 	ADebugCameraController_execSetFreezeRendering_Params SetFreezeRendering_Params;
@@ -5773,7 +5605,7 @@ void ADebugCameraController::OnDeactivate(class APlayerController* PC)
 
 	if (!uFnOnDeactivate)
 	{
-		uFnOnDeactivate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnOnDeactivate = UFunction::FindFunction("Function GameFramework.DebugCameraController.OnDeactivate");
 	}
 
 	ADebugCameraController_execOnDeactivate_Params OnDeactivate_Params;
@@ -5794,7 +5626,7 @@ void ADebugCameraController::OnActivate(class APlayerController* PC)
 
 	if (!uFnOnActivate)
 	{
-		uFnOnActivate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnOnActivate = UFunction::FindFunction("Function GameFramework.DebugCameraController.OnActivate");
 	}
 
 	ADebugCameraController_execOnActivate_Params OnActivate_Params;
@@ -5814,7 +5646,7 @@ void ADebugCameraController::eventPostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.DebugCameraController.PostBeginPlay");
 	}
 
 	ADebugCameraController_eventPostBeginPlay_Params PostBeginPlay_Params;
@@ -5824,7 +5656,7 @@ void ADebugCameraController::eventPostBeginPlay()
 };
 
 // Function GameFramework.DebugCameraController.Unselect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34829])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34831])
 // Parameter Info:
 
 void ADebugCameraController::Unselect()
@@ -5833,21 +5665,17 @@ void ADebugCameraController::Unselect()
 
 	if (!uFnUnselect)
 	{
-		uFnUnselect = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnUnselect = UFunction::FindFunction("Function GameFramework.DebugCameraController.Unselect");
 	}
 
 	ADebugCameraController_execUnselect_Params Unselect_Params;
 	memset(&Unselect_Params, 0, sizeof(Unselect_Params));
 
-	uFnUnselect->iNative = 0;
-	uFnUnselect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnselect, &Unselect_Params, nullptr);
-	uFnUnselect->FunctionFlags |= 0x400;
-	uFnUnselect->iNative = 34829;
 };
 
 // Function GameFramework.DebugCameraController.SecondarySelect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34614])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34616])
 // Parameter Info:
 // struct FVector                 HitLoc                         (CPF_Parm)
 // struct FVector                 HitNormal                      (CPF_Parm)
@@ -5859,7 +5687,7 @@ void ADebugCameraController::SecondarySelect(const struct FVector& HitLoc, const
 
 	if (!uFnSecondarySelect)
 	{
-		uFnSecondarySelect = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnSecondarySelect = UFunction::FindFunction("Function GameFramework.DebugCameraController.SecondarySelect");
 	}
 
 	ADebugCameraController_execSecondarySelect_Params SecondarySelect_Params;
@@ -5868,15 +5696,11 @@ void ADebugCameraController::SecondarySelect(const struct FVector& HitLoc, const
 	memcpy_s(&SecondarySelect_Params.HitNormal, sizeof(SecondarySelect_Params.HitNormal), &HitNormal, sizeof(HitNormal));
 	memcpy_s(&SecondarySelect_Params.HitInfo, sizeof(SecondarySelect_Params.HitInfo), &HitInfo, sizeof(HitInfo));
 
-	uFnSecondarySelect->iNative = 0;
-	uFnSecondarySelect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSecondarySelect, &SecondarySelect_Params, nullptr);
-	uFnSecondarySelect->FunctionFlags |= 0x400;
-	uFnSecondarySelect->iNative = 34614;
 };
 
 // Function GameFramework.DebugCameraController.PrimarySelect
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34498])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34500])
 // Parameter Info:
 // struct FVector                 HitLoc                         (CPF_Parm)
 // struct FVector                 HitNormal                      (CPF_Parm)
@@ -5888,7 +5712,7 @@ void ADebugCameraController::PrimarySelect(const struct FVector& HitLoc, const s
 
 	if (!uFnPrimarySelect)
 	{
-		uFnPrimarySelect = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERACONTROLLER));
+		uFnPrimarySelect = UFunction::FindFunction("Function GameFramework.DebugCameraController.PrimarySelect");
 	}
 
 	ADebugCameraController_execPrimarySelect_Params PrimarySelect_Params;
@@ -5897,11 +5721,7 @@ void ADebugCameraController::PrimarySelect(const struct FVector& HitLoc, const s
 	memcpy_s(&PrimarySelect_Params.HitNormal, sizeof(PrimarySelect_Params.HitNormal), &HitNormal, sizeof(HitNormal));
 	memcpy_s(&PrimarySelect_Params.HitInfo, sizeof(PrimarySelect_Params.HitInfo), &HitInfo, sizeof(HitInfo));
 
-	uFnPrimarySelect->iNative = 0;
-	uFnPrimarySelect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPrimarySelect, &PrimarySelect_Params, nullptr);
-	uFnPrimarySelect->FunctionFlags |= 0x400;
-	uFnPrimarySelect->iNative = 34498;
 };
 
 // Function GameFramework.MobileHUD.RenderKismetHud
@@ -5914,7 +5734,7 @@ void AMobileHUD::RenderKismetHud()
 
 	if (!uFnRenderKismetHud)
 	{
-		uFnRenderKismetHud = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnRenderKismetHud = UFunction::FindFunction("Function GameFramework.MobileHUD.RenderKismetHud");
 	}
 
 	AMobileHUD_execRenderKismetHud_Params RenderKismetHud_Params;
@@ -5934,7 +5754,7 @@ void AMobileHUD::AddKismetRenderEvent(class USeqEvent_HudRender* NewEvent)
 
 	if (!uFnAddKismetRenderEvent)
 	{
-		uFnAddKismetRenderEvent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnAddKismetRenderEvent = UFunction::FindFunction("Function GameFramework.MobileHUD.AddKismetRenderEvent");
 	}
 
 	AMobileHUD_execAddKismetRenderEvent_Params AddKismetRenderEvent_Params;
@@ -5954,7 +5774,7 @@ void AMobileHUD::RefreshKismetLinks()
 
 	if (!uFnRefreshKismetLinks)
 	{
-		uFnRefreshKismetLinks = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnRefreshKismetLinks = UFunction::FindFunction("Function GameFramework.MobileHUD.RefreshKismetLinks");
 	}
 
 	AMobileHUD_execRefreshKismetLinks_Params RefreshKismetLinks_Params;
@@ -5974,7 +5794,7 @@ void AMobileHUD::DrawMobileZone_Slider(class UMobileInputZone* Zone)
 
 	if (!uFnDrawMobileZone_Slider)
 	{
-		uFnDrawMobileZone_Slider = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnDrawMobileZone_Slider = UFunction::FindFunction("Function GameFramework.MobileHUD.DrawMobileZone_Slider");
 	}
 
 	AMobileHUD_execDrawMobileZone_Slider_Params DrawMobileZone_Slider_Params;
@@ -5995,7 +5815,7 @@ void AMobileHUD::DrawMobileTilt(class UMobilePlayerInput* MobileInput)
 
 	if (!uFnDrawMobileTilt)
 	{
-		uFnDrawMobileTilt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnDrawMobileTilt = UFunction::FindFunction("Function GameFramework.MobileHUD.DrawMobileTilt");
 	}
 
 	AMobileHUD_execDrawMobileTilt_Params DrawMobileTilt_Params;
@@ -6016,7 +5836,7 @@ void AMobileHUD::DrawMobileZone_Trackball(class UMobileInputZone* Zone)
 
 	if (!uFnDrawMobileZone_Trackball)
 	{
-		uFnDrawMobileZone_Trackball = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnDrawMobileZone_Trackball = UFunction::FindFunction("Function GameFramework.MobileHUD.DrawMobileZone_Trackball");
 	}
 
 	AMobileHUD_execDrawMobileZone_Trackball_Params DrawMobileZone_Trackball_Params;
@@ -6037,7 +5857,7 @@ void AMobileHUD::DrawMobileZone_Joystick(class UMobileInputZone* Zone)
 
 	if (!uFnDrawMobileZone_Joystick)
 	{
-		uFnDrawMobileZone_Joystick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnDrawMobileZone_Joystick = UFunction::FindFunction("Function GameFramework.MobileHUD.DrawMobileZone_Joystick");
 	}
 
 	AMobileHUD_execDrawMobileZone_Joystick_Params DrawMobileZone_Joystick_Params;
@@ -6058,7 +5878,7 @@ void AMobileHUD::DrawMobileZone_Button(class UMobileInputZone* Zone)
 
 	if (!uFnDrawMobileZone_Button)
 	{
-		uFnDrawMobileZone_Button = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnDrawMobileZone_Button = UFunction::FindFunction("Function GameFramework.MobileHUD.DrawMobileZone_Button");
 	}
 
 	AMobileHUD_execDrawMobileZone_Button_Params DrawMobileZone_Button_Params;
@@ -6078,7 +5898,7 @@ void AMobileHUD::DrawInputZoneOverlays()
 
 	if (!uFnDrawInputZoneOverlays)
 	{
-		uFnDrawInputZoneOverlays = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnDrawInputZoneOverlays = UFunction::FindFunction("Function GameFramework.MobileHUD.DrawInputZoneOverlays");
 	}
 
 	AMobileHUD_execDrawInputZoneOverlays_Params DrawInputZoneOverlays_Params;
@@ -6097,7 +5917,7 @@ void AMobileHUD::RenderMobileMenu()
 
 	if (!uFnRenderMobileMenu)
 	{
-		uFnRenderMobileMenu = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnRenderMobileMenu = UFunction::FindFunction("Function GameFramework.MobileHUD.RenderMobileMenu");
 	}
 
 	AMobileHUD_execRenderMobileMenu_Params RenderMobileMenu_Params;
@@ -6117,7 +5937,7 @@ bool AMobileHUD::ShowMobileHud()
 
 	if (!uFnShowMobileHud)
 	{
-		uFnShowMobileHud = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnShowMobileHud = UFunction::FindFunction("Function GameFramework.MobileHUD.ShowMobileHud");
 	}
 
 	AMobileHUD_execShowMobileHud_Params ShowMobileHud_Params;
@@ -6141,7 +5961,7 @@ void AMobileHUD::DrawMobileDebugString(float XPos, float YPos, const class FStri
 
 	if (!uFnDrawMobileDebugString)
 	{
-		uFnDrawMobileDebugString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnDrawMobileDebugString = UFunction::FindFunction("Function GameFramework.MobileHUD.DrawMobileDebugString");
 	}
 
 	AMobileHUD_execDrawMobileDebugString_Params DrawMobileDebugString_Params;
@@ -6163,7 +5983,7 @@ void AMobileHUD::PostRender()
 
 	if (!uFnPostRender)
 	{
-		uFnPostRender = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnPostRender = UFunction::FindFunction("Function GameFramework.MobileHUD.PostRender");
 	}
 
 	AMobileHUD_execPostRender_Params PostRender_Params;
@@ -6182,7 +6002,7 @@ void AMobileHUD::PostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEHUD));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.MobileHUD.PostBeginPlay");
 	}
 
 	AMobileHUD_execPostBeginPlay_Params PostBeginPlay_Params;
@@ -6202,7 +6022,7 @@ void UMobileInputZone::AddKismetEventHandler(class USeqEvent_MobileZoneBase* New
 
 	if (!uFnAddKismetEventHandler)
 	{
-		uFnAddKismetEventHandler = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEINPUTZONE));
+		uFnAddKismetEventHandler = UFunction::FindFunction("Function GameFramework.MobileInputZone.AddKismetEventHandler");
 	}
 
 	UMobileInputZone_execAddKismetEventHandler_Params AddKismetEventHandler_Params;
@@ -6224,7 +6044,7 @@ void UMobileInputZone::OnPostDrawZone(class UMobileInputZone* Zone, class UCanva
 
 	if (!uFnOnPostDrawZone)
 	{
-		uFnOnPostDrawZone = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEINPUTZONE));
+		uFnOnPostDrawZone = UFunction::FindFunction("Function GameFramework.MobileInputZone.OnPostDrawZone");
 	}
 
 	UMobileInputZone_execOnPostDrawZone_Params OnPostDrawZone_Params;
@@ -6248,7 +6068,7 @@ bool UMobileInputZone::OnPreDrawZone(class UMobileInputZone* Zone, class UCanvas
 
 	if (!uFnOnPreDrawZone)
 	{
-		uFnOnPreDrawZone = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEINPUTZONE));
+		uFnOnPreDrawZone = UFunction::FindFunction("Function GameFramework.MobileInputZone.OnPreDrawZone");
 	}
 
 	UMobileInputZone_execOnPreDrawZone_Params OnPreDrawZone_Params;
@@ -6276,7 +6096,7 @@ bool UMobileInputZone::OnProcessSlide(class UMobileInputZone* Zone, ETouchType E
 
 	if (!uFnOnProcessSlide)
 	{
-		uFnOnProcessSlide = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEINPUTZONE));
+		uFnOnProcessSlide = UFunction::FindFunction("Function GameFramework.MobileInputZone.OnProcessSlide");
 	}
 
 	UMobileInputZone_execOnProcessSlide_Params OnProcessSlide_Params;
@@ -6305,7 +6125,7 @@ bool UMobileInputZone::OnDoubleTapDelegate(class UMobileInputZone* Zone, ETouchT
 
 	if (!uFnOnDoubleTapDelegate)
 	{
-		uFnOnDoubleTapDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEINPUTZONE));
+		uFnOnDoubleTapDelegate = UFunction::FindFunction("Function GameFramework.MobileInputZone.OnDoubleTapDelegate");
 	}
 
 	UMobileInputZone_execOnDoubleTapDelegate_Params OnDoubleTapDelegate_Params;
@@ -6333,7 +6153,7 @@ bool UMobileInputZone::OnTapDelegate(class UMobileInputZone* Zone, ETouchType Ev
 
 	if (!uFnOnTapDelegate)
 	{
-		uFnOnTapDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEINPUTZONE));
+		uFnOnTapDelegate = UFunction::FindFunction("Function GameFramework.MobileInputZone.OnTapDelegate");
 	}
 
 	UMobileInputZone_execOnTapDelegate_Params OnTapDelegate_Params;
@@ -6363,7 +6183,7 @@ bool UMobileInputZone::OnProcessInputDelegate(class UMobileInputZone* Zone, floa
 
 	if (!uFnOnProcessInputDelegate)
 	{
-		uFnOnProcessInputDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEINPUTZONE));
+		uFnOnProcessInputDelegate = UFunction::FindFunction("Function GameFramework.MobileInputZone.OnProcessInputDelegate");
 	}
 
 	UMobileInputZone_execOnProcessInputDelegate_Params OnProcessInputDelegate_Params;
@@ -6380,7 +6200,7 @@ bool UMobileInputZone::OnProcessInputDelegate(class UMobileInputZone* Zone, floa
 };
 
 // Function GameFramework.MobileInputZone.DeactivateZone
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33740])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33742])
 // Parameter Info:
 
 void UMobileInputZone::DeactivateZone()
@@ -6389,21 +6209,17 @@ void UMobileInputZone::DeactivateZone()
 
 	if (!uFnDeactivateZone)
 	{
-		uFnDeactivateZone = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEINPUTZONE));
+		uFnDeactivateZone = UFunction::FindFunction("Function GameFramework.MobileInputZone.DeactivateZone");
 	}
 
 	UMobileInputZone_execDeactivateZone_Params DeactivateZone_Params;
 	memset(&DeactivateZone_Params, 0, sizeof(DeactivateZone_Params));
 
-	uFnDeactivateZone->iNative = 0;
-	uFnDeactivateZone->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDeactivateZone, &DeactivateZone_Params, nullptr);
-	uFnDeactivateZone->FunctionFlags |= 0x400;
-	uFnDeactivateZone->iNative = 33740;
 };
 
 // Function GameFramework.MobileInputZone.ActivateZone
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33228])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33230])
 // Parameter Info:
 
 void UMobileInputZone::ActivateZone()
@@ -6412,17 +6228,13 @@ void UMobileInputZone::ActivateZone()
 
 	if (!uFnActivateZone)
 	{
-		uFnActivateZone = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEINPUTZONE));
+		uFnActivateZone = UFunction::FindFunction("Function GameFramework.MobileInputZone.ActivateZone");
 	}
 
 	UMobileInputZone_execActivateZone_Params ActivateZone_Params;
 	memset(&ActivateZone_Params, 0, sizeof(ActivateZone_Params));
 
-	uFnActivateZone->iNative = 0;
-	uFnActivateZone->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnActivateZone, &ActivateZone_Params, nullptr);
-	uFnActivateZone->FunctionFlags |= 0x400;
-	uFnActivateZone->iNative = 33228;
 };
 
 // Function GameFramework.MobileMenuObject.RenderObject
@@ -6437,7 +6249,7 @@ void UMobileMenuObject::RenderObject(class UCanvas* Canvas, float DeltaTime)
 
 	if (!uFnRenderObject)
 	{
-		uFnRenderObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECT));
+		uFnRenderObject = UFunction::FindFunction("Function GameFramework.MobileMenuObject.RenderObject");
 	}
 
 	UMobileMenuObject_execRenderObject_Params RenderObject_Params;
@@ -6461,7 +6273,7 @@ void UMobileMenuObject::SetCanvasPos(class UCanvas* Canvas, float OffsetX, float
 
 	if (!uFnSetCanvasPos)
 	{
-		uFnSetCanvasPos = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECT));
+		uFnSetCanvasPos = UFunction::FindFunction("Function GameFramework.MobileMenuObject.SetCanvasPos");
 	}
 
 	UMobileMenuObject_execSetCanvasPos_Params SetCanvasPos_Params;
@@ -6488,7 +6300,7 @@ void UMobileMenuObject::InitMenuObject(class UMobilePlayerInput* PlayerInput, cl
 
 	if (!uFnInitMenuObject)
 	{
-		uFnInitMenuObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECT));
+		uFnInitMenuObject = UFunction::FindFunction("Function GameFramework.MobileMenuObject.InitMenuObject");
 	}
 
 	UMobileMenuObject_execInitMenuObject_Params InitMenuObject_Params;
@@ -6514,7 +6326,7 @@ void UMobileMenuObject::eventGetRealPosition(float& PosX, float& PosY)
 
 	if (!uFnGetRealPosition)
 	{
-		uFnGetRealPosition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECT));
+		uFnGetRealPosition = UFunction::FindFunction("Function GameFramework.MobileMenuObject.GetRealPosition");
 	}
 
 	UMobileMenuObject_eventGetRealPosition_Params GetRealPosition_Params;
@@ -6544,7 +6356,7 @@ bool UMobileMenuObject::eventOnTouch(ETouchType EventType, float TouchX, float T
 
 	if (!uFnOnTouch)
 	{
-		uFnOnTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECT));
+		uFnOnTouch = UFunction::FindFunction("Function GameFramework.MobileMenuObject.OnTouch");
 	}
 
 	UMobileMenuObject_eventOnTouch_Params OnTouch_Params;
@@ -6572,7 +6384,7 @@ void UMobileMenuImage::RenderObject(class UCanvas* Canvas, float DeltaTime)
 
 	if (!uFnRenderObject)
 	{
-		uFnRenderObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUIMAGE));
+		uFnRenderObject = UFunction::FindFunction("Function GameFramework.MobileMenuImage.RenderObject");
 	}
 
 	UMobileMenuImage_execRenderObject_Params RenderObject_Params;
@@ -6595,7 +6407,7 @@ bool UMobileMenuScene::MobileMenuCommand(const class FString& Command)
 
 	if (!uFnMobileMenuCommand)
 	{
-		uFnMobileMenuCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnMobileMenuCommand = UFunction::FindFunction("Function GameFramework.MobileMenuScene.MobileMenuCommand");
 	}
 
 	UMobileMenuScene_execMobileMenuCommand_Params MobileMenuCommand_Params;
@@ -6619,7 +6431,7 @@ class UMobileMenuObject* UMobileMenuScene::FindMenuObject(const class FString& T
 
 	if (!uFnFindMenuObject)
 	{
-		uFnFindMenuObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnFindMenuObject = UFunction::FindFunction("Function GameFramework.MobileMenuScene.FindMenuObject");
 	}
 
 	UMobileMenuScene_execFindMenuObject_Params FindMenuObject_Params;
@@ -6632,7 +6444,7 @@ class UMobileMenuObject* UMobileMenuScene::FindMenuObject(const class FString& T
 };
 
 // Function GameFramework.MobileMenuScene.CleanUpScene
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33671])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33673])
 // Parameter Info:
 
 void UMobileMenuScene::CleanUpScene()
@@ -6641,17 +6453,13 @@ void UMobileMenuScene::CleanUpScene()
 
 	if (!uFnCleanUpScene)
 	{
-		uFnCleanUpScene = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnCleanUpScene = UFunction::FindFunction("Function GameFramework.MobileMenuScene.CleanUpScene");
 	}
 
 	UMobileMenuScene_execCleanUpScene_Params CleanUpScene_Params;
 	memset(&CleanUpScene_Params, 0, sizeof(CleanUpScene_Params));
 
-	uFnCleanUpScene->iNative = 0;
-	uFnCleanUpScene->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCleanUpScene, &CleanUpScene_Params, nullptr);
-	uFnCleanUpScene->FunctionFlags |= 0x400;
-	uFnCleanUpScene->iNative = 33671;
 };
 
 // Function GameFramework.MobileMenuScene.Closed
@@ -6664,7 +6472,7 @@ void UMobileMenuScene::Closed()
 
 	if (!uFnClosed)
 	{
-		uFnClosed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnClosed = UFunction::FindFunction("Function GameFramework.MobileMenuScene.Closed");
 	}
 
 	UMobileMenuScene_execClosed_Params Closed_Params;
@@ -6684,7 +6492,7 @@ bool UMobileMenuScene::Closing()
 
 	if (!uFnClosing)
 	{
-		uFnClosing = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnClosing = UFunction::FindFunction("Function GameFramework.MobileMenuScene.Closing");
 	}
 
 	UMobileMenuScene_execClosing_Params Closing_Params;
@@ -6705,7 +6513,7 @@ void UMobileMenuScene::MadeTopMenu()
 
 	if (!uFnMadeTopMenu)
 	{
-		uFnMadeTopMenu = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnMadeTopMenu = UFunction::FindFunction("Function GameFramework.MobileMenuScene.MadeTopMenu");
 	}
 
 	UMobileMenuScene_execMadeTopMenu_Params MadeTopMenu_Params;
@@ -6725,7 +6533,7 @@ void UMobileMenuScene::Opened(const class FString& Mode)
 
 	if (!uFnOpened)
 	{
-		uFnOpened = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnOpened = UFunction::FindFunction("Function GameFramework.MobileMenuScene.Opened");
 	}
 
 	UMobileMenuScene_execOpened_Params Opened_Params;
@@ -6750,7 +6558,7 @@ bool UMobileMenuScene::eventOnSceneTouch(ETouchType EventType, float TouchX, flo
 
 	if (!uFnOnSceneTouch)
 	{
-		uFnOnSceneTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnOnSceneTouch = UFunction::FindFunction("Function GameFramework.MobileMenuScene.OnSceneTouch");
 	}
 
 	UMobileMenuScene_eventOnSceneTouch_Params OnSceneTouch_Params;
@@ -6779,7 +6587,7 @@ void UMobileMenuScene::eventOnTouch(class UMobileMenuObject* Sender, ETouchType 
 
 	if (!uFnOnTouch)
 	{
-		uFnOnTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnOnTouch = UFunction::FindFunction("Function GameFramework.MobileMenuScene.OnTouch");
 	}
 
 	UMobileMenuScene_eventOnTouch_Params OnTouch_Params;
@@ -6805,7 +6613,7 @@ void UMobileMenuScene::PreRenderMenuObject(class UMobileMenuObject* MenuObject, 
 
 	if (!uFnPreRenderMenuObject)
 	{
-		uFnPreRenderMenuObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnPreRenderMenuObject = UFunction::FindFunction("Function GameFramework.MobileMenuScene.PreRenderMenuObject");
 	}
 
 	UMobileMenuScene_execPreRenderMenuObject_Params PreRenderMenuObject_Params;
@@ -6829,7 +6637,7 @@ void UMobileMenuScene::RenderScene(class UCanvas* Canvas, float RenderDelta)
 
 	if (!uFnRenderScene)
 	{
-		uFnRenderScene = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnRenderScene = UFunction::FindFunction("Function GameFramework.MobileMenuScene.RenderScene");
 	}
 
 	UMobileMenuScene_execRenderScene_Params RenderScene_Params;
@@ -6851,7 +6659,7 @@ class UFont* UMobileMenuScene::GetSceneFont()
 
 	if (!uFnGetSceneFont)
 	{
-		uFnGetSceneFont = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnGetSceneFont = UFunction::FindFunction("Function GameFramework.MobileMenuScene.GetSceneFont");
 	}
 
 	UMobileMenuScene_execGetSceneFont_Params GetSceneFont_Params;
@@ -6876,7 +6684,7 @@ void UMobileMenuScene::eventInitMenuScene(class UMobilePlayerInput* PlayerInput,
 
 	if (!uFnInitMenuScene)
 	{
-		uFnInitMenuScene = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnInitMenuScene = UFunction::FindFunction("Function GameFramework.MobileMenuScene.InitMenuScene");
 	}
 
 	UMobileMenuScene_eventInitMenuScene_Params InitMenuScene_Params;
@@ -6890,7 +6698,7 @@ void UMobileMenuScene::eventInitMenuScene(class UMobilePlayerInput* PlayerInput,
 };
 
 // Function GameFramework.MobileMenuScene.GetGlobalScaleY
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[34029])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[34031])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -6900,23 +6708,19 @@ float UMobileMenuScene::GetGlobalScaleY()
 
 	if (!uFnGetGlobalScaleY)
 	{
-		uFnGetGlobalScaleY = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnGetGlobalScaleY = UFunction::FindFunction("Function GameFramework.MobileMenuScene.GetGlobalScaleY");
 	}
 
 	UMobileMenuScene_execGetGlobalScaleY_Params GetGlobalScaleY_Params;
 	memset(&GetGlobalScaleY_Params, 0, sizeof(GetGlobalScaleY_Params));
 
-	uFnGetGlobalScaleY->iNative = 0;
-	uFnGetGlobalScaleY->FunctionFlags &= ~0x400;
 	UMobileMenuScene::StaticClass()->ProcessEvent(uFnGetGlobalScaleY, &GetGlobalScaleY_Params, nullptr);
-	uFnGetGlobalScaleY->FunctionFlags |= 0x400;
-	uFnGetGlobalScaleY->iNative = 34029;
 
 	return GetGlobalScaleY_Params.ReturnValue;
 };
 
 // Function GameFramework.MobileMenuScene.GetGlobalScaleX
-// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[34028])
+// [0x00022401] (FUNC_Final | FUNC_Native | FUNC_Static | FUNC_Public | FUNC_AllFlags) (iNative[34030])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -6926,17 +6730,13 @@ float UMobileMenuScene::GetGlobalScaleX()
 
 	if (!uFnGetGlobalScaleX)
 	{
-		uFnGetGlobalScaleX = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUSCENE));
+		uFnGetGlobalScaleX = UFunction::FindFunction("Function GameFramework.MobileMenuScene.GetGlobalScaleX");
 	}
 
 	UMobileMenuScene_execGetGlobalScaleX_Params GetGlobalScaleX_Params;
 	memset(&GetGlobalScaleX_Params, 0, sizeof(GetGlobalScaleX_Params));
 
-	uFnGetGlobalScaleX->iNative = 0;
-	uFnGetGlobalScaleX->FunctionFlags &= ~0x400;
 	UMobileMenuScene::StaticClass()->ProcessEvent(uFnGetGlobalScaleX, &GetGlobalScaleX_Params, nullptr);
-	uFnGetGlobalScaleX->FunctionFlags |= 0x400;
-	uFnGetGlobalScaleX->iNative = 34028;
 
 	return GetGlobalScaleX_Params.ReturnValue;
 };
@@ -6954,7 +6754,7 @@ class UMobileMenuScene* UMobilePlayerInput::OpenMobileMenuMode(const class FStri
 
 	if (!uFnOpenMobileMenuMode)
 	{
-		uFnOpenMobileMenuMode = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnOpenMobileMenuMode = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.OpenMobileMenuMode");
 	}
 
 	UMobilePlayerInput_execOpenMobileMenuMode_Params OpenMobileMenuMode_Params;
@@ -6979,7 +6779,7 @@ class UMobileMenuScene* UMobilePlayerInput::OpenMobileMenu(const class FString& 
 
 	if (!uFnOpenMobileMenu)
 	{
-		uFnOpenMobileMenu = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnOpenMobileMenu = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.OpenMobileMenu");
 	}
 
 	UMobilePlayerInput_execOpenMobileMenu_Params OpenMobileMenu_Params;
@@ -7002,7 +6802,7 @@ void UMobilePlayerInput::MobileMenuCommand(const class FString& MenuCommand)
 
 	if (!uFnMobileMenuCommand)
 	{
-		uFnMobileMenuCommand = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnMobileMenuCommand = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.MobileMenuCommand");
 	}
 
 	UMobilePlayerInput_execMobileMenuCommand_Params MobileMenuCommand_Params;
@@ -7022,7 +6822,7 @@ void UMobilePlayerInput::SceneRenderToggle()
 
 	if (!uFnSceneRenderToggle)
 	{
-		uFnSceneRenderToggle = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnSceneRenderToggle = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.SceneRenderToggle");
 	}
 
 	UMobilePlayerInput_execSceneRenderToggle_Params SceneRenderToggle_Params;
@@ -7044,7 +6844,7 @@ void UMobilePlayerInput::PreClientTravel(const class FString& PendingURL, ETrave
 
 	if (!uFnPreClientTravel)
 	{
-		uFnPreClientTravel = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnPreClientTravel = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.PreClientTravel");
 	}
 
 	UMobilePlayerInput_execPreClientTravel_Params PreClientTravel_Params;
@@ -7068,7 +6868,7 @@ void UMobilePlayerInput::eventRenderMenus(class UCanvas* Canvas, float RenderDel
 
 	if (!uFnRenderMenus)
 	{
-		uFnRenderMenus = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnRenderMenus = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.RenderMenus");
 	}
 
 	UMobilePlayerInput_eventRenderMenus_Params RenderMenus_Params;
@@ -7089,7 +6889,7 @@ void UMobilePlayerInput::eventCloseAllMenus()
 
 	if (!uFnCloseAllMenus)
 	{
-		uFnCloseAllMenus = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnCloseAllMenus = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.CloseAllMenus");
 	}
 
 	UMobilePlayerInput_eventCloseAllMenus_Params CloseAllMenus_Params;
@@ -7109,7 +6909,7 @@ void UMobilePlayerInput::eventCloseMenuScene(class UMobileMenuScene* SceneToClos
 
 	if (!uFnCloseMenuScene)
 	{
-		uFnCloseMenuScene = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnCloseMenuScene = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.CloseMenuScene");
 	}
 
 	UMobilePlayerInput_eventCloseMenuScene_Params CloseMenuScene_Params;
@@ -7132,7 +6932,7 @@ class UMobileMenuScene* UMobilePlayerInput::eventOpenMenuScene(class UClass* Sce
 
 	if (!uFnOpenMenuScene)
 	{
-		uFnOpenMenuScene = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnOpenMenuScene = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.OpenMenuScene");
 	}
 
 	UMobilePlayerInput_eventOpenMenuScene_Params OpenMenuScene_Params;
@@ -7156,7 +6956,7 @@ void UMobilePlayerInput::SetMobileInputConfig(const class FString& GroupName)
 
 	if (!uFnSetMobileInputConfig)
 	{
-		uFnSetMobileInputConfig = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnSetMobileInputConfig = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.SetMobileInputConfig");
 	}
 
 	UMobilePlayerInput_execSetMobileInputConfig_Params SetMobileInputConfig_Params;
@@ -7177,7 +6977,7 @@ void UMobilePlayerInput::ActivateInputGroup(const class FString& GroupName)
 
 	if (!uFnActivateInputGroup)
 	{
-		uFnActivateInputGroup = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnActivateInputGroup = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.ActivateInputGroup");
 	}
 
 	UMobilePlayerInput_execActivateInputGroup_Params ActivateInputGroup_Params;
@@ -7198,7 +6998,7 @@ class TArray<class UMobileInputZone*> UMobilePlayerInput::GetCurrentZones()
 
 	if (!uFnGetCurrentZones)
 	{
-		uFnGetCurrentZones = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnGetCurrentZones = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.GetCurrentZones");
 	}
 
 	UMobilePlayerInput_execGetCurrentZones_Params GetCurrentZones_Params;
@@ -7220,7 +7020,7 @@ bool UMobilePlayerInput::HasZones()
 
 	if (!uFnHasZones)
 	{
-		uFnHasZones = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnHasZones = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.HasZones");
 	}
 
 	UMobilePlayerInput_execHasZones_Params HasZones_Params;
@@ -7243,7 +7043,7 @@ class UMobileInputZone* UMobilePlayerInput::FindorAddZone(const class FString& Z
 
 	if (!uFnFindorAddZone)
 	{
-		uFnFindorAddZone = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnFindorAddZone = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.FindorAddZone");
 	}
 
 	UMobilePlayerInput_execFindorAddZone_Params FindorAddZone_Params;
@@ -7267,7 +7067,7 @@ class UMobileInputZone* UMobilePlayerInput::FindZone(const class FString& ZoneNa
 
 	if (!uFnFindZone)
 	{
-		uFnFindZone = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnFindZone = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.FindZone");
 	}
 
 	UMobilePlayerInput_execFindZone_Params FindZone_Params;
@@ -7290,7 +7090,7 @@ void UMobilePlayerInput::AddKismetRawInputEventHandler(class USeqEvent_MobileRaw
 
 	if (!uFnAddKismetRawInputEventHandler)
 	{
-		uFnAddKismetRawInputEventHandler = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnAddKismetRawInputEventHandler = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.AddKismetRawInputEventHandler");
 	}
 
 	UMobilePlayerInput_execAddKismetRawInputEventHandler_Params AddKismetRawInputEventHandler_Params;
@@ -7311,7 +7111,7 @@ void UMobilePlayerInput::AddKismetEventHandler(class USeqEvent_MobileBase* NewHa
 
 	if (!uFnAddKismetEventHandler)
 	{
-		uFnAddKismetEventHandler = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnAddKismetEventHandler = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.AddKismetEventHandler");
 	}
 
 	UMobilePlayerInput_execAddKismetEventHandler_Params AddKismetEventHandler_Params;
@@ -7331,7 +7131,7 @@ void UMobilePlayerInput::eventRefreshKismetLinks()
 
 	if (!uFnRefreshKismetLinks)
 	{
-		uFnRefreshKismetLinks = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnRefreshKismetLinks = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.RefreshKismetLinks");
 	}
 
 	UMobilePlayerInput_eventRefreshKismetLinks_Params RefreshKismetLinks_Params;
@@ -7350,7 +7150,7 @@ void UMobilePlayerInput::SwapZoneOwners()
 
 	if (!uFnSwapZoneOwners)
 	{
-		uFnSwapZoneOwners = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnSwapZoneOwners = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.SwapZoneOwners");
 	}
 
 	UMobilePlayerInput_execSwapZoneOwners_Params SwapZoneOwners_Params;
@@ -7369,7 +7169,7 @@ void UMobilePlayerInput::InitializeInputZones()
 
 	if (!uFnInitializeInputZones)
 	{
-		uFnInitializeInputZones = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnInitializeInputZones = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.InitializeInputZones");
 	}
 
 	UMobilePlayerInput_execInitializeInputZones_Params InitializeInputZones_Params;
@@ -7388,7 +7188,7 @@ void UMobilePlayerInput::InitTouchSystem()
 
 	if (!uFnInitTouchSystem)
 	{
-		uFnInitTouchSystem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnInitTouchSystem = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.InitTouchSystem");
 	}
 
 	UMobilePlayerInput_execInitTouchSystem_Params InitTouchSystem_Params;
@@ -7407,7 +7207,7 @@ void UMobilePlayerInput::ClientInitInputSystem()
 
 	if (!uFnClientInitInputSystem)
 	{
-		uFnClientInitInputSystem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnClientInitInputSystem = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.ClientInitInputSystem");
 	}
 
 	UMobilePlayerInput_execClientInitInputSystem_Params ClientInitInputSystem_Params;
@@ -7426,7 +7226,7 @@ void UMobilePlayerInput::InitInputSystem()
 
 	if (!uFnInitInputSystem)
 	{
-		uFnInitInputSystem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnInitInputSystem = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.InitInputSystem");
 	}
 
 	UMobilePlayerInput_execInitInputSystem_Params InitInputSystem_Params;
@@ -7436,7 +7236,7 @@ void UMobilePlayerInput::InitInputSystem()
 };
 
 // Function GameFramework.MobilePlayerInput.ProcessWorldTouch
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34504])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34506])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class UMobileInputZone*        Zone                           (CPF_Parm)
@@ -7449,7 +7249,7 @@ bool UMobilePlayerInput::ProcessWorldTouch(class UMobileInputZone* Zone, ETouchT
 
 	if (!uFnProcessWorldTouch)
 	{
-		uFnProcessWorldTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnProcessWorldTouch = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.ProcessWorldTouch");
 	}
 
 	UMobilePlayerInput_execProcessWorldTouch_Params ProcessWorldTouch_Params;
@@ -7458,17 +7258,13 @@ bool UMobilePlayerInput::ProcessWorldTouch(class UMobileInputZone* Zone, ETouchT
 	memcpy_s(&ProcessWorldTouch_Params.EventType, sizeof(ProcessWorldTouch_Params.EventType), &EventType, sizeof(EventType));
 	memcpy_s(&ProcessWorldTouch_Params.TouchLocation, sizeof(ProcessWorldTouch_Params.TouchLocation), &TouchLocation, sizeof(TouchLocation));
 
-	uFnProcessWorldTouch->iNative = 0;
-	uFnProcessWorldTouch->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnProcessWorldTouch, &ProcessWorldTouch_Params, nullptr);
-	uFnProcessWorldTouch->FunctionFlags |= 0x400;
-	uFnProcessWorldTouch->iNative = 34504;
 
 	return ProcessWorldTouch_Params.ReturnValue;
 };
 
 // Function GameFramework.MobilePlayerInput.SendInputAxis
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34624])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34626])
 // Parameter Info:
 // class FName                    Key                            (CPF_Parm)
 // float                          Delta                          (CPF_Parm)
@@ -7480,7 +7276,7 @@ void UMobilePlayerInput::SendInputAxis(const class FName& Key, float Delta, floa
 
 	if (!uFnSendInputAxis)
 	{
-		uFnSendInputAxis = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnSendInputAxis = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.SendInputAxis");
 	}
 
 	UMobilePlayerInput_execSendInputAxis_Params SendInputAxis_Params;
@@ -7489,15 +7285,11 @@ void UMobilePlayerInput::SendInputAxis(const class FName& Key, float Delta, floa
 	memcpy_s(&SendInputAxis_Params.Delta, sizeof(SendInputAxis_Params.Delta), &Delta, sizeof(Delta));
 	memcpy_s(&SendInputAxis_Params.DeltaTime, sizeof(SendInputAxis_Params.DeltaTime), &DeltaTime, sizeof(DeltaTime));
 
-	uFnSendInputAxis->iNative = 0;
-	uFnSendInputAxis->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendInputAxis, &SendInputAxis_Params, nullptr);
-	uFnSendInputAxis->FunctionFlags |= 0x400;
-	uFnSendInputAxis->iNative = 34624;
 };
 
 // Function GameFramework.MobilePlayerInput.SendInputKey
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34625])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34627])
 // Parameter Info:
 // class FName                    Key                            (CPF_Parm)
 // EInputEvent                    Event                          (CPF_Parm)
@@ -7509,7 +7301,7 @@ void UMobilePlayerInput::SendInputKey(const class FName& Key, EInputEvent Event,
 
 	if (!uFnSendInputKey)
 	{
-		uFnSendInputKey = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnSendInputKey = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.SendInputKey");
 	}
 
 	UMobilePlayerInput_execSendInputKey_Params SendInputKey_Params;
@@ -7518,15 +7310,11 @@ void UMobilePlayerInput::SendInputKey(const class FName& Key, EInputEvent Event,
 	memcpy_s(&SendInputKey_Params.Event, sizeof(SendInputKey_Params.Event), &Event, sizeof(Event));
 	memcpy_s(&SendInputKey_Params.AmountDepressed, sizeof(SendInputKey_Params.AmountDepressed), &AmountDepressed, sizeof(AmountDepressed));
 
-	uFnSendInputKey->iNative = 0;
-	uFnSendInputKey->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendInputKey, &SendInputKey_Params, nullptr);
-	uFnSendInputKey->FunctionFlags |= 0x400;
-	uFnSendInputKey->iNative = 34625;
 };
 
 // Function GameFramework.MobilePlayerInput.ConditionalUpdateInputZones
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33684])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33686])
 // Parameter Info:
 // int32_t                        NewViewportX                   (CPF_Parm)
 // int32_t                        NewViewportY                   (CPF_Parm)
@@ -7539,7 +7327,7 @@ void UMobilePlayerInput::ConditionalUpdateInputZones(int32_t NewViewportX, int32
 
 	if (!uFnConditionalUpdateInputZones)
 	{
-		uFnConditionalUpdateInputZones = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnConditionalUpdateInputZones = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.ConditionalUpdateInputZones");
 	}
 
 	UMobilePlayerInput_execConditionalUpdateInputZones_Params ConditionalUpdateInputZones_Params;
@@ -7549,15 +7337,11 @@ void UMobilePlayerInput::ConditionalUpdateInputZones(int32_t NewViewportX, int32
 	memcpy_s(&ConditionalUpdateInputZones_Params.NewViewportSizeX, sizeof(ConditionalUpdateInputZones_Params.NewViewportSizeX), &NewViewportSizeX, sizeof(NewViewportSizeX));
 	memcpy_s(&ConditionalUpdateInputZones_Params.NewViewportSizeY, sizeof(ConditionalUpdateInputZones_Params.NewViewportSizeY), &NewViewportSizeY, sizeof(NewViewportSizeY));
 
-	uFnConditionalUpdateInputZones->iNative = 0;
-	uFnConditionalUpdateInputZones->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnConditionalUpdateInputZones, &ConditionalUpdateInputZones_Params, nullptr);
-	uFnConditionalUpdateInputZones->FunctionFlags |= 0x400;
-	uFnConditionalUpdateInputZones->iNative = 33684;
 };
 
 // Function GameFramework.MobilePlayerInput.NativeInitializeInputZones
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34340])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34342])
 // Parameter Info:
 // uint32_t                       bIsFirstInitialize             (CPF_Parm)
 
@@ -7567,22 +7351,18 @@ void UMobilePlayerInput::NativeInitializeInputZones(bool bIsFirstInitialize)
 
 	if (!uFnNativeInitializeInputZones)
 	{
-		uFnNativeInitializeInputZones = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnNativeInitializeInputZones = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.NativeInitializeInputZones");
 	}
 
 	UMobilePlayerInput_execNativeInitializeInputZones_Params NativeInitializeInputZones_Params;
 	memset(&NativeInitializeInputZones_Params, 0, sizeof(NativeInitializeInputZones_Params));
 	NativeInitializeInputZones_Params.bIsFirstInitialize = bIsFirstInitialize;
 
-	uFnNativeInitializeInputZones->iNative = 0;
-	uFnNativeInitializeInputZones->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNativeInitializeInputZones, &NativeInitializeInputZones_Params, nullptr);
-	uFnNativeInitializeInputZones->FunctionFlags |= 0x400;
-	uFnNativeInitializeInputZones->iNative = 34340;
 };
 
 // Function GameFramework.MobilePlayerInput.NativeInitializeInputSystem
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34339])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34341])
 // Parameter Info:
 
 void UMobilePlayerInput::NativeInitializeInputSystem()
@@ -7591,17 +7371,13 @@ void UMobilePlayerInput::NativeInitializeInputSystem()
 
 	if (!uFnNativeInitializeInputSystem)
 	{
-		uFnNativeInitializeInputSystem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnNativeInitializeInputSystem = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.NativeInitializeInputSystem");
 	}
 
 	UMobilePlayerInput_execNativeInitializeInputSystem_Params NativeInitializeInputSystem_Params;
 	memset(&NativeInitializeInputSystem_Params, 0, sizeof(NativeInitializeInputSystem_Params));
 
-	uFnNativeInitializeInputSystem->iNative = 0;
-	uFnNativeInitializeInputSystem->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNativeInitializeInputSystem, &NativeInitializeInputSystem_Params, nullptr);
-	uFnNativeInitializeInputSystem->FunctionFlags |= 0x400;
-	uFnNativeInitializeInputSystem->iNative = 34339;
 };
 
 // Function GameFramework.MobilePlayerInput.OnInputTouch
@@ -7619,7 +7395,7 @@ void UMobilePlayerInput::OnInputTouch(int32_t Handle, ETouchType Type, const str
 
 	if (!uFnOnInputTouch)
 	{
-		uFnOnInputTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnOnInputTouch = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.OnInputTouch");
 	}
 
 	UMobilePlayerInput_execOnInputTouch_Params OnInputTouch_Params;
@@ -7647,7 +7423,7 @@ bool UMobilePlayerInput::OnPreviewTouch(float X, float Y, int32_t TouchpadIndex)
 
 	if (!uFnOnPreviewTouch)
 	{
-		uFnOnPreviewTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnOnPreviewTouch = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.OnPreviewTouch");
 	}
 
 	UMobilePlayerInput_execOnPreviewTouch_Params OnPreviewTouch_Params;
@@ -7671,7 +7447,7 @@ void UMobilePlayerInput::OnTouchNotHandledInMenu()
 
 	if (!uFnOnTouchNotHandledInMenu)
 	{
-		uFnOnTouchNotHandledInMenu = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnOnTouchNotHandledInMenu = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.OnTouchNotHandledInMenu");
 	}
 
 	UMobilePlayerInput_execOnTouchNotHandledInMenu_Params OnTouchNotHandledInMenu_Params;
@@ -7691,7 +7467,7 @@ void UMobilePlayerInput::eventPlayerInput(float DeltaTime)
 
 	if (!uFnPlayerInput)
 	{
-		uFnPlayerInput = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnPlayerInput = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.PlayerInput");
 	}
 
 	UMobilePlayerInput_eventPlayerInput_Params PlayerInput_Params;
@@ -7702,7 +7478,7 @@ void UMobilePlayerInput::eventPlayerInput(float DeltaTime)
 };
 
 // Function GameFramework.MobilePlayerInput.CancelMobileInput
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18099])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18101])
 // Parameter Info:
 
 void UMobilePlayerInput::CancelMobileInput()
@@ -7711,21 +7487,17 @@ void UMobilePlayerInput::CancelMobileInput()
 
 	if (!uFnCancelMobileInput)
 	{
-		uFnCancelMobileInput = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnCancelMobileInput = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.CancelMobileInput");
 	}
 
 	UMobilePlayerInput_execCancelMobileInput_Params CancelMobileInput_Params;
 	memset(&CancelMobileInput_Params, 0, sizeof(CancelMobileInput_Params));
 
-	uFnCancelMobileInput->iNative = 0;
-	uFnCancelMobileInput->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCancelMobileInput, &CancelMobileInput_Params, nullptr);
-	uFnCancelMobileInput->FunctionFlags |= 0x400;
-	uFnCancelMobileInput->iNative = 18099;
 };
 
 // Function GameFramework.MobilePlayerInput.ProcessMobileInput
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34503])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34505])
 // Parameter Info:
 // float                          DeltaTime                      (CPF_Parm)
 
@@ -7735,18 +7507,14 @@ void UMobilePlayerInput::ProcessMobileInput(float DeltaTime)
 
 	if (!uFnProcessMobileInput)
 	{
-		uFnProcessMobileInput = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEPLAYERINPUT));
+		uFnProcessMobileInput = UFunction::FindFunction("Function GameFramework.MobilePlayerInput.ProcessMobileInput");
 	}
 
 	UMobilePlayerInput_execProcessMobileInput_Params ProcessMobileInput_Params;
 	memset(&ProcessMobileInput_Params, 0, sizeof(ProcessMobileInput_Params));
 	memcpy_s(&ProcessMobileInput_Params.DeltaTime, sizeof(ProcessMobileInput_Params.DeltaTime), &DeltaTime, sizeof(DeltaTime));
 
-	uFnProcessMobileInput->iNative = 0;
-	uFnProcessMobileInput->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnProcessMobileInput, &ProcessMobileInput_Params, nullptr);
-	uFnProcessMobileInput->FunctionFlags |= 0x400;
-	uFnProcessMobileInput->iNative = 34503;
 };
 
 // Function GameFramework.NavMeshGoal_OutOfViewFrom.Recycle
@@ -7759,7 +7527,7 @@ void UNavMeshGoal_OutOfViewFrom::Recycle()
 
 	if (!uFnRecycle)
 	{
-		uFnRecycle = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_NAVMESHGOAL_OUTOFVIEWFROM));
+		uFnRecycle = UFunction::FindFunction("Function GameFramework.NavMeshGoal_OutOfViewFrom.Recycle");
 	}
 
 	UNavMeshGoal_OutOfViewFrom_execRecycle_Params Recycle_Params;
@@ -7781,7 +7549,7 @@ bool UNavMeshGoal_OutOfViewFrom::MustBeHiddenFromThisPoint(class UNavigationHand
 
 	if (!uFnMustBeHiddenFromThisPoint)
 	{
-		uFnMustBeHiddenFromThisPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_NAVMESHGOAL_OUTOFVIEWFROM));
+		uFnMustBeHiddenFromThisPoint = UFunction::FindFunction("Function GameFramework.NavMeshGoal_OutOfViewFrom.MustBeHiddenFromThisPoint");
 	}
 
 	UNavMeshGoal_OutOfViewFrom_execMustBeHiddenFromThisPoint_Params MustBeHiddenFromThisPoint_Params;
@@ -7795,7 +7563,7 @@ bool UNavMeshGoal_OutOfViewFrom::MustBeHiddenFromThisPoint(class UNavigationHand
 };
 
 // Function GameFramework.NavMeshGoal_OutOfViewFrom.RecycleNative
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26953])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26955])
 // Parameter Info:
 
 void UNavMeshGoal_OutOfViewFrom::RecycleNative()
@@ -7804,17 +7572,13 @@ void UNavMeshGoal_OutOfViewFrom::RecycleNative()
 
 	if (!uFnRecycleNative)
 	{
-		uFnRecycleNative = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_NAVMESHGOAL_OUTOFVIEWFROM));
+		uFnRecycleNative = UFunction::FindFunction("Function GameFramework.NavMeshGoal_OutOfViewFrom.RecycleNative");
 	}
 
 	UNavMeshGoal_OutOfViewFrom_execRecycleNative_Params RecycleNative_Params;
 	memset(&RecycleNative_Params, 0, sizeof(RecycleNative_Params));
 
-	uFnRecycleNative->iNative = 0;
-	uFnRecycleNative->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRecycleNative, &RecycleNative_Params, nullptr);
-	uFnRecycleNative->FunctionFlags |= 0x400;
-	uFnRecycleNative->iNative = 26953;
 };
 
 // Function GameFramework.NavMeshPath_BiasAgainstPolysWithinDistanceOfLocations.Recycle
@@ -7827,7 +7591,7 @@ void UNavMeshPath_BiasAgainstPolysWithinDistanceOfLocations::Recycle()
 
 	if (!uFnRecycle)
 	{
-		uFnRecycle = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_NAVMESHPATH_BIASAGAINSTPOLYSWITHINDISTANCEOFLOCATIONS));
+		uFnRecycle = UFunction::FindFunction("Function GameFramework.NavMeshPath_BiasAgainstPolysWithinDistanceOfLocations.Recycle");
 	}
 
 	UNavMeshPath_BiasAgainstPolysWithinDistanceOfLocations_execRecycle_Params Recycle_Params;
@@ -7852,7 +7616,7 @@ bool UNavMeshPath_BiasAgainstPolysWithinDistanceOfLocations::BiasAgainstPolysWit
 
 	if (!uFnBiasAgainstPolysWithinDistanceOfLocations)
 	{
-		uFnBiasAgainstPolysWithinDistanceOfLocations = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_NAVMESHPATH_BIASAGAINSTPOLYSWITHINDISTANCEOFLOCATIONS));
+		uFnBiasAgainstPolysWithinDistanceOfLocations = UFunction::FindFunction("Function GameFramework.NavMeshPath_BiasAgainstPolysWithinDistanceOfLocations.BiasAgainstPolysWithinDistanceOfLocations");
 	}
 
 	UNavMeshPath_BiasAgainstPolysWithinDistanceOfLocations_execBiasAgainstPolysWithinDistanceOfLocations_Params BiasAgainstPolysWithinDistanceOfLocations_Params;
@@ -7879,7 +7643,7 @@ void USecondaryViewportClient::eventPostRender(class UCanvas* Canvas)
 
 	if (!uFnPostRender)
 	{
-		uFnPostRender = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SECONDARYVIEWPORTCLIENT));
+		uFnPostRender = UFunction::FindFunction("Function GameFramework.SecondaryViewportClient.PostRender");
 	}
 
 	USecondaryViewportClient_eventPostRender_Params PostRender_Params;
@@ -7900,7 +7664,7 @@ void UMobileSecondaryViewportClient::eventPostRender(class UCanvas* Canvas)
 
 	if (!uFnPostRender)
 	{
-		uFnPostRender = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILESECONDARYVIEWPORTCLIENT));
+		uFnPostRender = UFunction::FindFunction("Function GameFramework.MobileSecondaryViewportClient.PostRender");
 	}
 
 	UMobileSecondaryViewportClient_eventPostRender_Params PostRender_Params;
@@ -7921,7 +7685,7 @@ void USeqAct_GameCrowdPopulationManagerToggle::AgentDestroyed(class AGameCrowdAg
 
 	if (!uFnAgentDestroyed)
 	{
-		uFnAgentDestroyed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_GAMECROWDPOPULATIONMANAGERTOGGLE));
+		uFnAgentDestroyed = UFunction::FindFunction("Function GameFramework.SeqAct_GameCrowdPopulationManagerToggle.AgentDestroyed");
 	}
 
 	USeqAct_GameCrowdPopulationManagerToggle_execAgentDestroyed_Params AgentDestroyed_Params;
@@ -7942,7 +7706,7 @@ float USeqAct_GameCrowdPopulationManagerToggle::GetMaxSpawnDist()
 
 	if (!uFnGetMaxSpawnDist)
 	{
-		uFnGetMaxSpawnDist = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_GAMECROWDPOPULATIONMANAGERTOGGLE));
+		uFnGetMaxSpawnDist = UFunction::FindFunction("Function GameFramework.SeqAct_GameCrowdPopulationManagerToggle.GetMaxSpawnDist");
 	}
 
 	USeqAct_GameCrowdPopulationManagerToggle_execGetMaxSpawnDist_Params GetMaxSpawnDist_Params;
@@ -7965,7 +7729,7 @@ void USeqAct_GameCrowdPopulationManagerToggle::eventFillCrowdSpawnInfoItem(class
 
 	if (!uFnFillCrowdSpawnInfoItem)
 	{
-		uFnFillCrowdSpawnInfoItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_GAMECROWDPOPULATIONMANAGERTOGGLE));
+		uFnFillCrowdSpawnInfoItem = UFunction::FindFunction("Function GameFramework.SeqAct_GameCrowdPopulationManagerToggle.FillCrowdSpawnInfoItem");
 	}
 
 	USeqAct_GameCrowdPopulationManagerToggle_eventFillCrowdSpawnInfoItem_Params FillCrowdSpawnInfoItem_Params;
@@ -7989,7 +7753,7 @@ int32_t USeqAct_GameCrowdPopulationManagerToggle::eventGetObjClassVersion()
 
 	if (!uFnGetObjClassVersion)
 	{
-		uFnGetObjClassVersion = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_GAMECROWDPOPULATIONMANAGERTOGGLE));
+		uFnGetObjClassVersion = UFunction::FindFunction("Function GameFramework.SeqAct_GameCrowdPopulationManagerToggle.GetObjClassVersion");
 	}
 
 	USeqAct_GameCrowdPopulationManagerToggle_eventGetObjClassVersion_Params GetObjClassVersion_Params;
@@ -8011,7 +7775,7 @@ int32_t USeqAct_GameCrowdSpawner::eventGetObjClassVersion()
 
 	if (!uFnGetObjClassVersion)
 	{
-		uFnGetObjClassVersion = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_GAMECROWDSPAWNER));
+		uFnGetObjClassVersion = UFunction::FindFunction("Function GameFramework.SeqAct_GameCrowdSpawner.GetObjClassVersion");
 	}
 
 	USeqAct_GameCrowdSpawner_eventGetObjClassVersion_Params GetObjClassVersion_Params;
@@ -8033,7 +7797,7 @@ int32_t USeqAct_MobileSaveLoadValue::eventGetObjClassVersion()
 
 	if (!uFnGetObjClassVersion)
 	{
-		uFnGetObjClassVersion = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_MOBILESAVELOADVALUE));
+		uFnGetObjClassVersion = UFunction::FindFunction("Function GameFramework.SeqAct_MobileSaveLoadValue.GetObjClassVersion");
 	}
 
 	USeqAct_MobileSaveLoadValue_eventGetObjClassVersion_Params GetObjClassVersion_Params;
@@ -8055,7 +7819,7 @@ void USeqAct_PlayAgentAnimation::SetCurrentAnimationActionFor(class AGameCrowdAg
 
 	if (!uFnSetCurrentAnimationActionFor)
 	{
-		uFnSetCurrentAnimationActionFor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_PLAYAGENTANIMATION));
+		uFnSetCurrentAnimationActionFor = UFunction::FindFunction("Function GameFramework.SeqAct_PlayAgentAnimation.SetCurrentAnimationActionFor");
 	}
 
 	USeqAct_PlayAgentAnimation_execSetCurrentAnimationActionFor_Params SetCurrentAnimationActionFor_Params;
@@ -8076,7 +7840,7 @@ int32_t USeqAct_PlayAgentAnimation::eventGetObjClassVersion()
 
 	if (!uFnGetObjClassVersion)
 	{
-		uFnGetObjClassVersion = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQACT_PLAYAGENTANIMATION));
+		uFnGetObjClassVersion = UFunction::FindFunction("Function GameFramework.SeqAct_PlayAgentAnimation.GetObjClassVersion");
 	}
 
 	USeqAct_PlayAgentAnimation_eventGetObjClassVersion_Params GetObjClassVersion_Params;
@@ -8099,7 +7863,7 @@ void USeqEvent_HudRender::Render(class UCanvas* TargetCanvas, class AHUD* Target
 
 	if (!uFnRender)
 	{
-		uFnRender = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_HUDRENDER));
+		uFnRender = UFunction::FindFunction("Function GameFramework.SeqEvent_HudRender.Render");
 	}
 
 	USeqEvent_HudRender_execRender_Params Render_Params;
@@ -8120,7 +7884,7 @@ void USeqEvent_HudRender::eventRegisterEvent()
 
 	if (!uFnRegisterEvent)
 	{
-		uFnRegisterEvent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_HUDRENDER));
+		uFnRegisterEvent = UFunction::FindFunction("Function GameFramework.SeqEvent_HudRender.RegisterEvent");
 	}
 
 	USeqEvent_HudRender_eventRegisterEvent_Params RegisterEvent_Params;
@@ -8140,7 +7904,7 @@ void USeqEvent_MobileBase::eventAddToMobileInput(class UMobilePlayerInput* MPI)
 
 	if (!uFnAddToMobileInput)
 	{
-		uFnAddToMobileInput = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILEBASE));
+		uFnAddToMobileInput = UFunction::FindFunction("Function GameFramework.SeqEvent_MobileBase.AddToMobileInput");
 	}
 
 	USeqEvent_MobileBase_eventAddToMobileInput_Params AddToMobileInput_Params;
@@ -8160,7 +7924,7 @@ void USeqEvent_MobileBase::eventRegisterEvent()
 
 	if (!uFnRegisterEvent)
 	{
-		uFnRegisterEvent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILEBASE));
+		uFnRegisterEvent = UFunction::FindFunction("Function GameFramework.SeqEvent_MobileBase.RegisterEvent");
 	}
 
 	USeqEvent_MobileBase_eventRegisterEvent_Params RegisterEvent_Params;
@@ -8180,7 +7944,7 @@ int32_t USeqEvent_MobileMotion::eventGetObjClassVersion()
 
 	if (!uFnGetObjClassVersion)
 	{
-		uFnGetObjClassVersion = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILEMOTION));
+		uFnGetObjClassVersion = UFunction::FindFunction("Function GameFramework.SeqEvent_MobileMotion.GetObjClassVersion");
 	}
 
 	USeqEvent_MobileMotion_eventGetObjClassVersion_Params GetObjClassVersion_Params;
@@ -8202,7 +7966,7 @@ void USeqEvent_MobileZoneBase::eventAddToMobileInput(class UMobilePlayerInput* M
 
 	if (!uFnAddToMobileInput)
 	{
-		uFnAddToMobileInput = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILEZONEBASE));
+		uFnAddToMobileInput = UFunction::FindFunction("Function GameFramework.SeqEvent_MobileZoneBase.AddToMobileInput");
 	}
 
 	USeqEvent_MobileZoneBase_eventAddToMobileInput_Params AddToMobileInput_Params;
@@ -8222,7 +7986,7 @@ void USeqEvent_MobileRawInput::eventRegisterEvent()
 
 	if (!uFnRegisterEvent)
 	{
-		uFnRegisterEvent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_MOBILERAWINPUT));
+		uFnRegisterEvent = UFunction::FindFunction("Function GameFramework.SeqEvent_MobileRawInput.RegisterEvent");
 	}
 
 	USeqEvent_MobileRawInput_eventRegisterEvent_Params RegisterEvent_Params;
@@ -8242,7 +8006,7 @@ void UGameCameraBase::eventModifyPostProcessSettings(struct FPostProcessSettings
 
 	if (!uFnModifyPostProcessSettings)
 	{
-		uFnModifyPostProcessSettings = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECAMERABASE));
+		uFnModifyPostProcessSettings = UFunction::FindFunction("Function GameFramework.GameCameraBase.ModifyPostProcessSettings");
 	}
 
 	UGameCameraBase_eventModifyPostProcessSettings_Params ModifyPostProcessSettings_Params;
@@ -8264,7 +8028,7 @@ void UGameCameraBase::Init()
 
 	if (!uFnInit)
 	{
-		uFnInit = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECAMERABASE));
+		uFnInit = UFunction::FindFunction("Function GameFramework.GameCameraBase.Init");
 	}
 
 	UGameCameraBase_execInit_Params Init_Params;
@@ -8286,7 +8050,7 @@ void UGameCameraBase::DisplayDebug(class AHUD* HUD, float& out_YL, float& out_YP
 
 	if (!uFnDisplayDebug)
 	{
-		uFnDisplayDebug = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECAMERABASE));
+		uFnDisplayDebug = UFunction::FindFunction("Function GameFramework.GameCameraBase.DisplayDebug");
 	}
 
 	UGameCameraBase_execDisplayDebug_Params DisplayDebug_Params;
@@ -8315,7 +8079,7 @@ void UGameCameraBase::ProcessViewRotation(float DeltaTime, class AActor* ViewTar
 
 	if (!uFnProcessViewRotation)
 	{
-		uFnProcessViewRotation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECAMERABASE));
+		uFnProcessViewRotation = UFunction::FindFunction("Function GameFramework.GameCameraBase.ProcessViewRotation");
 	}
 
 	UGameCameraBase_execProcessViewRotation_Params ProcessViewRotation_Params;
@@ -8345,7 +8109,7 @@ void UGameCameraBase::UpdateCamera(class APawn* P, class AGamePlayerCamera* Came
 
 	if (!uFnUpdateCamera)
 	{
-		uFnUpdateCamera = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECAMERABASE));
+		uFnUpdateCamera = UFunction::FindFunction("Function GameFramework.GameCameraBase.UpdateCamera");
 	}
 
 	UGameCameraBase_execUpdateCamera_Params UpdateCamera_Params;
@@ -8370,7 +8134,7 @@ void UGameCameraBase::ResetInterpolation()
 
 	if (!uFnResetInterpolation)
 	{
-		uFnResetInterpolation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECAMERABASE));
+		uFnResetInterpolation = UFunction::FindFunction("Function GameFramework.GameCameraBase.ResetInterpolation");
 	}
 
 	UGameCameraBase_execResetInterpolation_Params ResetInterpolation_Params;
@@ -8390,7 +8154,7 @@ void UGameCameraBase::OnBecomeInActive(class UGameCameraBase* NewCamera)
 
 	if (!uFnOnBecomeInActive)
 	{
-		uFnOnBecomeInActive = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECAMERABASE));
+		uFnOnBecomeInActive = UFunction::FindFunction("Function GameFramework.GameCameraBase.OnBecomeInActive");
 	}
 
 	UGameCameraBase_execOnBecomeInActive_Params OnBecomeInActive_Params;
@@ -8411,7 +8175,7 @@ void UGameCameraBase::OnBecomeActive(class UGameCameraBase* OldCamera)
 
 	if (!uFnOnBecomeActive)
 	{
-		uFnOnBecomeActive = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECAMERABASE));
+		uFnOnBecomeActive = UFunction::FindFunction("Function GameFramework.GameCameraBase.OnBecomeActive");
 	}
 
 	UGameCameraBase_execOnBecomeActive_Params OnBecomeActive_Params;
@@ -8431,7 +8195,7 @@ void UGameThirdPersonCamera::ResetInterpolation()
 
 	if (!uFnResetInterpolation)
 	{
-		uFnResetInterpolation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnResetInterpolation = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.ResetInterpolation");
 	}
 
 	UGameThirdPersonCamera_execResetInterpolation_Params ResetInterpolation_Params;
@@ -8451,7 +8215,7 @@ void UGameThirdPersonCamera::eventModifyPostProcessSettings(struct FPostProcessS
 
 	if (!uFnModifyPostProcessSettings)
 	{
-		uFnModifyPostProcessSettings = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnModifyPostProcessSettings = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.ModifyPostProcessSettings");
 	}
 
 	UGameThirdPersonCamera_eventModifyPostProcessSettings_Params ModifyPostProcessSettings_Params;
@@ -8474,7 +8238,7 @@ void UGameThirdPersonCamera::OnBecomeActive(class UGameCameraBase* OldCamera)
 
 	if (!uFnOnBecomeActive)
 	{
-		uFnOnBecomeActive = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnOnBecomeActive = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.OnBecomeActive");
 	}
 
 	UGameThirdPersonCamera_execOnBecomeActive_Params OnBecomeActive_Params;
@@ -8498,7 +8262,7 @@ void UGameThirdPersonCamera::ProcessViewRotation(float DeltaTime, class AActor* 
 
 	if (!uFnProcessViewRotation)
 	{
-		uFnProcessViewRotation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnProcessViewRotation = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.ProcessViewRotation");
 	}
 
 	UGameThirdPersonCamera_execProcessViewRotation_Params ProcessViewRotation_Params;
@@ -8525,7 +8289,7 @@ void UGameThirdPersonCamera::UpdateCameraMode(class APawn* P)
 
 	if (!uFnUpdateCameraMode)
 	{
-		uFnUpdateCameraMode = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnUpdateCameraMode = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.UpdateCameraMode");
 	}
 
 	UGameThirdPersonCamera_execUpdateCameraMode_Params UpdateCameraMode_Params;
@@ -8547,7 +8311,7 @@ class UGameThirdPersonCameraMode* UGameThirdPersonCamera::FindBestCameraMode(cla
 
 	if (!uFnFindBestCameraMode)
 	{
-		uFnFindBestCameraMode = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnFindBestCameraMode = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.FindBestCameraMode");
 	}
 
 	UGameThirdPersonCamera_execFindBestCameraMode_Params FindBestCameraMode_Params;
@@ -8570,7 +8334,7 @@ void UGameThirdPersonCamera::AdjustFocusPointInterpolation(const struct FRotator
 
 	if (!uFnAdjustFocusPointInterpolation)
 	{
-		uFnAdjustFocusPointInterpolation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnAdjustFocusPointInterpolation = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.AdjustFocusPointInterpolation");
 	}
 
 	UGameThirdPersonCamera_execAdjustFocusPointInterpolation_Params AdjustFocusPointInterpolation_Params;
@@ -8591,7 +8355,7 @@ struct FVector UGameThirdPersonCamera::GetActualFocusLocation()
 
 	if (!uFnGetActualFocusLocation)
 	{
-		uFnGetActualFocusLocation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnGetActualFocusLocation = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.GetActualFocusLocation");
 	}
 
 	UGameThirdPersonCamera_execGetActualFocusLocation_Params GetActualFocusLocation_Params;
@@ -8613,7 +8377,7 @@ void UGameThirdPersonCamera::eventUpdateFocusPoint(class APawn* P)
 
 	if (!uFnUpdateFocusPoint)
 	{
-		uFnUpdateFocusPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnUpdateFocusPoint = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.UpdateFocusPoint");
 	}
 
 	UGameThirdPersonCamera_eventUpdateFocusPoint_Params UpdateFocusPoint_Params;
@@ -8634,7 +8398,7 @@ void UGameThirdPersonCamera::ClearFocusPoint(bool bLeaveCameraRotation)
 
 	if (!uFnClearFocusPoint)
 	{
-		uFnClearFocusPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnClearFocusPoint = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.ClearFocusPoint");
 	}
 
 	UGameThirdPersonCamera_execClearFocusPoint_Params ClearFocusPoint_Params;
@@ -8655,7 +8419,7 @@ class AActor* UGameThirdPersonCamera::GetFocusActor()
 
 	if (!uFnGetFocusActor)
 	{
-		uFnGetFocusActor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnGetFocusActor = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.GetFocusActor");
 	}
 
 	UGameThirdPersonCamera_execGetFocusActor_Params GetFocusActor_Params;
@@ -8685,7 +8449,7 @@ void UGameThirdPersonCamera::SetFocusOnActor(class AActor* FocusActor, const cla
 
 	if (!uFnSetFocusOnActor)
 	{
-		uFnSetFocusOnActor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnSetFocusOnActor = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.SetFocusOnActor");
 	}
 
 	UGameThirdPersonCamera_execSetFocusOnActor_Params SetFocusOnActor_Params;
@@ -8721,7 +8485,7 @@ void UGameThirdPersonCamera::SetFocusOnLoc(const struct FVector& FocusWorldLoc, 
 
 	if (!uFnSetFocusOnLoc)
 	{
-		uFnSetFocusOnLoc = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnSetFocusOnLoc = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.SetFocusOnLoc");
 	}
 
 	UGameThirdPersonCamera_execSetFocusOnLoc_Params SetFocusOnLoc_Params;
@@ -8749,7 +8513,7 @@ void UGameThirdPersonCamera::AdjustTurn(int32_t AngleOffset)
 
 	if (!uFnAdjustTurn)
 	{
-		uFnAdjustTurn = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnAdjustTurn = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.AdjustTurn");
 	}
 
 	UGameThirdPersonCamera_execAdjustTurn_Params AdjustTurn_Params;
@@ -8760,7 +8524,7 @@ void UGameThirdPersonCamera::AdjustTurn(int32_t AngleOffset)
 };
 
 // Function GameFramework.GameThirdPersonCamera.EndTurn
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33870])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33872])
 // Parameter Info:
 
 void UGameThirdPersonCamera::EndTurn()
@@ -8769,17 +8533,13 @@ void UGameThirdPersonCamera::EndTurn()
 
 	if (!uFnEndTurn)
 	{
-		uFnEndTurn = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnEndTurn = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.EndTurn");
 	}
 
 	UGameThirdPersonCamera_execEndTurn_Params EndTurn_Params;
 	memset(&EndTurn_Params, 0, sizeof(EndTurn_Params));
 
-	uFnEndTurn->iNative = 0;
-	uFnEndTurn->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnEndTurn, &EndTurn_Params, nullptr);
-	uFnEndTurn->FunctionFlags |= 0x400;
-	uFnEndTurn->iNative = 33870;
 };
 
 // Function GameFramework.GameThirdPersonCamera.BeginTurn
@@ -8797,7 +8557,7 @@ void UGameThirdPersonCamera::BeginTurn(int32_t StartAngle, int32_t EndAngle, flo
 
 	if (!uFnBeginTurn)
 	{
-		uFnBeginTurn = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnBeginTurn = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.BeginTurn");
 	}
 
 	UGameThirdPersonCamera_execBeginTurn_Params BeginTurn_Params;
@@ -8812,7 +8572,7 @@ void UGameThirdPersonCamera::BeginTurn(int32_t StartAngle, int32_t EndAngle, flo
 };
 
 // Function GameFramework.GameThirdPersonCamera.PlayerUpdateCamera
-// [0x00480400] (FUNC_Native | FUNC_Protected | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34466])
+// [0x00480400] (FUNC_Native | FUNC_Protected | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34468])
 // Parameter Info:
 // class APawn*                   P                              (CPF_Parm)
 // class AGamePlayerCamera*       CameraActor                    (CPF_Parm)
@@ -8825,7 +8585,7 @@ void UGameThirdPersonCamera::PlayerUpdateCamera(class APawn* P, class AGamePlaye
 
 	if (!uFnPlayerUpdateCamera)
 	{
-		uFnPlayerUpdateCamera = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnPlayerUpdateCamera = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.PlayerUpdateCamera");
 	}
 
 	UGameThirdPersonCamera_execPlayerUpdateCamera_Params PlayerUpdateCamera_Params;
@@ -8835,11 +8595,7 @@ void UGameThirdPersonCamera::PlayerUpdateCamera(class APawn* P, class AGamePlaye
 	memcpy_s(&PlayerUpdateCamera_Params.DeltaTime, sizeof(PlayerUpdateCamera_Params.DeltaTime), &DeltaTime, sizeof(DeltaTime));
 	memcpy_s(&PlayerUpdateCamera_Params.OutVT, sizeof(PlayerUpdateCamera_Params.OutVT), &OutVT, sizeof(OutVT));
 
-	uFnPlayerUpdateCamera->iNative = 0;
-	uFnPlayerUpdateCamera->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPlayerUpdateCamera, &PlayerUpdateCamera_Params, nullptr);
-	uFnPlayerUpdateCamera->FunctionFlags |= 0x400;
-	uFnPlayerUpdateCamera->iNative = 34466;
 
 	memcpy_s(&OutVT, sizeof(OutVT), &PlayerUpdateCamera_Params.OutVT, sizeof(PlayerUpdateCamera_Params.OutVT));
 };
@@ -8858,7 +8614,7 @@ void UGameThirdPersonCamera::UpdateCamera(class APawn* P, class AGamePlayerCamer
 
 	if (!uFnUpdateCamera)
 	{
-		uFnUpdateCamera = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnUpdateCamera = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.UpdateCamera");
 	}
 
 	UGameThirdPersonCamera_execUpdateCamera_Params UpdateCamera_Params;
@@ -8885,7 +8641,7 @@ float UGameThirdPersonCamera::eventGetDesiredFOV(class APawn* ViewedPawn)
 
 	if (!uFnGetDesiredFOV)
 	{
-		uFnGetDesiredFOV = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnGetDesiredFOV = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.GetDesiredFOV");
 	}
 
 	UGameThirdPersonCamera_eventGetDesiredFOV_Params GetDesiredFOV_Params;
@@ -8907,7 +8663,7 @@ void UGameThirdPersonCamera::Init()
 
 	if (!uFnInit)
 	{
-		uFnInit = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnInit = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.Init");
 	}
 
 	UGameThirdPersonCamera_execInit_Params Init_Params;
@@ -8926,7 +8682,7 @@ void UGameThirdPersonCamera::Reset()
 
 	if (!uFnReset)
 	{
-		uFnReset = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnReset = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.Reset");
 	}
 
 	UGameThirdPersonCamera_execReset_Params Reset_Params;
@@ -8947,7 +8703,7 @@ class UGameThirdPersonCameraMode* UGameThirdPersonCamera::CreateCameraMode(class
 
 	if (!uFnCreateCameraMode)
 	{
-		uFnCreateCameraMode = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERA));
+		uFnCreateCameraMode = UFunction::FindFunction("Function GameFramework.GameThirdPersonCamera.CreateCameraMode");
 	}
 
 	UGameThirdPersonCamera_execCreateCameraMode_Params CreateCameraMode_Params;
@@ -8960,7 +8716,7 @@ class UGameThirdPersonCameraMode* UGameThirdPersonCamera::CreateCameraMode(class
 };
 
 // Function GameFramework.GamePlayerCamera.AdjustFOVForViewport
-// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[33250])
+// [0x00080401] (FUNC_Final | FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[33252])
 // Parameter Info:
 // float                          ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // float                          inHorizFOV                     (CPF_Parm)
@@ -8972,7 +8728,7 @@ float AGamePlayerCamera::AdjustFOVForViewport(float inHorizFOV, class APawn* Cam
 
 	if (!uFnAdjustFOVForViewport)
 	{
-		uFnAdjustFOVForViewport = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnAdjustFOVForViewport = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.AdjustFOVForViewport");
 	}
 
 	AGamePlayerCamera_execAdjustFOVForViewport_Params AdjustFOVForViewport_Params;
@@ -8980,11 +8736,7 @@ float AGamePlayerCamera::AdjustFOVForViewport(float inHorizFOV, class APawn* Cam
 	memcpy_s(&AdjustFOVForViewport_Params.inHorizFOV, sizeof(AdjustFOVForViewport_Params.inHorizFOV), &inHorizFOV, sizeof(inHorizFOV));
 	AdjustFOVForViewport_Params.CameraTargetPawn = CameraTargetPawn;
 
-	uFnAdjustFOVForViewport->iNative = 0;
-	uFnAdjustFOVForViewport->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAdjustFOVForViewport, &AdjustFOVForViewport_Params, nullptr);
-	uFnAdjustFOVForViewport->FunctionFlags |= 0x400;
-	uFnAdjustFOVForViewport->iNative = 33250;
 
 	return AdjustFOVForViewport_Params.ReturnValue;
 };
@@ -9002,7 +8754,7 @@ void AGamePlayerCamera::ProcessViewRotation(float DeltaTime, struct FRotator& ou
 
 	if (!uFnProcessViewRotation)
 	{
-		uFnProcessViewRotation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnProcessViewRotation = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.ProcessViewRotation");
 	}
 
 	AGamePlayerCamera_execProcessViewRotation_Params ProcessViewRotation_Params;
@@ -9027,7 +8779,7 @@ void AGamePlayerCamera::ResetInterpolation()
 
 	if (!uFnResetInterpolation)
 	{
-		uFnResetInterpolation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnResetInterpolation = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.ResetInterpolation");
 	}
 
 	AGamePlayerCamera_execResetInterpolation_Params ResetInterpolation_Params;
@@ -9047,7 +8799,7 @@ void AGamePlayerCamera::SetColorScale(const struct FVector& NewColorScale)
 
 	if (!uFnSetColorScale)
 	{
-		uFnSetColorScale = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnSetColorScale = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.SetColorScale");
 	}
 
 	AGamePlayerCamera_execSetColorScale_Params SetColorScale_Params;
@@ -9070,7 +8822,7 @@ void AGamePlayerCamera::DisplayDebug(class AHUD* HUD, float& out_YL, float& out_
 
 	if (!uFnDisplayDebug)
 	{
-		uFnDisplayDebug = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnDisplayDebug = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.DisplayDebug");
 	}
 
 	AGamePlayerCamera_execDisplayDebug_Params DisplayDebug_Params;
@@ -9096,7 +8848,7 @@ void AGamePlayerCamera::UpdateCameraLensEffects(struct FTViewTarget& OutVT)
 
 	if (!uFnUpdateCameraLensEffects)
 	{
-		uFnUpdateCameraLensEffects = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnUpdateCameraLensEffects = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.UpdateCameraLensEffects");
 	}
 
 	AGamePlayerCamera_execUpdateCameraLensEffects_Params UpdateCameraLensEffects_Params;
@@ -9120,7 +8872,7 @@ void AGamePlayerCamera::UpdateViewTarget(float DeltaTime, struct FTViewTarget& O
 
 	if (!uFnUpdateViewTarget)
 	{
-		uFnUpdateViewTarget = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnUpdateViewTarget = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.UpdateViewTarget");
 	}
 
 	AGamePlayerCamera_execUpdateViewTarget_Params UpdateViewTarget_Params;
@@ -9144,7 +8896,7 @@ bool AGamePlayerCamera::ShouldConstrainAspectRatio()
 
 	if (!uFnShouldConstrainAspectRatio)
 	{
-		uFnShouldConstrainAspectRatio = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnShouldConstrainAspectRatio = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.ShouldConstrainAspectRatio");
 	}
 
 	AGamePlayerCamera_execShouldConstrainAspectRatio_Params ShouldConstrainAspectRatio_Params;
@@ -9167,7 +8919,7 @@ class UGameCameraBase* AGamePlayerCamera::FindBestCameraType(class AActor* Camer
 
 	if (!uFnFindBestCameraType)
 	{
-		uFnFindBestCameraType = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnFindBestCameraType = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.FindBestCameraType");
 	}
 
 	AGamePlayerCamera_execFindBestCameraType_Params FindBestCameraType_Params;
@@ -9189,7 +8941,7 @@ void AGamePlayerCamera::Reset()
 
 	if (!uFnReset)
 	{
-		uFnReset = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnReset = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.Reset");
 	}
 
 	AGamePlayerCamera_execReset_Params Reset_Params;
@@ -9208,7 +8960,7 @@ void AGamePlayerCamera::PostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.PostBeginPlay");
 	}
 
 	AGamePlayerCamera_execPostBeginPlay_Params PostBeginPlay_Params;
@@ -9218,7 +8970,7 @@ void AGamePlayerCamera::PostBeginPlay()
 };
 
 // Function GameFramework.GamePlayerCamera.CacheLastTargetBaseInfo
-// [0x00080400] (FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[33607])
+// [0x00080400] (FUNC_Native | FUNC_Protected | FUNC_AllFlags) (iNative[33609])
 // Parameter Info:
 // class AActor*                  TargetBase                     (CPF_Parm)
 
@@ -9228,18 +8980,14 @@ void AGamePlayerCamera::CacheLastTargetBaseInfo(class AActor* TargetBase)
 
 	if (!uFnCacheLastTargetBaseInfo)
 	{
-		uFnCacheLastTargetBaseInfo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnCacheLastTargetBaseInfo = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.CacheLastTargetBaseInfo");
 	}
 
 	AGamePlayerCamera_execCacheLastTargetBaseInfo_Params CacheLastTargetBaseInfo_Params;
 	memset(&CacheLastTargetBaseInfo_Params, 0, sizeof(CacheLastTargetBaseInfo_Params));
 	CacheLastTargetBaseInfo_Params.TargetBase = TargetBase;
 
-	uFnCacheLastTargetBaseInfo->iNative = 0;
-	uFnCacheLastTargetBaseInfo->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCacheLastTargetBaseInfo, &CacheLastTargetBaseInfo_Params, nullptr);
-	uFnCacheLastTargetBaseInfo->FunctionFlags |= 0x400;
-	uFnCacheLastTargetBaseInfo->iNative = 33607;
 };
 
 // Function GameFramework.GamePlayerCamera.CreateCamera
@@ -9254,7 +9002,7 @@ class UGameCameraBase* AGamePlayerCamera::CreateCamera(class UClass* CameraClass
 
 	if (!uFnCreateCamera)
 	{
-		uFnCreateCamera = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEPLAYERCAMERA));
+		uFnCreateCamera = UFunction::FindFunction("Function GameFramework.GamePlayerCamera.CreateCamera");
 	}
 
 	AGamePlayerCamera_execCreateCamera_Params CreateCamera_Params;
@@ -9267,7 +9015,7 @@ class UGameCameraBase* AGamePlayerCamera::CreateCamera(class UClass* CameraClass
 };
 
 // Function GameFramework.GameThirdPersonCameraMode.SetViewOffset
-// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34652])
+// [0x00420401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34654])
 // Parameter Info:
 // struct FViewOffsetData         NewViewOffset                  (CPF_Const | CPF_Parm | CPF_OutParm)
 
@@ -9277,18 +9025,14 @@ void UGameThirdPersonCameraMode::SetViewOffset(struct FViewOffsetData& NewViewOf
 
 	if (!uFnSetViewOffset)
 	{
-		uFnSetViewOffset = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnSetViewOffset = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.SetViewOffset");
 	}
 
 	UGameThirdPersonCameraMode_execSetViewOffset_Params SetViewOffset_Params;
 	memset(&SetViewOffset_Params, 0, sizeof(SetViewOffset_Params));
 	memcpy_s(&SetViewOffset_Params.NewViewOffset, sizeof(SetViewOffset_Params.NewViewOffset), &NewViewOffset, sizeof(NewViewOffset));
 
-	uFnSetViewOffset->iNative = 0;
-	uFnSetViewOffset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetViewOffset, &SetViewOffset_Params, nullptr);
-	uFnSetViewOffset->FunctionFlags |= 0x400;
-	uFnSetViewOffset->iNative = 34652;
 
 	memcpy_s(&NewViewOffset, sizeof(NewViewOffset), &SetViewOffset_Params.NewViewOffset, sizeof(SetViewOffset_Params.NewViewOffset));
 };
@@ -9304,7 +9048,7 @@ void UGameThirdPersonCameraMode::ModifyPostProcessSettings(struct FPostProcessSe
 
 	if (!uFnModifyPostProcessSettings)
 	{
-		uFnModifyPostProcessSettings = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnModifyPostProcessSettings = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.ModifyPostProcessSettings");
 	}
 
 	UGameThirdPersonCameraMode_execModifyPostProcessSettings_Params ModifyPostProcessSettings_Params;
@@ -9328,7 +9072,7 @@ void UGameThirdPersonCameraMode::UpdatePostProcess(float DeltaTime, struct FTVie
 
 	if (!uFnUpdatePostProcess)
 	{
-		uFnUpdatePostProcess = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnUpdatePostProcess = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.UpdatePostProcess");
 	}
 
 	UGameThirdPersonCameraMode_execUpdatePostProcess_Params UpdatePostProcess_Params;
@@ -9355,7 +9099,7 @@ struct FVector UGameThirdPersonCameraMode::DOFTrace(class AActor* TraceOwner, co
 
 	if (!uFnDOFTrace)
 	{
-		uFnDOFTrace = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnDOFTrace = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.DOFTrace");
 	}
 
 	UGameThirdPersonCameraMode_execDOFTrace_Params DOFTrace_Params;
@@ -9383,7 +9127,7 @@ struct FVector UGameThirdPersonCameraMode::GetDOFFocusLoc(class AActor* TraceOwn
 
 	if (!uFnGetDOFFocusLoc)
 	{
-		uFnGetDOFFocusLoc = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnGetDOFFocusLoc = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.GetDOFFocusLoc");
 	}
 
 	UGameThirdPersonCameraMode_execGetDOFFocusLoc_Params GetDOFFocusLoc_Params;
@@ -9411,7 +9155,7 @@ void UGameThirdPersonCameraMode::ProcessViewRotation(float DeltaTime, class AAct
 
 	if (!uFnProcessViewRotation)
 	{
-		uFnProcessViewRotation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnProcessViewRotation = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.ProcessViewRotation");
 	}
 
 	UGameThirdPersonCameraMode_execProcessViewRotation_Params ProcessViewRotation_Params;
@@ -9439,7 +9183,7 @@ bool UGameThirdPersonCameraMode::SetFocusPoint(class APawn* ViewedPawn)
 
 	if (!uFnSetFocusPoint)
 	{
-		uFnSetFocusPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnSetFocusPoint = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.SetFocusPoint");
 	}
 
 	UGameThirdPersonCameraMode_execSetFocusPoint_Params SetFocusPoint_Params;
@@ -9464,7 +9208,7 @@ struct FVector UGameThirdPersonCameraMode::eventGetCameraWorstCaseLoc(class APaw
 
 	if (!uFnGetCameraWorstCaseLoc)
 	{
-		uFnGetCameraWorstCaseLoc = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnGetCameraWorstCaseLoc = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.GetCameraWorstCaseLoc");
 	}
 
 	UGameThirdPersonCameraMode_eventGetCameraWorstCaseLoc_Params GetCameraWorstCaseLoc_Params;
@@ -9489,7 +9233,7 @@ float UGameThirdPersonCameraMode::GetDesiredFOV(class APawn* ViewedPawn)
 
 	if (!uFnGetDesiredFOV)
 	{
-		uFnGetDesiredFOV = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnGetDesiredFOV = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.GetDesiredFOV");
 	}
 
 	UGameThirdPersonCameraMode_execGetDesiredFOV_Params GetDesiredFOV_Params;
@@ -9514,7 +9258,7 @@ struct FVector UGameThirdPersonCameraMode::eventAdjustViewOffset(class APawn* P,
 
 	if (!uFnAdjustViewOffset)
 	{
-		uFnAdjustViewOffset = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnAdjustViewOffset = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.AdjustViewOffset");
 	}
 
 	UGameThirdPersonCameraMode_eventAdjustViewOffset_Params AdjustViewOffset_Params;
@@ -9539,7 +9283,7 @@ void UGameThirdPersonCameraMode::OnBecomeInActive(class APawn* TargetPawn, class
 
 	if (!uFnOnBecomeInActive)
 	{
-		uFnOnBecomeInActive = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnOnBecomeInActive = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.OnBecomeInActive");
 	}
 
 	UGameThirdPersonCameraMode_execOnBecomeInActive_Params OnBecomeInActive_Params;
@@ -9562,7 +9306,7 @@ void UGameThirdPersonCameraMode::OnBecomeActive(class APawn* TargetPawn, class U
 
 	if (!uFnOnBecomeActive)
 	{
-		uFnOnBecomeActive = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnOnBecomeActive = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.OnBecomeActive");
 	}
 
 	UGameThirdPersonCameraMode_execOnBecomeActive_Params OnBecomeActive_Params;
@@ -9583,7 +9327,7 @@ void UGameThirdPersonCameraMode::Init()
 
 	if (!uFnInit)
 	{
-		uFnInit = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMETHIRDPERSONCAMERAMODE));
+		uFnInit = UFunction::FindFunction("Function GameFramework.GameThirdPersonCameraMode.Init");
 	}
 
 	UGameThirdPersonCameraMode_execInit_Params Init_Params;
@@ -9593,7 +9337,7 @@ void UGameThirdPersonCameraMode::Init()
 };
 
 // Function GameFramework.GameSpecialMove.RelativeToWorldOffset
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34559])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34561])
 // Parameter Info:
 // struct FVector                 ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FRotator                InRotation                     (CPF_Parm)
@@ -9605,7 +9349,7 @@ struct FVector UGameSpecialMove::RelativeToWorldOffset(const struct FRotator& In
 
 	if (!uFnRelativeToWorldOffset)
 	{
-		uFnRelativeToWorldOffset = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnRelativeToWorldOffset = UFunction::FindFunction("Function GameFramework.GameSpecialMove.RelativeToWorldOffset");
 	}
 
 	UGameSpecialMove_execRelativeToWorldOffset_Params RelativeToWorldOffset_Params;
@@ -9613,17 +9357,13 @@ struct FVector UGameSpecialMove::RelativeToWorldOffset(const struct FRotator& In
 	memcpy_s(&RelativeToWorldOffset_Params.InRotation, sizeof(RelativeToWorldOffset_Params.InRotation), &InRotation, sizeof(InRotation));
 	memcpy_s(&RelativeToWorldOffset_Params.RelativeSpaceOffset, sizeof(RelativeToWorldOffset_Params.RelativeSpaceOffset), &RelativeSpaceOffset, sizeof(RelativeSpaceOffset));
 
-	uFnRelativeToWorldOffset->iNative = 0;
-	uFnRelativeToWorldOffset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRelativeToWorldOffset, &RelativeToWorldOffset_Params, nullptr);
-	uFnRelativeToWorldOffset->FunctionFlags |= 0x400;
-	uFnRelativeToWorldOffset->iNative = 34559;
 
 	return RelativeToWorldOffset_Params.ReturnValue;
 };
 
 // Function GameFramework.GameSpecialMove.WorldToRelativeOffset
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34887])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34889])
 // Parameter Info:
 // struct FVector                 ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FRotator                InRotation                     (CPF_Parm)
@@ -9635,7 +9375,7 @@ struct FVector UGameSpecialMove::WorldToRelativeOffset(const struct FRotator& In
 
 	if (!uFnWorldToRelativeOffset)
 	{
-		uFnWorldToRelativeOffset = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnWorldToRelativeOffset = UFunction::FindFunction("Function GameFramework.GameSpecialMove.WorldToRelativeOffset");
 	}
 
 	UGameSpecialMove_execWorldToRelativeOffset_Params WorldToRelativeOffset_Params;
@@ -9643,17 +9383,13 @@ struct FVector UGameSpecialMove::WorldToRelativeOffset(const struct FRotator& In
 	memcpy_s(&WorldToRelativeOffset_Params.InRotation, sizeof(WorldToRelativeOffset_Params.InRotation), &InRotation, sizeof(InRotation));
 	memcpy_s(&WorldToRelativeOffset_Params.WorldSpaceOffset, sizeof(WorldToRelativeOffset_Params.WorldSpaceOffset), &WorldSpaceOffset, sizeof(WorldSpaceOffset));
 
-	uFnWorldToRelativeOffset->iNative = 0;
-	uFnWorldToRelativeOffset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWorldToRelativeOffset, &WorldToRelativeOffset_Params, nullptr);
-	uFnWorldToRelativeOffset->FunctionFlags |= 0x400;
-	uFnWorldToRelativeOffset->iNative = 34887;
 
 	return WorldToRelativeOffset_Params.ReturnValue;
 };
 
 // Function GameFramework.GameSpecialMove.ForcePawnRotation
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33950])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33952])
 // Parameter Info:
 // class APawn*                   P                              (CPF_Parm)
 // struct FRotator                NewRotation                    (CPF_Parm)
@@ -9664,7 +9400,7 @@ void UGameSpecialMove::ForcePawnRotation(class APawn* P, const struct FRotator& 
 
 	if (!uFnForcePawnRotation)
 	{
-		uFnForcePawnRotation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnForcePawnRotation = UFunction::FindFunction("Function GameFramework.GameSpecialMove.ForcePawnRotation");
 	}
 
 	UGameSpecialMove_execForcePawnRotation_Params ForcePawnRotation_Params;
@@ -9672,11 +9408,7 @@ void UGameSpecialMove::ForcePawnRotation(class APawn* P, const struct FRotator& 
 	ForcePawnRotation_Params.P = P;
 	memcpy_s(&ForcePawnRotation_Params.NewRotation, sizeof(ForcePawnRotation_Params.NewRotation), &NewRotation, sizeof(NewRotation));
 
-	uFnForcePawnRotation->iNative = 0;
-	uFnForcePawnRotation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnForcePawnRotation, &ForcePawnRotation_Params, nullptr);
-	uFnForcePawnRotation->FunctionFlags |= 0x400;
-	uFnForcePawnRotation->iNative = 33950;
 };
 
 // Function GameFramework.GameSpecialMove.MessageEvent
@@ -9692,7 +9424,7 @@ bool UGameSpecialMove::MessageEvent(const class FName& EventName, class UObject*
 
 	if (!uFnMessageEvent)
 	{
-		uFnMessageEvent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnMessageEvent = UFunction::FindFunction("Function GameFramework.GameSpecialMove.MessageEvent");
 	}
 
 	UGameSpecialMove_execMessageEvent_Params MessageEvent_Params;
@@ -9706,7 +9438,7 @@ bool UGameSpecialMove::MessageEvent(const class FName& EventName, class UObject*
 };
 
 // Function GameFramework.GameSpecialMove.ResetFacePreciseRotation
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34574])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34576])
 // Parameter Info:
 
 void UGameSpecialMove::ResetFacePreciseRotation()
@@ -9715,17 +9447,13 @@ void UGameSpecialMove::ResetFacePreciseRotation()
 
 	if (!uFnResetFacePreciseRotation)
 	{
-		uFnResetFacePreciseRotation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnResetFacePreciseRotation = UFunction::FindFunction("Function GameFramework.GameSpecialMove.ResetFacePreciseRotation");
 	}
 
 	UGameSpecialMove_execResetFacePreciseRotation_Params ResetFacePreciseRotation_Params;
 	memset(&ResetFacePreciseRotation_Params, 0, sizeof(ResetFacePreciseRotation_Params));
 
-	uFnResetFacePreciseRotation->iNative = 0;
-	uFnResetFacePreciseRotation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetFacePreciseRotation, &ResetFacePreciseRotation_Params, nullptr);
-	uFnResetFacePreciseRotation->FunctionFlags |= 0x400;
-	uFnResetFacePreciseRotation->iNative = 34574;
 };
 
 // Function GameFramework.GameSpecialMove.ReachedPrecisePosition
@@ -9738,7 +9466,7 @@ void UGameSpecialMove::eventReachedPrecisePosition()
 
 	if (!uFnReachedPrecisePosition)
 	{
-		uFnReachedPrecisePosition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnReachedPrecisePosition = UFunction::FindFunction("Function GameFramework.GameSpecialMove.ReachedPrecisePosition");
 	}
 
 	UGameSpecialMove_eventReachedPrecisePosition_Params ReachedPrecisePosition_Params;
@@ -9748,7 +9476,7 @@ void UGameSpecialMove::eventReachedPrecisePosition()
 };
 
 // Function GameFramework.GameSpecialMove.SetFacePreciseRotation
-// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34637])
+// [0x00020401] (FUNC_Final | FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[34639])
 // Parameter Info:
 // struct FRotator                RotationToFace                 (CPF_Parm)
 // float                          InterpolationTime              (CPF_Parm)
@@ -9759,7 +9487,7 @@ void UGameSpecialMove::SetFacePreciseRotation(const struct FRotator& RotationToF
 
 	if (!uFnSetFacePreciseRotation)
 	{
-		uFnSetFacePreciseRotation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnSetFacePreciseRotation = UFunction::FindFunction("Function GameFramework.GameSpecialMove.SetFacePreciseRotation");
 	}
 
 	UGameSpecialMove_execSetFacePreciseRotation_Params SetFacePreciseRotation_Params;
@@ -9767,15 +9495,11 @@ void UGameSpecialMove::SetFacePreciseRotation(const struct FRotator& RotationToF
 	memcpy_s(&SetFacePreciseRotation_Params.RotationToFace, sizeof(SetFacePreciseRotation_Params.RotationToFace), &RotationToFace, sizeof(RotationToFace));
 	memcpy_s(&SetFacePreciseRotation_Params.InterpolationTime, sizeof(SetFacePreciseRotation_Params.InterpolationTime), &InterpolationTime, sizeof(InterpolationTime));
 
-	uFnSetFacePreciseRotation->iNative = 0;
-	uFnSetFacePreciseRotation->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetFacePreciseRotation, &SetFacePreciseRotation_Params, nullptr);
-	uFnSetFacePreciseRotation->FunctionFlags |= 0x400;
-	uFnSetFacePreciseRotation->iNative = 34637;
 };
 
 // Function GameFramework.GameSpecialMove.SetReachPreciseDestination
-// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[34646])
+// [0x00024401] (FUNC_Final | FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[34648])
 // Parameter Info:
 // struct FVector                 DestinationToReach             (CPF_Parm)
 // uint32_t                       bCancel                        (CPF_OptionalParm | CPF_Parm)
@@ -9786,7 +9510,7 @@ void UGameSpecialMove::SetReachPreciseDestination(const struct FVector& Destinat
 
 	if (!uFnSetReachPreciseDestination)
 	{
-		uFnSetReachPreciseDestination = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnSetReachPreciseDestination = UFunction::FindFunction("Function GameFramework.GameSpecialMove.SetReachPreciseDestination");
 	}
 
 	UGameSpecialMove_execSetReachPreciseDestination_Params SetReachPreciseDestination_Params;
@@ -9794,11 +9518,7 @@ void UGameSpecialMove::SetReachPreciseDestination(const struct FVector& Destinat
 	memcpy_s(&SetReachPreciseDestination_Params.DestinationToReach, sizeof(SetReachPreciseDestination_Params.DestinationToReach), &DestinationToReach, sizeof(DestinationToReach));
 	SetReachPreciseDestination_Params.bCancel = bCancel;
 
-	uFnSetReachPreciseDestination->iNative = 0;
-	uFnSetReachPreciseDestination->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetReachPreciseDestination, &SetReachPreciseDestination_Params, nullptr);
-	uFnSetReachPreciseDestination->FunctionFlags |= 0x400;
-	uFnSetReachPreciseDestination->iNative = 34646;
 };
 
 // Function GameFramework.GameSpecialMove.ShouldReplicate
@@ -9812,7 +9532,7 @@ bool UGameSpecialMove::ShouldReplicate()
 
 	if (!uFnShouldReplicate)
 	{
-		uFnShouldReplicate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnShouldReplicate = UFunction::FindFunction("Function GameFramework.GameSpecialMove.ShouldReplicate");
 	}
 
 	UGameSpecialMove_execShouldReplicate_Params ShouldReplicate_Params;
@@ -9833,7 +9553,7 @@ void UGameSpecialMove::SpecialMoveFlagsUpdated()
 
 	if (!uFnSpecialMoveFlagsUpdated)
 	{
-		uFnSpecialMoveFlagsUpdated = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnSpecialMoveFlagsUpdated = UFunction::FindFunction("Function GameFramework.GameSpecialMove.SpecialMoveFlagsUpdated");
 	}
 
 	UGameSpecialMove_execSpecialMoveFlagsUpdated_Params SpecialMoveFlagsUpdated_Params;
@@ -9853,7 +9573,7 @@ void UGameSpecialMove::Tick(float DeltaTime)
 
 	if (!uFnTick)
 	{
-		uFnTick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnTick = UFunction::FindFunction("Function GameFramework.GameSpecialMove.Tick");
 	}
 
 	UGameSpecialMove_execTick_Params Tick_Params;
@@ -9875,7 +9595,7 @@ void UGameSpecialMove::SpecialMoveEnded(const class FName& PrevMove, const class
 
 	if (!uFnSpecialMoveEnded)
 	{
-		uFnSpecialMoveEnded = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnSpecialMoveEnded = UFunction::FindFunction("Function GameFramework.GameSpecialMove.SpecialMoveEnded");
 	}
 
 	UGameSpecialMove_execSpecialMoveEnded_Params SpecialMoveEnded_Params;
@@ -9898,7 +9618,7 @@ void UGameSpecialMove::SpecialMoveStarted(bool bForced, const class FName& PrevM
 
 	if (!uFnSpecialMoveStarted)
 	{
-		uFnSpecialMoveStarted = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnSpecialMoveStarted = UFunction::FindFunction("Function GameFramework.GameSpecialMove.SpecialMoveStarted");
 	}
 
 	UGameSpecialMove_execSpecialMoveStarted_Params SpecialMoveStarted_Params;
@@ -9920,7 +9640,7 @@ bool UGameSpecialMove::InternalCanDoSpecialMove()
 
 	if (!uFnInternalCanDoSpecialMove)
 	{
-		uFnInternalCanDoSpecialMove = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnInternalCanDoSpecialMove = UFunction::FindFunction("Function GameFramework.GameSpecialMove.InternalCanDoSpecialMove");
 	}
 
 	UGameSpecialMove_execInternalCanDoSpecialMove_Params InternalCanDoSpecialMove_Params;
@@ -9943,7 +9663,7 @@ bool UGameSpecialMove::CanDoSpecialMove(bool bForceCheck)
 
 	if (!uFnCanDoSpecialMove)
 	{
-		uFnCanDoSpecialMove = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnCanDoSpecialMove = UFunction::FindFunction("Function GameFramework.GameSpecialMove.CanDoSpecialMove");
 	}
 
 	UGameSpecialMove_execCanDoSpecialMove_Params CanDoSpecialMove_Params;
@@ -9967,7 +9687,7 @@ bool UGameSpecialMove::CanOverrideSpecialMove(const class FName& InMove)
 
 	if (!uFnCanOverrideSpecialMove)
 	{
-		uFnCanOverrideSpecialMove = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnCanOverrideSpecialMove = UFunction::FindFunction("Function GameFramework.GameSpecialMove.CanOverrideSpecialMove");
 	}
 
 	UGameSpecialMove_execCanOverrideSpecialMove_Params CanOverrideSpecialMove_Params;
@@ -9991,7 +9711,7 @@ bool UGameSpecialMove::CanOverrideMoveWith(const class FName& NewMove)
 
 	if (!uFnCanOverrideMoveWith)
 	{
-		uFnCanOverrideMoveWith = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnCanOverrideMoveWith = UFunction::FindFunction("Function GameFramework.GameSpecialMove.CanOverrideMoveWith");
 	}
 
 	UGameSpecialMove_execCanOverrideMoveWith_Params CanOverrideMoveWith_Params;
@@ -10015,7 +9735,7 @@ bool UGameSpecialMove::CanChainMove(const class FName& NextMove)
 
 	if (!uFnCanChainMove)
 	{
-		uFnCanChainMove = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnCanChainMove = UFunction::FindFunction("Function GameFramework.GameSpecialMove.CanChainMove");
 	}
 
 	UGameSpecialMove_execCanChainMove_Params CanChainMove_Params;
@@ -10038,7 +9758,7 @@ void UGameSpecialMove::ExtractSpecialMoveFlags(int32_t Flags)
 
 	if (!uFnExtractSpecialMoveFlags)
 	{
-		uFnExtractSpecialMoveFlags = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnExtractSpecialMoveFlags = UFunction::FindFunction("Function GameFramework.GameSpecialMove.ExtractSpecialMoveFlags");
 	}
 
 	UGameSpecialMove_execExtractSpecialMoveFlags_Params ExtractSpecialMoveFlags_Params;
@@ -10059,7 +9779,7 @@ void UGameSpecialMove::InitSpecialMoveFlags(int32_t& out_Flags)
 
 	if (!uFnInitSpecialMoveFlags)
 	{
-		uFnInitSpecialMoveFlags = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnInitSpecialMoveFlags = UFunction::FindFunction("Function GameFramework.GameSpecialMove.InitSpecialMoveFlags");
 	}
 
 	UGameSpecialMove_execInitSpecialMoveFlags_Params InitSpecialMoveFlags_Params;
@@ -10083,7 +9803,7 @@ void UGameSpecialMove::InitSpecialMove(class AGamePawn* inPawn, const class FNam
 
 	if (!uFnInitSpecialMove)
 	{
-		uFnInitSpecialMove = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESPECIALMOVE));
+		uFnInitSpecialMove = UFunction::FindFunction("Function GameFramework.GameSpecialMove.InitSpecialMove");
 	}
 
 	UGameSpecialMove_execInitSpecialMove_Params InitSpecialMove_Params;
@@ -10104,17 +9824,13 @@ void UGameStateObject::Reset()
 
 	if (!uFnReset)
 	{
-		uFnReset = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESTATEOBJECT));
+		uFnReset = UFunction::FindFunction("Function GameFramework.GameStateObject.Reset");
 	}
 
 	UGameStateObject_execReset_Params Reset_Params;
 	memset(&Reset_Params, 0, sizeof(Reset_Params));
 
-	uFnReset->iNative = 0;
-	uFnReset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReset, &Reset_Params, nullptr);
-	uFnReset->FunctionFlags |= 0x400;
-	uFnReset->iNative = 12929;
 };
 
 // Function GameFramework.GameStateObject.PreProcessStream
@@ -10127,21 +9843,17 @@ void UGameStateObject::eventPreProcessStream()
 
 	if (!uFnPreProcessStream)
 	{
-		uFnPreProcessStream = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESTATEOBJECT));
+		uFnPreProcessStream = UFunction::FindFunction("Function GameFramework.GameStateObject.PreProcessStream");
 	}
 
 	UGameStateObject_eventPreProcessStream_Params PreProcessStream_Params;
 	memset(&PreProcessStream_Params, 0, sizeof(PreProcessStream_Params));
 
-	uFnPreProcessStream->iNative = 0;
-	uFnPreProcessStream->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPreProcessStream, &PreProcessStream_Params, nullptr);
-	uFnPreProcessStream->FunctionFlags |= 0x400;
-	uFnPreProcessStream->iNative = 12897;
 };
 
 // Function GameFramework.GameStatsAggregator.GetAggregateMappingIDs
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34012])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[34014])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        EventID                        (CPF_Parm)
@@ -10154,7 +9866,7 @@ bool UGameStatsAggregator::GetAggregateMappingIDs(int32_t EventID, int32_t& Aggr
 
 	if (!uFnGetAggregateMappingIDs)
 	{
-		uFnGetAggregateMappingIDs = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESTATSAGGREGATOR));
+		uFnGetAggregateMappingIDs = UFunction::FindFunction("Function GameFramework.GameStatsAggregator.GetAggregateMappingIDs");
 	}
 
 	UGameStatsAggregator_execGetAggregateMappingIDs_Params GetAggregateMappingIDs_Params;
@@ -10163,11 +9875,7 @@ bool UGameStatsAggregator::GetAggregateMappingIDs(int32_t EventID, int32_t& Aggr
 	memcpy_s(&GetAggregateMappingIDs_Params.AggregateID, sizeof(GetAggregateMappingIDs_Params.AggregateID), &AggregateID, sizeof(AggregateID));
 	memcpy_s(&GetAggregateMappingIDs_Params.TargetAggregateID, sizeof(GetAggregateMappingIDs_Params.TargetAggregateID), &TargetAggregateID, sizeof(TargetAggregateID));
 
-	uFnGetAggregateMappingIDs->iNative = 0;
-	uFnGetAggregateMappingIDs->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetAggregateMappingIDs, &GetAggregateMappingIDs_Params, nullptr);
-	uFnGetAggregateMappingIDs->FunctionFlags |= 0x400;
-	uFnGetAggregateMappingIDs->iNative = 34012;
 
 	memcpy_s(&AggregateID, sizeof(AggregateID), &GetAggregateMappingIDs_Params.AggregateID, sizeof(GetAggregateMappingIDs_Params.AggregateID));
 	memcpy_s(&TargetAggregateID, sizeof(TargetAggregateID), &GetAggregateMappingIDs_Params.TargetAggregateID, sizeof(GetAggregateMappingIDs_Params.TargetAggregateID));
@@ -10185,17 +9893,13 @@ void UGameStatsAggregator::Reset()
 
 	if (!uFnReset)
 	{
-		uFnReset = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESTATSAGGREGATOR));
+		uFnReset = UFunction::FindFunction("Function GameFramework.GameStatsAggregator.Reset");
 	}
 
 	UGameStatsAggregator_execReset_Params Reset_Params;
 	memset(&Reset_Params, 0, sizeof(Reset_Params));
 
-	uFnReset->iNative = 0;
-	uFnReset->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReset, &Reset_Params, nullptr);
-	uFnReset->FunctionFlags |= 0x400;
-	uFnReset->iNative = 12929;
 };
 
 // Function GameFramework.GameStatsAggregator.PostProcessStream
@@ -10208,17 +9912,13 @@ void UGameStatsAggregator::eventPostProcessStream()
 
 	if (!uFnPostProcessStream)
 	{
-		uFnPostProcessStream = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESTATSAGGREGATOR));
+		uFnPostProcessStream = UFunction::FindFunction("Function GameFramework.GameStatsAggregator.PostProcessStream");
 	}
 
 	UGameStatsAggregator_eventPostProcessStream_Params PostProcessStream_Params;
 	memset(&PostProcessStream_Params, 0, sizeof(PostProcessStream_Params));
 
-	uFnPostProcessStream->iNative = 0;
-	uFnPostProcessStream->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPostProcessStream, &PostProcessStream_Params, nullptr);
-	uFnPostProcessStream->FunctionFlags |= 0x400;
-	uFnPostProcessStream->iNative = 12888;
 };
 
 // Function GameFramework.GameStatsAggregator.PreProcessStream
@@ -10231,17 +9931,13 @@ void UGameStatsAggregator::eventPreProcessStream()
 
 	if (!uFnPreProcessStream)
 	{
-		uFnPreProcessStream = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMESTATSAGGREGATOR));
+		uFnPreProcessStream = UFunction::FindFunction("Function GameFramework.GameStatsAggregator.PreProcessStream");
 	}
 
 	UGameStatsAggregator_eventPreProcessStream_Params PreProcessStream_Params;
 	memset(&PreProcessStream_Params, 0, sizeof(PreProcessStream_Params));
 
-	uFnPreProcessStream->iNative = 0;
-	uFnPreProcessStream->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnPreProcessStream, &PreProcessStream_Params, nullptr);
-	uFnPreProcessStream->FunctionFlags |= 0x400;
-	uFnPreProcessStream->iNative = 12897;
 };
 
 // Function GameFramework.DebugCameraHUD.PostRender
@@ -10254,7 +9950,7 @@ void ADebugCameraHUD::eventPostRender()
 
 	if (!uFnPostRender)
 	{
-		uFnPostRender = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERAHUD));
+		uFnPostRender = UFunction::FindFunction("Function GameFramework.DebugCameraHUD.PostRender");
 	}
 
 	ADebugCameraHUD_eventPostRender_Params PostRender_Params;
@@ -10278,7 +9974,7 @@ bool ADebugCameraHUD::DisplayMaterials(float X, float DY, class UMeshComponent* 
 
 	if (!uFnDisplayMaterials)
 	{
-		uFnDisplayMaterials = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERAHUD));
+		uFnDisplayMaterials = UFunction::FindFunction("Function GameFramework.DebugCameraHUD.DisplayMaterials");
 	}
 
 	ADebugCameraHUD_execDisplayMaterials_Params DisplayMaterials_Params;
@@ -10305,7 +10001,7 @@ void ADebugCameraHUD::eventPostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERAHUD));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.DebugCameraHUD.PostBeginPlay");
 	}
 
 	ADebugCameraHUD_eventPostBeginPlay_Params PostBeginPlay_Params;
@@ -10330,7 +10026,7 @@ bool UDebugCameraInput::InputKey(int32_t ControllerId, const class FName& Key, E
 
 	if (!uFnInputKey)
 	{
-		uFnInputKey = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_DEBUGCAMERAINPUT));
+		uFnInputKey = UFunction::FindFunction("Function GameFramework.DebugCameraInput.InputKey");
 	}
 
 	UDebugCameraInput_execInputKey_Params InputKey_Params;
@@ -10357,7 +10053,7 @@ float UGameCrowdSpawnerInterface::GetMaxSpawnDist()
 
 	if (!uFnGetMaxSpawnDist)
 	{
-		uFnGetMaxSpawnDist = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDSPAWNERINTERFACE));
+		uFnGetMaxSpawnDist = UFunction::FindFunction("Function GameFramework.GameCrowdSpawnerInterface.GetMaxSpawnDist");
 	}
 
 	UGameCrowdSpawnerInterface_execGetMaxSpawnDist_Params GetMaxSpawnDist_Params;
@@ -10379,7 +10075,7 @@ void UGameCrowdSpawnerInterface::AgentDestroyed(class AGameCrowdAgent* Agent)
 
 	if (!uFnAgentDestroyed)
 	{
-		uFnAgentDestroyed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDSPAWNERINTERFACE));
+		uFnAgentDestroyed = UFunction::FindFunction("Function GameFramework.GameCrowdSpawnerInterface.AgentDestroyed");
 	}
 
 	UGameCrowdSpawnerInterface_execAgentDestroyed_Params AgentDestroyed_Params;
@@ -10402,7 +10098,7 @@ void UGameCrowdSpawnInterface::GetSpawnPosition(class USeqAct_GameCrowdSpawner* 
 
 	if (!uFnGetSpawnPosition)
 	{
-		uFnGetSpawnPosition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMECROWDSPAWNINTERFACE));
+		uFnGetSpawnPosition = UFunction::FindFunction("Function GameFramework.GameCrowdSpawnInterface.GetSpawnPosition");
 	}
 
 	UGameCrowdSpawnInterface_execGetSpawnPosition_Params GetSpawnPosition_Params;
@@ -10429,7 +10125,7 @@ bool UGameAICmd_Hover_MoveToGoal::IsEnemyBasedOnInterpActor(class APawn* InEnemy
 
 	if (!uFnIsEnemyBasedOnInterpActor)
 	{
-		uFnIsEnemyBasedOnInterpActor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL));
+		uFnIsEnemyBasedOnInterpActor = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal.IsEnemyBasedOnInterpActor");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_execIsEnemyBasedOnInterpActor_Params IsEnemyBasedOnInterpActor_Params;
@@ -10453,7 +10149,7 @@ bool UGameAICmd_Hover_MoveToGoal::HandlePathObstruction(class AActor* BlockedBy)
 
 	if (!uFnHandlePathObstruction)
 	{
-		uFnHandlePathObstruction = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL));
+		uFnHandlePathObstruction = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal.HandlePathObstruction");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_execHandlePathObstruction_Params HandlePathObstruction_Params;
@@ -10475,7 +10171,7 @@ void UGameAICmd_Hover_MoveToGoal::Pushed()
 
 	if (!uFnPushed)
 	{
-		uFnPushed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL));
+		uFnPushed = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal.Pushed");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_execPushed_Params Pushed_Params;
@@ -10499,7 +10195,7 @@ bool UGameAICmd_Hover_MoveToGoal::MoveToGoal(class AGameAIController* AI, class 
 
 	if (!uFnMoveToGoal)
 	{
-		uFnMoveToGoal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL));
+		uFnMoveToGoal = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal.MoveToGoal");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_execMoveToGoal_Params MoveToGoal_Params;
@@ -10526,7 +10222,7 @@ void UGameAICmd_Hover_MoveToGoal_Mesh::eventDrawDebug(class AHUD* H, const class
 
 	if (!uFnDrawDebug)
 	{
-		uFnDrawDebug = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnDrawDebug = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.DrawDebug");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_eventDrawDebug_Params DrawDebug_Params;
@@ -10549,7 +10245,7 @@ bool UGameAICmd_Hover_MoveToGoal_Mesh::IsEnemyBasedOnInterpActor(class APawn* In
 
 	if (!uFnIsEnemyBasedOnInterpActor)
 	{
-		uFnIsEnemyBasedOnInterpActor = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnIsEnemyBasedOnInterpActor = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.IsEnemyBasedOnInterpActor");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execIsEnemyBasedOnInterpActor_Params IsEnemyBasedOnInterpActor_Params;
@@ -10572,7 +10268,7 @@ bool UGameAICmd_Hover_MoveToGoal_Mesh::ShouldUpdateBreadCrumbs()
 
 	if (!uFnShouldUpdateBreadCrumbs)
 	{
-		uFnShouldUpdateBreadCrumbs = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnShouldUpdateBreadCrumbs = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.ShouldUpdateBreadCrumbs");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execShouldUpdateBreadCrumbs_Params ShouldUpdateBreadCrumbs_Params;
@@ -10594,7 +10290,7 @@ bool UGameAICmd_Hover_MoveToGoal_Mesh::HasReachedGoal()
 
 	if (!uFnHasReachedGoal)
 	{
-		uFnHasReachedGoal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnHasReachedGoal = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.HasReachedGoal");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execHasReachedGoal_Params HasReachedGoal_Params;
@@ -10615,7 +10311,7 @@ void UGameAICmd_Hover_MoveToGoal_Mesh::ReEvaluatePath()
 
 	if (!uFnReEvaluatePath)
 	{
-		uFnReEvaluatePath = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnReEvaluatePath = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.ReEvaluatePath");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execReEvaluatePath_Params ReEvaluatePath_Params;
@@ -10636,7 +10332,7 @@ bool UGameAICmd_Hover_MoveToGoal_Mesh::HandlePathObstruction(class AActor* Block
 
 	if (!uFnHandlePathObstruction)
 	{
-		uFnHandlePathObstruction = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnHandlePathObstruction = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.HandlePathObstruction");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execHandlePathObstruction_Params HandlePathObstruction_Params;
@@ -10659,7 +10355,7 @@ void UGameAICmd_Hover_MoveToGoal_Mesh::Tick(float DeltaTime)
 
 	if (!uFnTick)
 	{
-		uFnTick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnTick = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.Tick");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execTick_Params Tick_Params;
@@ -10679,7 +10375,7 @@ void UGameAICmd_Hover_MoveToGoal_Mesh::Popped()
 
 	if (!uFnPopped)
 	{
-		uFnPopped = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnPopped = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.Popped");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execPopped_Params Popped_Params;
@@ -10698,7 +10394,7 @@ void UGameAICmd_Hover_MoveToGoal_Mesh::Pushed()
 
 	if (!uFnPushed)
 	{
-		uFnPushed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnPushed = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.Pushed");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execPushed_Params Pushed_Params;
@@ -10719,7 +10415,7 @@ bool UGameAICmd_Hover_MoveToGoal_Mesh::HoverBackToMesh(class AGameAIController* 
 
 	if (!uFnHoverBackToMesh)
 	{
-		uFnHoverBackToMesh = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnHoverBackToMesh = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.HoverBackToMesh");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execHoverBackToMesh_Params HoverBackToMesh_Params;
@@ -10746,7 +10442,7 @@ bool UGameAICmd_Hover_MoveToGoal_Mesh::HoverToPoint(class AGameAIController* AI,
 
 	if (!uFnHoverToPoint)
 	{
-		uFnHoverToPoint = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnHoverToPoint = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.HoverToPoint");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execHoverToPoint_Params HoverToPoint_Params;
@@ -10776,7 +10472,7 @@ bool UGameAICmd_Hover_MoveToGoal_Mesh::HoverToGoal(class AGameAIController* AI, 
 
 	if (!uFnHoverToGoal)
 	{
-		uFnHoverToGoal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEAICMD_HOVER_MOVETOGOAL_MESH));
+		uFnHoverToGoal = UFunction::FindFunction("Function GameFramework.GameAICmd_Hover_MoveToGoal_Mesh.HoverToGoal");
 	}
 
 	UGameAICmd_Hover_MoveToGoal_Mesh_execHoverToGoal_Params HoverToGoal_Params;
@@ -10802,7 +10498,7 @@ void UGameFixedCamera::OnBecomeActive(class UGameCameraBase* OldCamera)
 
 	if (!uFnOnBecomeActive)
 	{
-		uFnOnBecomeActive = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEFIXEDCAMERA));
+		uFnOnBecomeActive = UFunction::FindFunction("Function GameFramework.GameFixedCamera.OnBecomeActive");
 	}
 
 	UGameFixedCamera_execOnBecomeActive_Params OnBecomeActive_Params;
@@ -10826,7 +10522,7 @@ void UGameFixedCamera::UpdateCamera(class APawn* P, class AGamePlayerCamera* Cam
 
 	if (!uFnUpdateCamera)
 	{
-		uFnUpdateCamera = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEFIXEDCAMERA));
+		uFnUpdateCamera = UFunction::FindFunction("Function GameFramework.GameFixedCamera.UpdateCamera");
 	}
 
 	UGameFixedCamera_execUpdateCamera_Params UpdateCamera_Params;
@@ -10851,7 +10547,7 @@ void AGameKActorSpawnableEffect::StartScalingDown()
 
 	if (!uFnStartScalingDown)
 	{
-		uFnStartScalingDown = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEKACTORSPAWNABLEEFFECT));
+		uFnStartScalingDown = UFunction::FindFunction("Function GameFramework.GameKActorSpawnableEffect.StartScalingDown");
 	}
 
 	AGameKActorSpawnableEffect_execStartScalingDown_Params StartScalingDown_Params;
@@ -10871,7 +10567,7 @@ void AGameKActorSpawnableEffect::eventFellOutOfWorld(class UClass* dmgType)
 
 	if (!uFnFellOutOfWorld)
 	{
-		uFnFellOutOfWorld = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEKACTORSPAWNABLEEFFECT));
+		uFnFellOutOfWorld = UFunction::FindFunction("Function GameFramework.GameKActorSpawnableEffect.FellOutOfWorld");
 	}
 
 	AGameKActorSpawnableEffect_eventFellOutOfWorld_Params FellOutOfWorld_Params;
@@ -10891,7 +10587,7 @@ void AGameKActorSpawnableEffect::eventPostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_GAMEKACTORSPAWNABLEEFFECT));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.GameKActorSpawnableEffect.PostBeginPlay");
 	}
 
 	AGameKActorSpawnableEffect_eventPostBeginPlay_Params PostBeginPlay_Params;
@@ -10910,7 +10606,7 @@ void AMobileDebugCameraController::SetupDebugZones()
 
 	if (!uFnSetupDebugZones)
 	{
-		uFnSetupDebugZones = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERACONTROLLER));
+		uFnSetupDebugZones = UFunction::FindFunction("Function GameFramework.MobileDebugCameraController.SetupDebugZones");
 	}
 
 	AMobileDebugCameraController_execSetupDebugZones_Params SetupDebugZones_Params;
@@ -10929,7 +10625,7 @@ void AMobileDebugCameraController::eventInitInputSystem()
 
 	if (!uFnInitInputSystem)
 	{
-		uFnInitInputSystem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERACONTROLLER));
+		uFnInitInputSystem = UFunction::FindFunction("Function GameFramework.MobileDebugCameraController.InitInputSystem");
 	}
 
 	AMobileDebugCameraController_eventInitInputSystem_Params InitInputSystem_Params;
@@ -10949,7 +10645,7 @@ void AMobileDebugCameraController::OnDeactivate(class APlayerController* PC)
 
 	if (!uFnOnDeactivate)
 	{
-		uFnOnDeactivate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERACONTROLLER));
+		uFnOnDeactivate = UFunction::FindFunction("Function GameFramework.MobileDebugCameraController.OnDeactivate");
 	}
 
 	AMobileDebugCameraController_execOnDeactivate_Params OnDeactivate_Params;
@@ -10969,7 +10665,7 @@ void AMobileDebugCameraController::InitDebugInputSystem()
 
 	if (!uFnInitDebugInputSystem)
 	{
-		uFnInitDebugInputSystem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERACONTROLLER));
+		uFnInitDebugInputSystem = UFunction::FindFunction("Function GameFramework.MobileDebugCameraController.InitDebugInputSystem");
 	}
 
 	AMobileDebugCameraController_execInitDebugInputSystem_Params InitDebugInputSystem_Params;
@@ -10989,7 +10685,7 @@ void AMobileDebugCameraController::OnActivate(class APlayerController* PC)
 
 	if (!uFnOnActivate)
 	{
-		uFnOnActivate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERACONTROLLER));
+		uFnOnActivate = UFunction::FindFunction("Function GameFramework.MobileDebugCameraController.OnActivate");
 	}
 
 	AMobileDebugCameraController_execOnActivate_Params OnActivate_Params;
@@ -11015,7 +10711,7 @@ bool UMobileDebugCameraInput::InputKey(int32_t ControllerId, const class FName& 
 
 	if (!uFnInputKey)
 	{
-		uFnInputKey = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERAINPUT));
+		uFnInputKey = UFunction::FindFunction("Function GameFramework.MobileDebugCameraInput.InputKey");
 	}
 
 	UMobileDebugCameraInput_execInputKey_Params InputKey_Params;
@@ -11041,7 +10737,7 @@ void AMobileDebugCameraHUD::eventPostRender()
 
 	if (!uFnPostRender)
 	{
-		uFnPostRender = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERAHUD));
+		uFnPostRender = UFunction::FindFunction("Function GameFramework.MobileDebugCameraHUD.PostRender");
 	}
 
 	AMobileDebugCameraHUD_eventPostRender_Params PostRender_Params;
@@ -11065,7 +10761,7 @@ bool AMobileDebugCameraHUD::DisplayMaterials(float X, float DY, class UMeshCompo
 
 	if (!uFnDisplayMaterials)
 	{
-		uFnDisplayMaterials = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERAHUD));
+		uFnDisplayMaterials = UFunction::FindFunction("Function GameFramework.MobileDebugCameraHUD.DisplayMaterials");
 	}
 
 	AMobileDebugCameraHUD_execDisplayMaterials_Params DisplayMaterials_Params;
@@ -11092,7 +10788,7 @@ void AMobileDebugCameraHUD::eventPostBeginPlay()
 
 	if (!uFnPostBeginPlay)
 	{
-		uFnPostBeginPlay = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEDEBUGCAMERAHUD));
+		uFnPostBeginPlay = UFunction::FindFunction("Function GameFramework.MobileDebugCameraHUD.PostBeginPlay");
 	}
 
 	AMobileDebugCameraHUD_eventPostBeginPlay_Params PostBeginPlay_Params;
@@ -11111,7 +10807,7 @@ void UMobileMenuBar::UpdateItemViewports()
 
 	if (!uFnUpdateItemViewports)
 	{
-		uFnUpdateItemViewports = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBAR));
+		uFnUpdateItemViewports = UFunction::FindFunction("Function GameFramework.MobileMenuBar.UpdateItemViewports");
 	}
 
 	UMobileMenuBar_execUpdateItemViewports_Params UpdateItemViewports_Params;
@@ -11131,7 +10827,7 @@ void UMobileMenuBar::SetFirstItem(int32_t first)
 
 	if (!uFnSetFirstItem)
 	{
-		uFnSetFirstItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBAR));
+		uFnSetFirstItem = UFunction::FindFunction("Function GameFramework.MobileMenuBar.SetFirstItem");
 	}
 
 	UMobileMenuBar_execSetFirstItem_Params SetFirstItem_Params;
@@ -11154,7 +10850,7 @@ void UMobileMenuBar::RenderItem(class UCanvas* Canvas, float DeltaTime, int32_t 
 
 	if (!uFnRenderItem)
 	{
-		uFnRenderItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBAR));
+		uFnRenderItem = UFunction::FindFunction("Function GameFramework.MobileMenuBar.RenderItem");
 	}
 
 	UMobileMenuBar_execRenderItem_Params RenderItem_Params;
@@ -11178,7 +10874,7 @@ void UMobileMenuBar::RenderObject(class UCanvas* Canvas, float DeltaTime)
 
 	if (!uFnRenderObject)
 	{
-		uFnRenderObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBAR));
+		uFnRenderObject = UFunction::FindFunction("Function GameFramework.MobileMenuBar.RenderObject");
 	}
 
 	UMobileMenuBar_execRenderObject_Params RenderObject_Params;
@@ -11205,7 +10901,7 @@ bool UMobileMenuBar::eventOnTouch(ETouchType EventType, float TouchX, float Touc
 
 	if (!uFnOnTouch)
 	{
-		uFnOnTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBAR));
+		uFnOnTouch = UFunction::FindFunction("Function GameFramework.MobileMenuBar.OnTouch");
 	}
 
 	UMobileMenuBar_eventOnTouch_Params OnTouch_Params;
@@ -11232,7 +10928,7 @@ class UMobileMenuBarItem* UMobileMenuBar::GetSelected()
 
 	if (!uFnGetSelected)
 	{
-		uFnGetSelected = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBAR));
+		uFnGetSelected = UFunction::FindFunction("Function GameFramework.MobileMenuBar.GetSelected");
 	}
 
 	UMobileMenuBar_execGetSelected_Params GetSelected_Params;
@@ -11254,7 +10950,7 @@ int32_t UMobileMenuBar::Num()
 
 	if (!uFnNum)
 	{
-		uFnNum = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBAR));
+		uFnNum = UFunction::FindFunction("Function GameFramework.MobileMenuBar.Num");
 	}
 
 	UMobileMenuBar_execNum_Params Num_Params;
@@ -11277,7 +10973,7 @@ void UMobileMenuBar::AddItem(class UMobileMenuBarItem* Item, int32_t Index)
 
 	if (!uFnAddItem)
 	{
-		uFnAddItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBAR));
+		uFnAddItem = UFunction::FindFunction("Function GameFramework.MobileMenuBar.AddItem");
 	}
 
 	UMobileMenuBar_execAddItem_Params AddItem_Params;
@@ -11303,7 +10999,7 @@ void UMobileMenuBar::InitMenuObject(class UMobilePlayerInput* PlayerInput, class
 
 	if (!uFnInitMenuObject)
 	{
-		uFnInitMenuObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBAR));
+		uFnInitMenuObject = UFunction::FindFunction("Function GameFramework.MobileMenuBar.InitMenuObject");
 	}
 
 	UMobileMenuBar_execInitMenuObject_Params InitMenuObject_Params;
@@ -11330,7 +11026,7 @@ void UMobileMenuBarItem::RenderItem(class UMobileMenuBar* Bar, class UCanvas* Ca
 
 	if (!uFnRenderItem)
 	{
-		uFnRenderItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBARITEM));
+		uFnRenderItem = UFunction::FindFunction("Function GameFramework.MobileMenuBarItem.RenderItem");
 	}
 
 	UMobileMenuBarItem_execRenderItem_Params RenderItem_Params;
@@ -11353,7 +11049,7 @@ void UMobileMenuButton::RenderCaption(class UCanvas* Canvas)
 
 	if (!uFnRenderCaption)
 	{
-		uFnRenderCaption = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBUTTON));
+		uFnRenderCaption = UFunction::FindFunction("Function GameFramework.MobileMenuButton.RenderCaption");
 	}
 
 	UMobileMenuButton_execRenderCaption_Params RenderCaption_Params;
@@ -11375,7 +11071,7 @@ void UMobileMenuButton::RenderObject(class UCanvas* Canvas, float DeltaTime)
 
 	if (!uFnRenderObject)
 	{
-		uFnRenderObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBUTTON));
+		uFnRenderObject = UFunction::FindFunction("Function GameFramework.MobileMenuButton.RenderObject");
 	}
 
 	UMobileMenuButton_execRenderObject_Params RenderObject_Params;
@@ -11401,7 +11097,7 @@ void UMobileMenuButton::InitMenuObject(class UMobilePlayerInput* PlayerInput, cl
 
 	if (!uFnInitMenuObject)
 	{
-		uFnInitMenuObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUBUTTON));
+		uFnInitMenuObject = UFunction::FindFunction("Function GameFramework.MobileMenuButton.InitMenuObject");
 	}
 
 	UMobileMenuButton_execInitMenuObject_Params InitMenuObject_Params;
@@ -11429,7 +11125,7 @@ void UMobileMenuElement::RenderElement(class UMobileMenuObject* Owner, class UCa
 
 	if (!uFnRenderElement)
 	{
-		uFnRenderElement = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUELEMENT));
+		uFnRenderElement = UFunction::FindFunction("Function GameFramework.MobileMenuElement.RenderElement");
 	}
 
 	UMobileMenuElement_execRenderElement_Params RenderElement_Params;
@@ -11457,7 +11153,7 @@ bool UMobileMenuElement::OnTouch(ETouchType EventType, float TouchX, float Touch
 
 	if (!uFnOnTouch)
 	{
-		uFnOnTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUELEMENT));
+		uFnOnTouch = UFunction::FindFunction("Function GameFramework.MobileMenuElement.OnTouch");
 	}
 
 	UMobileMenuElement_execOnTouch_Params OnTouch_Params;
@@ -11483,7 +11179,7 @@ void AMobileMenuGame::RestartPlayer(class AController* NewPlayer)
 
 	if (!uFnRestartPlayer)
 	{
-		uFnRestartPlayer = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUGAME));
+		uFnRestartPlayer = UFunction::FindFunction("Function GameFramework.MobileMenuGame.RestartPlayer");
 	}
 
 	AMobileMenuGame_execRestartPlayer_Params RestartPlayer_Params;
@@ -11503,7 +11199,7 @@ void AMobileMenuGame::StartMatch()
 
 	if (!uFnStartMatch)
 	{
-		uFnStartMatch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUGAME));
+		uFnStartMatch = UFunction::FindFunction("Function GameFramework.MobileMenuGame.StartMatch");
 	}
 
 	AMobileMenuGame_execStartMatch_Params StartMatch_Params;
@@ -11523,7 +11219,7 @@ void AMobileMenuGame::eventPostLogin(class APlayerController* NewPlayer)
 
 	if (!uFnPostLogin)
 	{
-		uFnPostLogin = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUGAME));
+		uFnPostLogin = UFunction::FindFunction("Function GameFramework.MobileMenuGame.PostLogin");
 	}
 
 	AMobileMenuGame_eventPostLogin_Params PostLogin_Params;
@@ -11545,7 +11241,7 @@ void UMobileMenuInventory::RenderDragItem(class UCanvas* Canvas, float DeltaTime
 
 	if (!uFnRenderDragItem)
 	{
-		uFnRenderDragItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnRenderDragItem = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.RenderDragItem");
 	}
 
 	UMobileMenuInventory_execRenderDragItem_Params RenderDragItem_Params;
@@ -11568,7 +11264,7 @@ void UMobileMenuInventory::RenderObject(class UCanvas* Canvas, float DeltaTime)
 
 	if (!uFnRenderObject)
 	{
-		uFnRenderObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnRenderObject = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.RenderObject");
 	}
 
 	UMobileMenuInventory_execRenderObject_Params RenderObject_Params;
@@ -11591,7 +11287,7 @@ int32_t UMobileMenuInventory::GetIndexOfItem(class UMobileMenuElement* Item)
 
 	if (!uFnGetIndexOfItem)
 	{
-		uFnGetIndexOfItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnGetIndexOfItem = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.GetIndexOfItem");
 	}
 
 	UMobileMenuInventory_execGetIndexOfItem_Params GetIndexOfItem_Params;
@@ -11616,7 +11312,7 @@ int32_t UMobileMenuInventory::FindSlotIndexAt(float X, float Y)
 
 	if (!uFnFindSlotIndexAt)
 	{
-		uFnFindSlotIndexAt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnFindSlotIndexAt = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.FindSlotIndexAt");
 	}
 
 	UMobileMenuInventory_execFindSlotIndexAt_Params FindSlotIndexAt_Params;
@@ -11641,7 +11337,7 @@ void UMobileMenuInventory::InitDragAt(int32_t TouchX, int32_t TouchY)
 
 	if (!uFnInitDragAt)
 	{
-		uFnInitDragAt = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnInitDragAt = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.InitDragAt");
 	}
 
 	UMobileMenuInventory_execInitDragAt_Params InitDragAt_Params;
@@ -11663,7 +11359,7 @@ void UMobileMenuInventory::UpdateItemInSlot(int32_t InSlot)
 
 	if (!uFnUpdateItemInSlot)
 	{
-		uFnUpdateItemInSlot = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnUpdateItemInSlot = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.UpdateItemInSlot");
 	}
 
 	UMobileMenuInventory_execUpdateItemInSlot_Params UpdateItemInSlot_Params;
@@ -11686,7 +11382,7 @@ class UMobileMenuElement* UMobileMenuInventory::AddItemToSlot(class UMobileMenuE
 
 	if (!uFnAddItemToSlot)
 	{
-		uFnAddItemToSlot = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnAddItemToSlot = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.AddItemToSlot");
 	}
 
 	UMobileMenuInventory_execAddItemToSlot_Params AddItemToSlot_Params;
@@ -11712,7 +11408,7 @@ bool UMobileMenuInventory::SwapItemsInSlots(int32_t Slot0, int32_t Slot1)
 
 	if (!uFnSwapItemsInSlots)
 	{
-		uFnSwapItemsInSlots = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnSwapItemsInSlots = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.SwapItemsInSlots");
 	}
 
 	UMobileMenuInventory_execSwapItemsInSlots_Params SwapItemsInSlots_Params;
@@ -11741,7 +11437,7 @@ bool UMobileMenuInventory::eventOnTouch(ETouchType EventType, float TouchX, floa
 
 	if (!uFnOnTouch)
 	{
-		uFnOnTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnOnTouch = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.OnTouch");
 	}
 
 	UMobileMenuInventory_eventOnTouch_Params OnTouch_Params;
@@ -11772,7 +11468,7 @@ bool UMobileMenuInventory::CanPutItemInSlot(class UMobileMenuElement* Item, clas
 
 	if (!uFnCanPutItemInSlot)
 	{
-		uFnCanPutItemInSlot = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnCanPutItemInSlot = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.CanPutItemInSlot");
 	}
 
 	UMobileMenuInventory_execCanPutItemInSlot_Params CanPutItemInSlot_Params;
@@ -11798,7 +11494,7 @@ void UMobileMenuInventory::ScaleSlot(class UMobileMenuElement* Slot)
 
 	if (!uFnScaleSlot)
 	{
-		uFnScaleSlot = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnScaleSlot = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.ScaleSlot");
 	}
 
 	UMobileMenuInventory_execScaleSlot_Params ScaleSlot_Params;
@@ -11820,7 +11516,7 @@ int32_t UMobileMenuInventory::AddSlot(class UMobileMenuElement* Slot)
 
 	if (!uFnAddSlot)
 	{
-		uFnAddSlot = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnAddSlot = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.AddSlot");
 	}
 
 	UMobileMenuInventory_execAddSlot_Params AddSlot_Params;
@@ -11847,7 +11543,7 @@ void UMobileMenuInventory::InitMenuObject(class UMobilePlayerInput* PlayerInput,
 
 	if (!uFnInitMenuObject)
 	{
-		uFnInitMenuObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnInitMenuObject = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.InitMenuObject");
 	}
 
 	UMobileMenuInventory_execInitMenuObject_Params InitMenuObject_Params;
@@ -11873,7 +11569,7 @@ void UMobileMenuInventory::OnUpdateDrag(struct FDragElementInfo& Before, struct 
 
 	if (!uFnOnUpdateDrag)
 	{
-		uFnOnUpdateDrag = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnOnUpdateDrag = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.OnUpdateDrag");
 	}
 
 	UMobileMenuInventory_execOnUpdateDrag_Params OnUpdateDrag_Params;
@@ -11903,7 +11599,7 @@ bool UMobileMenuInventory::DoCanPutItemInSlot(class UMobileMenuInventory* FromIn
 
 	if (!uFnDoCanPutItemInSlot)
 	{
-		uFnDoCanPutItemInSlot = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnDoCanPutItemInSlot = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.DoCanPutItemInSlot");
 	}
 
 	UMobileMenuInventory_execDoCanPutItemInSlot_Params DoCanPutItemInSlot_Params;
@@ -11931,7 +11627,7 @@ void UMobileMenuInventory::OnUpdateItemInSlot(class UMobileMenuInventory* FromIn
 
 	if (!uFnOnUpdateItemInSlot)
 	{
-		uFnOnUpdateItemInSlot = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUINVENTORY));
+		uFnOnUpdateItemInSlot = UFunction::FindFunction("Function GameFramework.MobileMenuInventory.OnUpdateItemInSlot");
 	}
 
 	UMobileMenuInventory_execOnUpdateItemInSlot_Params OnUpdateItemInSlot_Params;
@@ -11954,7 +11650,7 @@ void UMobileMenuLabel::RenderObject(class UCanvas* Canvas, float DeltaTime)
 
 	if (!uFnRenderObject)
 	{
-		uFnRenderObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULABEL));
+		uFnRenderObject = UFunction::FindFunction("Function GameFramework.MobileMenuLabel.RenderObject");
 	}
 
 	UMobileMenuLabel_execRenderObject_Params RenderObject_Params;
@@ -11977,7 +11673,7 @@ int32_t UMobileMenuList::ItemScrollSize(class UMobileMenuListItem* Item)
 
 	if (!uFnItemScrollSize)
 	{
-		uFnItemScrollSize = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnItemScrollSize = UFunction::FindFunction("Function GameFramework.MobileMenuList.ItemScrollSize");
 	}
 
 	UMobileMenuList_execItemScrollSize_Params ItemScrollSize_Params;
@@ -12001,7 +11697,7 @@ void UMobileMenuList::RenderObject(class UCanvas* Canvas, float DeltaTime)
 
 	if (!uFnRenderObject)
 	{
-		uFnRenderObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnRenderObject = UFunction::FindFunction("Function GameFramework.MobileMenuList.RenderObject");
 	}
 
 	UMobileMenuList_execRenderObject_Params RenderObject_Params;
@@ -12023,7 +11719,7 @@ void UMobileMenuList::UpdateScroll(float DeltaTime)
 
 	if (!uFnUpdateScroll)
 	{
-		uFnUpdateScroll = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnUpdateScroll = UFunction::FindFunction("Function GameFramework.MobileMenuList.UpdateScroll");
 	}
 
 	UMobileMenuList_execUpdateScroll_Params UpdateScroll_Params;
@@ -12047,7 +11743,7 @@ float UMobileMenuList::CalculateSelectedItem(float ScrollAmount, bool bForceZero
 
 	if (!uFnCalculateSelectedItem)
 	{
-		uFnCalculateSelectedItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnCalculateSelectedItem = UFunction::FindFunction("Function GameFramework.MobileMenuList.CalculateSelectedItem");
 	}
 
 	UMobileMenuList_execCalculateSelectedItem_Params CalculateSelectedItem_Params;
@@ -12076,7 +11772,7 @@ class UMobileMenuListItem* UMobileMenuList::GetItemClickPosition(float& MouseX, 
 
 	if (!uFnGetItemClickPosition)
 	{
-		uFnGetItemClickPosition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnGetItemClickPosition = UFunction::FindFunction("Function GameFramework.MobileMenuList.GetItemClickPosition");
 	}
 
 	UMobileMenuList_execGetItemClickPosition_Params GetItemClickPosition_Params;
@@ -12108,7 +11804,7 @@ bool UMobileMenuList::eventOnTouch(ETouchType EventType, float TouchX, float Tou
 
 	if (!uFnOnTouch)
 	{
-		uFnOnTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnOnTouch = UFunction::FindFunction("Function GameFramework.MobileMenuList.OnTouch");
 	}
 
 	UMobileMenuList_eventOnTouch_Params OnTouch_Params;
@@ -12137,7 +11833,7 @@ bool UMobileMenuList::SetSelectedItem(int32_t ItemIndex, bool bForceAll)
 
 	if (!uFnSetSelectedItem)
 	{
-		uFnSetSelectedItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnSetSelectedItem = UFunction::FindFunction("Function GameFramework.MobileMenuList.SetSelectedItem");
 	}
 
 	UMobileMenuList_execSetSelectedItem_Params SetSelectedItem_Params;
@@ -12161,7 +11857,7 @@ int32_t UMobileMenuList::GetNumVisible()
 
 	if (!uFnGetNumVisible)
 	{
-		uFnGetNumVisible = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnGetNumVisible = UFunction::FindFunction("Function GameFramework.MobileMenuList.GetNumVisible");
 	}
 
 	UMobileMenuList_execGetNumVisible_Params GetNumVisible_Params;
@@ -12184,7 +11880,7 @@ int32_t UMobileMenuList::SetSelectedToVisibleIndex(int32_t VisibleIndex)
 
 	if (!uFnSetSelectedToVisibleIndex)
 	{
-		uFnSetSelectedToVisibleIndex = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnSetSelectedToVisibleIndex = UFunction::FindFunction("Function GameFramework.MobileMenuList.SetSelectedToVisibleIndex");
 	}
 
 	UMobileMenuList_execSetSelectedToVisibleIndex_Params SetSelectedToVisibleIndex_Params;
@@ -12207,7 +11903,7 @@ int32_t UMobileMenuList::GetVisibleIndexOfSelected()
 
 	if (!uFnGetVisibleIndexOfSelected)
 	{
-		uFnGetVisibleIndexOfSelected = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnGetVisibleIndexOfSelected = UFunction::FindFunction("Function GameFramework.MobileMenuList.GetVisibleIndexOfSelected");
 	}
 
 	UMobileMenuList_execGetVisibleIndexOfSelected_Params GetVisibleIndexOfSelected_Params;
@@ -12230,7 +11926,7 @@ float UMobileMenuList::GetAmountSelected(class UMobileMenuListItem* Item)
 
 	if (!uFnGetAmountSelected)
 	{
-		uFnGetAmountSelected = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnGetAmountSelected = UFunction::FindFunction("Function GameFramework.MobileMenuList.GetAmountSelected");
 	}
 
 	UMobileMenuList_execGetAmountSelected_Params GetAmountSelected_Params;
@@ -12253,7 +11949,7 @@ class UMobileMenuListItem* UMobileMenuList::GetSelected()
 
 	if (!uFnGetSelected)
 	{
-		uFnGetSelected = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnGetSelected = UFunction::FindFunction("Function GameFramework.MobileMenuList.GetSelected");
 	}
 
 	UMobileMenuList_execGetSelected_Params GetSelected_Params;
@@ -12275,7 +11971,7 @@ int32_t UMobileMenuList::Num()
 
 	if (!uFnNum)
 	{
-		uFnNum = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnNum = UFunction::FindFunction("Function GameFramework.MobileMenuList.Num");
 	}
 
 	UMobileMenuList_execNum_Params Num_Params;
@@ -12298,7 +11994,7 @@ void UMobileMenuList::AddItem(class UMobileMenuListItem* Item, int32_t Index)
 
 	if (!uFnAddItem)
 	{
-		uFnAddItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnAddItem = UFunction::FindFunction("Function GameFramework.MobileMenuList.AddItem");
 	}
 
 	UMobileMenuList_execAddItem_Params AddItem_Params;
@@ -12324,7 +12020,7 @@ void UMobileMenuList::InitMenuObject(class UMobilePlayerInput* PlayerInput, clas
 
 	if (!uFnInitMenuObject)
 	{
-		uFnInitMenuObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULIST));
+		uFnInitMenuObject = UFunction::FindFunction("Function GameFramework.MobileMenuList.InitMenuObject");
 	}
 
 	UMobileMenuList_execInitMenuObject_Params InitMenuObject_Params;
@@ -12351,7 +12047,7 @@ void UMobileMenuListItem::RenderItem(class UMobileMenuList* List, class UCanvas*
 
 	if (!uFnRenderItem)
 	{
-		uFnRenderItem = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENULISTITEM));
+		uFnRenderItem = UFunction::FindFunction("Function GameFramework.MobileMenuListItem.RenderItem");
 	}
 
 	UMobileMenuListItem_execRenderItem_Params RenderItem_Params;
@@ -12375,7 +12071,7 @@ void UMobileMenuObjectProxy::RenderObject(class UCanvas* Canvas, float DeltaTime
 
 	if (!uFnRenderObject)
 	{
-		uFnRenderObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECTPROXY));
+		uFnRenderObject = UFunction::FindFunction("Function GameFramework.MobileMenuObjectProxy.RenderObject");
 	}
 
 	UMobileMenuObjectProxy_execRenderObject_Params RenderObject_Params;
@@ -12402,7 +12098,7 @@ bool UMobileMenuObjectProxy::eventOnTouch(ETouchType EventType, float TouchX, fl
 
 	if (!uFnOnTouch)
 	{
-		uFnOnTouch = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECTPROXY));
+		uFnOnTouch = UFunction::FindFunction("Function GameFramework.MobileMenuObjectProxy.OnTouch");
 	}
 
 	UMobileMenuObjectProxy_eventOnTouch_Params OnTouch_Params;
@@ -12431,7 +12127,7 @@ void UMobileMenuObjectProxy::OnRenderObject(class UMobileMenuObjectProxy* Proxy,
 
 	if (!uFnOnRenderObject)
 	{
-		uFnOnRenderObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECTPROXY));
+		uFnOnRenderObject = UFunction::FindFunction("Function GameFramework.MobileMenuObjectProxy.OnRenderObject");
 	}
 
 	UMobileMenuObjectProxy_execOnRenderObject_Params OnRenderObject_Params;
@@ -12460,7 +12156,7 @@ bool UMobileMenuObjectProxy::OnTouchEvent(class UMobileMenuObjectProxy* Proxy, E
 
 	if (!uFnOnTouchEvent)
 	{
-		uFnOnTouchEvent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILEMENUOBJECTPROXY));
+		uFnOnTouchEvent = UFunction::FindFunction("Function GameFramework.MobileMenuObjectProxy.OnTouchEvent");
 	}
 
 	UMobileMenuObjectProxy_execOnTouchEvent_Params OnTouchEvent_Params;
@@ -12487,7 +12183,7 @@ void AMobileTouchInputVolume::HandleDragOver()
 
 	if (!uFnHandleDragOver)
 	{
-		uFnHandleDragOver = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILETOUCHINPUTVOLUME));
+		uFnHandleDragOver = UFunction::FindFunction("Function GameFramework.MobileTouchInputVolume.HandleDragOver");
 	}
 
 	AMobileTouchInputVolume_execHandleDragOver_Params HandleDragOver_Params;
@@ -12506,7 +12202,7 @@ void AMobileTouchInputVolume::HandleDoubleClick()
 
 	if (!uFnHandleDoubleClick)
 	{
-		uFnHandleDoubleClick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILETOUCHINPUTVOLUME));
+		uFnHandleDoubleClick = UFunction::FindFunction("Function GameFramework.MobileTouchInputVolume.HandleDoubleClick");
 	}
 
 	AMobileTouchInputVolume_execHandleDoubleClick_Params HandleDoubleClick_Params;
@@ -12525,7 +12221,7 @@ void AMobileTouchInputVolume::HandleClick()
 
 	if (!uFnHandleClick)
 	{
-		uFnHandleClick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILETOUCHINPUTVOLUME));
+		uFnHandleClick = UFunction::FindFunction("Function GameFramework.MobileTouchInputVolume.HandleClick");
 	}
 
 	AMobileTouchInputVolume_execHandleClick_Params HandleClick_Params;
@@ -12545,7 +12241,7 @@ void AMobileTouchInputVolume::OnToggle(class USeqAct_Toggle* inAction)
 
 	if (!uFnOnToggle)
 	{
-		uFnOnToggle = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_MOBILETOUCHINPUTVOLUME));
+		uFnOnToggle = UFunction::FindFunction("Function GameFramework.MobileTouchInputVolume.OnToggle");
 	}
 
 	AMobileTouchInputVolume_execOnToggle_Params OnToggle_Params;
@@ -12565,7 +12261,7 @@ void UTouchableElement3D::HandleDragOver()
 
 	if (!uFnHandleDragOver)
 	{
-		uFnHandleDragOver = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_TOUCHABLEELEMENT3D));
+		uFnHandleDragOver = UFunction::FindFunction("Function GameFramework.TouchableElement3D.HandleDragOver");
 	}
 
 	UTouchableElement3D_execHandleDragOver_Params HandleDragOver_Params;
@@ -12584,7 +12280,7 @@ void UTouchableElement3D::HandleDoubleClick()
 
 	if (!uFnHandleDoubleClick)
 	{
-		uFnHandleDoubleClick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_TOUCHABLEELEMENT3D));
+		uFnHandleDoubleClick = UFunction::FindFunction("Function GameFramework.TouchableElement3D.HandleDoubleClick");
 	}
 
 	UTouchableElement3D_execHandleDoubleClick_Params HandleDoubleClick_Params;
@@ -12603,7 +12299,7 @@ void UTouchableElement3D::HandleClick()
 
 	if (!uFnHandleClick)
 	{
-		uFnHandleClick = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_TOUCHABLEELEMENT3D));
+		uFnHandleClick = UFunction::FindFunction("Function GameFramework.TouchableElement3D.HandleClick");
 	}
 
 	UTouchableElement3D_execHandleClick_Params HandleClick_Params;
@@ -12624,7 +12320,7 @@ void APlayerCollectorGame::eventGetSeamlessTravelActorList(bool bToEntry, class 
 
 	if (!uFnGetSeamlessTravelActorList)
 	{
-		uFnGetSeamlessTravelActorList = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_PLAYERCOLLECTORGAME));
+		uFnGetSeamlessTravelActorList = UFunction::FindFunction("Function GameFramework.PlayerCollectorGame.GetSeamlessTravelActorList");
 	}
 
 	APlayerCollectorGame_eventGetSeamlessTravelActorList_Params GetSeamlessTravelActorList_Params;
@@ -12652,7 +12348,7 @@ class APlayerController* APlayerCollectorGame::eventLogin(const class FString& P
 
 	if (!uFnLogin)
 	{
-		uFnLogin = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_PLAYERCOLLECTORGAME));
+		uFnLogin = UFunction::FindFunction("Function GameFramework.PlayerCollectorGame.Login");
 	}
 
 	APlayerCollectorGame_eventLogin_Params Login_Params;
@@ -12681,7 +12377,7 @@ void USeqEvent_HudRenderImage::Render(class UCanvas* TargetCanvas, class AHUD* T
 
 	if (!uFnRender)
 	{
-		uFnRender = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_HUDRENDERIMAGE));
+		uFnRender = UFunction::FindFunction("Function GameFramework.SeqEvent_HudRenderImage.Render");
 	}
 
 	USeqEvent_HudRenderImage_execRender_Params Render_Params;
@@ -12703,7 +12399,7 @@ int32_t USeqEvent_HudRenderText::eventGetObjClassVersion()
 
 	if (!uFnGetObjClassVersion)
 	{
-		uFnGetObjClassVersion = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_HUDRENDERTEXT));
+		uFnGetObjClassVersion = UFunction::FindFunction("Function GameFramework.SeqEvent_HudRenderText.GetObjClassVersion");
 	}
 
 	USeqEvent_HudRenderText_eventGetObjClassVersion_Params GetObjClassVersion_Params;
@@ -12726,7 +12422,7 @@ void USeqEvent_HudRenderText::Render(class UCanvas* TargetCanvas, class AHUD* Ta
 
 	if (!uFnRender)
 	{
-		uFnRender = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_GAMEFRAMEWORK_SEQEVENT_HUDRENDERTEXT));
+		uFnRender = UFunction::FindFunction("Function GameFramework.SeqEvent_HudRenderText.Render");
 	}
 
 	USeqEvent_HudRenderText_execRender_Params Render_Params;

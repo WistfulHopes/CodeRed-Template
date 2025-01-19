@@ -34,7 +34,7 @@ void UFacebookWindows::OnFacebookFriendsRequestComplete(class UHttpRequestInterf
 
 	if (!uFnOnFacebookFriendsRequestComplete)
 	{
-		uFnOnFacebookFriendsRequestComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnOnFacebookFriendsRequestComplete = UFunction::FindFunction("Function WinDrv.FacebookWindows.OnFacebookFriendsRequestComplete");
 	}
 
 	UFacebookWindows_execOnFacebookFriendsRequestComplete_Params OnFacebookFriendsRequestComplete_Params;
@@ -56,7 +56,7 @@ void UFacebookWindows::eventRequestFacebookFriends()
 
 	if (!uFnRequestFacebookFriends)
 	{
-		uFnRequestFacebookFriends = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnRequestFacebookFriends = UFunction::FindFunction("Function WinDrv.FacebookWindows.RequestFacebookFriends");
 	}
 
 	UFacebookWindows_eventRequestFacebookFriends_Params RequestFacebookFriends_Params;
@@ -78,7 +78,7 @@ void UFacebookWindows::OnFacebookMeRequestComplete(class UHttpRequestInterface* 
 
 	if (!uFnOnFacebookMeRequestComplete)
 	{
-		uFnOnFacebookMeRequestComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnOnFacebookMeRequestComplete = UFunction::FindFunction("Function WinDrv.FacebookWindows.OnFacebookMeRequestComplete");
 	}
 
 	UFacebookWindows_execOnFacebookMeRequestComplete_Params OnFacebookMeRequestComplete_Params;
@@ -100,7 +100,7 @@ void UFacebookWindows::eventRequestFacebookMeInfo()
 
 	if (!uFnRequestFacebookMeInfo)
 	{
-		uFnRequestFacebookMeInfo = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnRequestFacebookMeInfo = UFunction::FindFunction("Function WinDrv.FacebookWindows.RequestFacebookMeInfo");
 	}
 
 	UFacebookWindows_eventRequestFacebookMeInfo_Params RequestFacebookMeInfo_Params;
@@ -122,7 +122,7 @@ void UFacebookWindows::FacebookRequestCallback(class UHttpRequestInterface* Orig
 
 	if (!uFnFacebookRequestCallback)
 	{
-		uFnFacebookRequestCallback = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnFacebookRequestCallback = UFunction::FindFunction("Function WinDrv.FacebookWindows.FacebookRequestCallback");
 	}
 
 	UFacebookWindows_execFacebookRequestCallback_Params FacebookRequestCallback_Params;
@@ -135,7 +135,7 @@ void UFacebookWindows::FacebookRequestCallback(class UHttpRequestInterface* Orig
 };
 
 // Function WinDrv.FacebookWindows.ProcessFacebookRequest
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33200])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[33202])
 // Parameter Info:
 // class FString                  Payload                        (CPF_Parm | CPF_NeedCtorLink)
 // int32_t                        ResponseCode                   (CPF_Parm)
@@ -146,7 +146,7 @@ void UFacebookWindows::ProcessFacebookRequest(const class FString& Payload, int3
 
 	if (!uFnProcessFacebookRequest)
 	{
-		uFnProcessFacebookRequest = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnProcessFacebookRequest = UFunction::FindFunction("Function WinDrv.FacebookWindows.ProcessFacebookRequest");
 	}
 
 	UFacebookWindows_execProcessFacebookRequest_Params ProcessFacebookRequest_Params;
@@ -154,11 +154,7 @@ void UFacebookWindows::ProcessFacebookRequest(const class FString& Payload, int3
 	memcpy_s(&ProcessFacebookRequest_Params.Payload, sizeof(ProcessFacebookRequest_Params.Payload), &Payload, sizeof(Payload));
 	memcpy_s(&ProcessFacebookRequest_Params.ResponseCode, sizeof(ProcessFacebookRequest_Params.ResponseCode), &ResponseCode, sizeof(ResponseCode));
 
-	uFnProcessFacebookRequest->iNative = 0;
-	uFnProcessFacebookRequest->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnProcessFacebookRequest, &ProcessFacebookRequest_Params, nullptr);
-	uFnProcessFacebookRequest->FunctionFlags |= 0x400;
-	uFnProcessFacebookRequest->iNative = 33200;
 };
 
 // Function WinDrv.FacebookWindows.FacebookRequest
@@ -172,7 +168,7 @@ void UFacebookWindows::FacebookRequest(const class FString& GraphRequest)
 
 	if (!uFnFacebookRequest)
 	{
-		uFnFacebookRequest = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnFacebookRequest = UFunction::FindFunction("Function WinDrv.FacebookWindows.FacebookRequest");
 	}
 
 	UFacebookWindows_execFacebookRequest_Params FacebookRequest_Params;
@@ -192,17 +188,13 @@ void UFacebookWindows::Disconnect()
 
 	if (!uFnDisconnect)
 	{
-		uFnDisconnect = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnDisconnect = UFunction::FindFunction("Function WinDrv.FacebookWindows.Disconnect");
 	}
 
 	UFacebookWindows_execDisconnect_Params Disconnect_Params;
 	memset(&Disconnect_Params, 0, sizeof(Disconnect_Params));
 
-	uFnDisconnect->iNative = 0;
-	uFnDisconnect->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDisconnect, &Disconnect_Params, nullptr);
-	uFnDisconnect->FunctionFlags |= 0x400;
-	uFnDisconnect->iNative = 12658;
 };
 
 // Function WinDrv.FacebookWindows.IsAuthorized
@@ -216,17 +208,13 @@ bool UFacebookWindows::IsAuthorized()
 
 	if (!uFnIsAuthorized)
 	{
-		uFnIsAuthorized = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnIsAuthorized = UFunction::FindFunction("Function WinDrv.FacebookWindows.IsAuthorized");
 	}
 
 	UFacebookWindows_execIsAuthorized_Params IsAuthorized_Params;
 	memset(&IsAuthorized_Params, 0, sizeof(IsAuthorized_Params));
 
-	uFnIsAuthorized->iNative = 0;
-	uFnIsAuthorized->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsAuthorized, &IsAuthorized_Params, nullptr);
-	uFnIsAuthorized->FunctionFlags |= 0x400;
-	uFnIsAuthorized->iNative = 12761;
 
 	return IsAuthorized_Params.ReturnValue;
 };
@@ -242,17 +230,13 @@ bool UFacebookWindows::Authorize()
 
 	if (!uFnAuthorize)
 	{
-		uFnAuthorize = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnAuthorize = UFunction::FindFunction("Function WinDrv.FacebookWindows.Authorize");
 	}
 
 	UFacebookWindows_execAuthorize_Params Authorize_Params;
 	memset(&Authorize_Params, 0, sizeof(Authorize_Params));
 
-	uFnAuthorize->iNative = 0;
-	uFnAuthorize->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAuthorize, &Authorize_Params, nullptr);
-	uFnAuthorize->FunctionFlags |= 0x400;
-	uFnAuthorize->iNative = 12587;
 
 	return Authorize_Params.ReturnValue;
 };
@@ -268,23 +252,19 @@ bool UFacebookWindows::Init()
 
 	if (!uFnInit)
 	{
-		uFnInit = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+		uFnInit = UFunction::FindFunction("Function WinDrv.FacebookWindows.Init");
 	}
 
 	UFacebookWindows_execInit_Params Init_Params;
 	memset(&Init_Params, 0, sizeof(Init_Params));
 
-	uFnInit->iNative = 0;
-	uFnInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInit, &Init_Params, nullptr);
-	uFnInit->FunctionFlags |= 0x400;
-	uFnInit->iNative = 762;
 
 	return Init_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.ProcessRequest
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26499])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26501])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -294,23 +274,19 @@ bool UHttpRequestWindows::ProcessRequest()
 
 	if (!uFnProcessRequest)
 	{
-		uFnProcessRequest = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnProcessRequest = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.ProcessRequest");
 	}
 
 	UHttpRequestWindows_execProcessRequest_Params ProcessRequest_Params;
 	memset(&ProcessRequest_Params, 0, sizeof(ProcessRequest_Params));
 
-	uFnProcessRequest->iNative = 0;
-	uFnProcessRequest->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnProcessRequest, &ProcessRequest_Params, nullptr);
-	uFnProcessRequest->FunctionFlags |= 0x400;
-	uFnProcessRequest->iNative = 26499;
 
 	return ProcessRequest_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.SetHeader
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27997])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27999])
 // Parameter Info:
 // class UHttpRequestInterface*   ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  HeaderName                     (CPF_Parm | CPF_NeedCtorLink)
@@ -322,7 +298,7 @@ class UHttpRequestInterface* UHttpRequestWindows::SetHeader(const class FString&
 
 	if (!uFnSetHeader)
 	{
-		uFnSetHeader = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnSetHeader = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.SetHeader");
 	}
 
 	UHttpRequestWindows_execSetHeader_Params SetHeader_Params;
@@ -330,17 +306,13 @@ class UHttpRequestInterface* UHttpRequestWindows::SetHeader(const class FString&
 	memcpy_s(&SetHeader_Params.HeaderName, sizeof(SetHeader_Params.HeaderName), &HeaderName, sizeof(HeaderName));
 	memcpy_s(&SetHeader_Params.HeaderValue, sizeof(SetHeader_Params.HeaderValue), &HeaderValue, sizeof(HeaderValue));
 
-	uFnSetHeader->iNative = 0;
-	uFnSetHeader->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetHeader, &SetHeader_Params, nullptr);
-	uFnSetHeader->FunctionFlags |= 0x400;
-	uFnSetHeader->iNative = 27997;
 
 	return SetHeader_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.SetContentAsString
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27931])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27933])
 // Parameter Info:
 // class UHttpRequestInterface*   ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  ContentString                  (CPF_Parm | CPF_NeedCtorLink)
@@ -351,24 +323,20 @@ class UHttpRequestInterface* UHttpRequestWindows::SetContentAsString(const class
 
 	if (!uFnSetContentAsString)
 	{
-		uFnSetContentAsString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnSetContentAsString = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.SetContentAsString");
 	}
 
 	UHttpRequestWindows_execSetContentAsString_Params SetContentAsString_Params;
 	memset(&SetContentAsString_Params, 0, sizeof(SetContentAsString_Params));
 	memcpy_s(&SetContentAsString_Params.ContentString, sizeof(SetContentAsString_Params.ContentString), &ContentString, sizeof(ContentString));
 
-	uFnSetContentAsString->iNative = 0;
-	uFnSetContentAsString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetContentAsString, &SetContentAsString_Params, nullptr);
-	uFnSetContentAsString->FunctionFlags |= 0x400;
-	uFnSetContentAsString->iNative = 27931;
 
 	return SetContentAsString_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.SetContent
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[27930])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[27932])
 // Parameter Info:
 // class UHttpRequestInterface*   ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class TArray<uint8_t>          ContentPayload                 (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -379,18 +347,14 @@ class UHttpRequestInterface* UHttpRequestWindows::SetContent(class TArray<uint8_
 
 	if (!uFnSetContent)
 	{
-		uFnSetContent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnSetContent = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.SetContent");
 	}
 
 	UHttpRequestWindows_execSetContent_Params SetContent_Params;
 	memset(&SetContent_Params, 0, sizeof(SetContent_Params));
 	memcpy_s(&SetContent_Params.ContentPayload, sizeof(SetContent_Params.ContentPayload), &ContentPayload, sizeof(ContentPayload));
 
-	uFnSetContent->iNative = 0;
-	uFnSetContent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetContent, &SetContent_Params, nullptr);
-	uFnSetContent->FunctionFlags |= 0x400;
-	uFnSetContent->iNative = 27930;
 
 	memcpy_s(&ContentPayload, sizeof(ContentPayload), &SetContent_Params.ContentPayload, sizeof(SetContent_Params.ContentPayload));
 
@@ -398,7 +362,7 @@ class UHttpRequestInterface* UHttpRequestWindows::SetContent(class TArray<uint8_
 };
 
 // Function WinDrv.HttpRequestWindows.SetURL
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28188])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28190])
 // Parameter Info:
 // class UHttpRequestInterface*   ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  URL                            (CPF_Parm | CPF_NeedCtorLink)
@@ -409,24 +373,20 @@ class UHttpRequestInterface* UHttpRequestWindows::SetURL(const class FString& UR
 
 	if (!uFnSetURL)
 	{
-		uFnSetURL = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnSetURL = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.SetURL");
 	}
 
 	UHttpRequestWindows_execSetURL_Params SetURL_Params;
 	memset(&SetURL_Params, 0, sizeof(SetURL_Params));
 	memcpy_s(&SetURL_Params.URL, sizeof(SetURL_Params.URL), &URL, sizeof(URL));
 
-	uFnSetURL->iNative = 0;
-	uFnSetURL->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetURL, &SetURL_Params, nullptr);
-	uFnSetURL->FunctionFlags |= 0x400;
-	uFnSetURL->iNative = 28188;
 
 	return SetURL_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.SetVerb
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28197])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28199])
 // Parameter Info:
 // class UHttpRequestInterface*   ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Verb                           (CPF_Parm | CPF_NeedCtorLink)
@@ -437,24 +397,20 @@ class UHttpRequestInterface* UHttpRequestWindows::SetVerb(const class FString& V
 
 	if (!uFnSetVerb)
 	{
-		uFnSetVerb = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnSetVerb = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.SetVerb");
 	}
 
 	UHttpRequestWindows_execSetVerb_Params SetVerb_Params;
 	memset(&SetVerb_Params, 0, sizeof(SetVerb_Params));
 	memcpy_s(&SetVerb_Params.Verb, sizeof(SetVerb_Params.Verb), &Verb, sizeof(Verb));
 
-	uFnSetVerb->iNative = 0;
-	uFnSetVerb->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetVerb, &SetVerb_Params, nullptr);
-	uFnSetVerb->FunctionFlags |= 0x400;
-	uFnSetVerb->iNative = 28197;
 
 	return SetVerb_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.GetVerb
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22065])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22067])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -464,23 +420,19 @@ class FString UHttpRequestWindows::GetVerb()
 
 	if (!uFnGetVerb)
 	{
-		uFnGetVerb = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnGetVerb = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.GetVerb");
 	}
 
 	UHttpRequestWindows_execGetVerb_Params GetVerb_Params;
 	memset(&GetVerb_Params, 0, sizeof(GetVerb_Params));
 
-	uFnGetVerb->iNative = 0;
-	uFnGetVerb->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetVerb, &GetVerb_Params, nullptr);
-	uFnGetVerb->FunctionFlags |= 0x400;
-	uFnGetVerb->iNative = 22065;
 
 	return GetVerb_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.GetContent
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21673])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21675])
 // Parameter Info:
 // class TArray<uint8_t>          Content                        (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 
@@ -490,24 +442,20 @@ void UHttpRequestWindows::GetContent(class TArray<uint8_t>& Content)
 
 	if (!uFnGetContent)
 	{
-		uFnGetContent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnGetContent = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.GetContent");
 	}
 
 	UHttpRequestWindows_execGetContent_Params GetContent_Params;
 	memset(&GetContent_Params, 0, sizeof(GetContent_Params));
 	memcpy_s(&GetContent_Params.Content, sizeof(GetContent_Params.Content), &Content, sizeof(Content));
 
-	uFnGetContent->iNative = 0;
-	uFnGetContent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetContent, &GetContent_Params, nullptr);
-	uFnGetContent->FunctionFlags |= 0x400;
-	uFnGetContent->iNative = 21673;
 
 	memcpy_s(&Content, sizeof(Content), &GetContent_Params.Content, sizeof(GetContent_Params.Content));
 };
 
 // Function WinDrv.HttpRequestWindows.GetURL
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22054])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22056])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -517,23 +465,19 @@ class FString UHttpRequestWindows::GetURL()
 
 	if (!uFnGetURL)
 	{
-		uFnGetURL = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnGetURL = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.GetURL");
 	}
 
 	UHttpRequestWindows_execGetURL_Params GetURL_Params;
 	memset(&GetURL_Params, 0, sizeof(GetURL_Params));
 
-	uFnGetURL->iNative = 0;
-	uFnGetURL->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetURL, &GetURL_Params, nullptr);
-	uFnGetURL->FunctionFlags |= 0x400;
-	uFnGetURL->iNative = 22054;
 
 	return GetURL_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.GetContentLength
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21675])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21677])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -543,23 +487,19 @@ int32_t UHttpRequestWindows::GetContentLength()
 
 	if (!uFnGetContentLength)
 	{
-		uFnGetContentLength = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnGetContentLength = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.GetContentLength");
 	}
 
 	UHttpRequestWindows_execGetContentLength_Params GetContentLength_Params;
 	memset(&GetContentLength_Params, 0, sizeof(GetContentLength_Params));
 
-	uFnGetContentLength->iNative = 0;
-	uFnGetContentLength->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetContentLength, &GetContentLength_Params, nullptr);
-	uFnGetContentLength->FunctionFlags |= 0x400;
-	uFnGetContentLength->iNative = 21675;
 
 	return GetContentLength_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.GetContentType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21679])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21681])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -569,23 +509,19 @@ class FString UHttpRequestWindows::GetContentType()
 
 	if (!uFnGetContentType)
 	{
-		uFnGetContentType = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnGetContentType = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.GetContentType");
 	}
 
 	UHttpRequestWindows_execGetContentType_Params GetContentType_Params;
 	memset(&GetContentType_Params, 0, sizeof(GetContentType_Params));
 
-	uFnGetContentType->iNative = 0;
-	uFnGetContentType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetContentType, &GetContentType_Params, nullptr);
-	uFnGetContentType->FunctionFlags |= 0x400;
-	uFnGetContentType->iNative = 21679;
 
 	return GetContentType_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.GetURLParameter
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22056])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22058])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  ParameterName                  (CPF_Parm | CPF_NeedCtorLink)
@@ -596,24 +532,20 @@ class FString UHttpRequestWindows::GetURLParameter(const class FString& Paramete
 
 	if (!uFnGetURLParameter)
 	{
-		uFnGetURLParameter = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnGetURLParameter = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.GetURLParameter");
 	}
 
 	UHttpRequestWindows_execGetURLParameter_Params GetURLParameter_Params;
 	memset(&GetURLParameter_Params, 0, sizeof(GetURLParameter_Params));
 	memcpy_s(&GetURLParameter_Params.ParameterName, sizeof(GetURLParameter_Params.ParameterName), &ParameterName, sizeof(ParameterName));
 
-	uFnGetURLParameter->iNative = 0;
-	uFnGetURLParameter->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetURLParameter, &GetURLParameter_Params, nullptr);
-	uFnGetURLParameter->FunctionFlags |= 0x400;
-	uFnGetURLParameter->iNative = 22056;
 
 	return GetURLParameter_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.GetHeaders
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21772])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21774])
 // Parameter Info:
 // class TArray<class FString>    ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -623,23 +555,19 @@ class TArray<class FString> UHttpRequestWindows::GetHeaders()
 
 	if (!uFnGetHeaders)
 	{
-		uFnGetHeaders = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnGetHeaders = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.GetHeaders");
 	}
 
 	UHttpRequestWindows_execGetHeaders_Params GetHeaders_Params;
 	memset(&GetHeaders_Params, 0, sizeof(GetHeaders_Params));
 
-	uFnGetHeaders->iNative = 0;
-	uFnGetHeaders->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetHeaders, &GetHeaders_Params, nullptr);
-	uFnGetHeaders->FunctionFlags |= 0x400;
-	uFnGetHeaders->iNative = 21772;
 
 	return GetHeaders_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpRequestWindows.GetHeader
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21771])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21773])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  HeaderName                     (CPF_Parm | CPF_NeedCtorLink)
@@ -650,24 +578,20 @@ class FString UHttpRequestWindows::GetHeader(const class FString& HeaderName)
 
 	if (!uFnGetHeader)
 	{
-		uFnGetHeader = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+		uFnGetHeader = UFunction::FindFunction("Function WinDrv.HttpRequestWindows.GetHeader");
 	}
 
 	UHttpRequestWindows_execGetHeader_Params GetHeader_Params;
 	memset(&GetHeader_Params, 0, sizeof(GetHeader_Params));
 	memcpy_s(&GetHeader_Params.HeaderName, sizeof(GetHeader_Params.HeaderName), &HeaderName, sizeof(HeaderName));
 
-	uFnGetHeader->iNative = 0;
-	uFnGetHeader->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetHeader, &GetHeader_Params, nullptr);
-	uFnGetHeader->FunctionFlags |= 0x400;
-	uFnGetHeader->iNative = 21771;
 
 	return GetHeader_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpResponseWindows.GetResponseCode
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21951])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21953])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -677,23 +601,19 @@ int32_t UHttpResponseWindows::GetResponseCode()
 
 	if (!uFnGetResponseCode)
 	{
-		uFnGetResponseCode = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPRESPONSEWINDOWS));
+		uFnGetResponseCode = UFunction::FindFunction("Function WinDrv.HttpResponseWindows.GetResponseCode");
 	}
 
 	UHttpResponseWindows_execGetResponseCode_Params GetResponseCode_Params;
 	memset(&GetResponseCode_Params, 0, sizeof(GetResponseCode_Params));
 
-	uFnGetResponseCode->iNative = 0;
-	uFnGetResponseCode->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetResponseCode, &GetResponseCode_Params, nullptr);
-	uFnGetResponseCode->FunctionFlags |= 0x400;
-	uFnGetResponseCode->iNative = 21951;
 
 	return GetResponseCode_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpResponseWindows.GetContentAsString
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21674])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21676])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -703,23 +623,19 @@ class FString UHttpResponseWindows::GetContentAsString()
 
 	if (!uFnGetContentAsString)
 	{
-		uFnGetContentAsString = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPRESPONSEWINDOWS));
+		uFnGetContentAsString = UFunction::FindFunction("Function WinDrv.HttpResponseWindows.GetContentAsString");
 	}
 
 	UHttpResponseWindows_execGetContentAsString_Params GetContentAsString_Params;
 	memset(&GetContentAsString_Params, 0, sizeof(GetContentAsString_Params));
 
-	uFnGetContentAsString->iNative = 0;
-	uFnGetContentAsString->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetContentAsString, &GetContentAsString_Params, nullptr);
-	uFnGetContentAsString->FunctionFlags |= 0x400;
-	uFnGetContentAsString->iNative = 21674;
 
 	return GetContentAsString_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpResponseWindows.GetContent
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21673])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21675])
 // Parameter Info:
 // class TArray<uint8_t>          Content                        (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 
@@ -729,24 +645,20 @@ void UHttpResponseWindows::GetContent(class TArray<uint8_t>& Content)
 
 	if (!uFnGetContent)
 	{
-		uFnGetContent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPRESPONSEWINDOWS));
+		uFnGetContent = UFunction::FindFunction("Function WinDrv.HttpResponseWindows.GetContent");
 	}
 
 	UHttpResponseWindows_execGetContent_Params GetContent_Params;
 	memset(&GetContent_Params, 0, sizeof(GetContent_Params));
 	memcpy_s(&GetContent_Params.Content, sizeof(GetContent_Params.Content), &Content, sizeof(Content));
 
-	uFnGetContent->iNative = 0;
-	uFnGetContent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetContent, &GetContent_Params, nullptr);
-	uFnGetContent->FunctionFlags |= 0x400;
-	uFnGetContent->iNative = 21673;
 
 	memcpy_s(&Content, sizeof(Content), &GetContent_Params.Content, sizeof(GetContent_Params.Content));
 };
 
 // Function WinDrv.HttpResponseWindows.GetURL
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22054])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22056])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -756,23 +668,19 @@ class FString UHttpResponseWindows::GetURL()
 
 	if (!uFnGetURL)
 	{
-		uFnGetURL = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPRESPONSEWINDOWS));
+		uFnGetURL = UFunction::FindFunction("Function WinDrv.HttpResponseWindows.GetURL");
 	}
 
 	UHttpResponseWindows_execGetURL_Params GetURL_Params;
 	memset(&GetURL_Params, 0, sizeof(GetURL_Params));
 
-	uFnGetURL->iNative = 0;
-	uFnGetURL->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetURL, &GetURL_Params, nullptr);
-	uFnGetURL->FunctionFlags |= 0x400;
-	uFnGetURL->iNative = 22054;
 
 	return GetURL_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpResponseWindows.GetContentLength
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21675])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21677])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -782,23 +690,19 @@ int32_t UHttpResponseWindows::GetContentLength()
 
 	if (!uFnGetContentLength)
 	{
-		uFnGetContentLength = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPRESPONSEWINDOWS));
+		uFnGetContentLength = UFunction::FindFunction("Function WinDrv.HttpResponseWindows.GetContentLength");
 	}
 
 	UHttpResponseWindows_execGetContentLength_Params GetContentLength_Params;
 	memset(&GetContentLength_Params, 0, sizeof(GetContentLength_Params));
 
-	uFnGetContentLength->iNative = 0;
-	uFnGetContentLength->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetContentLength, &GetContentLength_Params, nullptr);
-	uFnGetContentLength->FunctionFlags |= 0x400;
-	uFnGetContentLength->iNative = 21675;
 
 	return GetContentLength_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpResponseWindows.GetContentType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21679])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21681])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -808,23 +712,19 @@ class FString UHttpResponseWindows::GetContentType()
 
 	if (!uFnGetContentType)
 	{
-		uFnGetContentType = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPRESPONSEWINDOWS));
+		uFnGetContentType = UFunction::FindFunction("Function WinDrv.HttpResponseWindows.GetContentType");
 	}
 
 	UHttpResponseWindows_execGetContentType_Params GetContentType_Params;
 	memset(&GetContentType_Params, 0, sizeof(GetContentType_Params));
 
-	uFnGetContentType->iNative = 0;
-	uFnGetContentType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetContentType, &GetContentType_Params, nullptr);
-	uFnGetContentType->FunctionFlags |= 0x400;
-	uFnGetContentType->iNative = 21679;
 
 	return GetContentType_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpResponseWindows.GetURLParameter
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22056])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22058])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  ParameterName                  (CPF_Parm | CPF_NeedCtorLink)
@@ -835,24 +735,20 @@ class FString UHttpResponseWindows::GetURLParameter(const class FString& Paramet
 
 	if (!uFnGetURLParameter)
 	{
-		uFnGetURLParameter = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPRESPONSEWINDOWS));
+		uFnGetURLParameter = UFunction::FindFunction("Function WinDrv.HttpResponseWindows.GetURLParameter");
 	}
 
 	UHttpResponseWindows_execGetURLParameter_Params GetURLParameter_Params;
 	memset(&GetURLParameter_Params, 0, sizeof(GetURLParameter_Params));
 	memcpy_s(&GetURLParameter_Params.ParameterName, sizeof(GetURLParameter_Params.ParameterName), &ParameterName, sizeof(ParameterName));
 
-	uFnGetURLParameter->iNative = 0;
-	uFnGetURLParameter->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetURLParameter, &GetURLParameter_Params, nullptr);
-	uFnGetURLParameter->FunctionFlags |= 0x400;
-	uFnGetURLParameter->iNative = 22056;
 
 	return GetURLParameter_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpResponseWindows.GetHeaders
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21772])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21774])
 // Parameter Info:
 // class TArray<class FString>    ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -862,23 +758,19 @@ class TArray<class FString> UHttpResponseWindows::GetHeaders()
 
 	if (!uFnGetHeaders)
 	{
-		uFnGetHeaders = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPRESPONSEWINDOWS));
+		uFnGetHeaders = UFunction::FindFunction("Function WinDrv.HttpResponseWindows.GetHeaders");
 	}
 
 	UHttpResponseWindows_execGetHeaders_Params GetHeaders_Params;
 	memset(&GetHeaders_Params, 0, sizeof(GetHeaders_Params));
 
-	uFnGetHeaders->iNative = 0;
-	uFnGetHeaders->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetHeaders, &GetHeaders_Params, nullptr);
-	uFnGetHeaders->FunctionFlags |= 0x400;
-	uFnGetHeaders->iNative = 21772;
 
 	return GetHeaders_Params.ReturnValue;
 };
 
 // Function WinDrv.HttpResponseWindows.GetHeader
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21771])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21773])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // class FString                  HeaderName                     (CPF_Parm | CPF_NeedCtorLink)
@@ -889,18 +781,14 @@ class FString UHttpResponseWindows::GetHeader(const class FString& HeaderName)
 
 	if (!uFnGetHeader)
 	{
-		uFnGetHeader = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPRESPONSEWINDOWS));
+		uFnGetHeader = UFunction::FindFunction("Function WinDrv.HttpResponseWindows.GetHeader");
 	}
 
 	UHttpResponseWindows_execGetHeader_Params GetHeader_Params;
 	memset(&GetHeader_Params, 0, sizeof(GetHeader_Params));
 	memcpy_s(&GetHeader_Params.HeaderName, sizeof(GetHeader_Params.HeaderName), &HeaderName, sizeof(HeaderName));
 
-	uFnGetHeader->iNative = 0;
-	uFnGetHeader->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetHeader, &GetHeader_Params, nullptr);
-	uFnGetHeader->FunctionFlags |= 0x400;
-	uFnGetHeader->iNative = 21771;
 
 	return GetHeader_Params.ReturnValue;
 };
@@ -916,7 +804,7 @@ bool UHttpRequestWindowsMcp::ProcessRequest()
 
 	if (!uFnProcessRequest)
 	{
-		uFnProcessRequest = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWSMCP));
+		uFnProcessRequest = UFunction::FindFunction("Function WinDrv.HttpRequestWindowsMcp.ProcessRequest");
 	}
 
 	UHttpRequestWindowsMcp_execProcessRequest_Params ProcessRequest_Params;

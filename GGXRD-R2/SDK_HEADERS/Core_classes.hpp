@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -191,7 +190,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_OBJECT));
+			uClassPointer = UObject::FindClass("Class Core.Object");
 		}
 
 		return uClassPointer;
@@ -546,7 +545,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_TEXTBUFFER));
+			uClassPointer = UObject::FindClass("Class Core.TextBuffer");
 		}
 
 		return uClassPointer;
@@ -568,7 +567,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_SUBSYSTEM));
+			uClassPointer = UObject::FindClass("Class Core.Subsystem");
 		}
 
 		return uClassPointer;
@@ -607,7 +606,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_SYSTEM));
+			uClassPointer = UObject::FindClass("Class Core.System");
 		}
 
 		return uClassPointer;
@@ -629,7 +628,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_PACKAGEMAP));
+			uClassPointer = UObject::FindClass("Class Core.PackageMap");
 		}
 
 		return uClassPointer;
@@ -651,7 +650,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_OBJECTSERIALIZER));
+			uClassPointer = UObject::FindClass("Class Core.ObjectSerializer");
 		}
 
 		return uClassPointer;
@@ -673,7 +672,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_OBJECTREDIRECTOR));
+			uClassPointer = UObject::FindClass("Class Core.ObjectRedirector");
 		}
 
 		return uClassPointer;
@@ -695,7 +694,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_METADATA));
+			uClassPointer = UObject::FindClass("Class Core.MetaData");
 		}
 
 		return uClassPointer;
@@ -717,7 +716,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_LINKER));
+			uClassPointer = UObject::FindClass("Class Core.Linker");
 		}
 
 		return uClassPointer;
@@ -739,7 +738,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_LINKERSAVE));
+			uClassPointer = UObject::FindClass("Class Core.LinkerSave");
 		}
 
 		return uClassPointer;
@@ -761,7 +760,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_LINKERLOAD));
+			uClassPointer = UObject::FindClass("Class Core.LinkerLoad");
 		}
 
 		return uClassPointer;
@@ -782,7 +781,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_INTERFACE));
+			uClassPointer = UObject::FindClass("Class Core.Interface");
 		}
 
 		return uClassPointer;
@@ -804,7 +803,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_FIELD));
+			uClassPointer = UObject::FindClass("Class Core.Field");
 		}
 
 		return uClassPointer;
@@ -830,7 +829,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_STRUCT));
+			uClassPointer = UObject::FindClass("Class Core.Struct");
 		}
 
 		return uClassPointer;
@@ -852,7 +851,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_SCRIPTSTRUCT));
+			uClassPointer = UObject::FindClass("Class Core.ScriptStruct");
 		}
 
 		return uClassPointer;
@@ -876,7 +875,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_FUNCTION));
+			uClassPointer = UObject::FindClass("Class Core.Function");
 		}
 
 		return uClassPointer;
@@ -904,7 +903,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_PROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.Property");
 		}
 
 		return uClassPointer;
@@ -926,7 +925,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_STRUCTPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.StructProperty");
 		}
 
 		return uClassPointer;
@@ -947,7 +946,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_STRPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.StrProperty");
 		}
 
 		return uClassPointer;
@@ -969,7 +968,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_OBJECTPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.ObjectProperty");
 		}
 
 		return uClassPointer;
@@ -990,7 +989,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_COMPONENTPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.ComponentProperty");
 		}
 
 		return uClassPointer;
@@ -1012,7 +1011,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_CLASSPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.ClassProperty");
 		}
 
 		return uClassPointer;
@@ -1033,7 +1032,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_NAMEPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.NameProperty");
 		}
 
 		return uClassPointer;
@@ -1056,7 +1055,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_MAPPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.MapProperty");
 		}
 
 		return uClassPointer;
@@ -1077,7 +1076,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_INTPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.IntProperty");
 		}
 
 		return uClassPointer;
@@ -1099,7 +1098,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_INTERFACEPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.InterfaceProperty");
 		}
 
 		return uClassPointer;
@@ -1120,7 +1119,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_FLOATPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.FloatProperty");
 		}
 
 		return uClassPointer;
@@ -1142,7 +1141,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_DELEGATEPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.DelegateProperty");
 		}
 
 		return uClassPointer;
@@ -1164,7 +1163,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_BYTEPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.ByteProperty");
 		}
 
 		return uClassPointer;
@@ -1186,7 +1185,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_BOOLPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.BoolProperty");
 		}
 
 		return uClassPointer;
@@ -1208,7 +1207,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_ARRAYPROPERTY));
+			uClassPointer = UObject::FindClass("Class Core.ArrayProperty");
 		}
 
 		return uClassPointer;
@@ -1230,7 +1229,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_ENUM));
+			uClassPointer = UObject::FindClass("Class Core.Enum");
 		}
 
 		return uClassPointer;
@@ -1252,7 +1251,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_CONST));
+			uClassPointer = UObject::FindClass("Class Core.Const");
 		}
 
 		return uClassPointer;
@@ -1283,7 +1282,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_FACTORY));
+			uClassPointer = UObject::FindClass("Class Core.Factory");
 		}
 
 		return uClassPointer;
@@ -1304,7 +1303,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_TEXTBUFFERFACTORY));
+			uClassPointer = UObject::FindClass("Class Core.TextBufferFactory");
 		}
 
 		return uClassPointer;
@@ -1329,7 +1328,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_EXPORTER));
+			uClassPointer = UObject::FindClass("Class Core.Exporter");
 		}
 
 		return uClassPointer;
@@ -1352,7 +1351,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_COMPONENT));
+			uClassPointer = UObject::FindClass("Class Core.Component");
 		}
 
 		return uClassPointer;
@@ -1376,7 +1375,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_DISTRIBUTIONVECTOR));
+			uClassPointer = UObject::FindClass("Class Core.DistributionVector");
 		}
 
 		return uClassPointer;
@@ -1401,7 +1400,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_DISTRIBUTIONFLOAT));
+			uClassPointer = UObject::FindClass("Class Core.DistributionFloat");
 		}
 
 		return uClassPointer;
@@ -1433,7 +1432,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_COMMANDLET));
+			uClassPointer = UObject::FindClass("Class Core.Commandlet");
 		}
 
 		return uClassPointer;
@@ -1455,7 +1454,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_HELPCOMMANDLET));
+			uClassPointer = UObject::FindClass("Class Core.HelpCommandlet");
 		}
 
 		return uClassPointer;
@@ -1478,7 +1477,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_STATE));
+			uClassPointer = UObject::FindClass("Class Core.State");
 		}
 
 		return uClassPointer;
@@ -1500,7 +1499,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_PACKAGE));
+			uClassPointer = UObject::FindClass("Class Core.Package");
 		}
 
 		return uClassPointer;
@@ -1522,7 +1521,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_CORE_CLASS));
+			uClassPointer = UObject::FindClass("Class Core.Class");
 		}
 
 		return uClassPointer;

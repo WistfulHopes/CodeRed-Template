@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -312,7 +311,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_CLIENTBEACONADDRESSRESOLVER));
+			uClassPointer = UObject::FindClass("Class IpDrv.ClientBeaconAddressResolver");
 		}
 
 		return uClassPointer;
@@ -338,7 +337,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_HTTPDOWNLOAD));
+			uClassPointer = UObject::FindClass("Class IpDrv.HTTPDownload");
 		}
 
 		return uClassPointer;
@@ -368,7 +367,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_INTERNETLINK));
+			uClassPointer = UObject::FindClass("Class IpDrv.InternetLink");
 		}
 
 		return uClassPointer;
@@ -403,7 +402,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_TCPLINK));
+			uClassPointer = UObject::FindClass("Class IpDrv.TcpLink");
 		}
 
 		return uClassPointer;
@@ -441,7 +440,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPSERVICEBASE));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpServiceBase");
 		}
 
 		return uClassPointer;
@@ -466,7 +465,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPBASE));
+			uClassPointer = UObject::FindClass("Class IpDrv.MCPBase");
 		}
 
 		return uClassPointer;
@@ -491,7 +490,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINEEVENTSINTERFACEMCP));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlineEventsInterfaceMcp");
 		}
 
 		return uClassPointer;
@@ -520,7 +519,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINENEWSINTERFACEMCP));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlineNewsInterfaceMcp");
 		}
 
 		return uClassPointer;
@@ -555,7 +554,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINETITLEFILEDOWNLOADBASE));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlineTitleFileDownloadBase");
 		}
 
 		return uClassPointer;
@@ -591,7 +590,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINETITLEFILEDOWNLOADMCP));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlineTitleFileDownloadMcp");
 		}
 
 		return uClassPointer;
@@ -618,7 +617,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINETITLEFILEDOWNLOADWEB));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlineTitleFileDownloadWeb");
 		}
 
 		return uClassPointer;
@@ -655,7 +654,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_TITLEFILEDOWNLOADCACHE));
+			uClassPointer = UObject::FindClass("Class IpDrv.TitleFileDownloadCache");
 		}
 
 		return uClassPointer;
@@ -700,7 +699,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPMESSAGEBASE));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpMessageBase");
 		}
 
 		return uClassPointer;
@@ -742,7 +741,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPMESSAGEMANAGER));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpMessageManager");
 		}
 
 		return uClassPointer;
@@ -792,7 +791,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPUSERCLOUDFILEDOWNLOAD));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpUserCloudFileDownload");
 		}
 
 		return uClassPointer;
@@ -859,7 +858,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MESHBEACON));
+			uClassPointer = UObject::FindClass("Class IpDrv.MeshBeacon");
 		}
 
 		return uClassPointer;
@@ -897,7 +896,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MESHBEACONCLIENT));
+			uClassPointer = UObject::FindClass("Class IpDrv.MeshBeaconClient");
 		}
 
 		return uClassPointer;
@@ -937,7 +936,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MESHBEACONHOST));
+			uClassPointer = UObject::FindClass("Class IpDrv.MeshBeaconHost");
 		}
 
 		return uClassPointer;
@@ -982,7 +981,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINESUBSYSTEMCOMMONIMPL));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlineSubsystemCommonImpl");
 		}
 
 		return uClassPointer;
@@ -1037,7 +1036,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINEAUTHINTERFACEIMPL));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlineAuthInterfaceImpl");
 		}
 
 		return uClassPointer;
@@ -1162,7 +1161,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINEGAMEINTERFACEIMPL));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlineGameInterfaceImpl");
 		}
 
 		return uClassPointer;
@@ -1303,7 +1302,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINEPLAYLISTMANAGER));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlinePlaylistManager");
 		}
 
 		return uClassPointer;
@@ -1361,7 +1360,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_PARTYBEACON));
+			uClassPointer = UObject::FindClass("Class IpDrv.PartyBeacon");
 		}
 
 		return uClassPointer;
@@ -1398,7 +1397,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_PARTYBEACONCLIENT));
+			uClassPointer = UObject::FindClass("Class IpDrv.PartyBeaconClient");
 		}
 
 		return uClassPointer;
@@ -1443,7 +1442,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_PARTYBEACONHOST));
+			uClassPointer = UObject::FindClass("Class IpDrv.PartyBeaconHost");
 		}
 
 		return uClassPointer;
@@ -1486,7 +1485,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_TCPIPCONNECTION));
+			uClassPointer = UObject::FindClass("Class IpDrv.TcpipConnection");
 		}
 
 		return uClassPointer;
@@ -1510,7 +1509,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_TCPNETDRIVER));
+			uClassPointer = UObject::FindClass("Class IpDrv.TcpNetDriver");
 		}
 
 		return uClassPointer;
@@ -1540,7 +1539,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_WEBREQUEST));
+			uClassPointer = UObject::FindClass("Class IpDrv.WebRequest");
 		}
 
 		return uClassPointer;
@@ -1582,7 +1581,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_WEBRESPONSE));
+			uClassPointer = UObject::FindClass("Class IpDrv.WebResponse");
 		}
 
 		return uClassPointer;
@@ -1628,7 +1627,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINEPLAYLISTPROVIDER));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlinePlaylistProvider");
 		}
 
 		return uClassPointer;
@@ -1656,7 +1655,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_UIDATASTORE_ONLINEPLAYLISTS));
+			uClassPointer = UObject::FindClass("Class IpDrv.UIDataStore_OnlinePlaylists");
 		}
 
 		return uClassPointer;
@@ -1685,7 +1684,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_WEBAPPLICATION));
+			uClassPointer = UObject::FindClass("Class IpDrv.WebApplication");
 		}
 
 		return uClassPointer;
@@ -1724,7 +1723,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_WEBSERVER));
+			uClassPointer = UObject::FindClass("Class IpDrv.WebServer");
 		}
 
 		return uClassPointer;
@@ -1750,7 +1749,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_HELLOWEB));
+			uClassPointer = UObject::FindClass("Class IpDrv.HelloWeb");
 		}
 
 		return uClassPointer;
@@ -1773,7 +1772,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_IMAGESERVER));
+			uClassPointer = UObject::FindClass("Class IpDrv.ImageServer");
 		}
 
 		return uClassPointer;
@@ -1800,7 +1799,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPSERVICECONFIG));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpServiceConfig");
 		}
 
 		return uClassPointer;
@@ -1828,7 +1827,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPCLASHMOBBASE));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpClashMobBase");
 		}
 
 		return uClassPointer;
@@ -1869,7 +1868,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPCLASHMOBFILEDOWNLOAD));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpClashMobFileDownload");
 		}
 
 		return uClassPointer;
@@ -1906,7 +1905,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPCLASHMOBMANAGER));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpClashMobManager");
 		}
 
 		return uClassPointer;
@@ -1960,7 +1959,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPGROUPSBASE));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpGroupsBase");
 		}
 
 		return uClassPointer;
@@ -2016,7 +2015,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPGROUPSMANAGER));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpGroupsManager");
 		}
 
 		return uClassPointer;
@@ -2060,7 +2059,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPIDMAPPINGBASE));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpIdMappingBase");
 		}
 
 		return uClassPointer;
@@ -2092,7 +2091,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPIDMAPPINGMANAGER));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpIdMappingManager");
 		}
 
 		return uClassPointer;
@@ -2120,7 +2119,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPSERVERTIMEBASE));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpServerTimeBase");
 		}
 
 		return uClassPointer;
@@ -2148,7 +2147,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPSERVERTIMEMANAGER));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpServerTimeManager");
 		}
 
 		return uClassPointer;
@@ -2176,7 +2175,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPUSERMANAGERBASE));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpUserManagerBase");
 		}
 
 		return uClassPointer;
@@ -2218,7 +2217,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_MCPUSERMANAGER));
+			uClassPointer = UObject::FindClass("Class IpDrv.McpUserManager");
 		}
 
 		return uClassPointer;
@@ -2255,7 +2254,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_ONLINEIMAGEDOWNLOADERWEB));
+			uClassPointer = UObject::FindClass("Class IpDrv.OnlineImageDownloaderWeb");
 		}
 
 		return uClassPointer;
@@ -2295,7 +2294,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_IPDRV_WEBCONNECTION));
+			uClassPointer = UObject::FindClass("Class IpDrv.WebConnection");
 		}
 
 		return uClassPointer;

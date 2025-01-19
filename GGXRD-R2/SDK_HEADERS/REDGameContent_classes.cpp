@@ -32,7 +32,7 @@ int32_t UREDGfxMovie_Battle_ChallengeResult::IsAnimeEndScript()
 
 	if (!uFnIsAnimeEndScript)
 	{
-		uFnIsAnimeEndScript = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_CHALLENGERESULT));
+		uFnIsAnimeEndScript = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_ChallengeResult.IsAnimeEndScript");
 	}
 
 	UREDGfxMovie_Battle_ChallengeResult_execIsAnimeEndScript_Params IsAnimeEndScript_Params;
@@ -54,7 +54,7 @@ void UREDGfxMovie_Battle_ChallengeResult::Update(float DeltaTime)
 
 	if (!uFnUpdate)
 	{
-		uFnUpdate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_CHALLENGERESULT));
+		uFnUpdate = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_ChallengeResult.Update");
 	}
 
 	UREDGfxMovie_Battle_ChallengeResult_execUpdate_Params Update_Params;
@@ -74,7 +74,7 @@ void UREDGfxMovie_Battle_ChallengeResult::UpdateGood()
 
 	if (!uFnUpdateGood)
 	{
-		uFnUpdateGood = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_CHALLENGERESULT));
+		uFnUpdateGood = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_ChallengeResult.UpdateGood");
 	}
 
 	UREDGfxMovie_Battle_ChallengeResult_execUpdateGood_Params UpdateGood_Params;
@@ -93,7 +93,7 @@ void UREDGfxMovie_Battle_ChallengeResult::UpdateMiss()
 
 	if (!uFnUpdateMiss)
 	{
-		uFnUpdateMiss = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_CHALLENGERESULT));
+		uFnUpdateMiss = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_ChallengeResult.UpdateMiss");
 	}
 
 	UREDGfxMovie_Battle_ChallengeResult_execUpdateMiss_Params UpdateMiss_Params;
@@ -112,7 +112,7 @@ void UREDGfxMovie_Battle_ChallengeResult::UpdateFailed()
 
 	if (!uFnUpdateFailed)
 	{
-		uFnUpdateFailed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_CHALLENGERESULT));
+		uFnUpdateFailed = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_ChallengeResult.UpdateFailed");
 	}
 
 	UREDGfxMovie_Battle_ChallengeResult_execUpdateFailed_Params UpdateFailed_Params;
@@ -131,7 +131,7 @@ void UREDGfxMovie_Battle_ChallengeResult::UpdateTry()
 
 	if (!uFnUpdateTry)
 	{
-		uFnUpdateTry = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_CHALLENGERESULT));
+		uFnUpdateTry = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_ChallengeResult.UpdateTry");
 	}
 
 	UREDGfxMovie_Battle_ChallengeResult_execUpdateTry_Params UpdateTry_Params;
@@ -150,7 +150,7 @@ void UREDGfxMovie_Battle_ChallengeResult::UpdateYouRock()
 
 	if (!uFnUpdateYouRock)
 	{
-		uFnUpdateYouRock = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_CHALLENGERESULT));
+		uFnUpdateYouRock = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_ChallengeResult.UpdateYouRock");
 	}
 
 	UREDGfxMovie_Battle_ChallengeResult_execUpdateYouRock_Params UpdateYouRock_Params;
@@ -171,7 +171,7 @@ bool UREDGfxMovie_Battle_ChallengeResult::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_CHALLENGERESULT));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_ChallengeResult.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_ChallengeResult_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -194,7 +194,7 @@ int32_t UREDGfxMovie_Battle_Destroyed::IsAnimeEndScript()
 
 	if (!uFnIsAnimeEndScript)
 	{
-		uFnIsAnimeEndScript = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DESTROYED));
+		uFnIsAnimeEndScript = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Destroyed.IsAnimeEndScript");
 	}
 
 	UREDGfxMovie_Battle_Destroyed_execIsAnimeEndScript_Params IsAnimeEndScript_Params;
@@ -217,7 +217,7 @@ bool UREDGfxMovie_Battle_Destroyed::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DESTROYED));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Destroyed.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_Destroyed_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -240,7 +240,7 @@ int32_t UREDGfxMovie_Battle_DestroyedDZY::IsAnimeEndScript()
 
 	if (!uFnIsAnimeEndScript)
 	{
-		uFnIsAnimeEndScript = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DESTROYEDDZY));
+		uFnIsAnimeEndScript = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_DestroyedDZY.IsAnimeEndScript");
 	}
 
 	UREDGfxMovie_Battle_DestroyedDZY_execIsAnimeEndScript_Params IsAnimeEndScript_Params;
@@ -263,7 +263,7 @@ bool UREDGfxMovie_Battle_DestroyedDZY::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DESTROYEDDZY));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_DestroyedDZY.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_DestroyedDZY_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -285,7 +285,7 @@ void UREDGfxMovie_Battle_DoubleKO::Show()
 
 	if (!uFnShow)
 	{
-		uFnShow = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DOUBLEKO));
+		uFnShow = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_DoubleKO.Show");
 	}
 
 	UREDGfxMovie_Battle_DoubleKO_execShow_Params Show_Params;
@@ -306,7 +306,7 @@ bool UREDGfxMovie_Battle_DoubleKO::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DOUBLEKO));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_DoubleKO.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_DoubleKO_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -328,7 +328,7 @@ void UREDGfxMovie_Battle_Draw::Show()
 
 	if (!uFnShow)
 	{
-		uFnShow = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DRAW));
+		uFnShow = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Draw.Show");
 	}
 
 	UREDGfxMovie_Battle_Draw_execShow_Params Show_Params;
@@ -349,7 +349,7 @@ bool UREDGfxMovie_Battle_Draw::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DRAW));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Draw.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_Draw_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -371,7 +371,7 @@ void UREDGfxMovie_Battle_FinishSlash::Show()
 
 	if (!uFnShow)
 	{
-		uFnShow = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_FINISHSLASH));
+		uFnShow = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_FinishSlash.Show");
 	}
 
 	UREDGfxMovie_Battle_FinishSlash_execShow_Params Show_Params;
@@ -392,7 +392,7 @@ bool UREDGfxMovie_Battle_FinishSlash::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_FINISHSLASH));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_FinishSlash.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_FinishSlash_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -415,7 +415,7 @@ int32_t UREDGfxMovie_Battle_Lose::IsAnimeEndScript()
 
 	if (!uFnIsAnimeEndScript)
 	{
-		uFnIsAnimeEndScript = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_LOSE));
+		uFnIsAnimeEndScript = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Lose.IsAnimeEndScript");
 	}
 
 	UREDGfxMovie_Battle_Lose_execIsAnimeEndScript_Params IsAnimeEndScript_Params;
@@ -437,7 +437,7 @@ void UREDGfxMovie_Battle_Lose::Update(float DeltaTime)
 
 	if (!uFnUpdate)
 	{
-		uFnUpdate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_LOSE));
+		uFnUpdate = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Lose.Update");
 	}
 
 	UREDGfxMovie_Battle_Lose_execUpdate_Params Update_Params;
@@ -458,7 +458,7 @@ void UREDGfxMovie_Battle_Lose::AS_PlayerLabel(const class FString& Label)
 
 	if (!uFnAS_PlayerLabel)
 	{
-		uFnAS_PlayerLabel = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_LOSE));
+		uFnAS_PlayerLabel = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Lose.AS_PlayerLabel");
 	}
 
 	UREDGfxMovie_Battle_Lose_execAS_PlayerLabel_Params AS_PlayerLabel_Params;
@@ -480,7 +480,7 @@ bool UREDGfxMovie_Battle_Lose::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_LOSE));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Lose.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_Lose_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -502,7 +502,7 @@ void UREDGfxMovie_Battle_Perfect::Show()
 
 	if (!uFnShow)
 	{
-		uFnShow = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_PERFECT));
+		uFnShow = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Perfect.Show");
 	}
 
 	UREDGfxMovie_Battle_Perfect_execShow_Params Show_Params;
@@ -523,7 +523,7 @@ bool UREDGfxMovie_Battle_Perfect::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_PERFECT));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Perfect.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_Perfect_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -546,7 +546,7 @@ void UREDGfxMovie_Battle_RoundStart::Update(float DeltaTime)
 
 	if (!uFnUpdate)
 	{
-		uFnUpdate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_ROUNDSTART));
+		uFnUpdate = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_RoundStart.Update");
 	}
 
 	UREDGfxMovie_Battle_RoundStart_execUpdate_Params Update_Params;
@@ -567,7 +567,7 @@ void UREDGfxMovie_Battle_RoundStart::ASCallBack_Func(const class FString& Typena
 
 	if (!uFnASCallBack_Func)
 	{
-		uFnASCallBack_Func = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_ROUNDSTART));
+		uFnASCallBack_Func = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_RoundStart.ASCallBack_Func");
 	}
 
 	UREDGfxMovie_Battle_RoundStart_execASCallBack_Func_Params ASCallBack_Func_Params;
@@ -588,7 +588,7 @@ void UREDGfxMovie_Battle_RoundStart::AS_RootLabel(const class FString& Label)
 
 	if (!uFnAS_RootLabel)
 	{
-		uFnAS_RootLabel = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_ROUNDSTART));
+		uFnAS_RootLabel = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_RoundStart.AS_RootLabel");
 	}
 
 	UREDGfxMovie_Battle_RoundStart_execAS_RootLabel_Params AS_RootLabel_Params;
@@ -609,7 +609,7 @@ void UREDGfxMovie_Battle_RoundStart::ShowRoundStart(bool isHOHDisp)
 
 	if (!uFnShowRoundStart)
 	{
-		uFnShowRoundStart = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_ROUNDSTART));
+		uFnShowRoundStart = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_RoundStart.ShowRoundStart");
 	}
 
 	UREDGfxMovie_Battle_RoundStart_execShowRoundStart_Params ShowRoundStart_Params;
@@ -630,7 +630,7 @@ int32_t UREDGfxMovie_Battle_RoundStart::IsAnimeEndScript()
 
 	if (!uFnIsAnimeEndScript)
 	{
-		uFnIsAnimeEndScript = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_ROUNDSTART));
+		uFnIsAnimeEndScript = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_RoundStart.IsAnimeEndScript");
 	}
 
 	UREDGfxMovie_Battle_RoundStart_execIsAnimeEndScript_Params IsAnimeEndScript_Params;
@@ -653,7 +653,7 @@ bool UREDGfxMovie_Battle_RoundStart::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_ROUNDSTART));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_RoundStart.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_RoundStart_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -676,7 +676,7 @@ void UREDGfxMovie_Battle_TestResult::Update(float DeltaTime)
 
 	if (!uFnUpdate)
 	{
-		uFnUpdate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_TESTRESULT));
+		uFnUpdate = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_TestResult.Update");
 	}
 
 	UREDGfxMovie_Battle_TestResult_execUpdate_Params Update_Params;
@@ -698,7 +698,7 @@ bool UREDGfxMovie_Battle_TestResult::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_TESTRESULT));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_TestResult.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_TestResult_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -720,7 +720,7 @@ void UREDGfxMovie_Battle_Timeup::Show()
 
 	if (!uFnShow)
 	{
-		uFnShow = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_TIMEUP));
+		uFnShow = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Timeup.Show");
 	}
 
 	UREDGfxMovie_Battle_Timeup_execShow_Params Show_Params;
@@ -741,7 +741,7 @@ bool UREDGfxMovie_Battle_Timeup::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_TIMEUP));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Timeup.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_Timeup_execMovieStartInternal_Params MovieStartInternal_Params;
@@ -764,7 +764,7 @@ int32_t UREDGfxMovie_Battle_Win::IsAnimeEndScript()
 
 	if (!uFnIsAnimeEndScript)
 	{
-		uFnIsAnimeEndScript = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_WIN));
+		uFnIsAnimeEndScript = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Win.IsAnimeEndScript");
 	}
 
 	UREDGfxMovie_Battle_Win_execIsAnimeEndScript_Params IsAnimeEndScript_Params;
@@ -786,7 +786,7 @@ void UREDGfxMovie_Battle_Win::Update(float DeltaTime)
 
 	if (!uFnUpdate)
 	{
-		uFnUpdate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_WIN));
+		uFnUpdate = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Win.Update");
 	}
 
 	UREDGfxMovie_Battle_Win_execUpdate_Params Update_Params;
@@ -807,7 +807,7 @@ void UREDGfxMovie_Battle_Win::AS_PlayerLabel(const class FString& Label)
 
 	if (!uFnAS_PlayerLabel)
 	{
-		uFnAS_PlayerLabel = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_WIN));
+		uFnAS_PlayerLabel = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Win.AS_PlayerLabel");
 	}
 
 	UREDGfxMovie_Battle_Win_execAS_PlayerLabel_Params AS_PlayerLabel_Params;
@@ -829,7 +829,7 @@ bool UREDGfxMovie_Battle_Win::MovieStartInternal(bool StartPaused)
 
 	if (!uFnMovieStartInternal)
 	{
-		uFnMovieStartInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_WIN));
+		uFnMovieStartInternal = UFunction::FindFunction("Function REDGameContent.REDGfxMovie_Battle_Win.MovieStartInternal");
 	}
 
 	UREDGfxMovie_Battle_Win_execMovieStartInternal_Params MovieStartInternal_Params;

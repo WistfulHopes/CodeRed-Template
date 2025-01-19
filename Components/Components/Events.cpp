@@ -136,14 +136,6 @@ void HooksComponent::PlayerControllerTick(PreEvent& event)
 	}
 }
 
-void HooksComponent::MenuNetworkRoomUpdate(PreEvent& event)
-{
-	if (event.Caller())
-	{
-		Instances.SetMenuNetworkRoom(event.GetCaller<UREDGfxMoviePlayer_MenuNetworkRoom>());
-	}
-}
-
 // Post Hooks
 
 class HooksComponent Hooks{};
@@ -201,7 +193,7 @@ void EventsComponent::DetachDetour()
 	}
 }
 
-void EventsComponent::ProcessEventDetour(class UObject* caller, class UFunction* function, void* params, void* result)
+void __fastcall EventsComponent::ProcessEventDetour(class UObject* caller, [[maybe_unused]] void* EDX, class UFunction* function, void* params, void* result)
 {
 	if (m_processEvent)
 	{
@@ -423,10 +415,9 @@ void EventsComponent::Initialize()
 
 	// Pre Hooks
 
-	HookEventPre("Function Engine.HUD.PostRender", [&](PreEvent& event) { Hooks.HUDPostRender(event); });
-	HookEventPre("Function Engine.GameViewportClient.PostRender", [&](PreEvent& event) { Hooks.GameViewPortPostRender(event); });
+	HookEventPre("Function REDGame.REDHUD.PostRender", [&](PreEvent& event) { Hooks.HUDPostRender(event); });
+	HookEventPre("Function REDGame.REDGameViewportClient.PostRender", [&](PreEvent& event) { Hooks.GameViewPortPostRender(event); });
 	HookEventPre("Function Engine.PlayerController.PlayerTick", [&](PreEvent& event) { Hooks.PlayerControllerTick(event); });
-	HookEventPre("Function REDGame.REDGfxMoviePlayer_MenuNetworkRoom.OnUpdate", [&](PreEvent& event) { Hooks.MenuNetworkRoomUpdate(event); });
 
 	// Post Hooks
 

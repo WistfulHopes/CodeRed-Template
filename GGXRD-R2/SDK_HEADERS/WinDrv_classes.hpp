@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -51,7 +50,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_FACEBOOKWINDOWS));
+			uClassPointer = UObject::FindClass("Class WinDrv.FacebookWindows");
 		}
 
 		return uClassPointer;
@@ -87,7 +86,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWS));
+			uClassPointer = UObject::FindClass("Class WinDrv.HttpRequestWindows");
 		}
 
 		return uClassPointer;
@@ -124,7 +123,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPRESPONSEWINDOWS));
+			uClassPointer = UObject::FindClass("Class WinDrv.HttpResponseWindows");
 		}
 
 		return uClassPointer;
@@ -159,7 +158,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_WINDOWSCLIENT));
+			uClassPointer = UObject::FindClass("Class WinDrv.WindowsClient");
 		}
 
 		return uClassPointer;
@@ -180,7 +179,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_XNAFORCEFEEDBACKMANAGER));
+			uClassPointer = UObject::FindClass("Class WinDrv.XnaForceFeedbackManager");
 		}
 
 		return uClassPointer;
@@ -203,7 +202,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_WINDRV_HTTPREQUESTWINDOWSMCP));
+			uClassPointer = UObject::FindClass("Class WinDrv.HttpRequestWindowsMcp");
 		}
 
 		return uClassPointer;

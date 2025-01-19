@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -3266,7 +3265,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.Actor");
 		}
 
 		return uClassPointer;
@@ -3539,7 +3538,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INFO));
+			uClassPointer = UObject::FindClass("Class Engine.Info");
 		}
 
 		return uClassPointer;
@@ -3564,7 +3563,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ZONEINFO));
+			uClassPointer = UObject::FindClass("Class Engine.ZoneInfo");
 		}
 
 		return uClassPointer;
@@ -3750,7 +3749,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WORLDINFO));
+			uClassPointer = UObject::FindClass("Class Engine.WorldInfo");
 		}
 
 		return uClassPointer;
@@ -3834,7 +3833,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOWNLOADABLECONTENTENUMERATOR));
+			uClassPointer = UObject::FindClass("Class Engine.DownloadableContentEnumerator");
 		}
 
 		return uClassPointer;
@@ -3871,7 +3870,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOWNLOADABLECONTENTMANAGER));
+			uClassPointer = UObject::FindClass("Class Engine.DownloadableContentManager");
 		}
 
 		return uClassPointer;
@@ -4154,7 +4153,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ENGINE));
+			uClassPointer = UObject::FindClass("Class Engine.Engine");
 		}
 
 		return uClassPointer;
@@ -4240,7 +4239,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEENGINE));
+			uClassPointer = UObject::FindClass("Class Engine.GameEngine");
 		}
 
 		return uClassPointer;
@@ -4267,7 +4266,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ENGINEBASETYPES));
+			uClassPointer = UObject::FindClass("Class Engine.EngineBaseTypes");
 		}
 
 		return uClassPointer;
@@ -4297,7 +4296,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_BRUSH));
+			uClassPointer = UObject::FindClass("Class Engine.Brush");
 		}
 
 		return uClassPointer;
@@ -4318,7 +4317,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_BRUSHSHAPE));
+			uClassPointer = UObject::FindClass("Class Engine.BrushShape");
 		}
 
 		return uClassPointer;
@@ -4343,7 +4342,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_VOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.Volume");
 		}
 
 		return uClassPointer;
@@ -4372,7 +4371,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_BLOCKINGVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.BlockingVolume");
 		}
 
 		return uClassPointer;
@@ -4395,7 +4394,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DYNAMICBLOCKINGVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.DynamicBlockingVolume");
 		}
 
 		return uClassPointer;
@@ -4421,7 +4420,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CULLDISTANCEVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.CullDistanceVolume");
 		}
 
 		return uClassPointer;
@@ -4448,7 +4447,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LEVELGRIDVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.LevelGridVolume");
 		}
 
 		return uClassPointer;
@@ -4476,7 +4475,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LEVELSTREAMINGVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.LevelStreamingVolume");
 		}
 
 		return uClassPointer;
@@ -4500,7 +4499,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIGHTMASSCHARACTERINDIRECTDETAILVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.LightmassCharacterIndirectDetailVolume");
 		}
 
 		return uClassPointer;
@@ -4521,7 +4520,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIGHTMASSIMPORTANCEVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.LightmassImportanceVolume");
 		}
 
 		return uClassPointer;
@@ -4542,7 +4541,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MASSIVELODOVERRIDEVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.MassiveLODOverrideVolume");
 		}
 
 		return uClassPointer;
@@ -4563,7 +4562,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATHBLOCKINGVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.PathBlockingVolume");
 		}
 
 		return uClassPointer;
@@ -4610,7 +4609,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PHYSICSVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.PhysicsVolume");
 		}
 
 		return uClassPointer;
@@ -4651,7 +4650,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DEFAULTPHYSICSVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.DefaultPhysicsVolume");
 		}
 
 		return uClassPointer;
@@ -4674,7 +4673,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GRAVITYVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.GravityVolume");
 		}
 
 		return uClassPointer;
@@ -4704,7 +4703,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LADDERVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.LadderVolume");
 		}
 
 		return uClassPointer;
@@ -4731,7 +4730,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PORTALVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.PortalVolume");
 		}
 
 		return uClassPointer;
@@ -4757,7 +4756,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_POSTPROCESSVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.PostProcessVolume");
 		}
 
 		return uClassPointer;
@@ -4781,7 +4780,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PRECOMPUTEDVISIBILITYOVERRIDEVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.PrecomputedVisibilityOverrideVolume");
 		}
 
 		return uClassPointer;
@@ -4802,7 +4801,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PRECOMPUTEDVISIBILITYVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.PrecomputedVisibilityVolume");
 		}
 
 		return uClassPointer;
@@ -4828,7 +4827,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_REVERBVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.ReverbVolume");
 		}
 
 		return uClassPointer;
@@ -4849,7 +4848,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TRIGGERVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.TriggerVolume");
 		}
 
 		return uClassPointer;
@@ -4876,7 +4875,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DROPPEDPICKUP));
+			uClassPointer = UObject::FindClass("Class Engine.DroppedPickup");
 		}
 
 		return uClassPointer;
@@ -4921,7 +4920,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DYNAMICSMACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.DynamicSMActor");
 		}
 
 		return uClassPointer;
@@ -4969,7 +4968,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.InterpActor");
 		}
 
 		return uClassPointer;
@@ -5010,7 +5009,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_EMITTER));
+			uClassPointer = UObject::FindClass("Class Engine.Emitter");
 		}
 
 		return uClassPointer;
@@ -5061,7 +5060,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_EMITTERPOOL));
+			uClassPointer = UObject::FindClass("Class Engine.EmitterPool");
 		}
 
 		return uClassPointer;
@@ -5128,7 +5127,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_HUD));
+			uClassPointer = UObject::FindClass("Class Engine.HUD");
 		}
 
 		return uClassPointer;
@@ -5215,7 +5214,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AUTOTESTMANAGER));
+			uClassPointer = UObject::FindClass("Class Engine.AutoTestManager");
 		}
 
 		return uClassPointer;
@@ -5262,7 +5261,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_COVERGROUP));
+			uClassPointer = UObject::FindClass("Class Engine.CoverGroup");
 		}
 
 		return uClassPointer;
@@ -5292,7 +5291,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FILEWRITER));
+			uClassPointer = UObject::FindClass("Class Engine.FileWriter");
 		}
 
 		return uClassPointer;
@@ -5317,7 +5316,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FILELOG));
+			uClassPointer = UObject::FindClass("Class Engine.FileLog");
 		}
 
 		return uClassPointer;
@@ -5443,7 +5442,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEINFO));
+			uClassPointer = UObject::FindClass("Class Engine.GameInfo");
 		}
 
 		return uClassPointer;
@@ -5632,7 +5631,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MUTATOR));
+			uClassPointer = UObject::FindClass("Class Engine.Mutator");
 		}
 
 		return uClassPointer;
@@ -5679,7 +5678,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_POTENTIALCLIMBWATCHER));
+			uClassPointer = UObject::FindClass("Class Engine.PotentialClimbWatcher");
 		}
 
 		return uClassPointer;
@@ -5706,7 +5705,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ROUTE));
+			uClassPointer = UObject::FindClass("Class Engine.Route");
 		}
 
 		return uClassPointer;
@@ -5730,7 +5729,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WINDPOINTSOURCE));
+			uClassPointer = UObject::FindClass("Class Engine.WindPointSource");
 		}
 
 		return uClassPointer;
@@ -5766,7 +5765,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INVENTORY));
+			uClassPointer = UObject::FindClass("Class Engine.Inventory");
 		}
 
 		return uClassPointer;
@@ -5825,7 +5824,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WEAPON));
+			uClassPointer = UObject::FindClass("Class Engine.Weapon");
 		}
 
 		return uClassPointer;
@@ -5931,7 +5930,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INVENTORYMANAGER));
+			uClassPointer = UObject::FindClass("Class Engine.InventoryManager");
 		}
 
 		return uClassPointer;
@@ -5984,7 +5983,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_KEYPOINT));
+			uClassPointer = UObject::FindClass("Class Engine.Keypoint");
 		}
 
 		return uClassPointer;
@@ -6007,7 +6006,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TARGETPOINT));
+			uClassPointer = UObject::FindClass("Class Engine.TargetPoint");
 		}
 
 		return uClassPointer;
@@ -6029,7 +6028,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALINSTANCEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialInstanceActor");
 		}
 
 		return uClassPointer;
@@ -6061,7 +6060,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATINEEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.MatineeActor");
 		}
 
 		return uClassPointer;
@@ -6143,7 +6142,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVIGATIONPOINT));
+			uClassPointer = UObject::FindClass("Class Engine.NavigationPoint");
 		}
 
 		return uClassPointer;
@@ -6217,7 +6216,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_COVERLINK));
+			uClassPointer = UObject::FindClass("Class Engine.CoverLink");
 		}
 
 		return uClassPointer;
@@ -6287,7 +6286,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOORMARKER));
+			uClassPointer = UObject::FindClass("Class Engine.DoorMarker");
 		}
 
 		return uClassPointer;
@@ -6315,7 +6314,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DYNAMICANCHOR));
+			uClassPointer = UObject::FindClass("Class Engine.DynamicAnchor");
 		}
 
 		return uClassPointer;
@@ -6338,7 +6337,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LADDER));
+			uClassPointer = UObject::FindClass("Class Engine.Ladder");
 		}
 
 		return uClassPointer;
@@ -6360,7 +6359,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AUTOLADDER));
+			uClassPointer = UObject::FindClass("Class Engine.AutoLadder");
 		}
 
 		return uClassPointer;
@@ -6387,7 +6386,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIFTCENTER));
+			uClassPointer = UObject::FindClass("Class Engine.LiftCenter");
 		}
 
 		return uClassPointer;
@@ -6414,7 +6413,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIFTEXIT));
+			uClassPointer = UObject::FindClass("Class Engine.LiftExit");
 		}
 
 		return uClassPointer;
@@ -6438,7 +6437,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATHNODE));
+			uClassPointer = UObject::FindClass("Class Engine.PathNode");
 		}
 
 		return uClassPointer;
@@ -6462,7 +6461,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_VOLUMEPATHNODE));
+			uClassPointer = UObject::FindClass("Class Engine.VolumePathNode");
 		}
 
 		return uClassPointer;
@@ -6494,7 +6493,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PICKUPFACTORY));
+			uClassPointer = UObject::FindClass("Class Engine.PickupFactory");
 		}
 
 		return uClassPointer;
@@ -6543,7 +6542,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PLAYERSTART));
+			uClassPointer = UObject::FindClass("Class Engine.PlayerStart");
 		}
 
 		return uClassPointer;
@@ -6567,7 +6566,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PORTALMARKER));
+			uClassPointer = UObject::FindClass("Class Engine.PortalMarker");
 		}
 
 		return uClassPointer;
@@ -6632,7 +6631,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PYLON));
+			uClassPointer = UObject::FindClass("Class Engine.Pylon");
 		}
 
 		return uClassPointer;
@@ -6665,7 +6664,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AISWITCHABLEPYLON));
+			uClassPointer = UObject::FindClass("Class Engine.AISwitchablePylon");
 		}
 
 		return uClassPointer;
@@ -6690,7 +6689,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DYNAMICPYLON));
+			uClassPointer = UObject::FindClass("Class Engine.DynamicPylon");
 		}
 
 		return uClassPointer;
@@ -6727,7 +6726,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TELEPORTER));
+			uClassPointer = UObject::FindClass("Class Engine.Teleporter");
 		}
 
 		return uClassPointer;
@@ -6755,7 +6754,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NOTE));
+			uClassPointer = UObject::FindClass("Class Engine.Note");
 		}
 
 		return uClassPointer;
@@ -6795,7 +6794,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PROJECTILE));
+			uClassPointer = UObject::FindClass("Class Engine.Projectile");
 		}
 
 		return uClassPointer;
@@ -6837,7 +6836,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RIGIDBODYBASE));
+			uClassPointer = UObject::FindClass("Class Engine.RigidBodyBase");
 		}
 
 		return uClassPointer;
@@ -6859,7 +6858,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTUREACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCaptureActor");
 		}
 
 		return uClassPointer;
@@ -6882,7 +6881,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTURE2DACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCapture2DActor");
 		}
 
 		return uClassPointer;
@@ -6905,7 +6904,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTURECUBEMAPACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCaptureCubeMapActor");
 		}
 
 		return uClassPointer;
@@ -6928,7 +6927,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTUREREFLECTACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCaptureReflectActor");
 		}
 
 		return uClassPointer;
@@ -6949,7 +6948,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTUREPORTALACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCapturePortalActor");
 		}
 
 		return uClassPointer;
@@ -6977,7 +6976,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PORTALTELEPORTER));
+			uClassPointer = UObject::FindClass("Class Engine.PortalTeleporter");
 		}
 
 		return uClassPointer;
@@ -7003,7 +7002,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_STATICMESHACTORBASE));
+			uClassPointer = UObject::FindClass("Class Engine.StaticMeshActorBase");
 		}
 
 		return uClassPointer;
@@ -7031,7 +7030,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_STATICMESHACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.StaticMeshActor");
 		}
 
 		return uClassPointer;
@@ -7055,7 +7054,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_STATICMESHCOLLECTIONACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.StaticMeshCollectionActor");
 		}
 
 		return uClassPointer;
@@ -7079,7 +7078,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_STATICMESHACTORBASEDONEXTREMECONTENT));
+			uClassPointer = UObject::FindClass("Class Engine.StaticMeshActorBasedOnExtremeContent");
 		}
 
 		return uClassPointer;
@@ -7105,7 +7104,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TRIGGER));
+			uClassPointer = UObject::FindClass("Class Engine.Trigger");
 		}
 
 		return uClassPointer;
@@ -7134,7 +7133,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TRIGGER_PAWNSONLY));
+			uClassPointer = UObject::FindClass("Class Engine.Trigger_PawnsOnly");
 		}
 
 		return uClassPointer;
@@ -7163,7 +7162,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ActorComponent");
 		}
 
 		return uClassPointer;
@@ -7266,7 +7265,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AUDIOCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.AudioComponent");
 		}
 
 		return uClassPointer;
@@ -7304,7 +7303,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPLINEAUDIOCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SplineAudioComponent");
 		}
 
 		return uClassPointer;
@@ -7327,7 +7326,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MULTICUESPLINEAUDIOCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.MultiCueSplineAudioComponent");
 		}
 
 		return uClassPointer;
@@ -7358,7 +7357,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SIMPLESPLINEAUDIOCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SimpleSplineAudioComponent");
 		}
 
 		return uClassPointer;
@@ -7389,7 +7388,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SIMPLESPLINENONLOOPAUDIOCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SimpleSplineNonLoopAudioComponent");
 		}
 
 		return uClassPointer;
@@ -7417,7 +7416,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_HEIGHTFOGCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.HeightFogComponent");
 		}
 
 		return uClassPointer;
@@ -7547,7 +7546,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PRIMITIVECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.PrimitiveComponent");
 		}
 
 		return uClassPointer;
@@ -7616,7 +7615,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ARROWCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ArrowComponent");
 		}
 
 		return uClassPointer;
@@ -7643,7 +7642,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_BRUSHCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.BrushComponent");
 		}
 
 		return uClassPointer;
@@ -7664,7 +7663,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CAMERACONECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.CameraConeComponent");
 		}
 
 		return uClassPointer;
@@ -7691,7 +7690,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CYLINDERCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.CylinderComponent");
 		}
 
 		return uClassPointer;
@@ -7719,7 +7718,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWBOXCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawBoxComponent");
 		}
 
 		return uClassPointer;
@@ -7747,7 +7746,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWCAPSULECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawCapsuleComponent");
 		}
 
 		return uClassPointer;
@@ -7772,7 +7771,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWCONECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawConeComponent");
 		}
 
 		return uClassPointer;
@@ -7803,7 +7802,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWCYLINDERCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawCylinderComponent");
 		}
 
 		return uClassPointer;
@@ -7830,7 +7829,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWFRUSTUMCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawFrustumComponent");
 		}
 
 		return uClassPointer;
@@ -7854,7 +7853,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWQUADCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawQuadComponent");
 		}
 
 		return uClassPointer;
@@ -7882,7 +7881,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWSPHERECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawSphereComponent");
 		}
 
 		return uClassPointer;
@@ -7903,7 +7902,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWPYLONRADIUSCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawPylonRadiusComponent");
 		}
 
 		return uClassPointer;
@@ -7924,7 +7923,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWSOUNDRADIUSCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawSoundRadiusComponent");
 		}
 
 		return uClassPointer;
@@ -7945,7 +7944,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LEVELGRIDVOLUMERENDERINGCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.LevelGridVolumeRenderingComponent");
 		}
 
 		return uClassPointer;
@@ -7971,7 +7970,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LINEBATCHCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.LineBatchComponent");
 		}
 
 		return uClassPointer;
@@ -7997,7 +7996,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MODELCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ModelComponent");
 		}
 
 		return uClassPointer;
@@ -8026,7 +8025,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPRITECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SpriteComponent");
 		}
 
 		return uClassPointer;
@@ -8061,7 +8060,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RADIALBLURCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.RadialBlurComponent");
 		}
 
 		return uClassPointer;
@@ -8108,7 +8107,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTURECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCaptureComponent");
 		}
 
 		return uClassPointer;
@@ -8139,7 +8138,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTURE2DCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCapture2DComponent");
 		}
 
 		return uClassPointer;
@@ -8171,7 +8170,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTURE2DHITMASKCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCapture2DHitMaskComponent");
 		}
 
 		return uClassPointer;
@@ -8199,7 +8198,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTURECUBEMAPCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCaptureCubeMapComponent");
 		}
 
 		return uClassPointer;
@@ -8223,7 +8222,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTUREPORTALCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCapturePortalComponent");
 		}
 
 		return uClassPointer;
@@ -8247,7 +8246,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENECAPTUREREFLECTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SceneCaptureReflectComponent");
 		}
 
 		return uClassPointer;
@@ -8273,7 +8272,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WINDDIRECTIONALSOURCECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.WindDirectionalSourceComponent");
 		}
 
 		return uClassPointer;
@@ -8296,7 +8295,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WINDPOINTSOURCECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.WindPointSourceComponent");
 		}
 
 		return uClassPointer;
@@ -8325,7 +8324,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORY));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactory");
 		}
 
 		return uClassPointer;
@@ -8348,7 +8347,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryActor");
 		}
 
 		return uClassPointer;
@@ -8375,7 +8374,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYAI));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryAI");
 		}
 
 		return uClassPointer;
@@ -8397,7 +8396,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYAMBIENTSOUND));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryAmbientSound");
 		}
 
 		return uClassPointer;
@@ -8418,7 +8417,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYAMBIENTSOUNDMOVABLE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryAmbientSoundMovable");
 		}
 
 		return uClassPointer;
@@ -8440,7 +8439,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYAMBIENTSOUNDSIMPLE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryAmbientSoundSimple");
 		}
 
 		return uClassPointer;
@@ -8461,7 +8460,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYAMBIENTSOUNDNONLOOP));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryAmbientSoundNonLoop");
 		}
 
 		return uClassPointer;
@@ -8482,7 +8481,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYAMBIENTSOUNDSIMPLETOGGLEABLE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryAmbientSoundSimpleToggleable");
 		}
 
 		return uClassPointer;
@@ -8503,7 +8502,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYAMBIENTSOUNDNONLOOPINGTOGGLEABLE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryAmbientSoundNonLoopingToggleable");
 		}
 
 		return uClassPointer;
@@ -8528,7 +8527,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYAPEXDESTRUCTIBLE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryApexDestructible");
 		}
 
 		return uClassPointer;
@@ -8550,7 +8549,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYARCHETYPE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryArchetype");
 		}
 
 		return uClassPointer;
@@ -8571,7 +8570,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYCOVERLINK));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryCoverLink");
 		}
 
 		return uClassPointer;
@@ -8592,7 +8591,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYDOMINANTDIRECTIONALLIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryDominantDirectionalLight");
 		}
 
 		return uClassPointer;
@@ -8613,7 +8612,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYDOMINANTDIRECTIONALLIGHTMOVABLE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryDominantDirectionalLightMovable");
 		}
 
 		return uClassPointer;
@@ -8642,7 +8641,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYDYNAMICSM));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryDynamicSM");
 		}
 
 		return uClassPointer;
@@ -8663,7 +8662,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYMOVER));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryMover");
 		}
 
 		return uClassPointer;
@@ -8694,7 +8693,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYRIGIDBODY));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryRigidBody");
 		}
 
 		return uClassPointer;
@@ -8716,7 +8715,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYEMITTER));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryEmitter");
 		}
 
 		return uClassPointer;
@@ -8739,7 +8738,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYFRACTUREDSTATICMESH));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryFracturedStaticMesh");
 		}
 
 		return uClassPointer;
@@ -8761,7 +8760,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYLENSFLARE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryLensFlare");
 		}
 
 		return uClassPointer;
@@ -8782,7 +8781,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYLIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryLight");
 		}
 
 		return uClassPointer;
@@ -8803,7 +8802,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYPATHNODE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryPathNode");
 		}
 
 		return uClassPointer;
@@ -8833,7 +8832,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYPHYSICSASSET));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryPhysicsAsset");
 		}
 
 		return uClassPointer;
@@ -8854,7 +8853,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYPLAYERSTART));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryPlayerStart");
 		}
 
 		return uClassPointer;
@@ -8875,7 +8874,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYPYLON));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryPylon");
 		}
 
 		return uClassPointer;
@@ -8899,7 +8898,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYSKELETALMESH));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactorySkeletalMesh");
 		}
 
 		return uClassPointer;
@@ -8922,7 +8921,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYSTATICMESH));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryStaticMesh");
 		}
 
 		return uClassPointer;
@@ -8943,7 +8942,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYTRIGGER));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryTrigger");
 		}
 
 		return uClassPointer;
@@ -8965,7 +8964,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYVEHICLE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryVehicle");
 		}
 
 		return uClassPointer;
@@ -8989,7 +8988,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_BOOKMARK));
+			uClassPointer = UObject::FindClass("Class Engine.BookMark");
 		}
 
 		return uClassPointer;
@@ -9012,7 +9011,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_BOOKMARK2D));
+			uClassPointer = UObject::FindClass("Class Engine.BookMark2D");
 		}
 
 		return uClassPointer;
@@ -9034,7 +9033,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_KISMETBOOKMARK));
+			uClassPointer = UObject::FindClass("Class Engine.KismetBookMark");
 		}
 
 		return uClassPointer;
@@ -9074,7 +9073,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CANVAS));
+			uClassPointer = UObject::FindClass("Class Engine.Canvas");
 		}
 
 		return uClassPointer;
@@ -9132,7 +9131,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CHANNEL));
+			uClassPointer = UObject::FindClass("Class Engine.Channel");
 		}
 
 		return uClassPointer;
@@ -9154,7 +9153,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORCHANNEL));
+			uClassPointer = UObject::FindClass("Class Engine.ActorChannel");
 		}
 
 		return uClassPointer;
@@ -9176,7 +9175,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CONTROLCHANNEL));
+			uClassPointer = UObject::FindClass("Class Engine.ControlChannel");
 		}
 
 		return uClassPointer;
@@ -9198,7 +9197,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FILECHANNEL));
+			uClassPointer = UObject::FindClass("Class Engine.FileChannel");
 		}
 
 		return uClassPointer;
@@ -9220,7 +9219,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_VOICECHANNEL));
+			uClassPointer = UObject::FindClass("Class Engine.VoiceChannel");
 		}
 
 		return uClassPointer;
@@ -9304,7 +9303,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CONTROLLER));
+			uClassPointer = UObject::FindClass("Class Engine.Controller");
 		}
 
 		return uClassPointer;
@@ -9567,7 +9566,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PLAYERCONTROLLER));
+			uClassPointer = UObject::FindClass("Class Engine.PlayerController");
 		}
 
 		return uClassPointer;
@@ -9990,7 +9989,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CHEATMANAGER));
+			uClassPointer = UObject::FindClass("Class Engine.CheatManager");
 		}
 
 		return uClassPointer;
@@ -10099,7 +10098,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CLIENT));
+			uClassPointer = UObject::FindClass("Class Engine.Client");
 		}
 
 		return uClassPointer;
@@ -10122,7 +10121,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CLIPPADENTRY));
+			uClassPointer = UObject::FindClass("Class Engine.ClipPadEntry");
 		}
 
 		return uClassPointer;
@@ -10144,7 +10143,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CODECMOVIE));
+			uClassPointer = UObject::FindClass("Class Engine.CodecMovie");
 		}
 
 		return uClassPointer;
@@ -10165,7 +10164,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CODECMOVIEBINK));
+			uClassPointer = UObject::FindClass("Class Engine.CodecMovieBink");
 		}
 
 		return uClassPointer;
@@ -10187,7 +10186,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CODECMOVIEFALLBACK));
+			uClassPointer = UObject::FindClass("Class Engine.CodecMovieFallback");
 		}
 
 		return uClassPointer;
@@ -10210,7 +10209,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CURVEEDPRESETCURVE));
+			uClassPointer = UObject::FindClass("Class Engine.CurveEdPresetCurve");
 		}
 
 		return uClassPointer;
@@ -10231,7 +10230,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CUSTOMPROPERTYITEMHANDLER));
+			uClassPointer = UObject::FindClass("Class Engine.CustomPropertyItemHandler");
 		}
 
 		return uClassPointer;
@@ -10266,7 +10265,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DAMAGETYPE));
+			uClassPointer = UObject::FindClass("Class Engine.DamageType");
 		}
 
 		return uClassPointer;
@@ -10288,7 +10287,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_KILLZDAMAGETYPE));
+			uClassPointer = UObject::FindClass("Class Engine.KillZDamageType");
 		}
 
 		return uClassPointer;
@@ -10310,7 +10309,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONFLOATCONSTANT));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionFloatConstant");
 		}
 
 		return uClassPointer;
@@ -10337,7 +10336,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONFLOATPARAMETERBASE));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionFloatParameterBase");
 		}
 
 		return uClassPointer;
@@ -10359,7 +10358,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONFLOATCONSTANTCURVE));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionFloatConstantCurve");
 		}
 
 		return uClassPointer;
@@ -10382,7 +10381,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONFLOATUNIFORM));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionFloatUniform");
 		}
 
 		return uClassPointer;
@@ -10404,7 +10403,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONFLOATUNIFORMCURVE));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionFloatUniformCurve");
 		}
 
 		return uClassPointer;
@@ -10430,7 +10429,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONFLOATUNIFORMRANGE));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionFloatUniformRange");
 		}
 
 		return uClassPointer;
@@ -10454,7 +10453,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONVECTORCONSTANT));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionVectorConstant");
 		}
 
 		return uClassPointer;
@@ -10481,7 +10480,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONVECTORPARAMETERBASE));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionVectorParameterBase");
 		}
 
 		return uClassPointer;
@@ -10505,7 +10504,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONVECTORCONSTANTCURVE));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionVectorConstantCurve");
 		}
 
 		return uClassPointer;
@@ -10532,7 +10531,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONVECTORUNIFORM));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionVectorUniform");
 		}
 
 		return uClassPointer;
@@ -10559,7 +10558,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONVECTORUNIFORMCURVE));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionVectorUniformCurve");
 		}
 
 		return uClassPointer;
@@ -10584,7 +10583,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONVECTORUNIFORMRANGE));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionVectorUniformRange");
 		}
 
 		return uClassPointer;
@@ -10606,7 +10605,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOWNLOAD));
+			uClassPointer = UObject::FindClass("Class Engine.Download");
 		}
 
 		return uClassPointer;
@@ -10628,7 +10627,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CHANNELDOWNLOAD));
+			uClassPointer = UObject::FindClass("Class Engine.ChannelDownload");
 		}
 
 		return uClassPointer;
@@ -10652,7 +10651,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_EDCOORDSYSTEM));
+			uClassPointer = UObject::FindClass("Class Engine.EdCoordSystem");
 		}
 
 		return uClassPointer;
@@ -10673,7 +10672,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_EDITORLINKSELECTIONINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.EditorLinkSelectionInterface");
 		}
 
 		return uClassPointer;
@@ -10694,7 +10693,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ENGINETYPES));
+			uClassPointer = UObject::FindClass("Class Engine.EngineTypes");
 		}
 
 		return uClassPointer;
@@ -10721,7 +10720,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FACEFXANIMSET));
+			uClassPointer = UObject::FindClass("Class Engine.FaceFXAnimSet");
 		}
 
 		return uClassPointer;
@@ -10750,7 +10749,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FACEFXASSET));
+			uClassPointer = UObject::FindClass("Class Engine.FaceFXAsset");
 		}
 
 		return uClassPointer;
@@ -10786,7 +10785,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FONT));
+			uClassPointer = UObject::FindClass("Class Engine.Font");
 		}
 
 		return uClassPointer;
@@ -10813,7 +10812,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MULTIFONT));
+			uClassPointer = UObject::FindClass("Class Engine.MultiFont");
 		}
 
 		return uClassPointer;
@@ -10836,7 +10835,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FONTIMPORTOPTIONS));
+			uClassPointer = UObject::FindClass("Class Engine.FontImportOptions");
 		}
 
 		return uClassPointer;
@@ -10864,7 +10863,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FORCEFEEDBACKMANAGER));
+			uClassPointer = UObject::FindClass("Class Engine.ForceFeedbackManager");
 		}
 
 		return uClassPointer;
@@ -10892,7 +10891,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FORCEFEEDBACKWAVEFORM));
+			uClassPointer = UObject::FindClass("Class Engine.ForceFeedbackWaveform");
 		}
 
 		return uClassPointer;
@@ -10924,7 +10923,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEPADLIGHTBARSUBSYSTEM));
+			uClassPointer = UObject::FindClass("Class Engine.GamePadLightbarSubsystem");
 		}
 
 		return uClassPointer;
@@ -10967,7 +10966,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEPLAYEVENTS));
+			uClassPointer = UObject::FindClass("Class Engine.GameplayEvents");
 		}
 
 		return uClassPointer;
@@ -10992,7 +10991,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEPLAYEVENTSREADER));
+			uClassPointer = UObject::FindClass("Class Engine.GameplayEventsReader");
 		}
 
 		return uClassPointer;
@@ -11029,7 +11028,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEPLAYEVENTSWRITERBASE));
+			uClassPointer = UObject::FindClass("Class Engine.GameplayEventsWriterBase");
 		}
 
 		return uClassPointer;
@@ -11080,7 +11079,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEPLAYEVENTSUPLOADANALYTICS));
+			uClassPointer = UObject::FindClass("Class Engine.GameplayEventsUploadAnalytics");
 		}
 
 		return uClassPointer;
@@ -11125,7 +11124,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEPLAYEVENTSWRITER));
+			uClassPointer = UObject::FindClass("Class Engine.GameplayEventsWriter");
 		}
 
 		return uClassPointer;
@@ -11179,7 +11178,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEPLAYEVENTSHANDLER));
+			uClassPointer = UObject::FindClass("Class Engine.GameplayEventsHandler");
 		}
 
 		return uClassPointer;
@@ -11208,7 +11207,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GENERICPARAMLISTSTATENTRY));
+			uClassPointer = UObject::FindClass("Class Engine.GenericParamListStatEntry");
 		}
 
 		return uClassPointer;
@@ -11239,7 +11238,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GUIDCACHE));
+			uClassPointer = UObject::FindClass("Class Engine.GuidCache");
 		}
 
 		return uClassPointer;
@@ -11260,7 +11259,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_HTTPBASEINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.HttpBaseInterface");
 		}
 
 		return uClassPointer;
@@ -11289,7 +11288,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_HTTPREQUESTINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.HttpRequestInterface");
 		}
 
 		return uClassPointer;
@@ -11319,7 +11318,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_HTTPRESPONSEINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.HttpResponseInterface");
 		}
 
 		return uClassPointer;
@@ -11352,7 +11351,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INILOCPATCHER));
+			uClassPointer = UObject::FindClass("Class Engine.IniLocPatcher");
 		}
 
 		return uClassPointer;
@@ -11390,7 +11389,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERFACE_NAVIGATIONHANDLE));
+			uClassPointer = UObject::FindClass("Class Engine.Interface_NavigationHandle");
 		}
 
 		return uClassPointer;
@@ -11412,7 +11411,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERFACE_SPEAKER));
+			uClassPointer = UObject::FindClass("Class Engine.Interface_Speaker");
 		}
 
 		return uClassPointer;
@@ -11436,7 +11435,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPCURVEEDSETUP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpCurveEdSetup");
 		}
 
 		return uClassPointer;
@@ -11476,7 +11475,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACK));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrack");
 		}
 
 		return uClassPointer;
@@ -11501,7 +11500,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_JSONOBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.JsonObject");
 		}
 
 		return uClassPointer;
@@ -11536,7 +11535,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_KMESHPROPS));
+			uClassPointer = UObject::FindClass("Class Engine.KMeshProps");
 		}
 
 		return uClassPointer;
@@ -11558,7 +11557,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LEVELBASE));
+			uClassPointer = UObject::FindClass("Class Engine.LevelBase");
 		}
 
 		return uClassPointer;
@@ -11583,7 +11582,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LEVEL));
+			uClassPointer = UObject::FindClass("Class Engine.Level");
 		}
 
 		return uClassPointer;
@@ -11605,7 +11604,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PENDINGLEVEL));
+			uClassPointer = UObject::FindClass("Class Engine.PendingLevel");
 		}
 
 		return uClassPointer;
@@ -11626,7 +11625,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DEMOPLAYPENDINGLEVEL));
+			uClassPointer = UObject::FindClass("Class Engine.DemoPlayPendingLevel");
 		}
 
 		return uClassPointer;
@@ -11647,7 +11646,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NETPENDINGLEVEL));
+			uClassPointer = UObject::FindClass("Class Engine.NetPendingLevel");
 		}
 
 		return uClassPointer;
@@ -11693,7 +11692,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LEVELSTREAMING));
+			uClassPointer = UObject::FindClass("Class Engine.LevelStreaming");
 		}
 
 		return uClassPointer;
@@ -11715,7 +11714,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LEVELSTREAMINGALWAYSLOADED));
+			uClassPointer = UObject::FindClass("Class Engine.LevelStreamingAlwaysLoaded");
 		}
 
 		return uClassPointer;
@@ -11738,7 +11737,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LEVELSTREAMINGDISTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.LevelStreamingDistance");
 		}
 
 		return uClassPointer;
@@ -11759,7 +11758,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LEVELSTREAMINGKISMET));
+			uClassPointer = UObject::FindClass("Class Engine.LevelStreamingKismet");
 		}
 
 		return uClassPointer;
@@ -11780,7 +11779,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LEVELSTREAMINGPERSISTENT));
+			uClassPointer = UObject::FindClass("Class Engine.LevelStreamingPersistent");
 		}
 
 		return uClassPointer;
@@ -11803,7 +11802,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIGHTMAPPEDSURFACECOLLECTION));
+			uClassPointer = UObject::FindClass("Class Engine.LightmappedSurfaceCollection");
 		}
 
 		return uClassPointer;
@@ -11837,7 +11836,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIGHTMASSLEVELSETTINGS));
+			uClassPointer = UObject::FindClass("Class Engine.LightmassLevelSettings");
 		}
 
 		return uClassPointer;
@@ -11859,7 +11858,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIGHTMASSPRIMITIVESETTINGSOBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.LightmassPrimitiveSettingsObject");
 		}
 
 		return uClassPointer;
@@ -11880,7 +11879,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MAPINFO));
+			uClassPointer = UObject::FindClass("Class Engine.MapInfo");
 		}
 
 		return uClassPointer;
@@ -11902,7 +11901,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MODEL));
+			uClassPointer = UObject::FindClass("Class Engine.Model");
 		}
 
 		return uClassPointer;
@@ -11923,7 +11922,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MUSICTRACKDATASTRUCTURES));
+			uClassPointer = UObject::FindClass("Class Engine.MusicTrackDataStructures");
 		}
 
 		return uClassPointer;
@@ -11945,7 +11944,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVIGATIONMESHBASE));
+			uClassPointer = UObject::FindClass("Class Engine.NavigationMeshBase");
 		}
 
 		return uClassPointer;
@@ -11986,7 +11985,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NETDRIVER));
+			uClassPointer = UObject::FindClass("Class Engine.NetDriver");
 		}
 
 		return uClassPointer;
@@ -12015,7 +12014,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DEMORECDRIVER));
+			uClassPointer = UObject::FindClass("Class Engine.DemoRecDriver");
 		}
 
 		return uClassPointer;
@@ -12037,7 +12036,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_OBJECTREFERENCER));
+			uClassPointer = UObject::FindClass("Class Engine.ObjectReferencer");
 		}
 
 		return uClassPointer;
@@ -12058,7 +12057,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEAUTHINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineAuthInterface");
 		}
 
 		return uClassPointer;
@@ -12141,7 +12140,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEMATCHMAKINGSTATS));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineMatchmakingStats");
 		}
 
 		return uClassPointer;
@@ -12171,7 +12170,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEPLAYERSTORAGE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlinePlayerStorage");
 		}
 
 		return uClassPointer;
@@ -12227,7 +12226,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEPROFILESETTINGS));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineProfileSettings");
 		}
 
 		return uClassPointer;
@@ -12255,7 +12254,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINESTATS));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineStats");
 		}
 
 		return uClassPointer;
@@ -12286,7 +12285,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINESTATSREAD));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineStatsRead");
 		}
 
 		return uClassPointer;
@@ -12322,7 +12321,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINESTATSWRITE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineStatsWrite");
 		}
 
 		return uClassPointer;
@@ -12393,7 +12392,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINESUBSYSTEM));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineSubsystem");
 		}
 
 		return uClassPointer;
@@ -12445,7 +12444,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PACKAGEMAPLEVEL));
+			uClassPointer = UObject::FindClass("Class Engine.PackageMapLevel");
 		}
 
 		return uClassPointer;
@@ -12466,7 +12465,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PACKAGEMAPSEEKFREE));
+			uClassPointer = UObject::FindClass("Class Engine.PackageMapSeekFree");
 		}
 
 		return uClassPointer;
@@ -12488,7 +12487,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATCHSCRIPTCOMMANDLET));
+			uClassPointer = UObject::FindClass("Class Engine.PatchScriptCommandlet");
 		}
 
 		return uClassPointer;
@@ -12518,7 +12517,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PLAYER));
+			uClassPointer = UObject::FindClass("Class Engine.Player");
 		}
 
 		return uClassPointer;
@@ -12568,7 +12567,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LOCALPLAYER));
+			uClassPointer = UObject::FindClass("Class Engine.LocalPlayer");
 		}
 
 		return uClassPointer;
@@ -12622,7 +12621,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NETCONNECTION));
+			uClassPointer = UObject::FindClass("Class Engine.NetConnection");
 		}
 
 		return uClassPointer;
@@ -12644,7 +12643,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CHILDCONNECTION));
+			uClassPointer = UObject::FindClass("Class Engine.ChildConnection");
 		}
 
 		return uClassPointer;
@@ -12665,7 +12664,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DEMORECCONNECTION));
+			uClassPointer = UObject::FindClass("Class Engine.DemoRecConnection");
 		}
 
 		return uClassPointer;
@@ -12687,7 +12686,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_POLYS));
+			uClassPointer = UObject::FindClass("Class Engine.Polys");
 		}
 
 		return uClassPointer;
@@ -12709,7 +12708,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_POSTPROCESSCHAIN));
+			uClassPointer = UObject::FindClass("Class Engine.PostProcessChain");
 		}
 
 		return uClassPointer;
@@ -12743,7 +12742,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_POSTPROCESSEFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.PostProcessEffect");
 		}
 
 		return uClassPointer;
@@ -12785,7 +12784,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTOCCLUSIONEFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientOcclusionEffect");
 		}
 
 		return uClassPointer;
@@ -12807,7 +12806,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_BLUREFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.BlurEffect");
 		}
 
 		return uClassPointer;
@@ -12837,7 +12836,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOFEFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.DOFEffect");
 		}
 
 		return uClassPointer;
@@ -12868,7 +12867,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOFANDBLOOMEFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.DOFAndBloomEffect");
 		}
 
 		return uClassPointer;
@@ -12894,7 +12893,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOFBLOOMMOTIONBLUREFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.DOFBloomMotionBlurEffect");
 		}
 
 		return uClassPointer;
@@ -12948,7 +12947,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UBERPOSTPROCESSEFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.UberPostProcessEffect");
 		}
 
 		return uClassPointer;
@@ -12969,7 +12968,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DWTRIOVIZIMPLEFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.DwTriovizImplEffect");
 		}
 
 		return uClassPointer;
@@ -12991,7 +12990,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialEffect");
 		}
 
 		return uClassPointer;
@@ -13017,7 +13016,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MOTIONBLUREFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.MotionBlurEffect");
 		}
 
 		return uClassPointer;
@@ -13046,7 +13045,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PRIMITIVECOMPONENTFACTORY));
+			uClassPointer = UObject::FindClass("Class Engine.PrimitiveComponentFactory");
 		}
 
 		return uClassPointer;
@@ -13068,7 +13067,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MESHCOMPONENTFACTORY));
+			uClassPointer = UObject::FindClass("Class Engine.MeshComponentFactory");
 		}
 
 		return uClassPointer;
@@ -13090,7 +13089,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_STATICMESHCOMPONENTFACTORY));
+			uClassPointer = UObject::FindClass("Class Engine.StaticMeshComponentFactory");
 		}
 
 		return uClassPointer;
@@ -13129,7 +13128,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_REACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.ReachSpec");
 		}
 
 		return uClassPointer;
@@ -13154,7 +13153,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ADVANCEDREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.AdvancedReachSpec");
 		}
 
 		return uClassPointer;
@@ -13175,7 +13174,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CEILINGREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.CeilingReachSpec");
 		}
 
 		return uClassPointer;
@@ -13196,7 +13195,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FORCEDREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.ForcedReachSpec");
 		}
 
 		return uClassPointer;
@@ -13218,7 +13217,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_COVERSLIPREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.CoverSlipReachSpec");
 		}
 
 		return uClassPointer;
@@ -13239,7 +13238,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FLOORTOCEILINGREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.FloorToCeilingReachSpec");
 		}
 
 		return uClassPointer;
@@ -13261,7 +13260,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MANTLEREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.MantleReachSpec");
 		}
 
 		return uClassPointer;
@@ -13283,7 +13282,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SLOTTOSLOTREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.SlotToSlotReachSpec");
 		}
 
 		return uClassPointer;
@@ -13305,7 +13304,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SWATTURNREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.SwatTurnReachSpec");
 		}
 
 		return uClassPointer;
@@ -13326,7 +13325,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WALLTRANSREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.WallTransReachSpec");
 		}
 
 		return uClassPointer;
@@ -13347,7 +13346,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LADDERREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.LadderReachSpec");
 		}
 
 		return uClassPointer;
@@ -13368,7 +13367,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PROSCRIBEDREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.ProscribedReachSpec");
 		}
 
 		return uClassPointer;
@@ -13389,7 +13388,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TELEPORTREACHSPEC));
+			uClassPointer = UObject::FindClass("Class Engine.TeleportReachSpec");
 		}
 
 		return uClassPointer;
@@ -13440,7 +13439,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SAVEDMOVE));
+			uClassPointer = UObject::FindClass("Class Engine.SavedMove");
 		}
 
 		return uClassPointer;
@@ -13475,7 +13474,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SAVEGAMESUMMARY));
+			uClassPointer = UObject::FindClass("Class Engine.SaveGameSummary");
 		}
 
 		return uClassPointer;
@@ -13497,7 +13496,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCRIPTVIEWPORTCLIENT));
+			uClassPointer = UObject::FindClass("Class Engine.ScriptViewportClient");
 		}
 
 		return uClassPointer;
@@ -13552,7 +13551,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEVIEWPORTCLIENT));
+			uClassPointer = UObject::FindClass("Class Engine.GameViewportClient");
 		}
 
 		return uClassPointer;
@@ -13628,7 +13627,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SELECTION));
+			uClassPointer = UObject::FindClass("Class Engine.Selection");
 		}
 
 		return uClassPointer;
@@ -13649,7 +13648,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SERVERCOMMANDLET));
+			uClassPointer = UObject::FindClass("Class Engine.ServerCommandlet");
 		}
 
 		return uClassPointer;
@@ -13674,7 +13673,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SETTINGS));
+			uClassPointer = UObject::FindClass("Class Engine.Settings");
 		}
 
 		return uClassPointer;
@@ -13762,7 +13761,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEGAMESEARCH));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineGameSearch");
 		}
 
 		return uClassPointer;
@@ -13812,7 +13811,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEGAMESETTINGS));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineGameSettings");
 		}
 
 		return uClassPointer;
@@ -13834,7 +13833,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SHADERCACHE));
+			uClassPointer = UObject::FindClass("Class Engine.ShaderCache");
 		}
 
 		return uClassPointer;
@@ -13856,7 +13855,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SHADOWMAP1D));
+			uClassPointer = UObject::FindClass("Class Engine.ShadowMap1D");
 		}
 
 		return uClassPointer;
@@ -13884,7 +13883,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SHADOWMAP2D));
+			uClassPointer = UObject::FindClass("Class Engine.ShadowMap2D");
 		}
 
 		return uClassPointer;
@@ -13905,7 +13904,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SMOKETESTCOMMANDLET));
+			uClassPointer = UObject::FindClass("Class Engine.SmokeTestCommandlet");
 		}
 
 		return uClassPointer;
@@ -13941,7 +13940,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDCUE));
+			uClassPointer = UObject::FindClass("Class Engine.SoundCue");
 		}
 
 		return uClassPointer;
@@ -13973,7 +13972,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPEECHRECOGNITION));
+			uClassPointer = UObject::FindClass("Class Engine.SpeechRecognition");
 		}
 
 		return uClassPointer;
@@ -14022,7 +14021,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_STATICMESH));
+			uClassPointer = UObject::FindClass("Class Engine.StaticMesh");
 		}
 
 		return uClassPointer;
@@ -14043,7 +14042,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SURFACE));
+			uClassPointer = UObject::FindClass("Class Engine.Surface");
 		}
 
 		return uClassPointer;
@@ -14168,7 +14167,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialInterface");
 		}
 
 		return uClassPointer;
@@ -14221,7 +14220,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_BODYSETUP));
+			uClassPointer = UObject::FindClass("Class Engine.RB_BodySetup");
 		}
 
 		return uClassPointer;
@@ -14287,7 +14286,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INSTANCEDFOLIAGESETTINGS));
+			uClassPointer = UObject::FindClass("Class Engine.InstancedFoliageSettings");
 		}
 
 		return uClassPointer;
@@ -14336,7 +14335,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FRACTUREDSTATICMESH));
+			uClassPointer = UObject::FindClass("Class Engine.FracturedStaticMesh");
 		}
 
 		return uClassPointer;
@@ -14400,7 +14399,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLESYSTEM));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleSystem");
 		}
 
 		return uClassPointer;
@@ -14469,7 +14468,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEXTURE));
+			uClassPointer = UObject::FindClass("Class Engine.Texture");
 		}
 
 		return uClassPointer;
@@ -14528,7 +14527,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEXTURE2D));
+			uClassPointer = UObject::FindClass("Class Engine.Texture2D");
 		}
 
 		return uClassPointer;
@@ -14552,7 +14551,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIGHTMAPTEXTURE2D));
+			uClassPointer = UObject::FindClass("Class Engine.LightMapTexture2D");
 		}
 
 		return uClassPointer;
@@ -14574,7 +14573,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SHADOWMAPTEXTURE2D));
+			uClassPointer = UObject::FindClass("Class Engine.ShadowMapTexture2D");
 		}
 
 		return uClassPointer;
@@ -14596,7 +14595,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TRANSLATIONCONTEXT));
+			uClassPointer = UObject::FindClass("Class Engine.TranslationContext");
 		}
 
 		return uClassPointer;
@@ -14619,7 +14618,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TRANSLATORTAG));
+			uClassPointer = UObject::FindClass("Class Engine.TranslatorTag");
 		}
 
 		return uClassPointer;
@@ -14641,7 +14640,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_STRINGSTAG));
+			uClassPointer = UObject::FindClass("Class Engine.StringsTag");
 		}
 
 		return uClassPointer;
@@ -14664,7 +14663,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIROOT));
+			uClassPointer = UObject::FindClass("Class Engine.UIRoot");
 		}
 
 		return uClassPointer;
@@ -14697,7 +14696,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERACTION));
+			uClassPointer = UObject::FindClass("Class Engine.Interaction");
 		}
 
 		return uClassPointer;
@@ -14749,7 +14748,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIINTERACTION));
+			uClassPointer = UObject::FindClass("Class Engine.UIInteraction");
 		}
 
 		return uClassPointer;
@@ -14787,7 +14786,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIMANAGER));
+			uClassPointer = UObject::FindClass("Class Engine.UIManager");
 		}
 
 		return uClassPointer;
@@ -14815,7 +14814,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WAVEFORMBASE));
+			uClassPointer = UObject::FindClass("Class Engine.WaveFormBase");
 		}
 
 		return uClassPointer;
@@ -14837,7 +14836,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WORLD));
+			uClassPointer = UObject::FindClass("Class Engine.World");
 		}
 
 		return uClassPointer;
@@ -14861,7 +14860,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ENVIRONMENTVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.EnvironmentVolume");
 		}
 
 		return uClassPointer;
@@ -14884,7 +14883,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TESTSPLITTINGVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.TestSplittingVolume");
 		}
 
 		return uClassPointer;
@@ -14912,7 +14911,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AICONTROLLER));
+			uClassPointer = UObject::FindClass("Class Engine.AIController");
 		}
 
 		return uClassPointer;
@@ -14943,7 +14942,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CROWDAGENTBASE));
+			uClassPointer = UObject::FindClass("Class Engine.CrowdAgentBase");
 		}
 
 		return uClassPointer;
@@ -14965,7 +14964,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CROWDPOPULATIONMANAGERBASE));
+			uClassPointer = UObject::FindClass("Class Engine.CrowdPopulationManagerBase");
 		}
 
 		return uClassPointer;
@@ -14986,7 +14985,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATHTARGETPOINT));
+			uClassPointer = UObject::FindClass("Class Engine.PathTargetPoint");
 		}
 
 		return uClassPointer;
@@ -15011,7 +15010,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHOBSTACLE));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshObstacle");
 		}
 
 		return uClassPointer;
@@ -15041,7 +15040,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PYLONSEED));
+			uClassPointer = UObject::FindClass("Class Engine.PylonSeed");
 		}
 
 		return uClassPointer;
@@ -15062,7 +15061,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_COVERGROUPRENDERINGCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.CoverGroupRenderingComponent");
 		}
 
 		return uClassPointer;
@@ -15084,7 +15083,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MESHCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.MeshComponent");
 		}
 
 		return uClassPointer;
@@ -15134,7 +15133,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_STATICMESHCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.StaticMeshComponent");
 		}
 
 		return uClassPointer;
@@ -15165,7 +15164,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_COVERMESHCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.CoverMeshComponent");
 		}
 
 		return uClassPointer;
@@ -15186,7 +15185,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHRENDERINGCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshRenderingComponent");
 		}
 
 		return uClassPointer;
@@ -15207,7 +15206,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATHRENDERINGCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.PathRenderingComponent");
 		}
 
 		return uClassPointer;
@@ -15228,7 +15227,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ROUTERENDERINGCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.RouteRenderingComponent");
 		}
 
 		return uClassPointer;
@@ -15249,7 +15248,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AICOMMANDBASE));
+			uClassPointer = UObject::FindClass("Class Engine.AICommandBase");
 		}
 
 		return uClassPointer;
@@ -15273,7 +15272,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AUTONAVMESHPATHOBSTACLEUNREGISTER));
+			uClassPointer = UObject::FindClass("Class Engine.AutoNavMeshPathObstacleUnregister");
 		}
 
 		return uClassPointer;
@@ -15294,7 +15293,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERFACE_NAVMESHPATHOBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.Interface_NavMeshPathObject");
 		}
 
 		return uClassPointer;
@@ -15315,7 +15314,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERFACE_NAVMESHPATHSWITCH));
+			uClassPointer = UObject::FindClass("Class Engine.Interface_NavMeshPathSwitch");
 		}
 
 		return uClassPointer;
@@ -15337,7 +15336,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERFACE_NAVMESHPATHOBSTACLE));
+			uClassPointer = UObject::FindClass("Class Engine.Interface_NavMeshPathObstacle");
 		}
 
 		return uClassPointer;
@@ -15358,7 +15357,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERFACE_PYLONGEOMETRYPROVIDER));
+			uClassPointer = UObject::FindClass("Class Engine.Interface_PylonGeometryProvider");
 		}
 
 		return uClassPointer;
@@ -15379,7 +15378,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERFACE_RVO));
+			uClassPointer = UObject::FindClass("Class Engine.Interface_RVO");
 		}
 
 		return uClassPointer;
@@ -15421,7 +15420,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVIGATIONHANDLE));
+			uClassPointer = UObject::FindClass("Class Engine.NavigationHandle");
 		}
 
 		return uClassPointer;
@@ -15491,7 +15490,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOAL_FILTER));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoal_Filter");
 		}
 
 		return uClassPointer;
@@ -15514,7 +15513,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOALFILTER_MINPATHDISTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoalFilter_MinPathDistance");
 		}
 
 		return uClassPointer;
@@ -15537,7 +15536,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOALFILTER_NOTNEAROTHERAI));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoalFilter_NotNearOtherAI");
 		}
 
 		return uClassPointer;
@@ -15561,7 +15560,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOALFILTER_OUTOFVIEWFROM));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoalFilter_OutOfViewFrom");
 		}
 
 		return uClassPointer;
@@ -15586,7 +15585,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOALFILTER_OUTSIDEOFDOTPRODUCTWEDGE));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoalFilter_OutSideOfDotProductWedge");
 		}
 
 		return uClassPointer;
@@ -15609,7 +15608,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOALFILTER_POLYENCOMPASSESAI));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoalFilter_PolyEncompassesAI");
 		}
 
 		return uClassPointer;
@@ -15636,7 +15635,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHPATHCONSTRAINT));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshPathConstraint");
 		}
 
 		return uClassPointer;
@@ -15660,7 +15659,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHPATH_ALONGLINE));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshPath_AlongLine");
 		}
 
 		return uClassPointer;
@@ -15683,7 +15682,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHPATH_ENFORCETWOWAYEDGES));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshPath_EnforceTwoWayEdges");
 		}
 
 		return uClassPointer;
@@ -15709,7 +15708,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHPATH_MINDISTBETWEENSPECSOFTYPE));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshPath_MinDistBetweenSpecsOfType");
 		}
 
 		return uClassPointer;
@@ -15733,7 +15732,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHPATH_SAMECOVERLINK));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshPath_SameCoverLink");
 		}
 
 		return uClassPointer;
@@ -15760,7 +15759,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHPATH_TOWARD));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshPath_Toward");
 		}
 
 		return uClassPointer;
@@ -15790,7 +15789,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHPATH_WITHINDISTANCEENVELOPE));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshPath_WithinDistanceEnvelope");
 		}
 
 		return uClassPointer;
@@ -15816,7 +15815,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHPATH_WITHINTRAVERSALDIST));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshPath_WithinTraversalDist");
 		}
 
 		return uClassPointer;
@@ -15846,7 +15845,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHPATHGOALEVALUATOR));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshPathGoalEvaluator");
 		}
 
 		return uClassPointer;
@@ -15877,7 +15876,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOAL_AT));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoal_At");
 		}
 
 		return uClassPointer;
@@ -15905,7 +15904,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOAL_CLOSESTACTORINLIST));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoal_ClosestActorInList");
 		}
 
 		return uClassPointer;
@@ -15933,7 +15932,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOAL_GENERICFILTERCONTAINER));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoal_GenericFilterContainer");
 		}
 
 		return uClassPointer;
@@ -15960,7 +15959,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOAL_NULL));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoal_Null");
 		}
 
 		return uClassPointer;
@@ -15985,7 +15984,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOAL_POLYENCOMPASSESAI));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoal_PolyEncompassesAI");
 		}
 
 		return uClassPointer;
@@ -16011,7 +16010,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOAL_RANDOM));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoal_Random");
 		}
 
 		return uClassPointer;
@@ -16039,7 +16038,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHGOAL_WITHINDISTANCEENVELOPE));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshGoal_WithinDistanceEnvelope");
 		}
 
 		return uClassPointer;
@@ -16064,7 +16063,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATHCONSTRAINT));
+			uClassPointer = UObject::FindClass("Class Engine.PathConstraint");
 		}
 
 		return uClassPointer;
@@ -16088,7 +16087,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATH_ALONGLINE));
+			uClassPointer = UObject::FindClass("Class Engine.Path_AlongLine");
 		}
 
 		return uClassPointer;
@@ -16115,7 +16114,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATH_AVOIDINESCAPABLENODES));
+			uClassPointer = UObject::FindClass("Class Engine.Path_AvoidInEscapableNodes");
 		}
 
 		return uClassPointer;
@@ -16142,7 +16141,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATH_MINDISTBETWEENSPECSOFTYPE));
+			uClassPointer = UObject::FindClass("Class Engine.Path_MinDistBetweenSpecsOfType");
 		}
 
 		return uClassPointer;
@@ -16166,7 +16165,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATH_TOWARDGOAL));
+			uClassPointer = UObject::FindClass("Class Engine.Path_TowardGoal");
 		}
 
 		return uClassPointer;
@@ -16190,7 +16189,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATH_TOWARDPOINT));
+			uClassPointer = UObject::FindClass("Class Engine.Path_TowardPoint");
 		}
 
 		return uClassPointer;
@@ -16219,7 +16218,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATH_WITHINDISTANCEENVELOPE));
+			uClassPointer = UObject::FindClass("Class Engine.Path_WithinDistanceEnvelope");
 		}
 
 		return uClassPointer;
@@ -16245,7 +16244,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATH_WITHINTRAVERSALDIST));
+			uClassPointer = UObject::FindClass("Class Engine.Path_WithinTraversalDist");
 		}
 
 		return uClassPointer;
@@ -16272,7 +16271,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATHGOALEVALUATOR));
+			uClassPointer = UObject::FindClass("Class Engine.PathGoalEvaluator");
 		}
 
 		return uClassPointer;
@@ -16298,7 +16297,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GOAL_ATACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.Goal_AtActor");
 		}
 
 		return uClassPointer;
@@ -16321,7 +16320,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GOAL_NULL));
+			uClassPointer = UObject::FindClass("Class Engine.Goal_Null");
 		}
 
 		return uClassPointer;
@@ -16359,7 +16358,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELETALMESHACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SkeletalMeshActor");
 		}
 
 		return uClassPointer;
@@ -16410,7 +16409,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELETALMESHACTORBASEDONEXTREMECONTENT));
+			uClassPointer = UObject::FindClass("Class Engine.SkeletalMeshActorBasedOnExtremeContent");
 		}
 
 		return uClassPointer;
@@ -16433,7 +16432,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELETALMESHACTORSPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.SkeletalMeshActorSpawnable");
 		}
 
 		return uClassPointer;
@@ -16454,7 +16453,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELETALMESHCINEMATICACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SkeletalMeshCinematicActor");
 		}
 
 		return uClassPointer;
@@ -16476,7 +16475,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELETALMESHACTORMAT));
+			uClassPointer = UObject::FindClass("Class Engine.SkeletalMeshActorMAT");
 		}
 
 		return uClassPointer;
@@ -16523,7 +16522,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_HEADTRACKINGCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.HeadTrackingComponent");
 		}
 
 		return uClassPointer;
@@ -16548,7 +16547,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMATIONCOMPRESSIONALGORITHM));
+			uClassPointer = UObject::FindClass("Class Engine.AnimationCompressionAlgorithm");
 		}
 
 		return uClassPointer;
@@ -16577,7 +16576,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMATIONCOMPRESSIONALGORITHM_AUTOMATIC));
+			uClassPointer = UObject::FindClass("Class Engine.AnimationCompressionAlgorithm_Automatic");
 		}
 
 		return uClassPointer;
@@ -16598,7 +16597,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMATIONCOMPRESSIONALGORITHM_BITWISECOMPRESSONLY));
+			uClassPointer = UObject::FindClass("Class Engine.AnimationCompressionAlgorithm_BitwiseCompressOnly");
 		}
 
 		return uClassPointer;
@@ -16619,7 +16618,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMATIONCOMPRESSIONALGORITHM_LEASTDESTRUCTIVE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimationCompressionAlgorithm_LeastDestructive");
 		}
 
 		return uClassPointer;
@@ -16642,7 +16641,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMATIONCOMPRESSIONALGORITHM_REMOVEEVERYSECONDKEY));
+			uClassPointer = UObject::FindClass("Class Engine.AnimationCompressionAlgorithm_RemoveEverySecondKey");
 		}
 
 		return uClassPointer;
@@ -16671,7 +16670,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMATIONCOMPRESSIONALGORITHM_REMOVELINEARKEYS));
+			uClassPointer = UObject::FindClass("Class Engine.AnimationCompressionAlgorithm_RemoveLinearKeys");
 		}
 
 		return uClassPointer;
@@ -16711,7 +16710,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMATIONCOMPRESSIONALGORITHM_PERTRACKCOMPRESSION));
+			uClassPointer = UObject::FindClass("Class Engine.AnimationCompressionAlgorithm_PerTrackCompression");
 		}
 
 		return uClassPointer;
@@ -16734,7 +16733,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMATIONCOMPRESSIONALGORITHM_REMOVETRIVIALKEYS));
+			uClassPointer = UObject::FindClass("Class Engine.AnimationCompressionAlgorithm_RemoveTrivialKeys");
 		}
 
 		return uClassPointer;
@@ -16755,7 +16754,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMATIONCOMPRESSIONALGORITHM_REVERTTORAW));
+			uClassPointer = UObject::FindClass("Class Engine.AnimationCompressionAlgorithm_RevertToRaw");
 		}
 
 		return uClassPointer;
@@ -16776,7 +16775,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMMETADATA));
+			uClassPointer = UObject::FindClass("Class Engine.AnimMetaData");
 		}
 
 		return uClassPointer;
@@ -16800,7 +16799,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMMETADATA_SKELCONTROL));
+			uClassPointer = UObject::FindClass("Class Engine.AnimMetaData_SkelControl");
 		}
 
 		return uClassPointer;
@@ -16822,7 +16821,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMMETADATA_SKELCONTROLKEYFRAME));
+			uClassPointer = UObject::FindClass("Class Engine.AnimMetaData_SkelControlKeyFrame");
 		}
 
 		return uClassPointer;
@@ -16844,7 +16843,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMMETADATA_SKELCONTROLSCALEKEYFRAME));
+			uClassPointer = UObject::FindClass("Class Engine.AnimMetaData_SkelControlScaleKeyFrame");
 		}
 
 		return uClassPointer;
@@ -16866,7 +16865,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify");
 		}
 
 		return uClassPointer;
@@ -16889,7 +16888,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_CAMERAEFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_CameraEffect");
 		}
 
 		return uClassPointer;
@@ -16914,7 +16913,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_CLOTHINGMAXDISTANCESCALE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_ClothingMaxDistanceScale");
 		}
 
 		return uClassPointer;
@@ -16936,7 +16935,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_FOOTSTEP));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_Footstep");
 		}
 
 		return uClassPointer;
@@ -16961,7 +16960,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_FORCEFIELD));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_ForceField");
 		}
 
 		return uClassPointer;
@@ -16983,7 +16982,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_KISMET));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_Kismet");
 		}
 
 		return uClassPointer;
@@ -17013,7 +17012,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_PLAYPARTICLEEFFECT));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_PlayParticleEffect");
 		}
 
 		return uClassPointer;
@@ -17038,7 +17037,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_RUMBLE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_Rumble");
 		}
 
 		return uClassPointer;
@@ -17062,7 +17061,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_SCRIPT));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_Script");
 		}
 
 		return uClassPointer;
@@ -17083,7 +17082,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_SCRIPTED));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_Scripted");
 		}
 
 		return uClassPointer;
@@ -17107,7 +17106,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_PAWNMATERIALPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_PawnMaterialParam");
 		}
 
 		return uClassPointer;
@@ -17141,7 +17140,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_VIEWSHAKE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_ViewShake");
 		}
 
 		return uClassPointer;
@@ -17170,7 +17169,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_SOUND));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_Sound");
 		}
 
 		return uClassPointer;
@@ -17210,7 +17209,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_TRAILS));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_Trails");
 		}
 
 		return uClassPointer;
@@ -17239,7 +17238,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMOBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.AnimObject");
 		}
 
 		return uClassPointer;
@@ -17283,7 +17282,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNode");
 		}
 
 		return uClassPointer;
@@ -17314,7 +17313,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLENDBASE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlendBase");
 		}
 
 		return uClassPointer;
@@ -17341,7 +17340,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODE_MULTIBLENDPERBONE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNode_MultiBlendPerBone");
 		}
 
 		return uClassPointer;
@@ -17376,7 +17375,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEAIMOFFSET));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeAimOffset");
 		}
 
 		return uClassPointer;
@@ -17403,7 +17402,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLEND));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlend");
 		}
 
 		return uClassPointer;
@@ -17426,7 +17425,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEADDITIVEBLENDING));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeAdditiveBlending");
 		}
 
 		return uClassPointer;
@@ -17452,7 +17451,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLENDPERBONE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlendPerBone");
 		}
 
 		return uClassPointer;
@@ -17477,7 +17476,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODECROSSFADER));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeCrossfader");
 		}
 
 		return uClassPointer;
@@ -17504,7 +17503,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEPLAYCUSTOMANIM));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodePlayCustomAnim");
 		}
 
 		return uClassPointer;
@@ -17537,7 +17536,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLENDDIRECTIONAL));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlendDirectional");
 		}
 
 		return uClassPointer;
@@ -17566,7 +17565,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLENDLIST));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlendList");
 		}
 
 		return uClassPointer;
@@ -17593,7 +17592,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLENDBYBASE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlendByBase");
 		}
 
 		return uClassPointer;
@@ -17614,7 +17613,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLENDBYPHYSICS));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlendByPhysics");
 		}
 
 		return uClassPointer;
@@ -17635,7 +17634,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLENDBYPOSTURE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlendByPosture");
 		}
 
 		return uClassPointer;
@@ -17671,7 +17670,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLENDBYPROPERTY));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlendByProperty");
 		}
 
 		return uClassPointer;
@@ -17702,7 +17701,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLENDBYSPEED));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlendBySpeed");
 		}
 
 		return uClassPointer;
@@ -17727,7 +17726,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODERANDOM));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeRandom");
 		}
 
 		return uClassPointer;
@@ -17750,7 +17749,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEBLENDMULTIBONE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeBlendMultiBone");
 		}
 
 		return uClassPointer;
@@ -17773,7 +17772,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEMIRROR));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeMirror");
 		}
 
 		return uClassPointer;
@@ -17795,7 +17794,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODESCALEPLAYRATE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeScalePlayRate");
 		}
 
 		return uClassPointer;
@@ -17817,7 +17816,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODESCALERATEBYSPEED));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeScaleRateBySpeed");
 		}
 
 		return uClassPointer;
@@ -17849,7 +17848,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODESLOT));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeSlot");
 		}
 
 		return uClassPointer;
@@ -17882,7 +17881,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODESYNCH));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeSynch");
 		}
 
 		return uClassPointer;
@@ -17943,7 +17942,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMTREE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimTree");
 		}
 
 		return uClassPointer;
@@ -18014,7 +18013,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODESEQUENCE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeSequence");
 		}
 
 		return uClassPointer;
@@ -18050,7 +18049,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODESEQUENCEBLENDBASE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeSequenceBlendBase");
 		}
 
 		return uClassPointer;
@@ -18085,7 +18084,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODESEQUENCEBLENDBYAIM));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeSequenceBlendByAim");
 		}
 
 		return uClassPointer;
@@ -18118,7 +18117,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNODEFRAME));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNodeFrame");
 		}
 
 		return uClassPointer;
@@ -18141,7 +18140,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MORPHNODEBASE));
+			uClassPointer = UObject::FindClass("Class Engine.MorphNodeBase");
 		}
 
 		return uClassPointer;
@@ -18165,7 +18164,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MORPHNODEMULTIPOSE));
+			uClassPointer = UObject::FindClass("Class Engine.MorphNodeMultiPose");
 		}
 
 		return uClassPointer;
@@ -18192,7 +18191,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MORPHNODEPOSE));
+			uClassPointer = UObject::FindClass("Class Engine.MorphNodePose");
 		}
 
 		return uClassPointer;
@@ -18215,7 +18214,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MORPHNODEWEIGHTBASE));
+			uClassPointer = UObject::FindClass("Class Engine.MorphNodeWeightBase");
 		}
 
 		return uClassPointer;
@@ -18237,7 +18236,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MORPHNODEWEIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.MorphNodeWeight");
 		}
 
 		return uClassPointer;
@@ -18272,7 +18271,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MORPHNODEWEIGHTBYBONEANGLE));
+			uClassPointer = UObject::FindClass("Class Engine.MorphNodeWeightByBoneAngle");
 		}
 
 		return uClassPointer;
@@ -18303,7 +18302,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MORPHNODEWEIGHTBYBONEROTATION));
+			uClassPointer = UObject::FindClass("Class Engine.MorphNodeWeightByBoneRotation");
 		}
 
 		return uClassPointer;
@@ -18351,7 +18350,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROLBASE));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControlBase");
 		}
 
 		return uClassPointer;
@@ -18388,7 +18387,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROL_CCD_IK));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControl_CCD_IK");
 		}
 
 		return uClassPointer;
@@ -18410,7 +18409,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROL_MULTIPLY));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControl_Multiply");
 		}
 
 		return uClassPointer;
@@ -18432,7 +18431,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROL_SCALE3D));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControl_Scale3D");
 		}
 
 		return uClassPointer;
@@ -18455,7 +18454,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROL_TWISTBONE));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControl_TwistBone");
 		}
 
 		return uClassPointer;
@@ -18495,7 +18494,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROLLIMB));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControlLimb");
 		}
 
 		return uClassPointer;
@@ -18525,7 +18524,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROLFOOTPLACEMENT));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControlFootPlacement");
 		}
 
 		return uClassPointer;
@@ -18581,7 +18580,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROLLOOKAT));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControlLookAt");
 		}
 
 		return uClassPointer;
@@ -18617,7 +18616,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROLSINGLEBONE));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControlSingleBone");
 		}
 
 		return uClassPointer;
@@ -18643,7 +18642,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROLHANDLEBARS));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControlHandlebars");
 		}
 
 		return uClassPointer;
@@ -18672,7 +18671,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROLWHEEL));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControlWheel");
 		}
 
 		return uClassPointer;
@@ -18699,7 +18698,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROLSPLINE));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControlSpline");
 		}
 
 		return uClassPointer;
@@ -18733,7 +18732,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELCONTROLTRAIL));
+			uClassPointer = UObject::FindClass("Class Engine.SkelControlTrail");
 		}
 
 		return uClassPointer;
@@ -18794,7 +18793,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMSEQUENCE));
+			uClassPointer = UObject::FindClass("Class Engine.AnimSequence");
 		}
 
 		return uClassPointer;
@@ -18828,7 +18827,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMSET));
+			uClassPointer = UObject::FindClass("Class Engine.AnimSet");
 		}
 
 		return uClassPointer;
@@ -18852,7 +18851,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MORPHTARGET));
+			uClassPointer = UObject::FindClass("Class Engine.MorphTarget");
 		}
 
 		return uClassPointer;
@@ -18876,7 +18875,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MORPHTARGETSET));
+			uClassPointer = UObject::FindClass("Class Engine.MorphTargetSet");
 		}
 
 		return uClassPointer;
@@ -18898,7 +18897,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MORPHWEIGHTSEQUENCE));
+			uClassPointer = UObject::FindClass("Class Engine.MorphWeightSequence");
 		}
 
 		return uClassPointer;
@@ -18921,7 +18920,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DECALACTORBASE));
+			uClassPointer = UObject::FindClass("Class Engine.DecalActorBase");
 		}
 
 		return uClassPointer;
@@ -18942,7 +18941,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DECALACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.DecalActor");
 		}
 
 		return uClassPointer;
@@ -18963,7 +18962,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DECALACTORMOVABLE));
+			uClassPointer = UObject::FindClass("Class Engine.DecalActorMovable");
 		}
 
 		return uClassPointer;
@@ -18992,7 +18991,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DECALMANAGER));
+			uClassPointer = UObject::FindClass("Class Engine.DecalManager");
 		}
 
 		return uClassPointer;
@@ -19074,7 +19073,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DECALCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DecalComponent");
 		}
 
 		return uClassPointer;
@@ -19100,7 +19099,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYDECAL));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryDecal");
 		}
 
 		return uClassPointer;
@@ -19121,7 +19120,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYDECALMOVABLE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryDecalMovable");
 		}
 
 		return uClassPointer;
@@ -19252,7 +19251,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIAL));
+			uClassPointer = UObject::FindClass("Class Engine.Material");
 		}
 
 		return uClassPointer;
@@ -19273,7 +19272,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DECALMATERIAL));
+			uClassPointer = UObject::FindClass("Class Engine.DecalMaterial");
 		}
 
 		return uClassPointer;
@@ -19297,7 +19296,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FOGVOLUMEDENSITYINFO));
+			uClassPointer = UObject::FindClass("Class Engine.FogVolumeDensityInfo");
 		}
 
 		return uClassPointer;
@@ -19324,7 +19323,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FOGVOLUMECONEDENSITYINFO));
+			uClassPointer = UObject::FindClass("Class Engine.FogVolumeConeDensityInfo");
 		}
 
 		return uClassPointer;
@@ -19345,7 +19344,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FOGVOLUMECONSTANTDENSITYINFO));
+			uClassPointer = UObject::FindClass("Class Engine.FogVolumeConstantDensityInfo");
 		}
 
 		return uClassPointer;
@@ -19366,7 +19365,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FOGVOLUMELINEARHALFSPACEDENSITYINFO));
+			uClassPointer = UObject::FindClass("Class Engine.FogVolumeLinearHalfspaceDensityInfo");
 		}
 
 		return uClassPointer;
@@ -19387,7 +19386,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FOGVOLUMESPHERICALDENSITYINFO));
+			uClassPointer = UObject::FindClass("Class Engine.FogVolumeSphericalDensityInfo");
 		}
 
 		return uClassPointer;
@@ -19419,7 +19418,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_EXPONENTIALHEIGHTFOGCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ExponentialHeightFogComponent");
 		}
 
 		return uClassPointer;
@@ -19451,7 +19450,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FOGVOLUMEDENSITYCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.FogVolumeDensityComponent");
 		}
 
 		return uClassPointer;
@@ -19479,7 +19478,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FOGVOLUMECONEDENSITYCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.FogVolumeConeDensityComponent");
 		}
 
 		return uClassPointer;
@@ -19501,7 +19500,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FOGVOLUMECONSTANTDENSITYCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.FogVolumeConstantDensityComponent");
 		}
 
 		return uClassPointer;
@@ -19525,7 +19524,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FOGVOLUMELINEARHALFSPACEDENSITYCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.FogVolumeLinearHalfspaceDensityComponent");
 		}
 
 		return uClassPointer;
@@ -19550,7 +19549,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FOGVOLUMESPHERICALDENSITYCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.FogVolumeSphericalDensityComponent");
 		}
 
 		return uClassPointer;
@@ -19573,7 +19572,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYFOGVOLUMECONSTANTDENSITYINFO));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryFogVolumeConstantDensityInfo");
 		}
 
 		return uClassPointer;
@@ -19594,7 +19593,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYFOGVOLUMELINEARHALFSPACEDENSITYINFO));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryFogVolumeLinearHalfspaceDensityInfo");
 		}
 
 		return uClassPointer;
@@ -19615,7 +19614,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYFOGVOLUMESPHERICALDENSITYINFO));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryFogVolumeSphericalDensityInfo");
 		}
 
 		return uClassPointer;
@@ -19644,7 +19643,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXDESTRUCTIBLEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.ApexDestructibleActor");
 		}
 
 		return uClassPointer;
@@ -19688,7 +19687,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FRACTUREDSTATICMESHACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.FracturedStaticMeshActor");
 		}
 
 		return uClassPointer;
@@ -19741,7 +19740,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FRACTUREDSTATICMESHPART));
+			uClassPointer = UObject::FindClass("Class Engine.FracturedStaticMeshPart");
 		}
 
 		return uClassPointer;
@@ -19778,7 +19777,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FRACTUREMANAGER));
+			uClassPointer = UObject::FindClass("Class Engine.FractureManager");
 		}
 
 		return uClassPointer;
@@ -19816,7 +19815,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_IMAGEREFLECTION));
+			uClassPointer = UObject::FindClass("Class Engine.ImageReflection");
 		}
 
 		return uClassPointer;
@@ -19842,7 +19841,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_IMAGEREFLECTIONSCENECAPTURE));
+			uClassPointer = UObject::FindClass("Class Engine.ImageReflectionSceneCapture");
 		}
 
 		return uClassPointer;
@@ -19865,7 +19864,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_IMAGEREFLECTIONSHADOWPLANE));
+			uClassPointer = UObject::FindClass("Class Engine.ImageReflectionShadowPlane");
 		}
 
 		return uClassPointer;
@@ -19890,7 +19889,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_IMAGEREFLECTIONCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ImageReflectionComponent");
 		}
 
 		return uClassPointer;
@@ -19914,7 +19913,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_IMAGEREFLECTIONSHADOWPLANECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ImageReflectionShadowPlaneComponent");
 		}
 
 		return uClassPointer;
@@ -19941,7 +19940,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXCOMPONENTBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ApexComponentBase");
 		}
 
 		return uClassPointer;
@@ -19963,7 +19962,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXDYNAMICCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ApexDynamicComponent");
 		}
 
 		return uClassPointer;
@@ -19984,7 +19983,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXSTATICCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ApexStaticComponent");
 		}
 
 		return uClassPointer;
@@ -20010,7 +20009,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXSTATICDESTRUCTIBLECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ApexStaticDestructibleComponent");
 		}
 
 		return uClassPointer;
@@ -20041,7 +20040,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FRACTUREDBASECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.FracturedBaseComponent");
 		}
 
 		return uClassPointer;
@@ -20072,7 +20071,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FRACTUREDSKINNEDMESHCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.FracturedSkinnedMeshComponent");
 		}
 
 		return uClassPointer;
@@ -20104,7 +20103,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FRACTUREDSTATICMESHCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.FracturedStaticMeshComponent");
 		}
 
 		return uClassPointer;
@@ -20140,7 +20139,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_IMAGEBASEDREFLECTIONCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ImageBasedReflectionComponent");
 		}
 
 		return uClassPointer;
@@ -20174,7 +20173,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INSTANCEDSTATICMESHCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.InstancedStaticMeshComponent");
 		}
 
 		return uClassPointer;
@@ -20198,7 +20197,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPLINEMESHCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SplineMeshComponent");
 		}
 
 		return uClassPointer;
@@ -20224,7 +20223,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXASSET));
+			uClassPointer = UObject::FindClass("Class Engine.ApexAsset");
 		}
 
 		return uClassPointer;
@@ -20271,7 +20270,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXCLOTHINGASSET));
+			uClassPointer = UObject::FindClass("Class Engine.ApexClothingAsset");
 		}
 
 		return uClassPointer;
@@ -20303,7 +20302,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXDESTRUCTIBLEASSET));
+			uClassPointer = UObject::FindClass("Class Engine.ApexDestructibleAsset");
 		}
 
 		return uClassPointer;
@@ -20326,7 +20325,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXGENERICASSET));
+			uClassPointer = UObject::FindClass("Class Engine.ApexGenericAsset");
 		}
 
 		return uClassPointer;
@@ -20348,7 +20347,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPFILTER));
+			uClassPointer = UObject::FindClass("Class Engine.InterpFilter");
 		}
 
 		return uClassPointer;
@@ -20371,7 +20370,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPFILTER_CLASSES));
+			uClassPointer = UObject::FindClass("Class Engine.InterpFilter_Classes");
 		}
 
 		return uClassPointer;
@@ -20393,7 +20392,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPFILTER_CUSTOM));
+			uClassPointer = UObject::FindClass("Class Engine.InterpFilter_Custom");
 		}
 
 		return uClassPointer;
@@ -20424,7 +20423,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPGROUP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpGroup");
 		}
 
 		return uClassPointer;
@@ -20453,7 +20452,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPGROUPAI));
+			uClassPointer = UObject::FindClass("Class Engine.InterpGroupAI");
 		}
 
 		return uClassPointer;
@@ -20477,7 +20476,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPGROUPCAMERA));
+			uClassPointer = UObject::FindClass("Class Engine.InterpGroupCamera");
 		}
 
 		return uClassPointer;
@@ -20498,7 +20497,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPGROUPDIRECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.InterpGroupDirector");
 		}
 
 		return uClassPointer;
@@ -20523,7 +20522,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPGROUPINST));
+			uClassPointer = UObject::FindClass("Class Engine.InterpGroupInst");
 		}
 
 		return uClassPointer;
@@ -20551,7 +20550,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPGROUPINSTAI));
+			uClassPointer = UObject::FindClass("Class Engine.InterpGroupInstAI");
 		}
 
 		return uClassPointer;
@@ -20572,7 +20571,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPGROUPINSTCAMERA));
+			uClassPointer = UObject::FindClass("Class Engine.InterpGroupInstCamera");
 		}
 
 		return uClassPointer;
@@ -20593,7 +20592,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPGROUPINSTDIRECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.InterpGroupInstDirector");
 		}
 
 		return uClassPointer;
@@ -20616,7 +20615,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKBOOLPROP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackBoolProp");
 		}
 
 		return uClassPointer;
@@ -20639,7 +20638,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKDIRECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackDirector");
 		}
 
 		return uClassPointer;
@@ -20664,7 +20663,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKEVENT));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackEvent");
 		}
 
 		return uClassPointer;
@@ -20689,7 +20688,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKFACEFX));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackFaceFX");
 		}
 
 		return uClassPointer;
@@ -20712,7 +20711,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKFLOATBASE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackFloatBase");
 		}
 
 		return uClassPointer;
@@ -20738,7 +20737,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKANIMCONTROL));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackAnimControl");
 		}
 
 		return uClassPointer;
@@ -20760,7 +20759,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKFADE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackFade");
 		}
 
 		return uClassPointer;
@@ -20785,7 +20784,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKFLOATMATERIALPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackFloatMaterialParam");
 		}
 
 		return uClassPointer;
@@ -20807,7 +20806,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKFLOATPARTICLEPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackFloatParticleParam");
 		}
 
 		return uClassPointer;
@@ -20829,7 +20828,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKFLOATPROP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackFloatProp");
 		}
 
 		return uClassPointer;
@@ -20851,7 +20850,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKMORPHWEIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackMorphWeight");
 		}
 
 		return uClassPointer;
@@ -20874,7 +20873,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKMOVEAXIS));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackMoveAxis");
 		}
 
 		return uClassPointer;
@@ -20896,7 +20895,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKSKELCONTROLSCALE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackSkelControlScale");
 		}
 
 		return uClassPointer;
@@ -20918,7 +20917,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKSKELCONTROLSTRENGTH));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackSkelControlStrength");
 		}
 
 		return uClassPointer;
@@ -20939,7 +20938,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKSLOMO));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackSlomo");
 		}
 
 		return uClassPointer;
@@ -20970,7 +20969,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKHEADTRACKING));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackHeadTracking");
 		}
 
 		return uClassPointer;
@@ -20993,7 +20992,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKLINEARCOLORBASE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackLinearColorBase");
 		}
 
 		return uClassPointer;
@@ -21015,7 +21014,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKLINEARCOLORPROP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackLinearColorProp");
 		}
 
 		return uClassPointer;
@@ -21050,7 +21049,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKMOVE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackMove");
 		}
 
 		return uClassPointer;
@@ -21076,7 +21075,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKNOTIFY));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackNotify");
 		}
 
 		return uClassPointer;
@@ -21100,7 +21099,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKPARTICLEREPLAY));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackParticleReplay");
 		}
 
 		return uClassPointer;
@@ -21127,7 +21126,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKTOGGLE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackToggle");
 		}
 
 		return uClassPointer;
@@ -21150,7 +21149,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKVECTORBASE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackVectorBase");
 		}
 
 		return uClassPointer;
@@ -21171,7 +21170,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKAUDIOMASTER));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackAudioMaster");
 		}
 
 		return uClassPointer;
@@ -21193,7 +21192,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKCOLORPROP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackColorProp");
 		}
 
 		return uClassPointer;
@@ -21214,7 +21213,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKCOLORSCALE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackColorScale");
 		}
 
 		return uClassPointer;
@@ -21240,7 +21239,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKSOUND));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackSound");
 		}
 
 		return uClassPointer;
@@ -21265,7 +21264,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKVECTORMATERIALPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackVectorMaterialParam");
 		}
 
 		return uClassPointer;
@@ -21287,7 +21286,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKVECTORPROP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackVectorProp");
 		}
 
 		return uClassPointer;
@@ -21312,7 +21311,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKVISIBILITY));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackVisibility");
 		}
 
 		return uClassPointer;
@@ -21333,7 +21332,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINST));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInst");
 		}
 
 		return uClassPointer;
@@ -21357,7 +21356,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTANIMCONTROL));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstAnimControl");
 		}
 
 		return uClassPointer;
@@ -21378,7 +21377,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTAUDIOMASTER));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstAudioMaster");
 		}
 
 		return uClassPointer;
@@ -21399,7 +21398,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTCOLORSCALE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstColorScale");
 		}
 
 		return uClassPointer;
@@ -21422,7 +21421,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTDIRECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstDirector");
 		}
 
 		return uClassPointer;
@@ -21444,7 +21443,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTEVENT));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstEvent");
 		}
 
 		return uClassPointer;
@@ -21467,7 +21466,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTFACEFX));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstFaceFX");
 		}
 
 		return uClassPointer;
@@ -21488,7 +21487,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTFADE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstFade");
 		}
 
 		return uClassPointer;
@@ -21511,7 +21510,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTFLOATMATERIALPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstFloatMaterialParam");
 		}
 
 		return uClassPointer;
@@ -21533,7 +21532,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTFLOATPARTICLEPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstFloatParticleParam");
 		}
 
 		return uClassPointer;
@@ -21559,7 +21558,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTHEADTRACKING));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstHeadTracking");
 		}
 
 		return uClassPointer;
@@ -21580,7 +21579,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTMORPHWEIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstMorphWeight");
 		}
 
 		return uClassPointer;
@@ -21606,7 +21605,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTMOVE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstMove");
 		}
 
 		return uClassPointer;
@@ -21628,7 +21627,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTNOTIFY));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstNotify");
 		}
 
 		return uClassPointer;
@@ -21650,7 +21649,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTPARTICLEREPLAY));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstParticleReplay");
 		}
 
 		return uClassPointer;
@@ -21673,7 +21672,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTPROPERTY));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstProperty");
 		}
 
 		return uClassPointer;
@@ -21697,7 +21696,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTBOOLPROP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstBoolProp");
 		}
 
 		return uClassPointer;
@@ -21720,7 +21719,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTCOLORPROP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstColorProp");
 		}
 
 		return uClassPointer;
@@ -21744,7 +21743,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTFLOATPROP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstFloatProp");
 		}
 
 		return uClassPointer;
@@ -21767,7 +21766,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTLINEARCOLORPROP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstLinearColorProp");
 		}
 
 		return uClassPointer;
@@ -21790,7 +21789,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTVECTORPROP));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstVectorProp");
 		}
 
 		return uClassPointer;
@@ -21811,7 +21810,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTSKELCONTROLSCALE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstSkelControlScale");
 		}
 
 		return uClassPointer;
@@ -21833,7 +21832,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTSKELCONTROLSTRENGTH));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstSkelControlStrength");
 		}
 
 		return uClassPointer;
@@ -21855,7 +21854,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTSLOMO));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstSlomo");
 		}
 
 		return uClassPointer;
@@ -21878,7 +21877,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTSOUND));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstSound");
 		}
 
 		return uClassPointer;
@@ -21902,7 +21901,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTTOGGLE));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstToggle");
 		}
 
 		return uClassPointer;
@@ -21925,7 +21924,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTVECTORMATERIALPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstVectorMaterialParam");
 		}
 
 		return uClassPointer;
@@ -21948,7 +21947,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPTRACKINSTVISIBILITY));
+			uClassPointer = UObject::FindClass("Class Engine.InterpTrackInstVisibility");
 		}
 
 		return uClassPointer;
@@ -21987,7 +21986,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpression");
 		}
 
 		return uClassPointer;
@@ -22009,7 +22008,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONABS));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionAbs");
 		}
 
 		return uClassPointer;
@@ -22030,7 +22029,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONACTORWORLDPOSITION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionActorWorldPosition");
 		}
 
 		return uClassPointer;
@@ -22053,7 +22052,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONADD));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionAdd");
 		}
 
 		return uClassPointer;
@@ -22076,7 +22075,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONAPPENDVECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionAppendVector");
 		}
 
 		return uClassPointer;
@@ -22102,7 +22101,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONBUMPOFFSET));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionBumpOffset");
 		}
 
 		return uClassPointer;
@@ -22123,7 +22122,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCAMERAVECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionCameraVector");
 		}
 
 		return uClassPointer;
@@ -22144,7 +22143,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCAMERAWORLDPOSITION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionCameraWorldPosition");
 		}
 
 		return uClassPointer;
@@ -22166,7 +22165,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCEIL));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionCeil");
 		}
 
 		return uClassPointer;
@@ -22190,7 +22189,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCLAMP));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionClamp");
 		}
 
 		return uClassPointer;
@@ -22216,7 +22215,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCOMMENT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionComment");
 		}
 
 		return uClassPointer;
@@ -22242,7 +22241,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCOMPONENTMASK));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionComponentMask");
 		}
 
 		return uClassPointer;
@@ -22264,7 +22263,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCONSTANT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionConstant");
 		}
 
 		return uClassPointer;
@@ -22287,7 +22286,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCONSTANT2VECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionConstant2Vector");
 		}
 
 		return uClassPointer;
@@ -22311,7 +22310,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCONSTANT3VECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionConstant3Vector");
 		}
 
 		return uClassPointer;
@@ -22336,7 +22335,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCONSTANT4VECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionConstant4Vector");
 		}
 
 		return uClassPointer;
@@ -22360,7 +22359,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCONSTANTBIASSCALE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionConstantBiasScale");
 		}
 
 		return uClassPointer;
@@ -22384,7 +22383,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCONSTANTCLAMP));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionConstantClamp");
 		}
 
 		return uClassPointer;
@@ -22407,7 +22406,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCOSINE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionCosine");
 		}
 
 		return uClassPointer;
@@ -22430,7 +22429,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCROSSPRODUCT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionCrossProduct");
 		}
 
 		return uClassPointer;
@@ -22455,7 +22454,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCUSTOM));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionCustom");
 		}
 
 		return uClassPointer;
@@ -22477,7 +22476,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONCUSTOMTEXTURE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionCustomTexture");
 		}
 
 		return uClassPointer;
@@ -22502,7 +22501,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDEPTHBIASEDALPHA));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDepthBiasedAlpha");
 		}
 
 		return uClassPointer;
@@ -22528,7 +22527,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDEPTHBIASEDBLEND));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDepthBiasedBlend");
 		}
 
 		return uClassPointer;
@@ -22551,7 +22550,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDEPTHOFFIELDFUNCTION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDepthOfFieldFunction");
 		}
 
 		return uClassPointer;
@@ -22573,7 +22572,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDERIVENORMALZ));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDeriveNormalZ");
 		}
 
 		return uClassPointer;
@@ -22597,7 +22596,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDESATURATION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDesaturation");
 		}
 
 		return uClassPointer;
@@ -22618,7 +22617,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDESTCOLOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDestColor");
 		}
 
 		return uClassPointer;
@@ -22640,7 +22639,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDESTDEPTH));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDestDepth");
 		}
 
 		return uClassPointer;
@@ -22663,7 +22662,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDISTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDistance");
 		}
 
 		return uClassPointer;
@@ -22686,7 +22685,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDIVIDE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDivide");
 		}
 
 		return uClassPointer;
@@ -22709,7 +22708,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDOTPRODUCT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDotProduct");
 		}
 
 		return uClassPointer;
@@ -22731,7 +22730,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDYNAMICPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDynamicParameter");
 		}
 
 		return uClassPointer;
@@ -22752,7 +22751,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONMESHEMITTERDYNAMICPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionMeshEmitterDynamicParameter");
 		}
 
 		return uClassPointer;
@@ -22774,7 +22773,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFLOOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFloor");
 		}
 
 		return uClassPointer;
@@ -22796,7 +22795,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFLUIDNORMAL));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFluidNormal");
 		}
 
 		return uClassPointer;
@@ -22819,7 +22818,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFMOD));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFmod");
 		}
 
 		return uClassPointer;
@@ -22840,7 +22839,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFOLIAGEIMPULSEDIRECTION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFoliageImpulseDirection");
 		}
 
 		return uClassPointer;
@@ -22861,7 +22860,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFOLIAGENORMALIZEDROTATIONAXISANDANGLE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFoliageNormalizedRotationAxisAndAngle");
 		}
 
 		return uClassPointer;
@@ -22884,7 +22883,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFONTSAMPLE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFontSample");
 		}
 
 		return uClassPointer;
@@ -22908,7 +22907,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFONTSAMPLEPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFontSampleParameter");
 		}
 
 		return uClassPointer;
@@ -22930,7 +22929,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFRAC));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFrac");
 		}
 
 		return uClassPointer;
@@ -22953,7 +22952,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFRESNEL));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFresnel");
 		}
 
 		return uClassPointer;
@@ -22984,7 +22983,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFUNCTIONINPUT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFunctionInput");
 		}
 
 		return uClassPointer;
@@ -23011,7 +23010,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFUNCTIONOUTPUT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFunctionOutput");
 		}
 
 		return uClassPointer;
@@ -23037,7 +23036,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONIF));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionIf");
 		}
 
 		return uClassPointer;
@@ -23060,7 +23059,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONLANDSCAPELAYERBLEND));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionLandscapeLayerBlend");
 		}
 
 		return uClassPointer;
@@ -23081,7 +23080,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONLENSFLAREINTENSITY));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionLensFlareIntensity");
 		}
 
 		return uClassPointer;
@@ -23102,7 +23101,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONLENSFLAREOCCLUSION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionLensFlareOcclusion");
 		}
 
 		return uClassPointer;
@@ -23123,7 +23122,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONLENSFLARERADIALDISTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionLensFlareRadialDistance");
 		}
 
 		return uClassPointer;
@@ -23144,7 +23143,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONLENSFLARERAYDISTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionLensFlareRayDistance");
 		}
 
 		return uClassPointer;
@@ -23165,7 +23164,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONLENSFLARESOURCEDISTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionLensFlareSourceDistance");
 		}
 
 		return uClassPointer;
@@ -23186,7 +23185,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONLIGHTMAPUVS));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionLightmapUVs");
 		}
 
 		return uClassPointer;
@@ -23209,7 +23208,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONLIGHTMASSREPLACE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionLightmassReplace");
 		}
 
 		return uClassPointer;
@@ -23230,7 +23229,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONLIGHTVECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionLightVector");
 		}
 
 		return uClassPointer;
@@ -23254,7 +23253,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONLINEARINTERPOLATE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionLinearInterpolate");
 		}
 
 		return uClassPointer;
@@ -23278,7 +23277,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONMATERIALFUNCTIONCALL));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionMaterialFunctionCall");
 		}
 
 		return uClassPointer;
@@ -23299,7 +23298,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONMESHEMITTERVERTEXCOLOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionMeshEmitterVertexColor");
 		}
 
 		return uClassPointer;
@@ -23322,7 +23321,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONMULTIPLY));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionMultiply");
 		}
 
 		return uClassPointer;
@@ -23344,7 +23343,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONNORMALIZE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionNormalize");
 		}
 
 		return uClassPointer;
@@ -23365,7 +23364,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONOBJECTORIENTATION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionObjectOrientation");
 		}
 
 		return uClassPointer;
@@ -23386,7 +23385,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONOBJECTRADIUS));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionObjectRadius");
 		}
 
 		return uClassPointer;
@@ -23407,7 +23406,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONOBJECTWORLDPOSITION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionObjectWorldPosition");
 		}
 
 		return uClassPointer;
@@ -23428,7 +23427,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONOCCLUSIONPERCENTAGE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionOcclusionPercentage");
 		}
 
 		return uClassPointer;
@@ -23450,7 +23449,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONONEMINUS));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionOneMinus");
 		}
 
 		return uClassPointer;
@@ -23475,7 +23474,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONPANNER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionPanner");
 		}
 
 		return uClassPointer;
@@ -23499,7 +23498,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionParameter");
 		}
 
 		return uClassPointer;
@@ -23521,7 +23520,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSCALARPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionScalarParameter");
 		}
 
 		return uClassPointer;
@@ -23545,7 +23544,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSTATICBOOLPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionStaticBoolParameter");
 		}
 
 		return uClassPointer;
@@ -23568,7 +23567,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSTATICSWITCHPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionStaticSwitchParameter");
 		}
 
 		return uClassPointer;
@@ -23595,7 +23594,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSTATICCOMPONENTMASKPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionStaticComponentMaskParameter");
 		}
 
 		return uClassPointer;
@@ -23617,7 +23616,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONVECTORPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionVectorParameter");
 		}
 
 		return uClassPointer;
@@ -23639,7 +23638,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONPARTICLEMACROUV));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionParticleMacroUV");
 		}
 
 		return uClassPointer;
@@ -23660,7 +23659,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONPERINSTANCERANDOM));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionPerInstanceRandom");
 		}
 
 		return uClassPointer;
@@ -23682,7 +23681,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONPIXELDEPTH));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionPixelDepth");
 		}
 
 		return uClassPointer;
@@ -23705,7 +23704,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONPOWER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionPower");
 		}
 
 		return uClassPointer;
@@ -23728,7 +23727,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONQUALITYSWITCH));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionQualitySwitch");
 		}
 
 		return uClassPointer;
@@ -23752,7 +23751,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONQUALITYSWITCHPS3));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionQualitySwitchPS3");
 		}
 
 		return uClassPointer;
@@ -23774,7 +23773,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONREDWORLDNORMAL));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionREDWorldNormal");
 		}
 
 		return uClassPointer;
@@ -23795,7 +23794,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONREFLECTIONVECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionReflectionVector");
 		}
 
 		return uClassPointer;
@@ -23819,7 +23818,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONROTATEABOUTAXIS));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionRotateAboutAxis");
 		}
 
 		return uClassPointer;
@@ -23845,7 +23844,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONROTATOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionRotator");
 		}
 
 		return uClassPointer;
@@ -23868,7 +23867,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSCENEDEPTH));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionSceneDepth");
 		}
 
 		return uClassPointer;
@@ -23892,7 +23891,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSCENETEXTURE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionSceneTexture");
 		}
 
 		return uClassPointer;
@@ -23914,7 +23913,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSCREENPOSITION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionScreenPosition");
 		}
 
 		return uClassPointer;
@@ -23935,7 +23934,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSCREENSIZE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionScreenSize");
 		}
 
 		return uClassPointer;
@@ -23958,7 +23957,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSINE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionSine");
 		}
 
 		return uClassPointer;
@@ -23985,7 +23984,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSPHEREMASK));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionSphereMask");
 		}
 
 		return uClassPointer;
@@ -24007,7 +24006,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSQUAREROOT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionSquareRoot");
 		}
 
 		return uClassPointer;
@@ -24029,7 +24028,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSTATICBOOL));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionStaticBool");
 		}
 
 		return uClassPointer;
@@ -24055,7 +24054,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSTATICSWITCH));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionStaticSwitch");
 		}
 
 		return uClassPointer;
@@ -24078,7 +24077,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONSUBTRACT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionSubtract");
 		}
 
 		return uClassPointer;
@@ -24104,7 +24103,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTERRAINLAYERCOORDS));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTerrainLayerCoords");
 		}
 
 		return uClassPointer;
@@ -24131,7 +24130,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTERRAINLAYERSWITCH));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTerrainLayerSwitch");
 		}
 
 		return uClassPointer;
@@ -24158,7 +24157,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTERRAINLAYERWEIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTerrainLayerWeight");
 		}
 
 		return uClassPointer;
@@ -24179,7 +24178,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXELSIZE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTexelSize");
 		}
 
 		return uClassPointer;
@@ -24205,7 +24204,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURECOORDINATE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureCoordinate");
 		}
 
 		return uClassPointer;
@@ -24227,7 +24226,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTUREOBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureObject");
 		}
 
 		return uClassPointer;
@@ -24251,7 +24250,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURESAMPLE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureSample");
 		}
 
 		return uClassPointer;
@@ -24275,7 +24274,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONDEPTHBIASBLEND));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionDepthBiasBlend");
 		}
 
 		return uClassPointer;
@@ -24296,7 +24295,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONFLIPBOOKSAMPLE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionFlipBookSample");
 		}
 
 		return uClassPointer;
@@ -24317,7 +24316,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONMESHSUBUV));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionMeshSubUV");
 		}
 
 		return uClassPointer;
@@ -24338,7 +24337,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONMESHSUBUVBLEND));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionMeshSubUVBlend");
 		}
 
 		return uClassPointer;
@@ -24359,7 +24358,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONPARTICLESUBUV));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionParticleSubUV");
 		}
 
 		return uClassPointer;
@@ -24383,7 +24382,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURESAMPLEPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameter");
 		}
 
 		return uClassPointer;
@@ -24404,7 +24403,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTUREOBJECTPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureObjectParameter");
 		}
 
 		return uClassPointer;
@@ -24425,7 +24424,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURESAMPLEPARAMETER2D));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameter2D");
 		}
 
 		return uClassPointer;
@@ -24448,7 +24447,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONANTIALIASEDTEXTUREMASK));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionAntialiasedTextureMask");
 		}
 
 		return uClassPointer;
@@ -24469,7 +24468,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURESAMPLEPARAMETERFLIPBOOK));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameterFlipbook");
 		}
 
 		return uClassPointer;
@@ -24490,7 +24489,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURESAMPLEPARAMETERMESHSUBUV));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameterMeshSubUV");
 		}
 
 		return uClassPointer;
@@ -24511,7 +24510,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURESAMPLEPARAMETERMESHSUBUVBLEND));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameterMeshSubUVBlend");
 		}
 
 		return uClassPointer;
@@ -24532,7 +24531,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURESAMPLEPARAMETERSUBUV));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameterSubUV");
 		}
 
 		return uClassPointer;
@@ -24553,7 +24552,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURESAMPLEPARAMETERCUBE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameterCube");
 		}
 
 		return uClassPointer;
@@ -24574,7 +24573,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURESAMPLEPARAMETERMOVIE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameterMovie");
 		}
 
 		return uClassPointer;
@@ -24596,7 +24595,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTEXTURESAMPLEPARAMETERNORMAL));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTextureSampleParameterNormal");
 		}
 
 		return uClassPointer;
@@ -24618,7 +24617,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTIME));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTime");
 		}
 
 		return uClassPointer;
@@ -24642,7 +24641,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTRANSFORM));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTransform");
 		}
 
 		return uClassPointer;
@@ -24666,7 +24665,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTRANSFORMPOSITION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTransformPosition");
 		}
 
 		return uClassPointer;
@@ -24687,7 +24686,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONTWOSIDEDSIGN));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionTwoSidedSign");
 		}
 
 		return uClassPointer;
@@ -24708,7 +24707,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONVERTEXCOLOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionVertexColor");
 		}
 
 		return uClassPointer;
@@ -24729,7 +24728,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONWINDDIRECTIONANDSPEED));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionWindDirectionAndSpeed");
 		}
 
 		return uClassPointer;
@@ -24750,7 +24749,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONWORLDNORMAL));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionWorldNormal");
 		}
 
 		return uClassPointer;
@@ -24771,7 +24770,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALEXPRESSIONWORLDPOSITION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialExpressionWorldPosition");
 		}
 
 		return uClassPointer;
@@ -24800,7 +24799,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALFUNCTION));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialFunction");
 		}
 
 		return uClassPointer;
@@ -24837,7 +24836,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALINSTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialInstance");
 		}
 
 		return uClassPointer;
@@ -24871,7 +24870,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALINSTANCECONSTANT));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialInstanceConstant");
 		}
 
 		return uClassPointer;
@@ -24904,7 +24903,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LANDSCAPEMATERIALINSTANCECONSTANT));
+			uClassPointer = UObject::FindClass("Class Engine.LandscapeMaterialInstanceConstant");
 		}
 
 		return uClassPointer;
@@ -24932,7 +24931,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALINSTANCETIMEVARYING));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialInstanceTimeVarying");
 		}
 
 		return uClassPointer;
@@ -24975,7 +24974,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_EMITTERCAMERALENSEFFECTBASE));
+			uClassPointer = UObject::FindClass("Class Engine.EmitterCameraLensEffectBase");
 		}
 
 		return uClassPointer;
@@ -25002,7 +25001,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEEVENTMANAGER));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleEventManager");
 		}
 
 		return uClassPointer;
@@ -25091,7 +25090,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLESYSTEMCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleSystemComponent");
 		}
 
 		return uClassPointer;
@@ -25159,7 +25158,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONFLOATPARTICLEPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionFloatParticleParameter");
 		}
 
 		return uClassPointer;
@@ -25180,7 +25179,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONVECTORPARTICLEPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionVectorParticleParameter");
 		}
 
 		return uClassPointer;
@@ -25213,7 +25212,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEEMITTER));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleEmitter");
 		}
 
 		return uClassPointer;
@@ -25235,7 +25234,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLESPRITEEMITTER));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleSpriteEmitter");
 		}
 
 		return uClassPointer;
@@ -25270,7 +25269,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLELODLEVEL));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleLODLevel");
 		}
 
 		return uClassPointer;
@@ -25304,7 +25303,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModule");
 		}
 
 		return uClassPointer;
@@ -25326,7 +25325,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEACCELERATIONBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleAccelerationBase");
 		}
 
 		return uClassPointer;
@@ -25349,7 +25348,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEACCELERATION));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleAcceleration");
 		}
 
 		return uClassPointer;
@@ -25371,7 +25370,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEACCELERATIONOVERLIFETIME));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleAccelerationOverLifetime");
 		}
 
 		return uClassPointer;
@@ -25392,7 +25391,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEATTRACTORBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleAttractorBase");
 		}
 
 		return uClassPointer;
@@ -25428,7 +25427,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEATTRACTORBONESOCKET));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleAttractorBoneSocket");
 		}
 
 		return uClassPointer;
@@ -25453,7 +25452,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEATTRACTORLINE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleAttractorLine");
 		}
 
 		return uClassPointer;
@@ -25483,7 +25482,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEATTRACTORPARTICLE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleAttractorParticle");
 		}
 
 		return uClassPointer;
@@ -25511,7 +25510,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEATTRACTORPOINT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleAttractorPoint");
 		}
 
 		return uClassPointer;
@@ -25550,7 +25549,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEATTRACTORSKELVERTSURFACE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleAttractorSkelVertSurface");
 		}
 
 		return uClassPointer;
@@ -25571,7 +25570,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEBEAMBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleBeamBase");
 		}
 
 		return uClassPointer;
@@ -25600,7 +25599,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEBEAMMODIFIER));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleBeamModifier");
 		}
 
 		return uClassPointer;
@@ -25641,7 +25640,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEBEAMNOISE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleBeamNoise");
 		}
 
 		return uClassPointer;
@@ -25672,7 +25671,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEBEAMSOURCE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleBeamSource");
 		}
 
 		return uClassPointer;
@@ -25704,7 +25703,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEBEAMTARGET));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleBeamTarget");
 		}
 
 		return uClassPointer;
@@ -25725,7 +25724,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECAMERABASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleCameraBase");
 		}
 
 		return uClassPointer;
@@ -25749,7 +25748,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECAMERAOFFSET));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleCameraOffset");
 		}
 
 		return uClassPointer;
@@ -25770,7 +25769,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECOLLISIONBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleCollisionBase");
 		}
 
 		return uClassPointer;
@@ -25808,7 +25807,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECOLLISION));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleCollision");
 		}
 
 		return uClassPointer;
@@ -25831,7 +25830,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECOLLISIONACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleCollisionActor");
 		}
 
 		return uClassPointer;
@@ -25852,7 +25851,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECOLORBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleColorBase");
 		}
 
 		return uClassPointer;
@@ -25876,7 +25875,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECOLOR));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleColor");
 		}
 
 		return uClassPointer;
@@ -25898,7 +25897,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECOLOR_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleColor_Seeded");
 		}
 
 		return uClassPointer;
@@ -25921,7 +25920,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECOLORBYPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleColorByParameter");
 		}
 
 		return uClassPointer;
@@ -25956,7 +25955,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECOLOROVERLIFE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleColorOverLife");
 		}
 
 		return uClassPointer;
@@ -25979,7 +25978,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECOLORSCALEOVERDENSITY));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleColorScaleOverDensity");
 		}
 
 		return uClassPointer;
@@ -26003,7 +26002,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULECOLORSCALEOVERLIFE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleColorScaleOverLife");
 		}
 
 		return uClassPointer;
@@ -26024,7 +26023,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEEVENTBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleEventBase");
 		}
 
 		return uClassPointer;
@@ -26046,7 +26045,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEEVENTGENERATOR));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleEventGenerator");
 		}
 
 		return uClassPointer;
@@ -26069,7 +26068,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEEVENTRECEIVERBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleEventReceiverBase");
 		}
 
 		return uClassPointer;
@@ -26091,7 +26090,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEEVENTRECEIVERKILLPARTICLES));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleEventReceiverKillParticles");
 		}
 
 		return uClassPointer;
@@ -26117,7 +26116,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEEVENTRECEIVERSPAWN));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleEventReceiverSpawn");
 		}
 
 		return uClassPointer;
@@ -26138,7 +26137,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEKILLBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleKillBase");
 		}
 
 		return uClassPointer;
@@ -26164,7 +26163,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEKILLBOX));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleKillBox");
 		}
 
 		return uClassPointer;
@@ -26189,7 +26188,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEKILLHEIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleKillHeight");
 		}
 
 		return uClassPointer;
@@ -26210,7 +26209,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELIFETIMEBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLifetimeBase");
 		}
 
 		return uClassPointer;
@@ -26232,7 +26231,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELIFETIME));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLifetime");
 		}
 
 		return uClassPointer;
@@ -26254,7 +26253,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELIFETIME_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLifetime_Seeded");
 		}
 
 		return uClassPointer;
@@ -26275,7 +26274,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationBase");
 		}
 
 		return uClassPointer;
@@ -26299,7 +26298,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATION));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocation");
 		}
 
 		return uClassPointer;
@@ -26321,7 +26320,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATION_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocation_Seeded");
 		}
 
 		return uClassPointer;
@@ -26342,7 +26341,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONWORLDOFFSET));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationWorldOffset");
 		}
 
 		return uClassPointer;
@@ -26364,7 +26363,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONWORLDOFFSET_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationWorldOffset_Seeded");
 		}
 
 		return uClassPointer;
@@ -26395,7 +26394,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONBONESOCKET));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationBoneSocket");
 		}
 
 		return uClassPointer;
@@ -26420,7 +26419,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONDIRECT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationDirect");
 		}
 
 		return uClassPointer;
@@ -26447,7 +26446,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONEMITTER));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationEmitter");
 		}
 
 		return uClassPointer;
@@ -26469,7 +26468,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONEMITTERDIRECT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationEmitterDirect");
 		}
 
 		return uClassPointer;
@@ -26500,7 +26499,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONPRIMITIVEBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveBase");
 		}
 
 		return uClassPointer;
@@ -26526,7 +26525,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONPRIMITIVECYLINDER));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveCylinder");
 		}
 
 		return uClassPointer;
@@ -26548,7 +26547,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONPRIMITIVECYLINDER_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveCylinder_Seeded");
 		}
 
 		return uClassPointer;
@@ -26570,7 +26569,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONPRIMITIVESPHERE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveSphere");
 		}
 
 		return uClassPointer;
@@ -26592,7 +26591,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONPRIMITIVESPHERE_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationPrimitiveSphere_Seeded");
 		}
 
 		return uClassPointer;
@@ -26625,7 +26624,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONSKELVERTSURFACE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationSkelVertSurface");
 		}
 
 		return uClassPointer;
@@ -26657,7 +26656,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULELOCATIONSTATICVERTSURFACE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleLocationStaticVertSurface");
 		}
 
 		return uClassPointer;
@@ -26679,7 +26678,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESOURCEMOVEMENT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSourceMovement");
 		}
 
 		return uClassPointer;
@@ -26700,7 +26699,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEMATERIALBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleMaterialBase");
 		}
 
 		return uClassPointer;
@@ -26723,7 +26722,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEMATERIALBYPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleMaterialByParameter");
 		}
 
 		return uClassPointer;
@@ -26745,7 +26744,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEMESHMATERIAL));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleMeshMaterial");
 		}
 
 		return uClassPointer;
@@ -26767,7 +26766,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEORBITBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleOrbitBase");
 		}
 
 		return uClassPointer;
@@ -26795,7 +26794,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEORBIT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleOrbit");
 		}
 
 		return uClassPointer;
@@ -26816,7 +26815,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEORIENTATIONBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleOrientationBase");
 		}
 
 		return uClassPointer;
@@ -26838,7 +26837,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEORIENTATIONAXISLOCK));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleOrientationAxisLock");
 		}
 
 		return uClassPointer;
@@ -26859,7 +26858,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEPARAMETERBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleParameterBase");
 		}
 
 		return uClassPointer;
@@ -26883,7 +26882,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEPARAMETERDYNAMIC));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleParameterDynamic");
 		}
 
 		return uClassPointer;
@@ -26905,7 +26904,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEPARAMETERDYNAMIC_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleParameterDynamic_Seeded");
 		}
 
 		return uClassPointer;
@@ -26965,7 +26964,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEREQUIRED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleRequired");
 		}
 
 		return uClassPointer;
@@ -26986,7 +26985,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEROTATIONBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleRotationBase");
 		}
 
 		return uClassPointer;
@@ -27009,7 +27008,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEMESHROTATION));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleMeshRotation");
 		}
 
 		return uClassPointer;
@@ -27031,7 +27030,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEMESHROTATION_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleMeshRotation_Seeded");
 		}
 
 		return uClassPointer;
@@ -27053,7 +27052,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEROTATION));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleRotation");
 		}
 
 		return uClassPointer;
@@ -27075,7 +27074,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEROTATION_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleRotation_Seeded");
 		}
 
 		return uClassPointer;
@@ -27098,7 +27097,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEROTATIONOVERLIFETIME));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleRotationOverLifetime");
 		}
 
 		return uClassPointer;
@@ -27119,7 +27118,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEROTATIONRATEBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleRotationRateBase");
 		}
 
 		return uClassPointer;
@@ -27141,7 +27140,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEMESHROTATIONRATE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleMeshRotationRate");
 		}
 
 		return uClassPointer;
@@ -27163,7 +27162,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEMESHROTATIONRATE_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleMeshRotationRate_Seeded");
 		}
 
 		return uClassPointer;
@@ -27185,7 +27184,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEMESHROTATIONRATEMULTIPLYLIFE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleMeshRotationRateMultiplyLife");
 		}
 
 		return uClassPointer;
@@ -27208,7 +27207,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEMESHROTATIONRATEOVERLIFE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleMeshRotationRateOverLife");
 		}
 
 		return uClassPointer;
@@ -27230,7 +27229,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEROTATIONRATE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleRotationRate");
 		}
 
 		return uClassPointer;
@@ -27252,7 +27251,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEROTATIONRATE_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleRotationRate_Seeded");
 		}
 
 		return uClassPointer;
@@ -27274,7 +27273,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEROTATIONRATEMULTIPLYLIFE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleRotationRateMultiplyLife");
 		}
 
 		return uClassPointer;
@@ -27295,7 +27294,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESIZEBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSizeBase");
 		}
 
 		return uClassPointer;
@@ -27317,7 +27316,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESIZE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSize");
 		}
 
 		return uClassPointer;
@@ -27339,7 +27338,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESIZE_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSize_Seeded");
 		}
 
 		return uClassPointer;
@@ -27364,7 +27363,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESIZEMULTIPLYLIFE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSizeMultiplyLife");
 		}
 
 		return uClassPointer;
@@ -27391,7 +27390,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESIZEMULTIPLYVELOCITY));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSizeMultiplyVelocity");
 		}
 
 		return uClassPointer;
@@ -27416,7 +27415,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESIZESCALE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSizeScale");
 		}
 
 		return uClassPointer;
@@ -27441,7 +27440,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESIZESCALEBYTIME));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSizeScaleByTime");
 		}
 
 		return uClassPointer;
@@ -27463,7 +27462,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESIZESCALEOVERDENSITY));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSizeScaleOverDensity");
 		}
 
 		return uClassPointer;
@@ -27486,7 +27485,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESPAWNBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSpawnBase");
 		}
 
 		return uClassPointer;
@@ -27511,7 +27510,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESPAWN));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSpawn");
 		}
 
 		return uClassPointer;
@@ -27541,7 +27540,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESPAWNPERUNIT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSpawnPerUnit");
 		}
 
 		return uClassPointer;
@@ -27562,7 +27561,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESTORESPAWNTIMEBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleStoreSpawnTimeBase");
 		}
 
 		return uClassPointer;
@@ -27583,7 +27582,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESTORESPAWNTIME));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleStoreSpawnTime");
 		}
 
 		return uClassPointer;
@@ -27604,7 +27603,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESUBUVBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSubUVBase");
 		}
 
 		return uClassPointer;
@@ -27627,7 +27626,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESUBUV));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSubUV");
 		}
 
 		return uClassPointer;
@@ -27651,7 +27650,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESUBUVMOVIE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSubUVMovie");
 		}
 
 		return uClassPointer;
@@ -27674,7 +27673,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESUBUVDIRECT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSubUVDirect");
 		}
 
 		return uClassPointer;
@@ -27696,7 +27695,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULESUBUVSELECT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleSubUVSelect");
 		}
 
 		return uClassPointer;
@@ -27717,7 +27716,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETRAILBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTrailBase");
 		}
 
 		return uClassPointer;
@@ -27746,7 +27745,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETRAILSOURCE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTrailSource");
 		}
 
 		return uClassPointer;
@@ -27769,7 +27768,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETRAILSPAWN));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTrailSpawn");
 		}
 
 		return uClassPointer;
@@ -27792,7 +27791,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETRAILTAPER));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTrailTaper");
 		}
 
 		return uClassPointer;
@@ -27813,7 +27812,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATABASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataBase");
 		}
 
 		return uClassPointer;
@@ -27847,7 +27846,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATAANIMTRAIL));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataAnimTrail");
 		}
 
 		return uClassPointer;
@@ -27870,7 +27869,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATAAPEX));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataApex");
 		}
 
 		return uClassPointer;
@@ -27904,7 +27903,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATABEAM));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataBeam");
 		}
 
 		return uClassPointer;
@@ -27943,7 +27942,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATABEAM2));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataBeam2");
 		}
 
 		return uClassPointer;
@@ -27978,7 +27977,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATAMESH));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataMesh");
 		}
 
 		return uClassPointer;
@@ -28004,7 +28003,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATAMESHPHYSX));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataMeshPhysX");
 		}
 
 		return uClassPointer;
@@ -28027,7 +28026,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATAPHYSX));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataPhysX");
 		}
 
 		return uClassPointer;
@@ -28068,7 +28067,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATARIBBON));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataRibbon");
 		}
 
 		return uClassPointer;
@@ -28097,7 +28096,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATATRAIL));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataTrail");
 		}
 
 		return uClassPointer;
@@ -28131,7 +28130,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULETYPEDATATRAIL2));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleTypeDataTrail2");
 		}
 
 		return uClassPointer;
@@ -28153,7 +28152,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEUBERBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleUberBase");
 		}
 
 		return uClassPointer;
@@ -28180,7 +28179,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEUBERLTISIVCL));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleUberLTISIVCL");
 		}
 
 		return uClassPointer;
@@ -28208,7 +28207,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEUBERLTISIVCLIL));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleUberLTISIVCLIL");
 		}
 
 		return uClassPointer;
@@ -28242,7 +28241,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEUBERLTISIVCLILIRSSBLIRR));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleUberLTISIVCLILIRSSBLIRR");
 		}
 
 		return uClassPointer;
@@ -28290,7 +28289,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEUBERRAINDROPS));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleUberRainDrops");
 		}
 
 		return uClassPointer;
@@ -28336,7 +28335,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEUBERRAINIMPACTS));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleUberRainImpacts");
 		}
 
 		return uClassPointer;
@@ -28367,7 +28366,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEUBERRAINSPLASHA));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleUberRainSplashA");
 		}
 
 		return uClassPointer;
@@ -28397,7 +28396,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEUBERRAINSPLASHB));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleUberRainSplashB");
 		}
 
 		return uClassPointer;
@@ -28420,7 +28419,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEVELOCITYBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleVelocityBase");
 		}
 
 		return uClassPointer;
@@ -28443,7 +28442,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEVELOCITY));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleVelocity");
 		}
 
 		return uClassPointer;
@@ -28465,7 +28464,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEVELOCITY_SEEDED));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleVelocity_Seeded");
 		}
 
 		return uClassPointer;
@@ -28489,7 +28488,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEVELOCITYCONE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleVelocityCone");
 		}
 
 		return uClassPointer;
@@ -28511,7 +28510,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEVELOCITYINHERITPARENT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleVelocityInheritParent");
 		}
 
 		return uClassPointer;
@@ -28534,7 +28533,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEVELOCITYOVERLIFETIME));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleVelocityOverLifetime");
 		}
 
 		return uClassPointer;
@@ -28555,7 +28554,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEWORLDFORCESBASE));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleWorldForcesBase");
 		}
 
 		return uClassPointer;
@@ -28578,7 +28577,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEPHYSICSVOLUMES));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModulePhysicsVolumes");
 		}
 
 		return uClassPointer;
@@ -28601,7 +28600,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEWORLDATTRACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleWorldAttractor");
 		}
 
 		return uClassPointer;
@@ -28622,7 +28621,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLEMODULEEVENTSENDTOGAME));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleModuleEventSendToGame");
 		}
 
 		return uClassPointer;
@@ -28646,7 +28645,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLESYSTEMREPLAY));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleSystemReplay");
 		}
 
 		return uClassPointer;
@@ -28698,7 +28697,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PHYSXPARTICLESYSTEM));
+			uClassPointer = UObject::FindClass("Class Engine.PhysXParticleSystem");
 		}
 
 		return uClassPointer;
@@ -28744,7 +28743,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_KACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.KActor");
 		}
 
 		return uClassPointer;
@@ -28781,7 +28780,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_KACTORFROMSTATIC));
+			uClassPointer = UObject::FindClass("Class Engine.KActorFromStatic");
 		}
 
 		return uClassPointer;
@@ -28815,7 +28814,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_KACTORSPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.KActorSpawnable");
 		}
 
 		return uClassPointer;
@@ -28846,7 +28845,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_KASSET));
+			uClassPointer = UObject::FindClass("Class Engine.KAsset");
 		}
 
 		return uClassPointer;
@@ -29062,7 +29061,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PAWN));
+			uClassPointer = UObject::FindClass("Class Engine.Pawn");
 		}
 
 		return uClassPointer;
@@ -29346,7 +29345,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_VEHICLE));
+			uClassPointer = UObject::FindClass("Class Engine.Vehicle");
 		}
 
 		return uClassPointer;
@@ -29476,7 +29475,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SVEHICLE));
+			uClassPointer = UObject::FindClass("Class Engine.SVehicle");
 		}
 
 		return uClassPointer;
@@ -29538,7 +29537,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_CONSTRAINTACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.RB_ConstraintActor");
 		}
 
 		return uClassPointer;
@@ -29572,7 +29571,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_LINEIMPULSEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.RB_LineImpulseActor");
 		}
 
 		return uClassPointer;
@@ -29599,7 +29598,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_RADIALIMPULSEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.RB_RadialImpulseActor");
 		}
 
 		return uClassPointer;
@@ -29624,7 +29623,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_THRUSTER));
+			uClassPointer = UObject::FindClass("Class Engine.RB_Thruster");
 		}
 
 		return uClassPointer;
@@ -29656,7 +29655,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WORLDATTRACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.WorldAttractor");
 		}
 
 		return uClassPointer;
@@ -29679,7 +29678,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_CONSTRAINTDRAWCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.RB_ConstraintDrawComponent");
 		}
 
 		return uClassPointer;
@@ -29706,7 +29705,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_RADIALIMPULSECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.RB_RadialImpulseComponent");
 		}
 
 		return uClassPointer;
@@ -29745,7 +29744,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_HANDLE));
+			uClassPointer = UObject::FindClass("Class Engine.RB_Handle");
 		}
 
 		return uClassPointer;
@@ -29789,7 +29788,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_SPRING));
+			uClassPointer = UObject::FindClass("Class Engine.RB_Spring");
 		}
 
 		return uClassPointer;
@@ -29828,7 +29827,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SVEHICLESIMBASE));
+			uClassPointer = UObject::FindClass("Class Engine.SVehicleSimBase");
 		}
 
 		return uClassPointer;
@@ -29859,7 +29858,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SVEHICLESIMCAR));
+			uClassPointer = UObject::FindClass("Class Engine.SVehicleSimCar");
 		}
 
 		return uClassPointer;
@@ -29892,7 +29891,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SVEHICLESIMTANK));
+			uClassPointer = UObject::FindClass("Class Engine.SVehicleSimTank");
 		}
 
 		return uClassPointer;
@@ -29916,7 +29915,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYAPEXCLOTHING));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryApexClothing");
 		}
 
 		return uClassPointer;
@@ -29938,7 +29937,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXDESTRUCTIBLEDAMAGEPARAMETERS));
+			uClassPointer = UObject::FindClass("Class Engine.ApexDestructibleDamageParameters");
 		}
 
 		return uClassPointer;
@@ -29961,7 +29960,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FRACTUREMATERIAL));
+			uClassPointer = UObject::FindClass("Class Engine.FractureMaterial");
 		}
 
 		return uClassPointer;
@@ -30006,7 +30005,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PHYSICALMATERIAL));
+			uClassPointer = UObject::FindClass("Class Engine.PhysicalMaterial");
 		}
 
 		return uClassPointer;
@@ -30030,7 +30029,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PHYSICALMATERIALPROPERTYBASE));
+			uClassPointer = UObject::FindClass("Class Engine.PhysicalMaterialPropertyBase");
 		}
 
 		return uClassPointer;
@@ -30057,7 +30056,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PHYSICSASSET));
+			uClassPointer = UObject::FindClass("Class Engine.PhysicsAsset");
 		}
 
 		return uClassPointer;
@@ -30091,7 +30090,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PHYSICSASSETINSTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.PhysicsAssetInstance");
 		}
 
 		return uClassPointer;
@@ -30130,7 +30129,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PHYSICSLODVERTICALEMITTER));
+			uClassPointer = UObject::FindClass("Class Engine.PhysicsLODVerticalEmitter");
 		}
 
 		return uClassPointer;
@@ -30182,7 +30181,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_BODYINSTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.RB_BodyInstance");
 		}
 
 		return uClassPointer;
@@ -30251,7 +30250,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_CONSTRAINTINSTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.RB_ConstraintInstance");
 		}
 
 		return uClassPointer;
@@ -30325,7 +30324,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_CONSTRAINTSETUP));
+			uClassPointer = UObject::FindClass("Class Engine.RB_ConstraintSetup");
 		}
 
 		return uClassPointer;
@@ -30346,7 +30345,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_BSJOINTSETUP));
+			uClassPointer = UObject::FindClass("Class Engine.RB_BSJointSetup");
 		}
 
 		return uClassPointer;
@@ -30367,7 +30366,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_DISTANCEJOINTSETUP));
+			uClassPointer = UObject::FindClass("Class Engine.RB_DistanceJointSetup");
 		}
 
 		return uClassPointer;
@@ -30388,7 +30387,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_HINGESETUP));
+			uClassPointer = UObject::FindClass("Class Engine.RB_HingeSetup");
 		}
 
 		return uClassPointer;
@@ -30409,7 +30408,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_PRISMATICSETUP));
+			uClassPointer = UObject::FindClass("Class Engine.RB_PrismaticSetup");
 		}
 
 		return uClassPointer;
@@ -30430,7 +30429,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_PULLEYJOINTSETUP));
+			uClassPointer = UObject::FindClass("Class Engine.RB_PulleyJointSetup");
 		}
 
 		return uClassPointer;
@@ -30451,7 +30450,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_SKELJOINTSETUP));
+			uClassPointer = UObject::FindClass("Class Engine.RB_SkelJointSetup");
 		}
 
 		return uClassPointer;
@@ -30472,7 +30471,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_STAYUPRIGHTSETUP));
+			uClassPointer = UObject::FindClass("Class Engine.RB_StayUprightSetup");
 		}
 
 		return uClassPointer;
@@ -30536,7 +30535,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SVEHICLEWHEEL));
+			uClassPointer = UObject::FindClass("Class Engine.SVehicleWheel");
 		}
 
 		return uClassPointer;
@@ -30579,7 +30578,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXGENERICFORCEFIELDBRUSH));
+			uClassPointer = UObject::FindClass("Class Engine.NxGenericForceFieldBrush");
 		}
 
 		return uClassPointer;
@@ -30604,7 +30603,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_FORCEFIELDEXCLUDEVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.RB_ForceFieldExcludeVolume");
 		}
 
 		return uClassPointer;
@@ -30635,7 +30634,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXFORCEFIELD));
+			uClassPointer = UObject::FindClass("Class Engine.NxForceField");
 		}
 
 		return uClassPointer;
@@ -30669,7 +30668,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXCYLINDRICALFORCEFIELD));
+			uClassPointer = UObject::FindClass("Class Engine.NxCylindricalForceField");
 		}
 
 		return uClassPointer;
@@ -30691,7 +30690,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXCYLINDRICALFORCEFIELDCAPSULE));
+			uClassPointer = UObject::FindClass("Class Engine.NxCylindricalForceFieldCapsule");
 		}
 
 		return uClassPointer;
@@ -30733,7 +30732,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXFORCEFIELDGENERIC));
+			uClassPointer = UObject::FindClass("Class Engine.NxForceFieldGeneric");
 		}
 
 		return uClassPointer;
@@ -30762,7 +30761,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXFORCEFIELDRADIAL));
+			uClassPointer = UObject::FindClass("Class Engine.NxForceFieldRadial");
 		}
 
 		return uClassPointer;
@@ -30798,7 +30797,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXFORCEFIELDTORNADO));
+			uClassPointer = UObject::FindClass("Class Engine.NxForceFieldTornado");
 		}
 
 		return uClassPointer;
@@ -30835,7 +30834,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXGENERICFORCEFIELD));
+			uClassPointer = UObject::FindClass("Class Engine.NxGenericForceField");
 		}
 
 		return uClassPointer;
@@ -30858,7 +30857,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXGENERICFORCEFIELDBOX));
+			uClassPointer = UObject::FindClass("Class Engine.NxGenericForceFieldBox");
 		}
 
 		return uClassPointer;
@@ -30883,7 +30882,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXGENERICFORCEFIELDCAPSULE));
+			uClassPointer = UObject::FindClass("Class Engine.NxGenericForceFieldCapsule");
 		}
 
 		return uClassPointer;
@@ -30909,7 +30908,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXRADIALFORCEFIELD));
+			uClassPointer = UObject::FindClass("Class Engine.NxRadialForceField");
 		}
 
 		return uClassPointer;
@@ -30932,7 +30931,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXRADIALCUSTOMFORCEFIELD));
+			uClassPointer = UObject::FindClass("Class Engine.NxRadialCustomForceField");
 		}
 
 		return uClassPointer;
@@ -30965,7 +30964,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXTORNADOANGULARFORCEFIELD));
+			uClassPointer = UObject::FindClass("Class Engine.NxTornadoAngularForceField");
 		}
 
 		return uClassPointer;
@@ -30987,7 +30986,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXTORNADOANGULARFORCEFIELDCAPSULE));
+			uClassPointer = UObject::FindClass("Class Engine.NxTornadoAngularForceFieldCapsule");
 		}
 
 		return uClassPointer;
@@ -31019,7 +31018,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXTORNADOFORCEFIELD));
+			uClassPointer = UObject::FindClass("Class Engine.NxTornadoForceField");
 		}
 
 		return uClassPointer;
@@ -31041,7 +31040,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXTORNADOFORCEFIELDCAPSULE));
+			uClassPointer = UObject::FindClass("Class Engine.NxTornadoForceFieldCapsule");
 		}
 
 		return uClassPointer;
@@ -31063,7 +31062,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXFORCEFIELDSPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.NxForceFieldSpawnable");
 		}
 
 		return uClassPointer;
@@ -31101,7 +31100,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_CYLINDRICALFORCEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.RB_CylindricalForceActor");
 		}
 
 		return uClassPointer;
@@ -31136,7 +31135,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_RADIALFORCEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.RB_RadialForceActor");
 		}
 
 		return uClassPointer;
@@ -31173,7 +31172,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXFORCEFIELDCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.NxForceFieldComponent");
 		}
 
 		return uClassPointer;
@@ -31206,7 +31205,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXFORCEFIELDCYLINDRICALCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.NxForceFieldCylindricalComponent");
 		}
 
 		return uClassPointer;
@@ -31245,7 +31244,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXFORCEFIELDGENERICCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.NxForceFieldGenericComponent");
 		}
 
 		return uClassPointer;
@@ -31271,7 +31270,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXFORCEFIELDRADIALCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.NxForceFieldRadialComponent");
 		}
 
 		return uClassPointer;
@@ -31304,7 +31303,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NXFORCEFIELDTORNADOCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.NxForceFieldTornadoComponent");
 		}
 
 		return uClassPointer;
@@ -31325,7 +31324,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FORCEFIELDSHAPE));
+			uClassPointer = UObject::FindClass("Class Engine.ForceFieldShape");
 		}
 
 		return uClassPointer;
@@ -31352,7 +31351,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FORCEFIELDSHAPEBOX));
+			uClassPointer = UObject::FindClass("Class Engine.ForceFieldShapeBox");
 		}
 
 		return uClassPointer;
@@ -31380,7 +31379,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FORCEFIELDSHAPECAPSULE));
+			uClassPointer = UObject::FindClass("Class Engine.ForceFieldShapeCapsule");
 		}
 
 		return uClassPointer;
@@ -31409,7 +31408,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FORCEFIELDSHAPESPHERE));
+			uClassPointer = UObject::FindClass("Class Engine.ForceFieldShapeSphere");
 		}
 
 		return uClassPointer;
@@ -31447,7 +31446,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PREFABINSTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.PrefabInstance");
 		}
 
 		return uClassPointer;
@@ -31473,7 +31472,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PREFAB));
+			uClassPointer = UObject::FindClass("Class Engine.Prefab");
 		}
 
 		return uClassPointer;
@@ -31511,7 +31510,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQUENCEOBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.SequenceObject");
 		}
 
 		return uClassPointer;
@@ -31547,7 +31546,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQUENCEFRAME));
+			uClassPointer = UObject::FindClass("Class Engine.SequenceFrame");
 		}
 
 		return uClassPointer;
@@ -31568,7 +31567,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQUENCEFRAMEWRAPPED));
+			uClassPointer = UObject::FindClass("Class Engine.SequenceFrameWrapped");
 		}
 
 		return uClassPointer;
@@ -31614,7 +31613,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQUENCEOP));
+			uClassPointer = UObject::FindClass("Class Engine.SequenceOp");
 		}
 
 		return uClassPointer;
@@ -31665,7 +31664,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQUENCE));
+			uClassPointer = UObject::FindClass("Class Engine.Sequence");
 		}
 
 		return uClassPointer;
@@ -31691,7 +31690,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PREFABSEQUENCE));
+			uClassPointer = UObject::FindClass("Class Engine.PrefabSequence");
 		}
 
 		return uClassPointer;
@@ -31714,7 +31713,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PREFABSEQUENCECONTAINER));
+			uClassPointer = UObject::FindClass("Class Engine.PrefabSequenceContainer");
 		}
 
 		return uClassPointer;
@@ -31738,7 +31737,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQUENCEACTION));
+			uClassPointer = UObject::FindClass("Class Engine.SequenceAction");
 		}
 
 		return uClassPointer;
@@ -31762,7 +31761,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ACTIVATEREMOTEEVENT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ActivateRemoteEvent");
 		}
 
 		return uClassPointer;
@@ -31787,7 +31786,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ANDGATE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_AndGate");
 		}
 
 		return uClassPointer;
@@ -31810,7 +31809,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_APPLYSOUNDNODE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ApplySoundNode");
 		}
 
 		return uClassPointer;
@@ -31832,7 +31831,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ATTACHTOEVENT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_AttachToEvent");
 		}
 
 		return uClassPointer;
@@ -31861,7 +31860,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_CAMERAFADE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_CameraFade");
 		}
 
 		return uClassPointer;
@@ -31902,7 +31901,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_CAMERALOOKAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_CameraLookAt");
 		}
 
 		return uClassPointer;
@@ -31934,7 +31933,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_CAMERASHAKE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_CameraShake");
 		}
 
 		return uClassPointer;
@@ -31960,7 +31959,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_CHANGECOLLISION));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ChangeCollision");
 		}
 
 		return uClassPointer;
@@ -31982,7 +31981,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_COMMITMAPCHANGE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_CommitMapChange");
 		}
 
 		return uClassPointer;
@@ -32006,7 +32005,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_CONVERTTOSTRING));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ConvertToString");
 		}
 
 		return uClassPointer;
@@ -32031,7 +32030,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_DRAWTEXT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_DrawText");
 		}
 
 		return uClassPointer;
@@ -32054,7 +32053,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_FINISHSEQUENCE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_FinishSequence");
 		}
 
 		return uClassPointer;
@@ -32078,7 +32077,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_GATE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Gate");
 		}
 
 		return uClassPointer;
@@ -32100,7 +32099,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_GETDISTANCE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_GetDistance");
 		}
 
 		return uClassPointer;
@@ -32125,7 +32124,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_GETLOCATIONANDROTATION));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_GetLocationAndRotation");
 		}
 
 		return uClassPointer;
@@ -32148,7 +32147,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_GETPROPERTY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_GetProperty");
 		}
 
 		return uClassPointer;
@@ -32173,7 +32172,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_GETVECTORCOMPONENTS));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_GetVectorComponents");
 		}
 
 		return uClassPointer;
@@ -32196,7 +32195,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_GETVELOCITY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_GetVelocity");
 		}
 
 		return uClassPointer;
@@ -32229,7 +32228,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_HEADTRACKINGCONTROL));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_HeadTrackingControl");
 		}
 
 		return uClassPointer;
@@ -32254,7 +32253,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ISINOBJECTLIST));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_IsInObjectList");
 		}
 
 		return uClassPointer;
@@ -32278,7 +32277,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_LATENT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Latent");
 		}
 
 		return uClassPointer;
@@ -32315,7 +32314,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ACTORFACTORY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ActorFactory");
 		}
 
 		return uClassPointer;
@@ -32337,7 +32336,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ACTORFACTORYEX));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ActorFactoryEx");
 		}
 
 		return uClassPointer;
@@ -32361,7 +32360,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_PROJECTILEFACTORY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ProjectileFactory");
 		}
 
 		return uClassPointer;
@@ -32389,7 +32388,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_AIMOVETOACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_AIMoveToActor");
 		}
 
 		return uClassPointer;
@@ -32419,7 +32418,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_DELAY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Delay");
 		}
 
 		return uClassPointer;
@@ -32446,7 +32445,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_DELAYSWITCH));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_DelaySwitch");
 		}
 
 		return uClassPointer;
@@ -32467,7 +32466,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_FORCEGARBAGECOLLECTION));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ForceGarbageCollection");
 		}
 
 		return uClassPointer;
@@ -32519,7 +32518,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_INTERP));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Interp");
 		}
 
 		return uClassPointer;
@@ -32547,7 +32546,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_LEVELSTREAMINGBASE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_LevelStreamingBase");
 		}
 
 		return uClassPointer;
@@ -32571,7 +32570,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_LEVELSTREAMING));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_LevelStreaming");
 		}
 
 		return uClassPointer;
@@ -32595,7 +32594,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_MULTILEVELSTREAMING));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_MultiLevelStreaming");
 		}
 
 		return uClassPointer;
@@ -32619,7 +32618,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_LEVELVISIBILITY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_LevelVisibility");
 		}
 
 		return uClassPointer;
@@ -32651,7 +32650,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_PLAYSOUND));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_PlaySound");
 		}
 
 		return uClassPointer;
@@ -32677,7 +32676,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_PREPAREMAPCHANGE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_PrepareMapChange");
 		}
 
 		return uClassPointer;
@@ -32716,7 +32715,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETDOFPARAMS));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetDOFParams");
 		}
 
 		return uClassPointer;
@@ -32741,7 +32740,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETMOTIONBLURPARAMS));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetMotionBlurParams");
 		}
 
 		return uClassPointer;
@@ -32773,7 +32772,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_STREAMINTEXTURES));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_StreamInTextures");
 		}
 
 		return uClassPointer;
@@ -32797,7 +32796,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_WAITFORLEVELSVISIBLE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_WaitForLevelsVisible");
 		}
 
 		return uClassPointer;
@@ -32825,7 +32824,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_LOG));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Log");
 		}
 
 		return uClassPointer;
@@ -32851,7 +32850,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_FEATURETEST));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_FeatureTest");
 		}
 
 		return uClassPointer;
@@ -32875,7 +32874,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_MODIFYCOVER));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ModifyCover");
 		}
 
 		return uClassPointer;
@@ -32904,7 +32903,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_MODIFYHEALTH));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ModifyHealth");
 		}
 
 		return uClassPointer;
@@ -32935,7 +32934,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_PARTICLEEVENTGENERATOR));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ParticleEventGenerator");
 		}
 
 		return uClassPointer;
@@ -32966,7 +32965,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_PLAYCAMERAANIM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_PlayCameraAnim");
 		}
 
 		return uClassPointer;
@@ -32992,7 +32991,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_PLAYFACEFXANIM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_PlayFaceFXAnim");
 		}
 
 		return uClassPointer;
@@ -33014,7 +33013,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_PLAYMUSICTRACK));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_PlayMusicTrack");
 		}
 
 		return uClassPointer;
@@ -33038,7 +33037,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_POSSESS));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Possess");
 		}
 
 		return uClassPointer;
@@ -33060,7 +33059,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_RANGESWITCH));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_RangeSwitch");
 		}
 
 		return uClassPointer;
@@ -33084,7 +33083,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETACTIVEANIMCHILD));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetActiveAnimChild");
 		}
 
 		return uClassPointer;
@@ -33106,7 +33105,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETAPEXCLOTHINGPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetApexClothingParam");
 		}
 
 		return uClassPointer;
@@ -33127,7 +33126,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETBLOCKRIGIDBODY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetBlockRigidBody");
 		}
 
 		return uClassPointer;
@@ -33150,7 +33149,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETCAMERATARGET));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetCameraTarget");
 		}
 
 		return uClassPointer;
@@ -33174,7 +33173,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETMATERIAL));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetMaterial");
 		}
 
 		return uClassPointer;
@@ -33198,7 +33197,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETMATINSTSCALARPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetMatInstScalarParam");
 		}
 
 		return uClassPointer;
@@ -33224,7 +33223,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETMESH));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetMesh");
 		}
 
 		return uClassPointer;
@@ -33246,7 +33245,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETPHYSICS));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetPhysics");
 		}
 
 		return uClassPointer;
@@ -33267,7 +33266,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETRIGIDBODYIGNOREVEHICLES));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetRigidBodyIgnoreVehicles");
 		}
 
 		return uClassPointer;
@@ -33288,7 +33287,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETSEQUENCEVARIABLE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetSequenceVariable");
 		}
 
 		return uClassPointer;
@@ -33311,7 +33310,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ACCESSOBJECTLIST));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_AccessObjectList");
 		}
 
 		return uClassPointer;
@@ -33336,7 +33335,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ADDFLOAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_AddFloat");
 		}
 
 		return uClassPointer;
@@ -33361,7 +33360,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ADDINT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_AddInt");
 		}
 
 		return uClassPointer;
@@ -33384,7 +33383,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_CASTTOFLOAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_CastToFloat");
 		}
 
 		return uClassPointer;
@@ -33408,7 +33407,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_CASTTOINT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_CastToInt");
 		}
 
 		return uClassPointer;
@@ -33433,7 +33432,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_DIVIDEFLOAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_DivideFloat");
 		}
 
 		return uClassPointer;
@@ -33458,7 +33457,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_DIVIDEINT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_DivideInt");
 		}
 
 		return uClassPointer;
@@ -33480,7 +33479,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_MODIFYOBJECTLIST));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ModifyObjectList");
 		}
 
 		return uClassPointer;
@@ -33505,7 +33504,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_MULTIPLYFLOAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_MultiplyFloat");
 		}
 
 		return uClassPointer;
@@ -33530,7 +33529,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_MULTIPLYINT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_MultiplyInt");
 		}
 
 		return uClassPointer;
@@ -33552,7 +33551,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETBOOL));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetBool");
 		}
 
 		return uClassPointer;
@@ -33575,7 +33574,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETFLOAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetFloat");
 		}
 
 		return uClassPointer;
@@ -33599,7 +33598,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETINT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetInt");
 		}
 
 		return uClassPointer;
@@ -33626,7 +33625,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETLOCATION));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetLocation");
 		}
 
 		return uClassPointer;
@@ -33650,7 +33649,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETOBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetObject");
 		}
 
 		return uClassPointer;
@@ -33674,7 +33673,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETSTRING));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetString");
 		}
 
 		return uClassPointer;
@@ -33700,7 +33699,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SUBTRACTFLOAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SubtractFloat");
 		}
 
 		return uClassPointer;
@@ -33725,7 +33724,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SUBTRACTINT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SubtractInt");
 		}
 
 		return uClassPointer;
@@ -33750,7 +33749,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETVECTORCOMPONENTS));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetVectorComponents");
 		}
 
 		return uClassPointer;
@@ -33782,7 +33781,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETWORLDATTRACTORPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetWorldAttractorParam");
 		}
 
 		return uClassPointer;
@@ -33808,7 +33807,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SWITCH));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Switch");
 		}
 
 		return uClassPointer;
@@ -33830,7 +33829,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_RANDOMSWITCH));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_RandomSwitch");
 		}
 
 		return uClassPointer;
@@ -33854,7 +33853,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TIMER));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Timer");
 		}
 
 		return uClassPointer;
@@ -33875,7 +33874,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TOGGLE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Toggle");
 		}
 
 		return uClassPointer;
@@ -33904,7 +33903,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TRACE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Trace");
 		}
 
 		return uClassPointer;
@@ -33926,7 +33925,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQUENCECONDITION));
+			uClassPointer = UObject::FindClass("Class Engine.SequenceCondition");
 		}
 
 		return uClassPointer;
@@ -33948,7 +33947,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_COMPAREBOOL));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_CompareBool");
 		}
 
 		return uClassPointer;
@@ -33972,7 +33971,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_COMPAREFLOAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_CompareFloat");
 		}
 
 		return uClassPointer;
@@ -33995,7 +33994,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_COMPAREINT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_CompareInt");
 		}
 
 		return uClassPointer;
@@ -34016,7 +34015,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_COMPAREOBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_CompareObject");
 		}
 
 		return uClassPointer;
@@ -34037,7 +34036,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_GETSERVERTYPE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_GetServerType");
 		}
 
 		return uClassPointer;
@@ -34062,7 +34061,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_INCREMENT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_Increment");
 		}
 
 		return uClassPointer;
@@ -34086,7 +34085,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_INCREMENTFLOAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_IncrementFloat");
 		}
 
 		return uClassPointer;
@@ -34107,7 +34106,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_ISALIVE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_IsAlive");
 		}
 
 		return uClassPointer;
@@ -34128,7 +34127,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_ISBENCHMARKING));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_IsBenchmarking");
 		}
 
 		return uClassPointer;
@@ -34150,7 +34149,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_ISCONSOLE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_IsConsole");
 		}
 
 		return uClassPointer;
@@ -34171,7 +34170,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_ISINCOMBAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_IsInCombat");
 		}
 
 		return uClassPointer;
@@ -34193,7 +34192,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_ISLOGGEDIN));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_IsLoggedIn");
 		}
 
 		return uClassPointer;
@@ -34215,7 +34214,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_ISPIE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_IsPIE");
 		}
 
 		return uClassPointer;
@@ -34237,7 +34236,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_ISSAMETEAM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_IsSameTeam");
 		}
 
 		return uClassPointer;
@@ -34258,7 +34257,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_MATURELANGUAGE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_MatureLanguage");
 		}
 
 		return uClassPointer;
@@ -34279,7 +34278,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_SHOWGORE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_ShowGore");
 		}
 
 		return uClassPointer;
@@ -34300,7 +34299,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_SWITCHBASE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_SwitchBase");
 		}
 
 		return uClassPointer;
@@ -34326,7 +34325,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_SWITCHCLASS));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_SwitchClass");
 		}
 
 		return uClassPointer;
@@ -34352,7 +34351,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_SWITCHOBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_SwitchObject");
 		}
 
 		return uClassPointer;
@@ -34377,7 +34376,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQCOND_SWITCHPLATFORM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqCond_SwitchPlatform");
 		}
 
 		return uClassPointer;
@@ -34411,7 +34410,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQUENCEEVENT));
+			uClassPointer = UObject::FindClass("Class Engine.SequenceEvent");
 		}
 
 		return uClassPointer;
@@ -34437,7 +34436,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_AISEEENEMY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_AISeeEnemy");
 		}
 
 		return uClassPointer;
@@ -34461,7 +34460,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_ANALOGINPUT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_AnalogInput");
 		}
 
 		return uClassPointer;
@@ -34483,7 +34482,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_ANIMNOTIFY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_AnimNotify");
 		}
 
 		return uClassPointer;
@@ -34506,7 +34505,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_CONSOLE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_Console");
 		}
 
 		return uClassPointer;
@@ -34527,7 +34526,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_CONSTRAINTBROKEN));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_ConstraintBroken");
 		}
 
 		return uClassPointer;
@@ -34548,7 +34547,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_DESTROYED));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_Destroyed");
 		}
 
 		return uClassPointer;
@@ -34569,7 +34568,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_GETINVENTORY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_GetInventory");
 		}
 
 		return uClassPointer;
@@ -34593,7 +34592,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_INPUT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_Input");
 		}
 
 		return uClassPointer;
@@ -34614,7 +34613,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_LEVELBEGINNING));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_LevelBeginning");
 		}
 
 		return uClassPointer;
@@ -34635,7 +34634,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_LEVELLOADED));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_LevelLoaded");
 		}
 
 		return uClassPointer;
@@ -34657,7 +34656,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_LEVELSTARTUP));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_LevelStartup");
 		}
 
 		return uClassPointer;
@@ -34679,7 +34678,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_MOVER));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_Mover");
 		}
 
 		return uClassPointer;
@@ -34712,7 +34711,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_PARTICLEEVENT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_ParticleEvent");
 		}
 
 		return uClassPointer;
@@ -34735,7 +34734,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_PROJECTILELANDED));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_ProjectileLanded");
 		}
 
 		return uClassPointer;
@@ -34758,7 +34757,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_REMOTEEVENT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_RemoteEvent");
 		}
 
 		return uClassPointer;
@@ -34781,7 +34780,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_RIGIDBODYCOLLISION));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_RigidBodyCollision");
 		}
 
 		return uClassPointer;
@@ -34802,7 +34801,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_SEEDEATH));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_SeeDeath");
 		}
 
 		return uClassPointer;
@@ -34824,7 +34823,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_SEQUENCEACTIVATED));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_SequenceActivated");
 		}
 
 		return uClassPointer;
@@ -34851,7 +34850,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_TAKEDAMAGE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_TakeDamage");
 		}
 
 		return uClassPointer;
@@ -34883,7 +34882,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_TOUCH));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_Touch");
 		}
 
 		return uClassPointer;
@@ -34913,7 +34912,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_TOUCHINPUT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_TouchInput");
 		}
 
 		return uClassPointer;
@@ -34940,7 +34939,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_USED));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_Used");
 		}
 
 		return uClassPointer;
@@ -34962,7 +34961,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQUENCEVARIABLE));
+			uClassPointer = UObject::FindClass("Class Engine.SequenceVariable");
 		}
 
 		return uClassPointer;
@@ -34995,7 +34994,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPDATA));
+			uClassPointer = UObject::FindClass("Class Engine.InterpData");
 		}
 
 		return uClassPointer;
@@ -35017,7 +35016,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_BOOL));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Bool");
 		}
 
 		return uClassPointer;
@@ -35040,7 +35039,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_EXTERNAL));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_External");
 		}
 
 		return uClassPointer;
@@ -35062,7 +35061,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_FLOAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Float");
 		}
 
 		return uClassPointer;
@@ -35085,7 +35084,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_RANDOMFLOAT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_RandomFloat");
 		}
 
 		return uClassPointer;
@@ -35107,7 +35106,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_INT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Int");
 		}
 
 		return uClassPointer;
@@ -35130,7 +35129,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_RANDOMINT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_RandomInt");
 		}
 
 		return uClassPointer;
@@ -35154,7 +35153,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_NAMED));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Named");
 		}
 
 		return uClassPointer;
@@ -35178,7 +35177,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_OBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Object");
 		}
 
 		return uClassPointer;
@@ -35202,7 +35201,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_CHARACTER));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Character");
 		}
 
 		return uClassPointer;
@@ -35226,7 +35225,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_GROUP));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Group");
 		}
 
 		return uClassPointer;
@@ -35248,7 +35247,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_OBJECTLIST));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_ObjectList");
 		}
 
 		return uClassPointer;
@@ -35275,7 +35274,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_OBJECTVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_ObjectVolume");
 		}
 
 		return uClassPointer;
@@ -35299,7 +35298,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_PLAYER));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Player");
 		}
 
 		return uClassPointer;
@@ -35323,7 +35322,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_STRING));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_String");
 		}
 
 		return uClassPointer;
@@ -35345,7 +35344,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_VECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Vector");
 		}
 
 		return uClassPointer;
@@ -35369,7 +35368,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTSOUND));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientSound");
 		}
 
 		return uClassPointer;
@@ -35390,7 +35389,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTSOUNDMOVABLE));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientSoundMovable");
 		}
 
 		return uClassPointer;
@@ -35414,7 +35413,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTSOUNDSIMPLE));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientSoundSimple");
 		}
 
 		return uClassPointer;
@@ -35435,7 +35434,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTSOUNDNONLOOP));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientSoundNonLoop");
 		}
 
 		return uClassPointer;
@@ -35463,7 +35462,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTSOUNDSIMPLETOGGLEABLE));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientSoundSimpleToggleable");
 		}
 
 		return uClassPointer;
@@ -35491,7 +35490,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTSOUNDNONLOOPINGTOGGLEABLE));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientSoundNonLoopingToggleable");
 		}
 
 		return uClassPointer;
@@ -35515,7 +35514,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTSOUNDSPLINE));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientSoundSpline");
 		}
 
 		return uClassPointer;
@@ -35537,7 +35536,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTSOUNDSIMPLESPLINE));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientSoundSimpleSpline");
 		}
 
 		return uClassPointer;
@@ -35559,7 +35558,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTSOUNDSPLINEMULTICUE));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientSoundSplineMultiCue");
 		}
 
 		return uClassPointer;
@@ -35580,7 +35579,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DISTRIBUTIONFLOATSOUNDPARAMETER));
+			uClassPointer = UObject::FindClass("Class Engine.DistributionFloatSoundParameter");
 		}
 
 		return uClassPointer;
@@ -35603,7 +35602,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODE));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNode");
 		}
 
 		return uClassPointer;
@@ -35624,7 +35623,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FORCEDLOOPSOUNDNODE));
+			uClassPointer = UObject::FindClass("Class Engine.ForcedLoopSoundNode");
 		}
 
 		return uClassPointer;
@@ -35659,7 +35658,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEAMBIENT));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeAmbient");
 		}
 
 		return uClassPointer;
@@ -35683,7 +35682,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEAMBIENTNONLOOP));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeAmbientNonLoop");
 		}
 
 		return uClassPointer;
@@ -35704,7 +35703,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEAMBIENTNONLOOPTOGGLE));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeAmbientNonLoopToggle");
 		}
 
 		return uClassPointer;
@@ -35736,7 +35735,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEATTENUATION));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeAttenuation");
 		}
 
 		return uClassPointer;
@@ -35773,7 +35772,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEATTENUATIONANDGAIN));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeAttenuationAndGain");
 		}
 
 		return uClassPointer;
@@ -35795,7 +35794,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODECONCATENATOR));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeConcatenator");
 		}
 
 		return uClassPointer;
@@ -35816,7 +35815,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODECONCATENATORRADIO));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeConcatenatorRadio");
 		}
 
 		return uClassPointer;
@@ -35840,7 +35839,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEDELAY));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeDelay");
 		}
 
 		return uClassPointer;
@@ -35862,7 +35861,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEDISTANCECROSSFADE));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeDistanceCrossFade");
 		}
 
 		return uClassPointer;
@@ -35884,7 +35883,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEDOPPLER));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeDoppler");
 		}
 
 		return uClassPointer;
@@ -35913,7 +35912,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEENVELOPER));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeEnveloper");
 		}
 
 		return uClassPointer;
@@ -35938,7 +35937,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODELOOPING));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeLooping");
 		}
 
 		return uClassPointer;
@@ -35959,7 +35958,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEMATURE));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeMature");
 		}
 
 		return uClassPointer;
@@ -35981,7 +35980,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEMIXER));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeMixer");
 		}
 
 		return uClassPointer;
@@ -36008,7 +36007,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEMODULATOR));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeModulator");
 		}
 
 		return uClassPointer;
@@ -36031,7 +36030,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEMODULATORCONTINUOUS));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeModulatorContinuous");
 		}
 
 		return uClassPointer;
@@ -36066,7 +36065,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEOSCILLATOR));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeOscillator");
 		}
 
 		return uClassPointer;
@@ -36092,7 +36091,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODERANDOM));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeRandom");
 		}
 
 		return uClassPointer;
@@ -36153,7 +36152,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEWAVE));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeWave");
 		}
 
 		return uClassPointer;
@@ -36177,7 +36176,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEWAVESTREAMING));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeWaveStreaming");
 		}
 
 		return uClassPointer;
@@ -36204,7 +36203,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDNODEWAVEPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.SoundNodeWaveParam");
 		}
 
 		return uClassPointer;
@@ -36245,7 +36244,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LANDSCAPEPROXY));
+			uClassPointer = UObject::FindClass("Class Engine.LandscapeProxy");
 		}
 
 		return uClassPointer;
@@ -36268,7 +36267,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LANDSCAPE));
+			uClassPointer = UObject::FindClass("Class Engine.Landscape");
 		}
 
 		return uClassPointer;
@@ -36335,7 +36334,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TERRAIN));
+			uClassPointer = UObject::FindClass("Class Engine.Terrain");
 		}
 
 		return uClassPointer;
@@ -36365,7 +36364,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LANDSCAPEGIZMOACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.LandscapeGizmoActor");
 		}
 
 		return uClassPointer;
@@ -36403,7 +36402,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LANDSCAPEGIZMOACTIVEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.LandscapeGizmoActiveActor");
 		}
 
 		return uClassPointer;
@@ -36454,7 +36453,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LANDSCAPECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.LandscapeComponent");
 		}
 
 		return uClassPointer;
@@ -36475,7 +36474,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LANDSCAPEGIZMORENDERCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.LandscapeGizmoRenderComponent");
 		}
 
 		return uClassPointer;
@@ -36509,7 +36508,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LANDSCAPEHEIGHTFIELDCOLLISIONCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.LandscapeHeightfieldCollisionComponent");
 		}
 
 		return uClassPointer;
@@ -36547,7 +36546,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TERRAINCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.TerrainComponent");
 		}
 
 		return uClassPointer;
@@ -36581,7 +36580,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LANDSCAPEINFO));
+			uClassPointer = UObject::FindClass("Class Engine.LandscapeInfo");
 		}
 
 		return uClassPointer;
@@ -36606,7 +36605,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LANDSCAPELAYERINFOOBJECT));
+			uClassPointer = UObject::FindClass("Class Engine.LandscapeLayerInfoObject");
 		}
 
 		return uClassPointer;
@@ -36629,7 +36628,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TERRAINWEIGHTMAPTEXTURE));
+			uClassPointer = UObject::FindClass("Class Engine.TerrainWeightMapTexture");
 		}
 
 		return uClassPointer;
@@ -36651,7 +36650,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TERRAINLAYERSETUP));
+			uClassPointer = UObject::FindClass("Class Engine.TerrainLayerSetup");
 		}
 
 		return uClassPointer;
@@ -36683,7 +36682,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TERRAINMATERIAL));
+			uClassPointer = UObject::FindClass("Class Engine.TerrainMaterial");
 		}
 
 		return uClassPointer;
@@ -36709,7 +36708,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DATASTORECLIENT));
+			uClassPointer = UObject::FindClass("Class Engine.DataStoreClient");
 		}
 
 		return uClassPointer;
@@ -36767,7 +36766,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CONSOLE));
+			uClassPointer = UObject::FindClass("Class Engine.Console");
 		}
 
 		return uClassPointer;
@@ -36817,7 +36816,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INPUT));
+			uClassPointer = UObject::FindClass("Class Engine.Input");
 		}
 
 		return uClassPointer;
@@ -36899,7 +36898,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PLAYERINPUT));
+			uClassPointer = UObject::FindClass("Class Engine.PlayerInput");
 		}
 
 		return uClassPointer;
@@ -36939,7 +36938,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PLAYERMANAGERINTERACTION));
+			uClassPointer = UObject::FindClass("Class Engine.PlayerManagerInteraction");
 		}
 
 		return uClassPointer;
@@ -36969,7 +36968,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UISCENECLIENT));
+			uClassPointer = UObject::FindClass("Class Engine.UISceneClient");
 		}
 
 		return uClassPointer;
@@ -36995,7 +36994,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UISOUNDTHEME));
+			uClassPointer = UObject::FindClass("Class Engine.UISoundTheme");
 		}
 
 		return uClassPointer;
@@ -37017,7 +37016,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORESUBSCRIBER));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStoreSubscriber");
 		}
 
 		return uClassPointer;
@@ -37044,7 +37043,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTOREPUBLISHER));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStorePublisher");
 		}
 
 		return uClassPointer;
@@ -37066,7 +37065,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider");
 		}
 
 		return uClassPointer;
@@ -37088,7 +37087,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_ONLINEPLAYERDATABASE));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_OnlinePlayerDataBase");
 		}
 
 		return uClassPointer;
@@ -37118,7 +37117,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_ONLINEFRIENDMESSAGES));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_OnlineFriendMessages");
 		}
 
 		return uClassPointer;
@@ -37161,7 +37160,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_ONLINEFRIENDS));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_OnlineFriends");
 		}
 
 		return uClassPointer;
@@ -37196,7 +37195,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_ONLINEPARTYCHATLIST));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_OnlinePartyChatList");
 		}
 
 		return uClassPointer;
@@ -37228,7 +37227,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_ONLINEPLAYERSTORAGE));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_OnlinePlayerStorage");
 		}
 
 		return uClassPointer;
@@ -37263,7 +37262,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_ONLINEPROFILESETTINGS));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_OnlineProfileSettings");
 		}
 
 		return uClassPointer;
@@ -37292,7 +37291,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_PLAYERACHIEVEMENTS));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_PlayerAchievements");
 		}
 
 		return uClassPointer;
@@ -37328,7 +37327,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_ONLINEPLAYERSTORAGEARRAY));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_OnlinePlayerStorageArray");
 		}
 
 		return uClassPointer;
@@ -37354,7 +37353,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_SETTINGSARRAY));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_SettingsArray");
 		}
 
 		return uClassPointer;
@@ -37378,7 +37377,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore");
 		}
 
 		return uClassPointer;
@@ -37411,7 +37410,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_DYNAMICRESOURCE));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_DynamicResource");
 		}
 
 		return uClassPointer;
@@ -37437,7 +37436,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_FONTS));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_Fonts");
 		}
 
 		return uClassPointer;
@@ -37460,7 +37459,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_GAMERESOURCE));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_GameResource");
 		}
 
 		return uClassPointer;
@@ -37486,7 +37485,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_MENUITEMS));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_MenuItems");
 		}
 
 		return uClassPointer;
@@ -37511,7 +37510,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_GAMESTATE));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_GameState");
 		}
 
 		return uClassPointer;
@@ -37535,7 +37534,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_REGISTRY));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_Registry");
 		}
 
 		return uClassPointer;
@@ -37558,7 +37557,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_REMOTE));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_Remote");
 		}
 
 		return uClassPointer;
@@ -37586,7 +37585,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_ONLINEGAMESEARCH));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_OnlineGameSearch");
 		}
 
 		return uClassPointer;
@@ -37646,7 +37645,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_ONLINEPLAYERDATA));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_OnlinePlayerData");
 		}
 
 		return uClassPointer;
@@ -37687,7 +37686,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_ONLINESTATS));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_OnlineStats");
 		}
 
 		return uClassPointer;
@@ -37714,7 +37713,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_SETTINGS));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_Settings");
 		}
 
 		return uClassPointer;
@@ -37738,7 +37737,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_ONLINEGAMESETTINGS));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_OnlineGameSettings");
 		}
 
 		return uClassPointer;
@@ -37768,7 +37767,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_STRINGBASE));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_StringBase");
 		}
 
 		return uClassPointer;
@@ -37791,7 +37790,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_INPUTALIAS));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_InputAlias");
 		}
 
 		return uClassPointer;
@@ -37823,7 +37822,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATASTORE_STRINGALIASMAP));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataStore_StringAliasMap");
 		}
 
 		return uClassPointer;
@@ -37849,7 +37848,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIPROPERTYDATAPROVIDER));
+			uClassPointer = UObject::FindClass("Class Engine.UIPropertyDataProvider");
 		}
 
 		return uClassPointer;
@@ -37873,7 +37872,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_SETTINGS));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_Settings");
 		}
 
 		return uClassPointer;
@@ -37895,7 +37894,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIRESOURCEDATAPROVIDER));
+			uClassPointer = UObject::FindClass("Class Engine.UIResourceDataProvider");
 		}
 
 		return uClassPointer;
@@ -37938,7 +37937,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIDATAPROVIDER_MENUITEM));
+			uClassPointer = UObject::FindClass("Class Engine.UIDataProvider_MenuItem");
 		}
 
 		return uClassPointer;
@@ -37961,7 +37960,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIRESOURCECOMBINATIONPROVIDER));
+			uClassPointer = UObject::FindClass("Class Engine.UIResourceCombinationProvider");
 		}
 
 		return uClassPointer;
@@ -37995,7 +37994,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEUISCENECLIENT));
+			uClassPointer = UObject::FindClass("Class Engine.GameUISceneClient");
 		}
 
 		return uClassPointer;
@@ -38025,7 +38024,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCENE));
+			uClassPointer = UObject::FindClass("Class Engine.Scene");
 		}
 
 		return uClassPointer;
@@ -38049,7 +38048,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INSTANCEDFOLIAGEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.InstancedFoliageActor");
 		}
 
 		return uClassPointer;
@@ -38084,7 +38083,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERACTIVEFOLIAGEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.InteractiveFoliageActor");
 		}
 
 		return uClassPointer;
@@ -38108,7 +38107,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERACTIVEFOLIAGECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.InteractiveFoliageComponent");
 		}
 
 		return uClassPointer;
@@ -38129,7 +38128,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYINTERACTIVEFOLIAGE));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactoryInteractiveFoliage");
 		}
 
 		return uClassPointer;
@@ -38155,7 +38154,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FLUIDINFLUENCEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.FluidInfluenceActor");
 		}
 
 		return uClassPointer;
@@ -38180,7 +38179,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FLUIDSURFACEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.FluidSurfaceActor");
 		}
 
 		return uClassPointer;
@@ -38203,7 +38202,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FLUIDSURFACEACTORMOVABLE));
+			uClassPointer = UObject::FindClass("Class Engine.FluidSurfaceActorMovable");
 		}
 
 		return uClassPointer;
@@ -38250,7 +38249,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FLUIDINFLUENCECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.FluidInfluenceComponent");
 		}
 
 		return uClassPointer;
@@ -38324,7 +38323,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FLUIDSURFACECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.FluidSurfaceComponent");
 		}
 
 		return uClassPointer;
@@ -38349,7 +38348,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPEEDTREEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SpeedTreeActor");
 		}
 
 		return uClassPointer;
@@ -38396,7 +38395,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPEEDTREECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SpeedTreeComponent");
 		}
 
 		return uClassPointer;
@@ -38420,7 +38419,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPEEDTREEACTORFACTORY));
+			uClassPointer = UObject::FindClass("Class Engine.SpeedTreeActorFactory");
 		}
 
 		return uClassPointer;
@@ -38442,7 +38441,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPEEDTREECOMPONENTFACTORY));
+			uClassPointer = UObject::FindClass("Class Engine.SpeedTreeComponentFactory");
 		}
 
 		return uClassPointer;
@@ -38475,7 +38474,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPEEDTREE));
+			uClassPointer = UObject::FindClass("Class Engine.SpeedTree");
 		}
 
 		return uClassPointer;
@@ -38498,7 +38497,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LENSFLARESOURCE));
+			uClassPointer = UObject::FindClass("Class Engine.LensFlareSource");
 		}
 
 		return uClassPointer;
@@ -38550,7 +38549,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LENSFLARECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.LensFlareComponent");
 		}
 
 		return uClassPointer;
@@ -38598,7 +38597,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LENSFLARE));
+			uClassPointer = UObject::FindClass("Class Engine.LensFlare");
 		}
 
 		return uClassPointer;
@@ -38638,7 +38637,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEXTUREFLIPBOOK));
+			uClassPointer = UObject::FindClass("Class Engine.TextureFlipBook");
 		}
 
 		return uClassPointer;
@@ -38667,7 +38666,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEXTURE2DCOMPOSITE));
+			uClassPointer = UObject::FindClass("Class Engine.Texture2DComposite");
 		}
 
 		return uClassPointer;
@@ -38696,7 +38695,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEXTURE2DDYNAMIC));
+			uClassPointer = UObject::FindClass("Class Engine.Texture2DDynamic");
 		}
 
 		return uClassPointer;
@@ -38733,7 +38732,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEXTURECUBE));
+			uClassPointer = UObject::FindClass("Class Engine.TextureCube");
 		}
 
 		return uClassPointer;
@@ -38769,7 +38768,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEXTUREMOVIE));
+			uClassPointer = UObject::FindClass("Class Engine.TextureMovie");
 		}
 
 		return uClassPointer;
@@ -38797,7 +38796,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEXTURERENDERTARGET));
+			uClassPointer = UObject::FindClass("Class Engine.TextureRenderTarget");
 		}
 
 		return uClassPointer;
@@ -38827,7 +38826,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEXTURERENDERTARGET2D));
+			uClassPointer = UObject::FindClass("Class Engine.TextureRenderTarget2D");
 		}
 
 		return uClassPointer;
@@ -38852,7 +38851,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCRIPTEDTEXTURE));
+			uClassPointer = UObject::FindClass("Class Engine.ScriptedTexture");
 		}
 
 		return uClassPointer;
@@ -38876,7 +38875,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEXTURERENDERTARGETCUBE));
+			uClassPointer = UObject::FindClass("Class Engine.TextureRenderTargetCube");
 		}
 
 		return uClassPointer;
@@ -38940,7 +38939,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AUDIODEVICE));
+			uClassPointer = UObject::FindClass("Class Engine.AudioDevice");
 		}
 
 		return uClassPointer;
@@ -38968,7 +38967,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDCLASS));
+			uClassPointer = UObject::FindClass("Class Engine.SoundClass");
 		}
 
 		return uClassPointer;
@@ -38996,7 +38995,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SOUNDMODE));
+			uClassPointer = UObject::FindClass("Class Engine.SoundMode");
 		}
 
 		return uClassPointer;
@@ -39018,7 +39017,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATINEEPAWN));
+			uClassPointer = UObject::FindClass("Class Engine.MatineePawn");
 		}
 
 		return uClassPointer;
@@ -39071,7 +39070,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SCOUT));
+			uClassPointer = UObject::FindClass("Class Engine.Scout");
 		}
 
 		return uClassPointer;
@@ -39095,7 +39094,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.Light");
 		}
 
 		return uClassPointer;
@@ -39118,7 +39117,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DIRECTIONALLIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.DirectionalLight");
 		}
 
 		return uClassPointer;
@@ -39139,7 +39138,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DIRECTIONALLIGHTTOGGLEABLE));
+			uClassPointer = UObject::FindClass("Class Engine.DirectionalLightToggleable");
 		}
 
 		return uClassPointer;
@@ -39160,7 +39159,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOMINANTDIRECTIONALLIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.DominantDirectionalLight");
 		}
 
 		return uClassPointer;
@@ -39181,7 +39180,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOMINANTDIRECTIONALLIGHTMOVABLE));
+			uClassPointer = UObject::FindClass("Class Engine.DominantDirectionalLightMovable");
 		}
 
 		return uClassPointer;
@@ -39202,7 +39201,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_POINTLIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.PointLight");
 		}
 
 		return uClassPointer;
@@ -39223,7 +39222,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOMINANTPOINTLIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.DominantPointLight");
 		}
 
 		return uClassPointer;
@@ -39244,7 +39243,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_POINTLIGHTMOVABLE));
+			uClassPointer = UObject::FindClass("Class Engine.PointLightMovable");
 		}
 
 		return uClassPointer;
@@ -39265,7 +39264,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_POINTLIGHTTOGGLEABLE));
+			uClassPointer = UObject::FindClass("Class Engine.PointLightToggleable");
 		}
 
 		return uClassPointer;
@@ -39289,7 +39288,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKYLIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.SkyLight");
 		}
 
 		return uClassPointer;
@@ -39310,7 +39309,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKYLIGHTTOGGLEABLE));
+			uClassPointer = UObject::FindClass("Class Engine.SkyLightToggleable");
 		}
 
 		return uClassPointer;
@@ -39331,7 +39330,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPOTLIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.SpotLight");
 		}
 
 		return uClassPointer;
@@ -39352,7 +39351,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOMINANTSPOTLIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.DominantSpotLight");
 		}
 
 		return uClassPointer;
@@ -39373,7 +39372,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GENERATEDMESHAREALIGHT));
+			uClassPointer = UObject::FindClass("Class Engine.GeneratedMeshAreaLight");
 		}
 
 		return uClassPointer;
@@ -39394,7 +39393,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPOTLIGHTMOVABLE));
+			uClassPointer = UObject::FindClass("Class Engine.SpotLightMovable");
 		}
 
 		return uClassPointer;
@@ -39415,7 +39414,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPOTLIGHTTOGGLEABLE));
+			uClassPointer = UObject::FindClass("Class Engine.SpotLightToggleable");
 		}
 
 		return uClassPointer;
@@ -39441,7 +39440,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_STATICLIGHTCOLLECTIONACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.StaticLightCollectionActor");
 		}
 
 		return uClassPointer;
@@ -39510,7 +39509,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIGHTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.LightComponent");
 		}
 
 		return uClassPointer;
@@ -39547,7 +39546,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DIRECTIONALLIGHTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DirectionalLightComponent");
 		}
 
 		return uClassPointer;
@@ -39573,7 +39572,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOMINANTDIRECTIONALLIGHTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DominantDirectionalLightComponent");
 		}
 
 		return uClassPointer;
@@ -39607,7 +39606,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_POINTLIGHTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.PointLightComponent");
 		}
 
 		return uClassPointer;
@@ -39631,7 +39630,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOMINANTPOINTLIGHTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DominantPointLightComponent");
 		}
 
 		return uClassPointer;
@@ -39658,7 +39657,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPOTLIGHTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SpotLightComponent");
 		}
 
 		return uClassPointer;
@@ -39683,7 +39682,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DOMINANTSPOTLIGHTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DominantSpotLightComponent");
 		}
 
 		return uClassPointer;
@@ -39706,7 +39705,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKYLIGHTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SkyLightComponent");
 		}
 
 		return uClassPointer;
@@ -39730,7 +39729,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPHERICALHARMONICLIGHTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SphericalHarmonicLightComponent");
 		}
 
 		return uClassPointer;
@@ -39759,7 +39758,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIGHTENVIRONMENTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.LightEnvironmentComponent");
 		}
 
 		return uClassPointer;
@@ -39818,7 +39817,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DYNAMICLIGHTENVIRONMENTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DynamicLightEnvironmentComponent");
 		}
 
 		return uClassPointer;
@@ -39845,7 +39844,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PARTICLELIGHTENVIRONMENTCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.ParticleLightEnvironmentComponent");
 		}
 
 		return uClassPointer;
@@ -39866,7 +39865,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWLIGHTCONECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawLightConeComponent");
 		}
 
 		return uClassPointer;
@@ -39887,7 +39886,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DRAWLIGHTRADIUSCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.DrawLightRadiusComponent");
 		}
 
 		return uClassPointer;
@@ -39911,7 +39910,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LIGHTFUNCTION));
+			uClassPointer = UObject::FindClass("Class Engine.LightFunction");
 		}
 
 		return uClassPointer;
@@ -40137,7 +40136,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELETALMESHCOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SkeletalMeshComponent");
 		}
 
 		return uClassPointer;
@@ -40408,7 +40407,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELETALMESH));
+			uClassPointer = UObject::FindClass("Class Engine.SkeletalMesh");
 		}
 
 		return uClassPointer;
@@ -40438,7 +40437,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELETALMESHSOCKET));
+			uClassPointer = UObject::FindClass("Class Engine.SkeletalMeshSocket");
 		}
 
 		return uClassPointer;
@@ -40471,7 +40470,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPLINEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SplineActor");
 		}
 
 		return uClassPointer;
@@ -40520,7 +40519,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPLINELOFTACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SplineLoftActor");
 		}
 
 		return uClassPointer;
@@ -40543,7 +40542,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPLINELOFTACTORMOVABLE));
+			uClassPointer = UObject::FindClass("Class Engine.SplineLoftActorMovable");
 		}
 
 		return uClassPointer;
@@ -40571,7 +40570,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPLINECOMPONENT));
+			uClassPointer = UObject::FindClass("Class Engine.SplineComponent");
 		}
 
 		return uClassPointer;
@@ -40634,7 +40633,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PROCBUILDING));
+			uClassPointer = UObject::FindClass("Class Engine.ProcBuilding");
 		}
 
 		return uClassPointer;
@@ -40661,7 +40660,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PROCBUILDING_SIMPLELODACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.ProcBuilding_SimpleLODActor");
 		}
 
 		return uClassPointer;
@@ -40689,7 +40688,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEBASE));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeBase");
 		}
 
 		return uClassPointer;
@@ -40715,7 +40714,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEALTERNATE));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeAlternate");
 		}
 
 		return uClassPointer;
@@ -40742,7 +40741,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODECOMMENT));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeComment");
 		}
 
 		return uClassPointer;
@@ -40772,7 +40771,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODECORNER));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeCorner");
 		}
 
 		return uClassPointer;
@@ -40797,7 +40796,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODECYCLE));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeCycle");
 		}
 
 		return uClassPointer;
@@ -40820,7 +40819,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEEDGEANGLE));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeEdgeAngle");
 		}
 
 		return uClassPointer;
@@ -40843,7 +40842,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEEDGEMESH));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeEdgeMesh");
 		}
 
 		return uClassPointer;
@@ -40868,7 +40867,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEEXTRACTTOPBOTTOM));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeExtractTopBottom");
 		}
 
 		return uClassPointer;
@@ -40890,7 +40889,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODELODQUAD));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeLODQuad");
 		}
 
 		return uClassPointer;
@@ -40915,7 +40914,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEMESH));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeMesh");
 		}
 
 		return uClassPointer;
@@ -40937,7 +40936,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEOCCLUSION));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeOcclusion");
 		}
 
 		return uClassPointer;
@@ -40964,7 +40963,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEQUAD));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeQuad");
 		}
 
 		return uClassPointer;
@@ -40988,7 +40987,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODERANDOM));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeRandom");
 		}
 
 		return uClassPointer;
@@ -41011,7 +41010,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEREPEAT));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeRepeat");
 		}
 
 		return uClassPointer;
@@ -41035,7 +41034,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODESIZE));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeSize");
 		}
 
 		return uClassPointer;
@@ -41058,7 +41057,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODESPLIT));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeSplit");
 		}
 
 		return uClassPointer;
@@ -41080,7 +41079,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODESUBRULESET));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeSubRuleset");
 		}
 
 		return uClassPointer;
@@ -41104,7 +41103,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODETRANSFORM));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeTransform");
 		}
 
 		return uClassPointer;
@@ -41126,7 +41125,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEVARIATION));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeVariation");
 		}
 
 		return uClassPointer;
@@ -41156,7 +41155,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PBRULENODEWINDOWWALL));
+			uClassPointer = UObject::FindClass("Class Engine.PBRuleNodeWindowWall");
 		}
 
 		return uClassPointer;
@@ -41198,7 +41197,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PROCBUILDINGRULESET));
+			uClassPointer = UObject::FindClass("Class Engine.ProcBuildingRuleset");
 		}
 
 		return uClassPointer;
@@ -41219,7 +41218,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_REPLICATIONINFO));
+			uClassPointer = UObject::FindClass("Class Engine.ReplicationInfo");
 		}
 
 		return uClassPointer;
@@ -41254,7 +41253,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEREPLICATIONINFO));
+			uClassPointer = UObject::FindClass("Class Engine.GameReplicationInfo");
 		}
 
 		return uClassPointer;
@@ -41330,7 +41329,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PLAYERREPLICATIONINFO));
+			uClassPointer = UObject::FindClass("Class Engine.PlayerReplicationInfo");
 		}
 
 		return uClassPointer;
@@ -41379,7 +41378,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TEAMINFO));
+			uClassPointer = UObject::FindClass("Class Engine.TeamInfo");
 		}
 
 		return uClassPointer;
@@ -41455,7 +41454,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CAMERA));
+			uClassPointer = UObject::FindClass("Class Engine.Camera");
 		}
 
 		return uClassPointer;
@@ -41520,7 +41519,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CAMERAACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.CameraActor");
 		}
 
 		return uClassPointer;
@@ -41543,7 +41542,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DYNAMICCAMERAACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.DynamicCameraActor");
 		}
 
 		return uClassPointer;
@@ -41571,7 +41570,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CAMERAANIM));
+			uClassPointer = UObject::FindClass("Class Engine.CameraAnim");
 		}
 
 		return uClassPointer;
@@ -41623,7 +41622,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CAMERAANIMINST));
+			uClassPointer = UObject::FindClass("Class Engine.CameraAnimInst");
 		}
 
 		return uClassPointer;
@@ -41660,7 +41659,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CAMERAMODIFIER));
+			uClassPointer = UObject::FindClass("Class Engine.CameraModifier");
 		}
 
 		return uClassPointer;
@@ -41693,7 +41692,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CAMERAMODIFIER_CAMERASHAKE));
+			uClassPointer = UObject::FindClass("Class Engine.CameraModifier_CameraShake");
 		}
 
 		return uClassPointer;
@@ -41736,7 +41735,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CAMERASHAKE));
+			uClassPointer = UObject::FindClass("Class Engine.CameraShake");
 		}
 
 		return uClassPointer;
@@ -41759,7 +41758,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CLOUDSTORAGEUPGRADEHELPER));
+			uClassPointer = UObject::FindClass("Class Engine.CloudStorageUpgradeHelper");
 		}
 
 		return uClassPointer;
@@ -41785,7 +41784,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PLATFORMINTERFACEBASE));
+			uClassPointer = UObject::FindClass("Class Engine.PlatformInterfaceBase");
 		}
 
 		return uClassPointer;
@@ -41820,7 +41819,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANALYTICEVENTSBASE));
+			uClassPointer = UObject::FindClass("Class Engine.AnalyticEventsBase");
 		}
 
 		return uClassPointer;
@@ -41854,7 +41853,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MULTIPROVIDERANALYTICS));
+			uClassPointer = UObject::FindClass("Class Engine.MultiProviderAnalytics");
 		}
 
 		return uClassPointer;
@@ -41888,7 +41887,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APPNOTIFICATIONSBASE));
+			uClassPointer = UObject::FindClass("Class Engine.AppNotificationsBase");
 		}
 
 		return uClassPointer;
@@ -41918,7 +41917,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_CLOUDSTORAGEBASE));
+			uClassPointer = UObject::FindClass("Class Engine.CloudStorageBase");
 		}
 
 		return uClassPointer;
@@ -41966,7 +41965,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FACEBOOKINTEGRATION));
+			uClassPointer = UObject::FindClass("Class Engine.FacebookIntegration");
 		}
 
 		return uClassPointer;
@@ -41993,7 +41992,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INAPPMESSAGEBASE));
+			uClassPointer = UObject::FindClass("Class Engine.InAppMessageBase");
 		}
 
 		return uClassPointer;
@@ -42018,7 +42017,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INGAMEADMANAGER));
+			uClassPointer = UObject::FindClass("Class Engine.InGameAdManager");
 		}
 
 		return uClassPointer;
@@ -42047,7 +42046,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MICROTRANSACTIONBASE));
+			uClassPointer = UObject::FindClass("Class Engine.MicroTransactionBase");
 		}
 
 		return uClassPointer;
@@ -42073,7 +42072,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TWITTERINTEGRATIONBASE));
+			uClassPointer = UObject::FindClass("Class Engine.TwitterIntegrationBase");
 		}
 
 		return uClassPointer;
@@ -42108,7 +42107,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PLATFORMINTERFACEWEBRESPONSE));
+			uClassPointer = UObject::FindClass("Class Engine.PlatformInterfaceWebResponse");
 		}
 
 		return uClassPointer;
@@ -42132,7 +42131,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_HITWALL));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_HitWall");
 		}
 
 		return uClassPointer;
@@ -42163,7 +42162,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_LOCALMESSAGE));
+			uClassPointer = UObject::FindClass("Class Engine.LocalMessage");
 		}
 
 		return uClassPointer;
@@ -42195,7 +42194,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_DESTROY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Destroy");
 		}
 
 		return uClassPointer;
@@ -42220,7 +42219,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TELEPORT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_Teleport");
 		}
 
 		return uClassPointer;
@@ -42246,7 +42245,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETVELOCITY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetVelocity");
 		}
 
 		return uClassPointer;
@@ -42270,7 +42269,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TOGGLEHIDDEN));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ToggleHidden");
 		}
 
 		return uClassPointer;
@@ -42298,7 +42297,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ATTACHTOACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_AttachToActor");
 		}
 
 		return uClassPointer;
@@ -42320,7 +42319,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_MOBILETOUCH));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_MobileTouch");
 		}
 
 		return uClassPointer;
@@ -42341,7 +42340,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEPLAYERINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlinePlayerInterface");
 		}
 
 		return uClassPointer;
@@ -42470,7 +42469,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SHAREDCLOUDFILEINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.SharedCloudFileInterface");
 		}
 
 		return uClassPointer;
@@ -42502,7 +42501,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_USERCLOUDFILEINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.UserCloudFileInterface");
 		}
 
 		return uClassPointer;
@@ -42544,7 +42543,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINESOCIALINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineSocialInterface");
 		}
 
 		return uClassPointer;
@@ -42577,7 +42576,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINETITLEFILECACHEINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineTitleFileCacheInterface");
 		}
 
 		return uClassPointer;
@@ -42614,7 +42613,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINETITLEFILEINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineTitleFileInterface");
 		}
 
 		return uClassPointer;
@@ -42647,7 +42646,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEPARTYCHATINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlinePartyChatInterface");
 		}
 
 		return uClassPointer;
@@ -42686,7 +42685,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINENEWSINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineNewsInterface");
 		}
 
 		return uClassPointer;
@@ -42712,7 +42711,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINESTATSINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineStatsInterface");
 		}
 
 		return uClassPointer;
@@ -42755,7 +42754,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEVOICEINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineVoiceInterface");
 		}
 
 		return uClassPointer;
@@ -42801,7 +42800,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINECONTENTINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineContentInterface");
 		}
 
 		return uClassPointer;
@@ -42859,7 +42858,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEGAMEINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineGameInterface");
 		}
 
 		return uClassPointer;
@@ -42976,7 +42975,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINESYSTEMINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineSystemInterface");
 		}
 
 		return uClassPointer;
@@ -43018,7 +43017,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEPLAYERINTERFACEEX));
+			uClassPointer = UObject::FindClass("Class Engine.OnlinePlayerInterfaceEx");
 		}
 
 		return uClassPointer;
@@ -43070,7 +43069,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEACCOUNTINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineAccountInterface");
 		}
 
 		return uClassPointer;
@@ -43128,7 +43127,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACCESSCONTROL));
+			uClassPointer = UObject::FindClass("Class Engine.AccessControl");
 		}
 
 		return uClassPointer;
@@ -43191,7 +43190,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ADMIN));
+			uClassPointer = UObject::FindClass("Class Engine.Admin");
 		}
 
 		return uClassPointer;
@@ -43224,7 +43223,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_APEXDESTRUCTIBLEACTORSPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.ApexDestructibleActorSpawnable");
 		}
 
 		return uClassPointer;
@@ -43246,7 +43245,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_EMITTERSPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.EmitterSpawnable");
 		}
 
 		return uClassPointer;
@@ -43269,7 +43268,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_KASSETSPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.KAssetSpawnable");
 		}
 
 		return uClassPointer;
@@ -43290,7 +43289,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYSKELETALMESHCINEMATIC));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactorySkeletalMeshCinematic");
 		}
 
 		return uClassPointer;
@@ -43311,7 +43310,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ACTORFACTORYSKELETALMESHMAT));
+			uClassPointer = UObject::FindClass("Class Engine.ActorFactorySkeletalMeshMAT");
 		}
 
 		return uClassPointer;
@@ -43332,7 +43331,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_DEATH));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_Death");
 		}
 
 		return uClassPointer;
@@ -43353,7 +43352,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TOGGLEGODMODE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ToggleGodMode");
 		}
 
 		return uClassPointer;
@@ -43375,7 +43374,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_CONTROLMOVIETEXTURE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ControlMovieTexture");
 		}
 
 		return uClassPointer;
@@ -43398,7 +43397,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_COVERREPLICATOR));
+			uClassPointer = UObject::FindClass("Class Engine.CoverReplicator");
 		}
 
 		return uClassPointer;
@@ -43462,7 +43461,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_GAMEMESSAGE));
+			uClassPointer = UObject::FindClass("Class Engine.GameMessage");
 		}
 
 		return uClassPointer;
@@ -43484,7 +43483,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DMGTYPE_SUICIDED));
+			uClassPointer = UObject::FindClass("Class Engine.DmgType_Suicided");
 		}
 
 		return uClassPointer;
@@ -43507,7 +43506,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TOGGLEINPUT));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ToggleInput");
 		}
 
 		return uClassPointer;
@@ -43528,7 +43527,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TOGGLEHUD));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ToggleHUD");
 		}
 
 		return uClassPointer;
@@ -43552,7 +43551,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_FORCEFEEDBACK));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ForceFeedback");
 		}
 
 		return uClassPointer;
@@ -43580,7 +43579,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TOGGLECINEMATICMODE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ToggleCinematicMode");
 		}
 
 		return uClassPointer;
@@ -43604,7 +43603,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_CONSOLECOMMAND));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ConsoleCommand");
 		}
 
 		return uClassPointer;
@@ -43627,7 +43626,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_FLYTHROUGHHASENDED));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_FlyThroughHasEnded");
 		}
 
 		return uClassPointer;
@@ -43650,7 +43649,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETSOUNDMODE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetSoundMode");
 		}
 
 		return uClassPointer;
@@ -43673,7 +43672,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SPLINECOMPONENTSIMPLIFIED));
+			uClassPointer = UObject::FindClass("Class Engine.SplineComponentSimplified");
 		}
 
 		return uClassPointer;
@@ -43694,7 +43693,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_AMBIENTSOUNDSIMPLESPLINENONLOOP));
+			uClassPointer = UObject::FindClass("Class Engine.AmbientSoundSimpleSplineNonLoop");
 		}
 
 		return uClassPointer;
@@ -43721,7 +43720,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ANIMNOTIFY_PLAYFACEFXANIM));
+			uClassPointer = UObject::FindClass("Class Engine.AnimNotify_PlayFaceFXAnim");
 		}
 
 		return uClassPointer;
@@ -43745,7 +43744,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_BROADCASTHANDLER));
+			uClassPointer = UObject::FindClass("Class Engine.BroadcastHandler");
 		}
 
 		return uClassPointer;
@@ -43775,7 +43774,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_HTTPFACTORY));
+			uClassPointer = UObject::FindClass("Class Engine.HttpFactory");
 		}
 
 		return uClassPointer;
@@ -43799,7 +43798,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_COLORSCALEVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.ColorScaleVolume");
 		}
 
 		return uClassPointer;
@@ -43823,7 +43822,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_VOLUMETIMER));
+			uClassPointer = UObject::FindClass("Class Engine.VolumeTimer");
 		}
 
 		return uClassPointer;
@@ -43847,7 +43846,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETDAMAGEINSTIGATOR));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetDamageInstigator");
 		}
 
 		return uClassPointer;
@@ -43868,7 +43867,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DMGTYPE_CRUSHED));
+			uClassPointer = UObject::FindClass("Class Engine.DmgType_Crushed");
 		}
 
 		return uClassPointer;
@@ -43889,7 +43888,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DMGTYPE_FELL));
+			uClassPointer = UObject::FindClass("Class Engine.DmgType_Fell");
 		}
 
 		return uClassPointer;
@@ -43910,7 +43909,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DMGTYPE_TELEFRAGGED));
+			uClassPointer = UObject::FindClass("Class Engine.DmgType_Telefragged");
 		}
 
 		return uClassPointer;
@@ -43932,7 +43931,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DYNAMICPHYSICSVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.DynamicPhysicsVolume");
 		}
 
 		return uClassPointer;
@@ -43954,7 +43953,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DYNAMICSMACTOR_SPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.DynamicSMActor_Spawnable");
 		}
 
 		return uClassPointer;
@@ -43976,7 +43975,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_DYNAMICTRIGGERVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.DynamicTriggerVolume");
 		}
 
 		return uClassPointer;
@@ -44001,7 +44000,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETPARTICLESYSPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetParticleSysParam");
 		}
 
 		return uClassPointer;
@@ -44024,7 +44023,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_EXPONENTIALHEIGHTFOG));
+			uClassPointer = UObject::FindClass("Class Engine.ExponentialHeightFog");
 		}
 
 		return uClassPointer;
@@ -44049,7 +44048,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FAILEDCONNECT));
+			uClassPointer = UObject::FindClass("Class Engine.FailedConnect");
 		}
 
 		return uClassPointer;
@@ -44072,7 +44071,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FRACTUREDSMACTORSPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.FracturedSMActorSpawnable");
 		}
 
 		return uClassPointer;
@@ -44093,7 +44092,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_FRACTUREDSTATICMESHACTOR_SPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.FracturedStaticMeshActor_Spawnable");
 		}
 
 		return uClassPointer;
@@ -44115,7 +44114,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_PLAYERSPAWNED));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_PlayerSpawned");
 		}
 
 		return uClassPointer;
@@ -44138,7 +44137,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_HEIGHTFOG));
+			uClassPointer = UObject::FindClass("Class Engine.HeightFog");
 		}
 
 		return uClassPointer;
@@ -44162,7 +44161,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_INTERPACTOR_FORCINEMATIC));
+			uClassPointer = UObject::FindClass("Class Engine.InterpActor_ForCinematic");
 		}
 
 		return uClassPointer;
@@ -44184,7 +44183,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_MATERIALINSTANCETIMEVARYINGACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.MaterialInstanceTimeVaryingActor");
 		}
 
 		return uClassPointer;
@@ -44206,7 +44205,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ASSIGNCONTROLLER));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_AssignController");
 		}
 
 		return uClassPointer;
@@ -44230,7 +44229,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_GIVEINVENTORY));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_GiveInventory");
 		}
 
 		return uClassPointer;
@@ -44251,7 +44250,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_NAVMESHBOUNDSVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.NavMeshBoundsVolume");
 		}
 
 		return uClassPointer;
@@ -44272,7 +44271,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINECOMMUNITYCONTENTINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineCommunityContentInterface");
 		}
 
 		return uClassPointer;
@@ -44318,7 +44317,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEEVENTSINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineEventsInterface");
 		}
 
 		return uClassPointer;
@@ -44342,7 +44341,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEGAMEDOWNLOADINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineGameDownloadInterface");
 		}
 
 		return uClassPointer;
@@ -44383,7 +44382,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINEPLAYLISTGAMETYPEPROVIDER));
+			uClassPointer = UObject::FindClass("Class Engine.OnlinePlaylistGameTypeProvider");
 		}
 
 		return uClassPointer;
@@ -44412,7 +44411,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINERECENTPLAYERSLIST));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineRecentPlayersList");
 		}
 
 		return uClassPointer;
@@ -44448,7 +44447,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_ONLINESUPPLIEDUIINTERFACE));
+			uClassPointer = UObject::FindClass("Class Engine.OnlineSuppliedUIInterface");
 		}
 
 		return uClassPointer;
@@ -44474,7 +44473,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_PATHNODE_DYNAMIC));
+			uClassPointer = UObject::FindClass("Class Engine.PathNode_Dynamic");
 		}
 
 		return uClassPointer;
@@ -44496,7 +44495,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_AIREACHEDROUTEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_AIReachedRouteActor");
 		}
 
 		return uClassPointer;
@@ -44517,7 +44516,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_PICKUPSTATUSCHANGE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_PickupStatusChange");
 		}
 
 		return uClassPointer;
@@ -44539,7 +44538,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RADIALBLURACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.RadialBlurActor");
 		}
 
 		return uClassPointer;
@@ -44564,7 +44563,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TOGGLECONSTRAINTDRIVE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ToggleConstraintDrive");
 		}
 
 		return uClassPointer;
@@ -44585,7 +44584,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_BSJOINTACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.RB_BSJointActor");
 		}
 
 		return uClassPointer;
@@ -44606,7 +44605,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_CONSTRAINTACTORSPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.RB_ConstraintActorSpawnable");
 		}
 
 		return uClassPointer;
@@ -44627,7 +44626,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_HINGEACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.RB_HingeActor");
 		}
 
 		return uClassPointer;
@@ -44648,7 +44647,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_PRISMATICACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.RB_PrismaticActor");
 		}
 
 		return uClassPointer;
@@ -44669,7 +44668,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_RB_PULLEYJOINTACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.RB_PulleyJointActor");
 		}
 
 		return uClassPointer;
@@ -44690,7 +44689,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_REVERBVOLUMETOGGLEABLE));
+			uClassPointer = UObject::FindClass("Class Engine.ReverbVolumeToggleable");
 		}
 
 		return uClassPointer;
@@ -44713,7 +44712,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_ADDREMOVEFACEFXANIMSET));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_AddRemoveFaceFXAnimSet");
 		}
 
 		return uClassPointer;
@@ -44734,7 +44733,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_AIABORTMOVETOACTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_AIAbortMoveToActor");
 		}
 
 		return uClassPointer;
@@ -44756,7 +44755,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_MITV_ACTIVATE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_MITV_Activate");
 		}
 
 		return uClassPointer;
@@ -44782,7 +44781,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETMATINSTTEXPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetMatInstTexParam");
 		}
 
 		return uClassPointer;
@@ -44806,7 +44805,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETMATINSTVECTORPARAM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetMatInstVectorParam");
 		}
 
 		return uClassPointer;
@@ -44830,7 +44829,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETSKELCONTROLTARGET));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetSkelControlTarget");
 		}
 
 		return uClassPointer;
@@ -44852,7 +44851,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_SETVECTOR));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_SetVector");
 		}
 
 		return uClassPointer;
@@ -44874,7 +44873,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_TOGGLEAFFECTEDBYHITEFFECTS));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_ToggleAffectedByHitEffects");
 		}
 
 		return uClassPointer;
@@ -44895,7 +44894,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQACT_UPDATEPHYSBONESFROMANIM));
+			uClassPointer = UObject::FindClass("Class Engine.SeqAct_UpdatePhysBonesFromAnim");
 		}
 
 		return uClassPointer;
@@ -44920,7 +44919,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQEVENT_LOS));
+			uClassPointer = UObject::FindClass("Class Engine.SeqEvent_LOS");
 		}
 
 		return uClassPointer;
@@ -44942,7 +44941,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_BYTE));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Byte");
 		}
 
 		return uClassPointer;
@@ -44963,7 +44962,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_NAME));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Name");
 		}
 
 		return uClassPointer;
@@ -44984,7 +44983,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SEQVAR_UNION));
+			uClassPointer = UObject::FindClass("Class Engine.SeqVar_Union");
 		}
 
 		return uClassPointer;
@@ -45005,7 +45004,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELETALMESHACTORMATSPAWNABLE));
+			uClassPointer = UObject::FindClass("Class Engine.SkeletalMeshActorMATSpawnable");
 		}
 
 		return uClassPointer;
@@ -45026,7 +45025,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_SKELETALMESHACTORMATWALKABLE));
+			uClassPointer = UObject::FindClass("Class Engine.SkeletalMeshActorMATWalkable");
 		}
 
 		return uClassPointer;
@@ -45047,7 +45046,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TRIGGER_DYNAMIC));
+			uClassPointer = UObject::FindClass("Class Engine.Trigger_Dynamic");
 		}
 
 		return uClassPointer;
@@ -45069,7 +45068,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TRIGGER_LOS));
+			uClassPointer = UObject::FindClass("Class Engine.Trigger_LOS");
 		}
 
 		return uClassPointer;
@@ -45093,7 +45092,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TRIGGEREDPATH));
+			uClassPointer = UObject::FindClass("Class Engine.TriggeredPath");
 		}
 
 		return uClassPointer;
@@ -45118,7 +45117,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_TRIGGERSTREAMINGLEVEL));
+			uClassPointer = UObject::FindClass("Class Engine.TriggerStreamingLevel");
 		}
 
 		return uClassPointer;
@@ -45144,7 +45143,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UICHARACTERSUMMARY));
+			uClassPointer = UObject::FindClass("Class Engine.UICharacterSummary");
 		}
 
 		return uClassPointer;
@@ -45173,7 +45172,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIGAMEINFOSUMMARY));
+			uClassPointer = UObject::FindClass("Class Engine.UIGameInfoSummary");
 		}
 
 		return uClassPointer;
@@ -45198,7 +45197,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIMAPSUMMARY));
+			uClassPointer = UObject::FindClass("Class Engine.UIMapSummary");
 		}
 
 		return uClassPointer;
@@ -45223,7 +45222,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_UIWEAPONSUMMARY));
+			uClassPointer = UObject::FindClass("Class Engine.UIWeaponSummary");
 		}
 
 		return uClassPointer;
@@ -45248,7 +45247,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WATERVOLUME));
+			uClassPointer = UObject::FindClass("Class Engine.WaterVolume");
 		}
 
 		return uClassPointer;
@@ -45274,7 +45273,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_ENGINE_WINDDIRECTIONALSOURCE));
+			uClassPointer = UObject::FindClass("Class Engine.WindDirectionalSource");
 		}
 
 		return uClassPointer;

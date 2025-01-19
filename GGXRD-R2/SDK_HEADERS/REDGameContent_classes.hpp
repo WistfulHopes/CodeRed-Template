@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -64,7 +63,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_CHALLENGERESULT));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_ChallengeResult");
 		}
 
 		return uClassPointer;
@@ -94,7 +93,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DESTROYED));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_Destroyed");
 		}
 
 		return uClassPointer;
@@ -117,7 +116,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DESTROYEDDZY));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_DestroyedDZY");
 		}
 
 		return uClassPointer;
@@ -140,7 +139,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DOUBLEKO));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_DoubleKO");
 		}
 
 		return uClassPointer;
@@ -163,7 +162,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_DRAW));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_Draw");
 		}
 
 		return uClassPointer;
@@ -186,7 +185,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_FINISHSLASH));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_FinishSlash");
 		}
 
 		return uClassPointer;
@@ -211,7 +210,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_LOSE));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_Lose");
 		}
 
 		return uClassPointer;
@@ -236,7 +235,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_PERFECT));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_Perfect");
 		}
 
 		return uClassPointer;
@@ -261,7 +260,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_ROUNDSTART));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_RoundStart");
 		}
 
 		return uClassPointer;
@@ -289,7 +288,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_TESTRESULT));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_TestResult");
 		}
 
 		return uClassPointer;
@@ -312,7 +311,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_TIMEUP));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_Timeup");
 		}
 
 		return uClassPointer;
@@ -337,7 +336,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_REDGAMECONTENT_REDGFXMOVIE_BATTLE_WIN));
+			uClassPointer = UObject::FindClass("Class REDGameContent.REDGfxMovie_Battle_Win");
 		}
 
 		return uClassPointer;

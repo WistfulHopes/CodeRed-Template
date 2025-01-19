@@ -22,7 +22,7 @@
 */
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.GetServerAddr
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21964])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21966])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        OutServerIP                    (CPF_Parm | CPF_OutParm)
@@ -34,7 +34,7 @@ bool UOnlineAuthInterfaceSteamworks::GetServerAddr(int32_t& OutServerIP, int32_t
 
 	if (!uFnGetServerAddr)
 	{
-		uFnGetServerAddr = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEAUTHINTERFACESTEAMWORKS));
+		uFnGetServerAddr = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.GetServerAddr");
 	}
 
 	UOnlineAuthInterfaceSteamworks_execGetServerAddr_Params GetServerAddr_Params;
@@ -42,11 +42,7 @@ bool UOnlineAuthInterfaceSteamworks::GetServerAddr(int32_t& OutServerIP, int32_t
 	memcpy_s(&GetServerAddr_Params.OutServerIP, sizeof(GetServerAddr_Params.OutServerIP), &OutServerIP, sizeof(OutServerIP));
 	memcpy_s(&GetServerAddr_Params.OutServerPort, sizeof(GetServerAddr_Params.OutServerPort), &OutServerPort, sizeof(OutServerPort));
 
-	uFnGetServerAddr->iNative = 0;
-	uFnGetServerAddr->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetServerAddr, &GetServerAddr_Params, nullptr);
-	uFnGetServerAddr->FunctionFlags |= 0x400;
-	uFnGetServerAddr->iNative = 21964;
 
 	memcpy_s(&OutServerIP, sizeof(OutServerIP), &GetServerAddr_Params.OutServerIP, sizeof(GetServerAddr_Params.OutServerIP));
 	memcpy_s(&OutServerPort, sizeof(OutServerPort), &GetServerAddr_Params.OutServerPort, sizeof(GetServerAddr_Params.OutServerPort));
@@ -55,7 +51,7 @@ bool UOnlineAuthInterfaceSteamworks::GetServerAddr(int32_t& OutServerIP, int32_t
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.GetServerUniqueId
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21967])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21969])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            OutServerUID                   (CPF_Parm | CPF_OutParm)
@@ -66,18 +62,14 @@ bool UOnlineAuthInterfaceSteamworks::GetServerUniqueId(struct FUniqueNetId& OutS
 
 	if (!uFnGetServerUniqueId)
 	{
-		uFnGetServerUniqueId = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEAUTHINTERFACESTEAMWORKS));
+		uFnGetServerUniqueId = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.GetServerUniqueId");
 	}
 
 	UOnlineAuthInterfaceSteamworks_execGetServerUniqueId_Params GetServerUniqueId_Params;
 	memset(&GetServerUniqueId_Params, 0, sizeof(GetServerUniqueId_Params));
 	memcpy_s(&GetServerUniqueId_Params.OutServerUID, sizeof(GetServerUniqueId_Params.OutServerUID), &OutServerUID, sizeof(OutServerUID));
 
-	uFnGetServerUniqueId->iNative = 0;
-	uFnGetServerUniqueId->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetServerUniqueId, &GetServerUniqueId_Params, nullptr);
-	uFnGetServerUniqueId->FunctionFlags |= 0x400;
-	uFnGetServerUniqueId->iNative = 21967;
 
 	memcpy_s(&OutServerUID, sizeof(OutServerUID), &GetServerUniqueId_Params.OutServerUID, sizeof(GetServerUniqueId_Params.OutServerUID));
 
@@ -85,7 +77,7 @@ bool UOnlineAuthInterfaceSteamworks::GetServerUniqueId(struct FUniqueNetId& OutS
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.VerifyServerAuthSession
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30007])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30009])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            ServerUID                      (CPF_Parm)
@@ -98,7 +90,7 @@ bool UOnlineAuthInterfaceSteamworks::VerifyServerAuthSession(const struct FUniqu
 
 	if (!uFnVerifyServerAuthSession)
 	{
-		uFnVerifyServerAuthSession = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEAUTHINTERFACESTEAMWORKS));
+		uFnVerifyServerAuthSession = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.VerifyServerAuthSession");
 	}
 
 	UOnlineAuthInterfaceSteamworks_execVerifyServerAuthSession_Params VerifyServerAuthSession_Params;
@@ -107,17 +99,13 @@ bool UOnlineAuthInterfaceSteamworks::VerifyServerAuthSession(const struct FUniqu
 	memcpy_s(&VerifyServerAuthSession_Params.ServerIP, sizeof(VerifyServerAuthSession_Params.ServerIP), &ServerIP, sizeof(ServerIP));
 	memcpy_s(&VerifyServerAuthSession_Params.AuthTicketUID, sizeof(VerifyServerAuthSession_Params.AuthTicketUID), &AuthTicketUID, sizeof(AuthTicketUID));
 
-	uFnVerifyServerAuthSession->iNative = 0;
-	uFnVerifyServerAuthSession->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnVerifyServerAuthSession, &VerifyServerAuthSession_Params, nullptr);
-	uFnVerifyServerAuthSession->FunctionFlags |= 0x400;
-	uFnVerifyServerAuthSession->iNative = 30007;
 
 	return VerifyServerAuthSession_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.CreateServerAuthSession
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[18989])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[18991])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            ClientUID                      (CPF_Parm)
@@ -131,7 +119,7 @@ bool UOnlineAuthInterfaceSteamworks::CreateServerAuthSession(const struct FUniqu
 
 	if (!uFnCreateServerAuthSession)
 	{
-		uFnCreateServerAuthSession = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEAUTHINTERFACESTEAMWORKS));
+		uFnCreateServerAuthSession = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.CreateServerAuthSession");
 	}
 
 	UOnlineAuthInterfaceSteamworks_execCreateServerAuthSession_Params CreateServerAuthSession_Params;
@@ -141,11 +129,7 @@ bool UOnlineAuthInterfaceSteamworks::CreateServerAuthSession(const struct FUniqu
 	memcpy_s(&CreateServerAuthSession_Params.ClientPort, sizeof(CreateServerAuthSession_Params.ClientPort), &ClientPort, sizeof(ClientPort));
 	memcpy_s(&CreateServerAuthSession_Params.OutAuthTicketUID, sizeof(CreateServerAuthSession_Params.OutAuthTicketUID), &OutAuthTicketUID, sizeof(OutAuthTicketUID));
 
-	uFnCreateServerAuthSession->iNative = 0;
-	uFnCreateServerAuthSession->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateServerAuthSession, &CreateServerAuthSession_Params, nullptr);
-	uFnCreateServerAuthSession->FunctionFlags |= 0x400;
-	uFnCreateServerAuthSession->iNative = 18989;
 
 	memcpy_s(&OutAuthTicketUID, sizeof(OutAuthTicketUID), &CreateServerAuthSession_Params.OutAuthTicketUID, sizeof(CreateServerAuthSession_Params.OutAuthTicketUID));
 
@@ -153,7 +137,7 @@ bool UOnlineAuthInterfaceSteamworks::CreateServerAuthSession(const struct FUniqu
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.VerifyClientAuthSession
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30003])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30005])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            ClientUID                      (CPF_Parm)
@@ -167,7 +151,7 @@ bool UOnlineAuthInterfaceSteamworks::VerifyClientAuthSession(const struct FUniqu
 
 	if (!uFnVerifyClientAuthSession)
 	{
-		uFnVerifyClientAuthSession = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEAUTHINTERFACESTEAMWORKS));
+		uFnVerifyClientAuthSession = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.VerifyClientAuthSession");
 	}
 
 	UOnlineAuthInterfaceSteamworks_execVerifyClientAuthSession_Params VerifyClientAuthSession_Params;
@@ -177,17 +161,13 @@ bool UOnlineAuthInterfaceSteamworks::VerifyClientAuthSession(const struct FUniqu
 	memcpy_s(&VerifyClientAuthSession_Params.ClientPort, sizeof(VerifyClientAuthSession_Params.ClientPort), &ClientPort, sizeof(ClientPort));
 	memcpy_s(&VerifyClientAuthSession_Params.AuthTicketUID, sizeof(VerifyClientAuthSession_Params.AuthTicketUID), &AuthTicketUID, sizeof(AuthTicketUID));
 
-	uFnVerifyClientAuthSession->iNative = 0;
-	uFnVerifyClientAuthSession->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnVerifyClientAuthSession, &VerifyClientAuthSession_Params, nullptr);
-	uFnVerifyClientAuthSession->FunctionFlags |= 0x400;
-	uFnVerifyClientAuthSession->iNative = 30003;
 
 	return VerifyClientAuthSession_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.CreateClientAuthSession
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[18975])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[18977])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            ServerUID                      (CPF_Parm)
@@ -202,7 +182,7 @@ bool UOnlineAuthInterfaceSteamworks::CreateClientAuthSession(const struct FUniqu
 
 	if (!uFnCreateClientAuthSession)
 	{
-		uFnCreateClientAuthSession = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEAUTHINTERFACESTEAMWORKS));
+		uFnCreateClientAuthSession = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.CreateClientAuthSession");
 	}
 
 	UOnlineAuthInterfaceSteamworks_execCreateClientAuthSession_Params CreateClientAuthSession_Params;
@@ -213,11 +193,7 @@ bool UOnlineAuthInterfaceSteamworks::CreateClientAuthSession(const struct FUniqu
 	CreateClientAuthSession_Params.bSecure = bSecure;
 	memcpy_s(&CreateClientAuthSession_Params.OutAuthTicketUID, sizeof(CreateClientAuthSession_Params.OutAuthTicketUID), &OutAuthTicketUID, sizeof(OutAuthTicketUID));
 
-	uFnCreateClientAuthSession->iNative = 0;
-	uFnCreateClientAuthSession->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateClientAuthSession, &CreateClientAuthSession_Params, nullptr);
-	uFnCreateClientAuthSession->FunctionFlags |= 0x400;
-	uFnCreateClientAuthSession->iNative = 18975;
 
 	memcpy_s(&OutAuthTicketUID, sizeof(OutAuthTicketUID), &CreateClientAuthSession_Params.OutAuthTicketUID, sizeof(CreateClientAuthSession_Params.OutAuthTicketUID));
 
@@ -225,7 +201,7 @@ bool UOnlineAuthInterfaceSteamworks::CreateClientAuthSession(const struct FUniqu
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.SendServerAuthRequest
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27681])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27683])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            ServerUID                      (CPF_Parm)
@@ -236,24 +212,20 @@ bool UOnlineAuthInterfaceSteamworks::SendServerAuthRequest(const struct FUniqueN
 
 	if (!uFnSendServerAuthRequest)
 	{
-		uFnSendServerAuthRequest = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEAUTHINTERFACESTEAMWORKS));
+		uFnSendServerAuthRequest = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.SendServerAuthRequest");
 	}
 
 	UOnlineAuthInterfaceSteamworks_execSendServerAuthRequest_Params SendServerAuthRequest_Params;
 	memset(&SendServerAuthRequest_Params, 0, sizeof(SendServerAuthRequest_Params));
 	memcpy_s(&SendServerAuthRequest_Params.ServerUID, sizeof(SendServerAuthRequest_Params.ServerUID), &ServerUID, sizeof(ServerUID));
 
-	uFnSendServerAuthRequest->iNative = 0;
-	uFnSendServerAuthRequest->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendServerAuthRequest, &SendServerAuthRequest_Params, nullptr);
-	uFnSendServerAuthRequest->FunctionFlags |= 0x400;
-	uFnSendServerAuthRequest->iNative = 27681;
 
 	return SendServerAuthRequest_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.SendClientAuthRequest
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27664])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27666])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class UPlayer*                 ClientConnection               (CPF_Parm)
@@ -265,7 +237,7 @@ bool UOnlineAuthInterfaceSteamworks::SendClientAuthRequest(class UPlayer* Client
 
 	if (!uFnSendClientAuthRequest)
 	{
-		uFnSendClientAuthRequest = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEAUTHINTERFACESTEAMWORKS));
+		uFnSendClientAuthRequest = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineAuthInterfaceSteamworks.SendClientAuthRequest");
 	}
 
 	UOnlineAuthInterfaceSteamworks_execSendClientAuthRequest_Params SendClientAuthRequest_Params;
@@ -273,11 +245,7 @@ bool UOnlineAuthInterfaceSteamworks::SendClientAuthRequest(class UPlayer* Client
 	SendClientAuthRequest_Params.ClientConnection = ClientConnection;
 	memcpy_s(&SendClientAuthRequest_Params.ClientUID, sizeof(SendClientAuthRequest_Params.ClientUID), &ClientUID, sizeof(ClientUID));
 
-	uFnSendClientAuthRequest->iNative = 0;
-	uFnSendClientAuthRequest->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendClientAuthRequest, &SendClientAuthRequest_Params, nullptr);
-	uFnSendClientAuthRequest->FunctionFlags |= 0x400;
-	uFnSendClientAuthRequest->iNative = 27664;
 
 	return SendClientAuthRequest_Params.ReturnValue;
 };
@@ -295,7 +263,7 @@ bool UOnlineGameInterfaceSteamworks::QueryNonAdvertisedData(int32_t StartAt, int
 
 	if (!uFnQueryNonAdvertisedData)
 	{
-		uFnQueryNonAdvertisedData = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnQueryNonAdvertisedData = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.QueryNonAdvertisedData");
 	}
 
 	UOnlineGameInterfaceSteamworks_execQueryNonAdvertisedData_Params QueryNonAdvertisedData_Params;
@@ -319,7 +287,7 @@ void UOnlineGameInterfaceSteamworks::ClearUnregisterPlayerCompleteDelegate(const
 
 	if (!uFnClearUnregisterPlayerCompleteDelegate)
 	{
-		uFnClearUnregisterPlayerCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnClearUnregisterPlayerCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.ClearUnregisterPlayerCompleteDelegate");
 	}
 
 	UOnlineGameInterfaceSteamworks_execClearUnregisterPlayerCompleteDelegate_Params ClearUnregisterPlayerCompleteDelegate_Params;
@@ -340,7 +308,7 @@ void UOnlineGameInterfaceSteamworks::AddUnregisterPlayerCompleteDelegate(const s
 
 	if (!uFnAddUnregisterPlayerCompleteDelegate)
 	{
-		uFnAddUnregisterPlayerCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnAddUnregisterPlayerCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.AddUnregisterPlayerCompleteDelegate");
 	}
 
 	UOnlineGameInterfaceSteamworks_execAddUnregisterPlayerCompleteDelegate_Params AddUnregisterPlayerCompleteDelegate_Params;
@@ -363,7 +331,7 @@ void UOnlineGameInterfaceSteamworks::OnUnregisterPlayerComplete(const class FNam
 
 	if (!uFnOnUnregisterPlayerComplete)
 	{
-		uFnOnUnregisterPlayerComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnOnUnregisterPlayerComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.OnUnregisterPlayerComplete");
 	}
 
 	UOnlineGameInterfaceSteamworks_execOnUnregisterPlayerComplete_Params OnUnregisterPlayerComplete_Params;
@@ -376,7 +344,7 @@ void UOnlineGameInterfaceSteamworks::OnUnregisterPlayerComplete(const class FNam
 };
 
 // Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.UnregisterPlayer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29781])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29783])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -388,7 +356,7 @@ bool UOnlineGameInterfaceSteamworks::UnregisterPlayer(const class FName& Session
 
 	if (!uFnUnregisterPlayer)
 	{
-		uFnUnregisterPlayer = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnUnregisterPlayer = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.UnregisterPlayer");
 	}
 
 	UOnlineGameInterfaceSteamworks_execUnregisterPlayer_Params UnregisterPlayer_Params;
@@ -396,11 +364,7 @@ bool UOnlineGameInterfaceSteamworks::UnregisterPlayer(const class FName& Session
 	memcpy_s(&UnregisterPlayer_Params.SessionName, sizeof(UnregisterPlayer_Params.SessionName), &SessionName, sizeof(SessionName));
 	memcpy_s(&UnregisterPlayer_Params.PlayerID, sizeof(UnregisterPlayer_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 
-	uFnUnregisterPlayer->iNative = 0;
-	uFnUnregisterPlayer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnregisterPlayer, &UnregisterPlayer_Params, nullptr);
-	uFnUnregisterPlayer->FunctionFlags |= 0x400;
-	uFnUnregisterPlayer->iNative = 29781;
 
 	return UnregisterPlayer_Params.ReturnValue;
 };
@@ -416,7 +380,7 @@ void UOnlineGameInterfaceSteamworks::ClearRegisterPlayerCompleteDelegate(const s
 
 	if (!uFnClearRegisterPlayerCompleteDelegate)
 	{
-		uFnClearRegisterPlayerCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnClearRegisterPlayerCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.ClearRegisterPlayerCompleteDelegate");
 	}
 
 	UOnlineGameInterfaceSteamworks_execClearRegisterPlayerCompleteDelegate_Params ClearRegisterPlayerCompleteDelegate_Params;
@@ -437,7 +401,7 @@ void UOnlineGameInterfaceSteamworks::AddRegisterPlayerCompleteDelegate(const str
 
 	if (!uFnAddRegisterPlayerCompleteDelegate)
 	{
-		uFnAddRegisterPlayerCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnAddRegisterPlayerCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.AddRegisterPlayerCompleteDelegate");
 	}
 
 	UOnlineGameInterfaceSteamworks_execAddRegisterPlayerCompleteDelegate_Params AddRegisterPlayerCompleteDelegate_Params;
@@ -460,7 +424,7 @@ void UOnlineGameInterfaceSteamworks::OnRegisterPlayerComplete(const class FName&
 
 	if (!uFnOnRegisterPlayerComplete)
 	{
-		uFnOnRegisterPlayerComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnOnRegisterPlayerComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.OnRegisterPlayerComplete");
 	}
 
 	UOnlineGameInterfaceSteamworks_execOnRegisterPlayerComplete_Params OnRegisterPlayerComplete_Params;
@@ -473,7 +437,7 @@ void UOnlineGameInterfaceSteamworks::OnRegisterPlayerComplete(const class FName&
 };
 
 // Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.RegisterPlayer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27017])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27019])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -486,7 +450,7 @@ bool UOnlineGameInterfaceSteamworks::RegisterPlayer(const class FName& SessionNa
 
 	if (!uFnRegisterPlayer)
 	{
-		uFnRegisterPlayer = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnRegisterPlayer = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.RegisterPlayer");
 	}
 
 	UOnlineGameInterfaceSteamworks_execRegisterPlayer_Params RegisterPlayer_Params;
@@ -495,17 +459,13 @@ bool UOnlineGameInterfaceSteamworks::RegisterPlayer(const class FName& SessionNa
 	memcpy_s(&RegisterPlayer_Params.PlayerID, sizeof(RegisterPlayer_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 	RegisterPlayer_Params.bWasInvited = bWasInvited;
 
-	uFnRegisterPlayer->iNative = 0;
-	uFnRegisterPlayer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegisterPlayer, &RegisterPlayer_Params, nullptr);
-	uFnRegisterPlayer->FunctionFlags |= 0x400;
-	uFnRegisterPlayer->iNative = 27017;
 
 	return RegisterPlayer_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.AcceptGameInvite
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[14412])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[14414])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -517,7 +477,7 @@ bool UOnlineGameInterfaceSteamworks::AcceptGameInvite(uint8_t LocalUserNum, cons
 
 	if (!uFnAcceptGameInvite)
 	{
-		uFnAcceptGameInvite = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnAcceptGameInvite = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.AcceptGameInvite");
 	}
 
 	UOnlineGameInterfaceSteamworks_execAcceptGameInvite_Params AcceptGameInvite_Params;
@@ -525,11 +485,7 @@ bool UOnlineGameInterfaceSteamworks::AcceptGameInvite(uint8_t LocalUserNum, cons
 	memcpy_s(&AcceptGameInvite_Params.LocalUserNum, sizeof(AcceptGameInvite_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&AcceptGameInvite_Params.SessionName, sizeof(AcceptGameInvite_Params.SessionName), &SessionName, sizeof(SessionName));
 
-	uFnAcceptGameInvite->iNative = 0;
-	uFnAcceptGameInvite->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAcceptGameInvite, &AcceptGameInvite_Params, nullptr);
-	uFnAcceptGameInvite->FunctionFlags |= 0x400;
-	uFnAcceptGameInvite->iNative = 14412;
 
 	return AcceptGameInvite_Params.ReturnValue;
 };
@@ -545,7 +501,7 @@ void UOnlineGameInterfaceSteamworks::OnGameInviteAccepted(struct FOnlineGameSear
 
 	if (!uFnOnGameInviteAccepted)
 	{
-		uFnOnGameInviteAccepted = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnOnGameInviteAccepted = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.OnGameInviteAccepted");
 	}
 
 	UOnlineGameInterfaceSteamworks_execOnGameInviteAccepted_Params OnGameInviteAccepted_Params;
@@ -569,7 +525,7 @@ void UOnlineGameInterfaceSteamworks::ClearGameInviteAcceptedDelegate(uint8_t Loc
 
 	if (!uFnClearGameInviteAcceptedDelegate)
 	{
-		uFnClearGameInviteAcceptedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnClearGameInviteAcceptedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.ClearGameInviteAcceptedDelegate");
 	}
 
 	UOnlineGameInterfaceSteamworks_execClearGameInviteAcceptedDelegate_Params ClearGameInviteAcceptedDelegate_Params;
@@ -592,7 +548,7 @@ void UOnlineGameInterfaceSteamworks::AddGameInviteAcceptedDelegate(uint8_t Local
 
 	if (!uFnAddGameInviteAcceptedDelegate)
 	{
-		uFnAddGameInviteAcceptedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnAddGameInviteAcceptedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.AddGameInviteAcceptedDelegate");
 	}
 
 	UOnlineGameInterfaceSteamworks_execAddGameInviteAcceptedDelegate_Params AddGameInviteAcceptedDelegate_Params;
@@ -604,7 +560,7 @@ void UOnlineGameInterfaceSteamworks::AddGameInviteAcceptedDelegate(uint8_t Local
 };
 
 // Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.UpdateOnlineGame
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29840])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29842])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -617,7 +573,7 @@ bool UOnlineGameInterfaceSteamworks::UpdateOnlineGame(const class FName& Session
 
 	if (!uFnUpdateOnlineGame)
 	{
-		uFnUpdateOnlineGame = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINEGAMEINTERFACESTEAMWORKS));
+		uFnUpdateOnlineGame = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineGameInterfaceSteamworks.UpdateOnlineGame");
 	}
 
 	UOnlineGameInterfaceSteamworks_execUpdateOnlineGame_Params UpdateOnlineGame_Params;
@@ -626,17 +582,13 @@ bool UOnlineGameInterfaceSteamworks::UpdateOnlineGame(const class FName& Session
 	UpdateOnlineGame_Params.UpdatedGameSettings = UpdatedGameSettings;
 	UpdateOnlineGame_Params.bShouldRefreshOnlineData = bShouldRefreshOnlineData;
 
-	uFnUpdateOnlineGame->iNative = 0;
-	uFnUpdateOnlineGame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateOnlineGame, &UpdateOnlineGame_Params, nullptr);
-	uFnUpdateOnlineGame->FunctionFlags |= 0x400;
-	uFnUpdateOnlineGame->iNative = 29840;
 
 	return UpdateOnlineGame_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.GetLobbyFromCommandline
-// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35083])
+// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35085])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bMarkAsJoined                  (CPF_OptionalParm | CPF_Parm)
@@ -648,7 +600,7 @@ bool UOnlineLobbyInterfaceSteamworks::GetLobbyFromCommandline(bool bMarkAsJoined
 
 	if (!uFnGetLobbyFromCommandline)
 	{
-		uFnGetLobbyFromCommandline = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnGetLobbyFromCommandline = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.GetLobbyFromCommandline");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execGetLobbyFromCommandline_Params GetLobbyFromCommandline_Params;
@@ -656,11 +608,7 @@ bool UOnlineLobbyInterfaceSteamworks::GetLobbyFromCommandline(bool bMarkAsJoined
 	GetLobbyFromCommandline_Params.bMarkAsJoined = bMarkAsJoined;
 	memcpy_s(&GetLobbyFromCommandline_Params.LobbyId, sizeof(GetLobbyFromCommandline_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 
-	uFnGetLobbyFromCommandline->iNative = 0;
-	uFnGetLobbyFromCommandline->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetLobbyFromCommandline, &GetLobbyFromCommandline_Params, nullptr);
-	uFnGetLobbyFromCommandline->FunctionFlags |= 0x400;
-	uFnGetLobbyFromCommandline->iNative = 35083;
 
 	memcpy_s(&LobbyId, sizeof(LobbyId), &GetLobbyFromCommandline_Params.LobbyId, sizeof(GetLobbyFromCommandline_Params.LobbyId));
 
@@ -678,7 +626,7 @@ void UOnlineLobbyInterfaceSteamworks::ClearLobbyInviteDelegate(const struct FScr
 
 	if (!uFnClearLobbyInviteDelegate)
 	{
-		uFnClearLobbyInviteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnClearLobbyInviteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.ClearLobbyInviteDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execClearLobbyInviteDelegate_Params ClearLobbyInviteDelegate_Params;
@@ -699,7 +647,7 @@ void UOnlineLobbyInterfaceSteamworks::AddLobbyInviteDelegate(const struct FScrip
 
 	if (!uFnAddLobbyInviteDelegate)
 	{
-		uFnAddLobbyInviteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnAddLobbyInviteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.AddLobbyInviteDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execAddLobbyInviteDelegate_Params AddLobbyInviteDelegate_Params;
@@ -722,7 +670,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbyInvite(const struct FUniqueNetId& L
 
 	if (!uFnOnLobbyInvite)
 	{
-		uFnOnLobbyInvite = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnLobbyInvite = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnLobbyInvite");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnLobbyInvite_Params OnLobbyInvite_Params;
@@ -735,7 +683,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbyInvite(const struct FUniqueNetId& L
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.InviteToLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35095])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35097])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -747,7 +695,7 @@ bool UOnlineLobbyInterfaceSteamworks::InviteToLobby(const struct FUniqueNetId& L
 
 	if (!uFnInviteToLobby)
 	{
-		uFnInviteToLobby = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnInviteToLobby = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.InviteToLobby");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execInviteToLobby_Params InviteToLobby_Params;
@@ -755,17 +703,13 @@ bool UOnlineLobbyInterfaceSteamworks::InviteToLobby(const struct FUniqueNetId& L
 	memcpy_s(&InviteToLobby_Params.LobbyId, sizeof(InviteToLobby_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 	memcpy_s(&InviteToLobby_Params.PlayerID, sizeof(InviteToLobby_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 
-	uFnInviteToLobby->iNative = 0;
-	uFnInviteToLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInviteToLobby, &InviteToLobby_Params, nullptr);
-	uFnInviteToLobby->FunctionFlags |= 0x400;
-	uFnInviteToLobby->iNative = 35095;
 
 	return InviteToLobby_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyOwner
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35231])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35233])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -777,7 +721,7 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyOwner(const struct FUniqueNetId& L
 
 	if (!uFnSetLobbyOwner)
 	{
-		uFnSetLobbyOwner = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnSetLobbyOwner = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyOwner");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execSetLobbyOwner_Params SetLobbyOwner_Params;
@@ -785,17 +729,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyOwner(const struct FUniqueNetId& L
 	memcpy_s(&SetLobbyOwner_Params.LobbyId, sizeof(SetLobbyOwner_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 	memcpy_s(&SetLobbyOwner_Params.NewOwner, sizeof(SetLobbyOwner_Params.NewOwner), &NewOwner, sizeof(NewOwner));
 
-	uFnSetLobbyOwner->iNative = 0;
-	uFnSetLobbyOwner->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbyOwner, &SetLobbyOwner_Params, nullptr);
-	uFnSetLobbyOwner->FunctionFlags |= 0x400;
-	uFnSetLobbyOwner->iNative = 35231;
 
 	return SetLobbyOwner_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyLock
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35230])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35232])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -807,7 +747,7 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyLock(const struct FUniqueNetId& Lo
 
 	if (!uFnSetLobbyLock)
 	{
-		uFnSetLobbyLock = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnSetLobbyLock = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyLock");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execSetLobbyLock_Params SetLobbyLock_Params;
@@ -815,17 +755,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyLock(const struct FUniqueNetId& Lo
 	memcpy_s(&SetLobbyLock_Params.LobbyId, sizeof(SetLobbyLock_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 	SetLobbyLock_Params.bLocked = bLocked;
 
-	uFnSetLobbyLock->iNative = 0;
-	uFnSetLobbyLock->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbyLock, &SetLobbyLock_Params, nullptr);
-	uFnSetLobbyLock->FunctionFlags |= 0x400;
-	uFnSetLobbyLock->iNative = 35230;
 
 	return SetLobbyLock_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyType
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35234])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35236])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -837,7 +773,7 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyType(const struct FUniqueNetId& Lo
 
 	if (!uFnSetLobbyType)
 	{
-		uFnSetLobbyType = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnSetLobbyType = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyType");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execSetLobbyType_Params SetLobbyType_Params;
@@ -845,17 +781,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyType(const struct FUniqueNetId& Lo
 	memcpy_s(&SetLobbyType_Params.LobbyId, sizeof(SetLobbyType_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 	memcpy_s(&SetLobbyType_Params.Type, sizeof(SetLobbyType_Params.Type), &Type, sizeof(Type));
 
-	uFnSetLobbyType->iNative = 0;
-	uFnSetLobbyType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbyType, &SetLobbyType_Params, nullptr);
-	uFnSetLobbyType->FunctionFlags |= 0x400;
-	uFnSetLobbyType->iNative = 35234;
 
 	return SetLobbyType_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyServer
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35232])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35234])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -868,7 +800,7 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyServer(const struct FUniqueNetId& 
 
 	if (!uFnSetLobbyServer)
 	{
-		uFnSetLobbyServer = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnSetLobbyServer = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyServer");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execSetLobbyServer_Params SetLobbyServer_Params;
@@ -877,17 +809,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyServer(const struct FUniqueNetId& 
 	memcpy_s(&SetLobbyServer_Params.ServerUID, sizeof(SetLobbyServer_Params.ServerUID), &ServerUID, sizeof(ServerUID));
 	memcpy_s(&SetLobbyServer_Params.ServerIP, sizeof(SetLobbyServer_Params.ServerIP), &ServerIP, sizeof(ServerIP));
 
-	uFnSetLobbyServer->iNative = 0;
-	uFnSetLobbyServer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbyServer, &SetLobbyServer_Params, nullptr);
-	uFnSetLobbyServer->FunctionFlags |= 0x400;
-	uFnSetLobbyServer->iNative = 35232;
 
 	return SetLobbyServer_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.RemoveLobbySetting
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35222])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35224])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -899,7 +827,7 @@ bool UOnlineLobbyInterfaceSteamworks::RemoveLobbySetting(const struct FUniqueNet
 
 	if (!uFnRemoveLobbySetting)
 	{
-		uFnRemoveLobbySetting = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnRemoveLobbySetting = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.RemoveLobbySetting");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execRemoveLobbySetting_Params RemoveLobbySetting_Params;
@@ -907,17 +835,13 @@ bool UOnlineLobbyInterfaceSteamworks::RemoveLobbySetting(const struct FUniqueNet
 	memcpy_s(&RemoveLobbySetting_Params.LobbyId, sizeof(RemoveLobbySetting_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 	memcpy_s(&RemoveLobbySetting_Params.Key, sizeof(RemoveLobbySetting_Params.Key), &Key, sizeof(Key));
 
-	uFnRemoveLobbySetting->iNative = 0;
-	uFnRemoveLobbySetting->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRemoveLobbySetting, &RemoveLobbySetting_Params, nullptr);
-	uFnRemoveLobbySetting->FunctionFlags |= 0x400;
-	uFnRemoveLobbySetting->iNative = 35222;
 
 	return RemoveLobbySetting_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbySetting
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35233])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35235])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -930,7 +854,7 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbySetting(const struct FUniqueNetId&
 
 	if (!uFnSetLobbySetting)
 	{
-		uFnSetLobbySetting = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnSetLobbySetting = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbySetting");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execSetLobbySetting_Params SetLobbySetting_Params;
@@ -939,17 +863,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbySetting(const struct FUniqueNetId&
 	memcpy_s(&SetLobbySetting_Params.Key, sizeof(SetLobbySetting_Params.Key), &Key, sizeof(Key));
 	memcpy_s(&SetLobbySetting_Params.Value, sizeof(SetLobbySetting_Params.Value), &Value, sizeof(Value));
 
-	uFnSetLobbySetting->iNative = 0;
-	uFnSetLobbySetting->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbySetting, &SetLobbySetting_Params, nullptr);
-	uFnSetLobbySetting->FunctionFlags |= 0x400;
-	uFnSetLobbySetting->iNative = 35233;
 
 	return SetLobbySetting_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.GetLobbyAdmin
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35082])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35084])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -961,7 +881,7 @@ bool UOnlineLobbyInterfaceSteamworks::GetLobbyAdmin(const struct FUniqueNetId& L
 
 	if (!uFnGetLobbyAdmin)
 	{
-		uFnGetLobbyAdmin = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnGetLobbyAdmin = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.GetLobbyAdmin");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execGetLobbyAdmin_Params GetLobbyAdmin_Params;
@@ -969,11 +889,7 @@ bool UOnlineLobbyInterfaceSteamworks::GetLobbyAdmin(const struct FUniqueNetId& L
 	memcpy_s(&GetLobbyAdmin_Params.LobbyId, sizeof(GetLobbyAdmin_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 	memcpy_s(&GetLobbyAdmin_Params.AdminId, sizeof(GetLobbyAdmin_Params.AdminId), &AdminId, sizeof(AdminId));
 
-	uFnGetLobbyAdmin->iNative = 0;
-	uFnGetLobbyAdmin->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetLobbyAdmin, &GetLobbyAdmin_Params, nullptr);
-	uFnGetLobbyAdmin->FunctionFlags |= 0x400;
-	uFnGetLobbyAdmin->iNative = 35082;
 
 	memcpy_s(&AdminId, sizeof(AdminId), &GetLobbyAdmin_Params.AdminId, sizeof(GetLobbyAdmin_Params.AdminId));
 
@@ -993,7 +909,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbyKicked(int32_t LobbyIndex, int32_t 
 
 	if (!uFnOnLobbyKicked)
 	{
-		uFnOnLobbyKicked = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnLobbyKicked = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnLobbyKicked");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnLobbyKicked_Params OnLobbyKicked_Params;
@@ -1018,7 +934,7 @@ void UOnlineLobbyInterfaceSteamworks::ClearLobbyJoinGameDelegate(const struct FS
 
 	if (!uFnClearLobbyJoinGameDelegate)
 	{
-		uFnClearLobbyJoinGameDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnClearLobbyJoinGameDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.ClearLobbyJoinGameDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execClearLobbyJoinGameDelegate_Params ClearLobbyJoinGameDelegate_Params;
@@ -1039,7 +955,7 @@ void UOnlineLobbyInterfaceSteamworks::AddLobbyJoinGameDelegate(const struct FScr
 
 	if (!uFnAddLobbyJoinGameDelegate)
 	{
-		uFnAddLobbyJoinGameDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnAddLobbyJoinGameDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.AddLobbyJoinGameDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execAddLobbyJoinGameDelegate_Params AddLobbyJoinGameDelegate_Params;
@@ -1062,7 +978,7 @@ void UOnlineLobbyInterfaceSteamworks::eventTriggerLobbyJoinGameDelegates(int32_t
 
 	if (!uFnTriggerLobbyJoinGameDelegates)
 	{
-		uFnTriggerLobbyJoinGameDelegates = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnTriggerLobbyJoinGameDelegates = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.TriggerLobbyJoinGameDelegates");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_eventTriggerLobbyJoinGameDelegates_Params TriggerLobbyJoinGameDelegates_Params;
@@ -1088,7 +1004,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbyJoinGame(int32_t LobbyIndex, const 
 
 	if (!uFnOnLobbyJoinGame)
 	{
-		uFnOnLobbyJoinGame = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnLobbyJoinGame = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnLobbyJoinGame");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnLobbyJoinGame_Params OnLobbyJoinGame_Params;
@@ -1114,7 +1030,7 @@ void UOnlineLobbyInterfaceSteamworks::ClearLobbyReceiveBinaryDataDelegate(const 
 
 	if (!uFnClearLobbyReceiveBinaryDataDelegate)
 	{
-		uFnClearLobbyReceiveBinaryDataDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnClearLobbyReceiveBinaryDataDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.ClearLobbyReceiveBinaryDataDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execClearLobbyReceiveBinaryDataDelegate_Params ClearLobbyReceiveBinaryDataDelegate_Params;
@@ -1135,7 +1051,7 @@ void UOnlineLobbyInterfaceSteamworks::AddLobbyReceiveBinaryDataDelegate(const st
 
 	if (!uFnAddLobbyReceiveBinaryDataDelegate)
 	{
-		uFnAddLobbyReceiveBinaryDataDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnAddLobbyReceiveBinaryDataDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.AddLobbyReceiveBinaryDataDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execAddLobbyReceiveBinaryDataDelegate_Params AddLobbyReceiveBinaryDataDelegate_Params;
@@ -1157,7 +1073,7 @@ void UOnlineLobbyInterfaceSteamworks::eventTriggerLobbyReceiveBinaryDataDelegate
 
 	if (!uFnTriggerLobbyReceiveBinaryDataDelegates)
 	{
-		uFnTriggerLobbyReceiveBinaryDataDelegates = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnTriggerLobbyReceiveBinaryDataDelegates = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.TriggerLobbyReceiveBinaryDataDelegates");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_eventTriggerLobbyReceiveBinaryDataDelegates_Params TriggerLobbyReceiveBinaryDataDelegates_Params;
@@ -1182,7 +1098,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbyReceiveBinaryData(int32_t LobbyInde
 
 	if (!uFnOnLobbyReceiveBinaryData)
 	{
-		uFnOnLobbyReceiveBinaryData = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnLobbyReceiveBinaryData = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnLobbyReceiveBinaryData");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnLobbyReceiveBinaryData_Params OnLobbyReceiveBinaryData_Params;
@@ -1209,7 +1125,7 @@ void UOnlineLobbyInterfaceSteamworks::ClearLobbyReceiveMessageDelegate(const str
 
 	if (!uFnClearLobbyReceiveMessageDelegate)
 	{
-		uFnClearLobbyReceiveMessageDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnClearLobbyReceiveMessageDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.ClearLobbyReceiveMessageDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execClearLobbyReceiveMessageDelegate_Params ClearLobbyReceiveMessageDelegate_Params;
@@ -1230,7 +1146,7 @@ void UOnlineLobbyInterfaceSteamworks::AddLobbyReceiveMessageDelegate(const struc
 
 	if (!uFnAddLobbyReceiveMessageDelegate)
 	{
-		uFnAddLobbyReceiveMessageDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnAddLobbyReceiveMessageDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.AddLobbyReceiveMessageDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execAddLobbyReceiveMessageDelegate_Params AddLobbyReceiveMessageDelegate_Params;
@@ -1254,7 +1170,7 @@ void UOnlineLobbyInterfaceSteamworks::eventTriggerLobbyReceiveMessageDelegates(i
 
 	if (!uFnTriggerLobbyReceiveMessageDelegates)
 	{
-		uFnTriggerLobbyReceiveMessageDelegates = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnTriggerLobbyReceiveMessageDelegates = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.TriggerLobbyReceiveMessageDelegates");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_eventTriggerLobbyReceiveMessageDelegates_Params TriggerLobbyReceiveMessageDelegates_Params;
@@ -1282,7 +1198,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbyReceiveMessage(int32_t LobbyIndex, 
 
 	if (!uFnOnLobbyReceiveMessage)
 	{
-		uFnOnLobbyReceiveMessage = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnLobbyReceiveMessage = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnLobbyReceiveMessage");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnLobbyReceiveMessage_Params OnLobbyReceiveMessage_Params;
@@ -1309,7 +1225,7 @@ void UOnlineLobbyInterfaceSteamworks::ClearLobbyMemberStatusUpdateDelegate(const
 
 	if (!uFnClearLobbyMemberStatusUpdateDelegate)
 	{
-		uFnClearLobbyMemberStatusUpdateDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnClearLobbyMemberStatusUpdateDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.ClearLobbyMemberStatusUpdateDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execClearLobbyMemberStatusUpdateDelegate_Params ClearLobbyMemberStatusUpdateDelegate_Params;
@@ -1330,7 +1246,7 @@ void UOnlineLobbyInterfaceSteamworks::AddLobbyMemberStatusUpdateDelegate(const s
 
 	if (!uFnAddLobbyMemberStatusUpdateDelegate)
 	{
-		uFnAddLobbyMemberStatusUpdateDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnAddLobbyMemberStatusUpdateDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.AddLobbyMemberStatusUpdateDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execAddLobbyMemberStatusUpdateDelegate_Params AddLobbyMemberStatusUpdateDelegate_Params;
@@ -1354,7 +1270,7 @@ void UOnlineLobbyInterfaceSteamworks::eventTriggerLobbyMemberStatusUpdateDelegat
 
 	if (!uFnTriggerLobbyMemberStatusUpdateDelegates)
 	{
-		uFnTriggerLobbyMemberStatusUpdateDelegates = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnTriggerLobbyMemberStatusUpdateDelegates = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.TriggerLobbyMemberStatusUpdateDelegates");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_eventTriggerLobbyMemberStatusUpdateDelegates_Params TriggerLobbyMemberStatusUpdateDelegates_Params;
@@ -1382,7 +1298,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbyMemberStatusUpdate(int32_t LobbyInd
 
 	if (!uFnOnLobbyMemberStatusUpdate)
 	{
-		uFnOnLobbyMemberStatusUpdate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnLobbyMemberStatusUpdate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnLobbyMemberStatusUpdate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnLobbyMemberStatusUpdate_Params OnLobbyMemberStatusUpdate_Params;
@@ -1409,7 +1325,7 @@ void UOnlineLobbyInterfaceSteamworks::ClearLobbyMemberSettingsUpdateDelegate(con
 
 	if (!uFnClearLobbyMemberSettingsUpdateDelegate)
 	{
-		uFnClearLobbyMemberSettingsUpdateDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnClearLobbyMemberSettingsUpdateDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.ClearLobbyMemberSettingsUpdateDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execClearLobbyMemberSettingsUpdateDelegate_Params ClearLobbyMemberSettingsUpdateDelegate_Params;
@@ -1430,7 +1346,7 @@ void UOnlineLobbyInterfaceSteamworks::AddLobbyMemberSettingsUpdateDelegate(const
 
 	if (!uFnAddLobbyMemberSettingsUpdateDelegate)
 	{
-		uFnAddLobbyMemberSettingsUpdateDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnAddLobbyMemberSettingsUpdateDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.AddLobbyMemberSettingsUpdateDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execAddLobbyMemberSettingsUpdateDelegate_Params AddLobbyMemberSettingsUpdateDelegate_Params;
@@ -1452,7 +1368,7 @@ void UOnlineLobbyInterfaceSteamworks::eventTriggerLobbyMemberSettingsUpdateDeleg
 
 	if (!uFnTriggerLobbyMemberSettingsUpdateDelegates)
 	{
-		uFnTriggerLobbyMemberSettingsUpdateDelegates = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnTriggerLobbyMemberSettingsUpdateDelegates = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.TriggerLobbyMemberSettingsUpdateDelegates");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_eventTriggerLobbyMemberSettingsUpdateDelegates_Params TriggerLobbyMemberSettingsUpdateDelegates_Params;
@@ -1476,7 +1392,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbyMemberSettingsUpdate(int32_t LobbyI
 
 	if (!uFnOnLobbyMemberSettingsUpdate)
 	{
-		uFnOnLobbyMemberSettingsUpdate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnLobbyMemberSettingsUpdate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnLobbyMemberSettingsUpdate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnLobbyMemberSettingsUpdate_Params OnLobbyMemberSettingsUpdate_Params;
@@ -1501,7 +1417,7 @@ void UOnlineLobbyInterfaceSteamworks::ClearLobbySettingsUpdateDelegate(const str
 
 	if (!uFnClearLobbySettingsUpdateDelegate)
 	{
-		uFnClearLobbySettingsUpdateDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnClearLobbySettingsUpdateDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.ClearLobbySettingsUpdateDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execClearLobbySettingsUpdateDelegate_Params ClearLobbySettingsUpdateDelegate_Params;
@@ -1522,7 +1438,7 @@ void UOnlineLobbyInterfaceSteamworks::AddLobbySettingsUpdateDelegate(const struc
 
 	if (!uFnAddLobbySettingsUpdateDelegate)
 	{
-		uFnAddLobbySettingsUpdateDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnAddLobbySettingsUpdateDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.AddLobbySettingsUpdateDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execAddLobbySettingsUpdateDelegate_Params AddLobbySettingsUpdateDelegate_Params;
@@ -1543,7 +1459,7 @@ void UOnlineLobbyInterfaceSteamworks::eventTriggerLobbySettingsUpdateDelegates(i
 
 	if (!uFnTriggerLobbySettingsUpdateDelegates)
 	{
-		uFnTriggerLobbySettingsUpdateDelegates = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnTriggerLobbySettingsUpdateDelegates = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.TriggerLobbySettingsUpdateDelegates");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_eventTriggerLobbySettingsUpdateDelegates_Params TriggerLobbySettingsUpdateDelegates_Params;
@@ -1565,7 +1481,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbySettingsUpdate(int32_t LobbyIndex, 
 
 	if (!uFnOnLobbySettingsUpdate)
 	{
-		uFnOnLobbySettingsUpdate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnLobbySettingsUpdate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnLobbySettingsUpdate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnLobbySettingsUpdate_Params OnLobbySettingsUpdate_Params;
@@ -1579,7 +1495,7 @@ void UOnlineLobbyInterfaceSteamworks::OnLobbySettingsUpdate(int32_t LobbyIndex, 
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SendLobbyBinaryData
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35223])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35225])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -1591,7 +1507,7 @@ bool UOnlineLobbyInterfaceSteamworks::SendLobbyBinaryData(const struct FUniqueNe
 
 	if (!uFnSendLobbyBinaryData)
 	{
-		uFnSendLobbyBinaryData = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnSendLobbyBinaryData = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SendLobbyBinaryData");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execSendLobbyBinaryData_Params SendLobbyBinaryData_Params;
@@ -1599,11 +1515,7 @@ bool UOnlineLobbyInterfaceSteamworks::SendLobbyBinaryData(const struct FUniqueNe
 	memcpy_s(&SendLobbyBinaryData_Params.LobbyId, sizeof(SendLobbyBinaryData_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 	memcpy_s(&SendLobbyBinaryData_Params.Data, sizeof(SendLobbyBinaryData_Params.Data), &Data, sizeof(Data));
 
-	uFnSendLobbyBinaryData->iNative = 0;
-	uFnSendLobbyBinaryData->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendLobbyBinaryData, &SendLobbyBinaryData_Params, nullptr);
-	uFnSendLobbyBinaryData->FunctionFlags |= 0x400;
-	uFnSendLobbyBinaryData->iNative = 35223;
 
 	memcpy_s(&Data, sizeof(Data), &SendLobbyBinaryData_Params.Data, sizeof(SendLobbyBinaryData_Params.Data));
 
@@ -1611,7 +1523,7 @@ bool UOnlineLobbyInterfaceSteamworks::SendLobbyBinaryData(const struct FUniqueNe
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SendLobbyMessage
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35224])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35226])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -1623,7 +1535,7 @@ bool UOnlineLobbyInterfaceSteamworks::SendLobbyMessage(const struct FUniqueNetId
 
 	if (!uFnSendLobbyMessage)
 	{
-		uFnSendLobbyMessage = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnSendLobbyMessage = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SendLobbyMessage");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execSendLobbyMessage_Params SendLobbyMessage_Params;
@@ -1631,17 +1543,13 @@ bool UOnlineLobbyInterfaceSteamworks::SendLobbyMessage(const struct FUniqueNetId
 	memcpy_s(&SendLobbyMessage_Params.LobbyId, sizeof(SendLobbyMessage_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 	memcpy_s(&SendLobbyMessage_Params.Message, sizeof(SendLobbyMessage_Params.Message), &Message, sizeof(Message));
 
-	uFnSendLobbyMessage->iNative = 0;
-	uFnSendLobbyMessage->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendLobbyMessage, &SendLobbyMessage_Params, nullptr);
-	uFnSendLobbyMessage->FunctionFlags |= 0x400;
-	uFnSendLobbyMessage->iNative = 35224;
 
 	return SendLobbyMessage_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyUserSetting
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35235])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35237])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -1654,7 +1562,7 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyUserSetting(const struct FUniqueNe
 
 	if (!uFnSetLobbyUserSetting)
 	{
-		uFnSetLobbyUserSetting = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnSetLobbyUserSetting = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.SetLobbyUserSetting");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execSetLobbyUserSetting_Params SetLobbyUserSetting_Params;
@@ -1663,17 +1571,13 @@ bool UOnlineLobbyInterfaceSteamworks::SetLobbyUserSetting(const struct FUniqueNe
 	memcpy_s(&SetLobbyUserSetting_Params.Key, sizeof(SetLobbyUserSetting_Params.Key), &Key, sizeof(Key));
 	memcpy_s(&SetLobbyUserSetting_Params.Value, sizeof(SetLobbyUserSetting_Params.Value), &Value, sizeof(Value));
 
-	uFnSetLobbyUserSetting->iNative = 0;
-	uFnSetLobbyUserSetting->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetLobbyUserSetting, &SetLobbyUserSetting_Params, nullptr);
-	uFnSetLobbyUserSetting->FunctionFlags |= 0x400;
-	uFnSetLobbyUserSetting->iNative = 35235;
 
 	return SetLobbyUserSetting_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.LeaveLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35118])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35120])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -1684,18 +1588,14 @@ bool UOnlineLobbyInterfaceSteamworks::LeaveLobby(const struct FUniqueNetId& Lobb
 
 	if (!uFnLeaveLobby)
 	{
-		uFnLeaveLobby = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnLeaveLobby = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.LeaveLobby");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execLeaveLobby_Params LeaveLobby_Params;
 	memset(&LeaveLobby_Params, 0, sizeof(LeaveLobby_Params));
 	memcpy_s(&LeaveLobby_Params.LobbyId, sizeof(LeaveLobby_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 
-	uFnLeaveLobby->iNative = 0;
-	uFnLeaveLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLeaveLobby, &LeaveLobby_Params, nullptr);
-	uFnLeaveLobby->FunctionFlags |= 0x400;
-	uFnLeaveLobby->iNative = 35118;
 
 	return LeaveLobby_Params.ReturnValue;
 };
@@ -1711,7 +1611,7 @@ void UOnlineLobbyInterfaceSteamworks::ClearJoinLobbyCompleteDelegate(const struc
 
 	if (!uFnClearJoinLobbyCompleteDelegate)
 	{
-		uFnClearJoinLobbyCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnClearJoinLobbyCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.ClearJoinLobbyCompleteDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execClearJoinLobbyCompleteDelegate_Params ClearJoinLobbyCompleteDelegate_Params;
@@ -1732,7 +1632,7 @@ void UOnlineLobbyInterfaceSteamworks::AddJoinLobbyCompleteDelegate(const struct 
 
 	if (!uFnAddJoinLobbyCompleteDelegate)
 	{
-		uFnAddJoinLobbyCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnAddJoinLobbyCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.AddJoinLobbyCompleteDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execAddJoinLobbyCompleteDelegate_Params AddJoinLobbyCompleteDelegate_Params;
@@ -1756,7 +1656,7 @@ void UOnlineLobbyInterfaceSteamworks::eventTriggerJoinLobbyCompleteDelegates(boo
 
 	if (!uFnTriggerJoinLobbyCompleteDelegates)
 	{
-		uFnTriggerJoinLobbyCompleteDelegates = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnTriggerJoinLobbyCompleteDelegates = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.TriggerJoinLobbyCompleteDelegates");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_eventTriggerJoinLobbyCompleteDelegates_Params TriggerJoinLobbyCompleteDelegates_Params;
@@ -1784,7 +1684,7 @@ void UOnlineLobbyInterfaceSteamworks::OnJoinLobbyComplete(bool bWasSuccessful, i
 
 	if (!uFnOnJoinLobbyComplete)
 	{
-		uFnOnJoinLobbyComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnJoinLobbyComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnJoinLobbyComplete");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnJoinLobbyComplete_Params OnJoinLobbyComplete_Params;
@@ -1801,7 +1701,7 @@ void UOnlineLobbyInterfaceSteamworks::OnJoinLobbyComplete(bool bWasSuccessful, i
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.JoinLobby
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35097])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35099])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_Parm)
@@ -1812,18 +1712,14 @@ bool UOnlineLobbyInterfaceSteamworks::JoinLobby(const struct FUniqueNetId& Lobby
 
 	if (!uFnJoinLobby)
 	{
-		uFnJoinLobby = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnJoinLobby = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.JoinLobby");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execJoinLobby_Params JoinLobby_Params;
 	memset(&JoinLobby_Params, 0, sizeof(JoinLobby_Params));
 	memcpy_s(&JoinLobby_Params.LobbyId, sizeof(JoinLobby_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 
-	uFnJoinLobby->iNative = 0;
-	uFnJoinLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJoinLobby, &JoinLobby_Params, nullptr);
-	uFnJoinLobby->FunctionFlags |= 0x400;
-	uFnJoinLobby->iNative = 35097;
 
 	return JoinLobby_Params.ReturnValue;
 };
@@ -1839,7 +1735,7 @@ void UOnlineLobbyInterfaceSteamworks::ClearFindLobbiesCompleteDelegate(const str
 
 	if (!uFnClearFindLobbiesCompleteDelegate)
 	{
-		uFnClearFindLobbiesCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnClearFindLobbiesCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.ClearFindLobbiesCompleteDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execClearFindLobbiesCompleteDelegate_Params ClearFindLobbiesCompleteDelegate_Params;
@@ -1860,7 +1756,7 @@ void UOnlineLobbyInterfaceSteamworks::AddFindLobbiesCompleteDelegate(const struc
 
 	if (!uFnAddFindLobbiesCompleteDelegate)
 	{
-		uFnAddFindLobbiesCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnAddFindLobbiesCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.AddFindLobbiesCompleteDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execAddFindLobbiesCompleteDelegate_Params AddFindLobbiesCompleteDelegate_Params;
@@ -1881,7 +1777,7 @@ void UOnlineLobbyInterfaceSteamworks::eventTriggerFindLobbiesCompleteDelegates(b
 
 	if (!uFnTriggerFindLobbiesCompleteDelegates)
 	{
-		uFnTriggerFindLobbiesCompleteDelegates = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnTriggerFindLobbiesCompleteDelegates = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.TriggerFindLobbiesCompleteDelegates");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_eventTriggerFindLobbiesCompleteDelegates_Params TriggerFindLobbiesCompleteDelegates_Params;
@@ -1903,7 +1799,7 @@ void UOnlineLobbyInterfaceSteamworks::OnFindLobbiesComplete(bool bWasSuccessful,
 
 	if (!uFnOnFindLobbiesComplete)
 	{
-		uFnOnFindLobbiesComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnFindLobbiesComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnFindLobbiesComplete");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnFindLobbiesComplete_Params OnFindLobbiesComplete_Params;
@@ -1917,7 +1813,7 @@ void UOnlineLobbyInterfaceSteamworks::OnFindLobbiesComplete(bool bWasSuccessful,
 };
 
 // Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.UpdateFoundLobbies
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[35261])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[35263])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            LobbyId                        (CPF_OptionalParm | CPF_Parm)
@@ -1928,18 +1824,14 @@ bool UOnlineLobbyInterfaceSteamworks::UpdateFoundLobbies(const struct FUniqueNet
 
 	if (!uFnUpdateFoundLobbies)
 	{
-		uFnUpdateFoundLobbies = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnUpdateFoundLobbies = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.UpdateFoundLobbies");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execUpdateFoundLobbies_Params UpdateFoundLobbies_Params;
 	memset(&UpdateFoundLobbies_Params, 0, sizeof(UpdateFoundLobbies_Params));
 	memcpy_s(&UpdateFoundLobbies_Params.LobbyId, sizeof(UpdateFoundLobbies_Params.LobbyId), &LobbyId, sizeof(LobbyId));
 
-	uFnUpdateFoundLobbies->iNative = 0;
-	uFnUpdateFoundLobbies->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUpdateFoundLobbies, &UpdateFoundLobbies_Params, nullptr);
-	uFnUpdateFoundLobbies->FunctionFlags |= 0x400;
-	uFnUpdateFoundLobbies->iNative = 35261;
 
 	return UpdateFoundLobbies_Params.ReturnValue;
 };
@@ -1960,7 +1852,7 @@ bool UOnlineLobbyInterfaceSteamworks::FindLobbies(int32_t MaxResults, const clas
 
 	if (!uFnFindLobbies)
 	{
-		uFnFindLobbies = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnFindLobbies = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.FindLobbies");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execFindLobbies_Params FindLobbies_Params;
@@ -1971,11 +1863,7 @@ bool UOnlineLobbyInterfaceSteamworks::FindLobbies(int32_t MaxResults, const clas
 	memcpy_s(&FindLobbies_Params.MinSlots, sizeof(FindLobbies_Params.MinSlots), &MinSlots, sizeof(MinSlots));
 	memcpy_s(&FindLobbies_Params.Distance, sizeof(FindLobbies_Params.Distance), &Distance, sizeof(Distance));
 
-	uFnFindLobbies->iNative = 0;
-	uFnFindLobbies->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFindLobbies, &FindLobbies_Params, nullptr);
-	uFnFindLobbies->FunctionFlags |= 0x400;
-	uFnFindLobbies->iNative = 13270;
 
 	return FindLobbies_Params.ReturnValue;
 };
@@ -1991,7 +1879,7 @@ void UOnlineLobbyInterfaceSteamworks::ClearCreateLobbyCompleteDelegate(const str
 
 	if (!uFnClearCreateLobbyCompleteDelegate)
 	{
-		uFnClearCreateLobbyCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnClearCreateLobbyCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.ClearCreateLobbyCompleteDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execClearCreateLobbyCompleteDelegate_Params ClearCreateLobbyCompleteDelegate_Params;
@@ -2012,7 +1900,7 @@ void UOnlineLobbyInterfaceSteamworks::AddCreateLobbyCompleteDelegate(const struc
 
 	if (!uFnAddCreateLobbyCompleteDelegate)
 	{
-		uFnAddCreateLobbyCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnAddCreateLobbyCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.AddCreateLobbyCompleteDelegate");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execAddCreateLobbyCompleteDelegate_Params AddCreateLobbyCompleteDelegate_Params;
@@ -2035,7 +1923,7 @@ void UOnlineLobbyInterfaceSteamworks::OnCreateLobbyComplete(bool bWasSuccessful,
 
 	if (!uFnOnCreateLobbyComplete)
 	{
-		uFnOnCreateLobbyComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnOnCreateLobbyComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.OnCreateLobbyComplete");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execOnCreateLobbyComplete_Params OnCreateLobbyComplete_Params;
@@ -2061,7 +1949,7 @@ bool UOnlineLobbyInterfaceSteamworks::CreateLobby(int32_t MaxPlayers, ELobbyVisi
 
 	if (!uFnCreateLobby)
 	{
-		uFnCreateLobby = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINELOBBYINTERFACESTEAMWORKS));
+		uFnCreateLobby = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineLobbyInterfaceSteamworks.CreateLobby");
 	}
 
 	UOnlineLobbyInterfaceSteamworks_execCreateLobby_Params CreateLobby_Params;
@@ -2070,11 +1958,7 @@ bool UOnlineLobbyInterfaceSteamworks::CreateLobby(int32_t MaxPlayers, ELobbyVisi
 	memcpy_s(&CreateLobby_Params.Type, sizeof(CreateLobby_Params.Type), &Type, sizeof(Type));
 	memcpy_s(&CreateLobby_Params.InitialSettings, sizeof(CreateLobby_Params.InitialSettings), &InitialSettings, sizeof(InitialSettings));
 
-	uFnCreateLobby->iNative = 0;
-	uFnCreateLobby->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateLobby, &CreateLobby_Params, nullptr);
-	uFnCreateLobby->FunctionFlags |= 0x400;
-	uFnCreateLobby->iNative = 13252;
 
 	return CreateLobby_Params.ReturnValue;
 };
@@ -2093,7 +1977,7 @@ bool UOnlineSubsystemSteamworks::RecordPlayersRecentlyMet(uint8_t LocalUserNum, 
 
 	if (!uFnRecordPlayersRecentlyMet)
 	{
-		uFnRecordPlayersRecentlyMet = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnRecordPlayersRecentlyMet = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RecordPlayersRecentlyMet");
 	}
 
 	UOnlineSubsystemSteamworks_execRecordPlayersRecentlyMet_Params RecordPlayersRecentlyMet_Params;
@@ -2122,7 +2006,7 @@ bool UOnlineSubsystemSteamworks::ShowGamerCardUIByUsername(uint8_t LocalUserNum,
 
 	if (!uFnShowGamerCardUIByUsername)
 	{
-		uFnShowGamerCardUIByUsername = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowGamerCardUIByUsername = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowGamerCardUIByUsername");
 	}
 
 	UOnlineSubsystemSteamworks_execShowGamerCardUIByUsername_Params ShowGamerCardUIByUsername_Params;
@@ -2148,7 +2032,7 @@ bool UOnlineSubsystemSteamworks::AddInGamePost(int32_t InPostID, const class FSt
 
 	if (!uFnAddInGamePost)
 	{
-		uFnAddInGamePost = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddInGamePost = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddInGamePost");
 	}
 
 	UOnlineSubsystemSteamworks_execAddInGamePost_Params AddInGamePost_Params;
@@ -2171,7 +2055,7 @@ void UOnlineSubsystemSteamworks::ClearAllDelegates()
 
 	if (!uFnClearAllDelegates)
 	{
-		uFnClearAllDelegates = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearAllDelegates = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearAllDelegates");
 	}
 
 	UOnlineSubsystemSteamworks_execClearAllDelegates_Params ClearAllDelegates_Params;
@@ -2191,7 +2075,7 @@ void UOnlineSubsystemSteamworks::ClearWriteSharedFileCompleteDelegate(const stru
 
 	if (!uFnClearWriteSharedFileCompleteDelegate)
 	{
-		uFnClearWriteSharedFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearWriteSharedFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearWriteSharedFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearWriteSharedFileCompleteDelegate_Params ClearWriteSharedFileCompleteDelegate_Params;
@@ -2212,7 +2096,7 @@ void UOnlineSubsystemSteamworks::AddWriteSharedFileCompleteDelegate(const struct
 
 	if (!uFnAddWriteSharedFileCompleteDelegate)
 	{
-		uFnAddWriteSharedFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddWriteSharedFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddWriteSharedFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddWriteSharedFileCompleteDelegate_Params AddWriteSharedFileCompleteDelegate_Params;
@@ -2223,7 +2107,7 @@ void UOnlineSubsystemSteamworks::AddWriteSharedFileCompleteDelegate(const struct
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteSharedFile
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30363])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30365])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2236,7 +2120,7 @@ bool UOnlineSubsystemSteamworks::WriteSharedFile(const class FString& UserId, co
 
 	if (!uFnWriteSharedFile)
 	{
-		uFnWriteSharedFile = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnWriteSharedFile = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteSharedFile");
 	}
 
 	UOnlineSubsystemSteamworks_execWriteSharedFile_Params WriteSharedFile_Params;
@@ -2245,11 +2129,7 @@ bool UOnlineSubsystemSteamworks::WriteSharedFile(const class FString& UserId, co
 	memcpy_s(&WriteSharedFile_Params.Filename, sizeof(WriteSharedFile_Params.Filename), &Filename, sizeof(Filename));
 	memcpy_s(&WriteSharedFile_Params.Contents, sizeof(WriteSharedFile_Params.Contents), &Contents, sizeof(Contents));
 
-	uFnWriteSharedFile->iNative = 0;
-	uFnWriteSharedFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteSharedFile, &WriteSharedFile_Params, nullptr);
-	uFnWriteSharedFile->FunctionFlags |= 0x400;
-	uFnWriteSharedFile->iNative = 30363;
 
 	memcpy_s(&Contents, sizeof(Contents), &WriteSharedFile_Params.Contents, sizeof(WriteSharedFile_Params.Contents));
 
@@ -2270,7 +2150,7 @@ void UOnlineSubsystemSteamworks::OnWriteSharedFileComplete(bool bWasSuccessful, 
 
 	if (!uFnOnWriteSharedFileComplete)
 	{
-		uFnOnWriteSharedFileComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnWriteSharedFileComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnWriteSharedFileComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnWriteSharedFileComplete_Params OnWriteSharedFileComplete_Params;
@@ -2294,7 +2174,7 @@ void UOnlineSubsystemSteamworks::ClearReadSharedFileCompleteDelegate(const struc
 
 	if (!uFnClearReadSharedFileCompleteDelegate)
 	{
-		uFnClearReadSharedFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReadSharedFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadSharedFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReadSharedFileCompleteDelegate_Params ClearReadSharedFileCompleteDelegate_Params;
@@ -2315,7 +2195,7 @@ void UOnlineSubsystemSteamworks::AddReadSharedFileCompleteDelegate(const struct 
 
 	if (!uFnAddReadSharedFileCompleteDelegate)
 	{
-		uFnAddReadSharedFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReadSharedFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadSharedFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReadSharedFileCompleteDelegate_Params AddReadSharedFileCompleteDelegate_Params;
@@ -2326,7 +2206,7 @@ void UOnlineSubsystemSteamworks::AddReadSharedFileCompleteDelegate(const struct 
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadSharedFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26881])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26883])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  SharedHandle                   (CPF_Parm | CPF_NeedCtorLink)
@@ -2337,18 +2217,14 @@ bool UOnlineSubsystemSteamworks::ReadSharedFile(const class FString& SharedHandl
 
 	if (!uFnReadSharedFile)
 	{
-		uFnReadSharedFile = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadSharedFile = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadSharedFile");
 	}
 
 	UOnlineSubsystemSteamworks_execReadSharedFile_Params ReadSharedFile_Params;
 	memset(&ReadSharedFile_Params, 0, sizeof(ReadSharedFile_Params));
 	memcpy_s(&ReadSharedFile_Params.SharedHandle, sizeof(ReadSharedFile_Params.SharedHandle), &SharedHandle, sizeof(SharedHandle));
 
-	uFnReadSharedFile->iNative = 0;
-	uFnReadSharedFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadSharedFile, &ReadSharedFile_Params, nullptr);
-	uFnReadSharedFile->FunctionFlags |= 0x400;
-	uFnReadSharedFile->iNative = 26881;
 
 	return ReadSharedFile_Params.ReturnValue;
 };
@@ -2365,7 +2241,7 @@ void UOnlineSubsystemSteamworks::OnReadSharedFileComplete(bool bWasSuccessful, c
 
 	if (!uFnOnReadSharedFileComplete)
 	{
-		uFnOnReadSharedFileComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadSharedFileComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadSharedFileComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadSharedFileComplete_Params OnReadSharedFileComplete_Params;
@@ -2377,7 +2253,7 @@ void UOnlineSubsystemSteamworks::OnReadSharedFileComplete(bool bWasSuccessful, c
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearSharedFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18450])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18452])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  SharedHandle                   (CPF_Parm | CPF_NeedCtorLink)
@@ -2388,24 +2264,20 @@ bool UOnlineSubsystemSteamworks::ClearSharedFile(const class FString& SharedHand
 
 	if (!uFnClearSharedFile)
 	{
-		uFnClearSharedFile = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearSharedFile = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearSharedFile");
 	}
 
 	UOnlineSubsystemSteamworks_execClearSharedFile_Params ClearSharedFile_Params;
 	memset(&ClearSharedFile_Params, 0, sizeof(ClearSharedFile_Params));
 	memcpy_s(&ClearSharedFile_Params.SharedHandle, sizeof(ClearSharedFile_Params.SharedHandle), &SharedHandle, sizeof(SharedHandle));
 
-	uFnClearSharedFile->iNative = 0;
-	uFnClearSharedFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearSharedFile, &ClearSharedFile_Params, nullptr);
-	uFnClearSharedFile->FunctionFlags |= 0x400;
-	uFnClearSharedFile->iNative = 18450;
 
 	return ClearSharedFile_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearSharedFiles
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18451])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18453])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -2415,23 +2287,19 @@ bool UOnlineSubsystemSteamworks::ClearSharedFiles()
 
 	if (!uFnClearSharedFiles)
 	{
-		uFnClearSharedFiles = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearSharedFiles = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearSharedFiles");
 	}
 
 	UOnlineSubsystemSteamworks_execClearSharedFiles_Params ClearSharedFiles_Params;
 	memset(&ClearSharedFiles_Params, 0, sizeof(ClearSharedFiles_Params));
 
-	uFnClearSharedFiles->iNative = 0;
-	uFnClearSharedFiles->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearSharedFiles, &ClearSharedFiles_Params, nullptr);
-	uFnClearSharedFiles->FunctionFlags |= 0x400;
-	uFnClearSharedFiles->iNative = 18451;
 
 	return ClearSharedFiles_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetSharedFileContents
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21977])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21979])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  SharedHandle                   (CPF_Parm | CPF_NeedCtorLink)
@@ -2443,7 +2311,7 @@ bool UOnlineSubsystemSteamworks::GetSharedFileContents(const class FString& Shar
 
 	if (!uFnGetSharedFileContents)
 	{
-		uFnGetSharedFileContents = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetSharedFileContents = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetSharedFileContents");
 	}
 
 	UOnlineSubsystemSteamworks_execGetSharedFileContents_Params GetSharedFileContents_Params;
@@ -2451,11 +2319,7 @@ bool UOnlineSubsystemSteamworks::GetSharedFileContents(const class FString& Shar
 	memcpy_s(&GetSharedFileContents_Params.SharedHandle, sizeof(GetSharedFileContents_Params.SharedHandle), &SharedHandle, sizeof(SharedHandle));
 	memcpy_s(&GetSharedFileContents_Params.FileContents, sizeof(GetSharedFileContents_Params.FileContents), &FileContents, sizeof(FileContents));
 
-	uFnGetSharedFileContents->iNative = 0;
-	uFnGetSharedFileContents->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSharedFileContents, &GetSharedFileContents_Params, nullptr);
-	uFnGetSharedFileContents->FunctionFlags |= 0x400;
-	uFnGetSharedFileContents->iNative = 21977;
 
 	memcpy_s(&FileContents, sizeof(FileContents), &GetSharedFileContents_Params.FileContents, sizeof(GetSharedFileContents_Params.FileContents));
 
@@ -2473,7 +2337,7 @@ void UOnlineSubsystemSteamworks::ClearDeleteUserFileCompleteDelegate(const struc
 
 	if (!uFnClearDeleteUserFileCompleteDelegate)
 	{
-		uFnClearDeleteUserFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearDeleteUserFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearDeleteUserFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearDeleteUserFileCompleteDelegate_Params ClearDeleteUserFileCompleteDelegate_Params;
@@ -2494,7 +2358,7 @@ void UOnlineSubsystemSteamworks::AddDeleteUserFileCompleteDelegate(const struct 
 
 	if (!uFnAddDeleteUserFileCompleteDelegate)
 	{
-		uFnAddDeleteUserFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddDeleteUserFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddDeleteUserFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddDeleteUserFileCompleteDelegate_Params AddDeleteUserFileCompleteDelegate_Params;
@@ -2505,7 +2369,7 @@ void UOnlineSubsystemSteamworks::AddDeleteUserFileCompleteDelegate(const struct 
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DeleteUserFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[19554])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[19556])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2519,7 +2383,7 @@ bool UOnlineSubsystemSteamworks::DeleteUserFile(const class FString& UserId, con
 
 	if (!uFnDeleteUserFile)
 	{
-		uFnDeleteUserFile = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnDeleteUserFile = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DeleteUserFile");
 	}
 
 	UOnlineSubsystemSteamworks_execDeleteUserFile_Params DeleteUserFile_Params;
@@ -2529,11 +2393,7 @@ bool UOnlineSubsystemSteamworks::DeleteUserFile(const class FString& UserId, con
 	DeleteUserFile_Params.bShouldCloudDelete = bShouldCloudDelete;
 	DeleteUserFile_Params.bShouldLocallyDelete = bShouldLocallyDelete;
 
-	uFnDeleteUserFile->iNative = 0;
-	uFnDeleteUserFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDeleteUserFile, &DeleteUserFile_Params, nullptr);
-	uFnDeleteUserFile->FunctionFlags |= 0x400;
-	uFnDeleteUserFile->iNative = 19554;
 
 	return DeleteUserFile_Params.ReturnValue;
 };
@@ -2551,7 +2411,7 @@ void UOnlineSubsystemSteamworks::OnDeleteUserFileComplete(bool bWasSuccessful, c
 
 	if (!uFnOnDeleteUserFileComplete)
 	{
-		uFnOnDeleteUserFileComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnDeleteUserFileComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnDeleteUserFileComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnDeleteUserFileComplete_Params OnDeleteUserFileComplete_Params;
@@ -2574,7 +2434,7 @@ void UOnlineSubsystemSteamworks::ClearWriteUserFileCompleteDelegate(const struct
 
 	if (!uFnClearWriteUserFileCompleteDelegate)
 	{
-		uFnClearWriteUserFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearWriteUserFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearWriteUserFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearWriteUserFileCompleteDelegate_Params ClearWriteUserFileCompleteDelegate_Params;
@@ -2595,7 +2455,7 @@ void UOnlineSubsystemSteamworks::AddWriteUserFileCompleteDelegate(const struct F
 
 	if (!uFnAddWriteUserFileCompleteDelegate)
 	{
-		uFnAddWriteUserFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddWriteUserFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddWriteUserFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddWriteUserFileCompleteDelegate_Params AddWriteUserFileCompleteDelegate_Params;
@@ -2606,7 +2466,7 @@ void UOnlineSubsystemSteamworks::AddWriteUserFileCompleteDelegate(const struct F
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteUserFile
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30366])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30368])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2619,7 +2479,7 @@ bool UOnlineSubsystemSteamworks::WriteUserFile(const class FString& UserId, cons
 
 	if (!uFnWriteUserFile)
 	{
-		uFnWriteUserFile = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnWriteUserFile = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteUserFile");
 	}
 
 	UOnlineSubsystemSteamworks_execWriteUserFile_Params WriteUserFile_Params;
@@ -2628,11 +2488,7 @@ bool UOnlineSubsystemSteamworks::WriteUserFile(const class FString& UserId, cons
 	memcpy_s(&WriteUserFile_Params.Filename, sizeof(WriteUserFile_Params.Filename), &Filename, sizeof(Filename));
 	memcpy_s(&WriteUserFile_Params.FileContents, sizeof(WriteUserFile_Params.FileContents), &FileContents, sizeof(FileContents));
 
-	uFnWriteUserFile->iNative = 0;
-	uFnWriteUserFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteUserFile, &WriteUserFile_Params, nullptr);
-	uFnWriteUserFile->FunctionFlags |= 0x400;
-	uFnWriteUserFile->iNative = 30366;
 
 	memcpy_s(&FileContents, sizeof(FileContents), &WriteUserFile_Params.FileContents, sizeof(WriteUserFile_Params.FileContents));
 
@@ -2652,7 +2508,7 @@ void UOnlineSubsystemSteamworks::OnWriteUserFileComplete(bool bWasSuccessful, co
 
 	if (!uFnOnWriteUserFileComplete)
 	{
-		uFnOnWriteUserFileComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnWriteUserFileComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnWriteUserFileComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnWriteUserFileComplete_Params OnWriteUserFileComplete_Params;
@@ -2675,7 +2531,7 @@ void UOnlineSubsystemSteamworks::ClearReadUserFileCompleteDelegate(const struct 
 
 	if (!uFnClearReadUserFileCompleteDelegate)
 	{
-		uFnClearReadUserFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReadUserFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadUserFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReadUserFileCompleteDelegate_Params ClearReadUserFileCompleteDelegate_Params;
@@ -2696,7 +2552,7 @@ void UOnlineSubsystemSteamworks::AddReadUserFileCompleteDelegate(const struct FS
 
 	if (!uFnAddReadUserFileCompleteDelegate)
 	{
-		uFnAddReadUserFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReadUserFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadUserFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReadUserFileCompleteDelegate_Params AddReadUserFileCompleteDelegate_Params;
@@ -2707,7 +2563,7 @@ void UOnlineSubsystemSteamworks::AddReadUserFileCompleteDelegate(const struct FS
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadUserFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26887])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26889])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2719,7 +2575,7 @@ bool UOnlineSubsystemSteamworks::ReadUserFile(const class FString& UserId, const
 
 	if (!uFnReadUserFile)
 	{
-		uFnReadUserFile = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadUserFile = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadUserFile");
 	}
 
 	UOnlineSubsystemSteamworks_execReadUserFile_Params ReadUserFile_Params;
@@ -2727,11 +2583,7 @@ bool UOnlineSubsystemSteamworks::ReadUserFile(const class FString& UserId, const
 	memcpy_s(&ReadUserFile_Params.UserId, sizeof(ReadUserFile_Params.UserId), &UserId, sizeof(UserId));
 	memcpy_s(&ReadUserFile_Params.Filename, sizeof(ReadUserFile_Params.Filename), &Filename, sizeof(Filename));
 
-	uFnReadUserFile->iNative = 0;
-	uFnReadUserFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadUserFile, &ReadUserFile_Params, nullptr);
-	uFnReadUserFile->FunctionFlags |= 0x400;
-	uFnReadUserFile->iNative = 26887;
 
 	return ReadUserFile_Params.ReturnValue;
 };
@@ -2749,7 +2601,7 @@ void UOnlineSubsystemSteamworks::OnReadUserFileComplete(bool bWasSuccessful, con
 
 	if (!uFnOnReadUserFileComplete)
 	{
-		uFnOnReadUserFileComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadUserFileComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadUserFileComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadUserFileComplete_Params OnReadUserFileComplete_Params;
@@ -2762,7 +2614,7 @@ void UOnlineSubsystemSteamworks::OnReadUserFileComplete(bool bWasSuccessful, con
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetUserFileList
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[22057])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[22059])
 // Parameter Info:
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
 // class TArray<struct FEmsFile>  UserFiles                      (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -2773,7 +2625,7 @@ void UOnlineSubsystemSteamworks::GetUserFileList(const class FString& UserId, cl
 
 	if (!uFnGetUserFileList)
 	{
-		uFnGetUserFileList = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetUserFileList = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetUserFileList");
 	}
 
 	UOnlineSubsystemSteamworks_execGetUserFileList_Params GetUserFileList_Params;
@@ -2781,11 +2633,7 @@ void UOnlineSubsystemSteamworks::GetUserFileList(const class FString& UserId, cl
 	memcpy_s(&GetUserFileList_Params.UserId, sizeof(GetUserFileList_Params.UserId), &UserId, sizeof(UserId));
 	memcpy_s(&GetUserFileList_Params.UserFiles, sizeof(GetUserFileList_Params.UserFiles), &UserFiles, sizeof(UserFiles));
 
-	uFnGetUserFileList->iNative = 0;
-	uFnGetUserFileList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetUserFileList, &GetUserFileList_Params, nullptr);
-	uFnGetUserFileList->FunctionFlags |= 0x400;
-	uFnGetUserFileList->iNative = 22057;
 
 	memcpy_s(&UserFiles, sizeof(UserFiles), &GetUserFileList_Params.UserFiles, sizeof(GetUserFileList_Params.UserFiles));
 };
@@ -2801,7 +2649,7 @@ void UOnlineSubsystemSteamworks::ClearEnumerateUserFileCompleteDelegate(const st
 
 	if (!uFnClearEnumerateUserFileCompleteDelegate)
 	{
-		uFnClearEnumerateUserFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearEnumerateUserFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearEnumerateUserFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearEnumerateUserFileCompleteDelegate_Params ClearEnumerateUserFileCompleteDelegate_Params;
@@ -2822,7 +2670,7 @@ void UOnlineSubsystemSteamworks::AddEnumerateUserFileCompleteDelegate(const stru
 
 	if (!uFnAddEnumerateUserFileCompleteDelegate)
 	{
-		uFnAddEnumerateUserFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddEnumerateUserFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddEnumerateUserFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddEnumerateUserFileCompleteDelegate_Params AddEnumerateUserFileCompleteDelegate_Params;
@@ -2833,7 +2681,7 @@ void UOnlineSubsystemSteamworks::AddEnumerateUserFileCompleteDelegate(const stru
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.EnumerateUserFiles
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[20425])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[20427])
 // Parameter Info:
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
 
@@ -2843,18 +2691,14 @@ void UOnlineSubsystemSteamworks::EnumerateUserFiles(const class FString& UserId)
 
 	if (!uFnEnumerateUserFiles)
 	{
-		uFnEnumerateUserFiles = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnEnumerateUserFiles = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.EnumerateUserFiles");
 	}
 
 	UOnlineSubsystemSteamworks_execEnumerateUserFiles_Params EnumerateUserFiles_Params;
 	memset(&EnumerateUserFiles_Params, 0, sizeof(EnumerateUserFiles_Params));
 	memcpy_s(&EnumerateUserFiles_Params.UserId, sizeof(EnumerateUserFiles_Params.UserId), &UserId, sizeof(UserId));
 
-	uFnEnumerateUserFiles->iNative = 0;
-	uFnEnumerateUserFiles->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnEnumerateUserFiles, &EnumerateUserFiles_Params, nullptr);
-	uFnEnumerateUserFiles->FunctionFlags |= 0x400;
-	uFnEnumerateUserFiles->iNative = 20425;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnEnumerateUserFilesComplete
@@ -2869,7 +2713,7 @@ void UOnlineSubsystemSteamworks::OnEnumerateUserFilesComplete(bool bWasSuccessfu
 
 	if (!uFnOnEnumerateUserFilesComplete)
 	{
-		uFnOnEnumerateUserFilesComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnEnumerateUserFilesComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnEnumerateUserFilesComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnEnumerateUserFilesComplete_Params OnEnumerateUserFilesComplete_Params;
@@ -2881,7 +2725,7 @@ void UOnlineSubsystemSteamworks::OnEnumerateUserFilesComplete(bool bWasSuccessfu
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18362])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18364])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2893,7 +2737,7 @@ bool UOnlineSubsystemSteamworks::ClearFile(const class FString& UserId, const cl
 
 	if (!uFnClearFile)
 	{
-		uFnClearFile = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearFile = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFile");
 	}
 
 	UOnlineSubsystemSteamworks_execClearFile_Params ClearFile_Params;
@@ -2901,17 +2745,13 @@ bool UOnlineSubsystemSteamworks::ClearFile(const class FString& UserId, const cl
 	memcpy_s(&ClearFile_Params.UserId, sizeof(ClearFile_Params.UserId), &UserId, sizeof(UserId));
 	memcpy_s(&ClearFile_Params.Filename, sizeof(ClearFile_Params.Filename), &Filename, sizeof(Filename));
 
-	uFnClearFile->iNative = 0;
-	uFnClearFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearFile, &ClearFile_Params, nullptr);
-	uFnClearFile->FunctionFlags |= 0x400;
-	uFnClearFile->iNative = 18362;
 
 	return ClearFile_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFiles
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18363])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18365])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2922,24 +2762,20 @@ bool UOnlineSubsystemSteamworks::ClearFiles(const class FString& UserId)
 
 	if (!uFnClearFiles)
 	{
-		uFnClearFiles = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearFiles = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFiles");
 	}
 
 	UOnlineSubsystemSteamworks_execClearFiles_Params ClearFiles_Params;
 	memset(&ClearFiles_Params, 0, sizeof(ClearFiles_Params));
 	memcpy_s(&ClearFiles_Params.UserId, sizeof(ClearFiles_Params.UserId), &UserId, sizeof(UserId));
 
-	uFnClearFiles->iNative = 0;
-	uFnClearFiles->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnClearFiles, &ClearFiles_Params, nullptr);
-	uFnClearFiles->FunctionFlags |= 0x400;
-	uFnClearFiles->iNative = 18363;
 
 	return ClearFiles_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetFileContents
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21729])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21731])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2952,7 +2788,7 @@ bool UOnlineSubsystemSteamworks::GetFileContents(const class FString& UserId, co
 
 	if (!uFnGetFileContents)
 	{
-		uFnGetFileContents = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetFileContents = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetFileContents");
 	}
 
 	UOnlineSubsystemSteamworks_execGetFileContents_Params GetFileContents_Params;
@@ -2961,11 +2797,7 @@ bool UOnlineSubsystemSteamworks::GetFileContents(const class FString& UserId, co
 	memcpy_s(&GetFileContents_Params.Filename, sizeof(GetFileContents_Params.Filename), &Filename, sizeof(Filename));
 	memcpy_s(&GetFileContents_Params.FileContents, sizeof(GetFileContents_Params.FileContents), &FileContents, sizeof(FileContents));
 
-	uFnGetFileContents->iNative = 0;
-	uFnGetFileContents->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetFileContents, &GetFileContents_Params, nullptr);
-	uFnGetFileContents->FunctionFlags |= 0x400;
-	uFnGetFileContents->iNative = 21729;
 
 	memcpy_s(&FileContents, sizeof(FileContents), &GetFileContents_Params.FileContents, sizeof(GetFileContents_Params.FileContents));
 
@@ -2973,7 +2805,7 @@ bool UOnlineSubsystemSteamworks::GetFileContents(const class FString& UserId, co
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteUserFileInternal
-// [0x00440401] (FUNC_Final | FUNC_Native | FUNC_Private | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35271])
+// [0x00440401] (FUNC_Final | FUNC_Native | FUNC_Private | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35273])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserId                         (CPF_Parm | CPF_NeedCtorLink)
@@ -2986,7 +2818,7 @@ bool UOnlineSubsystemSteamworks::WriteUserFileInternal(const class FString& User
 
 	if (!uFnWriteUserFileInternal)
 	{
-		uFnWriteUserFileInternal = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnWriteUserFileInternal = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteUserFileInternal");
 	}
 
 	UOnlineSubsystemSteamworks_execWriteUserFileInternal_Params WriteUserFileInternal_Params;
@@ -2995,11 +2827,7 @@ bool UOnlineSubsystemSteamworks::WriteUserFileInternal(const class FString& User
 	memcpy_s(&WriteUserFileInternal_Params.Filename, sizeof(WriteUserFileInternal_Params.Filename), &Filename, sizeof(Filename));
 	memcpy_s(&WriteUserFileInternal_Params.FileContents, sizeof(WriteUserFileInternal_Params.FileContents), &FileContents, sizeof(FileContents));
 
-	uFnWriteUserFileInternal->iNative = 0;
-	uFnWriteUserFileInternal->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteUserFileInternal, &WriteUserFileInternal_Params, nullptr);
-	uFnWriteUserFileInternal->FunctionFlags |= 0x400;
-	uFnWriteUserFileInternal->iNative = 35271;
 
 	memcpy_s(&FileContents, sizeof(FileContents), &WriteUserFileInternal_Params.FileContents, sizeof(WriteUserFileInternal_Params.FileContents));
 
@@ -3007,7 +2835,7 @@ bool UOnlineSubsystemSteamworks::WriteUserFileInternal(const class FString& User
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetFriendJoinURL
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35081])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35083])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            FriendUID                      (CPF_Parm)
@@ -3020,7 +2848,7 @@ bool UOnlineSubsystemSteamworks::GetFriendJoinURL(const struct FUniqueNetId& Fri
 
 	if (!uFnGetFriendJoinURL)
 	{
-		uFnGetFriendJoinURL = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetFriendJoinURL = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetFriendJoinURL");
 	}
 
 	UOnlineSubsystemSteamworks_execGetFriendJoinURL_Params GetFriendJoinURL_Params;
@@ -3029,11 +2857,7 @@ bool UOnlineSubsystemSteamworks::GetFriendJoinURL(const struct FUniqueNetId& Fri
 	memcpy_s(&GetFriendJoinURL_Params.ServerURL, sizeof(GetFriendJoinURL_Params.ServerURL), &ServerURL, sizeof(ServerURL));
 	memcpy_s(&GetFriendJoinURL_Params.ServerUID, sizeof(GetFriendJoinURL_Params.ServerUID), &ServerUID, sizeof(ServerUID));
 
-	uFnGetFriendJoinURL->iNative = 0;
-	uFnGetFriendJoinURL->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetFriendJoinURL, &GetFriendJoinURL_Params, nullptr);
-	uFnGetFriendJoinURL->FunctionFlags |= 0x400;
-	uFnGetFriendJoinURL->iNative = 35081;
 
 	memcpy_s(&ServerURL, sizeof(ServerURL), &GetFriendJoinURL_Params.ServerURL, sizeof(GetFriendJoinURL_Params.ServerURL));
 	memcpy_s(&ServerUID, sizeof(ServerUID), &GetFriendJoinURL_Params.ServerUID, sizeof(GetFriendJoinURL_Params.ServerUID));
@@ -3042,7 +2866,7 @@ bool UOnlineSubsystemSteamworks::GetFriendJoinURL(const struct FUniqueNetId& Fri
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetCommandlineJoinURL
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35080])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35082])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bMarkAsJoined                  (CPF_Parm)
@@ -3055,7 +2879,7 @@ bool UOnlineSubsystemSteamworks::GetCommandlineJoinURL(bool bMarkAsJoined, class
 
 	if (!uFnGetCommandlineJoinURL)
 	{
-		uFnGetCommandlineJoinURL = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetCommandlineJoinURL = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetCommandlineJoinURL");
 	}
 
 	UOnlineSubsystemSteamworks_execGetCommandlineJoinURL_Params GetCommandlineJoinURL_Params;
@@ -3064,11 +2888,7 @@ bool UOnlineSubsystemSteamworks::GetCommandlineJoinURL(bool bMarkAsJoined, class
 	memcpy_s(&GetCommandlineJoinURL_Params.ServerURL, sizeof(GetCommandlineJoinURL_Params.ServerURL), &ServerURL, sizeof(ServerURL));
 	memcpy_s(&GetCommandlineJoinURL_Params.ServerUID, sizeof(GetCommandlineJoinURL_Params.ServerUID), &ServerUID, sizeof(ServerUID));
 
-	uFnGetCommandlineJoinURL->iNative = 0;
-	uFnGetCommandlineJoinURL->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetCommandlineJoinURL, &GetCommandlineJoinURL_Params, nullptr);
-	uFnGetCommandlineJoinURL->FunctionFlags |= 0x400;
-	uFnGetCommandlineJoinURL->iNative = 35080;
 
 	memcpy_s(&ServerURL, sizeof(ServerURL), &GetCommandlineJoinURL_Params.ServerURL, sizeof(GetCommandlineJoinURL_Params.ServerURL));
 	memcpy_s(&ServerUID, sizeof(ServerUID), &GetCommandlineJoinURL_Params.ServerUID, sizeof(GetCommandlineJoinURL_Params.ServerUID));
@@ -3077,7 +2897,7 @@ bool UOnlineSubsystemSteamworks::GetCommandlineJoinURL(bool bMarkAsJoined, class
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.Int64ToUniqueNetId
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35089])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35091])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UIDString                      (CPF_Parm | CPF_NeedCtorLink)
@@ -3089,7 +2909,7 @@ bool UOnlineSubsystemSteamworks::Int64ToUniqueNetId(const class FString& UIDStri
 
 	if (!uFnInt64ToUniqueNetId)
 	{
-		uFnInt64ToUniqueNetId = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnInt64ToUniqueNetId = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.Int64ToUniqueNetId");
 	}
 
 	UOnlineSubsystemSteamworks_execInt64ToUniqueNetId_Params Int64ToUniqueNetId_Params;
@@ -3097,11 +2917,7 @@ bool UOnlineSubsystemSteamworks::Int64ToUniqueNetId(const class FString& UIDStri
 	memcpy_s(&Int64ToUniqueNetId_Params.UIDString, sizeof(Int64ToUniqueNetId_Params.UIDString), &UIDString, sizeof(UIDString));
 	memcpy_s(&Int64ToUniqueNetId_Params.OutUID, sizeof(Int64ToUniqueNetId_Params.OutUID), &OutUID, sizeof(OutUID));
 
-	uFnInt64ToUniqueNetId->iNative = 0;
-	uFnInt64ToUniqueNetId->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInt64ToUniqueNetId, &Int64ToUniqueNetId_Params, nullptr);
-	uFnInt64ToUniqueNetId->FunctionFlags |= 0x400;
-	uFnInt64ToUniqueNetId->iNative = 35089;
 
 	memcpy_s(&OutUID, sizeof(OutUID), &Int64ToUniqueNetId_Params.OutUID, sizeof(Int64ToUniqueNetId_Params.OutUID));
 
@@ -3109,7 +2925,7 @@ bool UOnlineSubsystemSteamworks::Int64ToUniqueNetId(const class FString& UIDStri
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UniqueNetIdToInt64
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35258])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35260])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // struct FUniqueNetId            Uid                            (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -3120,18 +2936,14 @@ class FString UOnlineSubsystemSteamworks::UniqueNetIdToInt64(struct FUniqueNetId
 
 	if (!uFnUniqueNetIdToInt64)
 	{
-		uFnUniqueNetIdToInt64 = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnUniqueNetIdToInt64 = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UniqueNetIdToInt64");
 	}
 
 	UOnlineSubsystemSteamworks_execUniqueNetIdToInt64_Params UniqueNetIdToInt64_Params;
 	memset(&UniqueNetIdToInt64_Params, 0, sizeof(UniqueNetIdToInt64_Params));
 	memcpy_s(&UniqueNetIdToInt64_Params.Uid, sizeof(UniqueNetIdToInt64_Params.Uid), &Uid, sizeof(Uid));
 
-	uFnUniqueNetIdToInt64->iNative = 0;
-	uFnUniqueNetIdToInt64->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUniqueNetIdToInt64, &UniqueNetIdToInt64_Params, nullptr);
-	uFnUniqueNetIdToInt64->FunctionFlags |= 0x400;
-	uFnUniqueNetIdToInt64->iNative = 35258;
 
 	memcpy_s(&Uid, sizeof(Uid), &UniqueNetIdToInt64_Params.Uid, sizeof(UniqueNetIdToInt64_Params.Uid));
 
@@ -3150,7 +2962,7 @@ bool UOnlineSubsystemSteamworks::eventSetLobbyInterface(class UObject* NewInterf
 
 	if (!uFnSetLobbyInterface)
 	{
-		uFnSetLobbyInterface = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnSetLobbyInterface = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetLobbyInterface");
 	}
 
 	UOnlineSubsystemSteamworks_eventSetLobbyInterface_Params SetLobbyInterface_Params;
@@ -3163,7 +2975,7 @@ bool UOnlineSubsystemSteamworks::eventSetLobbyInterface(class UObject* NewInterf
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.NotifyVOIPPlaybackFinished
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35186])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35188])
 // Parameter Info:
 // class UAudioComponent*         VOIPAudioComponent             (CPF_Parm | CPF_EditInline)
 
@@ -3173,18 +2985,14 @@ void UOnlineSubsystemSteamworks::NotifyVOIPPlaybackFinished(class UAudioComponen
 
 	if (!uFnNotifyVOIPPlaybackFinished)
 	{
-		uFnNotifyVOIPPlaybackFinished = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnNotifyVOIPPlaybackFinished = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.NotifyVOIPPlaybackFinished");
 	}
 
 	UOnlineSubsystemSteamworks_execNotifyVOIPPlaybackFinished_Params NotifyVOIPPlaybackFinished_Params;
 	memset(&NotifyVOIPPlaybackFinished_Params, 0, sizeof(NotifyVOIPPlaybackFinished_Params));
 	NotifyVOIPPlaybackFinished_Params.VOIPAudioComponent = VOIPAudioComponent;
 
-	uFnNotifyVOIPPlaybackFinished->iNative = 0;
-	uFnNotifyVOIPPlaybackFinished->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnNotifyVOIPPlaybackFinished, &NotifyVOIPPlaybackFinished_Params, nullptr);
-	uFnNotifyVOIPPlaybackFinished->FunctionFlags |= 0x400;
-	uFnNotifyVOIPPlaybackFinished->iNative = 35186;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnVOIPPlaybackFinished
@@ -3198,7 +3006,7 @@ void UOnlineSubsystemSteamworks::OnVOIPPlaybackFinished(class UAudioComponent* A
 
 	if (!uFnOnVOIPPlaybackFinished)
 	{
-		uFnOnVOIPPlaybackFinished = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnVOIPPlaybackFinished = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnVOIPPlaybackFinished");
 	}
 
 	UOnlineSubsystemSteamworks_execOnVOIPPlaybackFinished_Params OnVOIPPlaybackFinished_Params;
@@ -3209,7 +3017,7 @@ void UOnlineSubsystemSteamworks::OnVOIPPlaybackFinished(class UAudioComponent* A
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowProfileUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[35239])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[35241])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3222,7 +3030,7 @@ bool UOnlineSubsystemSteamworks::ShowProfileUI(uint8_t LocalUserNum, const class
 
 	if (!uFnShowProfileUI)
 	{
-		uFnShowProfileUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowProfileUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowProfileUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowProfileUI_Params ShowProfileUI_Params;
@@ -3231,17 +3039,13 @@ bool UOnlineSubsystemSteamworks::ShowProfileUI(uint8_t LocalUserNum, const class
 	memcpy_s(&ShowProfileUI_Params.SubURL, sizeof(ShowProfileUI_Params.SubURL), &SubURL, sizeof(SubURL));
 	memcpy_s(&ShowProfileUI_Params.PlayerUID, sizeof(ShowProfileUI_Params.PlayerUID), &PlayerUID, sizeof(PlayerUID));
 
-	uFnShowProfileUI->iNative = 0;
-	uFnShowProfileUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowProfileUI, &ShowProfileUI_Params, nullptr);
-	uFnShowProfileUI->FunctionFlags |= 0x400;
-	uFnShowProfileUI->iNative = 35239;
 
 	return ShowProfileUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UniqueNetIdToPlayerName
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35259])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35261])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 // struct FUniqueNetId            Uid                            (CPF_Const | CPF_Parm | CPF_OutParm)
@@ -3252,18 +3056,14 @@ class FString UOnlineSubsystemSteamworks::UniqueNetIdToPlayerName(struct FUnique
 
 	if (!uFnUniqueNetIdToPlayerName)
 	{
-		uFnUniqueNetIdToPlayerName = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnUniqueNetIdToPlayerName = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UniqueNetIdToPlayerName");
 	}
 
 	UOnlineSubsystemSteamworks_execUniqueNetIdToPlayerName_Params UniqueNetIdToPlayerName_Params;
 	memset(&UniqueNetIdToPlayerName_Params, 0, sizeof(UniqueNetIdToPlayerName_Params));
 	memcpy_s(&UniqueNetIdToPlayerName_Params.Uid, sizeof(UniqueNetIdToPlayerName_Params.Uid), &Uid, sizeof(Uid));
 
-	uFnUniqueNetIdToPlayerName->iNative = 0;
-	uFnUniqueNetIdToPlayerName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUniqueNetIdToPlayerName, &UniqueNetIdToPlayerName_Params, nullptr);
-	uFnUniqueNetIdToPlayerName->FunctionFlags |= 0x400;
-	uFnUniqueNetIdToPlayerName->iNative = 35259;
 
 	memcpy_s(&Uid, sizeof(Uid), &UniqueNetIdToPlayerName_Params.Uid, sizeof(UniqueNetIdToPlayerName_Params.Uid));
 
@@ -3271,7 +3071,7 @@ class FString UOnlineSubsystemSteamworks::UniqueNetIdToPlayerName(struct FUnique
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DisplayAchievementProgress
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35055])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35057])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        AchievementId                  (CPF_Parm)
@@ -3284,7 +3084,7 @@ bool UOnlineSubsystemSteamworks::DisplayAchievementProgress(int32_t AchievementI
 
 	if (!uFnDisplayAchievementProgress)
 	{
-		uFnDisplayAchievementProgress = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnDisplayAchievementProgress = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DisplayAchievementProgress");
 	}
 
 	UOnlineSubsystemSteamworks_execDisplayAchievementProgress_Params DisplayAchievementProgress_Params;
@@ -3293,17 +3093,13 @@ bool UOnlineSubsystemSteamworks::DisplayAchievementProgress(int32_t AchievementI
 	memcpy_s(&DisplayAchievementProgress_Params.ProgressCount, sizeof(DisplayAchievementProgress_Params.ProgressCount), &ProgressCount, sizeof(ProgressCount));
 	memcpy_s(&DisplayAchievementProgress_Params.MaxProgress, sizeof(DisplayAchievementProgress_Params.MaxProgress), &MaxProgress, sizeof(MaxProgress));
 
-	uFnDisplayAchievementProgress->iNative = 0;
-	uFnDisplayAchievementProgress->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDisplayAchievementProgress, &DisplayAchievementProgress_Params, nullptr);
-	uFnDisplayAchievementProgress->FunctionFlags |= 0x400;
-	uFnDisplayAchievementProgress->iNative = 35055;
 
 	return DisplayAchievementProgress_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CreateLeaderboard
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35037])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35039])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  LeaderboardName                (CPF_Parm | CPF_NeedCtorLink)
@@ -3316,7 +3112,7 @@ bool UOnlineSubsystemSteamworks::CreateLeaderboard(const class FString& Leaderbo
 
 	if (!uFnCreateLeaderboard)
 	{
-		uFnCreateLeaderboard = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnCreateLeaderboard = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CreateLeaderboard");
 	}
 
 	UOnlineSubsystemSteamworks_execCreateLeaderboard_Params CreateLeaderboard_Params;
@@ -3325,11 +3121,7 @@ bool UOnlineSubsystemSteamworks::CreateLeaderboard(const class FString& Leaderbo
 	memcpy_s(&CreateLeaderboard_Params.SortType, sizeof(CreateLeaderboard_Params.SortType), &SortType, sizeof(SortType));
 	memcpy_s(&CreateLeaderboard_Params.DisplayFormat, sizeof(CreateLeaderboard_Params.DisplayFormat), &DisplayFormat, sizeof(DisplayFormat));
 
-	uFnCreateLeaderboard->iNative = 0;
-	uFnCreateLeaderboard->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateLeaderboard, &CreateLeaderboard_Params, nullptr);
-	uFnCreateLeaderboard->FunctionFlags |= 0x400;
-	uFnCreateLeaderboard->iNative = 35037;
 
 	return CreateLeaderboard_Params.ReturnValue;
 };
@@ -3346,18 +3138,14 @@ bool UOnlineSubsystemSteamworks::ResetStats(bool bResetAchievements)
 
 	if (!uFnResetStats)
 	{
-		uFnResetStats = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnResetStats = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ResetStats");
 	}
 
 	UOnlineSubsystemSteamworks_execResetStats_Params ResetStats_Params;
 	memset(&ResetStats_Params, 0, sizeof(ResetStats_Params));
 	ResetStats_Params.bResetAchievements = bResetAchievements;
 
-	uFnResetStats->iNative = 0;
-	uFnResetStats->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnResetStats, &ResetStats_Params, nullptr);
-	uFnResetStats->FunctionFlags |= 0x400;
-	uFnResetStats->iNative = 8501;
 
 	return ResetStats_Params.ReturnValue;
 };
@@ -3378,7 +3166,7 @@ bool UOnlineSubsystemSteamworks::ShowCustomMessageUI(uint8_t LocalUserNum, const
 
 	if (!uFnShowCustomMessageUI)
 	{
-		uFnShowCustomMessageUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowCustomMessageUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowCustomMessageUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowCustomMessageUI_Params ShowCustomMessageUI_Params;
@@ -3408,7 +3196,7 @@ void UOnlineSubsystemSteamworks::ClearCrossTitleProfileSettings(uint8_t LocalUse
 
 	if (!uFnClearCrossTitleProfileSettings)
 	{
-		uFnClearCrossTitleProfileSettings = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearCrossTitleProfileSettings = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearCrossTitleProfileSettings");
 	}
 
 	UOnlineSubsystemSteamworks_execClearCrossTitleProfileSettings_Params ClearCrossTitleProfileSettings_Params;
@@ -3432,7 +3220,7 @@ class UOnlineProfileSettings* UOnlineSubsystemSteamworks::GetCrossTitleProfileSe
 
 	if (!uFnGetCrossTitleProfileSettings)
 	{
-		uFnGetCrossTitleProfileSettings = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetCrossTitleProfileSettings = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetCrossTitleProfileSettings");
 	}
 
 	UOnlineSubsystemSteamworks_execGetCrossTitleProfileSettings_Params GetCrossTitleProfileSettings_Params;
@@ -3457,7 +3245,7 @@ void UOnlineSubsystemSteamworks::ClearReadCrossTitleProfileSettingsCompleteDeleg
 
 	if (!uFnClearReadCrossTitleProfileSettingsCompleteDelegate)
 	{
-		uFnClearReadCrossTitleProfileSettingsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReadCrossTitleProfileSettingsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadCrossTitleProfileSettingsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReadCrossTitleProfileSettingsCompleteDelegate_Params ClearReadCrossTitleProfileSettingsCompleteDelegate_Params;
@@ -3480,7 +3268,7 @@ void UOnlineSubsystemSteamworks::AddReadCrossTitleProfileSettingsCompleteDelegat
 
 	if (!uFnAddReadCrossTitleProfileSettingsCompleteDelegate)
 	{
-		uFnAddReadCrossTitleProfileSettingsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReadCrossTitleProfileSettingsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadCrossTitleProfileSettingsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReadCrossTitleProfileSettingsCompleteDelegate_Params AddReadCrossTitleProfileSettingsCompleteDelegate_Params;
@@ -3504,7 +3292,7 @@ void UOnlineSubsystemSteamworks::OnReadCrossTitleProfileSettingsComplete(uint8_t
 
 	if (!uFnOnReadCrossTitleProfileSettingsComplete)
 	{
-		uFnOnReadCrossTitleProfileSettingsComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadCrossTitleProfileSettingsComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadCrossTitleProfileSettingsComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadCrossTitleProfileSettingsComplete_Params OnReadCrossTitleProfileSettingsComplete_Params;
@@ -3530,7 +3318,7 @@ bool UOnlineSubsystemSteamworks::ReadCrossTitleProfileSettings(uint8_t LocalUser
 
 	if (!uFnReadCrossTitleProfileSettings)
 	{
-		uFnReadCrossTitleProfileSettings = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadCrossTitleProfileSettings = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadCrossTitleProfileSettings");
 	}
 
 	UOnlineSubsystemSteamworks_execReadCrossTitleProfileSettings_Params ReadCrossTitleProfileSettings_Params;
@@ -3557,7 +3345,7 @@ bool UOnlineSubsystemSteamworks::UnlockAvatarAward(uint8_t LocalUserNum, int32_t
 
 	if (!uFnUnlockAvatarAward)
 	{
-		uFnUnlockAvatarAward = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnUnlockAvatarAward = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnlockAvatarAward");
 	}
 
 	UOnlineSubsystemSteamworks_execUnlockAvatarAward_Params UnlockAvatarAward_Params;
@@ -3571,7 +3359,7 @@ bool UOnlineSubsystemSteamworks::UnlockAvatarAward(uint8_t LocalUserNum, int32_t
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetSteamClanData
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35085])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[35087])
 // Parameter Info:
 // class TArray<struct FSteamPlayerClanData> Results                        (CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
 
@@ -3581,18 +3369,14 @@ void UOnlineSubsystemSteamworks::GetSteamClanData(class TArray<struct FSteamPlay
 
 	if (!uFnGetSteamClanData)
 	{
-		uFnGetSteamClanData = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetSteamClanData = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetSteamClanData");
 	}
 
 	UOnlineSubsystemSteamworks_execGetSteamClanData_Params GetSteamClanData_Params;
 	memset(&GetSteamClanData_Params, 0, sizeof(GetSteamClanData_Params));
 	memcpy_s(&GetSteamClanData_Params.Results, sizeof(GetSteamClanData_Params.Results), &Results, sizeof(Results));
 
-	uFnGetSteamClanData->iNative = 0;
-	uFnGetSteamClanData->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetSteamClanData, &GetSteamClanData_Params, nullptr);
-	uFnGetSteamClanData->FunctionFlags |= 0x400;
-	uFnGetSteamClanData->iNative = 35085;
 
 	memcpy_s(&Results, sizeof(Results), &GetSteamClanData_Params.Results, sizeof(GetSteamClanData_Params.Results));
 };
@@ -3608,7 +3392,7 @@ void UOnlineSubsystemSteamworks::ClearGetNumberOfCurrentPlayersCompleteDelegate(
 
 	if (!uFnClearGetNumberOfCurrentPlayersCompleteDelegate)
 	{
-		uFnClearGetNumberOfCurrentPlayersCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearGetNumberOfCurrentPlayersCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearGetNumberOfCurrentPlayersCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearGetNumberOfCurrentPlayersCompleteDelegate_Params ClearGetNumberOfCurrentPlayersCompleteDelegate_Params;
@@ -3629,7 +3413,7 @@ void UOnlineSubsystemSteamworks::AddGetNumberOfCurrentPlayersCompleteDelegate(co
 
 	if (!uFnAddGetNumberOfCurrentPlayersCompleteDelegate)
 	{
-		uFnAddGetNumberOfCurrentPlayersCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddGetNumberOfCurrentPlayersCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddGetNumberOfCurrentPlayersCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddGetNumberOfCurrentPlayersCompleteDelegate_Params AddGetNumberOfCurrentPlayersCompleteDelegate_Params;
@@ -3650,7 +3434,7 @@ void UOnlineSubsystemSteamworks::OnGetNumberOfCurrentPlayersComplete(int32_t Tot
 
 	if (!uFnOnGetNumberOfCurrentPlayersComplete)
 	{
-		uFnOnGetNumberOfCurrentPlayersComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnGetNumberOfCurrentPlayersComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnGetNumberOfCurrentPlayersComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnGetNumberOfCurrentPlayersComplete_Params OnGetNumberOfCurrentPlayersComplete_Params;
@@ -3661,7 +3445,7 @@ void UOnlineSubsystemSteamworks::OnGetNumberOfCurrentPlayersComplete(int32_t Tot
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetNumberOfCurrentPlayers
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21843])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21845])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -3671,23 +3455,19 @@ bool UOnlineSubsystemSteamworks::GetNumberOfCurrentPlayers()
 
 	if (!uFnGetNumberOfCurrentPlayers)
 	{
-		uFnGetNumberOfCurrentPlayers = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetNumberOfCurrentPlayers = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetNumberOfCurrentPlayers");
 	}
 
 	UOnlineSubsystemSteamworks_execGetNumberOfCurrentPlayers_Params GetNumberOfCurrentPlayers_Params;
 	memset(&GetNumberOfCurrentPlayers_Params, 0, sizeof(GetNumberOfCurrentPlayers_Params));
 
-	uFnGetNumberOfCurrentPlayers->iNative = 0;
-	uFnGetNumberOfCurrentPlayers->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetNumberOfCurrentPlayers, &GetNumberOfCurrentPlayers_Params, nullptr);
-	uFnGetNumberOfCurrentPlayers->FunctionFlags |= 0x400;
-	uFnGetNumberOfCurrentPlayers->iNative = 21843;
 
 	return GetNumberOfCurrentPlayers_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineAvatar
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35214])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[35216])
 // Parameter Info:
 // struct FUniqueNetId            PlayerNetId                    (CPF_Const | CPF_Parm)
 // int32_t                        Size                           (CPF_Parm)
@@ -3699,7 +3479,7 @@ void UOnlineSubsystemSteamworks::ReadOnlineAvatar(const struct FUniqueNetId& Pla
 
 	if (!uFnReadOnlineAvatar)
 	{
-		uFnReadOnlineAvatar = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadOnlineAvatar = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineAvatar");
 	}
 
 	UOnlineSubsystemSteamworks_execReadOnlineAvatar_Params ReadOnlineAvatar_Params;
@@ -3708,11 +3488,7 @@ void UOnlineSubsystemSteamworks::ReadOnlineAvatar(const struct FUniqueNetId& Pla
 	memcpy_s(&ReadOnlineAvatar_Params.Size, sizeof(ReadOnlineAvatar_Params.Size), &Size, sizeof(Size));
 	memcpy_s(&ReadOnlineAvatar_Params.ReadOnlineAvatarCompleteDelegate, sizeof(ReadOnlineAvatar_Params.ReadOnlineAvatarCompleteDelegate), &ReadOnlineAvatarCompleteDelegate, sizeof(ReadOnlineAvatarCompleteDelegate));
 
-	uFnReadOnlineAvatar->iNative = 0;
-	uFnReadOnlineAvatar->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadOnlineAvatar, &ReadOnlineAvatar_Params, nullptr);
-	uFnReadOnlineAvatar->FunctionFlags |= 0x400;
-	uFnReadOnlineAvatar->iNative = 35214;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadOnlineAvatarComplete
@@ -3727,7 +3503,7 @@ void UOnlineSubsystemSteamworks::OnReadOnlineAvatarComplete(const struct FUnique
 
 	if (!uFnOnReadOnlineAvatarComplete)
 	{
-		uFnOnReadOnlineAvatarComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadOnlineAvatarComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadOnlineAvatarComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadOnlineAvatarComplete_Params OnReadOnlineAvatarComplete_Params;
@@ -3739,7 +3515,7 @@ void UOnlineSubsystemSteamworks::OnReadOnlineAvatarComplete(const struct FUnique
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowCustomPlayersUI
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[28297])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[28299])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3753,7 +3529,7 @@ bool UOnlineSubsystemSteamworks::ShowCustomPlayersUI(uint8_t LocalUserNum, const
 
 	if (!uFnShowCustomPlayersUI)
 	{
-		uFnShowCustomPlayersUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowCustomPlayersUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowCustomPlayersUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowCustomPlayersUI_Params ShowCustomPlayersUI_Params;
@@ -3763,11 +3539,7 @@ bool UOnlineSubsystemSteamworks::ShowCustomPlayersUI(uint8_t LocalUserNum, const
 	memcpy_s(&ShowCustomPlayersUI_Params.Description, sizeof(ShowCustomPlayersUI_Params.Description), &Description, sizeof(Description));
 	memcpy_s(&ShowCustomPlayersUI_Params.Players, sizeof(ShowCustomPlayersUI_Params.Players), &Players, sizeof(Players));
 
-	uFnShowCustomPlayersUI->iNative = 0;
-	uFnShowCustomPlayersUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowCustomPlayersUI, &ShowCustomPlayersUI_Params, nullptr);
-	uFnShowCustomPlayersUI->FunctionFlags |= 0x400;
-	uFnShowCustomPlayersUI->iNative = 28297;
 
 	memcpy_s(&Players, sizeof(Players), &ShowCustomPlayersUI_Params.Players, sizeof(ShowCustomPlayersUI_Params.Players));
 
@@ -3775,7 +3547,7 @@ bool UOnlineSubsystemSteamworks::ShowCustomPlayersUI(uint8_t LocalUserNum, const
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetAchievements
-// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21576])
+// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21578])
 // Parameter Info:
 // EOnlineEnumerationReadState    ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3788,7 +3560,7 @@ EOnlineEnumerationReadState UOnlineSubsystemSteamworks::GetAchievements(uint8_t 
 
 	if (!uFnGetAchievements)
 	{
-		uFnGetAchievements = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetAchievements = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetAchievements");
 	}
 
 	UOnlineSubsystemSteamworks_execGetAchievements_Params GetAchievements_Params;
@@ -3797,11 +3569,7 @@ EOnlineEnumerationReadState UOnlineSubsystemSteamworks::GetAchievements(uint8_t 
 	memcpy_s(&GetAchievements_Params.TitleId, sizeof(GetAchievements_Params.TitleId), &TitleId, sizeof(TitleId));
 	memcpy_s(&GetAchievements_Params.Achievements, sizeof(GetAchievements_Params.Achievements), &Achievements, sizeof(Achievements));
 
-	uFnGetAchievements->iNative = 0;
-	uFnGetAchievements->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetAchievements, &GetAchievements_Params, nullptr);
-	uFnGetAchievements->FunctionFlags |= 0x400;
-	uFnGetAchievements->iNative = 21576;
 
 	memcpy_s(&Achievements, sizeof(Achievements), &GetAchievements_Params.Achievements, sizeof(GetAchievements_Params.Achievements));
 
@@ -3820,7 +3588,7 @@ void UOnlineSubsystemSteamworks::ClearReadAchievementsCompleteDelegate(uint8_t L
 
 	if (!uFnClearReadAchievementsCompleteDelegate)
 	{
-		uFnClearReadAchievementsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReadAchievementsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadAchievementsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReadAchievementsCompleteDelegate_Params ClearReadAchievementsCompleteDelegate_Params;
@@ -3843,7 +3611,7 @@ void UOnlineSubsystemSteamworks::AddReadAchievementsCompleteDelegate(uint8_t Loc
 
 	if (!uFnAddReadAchievementsCompleteDelegate)
 	{
-		uFnAddReadAchievementsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReadAchievementsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadAchievementsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReadAchievementsCompleteDelegate_Params AddReadAchievementsCompleteDelegate_Params;
@@ -3865,7 +3633,7 @@ void UOnlineSubsystemSteamworks::OnReadAchievementsComplete(int32_t TitleId)
 
 	if (!uFnOnReadAchievementsComplete)
 	{
-		uFnOnReadAchievementsComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadAchievementsComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadAchievementsComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadAchievementsComplete_Params OnReadAchievementsComplete_Params;
@@ -3876,7 +3644,7 @@ void UOnlineSubsystemSteamworks::OnReadAchievementsComplete(int32_t TitleId)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadAchievements
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26849])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26851])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3890,7 +3658,7 @@ bool UOnlineSubsystemSteamworks::ReadAchievements(uint8_t LocalUserNum, int32_t 
 
 	if (!uFnReadAchievements)
 	{
-		uFnReadAchievements = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadAchievements = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadAchievements");
 	}
 
 	UOnlineSubsystemSteamworks_execReadAchievements_Params ReadAchievements_Params;
@@ -3900,17 +3668,13 @@ bool UOnlineSubsystemSteamworks::ReadAchievements(uint8_t LocalUserNum, int32_t 
 	ReadAchievements_Params.bShouldReadText = bShouldReadText;
 	ReadAchievements_Params.bShouldReadImages = bShouldReadImages;
 
-	uFnReadAchievements->iNative = 0;
-	uFnReadAchievements->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadAchievements, &ReadAchievements_Params, nullptr);
-	uFnReadAchievements->FunctionFlags |= 0x400;
-	uFnReadAchievements->iNative = 26849;
 
 	return ReadAchievements_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowPlayersUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28326])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28328])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3921,24 +3685,20 @@ bool UOnlineSubsystemSteamworks::ShowPlayersUI(uint8_t LocalUserNum)
 
 	if (!uFnShowPlayersUI)
 	{
-		uFnShowPlayersUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowPlayersUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowPlayersUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowPlayersUI_Params ShowPlayersUI_Params;
 	memset(&ShowPlayersUI_Params, 0, sizeof(ShowPlayersUI_Params));
 	memcpy_s(&ShowPlayersUI_Params.LocalUserNum, sizeof(ShowPlayersUI_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnShowPlayersUI->iNative = 0;
-	uFnShowPlayersUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowPlayersUI, &ShowPlayersUI_Params, nullptr);
-	uFnShowPlayersUI->FunctionFlags |= 0x400;
-	uFnShowPlayersUI->iNative = 28326;
 
 	return ShowPlayersUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowFriendsInviteUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28305])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28307])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3950,7 +3710,7 @@ bool UOnlineSubsystemSteamworks::ShowFriendsInviteUI(uint8_t LocalUserNum, const
 
 	if (!uFnShowFriendsInviteUI)
 	{
-		uFnShowFriendsInviteUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowFriendsInviteUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowFriendsInviteUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowFriendsInviteUI_Params ShowFriendsInviteUI_Params;
@@ -3958,17 +3718,13 @@ bool UOnlineSubsystemSteamworks::ShowFriendsInviteUI(uint8_t LocalUserNum, const
 	memcpy_s(&ShowFriendsInviteUI_Params.LocalUserNum, sizeof(ShowFriendsInviteUI_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&ShowFriendsInviteUI_Params.PlayerID, sizeof(ShowFriendsInviteUI_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 
-	uFnShowFriendsInviteUI->iNative = 0;
-	uFnShowFriendsInviteUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowFriendsInviteUI, &ShowFriendsInviteUI_Params, nullptr);
-	uFnShowFriendsInviteUI->FunctionFlags |= 0x400;
-	uFnShowFriendsInviteUI->iNative = 28305;
 
 	return ShowFriendsInviteUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowFriendsUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28306])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28308])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -3979,18 +3735,14 @@ bool UOnlineSubsystemSteamworks::ShowFriendsUI(uint8_t LocalUserNum)
 
 	if (!uFnShowFriendsUI)
 	{
-		uFnShowFriendsUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowFriendsUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowFriendsUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowFriendsUI_Params ShowFriendsUI_Params;
 	memset(&ShowFriendsUI_Params, 0, sizeof(ShowFriendsUI_Params));
 	memcpy_s(&ShowFriendsUI_Params.LocalUserNum, sizeof(ShowFriendsUI_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnShowFriendsUI->iNative = 0;
-	uFnShowFriendsUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowFriendsUI, &ShowFriendsUI_Params, nullptr);
-	uFnShowFriendsUI->FunctionFlags |= 0x400;
-	uFnShowFriendsUI->iNative = 28306;
 
 	return ShowFriendsUI_Params.ReturnValue;
 };
@@ -4007,7 +3759,7 @@ void UOnlineSubsystemSteamworks::ClearProfileDataChangedDelegate(uint8_t LocalUs
 
 	if (!uFnClearProfileDataChangedDelegate)
 	{
-		uFnClearProfileDataChangedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearProfileDataChangedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearProfileDataChangedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearProfileDataChangedDelegate_Params ClearProfileDataChangedDelegate_Params;
@@ -4030,7 +3782,7 @@ void UOnlineSubsystemSteamworks::AddProfileDataChangedDelegate(uint8_t LocalUser
 
 	if (!uFnAddProfileDataChangedDelegate)
 	{
-		uFnAddProfileDataChangedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddProfileDataChangedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddProfileDataChangedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddProfileDataChangedDelegate_Params AddProfileDataChangedDelegate_Params;
@@ -4051,7 +3803,7 @@ void UOnlineSubsystemSteamworks::OnProfileDataChanged()
 
 	if (!uFnOnProfileDataChanged)
 	{
-		uFnOnProfileDataChanged = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnProfileDataChanged = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnProfileDataChanged");
 	}
 
 	UOnlineSubsystemSteamworks_execOnProfileDataChanged_Params OnProfileDataChanged_Params;
@@ -4061,7 +3813,7 @@ void UOnlineSubsystemSteamworks::OnProfileDataChanged()
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnlockGamerPicture
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29765])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29767])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4073,7 +3825,7 @@ bool UOnlineSubsystemSteamworks::UnlockGamerPicture(uint8_t LocalUserNum, int32_
 
 	if (!uFnUnlockGamerPicture)
 	{
-		uFnUnlockGamerPicture = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnUnlockGamerPicture = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnlockGamerPicture");
 	}
 
 	UOnlineSubsystemSteamworks_execUnlockGamerPicture_Params UnlockGamerPicture_Params;
@@ -4081,11 +3833,7 @@ bool UOnlineSubsystemSteamworks::UnlockGamerPicture(uint8_t LocalUserNum, int32_
 	memcpy_s(&UnlockGamerPicture_Params.LocalUserNum, sizeof(UnlockGamerPicture_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&UnlockGamerPicture_Params.PictureId, sizeof(UnlockGamerPicture_Params.PictureId), &PictureId, sizeof(PictureId));
 
-	uFnUnlockGamerPicture->iNative = 0;
-	uFnUnlockGamerPicture->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnlockGamerPicture, &UnlockGamerPicture_Params, nullptr);
-	uFnUnlockGamerPicture->FunctionFlags |= 0x400;
-	uFnUnlockGamerPicture->iNative = 29765;
 
 	return UnlockGamerPicture_Params.ReturnValue;
 };
@@ -4102,7 +3850,7 @@ void UOnlineSubsystemSteamworks::ClearUnlockAchievementCompleteDelegate(uint8_t 
 
 	if (!uFnClearUnlockAchievementCompleteDelegate)
 	{
-		uFnClearUnlockAchievementCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearUnlockAchievementCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearUnlockAchievementCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearUnlockAchievementCompleteDelegate_Params ClearUnlockAchievementCompleteDelegate_Params;
@@ -4125,7 +3873,7 @@ void UOnlineSubsystemSteamworks::AddUnlockAchievementCompleteDelegate(uint8_t Lo
 
 	if (!uFnAddUnlockAchievementCompleteDelegate)
 	{
-		uFnAddUnlockAchievementCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddUnlockAchievementCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddUnlockAchievementCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddUnlockAchievementCompleteDelegate_Params AddUnlockAchievementCompleteDelegate_Params;
@@ -4147,7 +3895,7 @@ void UOnlineSubsystemSteamworks::OnUnlockAchievementComplete(bool bWasSuccessful
 
 	if (!uFnOnUnlockAchievementComplete)
 	{
-		uFnOnUnlockAchievementComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnUnlockAchievementComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnUnlockAchievementComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnUnlockAchievementComplete_Params OnUnlockAchievementComplete_Params;
@@ -4158,7 +3906,7 @@ void UOnlineSubsystemSteamworks::OnUnlockAchievementComplete(bool bWasSuccessful
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnlockAchievement
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29762])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29764])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4171,7 +3919,7 @@ bool UOnlineSubsystemSteamworks::UnlockAchievement(uint8_t LocalUserNum, int32_t
 
 	if (!uFnUnlockAchievement)
 	{
-		uFnUnlockAchievement = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnUnlockAchievement = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnlockAchievement");
 	}
 
 	UOnlineSubsystemSteamworks_execUnlockAchievement_Params UnlockAchievement_Params;
@@ -4180,17 +3928,13 @@ bool UOnlineSubsystemSteamworks::UnlockAchievement(uint8_t LocalUserNum, int32_t
 	memcpy_s(&UnlockAchievement_Params.AchievementId, sizeof(UnlockAchievement_Params.AchievementId), &AchievementId, sizeof(AchievementId));
 	memcpy_s(&UnlockAchievement_Params.PercentComplete, sizeof(UnlockAchievement_Params.PercentComplete), &PercentComplete, sizeof(PercentComplete));
 
-	uFnUnlockAchievement->iNative = 0;
-	uFnUnlockAchievement->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnlockAchievement, &UnlockAchievement_Params, nullptr);
-	uFnUnlockAchievement->FunctionFlags |= 0x400;
-	uFnUnlockAchievement->iNative = 29762;
 
 	return UnlockAchievement_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsDeviceValid
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[22887])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[22889])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        DeviceID                       (CPF_Parm)
@@ -4202,7 +3946,7 @@ bool UOnlineSubsystemSteamworks::IsDeviceValid(int32_t DeviceID, int32_t SizeNee
 
 	if (!uFnIsDeviceValid)
 	{
-		uFnIsDeviceValid = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnIsDeviceValid = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsDeviceValid");
 	}
 
 	UOnlineSubsystemSteamworks_execIsDeviceValid_Params IsDeviceValid_Params;
@@ -4210,17 +3954,13 @@ bool UOnlineSubsystemSteamworks::IsDeviceValid(int32_t DeviceID, int32_t SizeNee
 	memcpy_s(&IsDeviceValid_Params.DeviceID, sizeof(IsDeviceValid_Params.DeviceID), &DeviceID, sizeof(DeviceID));
 	memcpy_s(&IsDeviceValid_Params.SizeNeeded, sizeof(IsDeviceValid_Params.SizeNeeded), &SizeNeeded, sizeof(SizeNeeded));
 
-	uFnIsDeviceValid->iNative = 0;
-	uFnIsDeviceValid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsDeviceValid, &IsDeviceValid_Params, nullptr);
-	uFnIsDeviceValid->FunctionFlags |= 0x400;
-	uFnIsDeviceValid->iNative = 22887;
 
 	return IsDeviceValid_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetDeviceSelectionResults
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21715])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21717])
 // Parameter Info:
 // int32_t                        ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4232,7 +3972,7 @@ int32_t UOnlineSubsystemSteamworks::GetDeviceSelectionResults(uint8_t LocalUserN
 
 	if (!uFnGetDeviceSelectionResults)
 	{
-		uFnGetDeviceSelectionResults = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetDeviceSelectionResults = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetDeviceSelectionResults");
 	}
 
 	UOnlineSubsystemSteamworks_execGetDeviceSelectionResults_Params GetDeviceSelectionResults_Params;
@@ -4240,11 +3980,7 @@ int32_t UOnlineSubsystemSteamworks::GetDeviceSelectionResults(uint8_t LocalUserN
 	memcpy_s(&GetDeviceSelectionResults_Params.LocalUserNum, sizeof(GetDeviceSelectionResults_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&GetDeviceSelectionResults_Params.DeviceName, sizeof(GetDeviceSelectionResults_Params.DeviceName), &DeviceName, sizeof(DeviceName));
 
-	uFnGetDeviceSelectionResults->iNative = 0;
-	uFnGetDeviceSelectionResults->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetDeviceSelectionResults, &GetDeviceSelectionResults_Params, nullptr);
-	uFnGetDeviceSelectionResults->FunctionFlags |= 0x400;
-	uFnGetDeviceSelectionResults->iNative = 21715;
 
 	memcpy_s(&DeviceName, sizeof(DeviceName), &GetDeviceSelectionResults_Params.DeviceName, sizeof(GetDeviceSelectionResults_Params.DeviceName));
 
@@ -4263,7 +3999,7 @@ void UOnlineSubsystemSteamworks::ClearDeviceSelectionDoneDelegate(uint8_t LocalU
 
 	if (!uFnClearDeviceSelectionDoneDelegate)
 	{
-		uFnClearDeviceSelectionDoneDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearDeviceSelectionDoneDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearDeviceSelectionDoneDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearDeviceSelectionDoneDelegate_Params ClearDeviceSelectionDoneDelegate_Params;
@@ -4286,7 +4022,7 @@ void UOnlineSubsystemSteamworks::AddDeviceSelectionDoneDelegate(uint8_t LocalUse
 
 	if (!uFnAddDeviceSelectionDoneDelegate)
 	{
-		uFnAddDeviceSelectionDoneDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddDeviceSelectionDoneDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddDeviceSelectionDoneDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddDeviceSelectionDoneDelegate_Params AddDeviceSelectionDoneDelegate_Params;
@@ -4308,7 +4044,7 @@ void UOnlineSubsystemSteamworks::OnDeviceSelectionComplete(bool bWasSuccessful)
 
 	if (!uFnOnDeviceSelectionComplete)
 	{
-		uFnOnDeviceSelectionComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnDeviceSelectionComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnDeviceSelectionComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnDeviceSelectionComplete_Params OnDeviceSelectionComplete_Params;
@@ -4319,7 +4055,7 @@ void UOnlineSubsystemSteamworks::OnDeviceSelectionComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowDeviceSelectionUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28301])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28303])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4332,7 +4068,7 @@ bool UOnlineSubsystemSteamworks::ShowDeviceSelectionUI(uint8_t LocalUserNum, int
 
 	if (!uFnShowDeviceSelectionUI)
 	{
-		uFnShowDeviceSelectionUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowDeviceSelectionUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowDeviceSelectionUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowDeviceSelectionUI_Params ShowDeviceSelectionUI_Params;
@@ -4341,17 +4077,13 @@ bool UOnlineSubsystemSteamworks::ShowDeviceSelectionUI(uint8_t LocalUserNum, int
 	memcpy_s(&ShowDeviceSelectionUI_Params.SizeNeeded, sizeof(ShowDeviceSelectionUI_Params.SizeNeeded), &SizeNeeded, sizeof(SizeNeeded));
 	ShowDeviceSelectionUI_Params.bManageStorage = bManageStorage;
 
-	uFnShowDeviceSelectionUI->iNative = 0;
-	uFnShowDeviceSelectionUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowDeviceSelectionUI, &ShowDeviceSelectionUI_Params, nullptr);
-	uFnShowDeviceSelectionUI->FunctionFlags |= 0x400;
-	uFnShowDeviceSelectionUI->iNative = 28301;
 
 	return ShowDeviceSelectionUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowMembershipMarketplaceUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28318])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28320])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4362,24 +4094,20 @@ bool UOnlineSubsystemSteamworks::ShowMembershipMarketplaceUI(uint8_t LocalUserNu
 
 	if (!uFnShowMembershipMarketplaceUI)
 	{
-		uFnShowMembershipMarketplaceUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowMembershipMarketplaceUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowMembershipMarketplaceUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowMembershipMarketplaceUI_Params ShowMembershipMarketplaceUI_Params;
 	memset(&ShowMembershipMarketplaceUI_Params, 0, sizeof(ShowMembershipMarketplaceUI_Params));
 	memcpy_s(&ShowMembershipMarketplaceUI_Params.LocalUserNum, sizeof(ShowMembershipMarketplaceUI_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnShowMembershipMarketplaceUI->iNative = 0;
-	uFnShowMembershipMarketplaceUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowMembershipMarketplaceUI, &ShowMembershipMarketplaceUI_Params, nullptr);
-	uFnShowMembershipMarketplaceUI->FunctionFlags |= 0x400;
-	uFnShowMembershipMarketplaceUI->iNative = 28318;
 
 	return ShowMembershipMarketplaceUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowContentMarketplaceUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28294])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28296])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4392,7 +4120,7 @@ bool UOnlineSubsystemSteamworks::ShowContentMarketplaceUI(uint8_t LocalUserNum, 
 
 	if (!uFnShowContentMarketplaceUI)
 	{
-		uFnShowContentMarketplaceUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowContentMarketplaceUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowContentMarketplaceUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowContentMarketplaceUI_Params ShowContentMarketplaceUI_Params;
@@ -4401,17 +4129,13 @@ bool UOnlineSubsystemSteamworks::ShowContentMarketplaceUI(uint8_t LocalUserNum, 
 	memcpy_s(&ShowContentMarketplaceUI_Params.CategoryMask, sizeof(ShowContentMarketplaceUI_Params.CategoryMask), &CategoryMask, sizeof(CategoryMask));
 	memcpy_s(&ShowContentMarketplaceUI_Params.OfferId, sizeof(ShowContentMarketplaceUI_Params.OfferId), &OfferId, sizeof(OfferId));
 
-	uFnShowContentMarketplaceUI->iNative = 0;
-	uFnShowContentMarketplaceUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowContentMarketplaceUI, &ShowContentMarketplaceUI_Params, nullptr);
-	uFnShowContentMarketplaceUI->FunctionFlags |= 0x400;
-	uFnShowContentMarketplaceUI->iNative = 28294;
 
 	return ShowContentMarketplaceUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowInviteUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28312])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28314])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4423,7 +4147,7 @@ bool UOnlineSubsystemSteamworks::ShowInviteUI(uint8_t LocalUserNum, const class 
 
 	if (!uFnShowInviteUI)
 	{
-		uFnShowInviteUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowInviteUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowInviteUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowInviteUI_Params ShowInviteUI_Params;
@@ -4431,17 +4155,13 @@ bool UOnlineSubsystemSteamworks::ShowInviteUI(uint8_t LocalUserNum, const class 
 	memcpy_s(&ShowInviteUI_Params.LocalUserNum, sizeof(ShowInviteUI_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&ShowInviteUI_Params.InviteText, sizeof(ShowInviteUI_Params.InviteText), &InviteText, sizeof(InviteText));
 
-	uFnShowInviteUI->iNative = 0;
-	uFnShowInviteUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowInviteUI, &ShowInviteUI_Params, nullptr);
-	uFnShowInviteUI->FunctionFlags |= 0x400;
-	uFnShowInviteUI->iNative = 28312;
 
 	return ShowInviteUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowAchievementsUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28291])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28293])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4452,24 +4172,20 @@ bool UOnlineSubsystemSteamworks::ShowAchievementsUI(uint8_t LocalUserNum)
 
 	if (!uFnShowAchievementsUI)
 	{
-		uFnShowAchievementsUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowAchievementsUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowAchievementsUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowAchievementsUI_Params ShowAchievementsUI_Params;
 	memset(&ShowAchievementsUI_Params, 0, sizeof(ShowAchievementsUI_Params));
 	memcpy_s(&ShowAchievementsUI_Params.LocalUserNum, sizeof(ShowAchievementsUI_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnShowAchievementsUI->iNative = 0;
-	uFnShowAchievementsUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowAchievementsUI, &ShowAchievementsUI_Params, nullptr);
-	uFnShowAchievementsUI->FunctionFlags |= 0x400;
-	uFnShowAchievementsUI->iNative = 28291;
 
 	return ShowAchievementsUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowMessagesUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28319])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28321])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4480,24 +4196,20 @@ bool UOnlineSubsystemSteamworks::ShowMessagesUI(uint8_t LocalUserNum)
 
 	if (!uFnShowMessagesUI)
 	{
-		uFnShowMessagesUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowMessagesUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowMessagesUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowMessagesUI_Params ShowMessagesUI_Params;
 	memset(&ShowMessagesUI_Params, 0, sizeof(ShowMessagesUI_Params));
 	memcpy_s(&ShowMessagesUI_Params.LocalUserNum, sizeof(ShowMessagesUI_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnShowMessagesUI->iNative = 0;
-	uFnShowMessagesUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowMessagesUI, &ShowMessagesUI_Params, nullptr);
-	uFnShowMessagesUI->FunctionFlags |= 0x400;
-	uFnShowMessagesUI->iNative = 28319;
 
 	return ShowMessagesUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowGamerCardUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28307])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28309])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4509,7 +4221,7 @@ bool UOnlineSubsystemSteamworks::ShowGamerCardUI(uint8_t LocalUserNum, const str
 
 	if (!uFnShowGamerCardUI)
 	{
-		uFnShowGamerCardUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowGamerCardUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowGamerCardUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowGamerCardUI_Params ShowGamerCardUI_Params;
@@ -4517,17 +4229,13 @@ bool UOnlineSubsystemSteamworks::ShowGamerCardUI(uint8_t LocalUserNum, const str
 	memcpy_s(&ShowGamerCardUI_Params.LocalUserNum, sizeof(ShowGamerCardUI_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&ShowGamerCardUI_Params.PlayerID, sizeof(ShowGamerCardUI_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 
-	uFnShowGamerCardUI->iNative = 0;
-	uFnShowGamerCardUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowGamerCardUI, &ShowGamerCardUI_Params, nullptr);
-	uFnShowGamerCardUI->FunctionFlags |= 0x400;
-	uFnShowGamerCardUI->iNative = 28307;
 
 	return ShowGamerCardUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowFeedbackUI
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28302])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28304])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -4539,7 +4247,7 @@ bool UOnlineSubsystemSteamworks::ShowFeedbackUI(uint8_t LocalUserNum, const stru
 
 	if (!uFnShowFeedbackUI)
 	{
-		uFnShowFeedbackUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowFeedbackUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowFeedbackUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowFeedbackUI_Params ShowFeedbackUI_Params;
@@ -4547,11 +4255,7 @@ bool UOnlineSubsystemSteamworks::ShowFeedbackUI(uint8_t LocalUserNum, const stru
 	memcpy_s(&ShowFeedbackUI_Params.LocalUserNum, sizeof(ShowFeedbackUI_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&ShowFeedbackUI_Params.PlayerID, sizeof(ShowFeedbackUI_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 
-	uFnShowFeedbackUI->iNative = 0;
-	uFnShowFeedbackUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowFeedbackUI, &ShowFeedbackUI_Params, nullptr);
-	uFnShowFeedbackUI->FunctionFlags |= 0x400;
-	uFnShowFeedbackUI->iNative = 28302;
 
 	return ShowFeedbackUI_Params.ReturnValue;
 };
@@ -4569,7 +4273,7 @@ bool UOnlineSubsystemSteamworks::DeleteMessage(uint8_t LocalUserNum, int32_t Mes
 
 	if (!uFnDeleteMessage)
 	{
-		uFnDeleteMessage = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnDeleteMessage = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DeleteMessage");
 	}
 
 	UOnlineSubsystemSteamworks_execDeleteMessage_Params DeleteMessage_Params;
@@ -4594,7 +4298,7 @@ bool UOnlineSubsystemSteamworks::UnmuteAll(uint8_t LocalUserNum)
 
 	if (!uFnUnmuteAll)
 	{
-		uFnUnmuteAll = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnUnmuteAll = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnmuteAll");
 	}
 
 	UOnlineSubsystemSteamworks_execUnmuteAll_Params UnmuteAll_Params;
@@ -4619,7 +4323,7 @@ bool UOnlineSubsystemSteamworks::MuteAll(uint8_t LocalUserNum, bool bAllowFriend
 
 	if (!uFnMuteAll)
 	{
-		uFnMuteAll = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnMuteAll = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.MuteAll");
 	}
 
 	UOnlineSubsystemSteamworks_execMuteAll_Params MuteAll_Params;
@@ -4646,7 +4350,7 @@ void UOnlineSubsystemSteamworks::CalcAggregateSkill(const class TArray<struct FD
 
 	if (!uFnCalcAggregateSkill)
 	{
-		uFnCalcAggregateSkill = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnCalcAggregateSkill = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CalcAggregateSkill");
 	}
 
 	UOnlineSubsystemSteamworks_execCalcAggregateSkill_Params CalcAggregateSkill_Params;
@@ -4663,7 +4367,7 @@ void UOnlineSubsystemSteamworks::CalcAggregateSkill(const class TArray<struct FD
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterStatGuid
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[27026])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[27028])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            PlayerID                       (CPF_Parm)
@@ -4675,7 +4379,7 @@ bool UOnlineSubsystemSteamworks::RegisterStatGuid(const struct FUniqueNetId& Pla
 
 	if (!uFnRegisterStatGuid)
 	{
-		uFnRegisterStatGuid = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnRegisterStatGuid = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterStatGuid");
 	}
 
 	UOnlineSubsystemSteamworks_execRegisterStatGuid_Params RegisterStatGuid_Params;
@@ -4683,11 +4387,7 @@ bool UOnlineSubsystemSteamworks::RegisterStatGuid(const struct FUniqueNetId& Pla
 	memcpy_s(&RegisterStatGuid_Params.PlayerID, sizeof(RegisterStatGuid_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 	memcpy_s(&RegisterStatGuid_Params.ClientStatGuid, sizeof(RegisterStatGuid_Params.ClientStatGuid), &ClientStatGuid, sizeof(ClientStatGuid));
 
-	uFnRegisterStatGuid->iNative = 0;
-	uFnRegisterStatGuid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegisterStatGuid, &RegisterStatGuid_Params, nullptr);
-	uFnRegisterStatGuid->FunctionFlags |= 0x400;
-	uFnRegisterStatGuid->iNative = 27026;
 
 	memcpy_s(&ClientStatGuid, sizeof(ClientStatGuid), &RegisterStatGuid_Params.ClientStatGuid, sizeof(RegisterStatGuid_Params.ClientStatGuid));
 
@@ -4695,7 +4395,7 @@ bool UOnlineSubsystemSteamworks::RegisterStatGuid(const struct FUniqueNetId& Pla
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetClientStatGuid
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21647])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21649])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -4705,17 +4405,13 @@ class FString UOnlineSubsystemSteamworks::GetClientStatGuid()
 
 	if (!uFnGetClientStatGuid)
 	{
-		uFnGetClientStatGuid = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetClientStatGuid = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetClientStatGuid");
 	}
 
 	UOnlineSubsystemSteamworks_execGetClientStatGuid_Params GetClientStatGuid_Params;
 	memset(&GetClientStatGuid_Params, 0, sizeof(GetClientStatGuid_Params));
 
-	uFnGetClientStatGuid->iNative = 0;
-	uFnGetClientStatGuid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetClientStatGuid, &GetClientStatGuid_Params, nullptr);
-	uFnGetClientStatGuid->FunctionFlags |= 0x400;
-	uFnGetClientStatGuid->iNative = 21647;
 
 	return GetClientStatGuid_Params.ReturnValue;
 };
@@ -4731,7 +4427,7 @@ void UOnlineSubsystemSteamworks::ClearRegisterHostStatGuidCompleteDelegateDelega
 
 	if (!uFnClearRegisterHostStatGuidCompleteDelegateDelegate)
 	{
-		uFnClearRegisterHostStatGuidCompleteDelegateDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearRegisterHostStatGuidCompleteDelegateDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearRegisterHostStatGuidCompleteDelegateDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearRegisterHostStatGuidCompleteDelegateDelegate_Params ClearRegisterHostStatGuidCompleteDelegateDelegate_Params;
@@ -4752,7 +4448,7 @@ void UOnlineSubsystemSteamworks::AddRegisterHostStatGuidCompleteDelegate(const s
 
 	if (!uFnAddRegisterHostStatGuidCompleteDelegate)
 	{
-		uFnAddRegisterHostStatGuidCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddRegisterHostStatGuidCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddRegisterHostStatGuidCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddRegisterHostStatGuidCompleteDelegate_Params AddRegisterHostStatGuidCompleteDelegate_Params;
@@ -4773,7 +4469,7 @@ void UOnlineSubsystemSteamworks::OnRegisterHostStatGuidComplete(bool bWasSuccess
 
 	if (!uFnOnRegisterHostStatGuidComplete)
 	{
-		uFnOnRegisterHostStatGuidComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnRegisterHostStatGuidComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnRegisterHostStatGuidComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnRegisterHostStatGuidComplete_Params OnRegisterHostStatGuidComplete_Params;
@@ -4784,7 +4480,7 @@ void UOnlineSubsystemSteamworks::OnRegisterHostStatGuidComplete(bool bWasSuccess
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterHostStatGuid
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[27012])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[27014])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  HostStatGuid                   (CPF_Const | CPF_Parm | CPF_OutParm | CPF_NeedCtorLink)
@@ -4795,18 +4491,14 @@ bool UOnlineSubsystemSteamworks::RegisterHostStatGuid(class FString& HostStatGui
 
 	if (!uFnRegisterHostStatGuid)
 	{
-		uFnRegisterHostStatGuid = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnRegisterHostStatGuid = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterHostStatGuid");
 	}
 
 	UOnlineSubsystemSteamworks_execRegisterHostStatGuid_Params RegisterHostStatGuid_Params;
 	memset(&RegisterHostStatGuid_Params, 0, sizeof(RegisterHostStatGuid_Params));
 	memcpy_s(&RegisterHostStatGuid_Params.HostStatGuid, sizeof(RegisterHostStatGuid_Params.HostStatGuid), &HostStatGuid, sizeof(HostStatGuid));
 
-	uFnRegisterHostStatGuid->iNative = 0;
-	uFnRegisterHostStatGuid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegisterHostStatGuid, &RegisterHostStatGuid_Params, nullptr);
-	uFnRegisterHostStatGuid->FunctionFlags |= 0x400;
-	uFnRegisterHostStatGuid->iNative = 27012;
 
 	memcpy_s(&HostStatGuid, sizeof(HostStatGuid), &RegisterHostStatGuid_Params.HostStatGuid, sizeof(RegisterHostStatGuid_Params.HostStatGuid));
 
@@ -4814,7 +4506,7 @@ bool UOnlineSubsystemSteamworks::RegisterHostStatGuid(class FString& HostStatGui
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetHostStatGuid
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21774])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21776])
 // Parameter Info:
 // class FString                  ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm | CPF_NeedCtorLink)
 
@@ -4824,17 +4516,13 @@ class FString UOnlineSubsystemSteamworks::GetHostStatGuid()
 
 	if (!uFnGetHostStatGuid)
 	{
-		uFnGetHostStatGuid = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetHostStatGuid = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetHostStatGuid");
 	}
 
 	UOnlineSubsystemSteamworks_execGetHostStatGuid_Params GetHostStatGuid_Params;
 	memset(&GetHostStatGuid_Params, 0, sizeof(GetHostStatGuid_Params));
 
-	uFnGetHostStatGuid->iNative = 0;
-	uFnGetHostStatGuid->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetHostStatGuid, &GetHostStatGuid_Params, nullptr);
-	uFnGetHostStatGuid->FunctionFlags |= 0x400;
-	uFnGetHostStatGuid->iNative = 21774;
 
 	return GetHostStatGuid_Params.ReturnValue;
 };
@@ -4851,7 +4539,7 @@ void UOnlineSubsystemSteamworks::ClearFriendMessageReceivedDelegate(uint8_t Loca
 
 	if (!uFnClearFriendMessageReceivedDelegate)
 	{
-		uFnClearFriendMessageReceivedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearFriendMessageReceivedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFriendMessageReceivedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearFriendMessageReceivedDelegate_Params ClearFriendMessageReceivedDelegate_Params;
@@ -4874,7 +4562,7 @@ void UOnlineSubsystemSteamworks::AddFriendMessageReceivedDelegate(uint8_t LocalU
 
 	if (!uFnAddFriendMessageReceivedDelegate)
 	{
-		uFnAddFriendMessageReceivedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddFriendMessageReceivedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriendMessageReceivedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddFriendMessageReceivedDelegate_Params AddFriendMessageReceivedDelegate_Params;
@@ -4899,7 +4587,7 @@ void UOnlineSubsystemSteamworks::OnFriendMessageReceived(uint8_t LocalUserNum, c
 
 	if (!uFnOnFriendMessageReceived)
 	{
-		uFnOnFriendMessageReceived = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnFriendMessageReceived = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnFriendMessageReceived");
 	}
 
 	UOnlineSubsystemSteamworks_execOnFriendMessageReceived_Params OnFriendMessageReceived_Params;
@@ -4924,7 +4612,7 @@ void UOnlineSubsystemSteamworks::GetFriendMessages(uint8_t LocalUserNum, class T
 
 	if (!uFnGetFriendMessages)
 	{
-		uFnGetFriendMessages = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetFriendMessages = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetFriendMessages");
 	}
 
 	UOnlineSubsystemSteamworks_execGetFriendMessages_Params GetFriendMessages_Params;
@@ -4948,7 +4636,7 @@ void UOnlineSubsystemSteamworks::ClearJoinFriendGameCompleteDelegate(const struc
 
 	if (!uFnClearJoinFriendGameCompleteDelegate)
 	{
-		uFnClearJoinFriendGameCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearJoinFriendGameCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearJoinFriendGameCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearJoinFriendGameCompleteDelegate_Params ClearJoinFriendGameCompleteDelegate_Params;
@@ -4969,7 +4657,7 @@ void UOnlineSubsystemSteamworks::AddJoinFriendGameCompleteDelegate(const struct 
 
 	if (!uFnAddJoinFriendGameCompleteDelegate)
 	{
-		uFnAddJoinFriendGameCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddJoinFriendGameCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddJoinFriendGameCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddJoinFriendGameCompleteDelegate_Params AddJoinFriendGameCompleteDelegate_Params;
@@ -4990,7 +4678,7 @@ void UOnlineSubsystemSteamworks::OnJoinFriendGameComplete(bool bWasSuccessful)
 
 	if (!uFnOnJoinFriendGameComplete)
 	{
-		uFnOnJoinFriendGameComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnJoinFriendGameComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnJoinFriendGameComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnJoinFriendGameComplete_Params OnJoinFriendGameComplete_Params;
@@ -5001,7 +4689,7 @@ void UOnlineSubsystemSteamworks::OnJoinFriendGameComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.JoinFriendGame
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[23002])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[23004])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5013,7 +4701,7 @@ bool UOnlineSubsystemSteamworks::JoinFriendGame(uint8_t LocalUserNum, const stru
 
 	if (!uFnJoinFriendGame)
 	{
-		uFnJoinFriendGame = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnJoinFriendGame = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.JoinFriendGame");
 	}
 
 	UOnlineSubsystemSteamworks_execJoinFriendGame_Params JoinFriendGame_Params;
@@ -5021,11 +4709,7 @@ bool UOnlineSubsystemSteamworks::JoinFriendGame(uint8_t LocalUserNum, const stru
 	memcpy_s(&JoinFriendGame_Params.LocalUserNum, sizeof(JoinFriendGame_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&JoinFriendGame_Params.Friend, sizeof(JoinFriendGame_Params.Friend), &Friend, sizeof(Friend));
 
-	uFnJoinFriendGame->iNative = 0;
-	uFnJoinFriendGame->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnJoinFriendGame, &JoinFriendGame_Params, nullptr);
-	uFnJoinFriendGame->FunctionFlags |= 0x400;
-	uFnJoinFriendGame->iNative = 23002;
 
 	return JoinFriendGame_Params.ReturnValue;
 };
@@ -5042,7 +4726,7 @@ void UOnlineSubsystemSteamworks::ClearReceivedGameInviteDelegate(uint8_t LocalUs
 
 	if (!uFnClearReceivedGameInviteDelegate)
 	{
-		uFnClearReceivedGameInviteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReceivedGameInviteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReceivedGameInviteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReceivedGameInviteDelegate_Params ClearReceivedGameInviteDelegate_Params;
@@ -5065,7 +4749,7 @@ void UOnlineSubsystemSteamworks::AddReceivedGameInviteDelegate(uint8_t LocalUser
 
 	if (!uFnAddReceivedGameInviteDelegate)
 	{
-		uFnAddReceivedGameInviteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReceivedGameInviteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReceivedGameInviteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReceivedGameInviteDelegate_Params AddReceivedGameInviteDelegate_Params;
@@ -5088,7 +4772,7 @@ void UOnlineSubsystemSteamworks::OnReceivedGameInvite(uint8_t LocalUserNum, cons
 
 	if (!uFnOnReceivedGameInvite)
 	{
-		uFnOnReceivedGameInvite = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReceivedGameInvite = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReceivedGameInvite");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReceivedGameInvite_Params OnReceivedGameInvite_Params;
@@ -5100,7 +4784,7 @@ void UOnlineSubsystemSteamworks::OnReceivedGameInvite(uint8_t LocalUserNum, cons
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SendGameInviteToFriends
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[27669])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[27671])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5113,7 +4797,7 @@ bool UOnlineSubsystemSteamworks::SendGameInviteToFriends(uint8_t LocalUserNum, c
 
 	if (!uFnSendGameInviteToFriends)
 	{
-		uFnSendGameInviteToFriends = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnSendGameInviteToFriends = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SendGameInviteToFriends");
 	}
 
 	UOnlineSubsystemSteamworks_execSendGameInviteToFriends_Params SendGameInviteToFriends_Params;
@@ -5122,17 +4806,13 @@ bool UOnlineSubsystemSteamworks::SendGameInviteToFriends(uint8_t LocalUserNum, c
 	memcpy_s(&SendGameInviteToFriends_Params.Friends, sizeof(SendGameInviteToFriends_Params.Friends), &Friends, sizeof(Friends));
 	memcpy_s(&SendGameInviteToFriends_Params.Text, sizeof(SendGameInviteToFriends_Params.Text), &Text, sizeof(Text));
 
-	uFnSendGameInviteToFriends->iNative = 0;
-	uFnSendGameInviteToFriends->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendGameInviteToFriends, &SendGameInviteToFriends_Params, nullptr);
-	uFnSendGameInviteToFriends->FunctionFlags |= 0x400;
-	uFnSendGameInviteToFriends->iNative = 27669;
 
 	return SendGameInviteToFriends_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SendGameInviteToFriend
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[27668])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[27670])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5145,7 +4825,7 @@ bool UOnlineSubsystemSteamworks::SendGameInviteToFriend(uint8_t LocalUserNum, co
 
 	if (!uFnSendGameInviteToFriend)
 	{
-		uFnSendGameInviteToFriend = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnSendGameInviteToFriend = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SendGameInviteToFriend");
 	}
 
 	UOnlineSubsystemSteamworks_execSendGameInviteToFriend_Params SendGameInviteToFriend_Params;
@@ -5154,17 +4834,13 @@ bool UOnlineSubsystemSteamworks::SendGameInviteToFriend(uint8_t LocalUserNum, co
 	memcpy_s(&SendGameInviteToFriend_Params.Friend, sizeof(SendGameInviteToFriend_Params.Friend), &Friend, sizeof(Friend));
 	memcpy_s(&SendGameInviteToFriend_Params.Text, sizeof(SendGameInviteToFriend_Params.Text), &Text, sizeof(Text));
 
-	uFnSendGameInviteToFriend->iNative = 0;
-	uFnSendGameInviteToFriend->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendGameInviteToFriend, &SendGameInviteToFriend_Params, nullptr);
-	uFnSendGameInviteToFriend->FunctionFlags |= 0x400;
-	uFnSendGameInviteToFriend->iNative = 27668;
 
 	return SendGameInviteToFriend_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SendMessageToFriend
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27676])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27678])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5177,7 +4853,7 @@ bool UOnlineSubsystemSteamworks::SendMessageToFriendW(uint8_t LocalUserNum, cons
 
 	if (!uFnSendMessageToFriendW)
 	{
-		uFnSendMessageToFriendW = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnSendMessageToFriendW = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SendMessageToFriend");
 	}
 
 	UOnlineSubsystemSteamworks_execSendMessageToFriendW_Params SendMessageToFriendW_Params;
@@ -5186,11 +4862,7 @@ bool UOnlineSubsystemSteamworks::SendMessageToFriendW(uint8_t LocalUserNum, cons
 	memcpy_s(&SendMessageToFriendW_Params.Friend, sizeof(SendMessageToFriendW_Params.Friend), &Friend, sizeof(Friend));
 	memcpy_s(&SendMessageToFriendW_Params.Message, sizeof(SendMessageToFriendW_Params.Message), &Message, sizeof(Message));
 
-	uFnSendMessageToFriendW->iNative = 0;
-	uFnSendMessageToFriendW->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSendMessageToFriendW, &SendMessageToFriendW_Params, nullptr);
-	uFnSendMessageToFriendW->FunctionFlags |= 0x400;
-	uFnSendMessageToFriendW->iNative = 27676;
 
 	return SendMessageToFriendW_Params.ReturnValue;
 };
@@ -5207,7 +4879,7 @@ void UOnlineSubsystemSteamworks::ClearFriendInviteReceivedDelegate(uint8_t Local
 
 	if (!uFnClearFriendInviteReceivedDelegate)
 	{
-		uFnClearFriendInviteReceivedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearFriendInviteReceivedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFriendInviteReceivedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearFriendInviteReceivedDelegate_Params ClearFriendInviteReceivedDelegate_Params;
@@ -5230,7 +4902,7 @@ void UOnlineSubsystemSteamworks::AddFriendInviteReceivedDelegate(uint8_t LocalUs
 
 	if (!uFnAddFriendInviteReceivedDelegate)
 	{
-		uFnAddFriendInviteReceivedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddFriendInviteReceivedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriendInviteReceivedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddFriendInviteReceivedDelegate_Params AddFriendInviteReceivedDelegate_Params;
@@ -5255,7 +4927,7 @@ void UOnlineSubsystemSteamworks::OnFriendInviteReceived(uint8_t LocalUserNum, co
 
 	if (!uFnOnFriendInviteReceived)
 	{
-		uFnOnFriendInviteReceived = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnFriendInviteReceived = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnFriendInviteReceived");
 	}
 
 	UOnlineSubsystemSteamworks_execOnFriendInviteReceived_Params OnFriendInviteReceived_Params;
@@ -5269,7 +4941,7 @@ void UOnlineSubsystemSteamworks::OnFriendInviteReceived(uint8_t LocalUserNum, co
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DenyFriendInvite
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[19563])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[19565])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5281,7 +4953,7 @@ bool UOnlineSubsystemSteamworks::DenyFriendInvite(uint8_t LocalUserNum, const st
 
 	if (!uFnDenyFriendInvite)
 	{
-		uFnDenyFriendInvite = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnDenyFriendInvite = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DenyFriendInvite");
 	}
 
 	UOnlineSubsystemSteamworks_execDenyFriendInvite_Params DenyFriendInvite_Params;
@@ -5289,17 +4961,13 @@ bool UOnlineSubsystemSteamworks::DenyFriendInvite(uint8_t LocalUserNum, const st
 	memcpy_s(&DenyFriendInvite_Params.LocalUserNum, sizeof(DenyFriendInvite_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&DenyFriendInvite_Params.RequestingPlayer, sizeof(DenyFriendInvite_Params.RequestingPlayer), &RequestingPlayer, sizeof(RequestingPlayer));
 
-	uFnDenyFriendInvite->iNative = 0;
-	uFnDenyFriendInvite->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnDenyFriendInvite, &DenyFriendInvite_Params, nullptr);
-	uFnDenyFriendInvite->FunctionFlags |= 0x400;
-	uFnDenyFriendInvite->iNative = 19563;
 
 	return DenyFriendInvite_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AcceptFriendInvite
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[14411])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[14413])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5311,7 +4979,7 @@ bool UOnlineSubsystemSteamworks::AcceptFriendInvite(uint8_t LocalUserNum, const 
 
 	if (!uFnAcceptFriendInvite)
 	{
-		uFnAcceptFriendInvite = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAcceptFriendInvite = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AcceptFriendInvite");
 	}
 
 	UOnlineSubsystemSteamworks_execAcceptFriendInvite_Params AcceptFriendInvite_Params;
@@ -5319,17 +4987,13 @@ bool UOnlineSubsystemSteamworks::AcceptFriendInvite(uint8_t LocalUserNum, const 
 	memcpy_s(&AcceptFriendInvite_Params.LocalUserNum, sizeof(AcceptFriendInvite_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&AcceptFriendInvite_Params.RequestingPlayer, sizeof(AcceptFriendInvite_Params.RequestingPlayer), &RequestingPlayer, sizeof(RequestingPlayer));
 
-	uFnAcceptFriendInvite->iNative = 0;
-	uFnAcceptFriendInvite->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAcceptFriendInvite, &AcceptFriendInvite_Params, nullptr);
-	uFnAcceptFriendInvite->FunctionFlags |= 0x400;
-	uFnAcceptFriendInvite->iNative = 14411;
 
 	return AcceptFriendInvite_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RemoveFriend
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27085])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27087])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5341,7 +5005,7 @@ bool UOnlineSubsystemSteamworks::RemoveFriend(uint8_t LocalUserNum, const struct
 
 	if (!uFnRemoveFriend)
 	{
-		uFnRemoveFriend = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnRemoveFriend = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RemoveFriend");
 	}
 
 	UOnlineSubsystemSteamworks_execRemoveFriend_Params RemoveFriend_Params;
@@ -5349,11 +5013,7 @@ bool UOnlineSubsystemSteamworks::RemoveFriend(uint8_t LocalUserNum, const struct
 	memcpy_s(&RemoveFriend_Params.LocalUserNum, sizeof(RemoveFriend_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&RemoveFriend_Params.FormerFriend, sizeof(RemoveFriend_Params.FormerFriend), &FormerFriend, sizeof(FormerFriend));
 
-	uFnRemoveFriend->iNative = 0;
-	uFnRemoveFriend->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRemoveFriend, &RemoveFriend_Params, nullptr);
-	uFnRemoveFriend->FunctionFlags |= 0x400;
-	uFnRemoveFriend->iNative = 27085;
 
 	return RemoveFriend_Params.ReturnValue;
 };
@@ -5370,7 +5030,7 @@ void UOnlineSubsystemSteamworks::ClearAddFriendByNameCompleteDelegate(uint8_t Lo
 
 	if (!uFnClearAddFriendByNameCompleteDelegate)
 	{
-		uFnClearAddFriendByNameCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearAddFriendByNameCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearAddFriendByNameCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearAddFriendByNameCompleteDelegate_Params ClearAddFriendByNameCompleteDelegate_Params;
@@ -5393,7 +5053,7 @@ void UOnlineSubsystemSteamworks::AddAddFriendByNameCompleteDelegate(uint8_t Loca
 
 	if (!uFnAddAddFriendByNameCompleteDelegate)
 	{
-		uFnAddAddFriendByNameCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddAddFriendByNameCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddAddFriendByNameCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddAddFriendByNameCompleteDelegate_Params AddAddFriendByNameCompleteDelegate_Params;
@@ -5415,7 +5075,7 @@ void UOnlineSubsystemSteamworks::OnAddFriendByNameComplete(bool bWasSuccessful)
 
 	if (!uFnOnAddFriendByNameComplete)
 	{
-		uFnOnAddFriendByNameComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnAddFriendByNameComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnAddFriendByNameComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnAddFriendByNameComplete_Params OnAddFriendByNameComplete_Params;
@@ -5426,7 +5086,7 @@ void UOnlineSubsystemSteamworks::OnAddFriendByNameComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriendByName
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[14562])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[14564])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5439,7 +5099,7 @@ bool UOnlineSubsystemSteamworks::AddFriendByName(uint8_t LocalUserNum, const cla
 
 	if (!uFnAddFriendByName)
 	{
-		uFnAddFriendByName = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddFriendByName = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriendByName");
 	}
 
 	UOnlineSubsystemSteamworks_execAddFriendByName_Params AddFriendByName_Params;
@@ -5448,17 +5108,13 @@ bool UOnlineSubsystemSteamworks::AddFriendByName(uint8_t LocalUserNum, const cla
 	memcpy_s(&AddFriendByName_Params.FriendName, sizeof(AddFriendByName_Params.FriendName), &FriendName, sizeof(FriendName));
 	memcpy_s(&AddFriendByName_Params.Message, sizeof(AddFriendByName_Params.Message), &Message, sizeof(Message));
 
-	uFnAddFriendByName->iNative = 0;
-	uFnAddFriendByName->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAddFriendByName, &AddFriendByName_Params, nullptr);
-	uFnAddFriendByName->FunctionFlags |= 0x400;
-	uFnAddFriendByName->iNative = 14562;
 
 	return AddFriendByName_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriend
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[14561])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[14563])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5471,7 +5127,7 @@ bool UOnlineSubsystemSteamworks::AddFriend(uint8_t LocalUserNum, const struct FU
 
 	if (!uFnAddFriend)
 	{
-		uFnAddFriend = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddFriend = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriend");
 	}
 
 	UOnlineSubsystemSteamworks_execAddFriend_Params AddFriend_Params;
@@ -5480,11 +5136,7 @@ bool UOnlineSubsystemSteamworks::AddFriend(uint8_t LocalUserNum, const struct FU
 	memcpy_s(&AddFriend_Params.NewFriend, sizeof(AddFriend_Params.NewFriend), &NewFriend, sizeof(NewFriend));
 	memcpy_s(&AddFriend_Params.Message, sizeof(AddFriend_Params.Message), &Message, sizeof(Message));
 
-	uFnAddFriend->iNative = 0;
-	uFnAddFriend->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAddFriend, &AddFriend_Params, nullptr);
-	uFnAddFriend->FunctionFlags |= 0x400;
-	uFnAddFriend->iNative = 14561;
 
 	return AddFriend_Params.ReturnValue;
 };
@@ -5501,7 +5153,7 @@ class FString UOnlineSubsystemSteamworks::GetKeyboardInputResults(uint8_t& bWasC
 
 	if (!uFnGetKeyboardInputResults)
 	{
-		uFnGetKeyboardInputResults = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetKeyboardInputResults = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetKeyboardInputResults");
 	}
 
 	UOnlineSubsystemSteamworks_execGetKeyboardInputResults_Params GetKeyboardInputResults_Params;
@@ -5526,7 +5178,7 @@ void UOnlineSubsystemSteamworks::ClearKeyboardInputDoneDelegate(const struct FSc
 
 	if (!uFnClearKeyboardInputDoneDelegate)
 	{
-		uFnClearKeyboardInputDoneDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearKeyboardInputDoneDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearKeyboardInputDoneDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearKeyboardInputDoneDelegate_Params ClearKeyboardInputDoneDelegate_Params;
@@ -5547,7 +5199,7 @@ void UOnlineSubsystemSteamworks::AddKeyboardInputDoneDelegate(const struct FScri
 
 	if (!uFnAddKeyboardInputDoneDelegate)
 	{
-		uFnAddKeyboardInputDoneDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddKeyboardInputDoneDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddKeyboardInputDoneDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddKeyboardInputDoneDelegate_Params AddKeyboardInputDoneDelegate_Params;
@@ -5568,7 +5220,7 @@ void UOnlineSubsystemSteamworks::OnKeyboardInputComplete(bool bWasSuccessful)
 
 	if (!uFnOnKeyboardInputComplete)
 	{
-		uFnOnKeyboardInputComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnKeyboardInputComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnKeyboardInputComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnKeyboardInputComplete_Params OnKeyboardInputComplete_Params;
@@ -5579,7 +5231,7 @@ void UOnlineSubsystemSteamworks::OnKeyboardInputComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowKeyboardUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28313])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28315])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -5596,7 +5248,7 @@ bool UOnlineSubsystemSteamworks::ShowKeyboardUI(uint8_t LocalUserNum, const clas
 
 	if (!uFnShowKeyboardUI)
 	{
-		uFnShowKeyboardUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowKeyboardUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowKeyboardUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowKeyboardUI_Params ShowKeyboardUI_Params;
@@ -5609,17 +5261,13 @@ bool UOnlineSubsystemSteamworks::ShowKeyboardUI(uint8_t LocalUserNum, const clas
 	memcpy_s(&ShowKeyboardUI_Params.DefaultText, sizeof(ShowKeyboardUI_Params.DefaultText), &DefaultText, sizeof(DefaultText));
 	memcpy_s(&ShowKeyboardUI_Params.MaxResultLength, sizeof(ShowKeyboardUI_Params.MaxResultLength), &MaxResultLength, sizeof(MaxResultLength));
 
-	uFnShowKeyboardUI->iNative = 0;
-	uFnShowKeyboardUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowKeyboardUI, &ShowKeyboardUI_Params, nullptr);
-	uFnShowKeyboardUI->FunctionFlags |= 0x400;
-	uFnShowKeyboardUI->iNative = 28313;
 
 	return ShowKeyboardUI_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetOnlineStatus
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[28063])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[28065])
 // Parameter Info:
 // uint8_t                        LocalUserNum                   (CPF_Parm)
 // int32_t                        StatusId                       (CPF_Parm)
@@ -5632,7 +5280,7 @@ void UOnlineSubsystemSteamworks::SetOnlineStatus(uint8_t LocalUserNum, int32_t S
 
 	if (!uFnSetOnlineStatus)
 	{
-		uFnSetOnlineStatus = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnSetOnlineStatus = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetOnlineStatus");
 	}
 
 	UOnlineSubsystemSteamworks_execSetOnlineStatus_Params SetOnlineStatus_Params;
@@ -5642,11 +5290,7 @@ void UOnlineSubsystemSteamworks::SetOnlineStatus(uint8_t LocalUserNum, int32_t S
 	memcpy_s(&SetOnlineStatus_Params.LocalizedStringSettings, sizeof(SetOnlineStatus_Params.LocalizedStringSettings), &LocalizedStringSettings, sizeof(LocalizedStringSettings));
 	memcpy_s(&SetOnlineStatus_Params.Properties, sizeof(SetOnlineStatus_Params.Properties), &Properties, sizeof(Properties));
 
-	uFnSetOnlineStatus->iNative = 0;
-	uFnSetOnlineStatus->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetOnlineStatus, &SetOnlineStatus_Params, nullptr);
-	uFnSetOnlineStatus->FunctionFlags |= 0x400;
-	uFnSetOnlineStatus->iNative = 28063;
 
 	memcpy_s(&LocalizedStringSettings, sizeof(LocalizedStringSettings), &SetOnlineStatus_Params.LocalizedStringSettings, sizeof(SetOnlineStatus_Params.LocalizedStringSettings));
 	memcpy_s(&Properties, sizeof(Properties), &SetOnlineStatus_Params.Properties, sizeof(SetOnlineStatus_Params.Properties));
@@ -5664,7 +5308,7 @@ bool UOnlineSubsystemSteamworks::GetLocalAccountNames(class TArray<class FString
 
 	if (!uFnGetLocalAccountNames)
 	{
-		uFnGetLocalAccountNames = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetLocalAccountNames = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetLocalAccountNames");
 	}
 
 	UOnlineSubsystemSteamworks_execGetLocalAccountNames_Params GetLocalAccountNames_Params;
@@ -5691,7 +5335,7 @@ bool UOnlineSubsystemSteamworks::DeleteLocalAccount(const class FString& UserNam
 
 	if (!uFnDeleteLocalAccount)
 	{
-		uFnDeleteLocalAccount = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnDeleteLocalAccount = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.DeleteLocalAccount");
 	}
 
 	UOnlineSubsystemSteamworks_execDeleteLocalAccount_Params DeleteLocalAccount_Params;
@@ -5718,7 +5362,7 @@ bool UOnlineSubsystemSteamworks::RenameLocalAccount(const class FString& NewUser
 
 	if (!uFnRenameLocalAccount)
 	{
-		uFnRenameLocalAccount = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnRenameLocalAccount = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RenameLocalAccount");
 	}
 
 	UOnlineSubsystemSteamworks_execRenameLocalAccount_Params RenameLocalAccount_Params;
@@ -5745,7 +5389,7 @@ bool UOnlineSubsystemSteamworks::CreateLocalAccount(const class FString& UserNam
 
 	if (!uFnCreateLocalAccount)
 	{
-		uFnCreateLocalAccount = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnCreateLocalAccount = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CreateLocalAccount");
 	}
 
 	UOnlineSubsystemSteamworks_execCreateLocalAccount_Params CreateLocalAccount_Params;
@@ -5769,7 +5413,7 @@ void UOnlineSubsystemSteamworks::ClearCreateOnlineAccountCompletedDelegate(const
 
 	if (!uFnClearCreateOnlineAccountCompletedDelegate)
 	{
-		uFnClearCreateOnlineAccountCompletedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearCreateOnlineAccountCompletedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearCreateOnlineAccountCompletedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearCreateOnlineAccountCompletedDelegate_Params ClearCreateOnlineAccountCompletedDelegate_Params;
@@ -5790,7 +5434,7 @@ void UOnlineSubsystemSteamworks::AddCreateOnlineAccountCompletedDelegate(const s
 
 	if (!uFnAddCreateOnlineAccountCompletedDelegate)
 	{
-		uFnAddCreateOnlineAccountCompletedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddCreateOnlineAccountCompletedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddCreateOnlineAccountCompletedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddCreateOnlineAccountCompletedDelegate_Params AddCreateOnlineAccountCompletedDelegate_Params;
@@ -5811,7 +5455,7 @@ void UOnlineSubsystemSteamworks::OnCreateOnlineAccountCompleted(EOnlineAccountCr
 
 	if (!uFnOnCreateOnlineAccountCompleted)
 	{
-		uFnOnCreateOnlineAccountCompleted = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnCreateOnlineAccountCompleted = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnCreateOnlineAccountCompleted");
 	}
 
 	UOnlineSubsystemSteamworks_execOnCreateOnlineAccountCompleted_Params OnCreateOnlineAccountCompleted_Params;
@@ -5822,7 +5466,7 @@ void UOnlineSubsystemSteamworks::OnCreateOnlineAccountCompleted(EOnlineAccountCr
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CreateOnlineAccount
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[18982])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[18984])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  UserName                       (CPF_Parm | CPF_NeedCtorLink)
@@ -5836,7 +5480,7 @@ bool UOnlineSubsystemSteamworks::CreateOnlineAccount(const class FString& UserNa
 
 	if (!uFnCreateOnlineAccount)
 	{
-		uFnCreateOnlineAccount = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnCreateOnlineAccount = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CreateOnlineAccount");
 	}
 
 	UOnlineSubsystemSteamworks_execCreateOnlineAccount_Params CreateOnlineAccount_Params;
@@ -5846,11 +5490,7 @@ bool UOnlineSubsystemSteamworks::CreateOnlineAccount(const class FString& UserNa
 	memcpy_s(&CreateOnlineAccount_Params.EmailAddress, sizeof(CreateOnlineAccount_Params.EmailAddress), &EmailAddress, sizeof(EmailAddress));
 	memcpy_s(&CreateOnlineAccount_Params.ProductKey, sizeof(CreateOnlineAccount_Params.ProductKey), &ProductKey, sizeof(ProductKey));
 
-	uFnCreateOnlineAccount->iNative = 0;
-	uFnCreateOnlineAccount->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCreateOnlineAccount, &CreateOnlineAccount_Params, nullptr);
-	uFnCreateOnlineAccount->FunctionFlags |= 0x400;
-	uFnCreateOnlineAccount->iNative = 18982;
 
 	return CreateOnlineAccount_Params.ReturnValue;
 };
@@ -5867,7 +5507,7 @@ EOnlineEnumerationReadState UOnlineSubsystemSteamworks::GetTitleFileState(const 
 
 	if (!uFnGetTitleFileState)
 	{
-		uFnGetTitleFileState = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetTitleFileState = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetTitleFileState");
 	}
 
 	UOnlineSubsystemSteamworks_execGetTitleFileState_Params GetTitleFileState_Params;
@@ -5880,7 +5520,7 @@ EOnlineEnumerationReadState UOnlineSubsystemSteamworks::GetTitleFileState(const 
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetTitleFileContents
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[22032])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[22034])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  Filename                       (CPF_Parm | CPF_NeedCtorLink)
@@ -5892,7 +5532,7 @@ bool UOnlineSubsystemSteamworks::GetTitleFileContents(const class FString& Filen
 
 	if (!uFnGetTitleFileContents)
 	{
-		uFnGetTitleFileContents = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetTitleFileContents = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetTitleFileContents");
 	}
 
 	UOnlineSubsystemSteamworks_execGetTitleFileContents_Params GetTitleFileContents_Params;
@@ -5900,11 +5540,7 @@ bool UOnlineSubsystemSteamworks::GetTitleFileContents(const class FString& Filen
 	memcpy_s(&GetTitleFileContents_Params.Filename, sizeof(GetTitleFileContents_Params.Filename), &Filename, sizeof(Filename));
 	memcpy_s(&GetTitleFileContents_Params.FileContents, sizeof(GetTitleFileContents_Params.FileContents), &FileContents, sizeof(FileContents));
 
-	uFnGetTitleFileContents->iNative = 0;
-	uFnGetTitleFileContents->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetTitleFileContents, &GetTitleFileContents_Params, nullptr);
-	uFnGetTitleFileContents->FunctionFlags |= 0x400;
-	uFnGetTitleFileContents->iNative = 22032;
 
 	memcpy_s(&FileContents, sizeof(FileContents), &GetTitleFileContents_Params.FileContents, sizeof(GetTitleFileContents_Params.FileContents));
 
@@ -5922,7 +5558,7 @@ void UOnlineSubsystemSteamworks::ClearReadTitleFileCompleteDelegate(const struct
 
 	if (!uFnClearReadTitleFileCompleteDelegate)
 	{
-		uFnClearReadTitleFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReadTitleFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadTitleFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReadTitleFileCompleteDelegate_Params ClearReadTitleFileCompleteDelegate_Params;
@@ -5943,7 +5579,7 @@ void UOnlineSubsystemSteamworks::AddReadTitleFileCompleteDelegate(const struct F
 
 	if (!uFnAddReadTitleFileCompleteDelegate)
 	{
-		uFnAddReadTitleFileCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReadTitleFileCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadTitleFileCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReadTitleFileCompleteDelegate_Params AddReadTitleFileCompleteDelegate_Params;
@@ -5954,7 +5590,7 @@ void UOnlineSubsystemSteamworks::AddReadTitleFileCompleteDelegate(const struct F
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadTitleFile
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26884])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26886])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FString                  FileToRead                     (CPF_Parm | CPF_NeedCtorLink)
@@ -5965,18 +5601,14 @@ bool UOnlineSubsystemSteamworks::ReadTitleFile(const class FString& FileToRead)
 
 	if (!uFnReadTitleFile)
 	{
-		uFnReadTitleFile = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadTitleFile = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadTitleFile");
 	}
 
 	UOnlineSubsystemSteamworks_execReadTitleFile_Params ReadTitleFile_Params;
 	memset(&ReadTitleFile_Params, 0, sizeof(ReadTitleFile_Params));
 	memcpy_s(&ReadTitleFile_Params.FileToRead, sizeof(ReadTitleFile_Params.FileToRead), &FileToRead, sizeof(FileToRead));
 
-	uFnReadTitleFile->iNative = 0;
-	uFnReadTitleFile->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadTitleFile, &ReadTitleFile_Params, nullptr);
-	uFnReadTitleFile->FunctionFlags |= 0x400;
-	uFnReadTitleFile->iNative = 26884;
 
 	return ReadTitleFile_Params.ReturnValue;
 };
@@ -5993,7 +5625,7 @@ void UOnlineSubsystemSteamworks::OnReadTitleFileComplete(bool bWasSuccessful, co
 
 	if (!uFnOnReadTitleFileComplete)
 	{
-		uFnOnReadTitleFileComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadTitleFileComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadTitleFileComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadTitleFileComplete_Params OnReadTitleFileComplete_Params;
@@ -6015,7 +5647,7 @@ void UOnlineSubsystemSteamworks::ClearStorageDeviceChangeDelegate(const struct F
 
 	if (!uFnClearStorageDeviceChangeDelegate)
 	{
-		uFnClearStorageDeviceChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearStorageDeviceChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearStorageDeviceChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearStorageDeviceChangeDelegate_Params ClearStorageDeviceChangeDelegate_Params;
@@ -6036,7 +5668,7 @@ void UOnlineSubsystemSteamworks::AddStorageDeviceChangeDelegate(const struct FSc
 
 	if (!uFnAddStorageDeviceChangeDelegate)
 	{
-		uFnAddStorageDeviceChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddStorageDeviceChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddStorageDeviceChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddStorageDeviceChangeDelegate_Params AddStorageDeviceChangeDelegate_Params;
@@ -6056,7 +5688,7 @@ void UOnlineSubsystemSteamworks::OnStorageDeviceChange()
 
 	if (!uFnOnStorageDeviceChange)
 	{
-		uFnOnStorageDeviceChange = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnStorageDeviceChange = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnStorageDeviceChange");
 	}
 
 	UOnlineSubsystemSteamworks_execOnStorageDeviceChange_Params OnStorageDeviceChange_Params;
@@ -6076,7 +5708,7 @@ int32_t UOnlineSubsystemSteamworks::GetLocale()
 
 	if (!uFnGetLocale)
 	{
-		uFnGetLocale = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetLocale = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetLocale");
 	}
 
 	UOnlineSubsystemSteamworks_execGetLocale_Params GetLocale_Params;
@@ -6098,17 +5730,13 @@ ENATType UOnlineSubsystemSteamworks::GetNATType()
 
 	if (!uFnGetNATType)
 	{
-		uFnGetNATType = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetNATType = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetNATType");
 	}
 
 	UOnlineSubsystemSteamworks_execGetNATType_Params GetNATType_Params;
 	memset(&GetNATType_Params, 0, sizeof(GetNATType_Params));
 
-	uFnGetNATType->iNative = 0;
-	uFnGetNATType->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetNATType, &GetNATType_Params, nullptr);
-	uFnGetNATType->FunctionFlags |= 0x400;
-	uFnGetNATType->iNative = 12714;
 
 	return static_cast<ENATType>(GetNATType_Params.ReturnValue);
 };
@@ -6124,7 +5752,7 @@ void UOnlineSubsystemSteamworks::ClearConnectionStatusChangeDelegate(const struc
 
 	if (!uFnClearConnectionStatusChangeDelegate)
 	{
-		uFnClearConnectionStatusChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearConnectionStatusChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearConnectionStatusChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearConnectionStatusChangeDelegate_Params ClearConnectionStatusChangeDelegate_Params;
@@ -6145,7 +5773,7 @@ void UOnlineSubsystemSteamworks::AddConnectionStatusChangeDelegate(const struct 
 
 	if (!uFnAddConnectionStatusChangeDelegate)
 	{
-		uFnAddConnectionStatusChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddConnectionStatusChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddConnectionStatusChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddConnectionStatusChangeDelegate_Params AddConnectionStatusChangeDelegate_Params;
@@ -6166,7 +5794,7 @@ void UOnlineSubsystemSteamworks::OnConnectionStatusChange(EOnlineServerConnectio
 
 	if (!uFnOnConnectionStatusChange)
 	{
-		uFnOnConnectionStatusChange = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnConnectionStatusChange = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnConnectionStatusChange");
 	}
 
 	UOnlineSubsystemSteamworks_execOnConnectionStatusChange_Params OnConnectionStatusChange_Params;
@@ -6177,7 +5805,7 @@ void UOnlineSubsystemSteamworks::OnConnectionStatusChange(EOnlineServerConnectio
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsControllerConnected
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22879])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22881])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // int32_t                        ControllerId                   (CPF_Parm)
@@ -6188,18 +5816,14 @@ bool UOnlineSubsystemSteamworks::IsControllerConnected(int32_t ControllerId)
 
 	if (!uFnIsControllerConnected)
 	{
-		uFnIsControllerConnected = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnIsControllerConnected = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsControllerConnected");
 	}
 
 	UOnlineSubsystemSteamworks_execIsControllerConnected_Params IsControllerConnected_Params;
 	memset(&IsControllerConnected_Params, 0, sizeof(IsControllerConnected_Params));
 	memcpy_s(&IsControllerConnected_Params.ControllerId, sizeof(IsControllerConnected_Params.ControllerId), &ControllerId, sizeof(ControllerId));
 
-	uFnIsControllerConnected->iNative = 0;
-	uFnIsControllerConnected->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsControllerConnected, &IsControllerConnected_Params, nullptr);
-	uFnIsControllerConnected->FunctionFlags |= 0x400;
-	uFnIsControllerConnected->iNative = 22879;
 
 	return IsControllerConnected_Params.ReturnValue;
 };
@@ -6215,7 +5839,7 @@ void UOnlineSubsystemSteamworks::ClearControllerChangeDelegate(const struct FScr
 
 	if (!uFnClearControllerChangeDelegate)
 	{
-		uFnClearControllerChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearControllerChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearControllerChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearControllerChangeDelegate_Params ClearControllerChangeDelegate_Params;
@@ -6236,7 +5860,7 @@ void UOnlineSubsystemSteamworks::AddControllerChangeDelegate(const struct FScrip
 
 	if (!uFnAddControllerChangeDelegate)
 	{
-		uFnAddControllerChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddControllerChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddControllerChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddControllerChangeDelegate_Params AddControllerChangeDelegate_Params;
@@ -6258,7 +5882,7 @@ void UOnlineSubsystemSteamworks::OnControllerChange(int32_t ControllerId, bool b
 
 	if (!uFnOnControllerChange)
 	{
-		uFnOnControllerChange = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnControllerChange = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnControllerChange");
 	}
 
 	UOnlineSubsystemSteamworks_execOnControllerChange_Params OnControllerChange_Params;
@@ -6270,7 +5894,7 @@ void UOnlineSubsystemSteamworks::OnControllerChange(int32_t ControllerId, bool b
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetNetworkNotificationPosition
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28057])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28059])
 // Parameter Info:
 // ENetworkNotificationPosition   NewPos                         (CPF_Parm)
 
@@ -6280,18 +5904,14 @@ void UOnlineSubsystemSteamworks::SetNetworkNotificationPosition(ENetworkNotifica
 
 	if (!uFnSetNetworkNotificationPosition)
 	{
-		uFnSetNetworkNotificationPosition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnSetNetworkNotificationPosition = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetNetworkNotificationPosition");
 	}
 
 	UOnlineSubsystemSteamworks_execSetNetworkNotificationPosition_Params SetNetworkNotificationPosition_Params;
 	memset(&SetNetworkNotificationPosition_Params, 0, sizeof(SetNetworkNotificationPosition_Params));
 	memcpy_s(&SetNetworkNotificationPosition_Params.NewPos, sizeof(SetNetworkNotificationPosition_Params.NewPos), &NewPos, sizeof(NewPos));
 
-	uFnSetNetworkNotificationPosition->iNative = 0;
-	uFnSetNetworkNotificationPosition->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetNetworkNotificationPosition, &SetNetworkNotificationPosition_Params, nullptr);
-	uFnSetNetworkNotificationPosition->FunctionFlags |= 0x400;
-	uFnSetNetworkNotificationPosition->iNative = 28057;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetNetworkNotificationPosition
@@ -6305,7 +5925,7 @@ ENetworkNotificationPosition UOnlineSubsystemSteamworks::GetNetworkNotificationP
 
 	if (!uFnGetNetworkNotificationPosition)
 	{
-		uFnGetNetworkNotificationPosition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetNetworkNotificationPosition = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetNetworkNotificationPosition");
 	}
 
 	UOnlineSubsystemSteamworks_execGetNetworkNotificationPosition_Params GetNetworkNotificationPosition_Params;
@@ -6327,7 +5947,7 @@ void UOnlineSubsystemSteamworks::ClearExternalUIChangeDelegate(const struct FScr
 
 	if (!uFnClearExternalUIChangeDelegate)
 	{
-		uFnClearExternalUIChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearExternalUIChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearExternalUIChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearExternalUIChangeDelegate_Params ClearExternalUIChangeDelegate_Params;
@@ -6348,7 +5968,7 @@ void UOnlineSubsystemSteamworks::AddExternalUIChangeDelegate(const struct FScrip
 
 	if (!uFnAddExternalUIChangeDelegate)
 	{
-		uFnAddExternalUIChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddExternalUIChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddExternalUIChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddExternalUIChangeDelegate_Params AddExternalUIChangeDelegate_Params;
@@ -6369,7 +5989,7 @@ void UOnlineSubsystemSteamworks::OnExternalUIChange(bool bIsOpening)
 
 	if (!uFnOnExternalUIChange)
 	{
-		uFnOnExternalUIChange = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnExternalUIChange = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnExternalUIChange");
 	}
 
 	UOnlineSubsystemSteamworks_execOnExternalUIChange_Params OnExternalUIChange_Params;
@@ -6390,7 +6010,7 @@ void UOnlineSubsystemSteamworks::ClearLinkStatusChangeDelegate(const struct FScr
 
 	if (!uFnClearLinkStatusChangeDelegate)
 	{
-		uFnClearLinkStatusChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearLinkStatusChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLinkStatusChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearLinkStatusChangeDelegate_Params ClearLinkStatusChangeDelegate_Params;
@@ -6411,7 +6031,7 @@ void UOnlineSubsystemSteamworks::AddLinkStatusChangeDelegate(const struct FScrip
 
 	if (!uFnAddLinkStatusChangeDelegate)
 	{
-		uFnAddLinkStatusChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddLinkStatusChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLinkStatusChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddLinkStatusChangeDelegate_Params AddLinkStatusChangeDelegate_Params;
@@ -6432,7 +6052,7 @@ void UOnlineSubsystemSteamworks::OnLinkStatusChange(bool bIsConnected)
 
 	if (!uFnOnLinkStatusChange)
 	{
-		uFnOnLinkStatusChange = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnLinkStatusChange = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnLinkStatusChange");
 	}
 
 	UOnlineSubsystemSteamworks_execOnLinkStatusChange_Params OnLinkStatusChange_Params;
@@ -6453,17 +6073,13 @@ bool UOnlineSubsystemSteamworks::HasLinkConnection()
 
 	if (!uFnHasLinkConnection)
 	{
-		uFnHasLinkConnection = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnHasLinkConnection = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.HasLinkConnection");
 	}
 
 	UOnlineSubsystemSteamworks_execHasLinkConnection_Params HasLinkConnection_Params;
 	memset(&HasLinkConnection_Params, 0, sizeof(HasLinkConnection_Params));
 
-	uFnHasLinkConnection->iNative = 0;
-	uFnHasLinkConnection->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnHasLinkConnection, &HasLinkConnection_Params, nullptr);
-	uFnHasLinkConnection->FunctionFlags |= 0x400;
-	uFnHasLinkConnection->iNative = 12744;
 
 	return HasLinkConnection_Params.ReturnValue;
 };
@@ -6480,7 +6096,7 @@ class FString UOnlineSubsystemSteamworks::eventGetPlayerNicknameFromIndex(int32_
 
 	if (!uFnGetPlayerNicknameFromIndex)
 	{
-		uFnGetPlayerNicknameFromIndex = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetPlayerNicknameFromIndex = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetPlayerNicknameFromIndex");
 	}
 
 	UOnlineSubsystemSteamworks_eventGetPlayerNicknameFromIndex_Params GetPlayerNicknameFromIndex_Params;
@@ -6493,7 +6109,7 @@ class FString UOnlineSubsystemSteamworks::eventGetPlayerNicknameFromIndex(int32_
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteOnlinePlayerScores
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30354])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[30356])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -6506,7 +6122,7 @@ bool UOnlineSubsystemSteamworks::WriteOnlinePlayerScores(const class FName& Sess
 
 	if (!uFnWriteOnlinePlayerScores)
 	{
-		uFnWriteOnlinePlayerScores = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnWriteOnlinePlayerScores = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteOnlinePlayerScores");
 	}
 
 	UOnlineSubsystemSteamworks_execWriteOnlinePlayerScores_Params WriteOnlinePlayerScores_Params;
@@ -6515,11 +6131,7 @@ bool UOnlineSubsystemSteamworks::WriteOnlinePlayerScores(const class FName& Sess
 	memcpy_s(&WriteOnlinePlayerScores_Params.LeaderboardId, sizeof(WriteOnlinePlayerScores_Params.LeaderboardId), &LeaderboardId, sizeof(LeaderboardId));
 	memcpy_s(&WriteOnlinePlayerScores_Params.PlayerScores, sizeof(WriteOnlinePlayerScores_Params.PlayerScores), &PlayerScores, sizeof(PlayerScores));
 
-	uFnWriteOnlinePlayerScores->iNative = 0;
-	uFnWriteOnlinePlayerScores->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteOnlinePlayerScores, &WriteOnlinePlayerScores_Params, nullptr);
-	uFnWriteOnlinePlayerScores->FunctionFlags |= 0x400;
-	uFnWriteOnlinePlayerScores->iNative = 30354;
 
 	memcpy_s(&PlayerScores, sizeof(PlayerScores), &WriteOnlinePlayerScores_Params.PlayerScores, sizeof(WriteOnlinePlayerScores_Params.PlayerScores));
 
@@ -6537,7 +6149,7 @@ void UOnlineSubsystemSteamworks::ClearFlushOnlineStatsCompleteDelegate(const str
 
 	if (!uFnClearFlushOnlineStatsCompleteDelegate)
 	{
-		uFnClearFlushOnlineStatsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearFlushOnlineStatsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFlushOnlineStatsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearFlushOnlineStatsCompleteDelegate_Params ClearFlushOnlineStatsCompleteDelegate_Params;
@@ -6558,7 +6170,7 @@ void UOnlineSubsystemSteamworks::AddFlushOnlineStatsCompleteDelegate(const struc
 
 	if (!uFnAddFlushOnlineStatsCompleteDelegate)
 	{
-		uFnAddFlushOnlineStatsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddFlushOnlineStatsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFlushOnlineStatsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddFlushOnlineStatsCompleteDelegate_Params AddFlushOnlineStatsCompleteDelegate_Params;
@@ -6580,7 +6192,7 @@ void UOnlineSubsystemSteamworks::OnFlushOnlineStatsComplete(const class FName& S
 
 	if (!uFnOnFlushOnlineStatsComplete)
 	{
-		uFnOnFlushOnlineStatsComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnFlushOnlineStatsComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnFlushOnlineStatsComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnFlushOnlineStatsComplete_Params OnFlushOnlineStatsComplete_Params;
@@ -6592,7 +6204,7 @@ void UOnlineSubsystemSteamworks::OnFlushOnlineStatsComplete(const class FName& S
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.FlushOnlineStats
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21153])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21155])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -6603,24 +6215,20 @@ bool UOnlineSubsystemSteamworks::FlushOnlineStats(const class FName& SessionName
 
 	if (!uFnFlushOnlineStats)
 	{
-		uFnFlushOnlineStats = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnFlushOnlineStats = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.FlushOnlineStats");
 	}
 
 	UOnlineSubsystemSteamworks_execFlushOnlineStats_Params FlushOnlineStats_Params;
 	memset(&FlushOnlineStats_Params, 0, sizeof(FlushOnlineStats_Params));
 	memcpy_s(&FlushOnlineStats_Params.SessionName, sizeof(FlushOnlineStats_Params.SessionName), &SessionName, sizeof(SessionName));
 
-	uFnFlushOnlineStats->iNative = 0;
-	uFnFlushOnlineStats->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFlushOnlineStats, &FlushOnlineStats_Params, nullptr);
-	uFnFlushOnlineStats->FunctionFlags |= 0x400;
-	uFnFlushOnlineStats->iNative = 21153;
 
 	return FlushOnlineStats_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteOnlineStats
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30355])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30357])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class FName                    SessionName                    (CPF_Parm)
@@ -6633,7 +6241,7 @@ bool UOnlineSubsystemSteamworks::WriteOnlineStats(const class FName& SessionName
 
 	if (!uFnWriteOnlineStats)
 	{
-		uFnWriteOnlineStats = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnWriteOnlineStats = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteOnlineStats");
 	}
 
 	UOnlineSubsystemSteamworks_execWriteOnlineStats_Params WriteOnlineStats_Params;
@@ -6642,17 +6250,13 @@ bool UOnlineSubsystemSteamworks::WriteOnlineStats(const class FName& SessionName
 	memcpy_s(&WriteOnlineStats_Params.Player, sizeof(WriteOnlineStats_Params.Player), &Player, sizeof(Player));
 	WriteOnlineStats_Params.StatsWrite = StatsWrite;
 
-	uFnWriteOnlineStats->iNative = 0;
-	uFnWriteOnlineStats->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteOnlineStats, &WriteOnlineStats_Params, nullptr);
-	uFnWriteOnlineStats->FunctionFlags |= 0x400;
-	uFnWriteOnlineStats->iNative = 30355;
 
 	return WriteOnlineStats_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.FreeStats
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21361])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[21363])
 // Parameter Info:
 // class UOnlineStatsRead*        StatsRead                      (CPF_Parm)
 
@@ -6662,18 +6266,14 @@ void UOnlineSubsystemSteamworks::FreeStats(class UOnlineStatsRead* StatsRead)
 
 	if (!uFnFreeStats)
 	{
-		uFnFreeStats = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnFreeStats = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.FreeStats");
 	}
 
 	UOnlineSubsystemSteamworks_execFreeStats_Params FreeStats_Params;
 	memset(&FreeStats_Params, 0, sizeof(FreeStats_Params));
 	FreeStats_Params.StatsRead = StatsRead;
 
-	uFnFreeStats->iNative = 0;
-	uFnFreeStats->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnFreeStats, &FreeStats_Params, nullptr);
-	uFnFreeStats->FunctionFlags |= 0x400;
-	uFnFreeStats->iNative = 21361;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadOnlineStatsCompleteDelegate
@@ -6687,7 +6287,7 @@ void UOnlineSubsystemSteamworks::ClearReadOnlineStatsCompleteDelegate(const stru
 
 	if (!uFnClearReadOnlineStatsCompleteDelegate)
 	{
-		uFnClearReadOnlineStatsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReadOnlineStatsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadOnlineStatsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReadOnlineStatsCompleteDelegate_Params ClearReadOnlineStatsCompleteDelegate_Params;
@@ -6708,7 +6308,7 @@ void UOnlineSubsystemSteamworks::AddReadOnlineStatsCompleteDelegate(const struct
 
 	if (!uFnAddReadOnlineStatsCompleteDelegate)
 	{
-		uFnAddReadOnlineStatsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReadOnlineStatsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadOnlineStatsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReadOnlineStatsCompleteDelegate_Params AddReadOnlineStatsCompleteDelegate_Params;
@@ -6729,7 +6329,7 @@ void UOnlineSubsystemSteamworks::OnReadOnlineStatsComplete(bool bWasSuccessful)
 
 	if (!uFnOnReadOnlineStatsComplete)
 	{
-		uFnOnReadOnlineStatsComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadOnlineStatsComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadOnlineStatsComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadOnlineStatsComplete_Params OnReadOnlineStatsComplete_Params;
@@ -6740,7 +6340,7 @@ void UOnlineSubsystemSteamworks::OnReadOnlineStatsComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStatsByRankAroundPlayer
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26868])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26870])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -6753,7 +6353,7 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStatsByRankAroundPlayer(uint8_t Local
 
 	if (!uFnReadOnlineStatsByRankAroundPlayer)
 	{
-		uFnReadOnlineStatsByRankAroundPlayer = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadOnlineStatsByRankAroundPlayer = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStatsByRankAroundPlayer");
 	}
 
 	UOnlineSubsystemSteamworks_execReadOnlineStatsByRankAroundPlayer_Params ReadOnlineStatsByRankAroundPlayer_Params;
@@ -6762,17 +6362,13 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStatsByRankAroundPlayer(uint8_t Local
 	ReadOnlineStatsByRankAroundPlayer_Params.StatsRead = StatsRead;
 	memcpy_s(&ReadOnlineStatsByRankAroundPlayer_Params.NumRows, sizeof(ReadOnlineStatsByRankAroundPlayer_Params.NumRows), &NumRows, sizeof(NumRows));
 
-	uFnReadOnlineStatsByRankAroundPlayer->iNative = 0;
-	uFnReadOnlineStatsByRankAroundPlayer->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadOnlineStatsByRankAroundPlayer, &ReadOnlineStatsByRankAroundPlayer_Params, nullptr);
-	uFnReadOnlineStatsByRankAroundPlayer->FunctionFlags |= 0x400;
-	uFnReadOnlineStatsByRankAroundPlayer->iNative = 26868;
 
 	return ReadOnlineStatsByRankAroundPlayer_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStatsByRank
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26867])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26869])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class UOnlineStatsRead*        StatsRead                      (CPF_Parm)
@@ -6785,7 +6381,7 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStatsByRank(class UOnlineStatsRead* S
 
 	if (!uFnReadOnlineStatsByRank)
 	{
-		uFnReadOnlineStatsByRank = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadOnlineStatsByRank = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStatsByRank");
 	}
 
 	UOnlineSubsystemSteamworks_execReadOnlineStatsByRank_Params ReadOnlineStatsByRank_Params;
@@ -6794,17 +6390,13 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStatsByRank(class UOnlineStatsRead* S
 	memcpy_s(&ReadOnlineStatsByRank_Params.StartIndex, sizeof(ReadOnlineStatsByRank_Params.StartIndex), &StartIndex, sizeof(StartIndex));
 	memcpy_s(&ReadOnlineStatsByRank_Params.NumToRead, sizeof(ReadOnlineStatsByRank_Params.NumToRead), &NumToRead, sizeof(NumToRead));
 
-	uFnReadOnlineStatsByRank->iNative = 0;
-	uFnReadOnlineStatsByRank->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadOnlineStatsByRank, &ReadOnlineStatsByRank_Params, nullptr);
-	uFnReadOnlineStatsByRank->FunctionFlags |= 0x400;
-	uFnReadOnlineStatsByRank->iNative = 26867;
 
 	return ReadOnlineStatsByRank_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStatsForFriends
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26870])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26872])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -6816,7 +6408,7 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStatsForFriends(uint8_t LocalUserNum,
 
 	if (!uFnReadOnlineStatsForFriends)
 	{
-		uFnReadOnlineStatsForFriends = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadOnlineStatsForFriends = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStatsForFriends");
 	}
 
 	UOnlineSubsystemSteamworks_execReadOnlineStatsForFriends_Params ReadOnlineStatsForFriends_Params;
@@ -6824,17 +6416,13 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStatsForFriends(uint8_t LocalUserNum,
 	memcpy_s(&ReadOnlineStatsForFriends_Params.LocalUserNum, sizeof(ReadOnlineStatsForFriends_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	ReadOnlineStatsForFriends_Params.StatsRead = StatsRead;
 
-	uFnReadOnlineStatsForFriends->iNative = 0;
-	uFnReadOnlineStatsForFriends->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadOnlineStatsForFriends, &ReadOnlineStatsForFriends_Params, nullptr);
-	uFnReadOnlineStatsForFriends->FunctionFlags |= 0x400;
-	uFnReadOnlineStatsForFriends->iNative = 26870;
 
 	return ReadOnlineStatsForFriends_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStats
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[26866])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[26868])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // class UOnlineStatsRead*        StatsRead                      (CPF_Parm)
@@ -6846,7 +6434,7 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStats(class UOnlineStatsRead* StatsRe
 
 	if (!uFnReadOnlineStats)
 	{
-		uFnReadOnlineStats = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadOnlineStats = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadOnlineStats");
 	}
 
 	UOnlineSubsystemSteamworks_execReadOnlineStats_Params ReadOnlineStats_Params;
@@ -6854,11 +6442,7 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStats(class UOnlineStatsRead* StatsRe
 	ReadOnlineStats_Params.StatsRead = StatsRead;
 	memcpy_s(&ReadOnlineStats_Params.Players, sizeof(ReadOnlineStats_Params.Players), &Players, sizeof(Players));
 
-	uFnReadOnlineStats->iNative = 0;
-	uFnReadOnlineStats->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadOnlineStats, &ReadOnlineStats_Params, nullptr);
-	uFnReadOnlineStats->FunctionFlags |= 0x400;
-	uFnReadOnlineStats->iNative = 26866;
 
 	memcpy_s(&Players, sizeof(Players), &ReadOnlineStats_Params.Players, sizeof(ReadOnlineStats_Params.Players));
 
@@ -6866,7 +6450,7 @@ bool UOnlineSubsystemSteamworks::ReadOnlineStats(class UOnlineStatsRead* StatsRe
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetSpeechRecognitionObject
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28155])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28157])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -6878,7 +6462,7 @@ bool UOnlineSubsystemSteamworks::SetSpeechRecognitionObject(uint8_t LocalUserNum
 
 	if (!uFnSetSpeechRecognitionObject)
 	{
-		uFnSetSpeechRecognitionObject = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnSetSpeechRecognitionObject = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetSpeechRecognitionObject");
 	}
 
 	UOnlineSubsystemSteamworks_execSetSpeechRecognitionObject_Params SetSpeechRecognitionObject_Params;
@@ -6886,17 +6470,13 @@ bool UOnlineSubsystemSteamworks::SetSpeechRecognitionObject(uint8_t LocalUserNum
 	memcpy_s(&SetSpeechRecognitionObject_Params.LocalUserNum, sizeof(SetSpeechRecognitionObject_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	SetSpeechRecognitionObject_Params.SpeechRecogObj = SpeechRecogObj;
 
-	uFnSetSpeechRecognitionObject->iNative = 0;
-	uFnSetSpeechRecognitionObject->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetSpeechRecognitionObject, &SetSpeechRecognitionObject_Params, nullptr);
-	uFnSetSpeechRecognitionObject->FunctionFlags |= 0x400;
-	uFnSetSpeechRecognitionObject->iNative = 28155;
 
 	return SetSpeechRecognitionObject_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SelectVocabulary
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27661])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27663])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -6908,7 +6488,7 @@ bool UOnlineSubsystemSteamworks::SelectVocabulary(uint8_t LocalUserNum, int32_t 
 
 	if (!uFnSelectVocabulary)
 	{
-		uFnSelectVocabulary = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnSelectVocabulary = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SelectVocabulary");
 	}
 
 	UOnlineSubsystemSteamworks_execSelectVocabulary_Params SelectVocabulary_Params;
@@ -6916,11 +6496,7 @@ bool UOnlineSubsystemSteamworks::SelectVocabulary(uint8_t LocalUserNum, int32_t 
 	memcpy_s(&SelectVocabulary_Params.LocalUserNum, sizeof(SelectVocabulary_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&SelectVocabulary_Params.VocabularyId, sizeof(SelectVocabulary_Params.VocabularyId), &VocabularyId, sizeof(VocabularyId));
 
-	uFnSelectVocabulary->iNative = 0;
-	uFnSelectVocabulary->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSelectVocabulary, &SelectVocabulary_Params, nullptr);
-	uFnSelectVocabulary->FunctionFlags |= 0x400;
-	uFnSelectVocabulary->iNative = 27661;
 
 	return SelectVocabulary_Params.ReturnValue;
 };
@@ -6937,7 +6513,7 @@ void UOnlineSubsystemSteamworks::ClearRecognitionCompleteDelegate(uint8_t LocalU
 
 	if (!uFnClearRecognitionCompleteDelegate)
 	{
-		uFnClearRecognitionCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearRecognitionCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearRecognitionCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearRecognitionCompleteDelegate_Params ClearRecognitionCompleteDelegate_Params;
@@ -6960,7 +6536,7 @@ void UOnlineSubsystemSteamworks::AddRecognitionCompleteDelegate(uint8_t LocalUse
 
 	if (!uFnAddRecognitionCompleteDelegate)
 	{
-		uFnAddRecognitionCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddRecognitionCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddRecognitionCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddRecognitionCompleteDelegate_Params AddRecognitionCompleteDelegate_Params;
@@ -6981,7 +6557,7 @@ void UOnlineSubsystemSteamworks::OnRecognitionComplete()
 
 	if (!uFnOnRecognitionComplete)
 	{
-		uFnOnRecognitionComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnRecognitionComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnRecognitionComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnRecognitionComplete_Params OnRecognitionComplete_Params;
@@ -6991,7 +6567,7 @@ void UOnlineSubsystemSteamworks::OnRecognitionComplete()
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetRecognitionResults
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21941])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21943])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7003,7 +6579,7 @@ bool UOnlineSubsystemSteamworks::GetRecognitionResults(uint8_t LocalUserNum, cla
 
 	if (!uFnGetRecognitionResults)
 	{
-		uFnGetRecognitionResults = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetRecognitionResults = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetRecognitionResults");
 	}
 
 	UOnlineSubsystemSteamworks_execGetRecognitionResults_Params GetRecognitionResults_Params;
@@ -7011,11 +6587,7 @@ bool UOnlineSubsystemSteamworks::GetRecognitionResults(uint8_t LocalUserNum, cla
 	memcpy_s(&GetRecognitionResults_Params.LocalUserNum, sizeof(GetRecognitionResults_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&GetRecognitionResults_Params.Words, sizeof(GetRecognitionResults_Params.Words), &Words, sizeof(Words));
 
-	uFnGetRecognitionResults->iNative = 0;
-	uFnGetRecognitionResults->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetRecognitionResults, &GetRecognitionResults_Params, nullptr);
-	uFnGetRecognitionResults->FunctionFlags |= 0x400;
-	uFnGetRecognitionResults->iNative = 21941;
 
 	memcpy_s(&Words, sizeof(Words), &GetRecognitionResults_Params.Words, sizeof(GetRecognitionResults_Params.Words));
 
@@ -7023,7 +6595,7 @@ bool UOnlineSubsystemSteamworks::GetRecognitionResults(uint8_t LocalUserNum, cla
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StopSpeechRecognition
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28960])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28962])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7034,24 +6606,20 @@ bool UOnlineSubsystemSteamworks::StopSpeechRecognition(uint8_t LocalUserNum)
 
 	if (!uFnStopSpeechRecognition)
 	{
-		uFnStopSpeechRecognition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnStopSpeechRecognition = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StopSpeechRecognition");
 	}
 
 	UOnlineSubsystemSteamworks_execStopSpeechRecognition_Params StopSpeechRecognition_Params;
 	memset(&StopSpeechRecognition_Params, 0, sizeof(StopSpeechRecognition_Params));
 	memcpy_s(&StopSpeechRecognition_Params.LocalUserNum, sizeof(StopSpeechRecognition_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnStopSpeechRecognition->iNative = 0;
-	uFnStopSpeechRecognition->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopSpeechRecognition, &StopSpeechRecognition_Params, nullptr);
-	uFnStopSpeechRecognition->FunctionFlags |= 0x400;
-	uFnStopSpeechRecognition->iNative = 28960;
 
 	return StopSpeechRecognition_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StartSpeechRecognition
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28832])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28834])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7062,24 +6630,20 @@ bool UOnlineSubsystemSteamworks::StartSpeechRecognition(uint8_t LocalUserNum)
 
 	if (!uFnStartSpeechRecognition)
 	{
-		uFnStartSpeechRecognition = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnStartSpeechRecognition = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StartSpeechRecognition");
 	}
 
 	UOnlineSubsystemSteamworks_execStartSpeechRecognition_Params StartSpeechRecognition_Params;
 	memset(&StartSpeechRecognition_Params, 0, sizeof(StartSpeechRecognition_Params));
 	memcpy_s(&StartSpeechRecognition_Params.LocalUserNum, sizeof(StartSpeechRecognition_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnStartSpeechRecognition->iNative = 0;
-	uFnStartSpeechRecognition->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStartSpeechRecognition, &StartSpeechRecognition_Params, nullptr);
-	uFnStartSpeechRecognition->FunctionFlags |= 0x400;
-	uFnStartSpeechRecognition->iNative = 28832;
 
 	return StartSpeechRecognition_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StopNetworkedVoice
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28956])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28958])
 // Parameter Info:
 // uint8_t                        LocalUserNum                   (CPF_Parm)
 
@@ -7089,22 +6653,18 @@ void UOnlineSubsystemSteamworks::StopNetworkedVoice(uint8_t LocalUserNum)
 
 	if (!uFnStopNetworkedVoice)
 	{
-		uFnStopNetworkedVoice = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnStopNetworkedVoice = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StopNetworkedVoice");
 	}
 
 	UOnlineSubsystemSteamworks_execStopNetworkedVoice_Params StopNetworkedVoice_Params;
 	memset(&StopNetworkedVoice_Params, 0, sizeof(StopNetworkedVoice_Params));
 	memcpy_s(&StopNetworkedVoice_Params.LocalUserNum, sizeof(StopNetworkedVoice_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnStopNetworkedVoice->iNative = 0;
-	uFnStopNetworkedVoice->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStopNetworkedVoice, &StopNetworkedVoice_Params, nullptr);
-	uFnStopNetworkedVoice->FunctionFlags |= 0x400;
-	uFnStopNetworkedVoice->iNative = 28956;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StartNetworkedVoice
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28813])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28815])
 // Parameter Info:
 // uint8_t                        LocalUserNum                   (CPF_Parm)
 
@@ -7114,18 +6674,14 @@ void UOnlineSubsystemSteamworks::StartNetworkedVoice(uint8_t LocalUserNum)
 
 	if (!uFnStartNetworkedVoice)
 	{
-		uFnStartNetworkedVoice = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnStartNetworkedVoice = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.StartNetworkedVoice");
 	}
 
 	UOnlineSubsystemSteamworks_execStartNetworkedVoice_Params StartNetworkedVoice_Params;
 	memset(&StartNetworkedVoice_Params, 0, sizeof(StartNetworkedVoice_Params));
 	memcpy_s(&StartNetworkedVoice_Params.LocalUserNum, sizeof(StartNetworkedVoice_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnStartNetworkedVoice->iNative = 0;
-	uFnStartNetworkedVoice->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnStartNetworkedVoice, &StartNetworkedVoice_Params, nullptr);
-	uFnStartNetworkedVoice->FunctionFlags |= 0x400;
-	uFnStartNetworkedVoice->iNative = 28813;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearPlayerTalkingDelegate
@@ -7139,7 +6695,7 @@ void UOnlineSubsystemSteamworks::ClearPlayerTalkingDelegate(const struct FScript
 
 	if (!uFnClearPlayerTalkingDelegate)
 	{
-		uFnClearPlayerTalkingDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearPlayerTalkingDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearPlayerTalkingDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearPlayerTalkingDelegate_Params ClearPlayerTalkingDelegate_Params;
@@ -7160,7 +6716,7 @@ void UOnlineSubsystemSteamworks::AddPlayerTalkingDelegate(const struct FScriptDe
 
 	if (!uFnAddPlayerTalkingDelegate)
 	{
-		uFnAddPlayerTalkingDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddPlayerTalkingDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddPlayerTalkingDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddPlayerTalkingDelegate_Params AddPlayerTalkingDelegate_Params;
@@ -7182,7 +6738,7 @@ void UOnlineSubsystemSteamworks::OnPlayerTalkingStateChange(const struct FUnique
 
 	if (!uFnOnPlayerTalkingStateChange)
 	{
-		uFnOnPlayerTalkingStateChange = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnPlayerTalkingStateChange = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnPlayerTalkingStateChange");
 	}
 
 	UOnlineSubsystemSteamworks_execOnPlayerTalkingStateChange_Params OnPlayerTalkingStateChange_Params;
@@ -7194,7 +6750,7 @@ void UOnlineSubsystemSteamworks::OnPlayerTalkingStateChange(const struct FUnique
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnmuteRemoteTalker
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29770])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[29772])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7207,7 +6763,7 @@ bool UOnlineSubsystemSteamworks::UnmuteRemoteTalker(uint8_t LocalUserNum, const 
 
 	if (!uFnUnmuteRemoteTalker)
 	{
-		uFnUnmuteRemoteTalker = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnUnmuteRemoteTalker = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnmuteRemoteTalker");
 	}
 
 	UOnlineSubsystemSteamworks_execUnmuteRemoteTalker_Params UnmuteRemoteTalker_Params;
@@ -7216,17 +6772,13 @@ bool UOnlineSubsystemSteamworks::UnmuteRemoteTalker(uint8_t LocalUserNum, const 
 	memcpy_s(&UnmuteRemoteTalker_Params.PlayerID, sizeof(UnmuteRemoteTalker_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 	UnmuteRemoteTalker_Params.bIsSystemWide = bIsSystemWide;
 
-	uFnUnmuteRemoteTalker->iNative = 0;
-	uFnUnmuteRemoteTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnmuteRemoteTalker, &UnmuteRemoteTalker_Params, nullptr);
-	uFnUnmuteRemoteTalker->FunctionFlags |= 0x400;
-	uFnUnmuteRemoteTalker->iNative = 29770;
 
 	return UnmuteRemoteTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.MuteRemoteTalker
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[24388])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[24390])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7239,7 +6791,7 @@ bool UOnlineSubsystemSteamworks::MuteRemoteTalker(uint8_t LocalUserNum, const st
 
 	if (!uFnMuteRemoteTalker)
 	{
-		uFnMuteRemoteTalker = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnMuteRemoteTalker = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.MuteRemoteTalker");
 	}
 
 	UOnlineSubsystemSteamworks_execMuteRemoteTalker_Params MuteRemoteTalker_Params;
@@ -7248,17 +6800,13 @@ bool UOnlineSubsystemSteamworks::MuteRemoteTalker(uint8_t LocalUserNum, const st
 	memcpy_s(&MuteRemoteTalker_Params.PlayerID, sizeof(MuteRemoteTalker_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 	MuteRemoteTalker_Params.bIsSystemWide = bIsSystemWide;
 
-	uFnMuteRemoteTalker->iNative = 0;
-	uFnMuteRemoteTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnMuteRemoteTalker, &MuteRemoteTalker_Params, nullptr);
-	uFnMuteRemoteTalker->FunctionFlags |= 0x400;
-	uFnMuteRemoteTalker->iNative = 24388;
 
 	return MuteRemoteTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetRemoteTalkerPriority
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28118])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[28120])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7271,7 +6819,7 @@ bool UOnlineSubsystemSteamworks::SetRemoteTalkerPriority(uint8_t LocalUserNum, c
 
 	if (!uFnSetRemoteTalkerPriority)
 	{
-		uFnSetRemoteTalkerPriority = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnSetRemoteTalkerPriority = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.SetRemoteTalkerPriority");
 	}
 
 	UOnlineSubsystemSteamworks_execSetRemoteTalkerPriority_Params SetRemoteTalkerPriority_Params;
@@ -7280,17 +6828,13 @@ bool UOnlineSubsystemSteamworks::SetRemoteTalkerPriority(uint8_t LocalUserNum, c
 	memcpy_s(&SetRemoteTalkerPriority_Params.PlayerID, sizeof(SetRemoteTalkerPriority_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 	memcpy_s(&SetRemoteTalkerPriority_Params.Priority, sizeof(SetRemoteTalkerPriority_Params.Priority), &Priority, sizeof(Priority));
 
-	uFnSetRemoteTalkerPriority->iNative = 0;
-	uFnSetRemoteTalkerPriority->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnSetRemoteTalkerPriority, &SetRemoteTalkerPriority_Params, nullptr);
-	uFnSetRemoteTalkerPriority->FunctionFlags |= 0x400;
-	uFnSetRemoteTalkerPriority->iNative = 28118;
 
 	return SetRemoteTalkerPriority_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsHeadsetPresent
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22906])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22908])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7301,24 +6845,20 @@ bool UOnlineSubsystemSteamworks::IsHeadsetPresent(uint8_t LocalUserNum)
 
 	if (!uFnIsHeadsetPresent)
 	{
-		uFnIsHeadsetPresent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnIsHeadsetPresent = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsHeadsetPresent");
 	}
 
 	UOnlineSubsystemSteamworks_execIsHeadsetPresent_Params IsHeadsetPresent_Params;
 	memset(&IsHeadsetPresent_Params, 0, sizeof(IsHeadsetPresent_Params));
 	memcpy_s(&IsHeadsetPresent_Params.LocalUserNum, sizeof(IsHeadsetPresent_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnIsHeadsetPresent->iNative = 0;
-	uFnIsHeadsetPresent->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsHeadsetPresent, &IsHeadsetPresent_Params, nullptr);
-	uFnIsHeadsetPresent->FunctionFlags |= 0x400;
-	uFnIsHeadsetPresent->iNative = 22906;
 
 	return IsHeadsetPresent_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsRemotePlayerTalking
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22962])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22964])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            PlayerID                       (CPF_Parm)
@@ -7329,24 +6869,20 @@ bool UOnlineSubsystemSteamworks::IsRemotePlayerTalking(const struct FUniqueNetId
 
 	if (!uFnIsRemotePlayerTalking)
 	{
-		uFnIsRemotePlayerTalking = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnIsRemotePlayerTalking = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsRemotePlayerTalking");
 	}
 
 	UOnlineSubsystemSteamworks_execIsRemotePlayerTalking_Params IsRemotePlayerTalking_Params;
 	memset(&IsRemotePlayerTalking_Params, 0, sizeof(IsRemotePlayerTalking_Params));
 	memcpy_s(&IsRemotePlayerTalking_Params.PlayerID, sizeof(IsRemotePlayerTalking_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 
-	uFnIsRemotePlayerTalking->iNative = 0;
-	uFnIsRemotePlayerTalking->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsRemotePlayerTalking, &IsRemotePlayerTalking_Params, nullptr);
-	uFnIsRemotePlayerTalking->FunctionFlags |= 0x400;
-	uFnIsRemotePlayerTalking->iNative = 22962;
 
 	return IsRemotePlayerTalking_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsLocalPlayerTalking
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22927])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22929])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7357,24 +6893,20 @@ bool UOnlineSubsystemSteamworks::IsLocalPlayerTalking(uint8_t LocalUserNum)
 
 	if (!uFnIsLocalPlayerTalking)
 	{
-		uFnIsLocalPlayerTalking = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnIsLocalPlayerTalking = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsLocalPlayerTalking");
 	}
 
 	UOnlineSubsystemSteamworks_execIsLocalPlayerTalking_Params IsLocalPlayerTalking_Params;
 	memset(&IsLocalPlayerTalking_Params, 0, sizeof(IsLocalPlayerTalking_Params));
 	memcpy_s(&IsLocalPlayerTalking_Params.LocalUserNum, sizeof(IsLocalPlayerTalking_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnIsLocalPlayerTalking->iNative = 0;
-	uFnIsLocalPlayerTalking->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsLocalPlayerTalking, &IsLocalPlayerTalking_Params, nullptr);
-	uFnIsLocalPlayerTalking->FunctionFlags |= 0x400;
-	uFnIsLocalPlayerTalking->iNative = 22927;
 
 	return IsLocalPlayerTalking_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnregisterRemoteTalker
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29786])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29788])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            PlayerID                       (CPF_Parm)
@@ -7385,24 +6917,20 @@ bool UOnlineSubsystemSteamworks::UnregisterRemoteTalker(const struct FUniqueNetI
 
 	if (!uFnUnregisterRemoteTalker)
 	{
-		uFnUnregisterRemoteTalker = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnUnregisterRemoteTalker = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnregisterRemoteTalker");
 	}
 
 	UOnlineSubsystemSteamworks_execUnregisterRemoteTalker_Params UnregisterRemoteTalker_Params;
 	memset(&UnregisterRemoteTalker_Params, 0, sizeof(UnregisterRemoteTalker_Params));
 	memcpy_s(&UnregisterRemoteTalker_Params.PlayerID, sizeof(UnregisterRemoteTalker_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 
-	uFnUnregisterRemoteTalker->iNative = 0;
-	uFnUnregisterRemoteTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnregisterRemoteTalker, &UnregisterRemoteTalker_Params, nullptr);
-	uFnUnregisterRemoteTalker->FunctionFlags |= 0x400;
-	uFnUnregisterRemoteTalker->iNative = 29786;
 
 	return UnregisterRemoteTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterRemoteTalker
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27022])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27024])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // struct FUniqueNetId            PlayerID                       (CPF_Parm)
@@ -7413,24 +6941,20 @@ bool UOnlineSubsystemSteamworks::RegisterRemoteTalker(const struct FUniqueNetId&
 
 	if (!uFnRegisterRemoteTalker)
 	{
-		uFnRegisterRemoteTalker = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnRegisterRemoteTalker = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterRemoteTalker");
 	}
 
 	UOnlineSubsystemSteamworks_execRegisterRemoteTalker_Params RegisterRemoteTalker_Params;
 	memset(&RegisterRemoteTalker_Params, 0, sizeof(RegisterRemoteTalker_Params));
 	memcpy_s(&RegisterRemoteTalker_Params.PlayerID, sizeof(RegisterRemoteTalker_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 
-	uFnRegisterRemoteTalker->iNative = 0;
-	uFnRegisterRemoteTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegisterRemoteTalker, &RegisterRemoteTalker_Params, nullptr);
-	uFnRegisterRemoteTalker->FunctionFlags |= 0x400;
-	uFnRegisterRemoteTalker->iNative = 27022;
 
 	return RegisterRemoteTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnregisterLocalTalker
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29779])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[29781])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7441,24 +6965,20 @@ bool UOnlineSubsystemSteamworks::UnregisterLocalTalker(uint8_t LocalUserNum)
 
 	if (!uFnUnregisterLocalTalker)
 	{
-		uFnUnregisterLocalTalker = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnUnregisterLocalTalker = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.UnregisterLocalTalker");
 	}
 
 	UOnlineSubsystemSteamworks_execUnregisterLocalTalker_Params UnregisterLocalTalker_Params;
 	memset(&UnregisterLocalTalker_Params, 0, sizeof(UnregisterLocalTalker_Params));
 	memcpy_s(&UnregisterLocalTalker_Params.LocalUserNum, sizeof(UnregisterLocalTalker_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnUnregisterLocalTalker->iNative = 0;
-	uFnUnregisterLocalTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnUnregisterLocalTalker, &UnregisterLocalTalker_Params, nullptr);
-	uFnUnregisterLocalTalker->FunctionFlags |= 0x400;
-	uFnUnregisterLocalTalker->iNative = 29779;
 
 	return UnregisterLocalTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterLocalTalker
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27014])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[27016])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7469,24 +6989,20 @@ bool UOnlineSubsystemSteamworks::RegisterLocalTalker(uint8_t LocalUserNum)
 
 	if (!uFnRegisterLocalTalker)
 	{
-		uFnRegisterLocalTalker = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnRegisterLocalTalker = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.RegisterLocalTalker");
 	}
 
 	UOnlineSubsystemSteamworks_execRegisterLocalTalker_Params RegisterLocalTalker_Params;
 	memset(&RegisterLocalTalker_Params, 0, sizeof(RegisterLocalTalker_Params));
 	memcpy_s(&RegisterLocalTalker_Params.LocalUserNum, sizeof(RegisterLocalTalker_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnRegisterLocalTalker->iNative = 0;
-	uFnRegisterLocalTalker->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnRegisterLocalTalker, &RegisterLocalTalker_Params, nullptr);
-	uFnRegisterLocalTalker->FunctionFlags |= 0x400;
-	uFnRegisterLocalTalker->iNative = 27014;
 
 	return RegisterLocalTalker_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetFriendsList
-// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21752])
+// [0x00424400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[21754])
 // Parameter Info:
 // EOnlineEnumerationReadState    ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7500,7 +7016,7 @@ EOnlineEnumerationReadState UOnlineSubsystemSteamworks::GetFriendsList(uint8_t L
 
 	if (!uFnGetFriendsList)
 	{
-		uFnGetFriendsList = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetFriendsList = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetFriendsList");
 	}
 
 	UOnlineSubsystemSteamworks_execGetFriendsList_Params GetFriendsList_Params;
@@ -7510,11 +7026,7 @@ EOnlineEnumerationReadState UOnlineSubsystemSteamworks::GetFriendsList(uint8_t L
 	memcpy_s(&GetFriendsList_Params.StartingAt, sizeof(GetFriendsList_Params.StartingAt), &StartingAt, sizeof(StartingAt));
 	memcpy_s(&GetFriendsList_Params.Friends, sizeof(GetFriendsList_Params.Friends), &Friends, sizeof(Friends));
 
-	uFnGetFriendsList->iNative = 0;
-	uFnGetFriendsList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetFriendsList, &GetFriendsList_Params, nullptr);
-	uFnGetFriendsList->FunctionFlags |= 0x400;
-	uFnGetFriendsList->iNative = 21752;
 
 	memcpy_s(&Friends, sizeof(Friends), &GetFriendsList_Params.Friends, sizeof(GetFriendsList_Params.Friends));
 
@@ -7533,7 +7045,7 @@ void UOnlineSubsystemSteamworks::ClearReadFriendsCompleteDelegate(uint8_t LocalU
 
 	if (!uFnClearReadFriendsCompleteDelegate)
 	{
-		uFnClearReadFriendsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReadFriendsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadFriendsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReadFriendsCompleteDelegate_Params ClearReadFriendsCompleteDelegate_Params;
@@ -7556,7 +7068,7 @@ void UOnlineSubsystemSteamworks::AddReadFriendsCompleteDelegate(uint8_t LocalUse
 
 	if (!uFnAddReadFriendsCompleteDelegate)
 	{
-		uFnAddReadFriendsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReadFriendsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadFriendsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReadFriendsCompleteDelegate_Params AddReadFriendsCompleteDelegate_Params;
@@ -7578,7 +7090,7 @@ void UOnlineSubsystemSteamworks::OnReadFriendsComplete(bool bWasSuccessful)
 
 	if (!uFnOnReadFriendsComplete)
 	{
-		uFnOnReadFriendsComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadFriendsComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadFriendsComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadFriendsComplete_Params OnReadFriendsComplete_Params;
@@ -7589,7 +7101,7 @@ void UOnlineSubsystemSteamworks::OnReadFriendsComplete(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadFriendsList
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26862])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[26864])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -7602,7 +7114,7 @@ bool UOnlineSubsystemSteamworks::ReadFriendsList(uint8_t LocalUserNum, int32_t C
 
 	if (!uFnReadFriendsList)
 	{
-		uFnReadFriendsList = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadFriendsList = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadFriendsList");
 	}
 
 	UOnlineSubsystemSteamworks_execReadFriendsList_Params ReadFriendsList_Params;
@@ -7611,11 +7123,7 @@ bool UOnlineSubsystemSteamworks::ReadFriendsList(uint8_t LocalUserNum, int32_t C
 	memcpy_s(&ReadFriendsList_Params.Count, sizeof(ReadFriendsList_Params.Count), &Count, sizeof(Count));
 	memcpy_s(&ReadFriendsList_Params.StartingAt, sizeof(ReadFriendsList_Params.StartingAt), &StartingAt, sizeof(StartingAt));
 
-	uFnReadFriendsList->iNative = 0;
-	uFnReadFriendsList->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadFriendsList, &ReadFriendsList_Params, nullptr);
-	uFnReadFriendsList->FunctionFlags |= 0x400;
-	uFnReadFriendsList->iNative = 26862;
 
 	return ReadFriendsList_Params.ReturnValue;
 };
@@ -7632,7 +7140,7 @@ void UOnlineSubsystemSteamworks::ClearWritePlayerStorageCompleteDelegate(uint8_t
 
 	if (!uFnClearWritePlayerStorageCompleteDelegate)
 	{
-		uFnClearWritePlayerStorageCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearWritePlayerStorageCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearWritePlayerStorageCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearWritePlayerStorageCompleteDelegate_Params ClearWritePlayerStorageCompleteDelegate_Params;
@@ -7655,7 +7163,7 @@ void UOnlineSubsystemSteamworks::AddWritePlayerStorageCompleteDelegate(uint8_t L
 
 	if (!uFnAddWritePlayerStorageCompleteDelegate)
 	{
-		uFnAddWritePlayerStorageCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddWritePlayerStorageCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddWritePlayerStorageCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddWritePlayerStorageCompleteDelegate_Params AddWritePlayerStorageCompleteDelegate_Params;
@@ -7678,7 +7186,7 @@ void UOnlineSubsystemSteamworks::OnWritePlayerStorageComplete(uint8_t LocalUserN
 
 	if (!uFnOnWritePlayerStorageComplete)
 	{
-		uFnOnWritePlayerStorageComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnWritePlayerStorageComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnWritePlayerStorageComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnWritePlayerStorageComplete_Params OnWritePlayerStorageComplete_Params;
@@ -7703,7 +7211,7 @@ bool UOnlineSubsystemSteamworks::WritePlayerStorage(uint8_t LocalUserNum, class 
 
 	if (!uFnWritePlayerStorage)
 	{
-		uFnWritePlayerStorage = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnWritePlayerStorage = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WritePlayerStorage");
 	}
 
 	UOnlineSubsystemSteamworks_execWritePlayerStorage_Params WritePlayerStorage_Params;
@@ -7729,7 +7237,7 @@ class UOnlinePlayerStorage* UOnlineSubsystemSteamworks::GetPlayerStorage(uint8_t
 
 	if (!uFnGetPlayerStorage)
 	{
-		uFnGetPlayerStorage = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetPlayerStorage = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetPlayerStorage");
 	}
 
 	UOnlineSubsystemSteamworks_execGetPlayerStorage_Params GetPlayerStorage_Params;
@@ -7753,7 +7261,7 @@ void UOnlineSubsystemSteamworks::ClearReadPlayerStorageForNetIdCompleteDelegate(
 
 	if (!uFnClearReadPlayerStorageForNetIdCompleteDelegate)
 	{
-		uFnClearReadPlayerStorageForNetIdCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReadPlayerStorageForNetIdCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadPlayerStorageForNetIdCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReadPlayerStorageForNetIdCompleteDelegate_Params ClearReadPlayerStorageForNetIdCompleteDelegate_Params;
@@ -7776,7 +7284,7 @@ void UOnlineSubsystemSteamworks::AddReadPlayerStorageForNetIdCompleteDelegate(co
 
 	if (!uFnAddReadPlayerStorageForNetIdCompleteDelegate)
 	{
-		uFnAddReadPlayerStorageForNetIdCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReadPlayerStorageForNetIdCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadPlayerStorageForNetIdCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReadPlayerStorageForNetIdCompleteDelegate_Params AddReadPlayerStorageForNetIdCompleteDelegate_Params;
@@ -7799,7 +7307,7 @@ void UOnlineSubsystemSteamworks::OnReadPlayerStorageForNetIdComplete(const struc
 
 	if (!uFnOnReadPlayerStorageForNetIdComplete)
 	{
-		uFnOnReadPlayerStorageForNetIdComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadPlayerStorageForNetIdComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadPlayerStorageForNetIdComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadPlayerStorageForNetIdComplete_Params OnReadPlayerStorageForNetIdComplete_Params;
@@ -7824,7 +7332,7 @@ bool UOnlineSubsystemSteamworks::ReadPlayerStorageForNetId(uint8_t LocalUserNum,
 
 	if (!uFnReadPlayerStorageForNetId)
 	{
-		uFnReadPlayerStorageForNetId = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadPlayerStorageForNetId = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadPlayerStorageForNetId");
 	}
 
 	UOnlineSubsystemSteamworks_execReadPlayerStorageForNetId_Params ReadPlayerStorageForNetId_Params;
@@ -7850,7 +7358,7 @@ void UOnlineSubsystemSteamworks::ClearReadPlayerStorageCompleteDelegate(uint8_t 
 
 	if (!uFnClearReadPlayerStorageCompleteDelegate)
 	{
-		uFnClearReadPlayerStorageCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReadPlayerStorageCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadPlayerStorageCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReadPlayerStorageCompleteDelegate_Params ClearReadPlayerStorageCompleteDelegate_Params;
@@ -7873,7 +7381,7 @@ void UOnlineSubsystemSteamworks::AddReadPlayerStorageCompleteDelegate(uint8_t Lo
 
 	if (!uFnAddReadPlayerStorageCompleteDelegate)
 	{
-		uFnAddReadPlayerStorageCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReadPlayerStorageCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadPlayerStorageCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReadPlayerStorageCompleteDelegate_Params AddReadPlayerStorageCompleteDelegate_Params;
@@ -7896,7 +7404,7 @@ void UOnlineSubsystemSteamworks::OnReadPlayerStorageComplete(uint8_t LocalUserNu
 
 	if (!uFnOnReadPlayerStorageComplete)
 	{
-		uFnOnReadPlayerStorageComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadPlayerStorageComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadPlayerStorageComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadPlayerStorageComplete_Params OnReadPlayerStorageComplete_Params;
@@ -7921,7 +7429,7 @@ bool UOnlineSubsystemSteamworks::ReadPlayerStorage(uint8_t LocalUserNum, class U
 
 	if (!uFnReadPlayerStorage)
 	{
-		uFnReadPlayerStorage = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadPlayerStorage = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadPlayerStorage");
 	}
 
 	UOnlineSubsystemSteamworks_execReadPlayerStorage_Params ReadPlayerStorage_Params;
@@ -7947,7 +7455,7 @@ void UOnlineSubsystemSteamworks::ClearWriteProfileSettingsCompleteDelegate(uint8
 
 	if (!uFnClearWriteProfileSettingsCompleteDelegate)
 	{
-		uFnClearWriteProfileSettingsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearWriteProfileSettingsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearWriteProfileSettingsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearWriteProfileSettingsCompleteDelegate_Params ClearWriteProfileSettingsCompleteDelegate_Params;
@@ -7970,7 +7478,7 @@ void UOnlineSubsystemSteamworks::AddWriteProfileSettingsCompleteDelegate(uint8_t
 
 	if (!uFnAddWriteProfileSettingsCompleteDelegate)
 	{
-		uFnAddWriteProfileSettingsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddWriteProfileSettingsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddWriteProfileSettingsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddWriteProfileSettingsCompleteDelegate_Params AddWriteProfileSettingsCompleteDelegate_Params;
@@ -7993,7 +7501,7 @@ void UOnlineSubsystemSteamworks::OnWriteProfileSettingsComplete(uint8_t LocalUse
 
 	if (!uFnOnWriteProfileSettingsComplete)
 	{
-		uFnOnWriteProfileSettingsComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnWriteProfileSettingsComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnWriteProfileSettingsComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnWriteProfileSettingsComplete_Params OnWriteProfileSettingsComplete_Params;
@@ -8005,7 +7513,7 @@ void UOnlineSubsystemSteamworks::OnWriteProfileSettingsComplete(uint8_t LocalUse
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteProfileSettings
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30358])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[30360])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8017,7 +7525,7 @@ bool UOnlineSubsystemSteamworks::WriteProfileSettings(uint8_t LocalUserNum, clas
 
 	if (!uFnWriteProfileSettings)
 	{
-		uFnWriteProfileSettings = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnWriteProfileSettings = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.WriteProfileSettings");
 	}
 
 	UOnlineSubsystemSteamworks_execWriteProfileSettings_Params WriteProfileSettings_Params;
@@ -8025,11 +7533,7 @@ bool UOnlineSubsystemSteamworks::WriteProfileSettings(uint8_t LocalUserNum, clas
 	memcpy_s(&WriteProfileSettings_Params.LocalUserNum, sizeof(WriteProfileSettings_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	WriteProfileSettings_Params.ProfileSettings = ProfileSettings;
 
-	uFnWriteProfileSettings->iNative = 0;
-	uFnWriteProfileSettings->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnWriteProfileSettings, &WriteProfileSettings_Params, nullptr);
-	uFnWriteProfileSettings->FunctionFlags |= 0x400;
-	uFnWriteProfileSettings->iNative = 30358;
 
 	return WriteProfileSettings_Params.ReturnValue;
 };
@@ -8046,7 +7550,7 @@ class UOnlineProfileSettings* UOnlineSubsystemSteamworks::GetProfileSettings(uin
 
 	if (!uFnGetProfileSettings)
 	{
-		uFnGetProfileSettings = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetProfileSettings = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetProfileSettings");
 	}
 
 	UOnlineSubsystemSteamworks_execGetProfileSettings_Params GetProfileSettings_Params;
@@ -8070,7 +7574,7 @@ void UOnlineSubsystemSteamworks::ClearReadProfileSettingsCompleteDelegate(uint8_
 
 	if (!uFnClearReadProfileSettingsCompleteDelegate)
 	{
-		uFnClearReadProfileSettingsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearReadProfileSettingsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearReadProfileSettingsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearReadProfileSettingsCompleteDelegate_Params ClearReadProfileSettingsCompleteDelegate_Params;
@@ -8093,7 +7597,7 @@ void UOnlineSubsystemSteamworks::AddReadProfileSettingsCompleteDelegate(uint8_t 
 
 	if (!uFnAddReadProfileSettingsCompleteDelegate)
 	{
-		uFnAddReadProfileSettingsCompleteDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddReadProfileSettingsCompleteDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddReadProfileSettingsCompleteDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddReadProfileSettingsCompleteDelegate_Params AddReadProfileSettingsCompleteDelegate_Params;
@@ -8116,7 +7620,7 @@ void UOnlineSubsystemSteamworks::OnReadProfileSettingsComplete(uint8_t LocalUser
 
 	if (!uFnOnReadProfileSettingsComplete)
 	{
-		uFnOnReadProfileSettingsComplete = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnReadProfileSettingsComplete = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnReadProfileSettingsComplete");
 	}
 
 	UOnlineSubsystemSteamworks_execOnReadProfileSettingsComplete_Params OnReadProfileSettingsComplete_Params;
@@ -8128,7 +7632,7 @@ void UOnlineSubsystemSteamworks::OnReadProfileSettingsComplete(uint8_t LocalUser
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadProfileSettings
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26877])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[26879])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8140,7 +7644,7 @@ bool UOnlineSubsystemSteamworks::ReadProfileSettings(uint8_t LocalUserNum, class
 
 	if (!uFnReadProfileSettings)
 	{
-		uFnReadProfileSettings = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnReadProfileSettings = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ReadProfileSettings");
 	}
 
 	UOnlineSubsystemSteamworks_execReadProfileSettings_Params ReadProfileSettings_Params;
@@ -8148,11 +7652,7 @@ bool UOnlineSubsystemSteamworks::ReadProfileSettings(uint8_t LocalUserNum, class
 	memcpy_s(&ReadProfileSettings_Params.LocalUserNum, sizeof(ReadProfileSettings_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	ReadProfileSettings_Params.ProfileSettings = ProfileSettings;
 
-	uFnReadProfileSettings->iNative = 0;
-	uFnReadProfileSettings->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnReadProfileSettings, &ReadProfileSettings_Params, nullptr);
-	uFnReadProfileSettings->FunctionFlags |= 0x400;
-	uFnReadProfileSettings->iNative = 26877;
 
 	return ReadProfileSettings_Params.ReturnValue;
 };
@@ -8169,7 +7669,7 @@ void UOnlineSubsystemSteamworks::ClearFriendsChangeDelegate(uint8_t LocalUserNum
 
 	if (!uFnClearFriendsChangeDelegate)
 	{
-		uFnClearFriendsChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearFriendsChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearFriendsChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearFriendsChangeDelegate_Params ClearFriendsChangeDelegate_Params;
@@ -8192,7 +7692,7 @@ void UOnlineSubsystemSteamworks::AddFriendsChangeDelegate(uint8_t LocalUserNum, 
 
 	if (!uFnAddFriendsChangeDelegate)
 	{
-		uFnAddFriendsChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddFriendsChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddFriendsChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddFriendsChangeDelegate_Params AddFriendsChangeDelegate_Params;
@@ -8214,7 +7714,7 @@ void UOnlineSubsystemSteamworks::ClearMutingChangeDelegate(const struct FScriptD
 
 	if (!uFnClearMutingChangeDelegate)
 	{
-		uFnClearMutingChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearMutingChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearMutingChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearMutingChangeDelegate_Params ClearMutingChangeDelegate_Params;
@@ -8235,7 +7735,7 @@ void UOnlineSubsystemSteamworks::AddMutingChangeDelegate(const struct FScriptDel
 
 	if (!uFnAddMutingChangeDelegate)
 	{
-		uFnAddMutingChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddMutingChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddMutingChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddMutingChangeDelegate_Params AddMutingChangeDelegate_Params;
@@ -8256,7 +7756,7 @@ void UOnlineSubsystemSteamworks::ClearLoginCancelledDelegate(const struct FScrip
 
 	if (!uFnClearLoginCancelledDelegate)
 	{
-		uFnClearLoginCancelledDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearLoginCancelledDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLoginCancelledDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearLoginCancelledDelegate_Params ClearLoginCancelledDelegate_Params;
@@ -8277,7 +7777,7 @@ void UOnlineSubsystemSteamworks::AddLoginCancelledDelegate(const struct FScriptD
 
 	if (!uFnAddLoginCancelledDelegate)
 	{
-		uFnAddLoginCancelledDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddLoginCancelledDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLoginCancelledDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddLoginCancelledDelegate_Params AddLoginCancelledDelegate_Params;
@@ -8299,7 +7799,7 @@ void UOnlineSubsystemSteamworks::ClearLoginStatusChangeDelegate(const struct FSc
 
 	if (!uFnClearLoginStatusChangeDelegate)
 	{
-		uFnClearLoginStatusChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearLoginStatusChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLoginStatusChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearLoginStatusChangeDelegate_Params ClearLoginStatusChangeDelegate_Params;
@@ -8322,7 +7822,7 @@ void UOnlineSubsystemSteamworks::AddLoginStatusChangeDelegate(const struct FScri
 
 	if (!uFnAddLoginStatusChangeDelegate)
 	{
-		uFnAddLoginStatusChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddLoginStatusChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLoginStatusChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddLoginStatusChangeDelegate_Params AddLoginStatusChangeDelegate_Params;
@@ -8345,7 +7845,7 @@ void UOnlineSubsystemSteamworks::OnLoginStatusChange(ELoginStatus NewStatus, con
 
 	if (!uFnOnLoginStatusChange)
 	{
-		uFnOnLoginStatusChange = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnLoginStatusChange = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnLoginStatusChange");
 	}
 
 	UOnlineSubsystemSteamworks_execOnLoginStatusChange_Params OnLoginStatusChange_Params;
@@ -8367,7 +7867,7 @@ void UOnlineSubsystemSteamworks::ClearLoginChangeDelegate(const struct FScriptDe
 
 	if (!uFnClearLoginChangeDelegate)
 	{
-		uFnClearLoginChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearLoginChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLoginChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearLoginChangeDelegate_Params ClearLoginChangeDelegate_Params;
@@ -8388,7 +7888,7 @@ void UOnlineSubsystemSteamworks::AddLoginChangeDelegate(const struct FScriptDele
 
 	if (!uFnAddLoginChangeDelegate)
 	{
-		uFnAddLoginChangeDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddLoginChangeDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLoginChangeDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddLoginChangeDelegate_Params AddLoginChangeDelegate_Params;
@@ -8411,7 +7911,7 @@ bool UOnlineSubsystemSteamworks::IsMuted(uint8_t LocalUserNum, const struct FUni
 
 	if (!uFnIsMuted)
 	{
-		uFnIsMuted = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnIsMuted = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsMuted");
 	}
 
 	UOnlineSubsystemSteamworks_execIsMuted_Params IsMuted_Params;
@@ -8425,7 +7925,7 @@ bool UOnlineSubsystemSteamworks::IsMuted(uint8_t LocalUserNum, const struct FUni
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AreAnyFriends
-// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[15048])
+// [0x00420400] (FUNC_Native | FUNC_Public | FUNC_HasOutParms | FUNC_AllFlags) (iNative[15050])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8437,7 +7937,7 @@ bool UOnlineSubsystemSteamworks::AreAnyFriends(uint8_t LocalUserNum, class TArra
 
 	if (!uFnAreAnyFriends)
 	{
-		uFnAreAnyFriends = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAreAnyFriends = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AreAnyFriends");
 	}
 
 	UOnlineSubsystemSteamworks_execAreAnyFriends_Params AreAnyFriends_Params;
@@ -8445,11 +7945,7 @@ bool UOnlineSubsystemSteamworks::AreAnyFriends(uint8_t LocalUserNum, class TArra
 	memcpy_s(&AreAnyFriends_Params.LocalUserNum, sizeof(AreAnyFriends_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&AreAnyFriends_Params.Query, sizeof(AreAnyFriends_Params.Query), &Query, sizeof(Query));
 
-	uFnAreAnyFriends->iNative = 0;
-	uFnAreAnyFriends->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAreAnyFriends, &AreAnyFriends_Params, nullptr);
-	uFnAreAnyFriends->FunctionFlags |= 0x400;
-	uFnAreAnyFriends->iNative = 15048;
 
 	memcpy_s(&Query, sizeof(Query), &AreAnyFriends_Params.Query, sizeof(AreAnyFriends_Params.Query));
 
@@ -8457,7 +7953,7 @@ bool UOnlineSubsystemSteamworks::AreAnyFriends(uint8_t LocalUserNum, class TArra
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsFriend
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22900])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[22902])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8469,7 +7965,7 @@ bool UOnlineSubsystemSteamworks::IsFriend(uint8_t LocalUserNum, const struct FUn
 
 	if (!uFnIsFriend)
 	{
-		uFnIsFriend = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnIsFriend = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsFriend");
 	}
 
 	UOnlineSubsystemSteamworks_execIsFriend_Params IsFriend_Params;
@@ -8477,11 +7973,7 @@ bool UOnlineSubsystemSteamworks::IsFriend(uint8_t LocalUserNum, const struct FUn
 	memcpy_s(&IsFriend_Params.LocalUserNum, sizeof(IsFriend_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 	memcpy_s(&IsFriend_Params.PlayerID, sizeof(IsFriend_Params.PlayerID), &PlayerID, sizeof(PlayerID));
 
-	uFnIsFriend->iNative = 0;
-	uFnIsFriend->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnIsFriend, &IsFriend_Params, nullptr);
-	uFnIsFriend->FunctionFlags |= 0x400;
-	uFnIsFriend->iNative = 22900;
 
 	return IsFriend_Params.ReturnValue;
 };
@@ -8498,7 +7990,7 @@ EFeaturePrivilegeLevel UOnlineSubsystemSteamworks::CanShowPresenceInformation(ui
 
 	if (!uFnCanShowPresenceInformation)
 	{
-		uFnCanShowPresenceInformation = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnCanShowPresenceInformation = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CanShowPresenceInformation");
 	}
 
 	UOnlineSubsystemSteamworks_execCanShowPresenceInformation_Params CanShowPresenceInformation_Params;
@@ -8522,7 +8014,7 @@ EFeaturePrivilegeLevel UOnlineSubsystemSteamworks::CanViewPlayerProfiles(uint8_t
 
 	if (!uFnCanViewPlayerProfiles)
 	{
-		uFnCanViewPlayerProfiles = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnCanViewPlayerProfiles = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CanViewPlayerProfiles");
 	}
 
 	UOnlineSubsystemSteamworks_execCanViewPlayerProfiles_Params CanViewPlayerProfiles_Params;
@@ -8546,7 +8038,7 @@ EFeaturePrivilegeLevel UOnlineSubsystemSteamworks::CanPurchaseContent(uint8_t Lo
 
 	if (!uFnCanPurchaseContent)
 	{
-		uFnCanPurchaseContent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnCanPurchaseContent = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CanPurchaseContent");
 	}
 
 	UOnlineSubsystemSteamworks_execCanPurchaseContent_Params CanPurchaseContent_Params;
@@ -8570,7 +8062,7 @@ EFeaturePrivilegeLevel UOnlineSubsystemSteamworks::CanDownloadUserContent(uint8_
 
 	if (!uFnCanDownloadUserContent)
 	{
-		uFnCanDownloadUserContent = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnCanDownloadUserContent = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CanDownloadUserContent");
 	}
 
 	UOnlineSubsystemSteamworks_execCanDownloadUserContent_Params CanDownloadUserContent_Params;
@@ -8583,7 +8075,7 @@ EFeaturePrivilegeLevel UOnlineSubsystemSteamworks::CanDownloadUserContent(uint8_
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CanCommunicate
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18103])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18105])
 // Parameter Info:
 // EFeaturePrivilegeLevel         ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8594,24 +8086,20 @@ EFeaturePrivilegeLevel UOnlineSubsystemSteamworks::CanCommunicate(uint8_t LocalU
 
 	if (!uFnCanCommunicate)
 	{
-		uFnCanCommunicate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnCanCommunicate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CanCommunicate");
 	}
 
 	UOnlineSubsystemSteamworks_execCanCommunicate_Params CanCommunicate_Params;
 	memset(&CanCommunicate_Params, 0, sizeof(CanCommunicate_Params));
 	memcpy_s(&CanCommunicate_Params.LocalUserNum, sizeof(CanCommunicate_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnCanCommunicate->iNative = 0;
-	uFnCanCommunicate->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCanCommunicate, &CanCommunicate_Params, nullptr);
-	uFnCanCommunicate->FunctionFlags |= 0x400;
-	uFnCanCommunicate->iNative = 18103;
 
 	return static_cast<EFeaturePrivilegeLevel>(CanCommunicate_Params.ReturnValue);
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CanPlayOnline
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18112])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[18114])
 // Parameter Info:
 // EFeaturePrivilegeLevel         ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8622,18 +8110,14 @@ EFeaturePrivilegeLevel UOnlineSubsystemSteamworks::CanPlayOnline(uint8_t LocalUs
 
 	if (!uFnCanPlayOnline)
 	{
-		uFnCanPlayOnline = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnCanPlayOnline = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.CanPlayOnline");
 	}
 
 	UOnlineSubsystemSteamworks_execCanPlayOnline_Params CanPlayOnline_Params;
 	memset(&CanPlayOnline_Params, 0, sizeof(CanPlayOnline_Params));
 	memcpy_s(&CanPlayOnline_Params.LocalUserNum, sizeof(CanPlayOnline_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnCanPlayOnline->iNative = 0;
-	uFnCanPlayOnline->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnCanPlayOnline, &CanPlayOnline_Params, nullptr);
-	uFnCanPlayOnline->FunctionFlags |= 0x400;
-	uFnCanPlayOnline->iNative = 18112;
 
 	return static_cast<EFeaturePrivilegeLevel>(CanPlayOnline_Params.ReturnValue);
 };
@@ -8650,7 +8134,7 @@ class FString UOnlineSubsystemSteamworks::GetPlayerNickname(uint8_t LocalUserNum
 
 	if (!uFnGetPlayerNickname)
 	{
-		uFnGetPlayerNickname = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetPlayerNickname = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetPlayerNickname");
 	}
 
 	UOnlineSubsystemSteamworks_execGetPlayerNickname_Params GetPlayerNickname_Params;
@@ -8675,7 +8159,7 @@ bool UOnlineSubsystemSteamworks::GetUniquePlayerId(uint8_t LocalUserNum, struct 
 
 	if (!uFnGetUniquePlayerId)
 	{
-		uFnGetUniquePlayerId = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetUniquePlayerId = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetUniquePlayerId");
 	}
 
 	UOnlineSubsystemSteamworks_execGetUniquePlayerId_Params GetUniquePlayerId_Params;
@@ -8702,7 +8186,7 @@ bool UOnlineSubsystemSteamworks::IsLocalLogin(uint8_t LocalUserNum)
 
 	if (!uFnIsLocalLogin)
 	{
-		uFnIsLocalLogin = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnIsLocalLogin = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsLocalLogin");
 	}
 
 	UOnlineSubsystemSteamworks_execIsLocalLogin_Params IsLocalLogin_Params;
@@ -8726,7 +8210,7 @@ bool UOnlineSubsystemSteamworks::IsGuestLogin(uint8_t LocalUserNum)
 
 	if (!uFnIsGuestLogin)
 	{
-		uFnIsGuestLogin = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnIsGuestLogin = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.IsGuestLogin");
 	}
 
 	UOnlineSubsystemSteamworks_execIsGuestLogin_Params IsGuestLogin_Params;
@@ -8750,18 +8234,14 @@ ELoginStatus UOnlineSubsystemSteamworks::GetLoginStatus(uint8_t LocalUserNum)
 
 	if (!uFnGetLoginStatus)
 	{
-		uFnGetLoginStatus = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnGetLoginStatus = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.GetLoginStatus");
 	}
 
 	UOnlineSubsystemSteamworks_execGetLoginStatus_Params GetLoginStatus_Params;
 	memset(&GetLoginStatus_Params, 0, sizeof(GetLoginStatus_Params));
 	memcpy_s(&GetLoginStatus_Params.LocalUserNum, sizeof(GetLoginStatus_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnGetLoginStatus->iNative = 0;
-	uFnGetLoginStatus->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnGetLoginStatus, &GetLoginStatus_Params, nullptr);
-	uFnGetLoginStatus->FunctionFlags |= 0x400;
-	uFnGetLoginStatus->iNative = 12710;
 
 	return static_cast<ELoginStatus>(GetLoginStatus_Params.ReturnValue);
 };
@@ -8778,7 +8258,7 @@ void UOnlineSubsystemSteamworks::ClearLogoutCompletedDelegate(uint8_t LocalUserN
 
 	if (!uFnClearLogoutCompletedDelegate)
 	{
-		uFnClearLogoutCompletedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearLogoutCompletedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLogoutCompletedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearLogoutCompletedDelegate_Params ClearLogoutCompletedDelegate_Params;
@@ -8801,7 +8281,7 @@ void UOnlineSubsystemSteamworks::AddLogoutCompletedDelegate(uint8_t LocalUserNum
 
 	if (!uFnAddLogoutCompletedDelegate)
 	{
-		uFnAddLogoutCompletedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddLogoutCompletedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLogoutCompletedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddLogoutCompletedDelegate_Params AddLogoutCompletedDelegate_Params;
@@ -8823,7 +8303,7 @@ void UOnlineSubsystemSteamworks::OnLogoutCompleted(bool bWasSuccessful)
 
 	if (!uFnOnLogoutCompleted)
 	{
-		uFnOnLogoutCompleted = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnLogoutCompleted = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnLogoutCompleted");
 	}
 
 	UOnlineSubsystemSteamworks_execOnLogoutCompleted_Params OnLogoutCompleted_Params;
@@ -8834,7 +8314,7 @@ void UOnlineSubsystemSteamworks::OnLogoutCompleted(bool bWasSuccessful)
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.Logout
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[23597])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[23599])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint8_t                        LocalUserNum                   (CPF_Parm)
@@ -8845,18 +8325,14 @@ bool UOnlineSubsystemSteamworks::Logout(uint8_t LocalUserNum)
 
 	if (!uFnLogout)
 	{
-		uFnLogout = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnLogout = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.Logout");
 	}
 
 	UOnlineSubsystemSteamworks_execLogout_Params Logout_Params;
 	memset(&Logout_Params, 0, sizeof(Logout_Params));
 	memcpy_s(&Logout_Params.LocalUserNum, sizeof(Logout_Params.LocalUserNum), &LocalUserNum, sizeof(LocalUserNum));
 
-	uFnLogout->iNative = 0;
-	uFnLogout->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLogout, &Logout_Params, nullptr);
-	uFnLogout->FunctionFlags |= 0x400;
-	uFnLogout->iNative = 23597;
 
 	return Logout_Params.ReturnValue;
 };
@@ -8873,7 +8349,7 @@ void UOnlineSubsystemSteamworks::ClearLoginFailedDelegate(uint8_t LocalUserNum, 
 
 	if (!uFnClearLoginFailedDelegate)
 	{
-		uFnClearLoginFailedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnClearLoginFailedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ClearLoginFailedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execClearLoginFailedDelegate_Params ClearLoginFailedDelegate_Params;
@@ -8896,7 +8372,7 @@ void UOnlineSubsystemSteamworks::AddLoginFailedDelegate(uint8_t LocalUserNum, co
 
 	if (!uFnAddLoginFailedDelegate)
 	{
-		uFnAddLoginFailedDelegate = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAddLoginFailedDelegate = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AddLoginFailedDelegate");
 	}
 
 	UOnlineSubsystemSteamworks_execAddLoginFailedDelegate_Params AddLoginFailedDelegate_Params;
@@ -8919,7 +8395,7 @@ void UOnlineSubsystemSteamworks::OnLoginFailed(uint8_t LocalUserNum, EOnlineServ
 
 	if (!uFnOnLoginFailed)
 	{
-		uFnOnLoginFailed = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnLoginFailed = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnLoginFailed");
 	}
 
 	UOnlineSubsystemSteamworks_execOnLoginFailed_Params OnLoginFailed_Params;
@@ -8931,7 +8407,7 @@ void UOnlineSubsystemSteamworks::OnLoginFailed(uint8_t LocalUserNum, EOnlineServ
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AutoLogin
-// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[15155])
+// [0x00020400] (FUNC_Native | FUNC_Public | FUNC_AllFlags) (iNative[15157])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 
@@ -8941,17 +8417,13 @@ bool UOnlineSubsystemSteamworks::AutoLogin()
 
 	if (!uFnAutoLogin)
 	{
-		uFnAutoLogin = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnAutoLogin = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.AutoLogin");
 	}
 
 	UOnlineSubsystemSteamworks_execAutoLogin_Params AutoLogin_Params;
 	memset(&AutoLogin_Params, 0, sizeof(AutoLogin_Params));
 
-	uFnAutoLogin->iNative = 0;
-	uFnAutoLogin->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnAutoLogin, &AutoLogin_Params, nullptr);
-	uFnAutoLogin->FunctionFlags |= 0x400;
-	uFnAutoLogin->iNative = 15155;
 
 	return AutoLogin_Params.ReturnValue;
 };
@@ -8971,7 +8443,7 @@ bool UOnlineSubsystemSteamworks::Login(uint8_t LocalUserNum, const class FString
 
 	if (!uFnLogin)
 	{
-		uFnLogin = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnLogin = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.Login");
 	}
 
 	UOnlineSubsystemSteamworks_execLogin_Params Login_Params;
@@ -8981,17 +8453,13 @@ bool UOnlineSubsystemSteamworks::Login(uint8_t LocalUserNum, const class FString
 	memcpy_s(&Login_Params.Password, sizeof(Login_Params.Password), &Password, sizeof(Password));
 	Login_Params.bWantsLocalOnly = bWantsLocalOnly;
 
-	uFnLogin->iNative = 0;
-	uFnLogin->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnLogin, &Login_Params, nullptr);
-	uFnLogin->FunctionFlags |= 0x400;
-	uFnLogin->iNative = 12782;
 
 	return Login_Params.ReturnValue;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowLoginUI
-// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28315])
+// [0x00024400] (FUNC_Native | FUNC_NoExport | FUNC_OptionalParm | FUNC_Public | FUNC_AllFlags) (iNative[28317])
 // Parameter Info:
 // bool                           ReturnValue                    (CPF_Parm | CPF_OutParm | CPF_ReturnParm)
 // uint32_t                       bShowOnlineOnly                (CPF_OptionalParm | CPF_Parm)
@@ -9002,18 +8470,14 @@ bool UOnlineSubsystemSteamworks::ShowLoginUI(bool bShowOnlineOnly)
 
 	if (!uFnShowLoginUI)
 	{
-		uFnShowLoginUI = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnShowLoginUI = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.ShowLoginUI");
 	}
 
 	UOnlineSubsystemSteamworks_execShowLoginUI_Params ShowLoginUI_Params;
 	memset(&ShowLoginUI_Params, 0, sizeof(ShowLoginUI_Params));
 	ShowLoginUI_Params.bShowOnlineOnly = bShowOnlineOnly;
 
-	uFnShowLoginUI->iNative = 0;
-	uFnShowLoginUI->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnShowLoginUI, &ShowLoginUI_Params, nullptr);
-	uFnShowLoginUI->FunctionFlags |= 0x400;
-	uFnShowLoginUI->iNative = 28315;
 
 	return ShowLoginUI_Params.ReturnValue;
 };
@@ -9028,7 +8492,7 @@ void UOnlineSubsystemSteamworks::OnFriendsChange()
 
 	if (!uFnOnFriendsChange)
 	{
-		uFnOnFriendsChange = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnFriendsChange = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnFriendsChange");
 	}
 
 	UOnlineSubsystemSteamworks_execOnFriendsChange_Params OnFriendsChange_Params;
@@ -9047,7 +8511,7 @@ void UOnlineSubsystemSteamworks::OnMutingChange()
 
 	if (!uFnOnMutingChange)
 	{
-		uFnOnMutingChange = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnMutingChange = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnMutingChange");
 	}
 
 	UOnlineSubsystemSteamworks_execOnMutingChange_Params OnMutingChange_Params;
@@ -9066,7 +8530,7 @@ void UOnlineSubsystemSteamworks::OnLoginCancelled()
 
 	if (!uFnOnLoginCancelled)
 	{
-		uFnOnLoginCancelled = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnLoginCancelled = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnLoginCancelled");
 	}
 
 	UOnlineSubsystemSteamworks_execOnLoginCancelled_Params OnLoginCancelled_Params;
@@ -9086,7 +8550,7 @@ void UOnlineSubsystemSteamworks::OnLoginChange(uint8_t LocalUserNum)
 
 	if (!uFnOnLoginChange)
 	{
-		uFnOnLoginChange = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnOnLoginChange = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.OnLoginChange");
 	}
 
 	UOnlineSubsystemSteamworks_execOnLoginChange_Params OnLoginChange_Params;
@@ -9106,17 +8570,13 @@ void UOnlineSubsystemSteamworks::eventExit()
 
 	if (!uFnExit)
 	{
-		uFnExit = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnExit = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.Exit");
 	}
 
 	UOnlineSubsystemSteamworks_eventExit_Params Exit_Params;
 	memset(&Exit_Params, 0, sizeof(Exit_Params));
 
-	uFnExit->iNative = 0;
-	uFnExit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnExit, &Exit_Params, nullptr);
-	uFnExit->FunctionFlags |= 0x400;
-	uFnExit->iNative = 763;
 };
 
 // Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.Init
@@ -9130,17 +8590,13 @@ bool UOnlineSubsystemSteamworks::eventInit()
 
 	if (!uFnInit)
 	{
-		uFnInit = reinterpret_cast<UFunction*>(UObject::GObjObjects()->at(IDX_CLASS_ONLINESUBSYSTEMSTEAMWORKS_ONLINESUBSYSTEMSTEAMWORKS));
+		uFnInit = UFunction::FindFunction("Function OnlineSubsystemSteamworks.OnlineSubsystemSteamworks.Init");
 	}
 
 	UOnlineSubsystemSteamworks_eventInit_Params Init_Params;
 	memset(&Init_Params, 0, sizeof(Init_Params));
 
-	uFnInit->iNative = 0;
-	uFnInit->FunctionFlags &= ~0x400;
 	this->ProcessEvent(uFnInit, &Init_Params, nullptr);
-	uFnInit->FunctionFlags |= 0x400;
-	uFnInit->iNative = 762;
 
 	return Init_Params.ReturnValue;
 };

@@ -10,7 +10,6 @@
 #############################################################################################
 */
 #pragma once
-#include "../SdkConstants.hpp"
 
 #ifdef _MSC_VER
 #pragma pack(push, 0x4)
@@ -50,7 +49,7 @@ public:
 
 		if (!uClassPointer)
 		{
-			uClassPointer = reinterpret_cast<UClass*>(UObject::GObjObjects()->at(IDX_CLASS_XAUDIO2_XAUDIO2DEVICE));
+			uClassPointer = UObject::FindClass("Class XAudio2.XAudio2Device");
 		}
 
 		return uClassPointer;

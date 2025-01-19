@@ -332,8 +332,8 @@ enum EClassCastFlag : uint32_t
 // GNames
 #define GNames_Offset		(uintptr_t)0x16C42D0
 // Process Event
-#define ProcessEvent_Pattern	(const uint8_t*)"\x10\x11\x12\x00\x00\x00\x13"
-#define ProcessEvent_Mask		(const char*)"xxx???x"
+#define ProcessEvent_Pattern	(const uint8_t*)"\x74\x00\x83\xC0\x07\x83\xE0\xF8\xE8\x00\x00\x00\x00\x8B\xC4"
+#define ProcessEvent_Mask		(const char*)"x?xxxxxxx????xx"
 
 /*
 # ========================================================================================= #
@@ -913,7 +913,7 @@ public:
 class FString
 {
 public:
-	using ElementType = const char;
+	using ElementType = const wchar_t;
 	using ElementPointer = ElementType*;
 
 private:
@@ -926,22 +926,47 @@ public:
 
 	FString(ElementPointer other) : ArrayData(nullptr), ArrayCount(0), ArrayMax(0) { assign(other); }
 
+	const wchar_t *GetWC(const char *c) const
+	{
+		const size_t cSize = strlen(c)+1;
+		wchar_t* wc = new wchar_t[cSize];
+		size_t num;
+		mbstowcs_s(&num, wc, cSize, c, cSize);
+
+		return wc;
+	}
+	
+	FString(std::string string) : ArrayData(nullptr), ArrayCount(0), ArrayMax(0)
+	{
+		assign(GetWC(string.c_str()));
+	}
+	
 	~FString() {}
 
 public:
 	FString& assign(ElementPointer other)
 	{
-		ArrayCount = (other ? (strlen(other) + 1) : 0);
+		ArrayCount = (other ? (wcslen(other) + 1) : 0);
 		ArrayMax = ArrayCount;
 		ArrayData = (ArrayCount > 0 ? other : nullptr);
 		return *this;
+	}
+	
+	const char *GetC(const wchar_t *wc) const
+	{
+		const size_t cSize = wcslen(wc)+1;
+		char* c = new char[cSize];
+		size_t num;
+		wcstombs_s(&num, c, cSize, wc, cSize);
+
+		return c;
 	}
 
 	std::string ToString() const
 	{
 		if (!empty())
 		{
-			return std::string(c_str());
+			return std::string(GetC(c_str()));
 		}
 
 		return "";
@@ -985,12 +1010,12 @@ public:
 
 	bool operator==(const FString& other)
 	{
-		return (strcmp(ArrayData, other.ArrayData) == 0);
+		return (wcscmp(ArrayData, other.ArrayData) == 0);
 	}
 
 	bool operator!=(const FString& other)
 	{
-		return (strcmp(ArrayData, other.ArrayData) != 0);
+		return (wcscmp(ArrayData, other.ArrayData) != 0);
 	}
 };
 
