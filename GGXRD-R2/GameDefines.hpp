@@ -841,14 +841,14 @@ public:
 		return FNameEntryId;
 	}
 
-	const FNameEntry GetDisplayNameEntry() const
+	const FNameEntry* GetDisplayNameEntry() const
 	{
 		if (IsValid())
 		{
-			return *Names()->at(FNameEntryId);
+			return Names()->at(FNameEntryId);
 		}
 
-		return FNameEntry();
+		return nullptr;
 	}
 
 	FNameEntry* GetEntry()
@@ -875,7 +875,7 @@ public:
 	{
 		if (IsValid())
 		{
-			return GetDisplayNameEntry().ToString();
+			return GetDisplayNameEntry()->ToString();
 		}
 
 		return "UnknownName";
