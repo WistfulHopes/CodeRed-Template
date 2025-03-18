@@ -1369,9 +1369,9 @@ void ManagerComponent::AsyncCommand(const std::string& command, uint64_t delay, 
 
 void ManagerComponent::UnrealCommand(std::string unrealCommand, bool bPrintToConsole)
 {
-	APlayerController* PC = Instances.GetInstanceOf<APlayerController>();
+	AActor* Actor = Instances.GetInstanceOf<AActor>();
 
-	if (PC)
+	if (Actor)
 	{
 		if (unrealCommand.find("unreal_command") == 0)
 		{
@@ -1383,7 +1383,7 @@ void ManagerComponent::UnrealCommand(std::string unrealCommand, bool bPrintToCon
 			Console.Write(GetNameFormatted() + "Executing unreal command \"" + unrealCommand + "\".");
 		}
 
-		PC->ConsoleCommand(unrealCommand, false); // May need your own function to convert std::string to FString if your game uses wchar_t.
+		Actor->ConsoleCommand(unrealCommand, false); // May need your own function to convert std::string to FString if your game uses wchar_t.
 	}
 }
 
