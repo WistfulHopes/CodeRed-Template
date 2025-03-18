@@ -59,20 +59,30 @@ static std::string GetInput()
 
 void PlaceholderModule::GetConsoleInput()
 {
-	std::future<std::string> future = std::async(GetInput);
-
-	std::future_status status;
-	do
+	while (true)
 	{
-		status = future.wait_for(1s);
+		std::future<std::string> future = std::async(GetInput);
+
+		std::future_status status;
+		do
+		{
+			status = future.wait_for(1s);
+		}
+		while (status != std::future_status::ready);
+
+		const std::string input = future.get();
+
+		auto command = input.substr(0, input.find(' '));
+		if (input.find(' ') != std::string::npos)
+		{
+			auto arguments = input.substr(input.find(' '));
+			Manager.ConsoleCommand(command, arguments);
+		}
+		else
+		{
+			Manager.ConsoleCommand(command);
+		}
 	}
-	while (status != std::future_status::ready);
-
-	const std::string input = future.get();
-
-	Manager.ConsoleCommand(input);
-
-	GetConsoleInput();
 }
 
 void PlaceholderModule::DoAThing()
