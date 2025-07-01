@@ -163,19 +163,6 @@ namespace CodeRed
 
 	// Post Hooks
 
-	void HooksComponent::GameViewPortKeyPress(const PostEvent& event)
-	{
-		if (event.Params())
-		{
-			UGameViewportClient_TA_execHandleKeyPress_Params* handleKeyPress = event.GetParams<UGameViewportClient_TA_execHandleKeyPress_Params>();
-
-			if (handleKeyPress->EventType == static_cast<uint8_t>(EInputEvent::IE_Released))
-			{
-				// Blah blah do key pressed stuff here blah blah
-			}
-		}
-	}
-
 	class HooksComponent Hooks;
 
 	EventsComponent::EventsComponent() : Component("Events", "Manages function hooks and process event.") { OnCreate(); }
@@ -220,7 +207,7 @@ namespace CodeRed
 
 				// Post Hooks
 
-				HookEventPost("Function Engine.GameViewportClient.HandleKeyPress", [&](const PostEvent& event) { Hooks.GameViewPortKeyPress(event); });
+				// HookEventPost("Function Engine.GameViewportClient.HandleKeyPress", [&](const PostEvent& event) { Hooks.GameViewPortKeyPress(event); });
 
 				Console.Write(GetNameFormatted() + std::to_string(m_blacklisted.size()) + " Backlisted Event(s)!");
 				Console.Write(GetNameFormatted() + std::to_string(m_preHooks.size()) + " Pre-Hook(s) Initialized!");

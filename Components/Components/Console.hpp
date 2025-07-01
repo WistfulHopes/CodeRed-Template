@@ -11,7 +11,10 @@ namespace CodeRed
 		HANDLE m_outputHandle;
 		FILE* m_outputFile;
 		bool m_24hourClock; // If you want timestamps to be in 24 hour format or 12 hour.
+		std::thread m_consoleInput;
 
+		void GetConsoleInput();
+		
 	public:
 		ConsoleComponent();
 		~ConsoleComponent() override;

@@ -159,12 +159,20 @@
     <ClCompile Include="Components\Components\GameState.cpp" />
     <ClCompile Include="Components\Components\Instances.cpp" />
     <ClCompile Include="Components\Components\Manager.cpp" />
+    <ClCompile Include="Components\Components\Variables.cpp" />
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="Extensions\Extensions\Colors.cpp" />
     <ClCompile Include="Extensions\Extensions\Formatting.cpp" />
     <ClCompile Include="Extensions\Extensions\Math.cpp" />
     <ClCompile Include="Extensions\Extensions\Memory.cpp" />
     <ClCompile Include="Extensions\Extensions\Time.cpp" />
+    <ClCompile Include="Framework\EventGuard\EventGuard.cpp" />
+    <ClCompile Include="Framework\FunctionHook\FunctionHook.cpp" />
+    <ClCompile Include="Framework\MinHook\Buffer.cpp" />
+    <ClCompile Include="Framework\MinHook\hde\hde32.cpp" />
+    <ClCompile Include="Framework\MinHook\hde\hde64.cpp" />
+    <ClCompile Include="Framework\MinHook\MinHook.cpp" />
+    <ClCompile Include="Framework\MinHook\Trampoline.cpp" />
     <ClCompile Include="GGXRD-R2\GameDefines.cpp" />
     <ClCompile Include="GGXRD-R2\SDK_HEADERS\Core_classes.cpp" />
     <ClCompile Include="GGXRD-R2\SDK_HEADERS\Engine_classes.cpp" />
@@ -176,8 +184,8 @@
     <ClCompile Include="GGXRD-R2\SDK_HEADERS\REDGame_classes.cpp" />
     <ClCompile Include="GGXRD-R2\SDK_HEADERS\WinDrv_classes.cpp" />
     <ClCompile Include="GGXRD-R2\SDK_HEADERS\XAudio2_classes.cpp" />
-    <ClCompile Include="Modules\Mods\Placeholder.cpp" />
     <ClCompile Include="Modules\Module.cpp" />
+    <ClCompile Include="Modules\Modules\Placeholder.cpp" />
     <ClCompile Include="pch.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -188,16 +196,27 @@
     <ClInclude Include="Components\Components\GameState.hpp" />
     <ClInclude Include="Components\Components\Instances.hpp" />
     <ClInclude Include="Components\Components\Manager.hpp" />
+    <ClInclude Include="Components\Components\Variables.hpp" />
     <ClInclude Include="Components\Includes.hpp" />
-    <ClInclude Include="Detours\detours.h" />
-    <ClInclude Include="Detours\detver.h" />
-    <ClInclude Include="Detours\syelog.h" />
     <ClInclude Include="Extensions\Extensions\Colors.hpp" />
     <ClInclude Include="Extensions\Extensions\Formatting.hpp" />
     <ClInclude Include="Extensions\Extensions\Math.hpp" />
     <ClInclude Include="Extensions\Extensions\Memory.hpp" />
     <ClInclude Include="Extensions\Extensions\Time.hpp" />
     <ClInclude Include="Extensions\Includes.hpp" />
+    <ClInclude Include="Framework\Detours\detours.h" />
+    <ClInclude Include="Framework\Detours\detver.h" />
+    <ClInclude Include="Framework\Detours\syelog.h" />
+    <ClInclude Include="Framework\EventGuard\EventGuard.hpp" />
+    <ClInclude Include="Framework\FunctionHook\FunctionHook.hpp" />
+    <ClInclude Include="Framework\MinHook\Buffer.hpp" />
+    <ClInclude Include="Framework\MinHook\hde\hde32.hpp" />
+    <ClInclude Include="Framework\MinHook\hde\hde64.hpp" />
+    <ClInclude Include="Framework\MinHook\hde\pstdint.hpp" />
+    <ClInclude Include="Framework\MinHook\hde\table32.hpp" />
+    <ClInclude Include="Framework\MinHook\hde\table64.hpp" />
+    <ClInclude Include="Framework\MinHook\MinHook.hpp" />
+    <ClInclude Include="Framework\MinHook\Trampoline.hpp" />
     <ClInclude Include="GGXRD-R2\GameDefines.hpp" />
     <ClInclude Include="GGXRD-R2\SdkConstants.hpp" />
     <ClInclude Include="GGXRD-R2\SdkHeaders.hpp" />
@@ -232,21 +251,18 @@
     <ClInclude Include="GGXRD-R2\SDK_HEADERS\XAudio2_parameters.hpp" />
     <ClInclude Include="GGXRD-R2\SDK_HEADERS\XAudio2_structs.hpp" />
     <ClInclude Include="Modules\Includes.hpp" />
-    <ClInclude Include="Modules\Mods\Placeholder.hpp" />
     <ClInclude Include="Modules\Module.hpp" />
+    <ClInclude Include="Modules\Modules\Placeholder.hpp" />
     <ClInclude Include="pch.hpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="Detours\detours.lib" />
-    <Library Include="Detours\syelog.lib" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Detours\detours.pdb" />
+    <ClInclude Include="Types.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Changelog.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Framework\Detours\detours.lib" />
+    <Content Include="Framework\Detours\detours.pdb" />
+    <Content Include="Framework\Detours\syelog.lib" />
     <Content Include="GGXRD-R2\CodeRedGenerator.log" />
     <Content Include="GGXRD-R2\NameDump.txt" />
     <Content Include="GGXRD-R2\ObjectDump.txt" />

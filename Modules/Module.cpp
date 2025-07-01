@@ -28,16 +28,15 @@ namespace CodeRed
 		// Create your module specific variables here.
 	}
 
-	void Module::OnCreateVariables()
+	void Module::OnCanvasDraw(class UCanvas* unrealCanvas)
 	{
-		SetInitialized(false);
-		// Update internal settings here.
-		SetInitialized(true);
-	}
+		if (IsInitialized() && IsAllowed())
+		{
+			if (unrealCanvas)
+			{
 
-	void Module::OnSettingChanged()
-	{
-		// Create your module specific variables here.
+			}
+		}
 	}
 
 	std::string Module::GetName() const

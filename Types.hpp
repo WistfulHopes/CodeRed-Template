@@ -2,8 +2,8 @@
 #include <cstdint>
 
 // Uncomment which hooking library you want to use, Detours or MinHook.
-#define CR_DETOURS
-//#define CR_MINHOOK
+// #define CR_DETOURS
+#define CR_MINHOOK
 
 namespace CodeRed
 {

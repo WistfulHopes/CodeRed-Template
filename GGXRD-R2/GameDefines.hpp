@@ -28,6 +28,8 @@
 # ========================================================================================= #
 */
 
+class UProperty;
+class UStruct;
 // https://github.com/CodeRedModding/UnrealEngine3/blob/main/Development/Src/Core/Inc/UnStack.h#L48
 // State Flags
 enum EStateFlags
@@ -746,6 +748,39 @@ extern class TArray<class FNameEntry*>* GNames;
 # Structs
 # ========================================================================================= #
 */
+
+struct FOutputDevice
+{
+public:
+	bool bAllowSuppression; // 0x0000 (0x0001)
+
+public:
+	bool bSuppressEventTag; // 0x0001 (0x0001)
+	bool bAutoEmitLineTerminator; // 0x0002 (0x0001)
+};
+
+//
+// Information remembered about an Out parameter.
+//
+struct FOutParmRec
+{
+	UProperty* Property;
+	BYTE*      PropAddr;
+	FOutParmRec* NextOutParm;
+};
+
+struct FFrame : public FOutputDevice
+{
+	UStruct*	Node;
+	UObject*	Object;
+	BYTE*		Code;
+	BYTE*		Locals;
+	
+	/** Previous frame on the stack */
+	FFrame* PreviousFrame;
+	/** contains information on any out parameters */
+	FOutParmRec* OutParms;
+};
 
 class FNameEntry
 {

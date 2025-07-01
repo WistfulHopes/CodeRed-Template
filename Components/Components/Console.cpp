@@ -1,5 +1,8 @@
 #include "Console.hpp"
 
+#include <future>
+#include "Manager.hpp"
+
 namespace CodeRed
 {
 #define CONSOLE_WINDOW 	// If you want to open a console window to display text.
@@ -15,8 +18,44 @@ namespace CodeRed
 		m_outputHandle = nullptr;
 		m_outputFile = nullptr;
 		m_24hourClock = false;
+		m_consoleInput = std::thread(&ConsoleComponent::GetConsoleInput, this);
 	}
 
+	static std::string GetInput()
+	{    
+		std::string input;
+		getline(std::cin,input);
+		return input;
+	}
+
+	void ConsoleComponent::GetConsoleInput()
+	{
+		while (true)
+		{
+			std::future<std::string> future = std::async(GetInput);
+
+			std::future_status status;
+			do
+			{
+				status = future.wait_for(std::chrono::seconds(1));
+			}
+			while (status != std::future_status::ready);
+
+			const std::string input = future.get();
+
+			auto command = input.substr(0, input.find(' '));
+			if (input.find(' ') != std::string::npos)
+			{
+				auto arguments = input.substr(input.find(' '));
+				Manager.ConsoleCommand(command, arguments);
+			}
+			else
+			{
+				Manager.ConsoleCommand(command);
+			}
+		}
+	}
+	
 	void ConsoleComponent::OnDestroy()
 	{
 #ifdef WRITE_TO_FILE

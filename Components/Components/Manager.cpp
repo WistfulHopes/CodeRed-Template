@@ -161,8 +161,7 @@ namespace CodeRed
 		{
 			AddFlags(QueueFlags::QUEUE_AsyncDelay);
 		}
-
-		if (!m_queue.empty())
+		else
 		{
 			RemoveFlags(QueueFlags::QUEUE_AsyncDelay);
 		}
@@ -393,43 +392,10 @@ namespace CodeRed
 
 			if (bPrintToConsole)
 			{
-				if (!data.Completed)
-				{
-					safeToClear = false;
-
-					if (data.IsAsync())
-					{
-						if (data.OnTick())
-						{
-							data.Delay = 0;
-						}
-						else
-						{
-							continue;
-						}
-					}
-
-					data.Completed = true;
-
-					if ((data.Thread == ThreadTypes::Main) || (data.Thread == ThreadTypes::Render))
-					{
-						if (data.Internal)
-						{
-							InternalCommand(data.Command, data.Arguments, ThreadTypes::Main);
-						}
-						else
-						{
-							ConsoleCommand(data.Command, data.Arguments, ThreadTypes::Main);
-						}
-					}
-					else
-					{
-						return;
-					}
-				}
+				Console.Write(GetNameFormatted() + "Executing unreal command \"" + unrealCommand + "\".");
 			}
 
-			defaultActor->ConsoleCommand(unrealCommand); // May need your own function to convert std::string to FString if your game uses wchar_t.
+			defaultActor->ConsoleCommand(unrealCommand, false); // May need your own function to convert std::string to FString if your game uses wchar_t.
 		}
 	}
 

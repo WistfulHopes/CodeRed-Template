@@ -77,7 +77,6 @@ namespace CodeRed
 		void PlayerControllerTick(PreEvent& event);
 
 	public: // Post Hooks
-		void GameViewPortKeyPress(const PostEvent& event);
 	};
 
 	extern class HooksComponent Hooks;

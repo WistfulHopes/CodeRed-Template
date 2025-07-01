@@ -23,7 +23,7 @@
 #include <filesystem>
 
 // CodeRed Macros
-#define WALKTHROUGH
+// #define WALKTHROUGH
 
 #include "Types.hpp"
 #include "GGXRD-R2/SdkHeaders.hpp"

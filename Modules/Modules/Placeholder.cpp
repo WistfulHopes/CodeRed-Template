@@ -28,6 +28,12 @@ namespace CodeRed
 
 		// Integer setting that has a minimum value of "0" and a maximum value of "100".
 		Variables.CreateSetting("placeholder_some_value", new Setting(VariableIds::PLACEHOLDER_SOME_VALUE, SettingTypes::Int32, "Some random integer value with a custom range.", "0", true))->SetInt32Range(0, 100)->BindCallback([&]() { Manager.PlaceholderMod->OnSettingChanged(); });
+
+		// Gets room members if in a network room.
+		Variables.CreateCommand("get_room_members", new Command(VariableIds::NETWORK_GET_ROOM_MEMBERS, "Gets room members if in a network room."))->BindCallback([&]() { Manager.PlaceholderMod->GetRoomMembers(); });
+
+		// Gets room members if in a network room.
+		Variables.CreateCommand("change_scene", new Command(VariableIds::CHANGE_SCENE, "Changes the current scene."))->BindStringCallback([&](const std::string& args) { Manager.PlaceholderMod->ChangeScene(args); });
 	}
 
 	void PlaceholderModule::OnSettingChanged()
@@ -61,6 +67,85 @@ namespace CodeRed
 			{
 				Console.Error("(DoAThing) Wow! Placeholder is set to false!");
 			}
+		}
+	}
+
+	void PlaceholderModule::GetRoomMembers()
+	{
+		if (IsInitialized() && IsAllowed())
+		{
+			auto LobbyInterface = Instances.GetInstanceOf<UOnlineLobbyInterfaceSteamworks>();
+			if (!LobbyInterface)
+			{
+				Console.Error("(GetRoomMembers) Lobby interface invalid!");
+				return;
+			}
+
+			auto OnlineInterface = Instances.GetInstanceOf<UOnlineSubsystemSteamworks>();
+			if (!OnlineInterface)
+			{
+				Console.Error("(GetRoomMembers) Online interface invalid!");
+				return;
+			}
+
+			Console.Notify("(GetRoomMembers) Getting current room members...");
+			for (auto ActiveLobby : LobbyInterface->ActiveLobbies)
+			{
+				for (auto Member : ActiveLobby.Members)
+				{
+					Console.Notify("(GetRoomMembers) Member: " + OnlineInterface->UniqueNetIdToPlayerName(Member.PlayerUID).ToString());
+				}
+			}
+		}
+	}
+
+	void PlaceholderModule::ChangeScene(const std::string& args)
+	{
+		if (IsInitialized() && IsAllowed())
+		{
+			if (args.length() == 0)
+			{
+				Console.Error("(ChangeScene) No argument provided!");
+				return;
+			}
+
+			EUE_SCENE_ID scene;
+
+			try
+			{
+				auto scene_tmp = std::stoi(args);
+				if (scene_tmp > 30)
+				{
+					throw std::out_of_range("");
+				}
+				scene = static_cast<EUE_SCENE_ID>(scene_tmp);
+			}
+			catch (std::invalid_argument)
+			{
+				Console.Error("(ChangeScene) Invalid argument! Should be an int value within the UE_SCENE_ID enum (0 through 30).");
+				return;
+			}
+			catch (std::out_of_range)
+			{
+				Console.Error("(ChangeScene) Argument out of range! Should be an int value within the UE_SCENE_ID enum (0 through 30).");
+				return;
+			}
+			
+			auto GameCommon = Instances.GetInstanceOf<UREDGameCommon>();
+			if (!GameCommon)
+			{
+				Console.Error("(ChangeScene) REDGameCommon invalid!");
+				return;
+			}
+			
+			auto GameInfo = Instances.GetInstanceOf<AREDGameInfo>();
+			if (!GameInfo)
+			{
+				Console.Error("(ChangeScene) REDGameInfo invalid!");
+				return;
+			}
+
+			GameInfo->ConsoleCommand(GameCommon->GetNextSceneCommand(scene, false), false);
 		}
 	}
 }

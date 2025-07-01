@@ -24,5 +24,7 @@ namespace CodeRed
 
 	public:
 		void DoAThing();
+		void GetRoomMembers();
+		void ChangeScene(const std::string& args);
 	};
 }
