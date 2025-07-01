@@ -1,90 +1,136 @@
 #include "Core.hpp"
 #include "../Includes.hpp"
 
-CoreComponent::CoreComponent() : Component("Core", "Initializes globals, components, and modules.") { OnCreate(); }
-
-CoreComponent::~CoreComponent() { OnDestroy(); }
-
-void CoreComponent::OnCreate()
+namespace CodeRed
 {
-	m_mainThread = nullptr;
-}
+	std::atomic<HANDLE> CoreComponent::m_mainThread = nullptr;
 
-void CoreComponent::OnDestroy() {}
+	CoreComponent::CoreComponent() : Component("Core", "Initializes globals, components, and modules.") { OnCreate(); }
 
-void CoreComponent::InitializeThread()
-{
-	m_mainThread = CreateThread(nullptr, 0, reinterpret_cast<LPTHREAD_START_ROUTINE>(InitializeGlobals), nullptr, 0, nullptr);
-}
+	CoreComponent::~CoreComponent() { OnDestroy(); }
 
-void CoreComponent::InitializeGlobals(HMODULE hModule)
-{
-	// Disables the DLL_THREAD_ATTACH and DLL_THREAD_DETACH notifications.
-	DisableThreadLibraryCalls(hModule);
+	void CoreComponent::OnCreate() {}
 
-#ifdef WALKTHROUGH
-	Console.Notify("\"Components\\Components\\Core.cpp -> CoreComponent::InitializeGlobals\". Looks like you forgot to check this file, this is important for initializing your sdk, components, and modules!");
-	return;
+	void CoreComponent::OnDestroy()
+	{
+		if (m_mainThread)
+		{
+			CloseHandle(m_mainThread);
+			m_mainThread = nullptr;
+		}
+
+#ifdef CR_MINHOOK
+		MinHook::MH_Uninitialize();
+#endif
+	}
+
+	bool CoreComponent::Initialize()
+	{
+		if (!IsInitialized())
+		{
+			if (Console.Initialize()) // Initialize the console file which also opens the standard out stream.
+			{
+				if (FindGlobals())
+				{
+					Console.Notify(GetNameFormatted() + "Entry Point " + Format::ToHex(reinterpret_cast<void*>(GetModuleHandleW(nullptr))));
+					Console.Notify(GetNameFormatted() + "Global Objects: " + Format::ToHex(UObject::GObjObjects()));
+					Console.Notify(GetNameFormatted() + "Global Names: " + Format::ToHex(FName::Names()));
+
+#ifdef CR_MINHOOK
+					MinHook::MH_STATUS minhookStatus = MinHook::MH_Initialize();
+
+					if (minhookStatus != MinHook::MH_STATUS::MH_OK)
+					{
+						Console.Error(GetNameFormatted() + "Failed to initalize MinHook, cannot continue!");
+						return false;
+					}
 #endif
 
-	// Initialize the console file which also opens the standard out stream.
-	Console.Initialize(std::filesystem::current_path(), "CodeRed.log");
+					GameState.Initialize();			// Unimplemented.
+					Instances.Initialize();			// Initialize class instances that aren't automatically set by function hooks.
+					Variables.Initialize();			// Initialize any misc settings or commands here.
+					Manager.Initialize();			// Initialize modules and their variables.
+					Variables.SetupVariables();		// Load in any variables that have been previously saved.
+					Manager.UpdateAllSettings();	// Update all loaded in variables for each module if any are found.
+					Hooks.Initialize();				// Unimplemented.
+					Events.Initialize();			// Initialize hooking functions from process event to your own.
 
-	// Populate the GObject and GName addresses, remember to replace "PlaceholderGame" with your game.
-	uintptr_t entryPoint = reinterpret_cast<uintptr_t>(GetModuleHandle(NULL));
-	GObjects = reinterpret_cast<TArray<UObject*>*>(GetModuleHandle(NULL) + GObjects_Offset / 4);
-	GNames = reinterpret_cast<TArray<FNameEntry*>*>(GetModuleHandle(NULL) + GNames_Offset / 4);
+					Console.Success(GetNameFormatted() + "Initialized!");
+					SetInitialized(true);
+				}
+				else
+				{
+					Console.Error(GetNameFormatted() + "Failed to find globals!");
+				}
+			}
+			else
+			{
+				MessageBoxA(NULL, "Failed to initialize console, cannot continue!", "CodeRed", (IDOK | MB_ICONHAND));
+			}
+		}
 
-	// Verifies the global addresses are correct before continuing.
-	if (AreGlobalsValid())
-	{
-		// You can use either a pattern for Process Event or its place in the VfTable index (not both).
-		// void** unrealVTable = reinterpret_cast<void**>(UObject::StaticClass()->VfTableObject.Dummy);
-		// EventsComponent::AttachDetour(reinterpret_cast<ProcessEventType>(unrealVTable[66])); // Index method.
-		EventsComponent::AttachDetour(reinterpret_cast<ProcessEventType>(CodeRed::Memory::FindPattern(GetModuleHandleW(NULL), ProcessEvent_Pattern, ProcessEvent_Mask) - 0xDF)); // Find pattern method.
-
-		Console.Notify("[Core Module] Entry Point " + CodeRed::Format::ToHex(reinterpret_cast<void*>(entryPoint)));
-		Console.Notify("[Core Module] Global Objects: " + CodeRed::Format::ToHex(GObjects));
-		Console.Notify("[Core Module] Global Names: " + CodeRed::Format::ToHex(GNames));
-		Console.Write("[Core Module] Initialized!");
-
-		Instances.Initialize(); // Initialize class instances that aren't automatically set by function hooks.
-		Manager.Initialize(); // Initialize settings, commands, and mods.
-		Events.Initialize(); // Initialize hooking function events to voids.
-	}
-	else
-	{
-		Console.Error("[Core Module] GObject and GNames are not valid, wrong address detected!");
-	}
-}
-
-bool CoreComponent::AreGlobalsValid()
-{
-	return (AreGObjectsValid() && AreGNamesValid());
-}
-
-bool CoreComponent::AreGObjectsValid()
-{
-	if (GObjects
-		&& !UObject::GObjObjects()->empty()
-		&& (UObject::GObjObjects()->capacity() > UObject::GObjObjects()->size()))
-	{
-		return true;
+		return IsInitialized();
 	}
 
-	return false;
-}
-
-bool CoreComponent::AreGNamesValid()
-{
-	if (GNames
-		&& !FName::Names()->empty()
-		&& (FName::Names()->capacity() > FName::Names()->size()))
+	void CoreComponent::InitializeThread()
 	{
-		return true;
+		if (!m_mainThread)
+		{
+			m_mainThread = CreateThread(nullptr, 0, CoreComponent::OnThreadCreated, nullptr, 0, nullptr);
+		}
 	}
 
-	return false;
-}
+	DWORD WINAPI CoreComponent::OnThreadCreated(LPVOID lpParam)
+	{
+		Core.Initialize();
+		return 0;
+	}
 
-class CoreComponent Core{};
+	bool CoreComponent::FindGlobals()
+	{
+#ifdef WALKTHROUGH
+		Console.Notify("\"Components\\Components\\Core.cpp -> CoreComponent::FindGlobals\". Looks like you forgot to check this file, this is important for initializing your sdk!");
+		return false;
+#endif
+
+		if (!UObject::GObjObjects() && !FName::Names())
+		{
+			// Populate the GObject and GName addresses, remember to replace "PlaceholderSDK" with your own.
+			GObjects = reinterpret_cast<TArray<UObject*>*>(GetModuleHandle(NULL) + GObjects_Offset / 4);
+			GNames = reinterpret_cast<TArray<FNameEntry*>*>(GetModuleHandle(NULL) + GNames_Offset / 4);
+		}
+
+		return AreGlobalsValid();
+	}
+
+	bool CoreComponent::AreGlobalsValid()
+	{
+		return (AreGObjectsValid() && AreGNamesValid());
+	}
+
+	bool CoreComponent::AreGObjectsValid()
+	{
+		if (UObject::GObjObjects()
+			&& !UObject::GObjObjects()->empty()
+			&& (UObject::GObjObjects()->capacity() > UObject::GObjObjects()->size()))
+		{
+			return true;
+		}
+
+		return false;
+	}
+
+	bool CoreComponent::AreGNamesValid()
+	{
+		if (FName::Names()
+			&& !FName::Names()->empty()
+			&& (FName::Names()->capacity() > FName::Names()->size()))
+		{
+			return true;
+		}
+
+		return false;
+	}
+
+	class CoreComponent Core;
+}
