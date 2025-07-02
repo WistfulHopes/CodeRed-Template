@@ -4,9 +4,9 @@
 namespace CodeRed::HookTypes
 {
 	// Parameters and types will be different depending on 64 bit or 32 bit games.
-	typedef void(*ProcessEvent)(class UObject*, class UFunction*, void*, void*); // Calling object, function, structure pointer with parameters, unused result.
-	typedef void(*ProcessInternal)(class UObject*, struct FFrame&, void*); // Calling object, frame, unused result.
-	typedef void(*CallFunction)(class UObject*, struct FFrame&, void*, class UFunction*); // Calling object, frame, unused result, function.
+	typedef void(__thiscall* ProcessEvent)(class UObject*, class UFunction*, void*, void*); // Calling object, function, structure pointer with parameters, unused result.
+	typedef void(__thiscall* ProcessInternal)(class UObject*, struct FFrame&, void*); // Calling object, frame, unused result.
+	typedef void(__thiscall* CallFunction)(class UObject*, struct FFrame&, void*, class UFunction*); // Calling object, frame, unused result, function.
 }
 
 namespace CodeRed

@@ -769,7 +769,7 @@ struct FOutParmRec
 	FOutParmRec* NextOutParm;
 };
 
-struct FFrame : public FOutputDevice
+struct FFrame
 {
 	UStruct*	Node;
 	UObject*	Object;

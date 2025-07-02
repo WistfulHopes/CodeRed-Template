@@ -86,9 +86,9 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\Detours</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\Framework\Detours</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -103,9 +103,9 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\Detours</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\Framework\Detours</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -122,7 +122,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\Detours</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\Framework\Detours</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
@@ -140,7 +140,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
-      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\Detours</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(MSBuildProjectDirectory)\Framework\Detours</AdditionalIncludeDirectories>
       <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
@@ -184,8 +184,8 @@
     <ClCompile Include="GGXRD-R2\SDK_HEADERS\REDGame_classes.cpp" />
     <ClCompile Include="GGXRD-R2\SDK_HEADERS\WinDrv_classes.cpp" />
     <ClCompile Include="GGXRD-R2\SDK_HEADERS\XAudio2_classes.cpp" />
-    <ClCompile Include="Modules\Module.cpp" />
     <ClCompile Include="Modules\Modules\Placeholder.cpp" />
+    <ClCompile Include="Modules\Module.cpp" />
     <ClCompile Include="pch.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -218,7 +218,6 @@
     <ClInclude Include="Framework\MinHook\MinHook.hpp" />
     <ClInclude Include="Framework\MinHook\Trampoline.hpp" />
     <ClInclude Include="GGXRD-R2\GameDefines.hpp" />
-    <ClInclude Include="GGXRD-R2\SdkConstants.hpp" />
     <ClInclude Include="GGXRD-R2\SdkHeaders.hpp" />
     <ClInclude Include="GGXRD-R2\SDK_HEADERS\Core_classes.hpp" />
     <ClInclude Include="GGXRD-R2\SDK_HEADERS\Core_parameters.hpp" />
@@ -251,19 +250,22 @@
     <ClInclude Include="GGXRD-R2\SDK_HEADERS\XAudio2_parameters.hpp" />
     <ClInclude Include="GGXRD-R2\SDK_HEADERS\XAudio2_structs.hpp" />
     <ClInclude Include="Modules\Includes.hpp" />
-    <ClInclude Include="Modules\Module.hpp" />
     <ClInclude Include="Modules\Modules\Placeholder.hpp" />
+    <ClInclude Include="Modules\Module.hpp" />
     <ClInclude Include="pch.hpp" />
     <ClInclude Include="Types.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Framework\Detours\detours.lib" />
+    <Library Include="Framework\Detours\syelog.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Framework\Detours\detours.pdb" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Changelog.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Framework\Detours\detours.lib" />
-    <Content Include="Framework\Detours\detours.pdb" />
-    <Content Include="Framework\Detours\syelog.lib" />
-    <Content Include="GGXRD-R2\CodeRedGenerator.log" />
     <Content Include="GGXRD-R2\NameDump.txt" />
     <Content Include="GGXRD-R2\ObjectDump.txt" />
   </ItemGroup>

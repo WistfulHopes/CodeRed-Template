@@ -18,7 +18,6 @@ namespace CodeRed
 		m_outputHandle = nullptr;
 		m_outputFile = nullptr;
 		m_24hourClock = false;
-		m_consoleInput = std::thread(&ConsoleComponent::GetConsoleInput, this);
 	}
 
 	static std::string GetInput()
@@ -68,7 +67,7 @@ namespace CodeRed
 
 #ifdef CONSOLE_WINDOW
 		m_outputHandle = nullptr;
-
+		
 		if (m_outputFile)
 		{
 			FreeConsole();
@@ -83,10 +82,13 @@ namespace CodeRed
 		{
 #ifdef CONSOLE_WINDOW
 			AllocConsole();
-			freopen_s(&m_outputFile, "CONOUT$", "w", stdout);
 			freopen_s(&m_outputFile, "CONIN$", "r", stdin);
+			freopen_s(&m_outputFile, "CONOUT$", "w", stdout);
+			freopen_s(&m_outputFile, "CONOUT$", "w", stderr);
+			
 			ShowWindow(GetConsoleWindow(), SW_SHOW);
 			m_outputHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+			m_consoleInput = std::jthread(&ConsoleComponent::GetConsoleInput, this);
 #endif
 
 #ifdef WRITE_TO_FILE

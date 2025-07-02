@@ -96,8 +96,8 @@ namespace CodeRed
 		if (!UObject::GObjObjects() && !FName::Names())
 		{
 			// Populate the GObject and GName addresses, remember to replace "PlaceholderSDK" with your own.
-			GObjects = reinterpret_cast<TArray<UObject*>*>(GetModuleHandle(NULL) + GObjects_Offset / 4);
-			GNames = reinterpret_cast<TArray<FNameEntry*>*>(GetModuleHandle(NULL) + GNames_Offset / 4);
+			GObjects = reinterpret_cast<TArray<UObject*>*>(reinterpret_cast<uintptr_t>(GetModuleHandle(nullptr)) + GObjects_Offset);
+			GNames = reinterpret_cast<TArray<FNameEntry*>*>(reinterpret_cast<uintptr_t>(GetModuleHandle(nullptr)) + GNames_Offset);
 		}
 
 		return AreGlobalsValid();

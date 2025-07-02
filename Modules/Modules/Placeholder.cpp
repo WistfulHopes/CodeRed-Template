@@ -61,11 +61,11 @@ namespace CodeRed
 		{
 			if (m_placeholder)
 			{
-				Console.Success("(DoAThing) Wow! Placeholder is set to true!");
+				Console.Success("(DoAThing) Wow! Placeholder is set to true!\n");
 			}
 			else
 			{
-				Console.Error("(DoAThing) Wow! Placeholder is set to false!");
+				Console.Error("(DoAThing) Wow! Placeholder is set to false!\n");
 			}
 		}
 	}
@@ -77,23 +77,23 @@ namespace CodeRed
 			auto LobbyInterface = Instances.GetInstanceOf<UOnlineLobbyInterfaceSteamworks>();
 			if (!LobbyInterface)
 			{
-				Console.Error("(GetRoomMembers) Lobby interface invalid!");
+				Console.Error("(GetRoomMembers) Lobby interface invalid!\n");
 				return;
 			}
 
 			auto OnlineInterface = Instances.GetInstanceOf<UOnlineSubsystemSteamworks>();
 			if (!OnlineInterface)
 			{
-				Console.Error("(GetRoomMembers) Online interface invalid!");
+				Console.Error("(GetRoomMembers) Online interface invalid!\n");
 				return;
 			}
 
-			Console.Notify("(GetRoomMembers) Getting current room members...");
+			Console.Notify("(GetRoomMembers) Getting current room members...\n");
 			for (auto ActiveLobby : LobbyInterface->ActiveLobbies)
 			{
 				for (auto Member : ActiveLobby.Members)
 				{
-					Console.Notify("(GetRoomMembers) Member: " + OnlineInterface->UniqueNetIdToPlayerName(Member.PlayerUID).ToString());
+					Console.Notify("(GetRoomMembers) Member: " + OnlineInterface->UniqueNetIdToPlayerName(Member.PlayerUID).ToString() + "\n");
 				}
 			}
 		}
@@ -103,12 +103,6 @@ namespace CodeRed
 	{
 		if (IsInitialized() && IsAllowed())
 		{
-			if (args.length() == 0)
-			{
-				Console.Error("(ChangeScene) No argument provided!");
-				return;
-			}
-
 			EUE_SCENE_ID scene;
 
 			try
@@ -122,26 +116,26 @@ namespace CodeRed
 			}
 			catch (std::invalid_argument)
 			{
-				Console.Error("(ChangeScene) Invalid argument! Should be an int value within the UE_SCENE_ID enum (0 through 30).");
+				Console.Error("(ChangeScene) Invalid argument! Should be an int value within the UE_SCENE_ID enum (0 through 30).\n");
 				return;
 			}
 			catch (std::out_of_range)
 			{
-				Console.Error("(ChangeScene) Argument out of range! Should be an int value within the UE_SCENE_ID enum (0 through 30).");
+				Console.Error("(ChangeScene) Argument out of range! Should be an int value within the UE_SCENE_ID enum (0 through 30).\n");
 				return;
 			}
 			
 			auto GameCommon = Instances.GetInstanceOf<UREDGameCommon>();
 			if (!GameCommon)
 			{
-				Console.Error("(ChangeScene) REDGameCommon invalid!");
+				Console.Error("(ChangeScene) REDGameCommon invalid!\n");
 				return;
 			}
 			
 			auto GameInfo = Instances.GetInstanceOf<AREDGameInfo>();
 			if (!GameInfo)
 			{
-				Console.Error("(ChangeScene) REDGameInfo invalid!");
+				Console.Error("(ChangeScene) REDGameInfo invalid!\n");
 				return;
 			}
 

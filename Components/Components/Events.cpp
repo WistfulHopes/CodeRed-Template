@@ -201,7 +201,7 @@ namespace CodeRed
 
 				// Pre Hooks
 
-				HookEventPre("Function REDGame.REDHUD.PostRender", [&](PreEvent& event) { Hooks.HUDPostRender(event); });
+				HookEventPre("Function Engine.HUD.PostRender", [&](PreEvent& event) { Hooks.HUDPostRender(event); });
 				HookEventPre("Function REDGame.REDGameViewportClient.PostRender", [&](PreEvent& event) { Hooks.GameViewPortPostRender(event); });
 				HookEventPre("Function Engine.PlayerController.PlayerTick", [&](PreEvent& event) { Hooks.PlayerControllerTick(event); });
 
@@ -225,7 +225,7 @@ namespace CodeRed
 #ifdef DETOUR_PROCEVENT
 		bool eventValid = m_processEvent.IsAttached();
 #else
-		eventValid = true;
+		bool eventValid = true;
 #endif
 
 #ifdef DETOUR_PROCINTERNAL
@@ -253,7 +253,7 @@ namespace CodeRed
 
 			void** vfTable = reinterpret_cast<void**>(UObject::StaticClass()->VfTableObject.Dummy);
 
-			if (vfTable && m_processEvent.Attach(reinterpret_cast<uintptr_t*>(vfTable[69]), ProcessEventHook))
+			if (vfTable && m_processEvent.Attach(reinterpret_cast<uintptr_t*>(vfTable[66]), ProcessEventHook))
 			{
 				m_processEvent.Enable();
 			}
@@ -300,7 +300,7 @@ namespace CodeRed
 		m_blacklistSafe = false;
 	}
 
-	void EventsComponent::ProcessEventHook(class UObject* caller, class UFunction* function, void* params, void* result)
+	void __fastcall EventsComponent::ProcessEventHook(class UObject* caller, [[maybe_unused]] void* EDX, class UFunction* function, void* params, void* result)
 	{
 #ifdef DETOUR_PROCEVENT
 		if (m_processEvent.IsAttached())
@@ -351,7 +351,7 @@ namespace CodeRed
 #endif
 	}
 
-	void EventsComponent::ProcessInternalHook(class UObject* caller, struct FFrame& frame, void* result)
+	void __fastcall EventsComponent::ProcessInternalHook(class UObject* caller, [[maybe_unused]] void* EDX, struct FFrame& frame, void* result)
 	{
 #ifdef DETOUR_PROCINTERNAL
 		if (m_processInternal.IsAttached())

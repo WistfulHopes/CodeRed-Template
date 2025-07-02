@@ -108,8 +108,8 @@ namespace CodeRed
 		static bool AreDetoursAttached();
 		static bool AttachDetours(); // Redirects the games functions to our own void, for us to manually process later and trigger callbacks.
 		static void DetachDetours(); // Called by the deconstuctor, necessary for if your DLL gets intentionally (or unintentionally) unloaded before your game exits.
-		static void ProcessEventHook(class UObject* caller, class UFunction* function, void* params, void* result); // ProcessEvent gets redirected to this function.
-		static void ProcessInternalHook(class UObject* caller, struct FFrame& frame, void* result); // ProcessInternal gets redirected to this function.
+		static void __fastcall ProcessEventHook(class UObject* caller, void* EDX, class UFunction* function, void* params, void* result); // ProcessEvent gets redirected to this function.
+		static void __fastcall ProcessInternalHook(class UObject* caller, void* EDX, struct FFrame& frame, void* result); // ProcessInternal gets redirected to this function.
 
 	public:
 		static bool IsBlacklisted(class UFunction* function);
