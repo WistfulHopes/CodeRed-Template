@@ -1310,7 +1310,7 @@ namespace CodeRed
 			Console.Notify("\"Components\\Components\\Variables.cpp -> VariableComponent::ParseVariables\". Looks like you forgot to check this file, you have no path set for saving or loading variables!");
 			return;
 #endif
-			std::filesystem::path filePath("YOUR_FILE_PATH_HERE");
+			std::filesystem::path filePath("user_vars.txt");
 
 			if (std::filesystem::exists(filePath))
 			{

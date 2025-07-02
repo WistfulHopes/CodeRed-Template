@@ -100,7 +100,14 @@ namespace CodeRed
 			GNames = reinterpret_cast<TArray<FNameEntry*>*>(reinterpret_cast<uintptr_t>(GetModuleHandle(nullptr)) + GNames_Offset);
 		}
 
-		return AreGlobalsValid();
+		for (int i = 0; i < 10; i++)
+		{
+			if (AreGlobalsValid()) return true;
+
+			std::this_thread::sleep_for(std::chrono::milliseconds(100));
+		}
+		
+		return false;
 	}
 
 	bool CoreComponent::AreGlobalsValid()
